@@ -11,8 +11,9 @@ And Verify the Continue Button
 
 Examples:
 |Email|Password|
-|ankita.chaudhary@zenesys.com |Testing@123|
-|test@yopmail.com|test@123|
+|anoop.kumar@zenesys.com |Testing@123|
+
+
 
 
 
