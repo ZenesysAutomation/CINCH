@@ -5,9 +5,47 @@ import org.openqa.selenium.WebElement;
 
 
 import base.BaseClass;
+import io.cucumber.java.en.Given;
 
 public class AddCommunityNotePage extends BaseClass {
 	
+	
+	public void user_enters_email() {
+	WebElement Username=driver.findElement(By.xpath("//input[@id='email']"));
+	explicitWait(Username,20);
+	Username.sendKeys("anoop.kumar@zenesys.com");
+		
+	} 
+		
+	public void user_enters_password() {
+		WebElement Password=driver.findElement(By.xpath("//input[@id='password']"));
+		explicitWait(Password,20);
+		Password.sendKeys("Testing@123");
+
+	}
+	public void Click_on_the_login() throws InterruptedException {
+		WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
+		Login.click();
+		Thread.sleep(3000);
+		
+		   }
+	
+	public void select_the_test_community() {
+		WebElement Dropdown=driver.findElement(By.xpath("//span[@role='listbox']"));
+		Dropdown.sendKeys("Test Community");
+		
+	}
+	
+	public void click_on_the_continue() {
+		WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	Continue.click();
+	}
 
 public void click_on_the_manage() throws InterruptedException {
 	WebElement manage=driver.findElement(By.linkText("Manage"));
@@ -18,10 +56,11 @@ public void click_on_the_manage() throws InterruptedException {
 		    
 	}
 
-public void click_on_the_add_new_community_note() {
-	WebElement AddcomNote=driver.findElement(By.linkText("Add New Community Note"));
+public void click_on_the_add_new_community_note() throws InterruptedException {
+	WebElement AddcomNote=driver.findElement(By.xpath("//a[normalize-space()='Add New Community Note']"));
+	Thread.sleep(3000);
 	AddcomNote.click();
-	explicitWait(AddcomNote,30);
+	//explicitWait(AddcomNote,30);
     
 }
 public void enter_the_note() {
@@ -33,11 +72,14 @@ public void select_communities() {
     WebElement community=driver.findElement(By.xpath("//input[@id='community']"));
     community.click();
     community.sendKeys("Test Community");
+    
 }
+
 public void choose_a_start_date() {
 	WebElement StartDate=driver.findElement(By.xpath("//input[@id='startdate']"));
 	StartDate.sendKeys("6/22/2023");
 	  
+	
 }
 public void choose_a_end_date() {
 	WebElement EndDate=driver.findElement(By.xpath("//input[@id='enddate']"));

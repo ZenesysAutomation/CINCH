@@ -1,12 +1,46 @@
 package stepDefinition;
 
 import base.BaseClass;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class EditCommunityNotePageSteps extends BaseClass  {
+public class EditCommunityNotePageSteps extends BaseClass {
 	
 	EditCommunityNotePageSteps edit = new EditCommunityNotePageSteps();
+	
+	
+
+	@Given("Enter the Email")
+	public void enter_the_email() {
+	    edit.enter_the_email();
+	}
+
+	@Given("Enter the Password")
+	public void enter_the_password() {
+	  edit.enter_the_password();
+	}
+
+	@Given("click on the login Button")
+	public void click_on_the_login_button() {
+	   edit.click_on_the_login_button();
+	}
+
+	@Given("Select TestCommunity Dropdown")
+	public void select_test_community_dropdown() {
+	    edit.select_test_community_dropdown();
+	}
+
+	@Given("click on the Continue")
+	public void click_on_the_continue() {
+	  edit.click_on_the_continue();
+	}
+
+	@Given("click on the Manage window")
+	public void click_on_the_manage_window() {
+	    edit.click_on_the_manage_window();
+	}
+
 	
 	@When("Click on the Table")
 	public void click_on_the_table() {
@@ -38,7 +72,5 @@ public class EditCommunityNotePageSteps extends BaseClass  {
 	    edit.click_on_the_save_button();
 	}
 
-
-
-
 }
+
