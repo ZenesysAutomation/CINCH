@@ -4,10 +4,11 @@ import base.BaseClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import page.EditCommunityNotePage;
 
 public class EditCommunityNotePageSteps extends BaseClass {
 	
-	EditCommunityNotePageSteps edit = new EditCommunityNotePageSteps();
+	EditCommunityNotePage edit = new EditCommunityNotePage();
 	
 	
 
@@ -22,7 +23,7 @@ public class EditCommunityNotePageSteps extends BaseClass {
 	}
 
 	@Given("click on the login Button")
-	public void click_on_the_login_button() {
+	public void click_on_the_login_button() throws InterruptedException {
 	   edit.click_on_the_login_button();
 	}
 
@@ -37,7 +38,7 @@ public class EditCommunityNotePageSteps extends BaseClass {
 	}
 
 	@Given("click on the Manage window")
-	public void click_on_the_manage_window() {
+	public void click_on_the_manage_window() throws InterruptedException {
 	    edit.click_on_the_manage_window();
 	}
 
@@ -63,7 +64,7 @@ public class EditCommunityNotePageSteps extends BaseClass {
 	}
 
 	@When("Edit the End Date")
-	public void edit_the_end_date() {
+	public void edit_the_end_date() throws InterruptedException {
 	    edit.edit_the_end_date();
 	}
 
