@@ -174,15 +174,15 @@ public void user_select_the_client_type() throws InterruptedException {
 }
 
 public void user_select_the_schedule_group() throws InterruptedException {
-	WebElement ScheduleGroupBtn1 = driver.findElement(By.xpath("//span[@aria-owns='scheduleGroup_options']"));
-	ScheduleGroupBtn1.sendKeys("East Wing");
-	Thread.sleep(2000);	
-	WebElement ScheduleGroupBtn2=driver.findElement(By.xpath("(//span[@aria-owns='scheduleGroup_options'])[1]"));
-	ScheduleGroupBtn2.click();
-	Thread.sleep(2000);
-    //WebElement scheduleGroupBtn2 = driver.findElement(By.xpath("//*[@id=\"scheduleGroup_popup\"]/div/ul/li[1]"));
-//    ScheduleGroupBtn1.click();
-//    Thread.sleep(1000);
+;
+	
+	WebElement ScheduleGroupBtn = driver.findElement(By.id("scheduleGroup"));
+    Thread.sleep(3000);
+    ScheduleGroupBtn.sendKeys("East Wing");
+    WebElement ScheduleGroupBtn2 = driver.findElement(By.xpath("//*[@id=\"scheduleGroup_popup\"]/div/ul/li[1]"));
+    ScheduleGroupBtn2.click();
+    Thread.sleep(2000);		
+
 }
 
 public void user_select_the_status() throws InterruptedException {
@@ -194,11 +194,17 @@ public void user_select_the_status() throws InterruptedException {
 }
 
 public void user_select_the_track() throws InterruptedException {
-	  WebElement TrackBtn1 = driver.findElement(By.cssSelector(".e-ddl.e-lib.e-input-group.e-control-container.e-control-wrapper.e-success.e-valid-input.modified.valid[aria-live='assertive'][aria-haspopup='true'][aria-activedescendant='null'][aria-owns='clientype_options']"));
-	  TrackBtn1.sendKeys("East 1");
-	  Thread.sleep(2000);
+//	  WebElement TrackBtn1 = driver.findElement(By.cssSelector(".e-ddl.e-lib.e-input-group.e-control-container.e-control-wrapper.e-success.e-valid-input.modified.valid[aria-live='assertive'][aria-haspopup='true'][aria-activedescendant='null'][aria-owns='clientype_options']"));
+//	  TrackBtn1.sendKeys("East 1");
+//	  Thread.sleep(2000);
 	 
-	  //TrackBtn1.click();     
+	  WebElement TrackBtn = driver.findElement(By.xpath("//input[@placeholder=\"Select a Track\"]"));
+      Thread.sleep(2000);
+      TrackBtn.sendKeys("East 2");
+      WebElement Trackbtn2 = driver.findElement(By.xpath("//*[@id=\"clientype_popup\"]/div/ul/li[2]"));
+      Trackbtn2.click();
+      Thread.sleep(2000);
+	      
 }
 
 public void verify_that_add_new_contact_button() throws InterruptedException {
