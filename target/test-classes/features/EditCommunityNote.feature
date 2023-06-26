@@ -1,7 +1,7 @@
 Feature: Edit Community Note 
 
 
-@smoke
+
 Scenario: Verify the Edit Community Note Functionality
 Given Enter the Email
 Given Enter the Password

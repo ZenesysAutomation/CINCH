@@ -64,10 +64,7 @@
     <version>5.9.3</version>
     <scope>test</scope>
 	</dependency>	
-		
   </dependencies>
-  
-  
   
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -112,10 +109,11 @@
           <version>3.0.0</version>
                
         </plugin>
-      </plugins>  
+      </plugins>
     </pluginManagement>
   </build>
 </project>
+
 
 
 

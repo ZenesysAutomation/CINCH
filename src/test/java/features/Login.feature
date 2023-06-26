@@ -1,6 +1,6 @@
 Feature: login Functionality
 
-@smoke
+
 Scenario Outline: Verify The login Functionality
 
 #Given Launch the URL
