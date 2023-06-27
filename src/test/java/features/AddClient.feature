@@ -1,7 +1,7 @@
 
 Feature: Add New Client
 
-@smoke
+
 Scenario: Verify the Add New Client Functionality
 
 When User Enter the Valid Email

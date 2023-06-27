@@ -10,7 +10,7 @@ public class AddClientSteps extends BaseClass{
 	AddClientPage steps = new AddClientPage();
 	
 	@When("User Enter the Valid Email")
-	public void user_enter_the_valid_email() {
+	public void user_enter_the_valid_email() throws InterruptedException {
 	    steps.user_enter_the_valid_email();
 	}
 
@@ -211,7 +211,7 @@ public class AddClientSteps extends BaseClass{
 	}
 
 	@Then("Click on the save button")
-	public void click_on_the_save_button() {
+	public void click_on_the_save_button() throws InterruptedException {
 	    steps.click_on_the_save_button();
 	}
 
