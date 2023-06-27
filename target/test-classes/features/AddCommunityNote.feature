@@ -1,6 +1,6 @@
 Feature: Manage Functionality
 
- 
+
 Scenario: Verify the Manage Functionality
 Given User enters Email 
 Given User enters Password

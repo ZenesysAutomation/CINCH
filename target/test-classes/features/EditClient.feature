@@ -1,6 +1,6 @@
 Feature: Edit Client 
 
-@smoke
+
 Scenario: Verify the Edit Client Functionality
 
 Given Check the User Email

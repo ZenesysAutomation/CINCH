@@ -2,10 +2,8 @@ package page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
-
 import base.BaseClass;
-import io.cucumber.java.en.Given;
+
 
 public class AddCommunityNotePage extends BaseClass {
 	
@@ -49,8 +47,7 @@ public class AddCommunityNotePage extends BaseClass {
 
 public void click_on_the_manage() throws InterruptedException {
 	WebElement manage=driver.findElement(By.linkText("Manage"));
-//	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-//	wait.until(ExpectedConditions.visibilityOf(manage));
+
 	Thread.sleep(3000);
 	manage.click();
 		    
@@ -60,7 +57,7 @@ public void click_on_the_add_new_community_note() throws InterruptedException {
 	WebElement AddcomNote=driver.findElement(By.xpath("//a[normalize-space()='Add New Community Note']"));
 	Thread.sleep(3000);
 	AddcomNote.click();
-	//explicitWait(AddcomNote,30);
+	
     
 }
 public void enter_the_note() {
