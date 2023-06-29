@@ -46,8 +46,6 @@ public class EditCommunityNotePage extends BaseClass {
 	
 	public void click_on_the_manage_window() throws InterruptedException {
 		WebElement manage=driver.findElement(By.linkText("Manage"));
-//		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-//		wait.until(ExpectedConditions.visibilityOf(manage));
 		Thread.sleep(3000);
 		manage.click();
 	}
@@ -58,34 +56,41 @@ public void click_on_the_table() {
      
 	}
 
-public void edit_the_note() {
+public void edit_the_note() throws InterruptedException {
 	WebElement txtUpdateNote = driver.findElement(By.id("note"));
     txtUpdateNote.clear();
-    txtUpdateNote.sendKeys("edit functionlity");
+    txtUpdateNote.click();
+    txtUpdateNote.sendKeys("Data editable");
+    Thread.sleep(3000);
 }
 
-public void edit_the_communities() {
+public void edit_the_communities() throws InterruptedException {
 	 WebElement community=driver.findElement(By.xpath("//input[@id='community']"));
-	    community.click();
+	    community.clear();
+	    Thread.sleep(3000);
 	    community.sendKeys("New England Club");
+	    Thread.sleep(3000);
 }
-public void edit_the_start_date() {
+public void edit_the_start_date() throws InterruptedException {
 	WebElement UpdateStartdate = driver.findElement(By.id("startdate"));
 	UpdateStartdate.clear();
+	Thread.sleep(3000);
 	UpdateStartdate.sendKeys("6/25/2023");
+	Thread.sleep(3000);
 }
      
 public void edit_the_end_date() throws InterruptedException {
 	   WebElement EditEnddate = driver.findElement(By.id("enddate"));
        EditEnddate.clear();
-       EditEnddate.sendKeys("6/28/2023");
+       EditEnddate.sendKeys("7/28/2023");
        Thread.sleep(2000);
        
     
 }
-public void click_on_the_save_button() {
+public void click_on_the_save_button() throws InterruptedException {
 	WebElement savebtn = driver.findElement(By.xpath("//button[contains(text(),'Save')]"));
 	savebtn.click();
+	Thread.sleep(6000);
     
 }
 

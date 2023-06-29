@@ -49,17 +49,17 @@ public class EditCommunityNotePageSteps extends BaseClass {
 	}
 
 	@When("Edit the Note")
-	public void edit_the_note() {
+	public void edit_the_note() throws InterruptedException {
 	    edit.edit_the_note();
 	}
 
 	@When("Edit the communities")
-	public void edit_the_communities() {
+	public void edit_the_communities() throws InterruptedException {
 	  edit.edit_the_communities();
 	}
 
 	@When("Edit the Start Date")
-	public void edit_the_start_date() {
+	public void edit_the_start_date() throws InterruptedException {
 	   edit.edit_the_start_date();
 	}
 
@@ -69,7 +69,7 @@ public class EditCommunityNotePageSteps extends BaseClass {
 	}
 
 	@Then("Click on the save Button")
-	public void click_on_the_save_button() {
+	public void click_on_the_save_button() throws InterruptedException {
 	    edit.click_on_the_save_button();
 	}
 
