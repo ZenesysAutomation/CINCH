@@ -1,5 +1,7 @@
 package page;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -72,7 +74,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 	Thread.sleep(6000);
 }
 	
-		 public void user_enter_the_assessment_date() 
+		public void user_enter_the_assessment_date() 
 		 {
 				WebElement Assessmentdate=driver.findElement(By.xpath("//input[@id='assessment-date']"));
 				Assessmentdate.clear();
@@ -123,8 +125,8 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			{
 				WebElement Precautions=driver.findElement(By.xpath("//textarea[@id='precautions']"));
 				explicitWait(Precautions,15);
+				//Precautions.clear();
 				Thread.sleep(3000);
-				Precautions.clear();
 				Precautions.sendKeys("Testing Demo");
 			}
 
@@ -133,7 +135,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				WebElement Restrictions =driver.findElement(By.xpath("//textarea[@id='functionallimitations']"));
 				explicitWait(Restrictions,15);
 				Thread.sleep(3000);
-				Restrictions.clear();
+				//Restrictions.clear();
 				Restrictions .sendKeys("Testing Demo");
 				Thread.sleep(6000);
 			    
@@ -152,9 +154,12 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			public void user_enter_the_condition_notes() throws InterruptedException 
 			{
 				WebElement ConditionNotes =	driver.findElement(By.xpath("//textarea[@id='conditionnotes']"));
-				ConditionNotes.clear();
+				//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+				//manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+				Thread.sleep(6000);
+				//ConditionNotes.clear();
 				ConditionNotes.sendKeys("Testing Environment");
-				Thread.sleep(3000);
+				Thread.sleep(6000);
 			}
 
 			public void user_enter_the_recent_hospital_rehab_stays() throws InterruptedException 
@@ -176,6 +181,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			public void user_enter_the_how_many_times_per_day() throws InterruptedException 
 			{
 				WebElement MedicationReminders= driver.findElement(By.xpath("//input[@id='medremindercount']"));
+				MedicationReminders.clear();
 				MedicationReminders.sendKeys("4");
 				Thread.sleep(3000);
 			    
@@ -250,6 +256,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			public void user_enter_the_dressing_grooming_details() throws InterruptedException 
 			{
 				WebElement Grooming =driver.findElement(By.xpath("//textarea[@id='dressing']"));
+				Grooming.clear();
 				Grooming.sendKeys("Testing demo v5.0");
 				
 				
@@ -258,6 +265,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			public void user_enter_the_continence_toileting() throws InterruptedException
 			{
 				WebElement ContinenceToileting=driver.findElement(By.xpath("(//textarea[@id='continence'])[1]"));
+				ContinenceToileting.clear();
 				ContinenceToileting.sendKeys("Testing demo v5");
 				
 			}
@@ -265,6 +273,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			public void user_enter_the_eating_details() throws InterruptedException 
 			{
 				WebElement Eating=driver.findElement(By.xpath("(//textarea[@id='eating'])[1]"));
+				Eating.clear();
 				Eating.sendKeys("Testing demo v6");
 				
 			    
@@ -273,6 +282,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			public void user_enter_the_meals_details() throws InterruptedException 
 			{
 				WebElement MealsDetails=driver.findElement(By.cssSelector("#meals"));
+				MealsDetails.clear();
 				 MealsDetails.sendKeys("Testing demo v7");
 				 
 			    
@@ -281,6 +291,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			public void user_enter_the_laundry_details() throws InterruptedException
 			{
 				WebElement Laundary=driver.findElement(By.cssSelector("#laundry"));
+				Laundary.clear();
 				Laundary.sendKeys("Testing demo v8");
 				
 			}
@@ -308,12 +319,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			public void select_the_radio_button() 
 			{
 				WebElement RadioButton=driver.findElement(By.xpath("//span[normalize-space()='Yes']"));
-//				 boolean isSelected = RadioButton.isSelected();
-//			     System.out.println("Is radio button selected? " + isSelected);
-			//
-//			     if (!isSelected) {
-//			    	 RadioButton.click();
-//			     }
+				
 				RadioButton.click();
 			}
 
@@ -321,6 +327,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			{
 				WebElement Enviromental= driver.findElement(By.xpath("//textarea[@id='saftey']"));
 				Thread.sleep(3000);
+				Enviromental.clear();
 				Enviromental.sendKeys("Testing demo v10");
 				Thread.sleep(3000);
 				  
@@ -330,6 +337,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			{
 				WebElement EconomicsStatus = driver.findElement(By.xpath("//textarea[@id='economic-status']"));
 				Thread.sleep(3000);
+				EconomicsStatus.clear();
 				EconomicsStatus.sendKeys("Testing Demo v11");
 				Thread.sleep(5000);
 			}
@@ -342,22 +350,10 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				
 			}
 
-//			public void save_the_details() throws InterruptedException 
-//			{
-//				WebElement Save=driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
-//				Thread.sleep(4000);
-//				JavascriptExecutor js = (JavascriptExecutor)driver;
-//				  js.executeScript("arguments[0].click()",Save);
-//				//Save.click();
-//				Thread.sleep(6000);
-//			    
-//			}
 
 			public void complete_the_details() throws InterruptedException
 			{
-			WebElement Cmpltbtn=  driver.findElement(By.xpath("(//button[normalize-space()='Complete'])[1]"));
-//				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-//				wait.until(ExpectedConditions.elementToBeClickable(Cmpltbtn));
+			WebElement Cmpltbtn=  driver.findElement(By.xpath("(//button[normalize-space()='Complete'])[1]"));				
 			Thread.sleep(4000);
 				JavascriptExecutor js = (JavascriptExecutor)driver;
 			  js.executeScript("arguments[0].click()",Cmpltbtn);
@@ -374,10 +370,11 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			
 			public void click_on_the_care_plan() throws InterruptedException {
 				WebElement CarePlan=driver.findElement(By.xpath("//div[@class ='e-toolbar-items']//div[5]"));
-				Thread.sleep(40000);
-				JavascriptExecutor js = (JavascriptExecutor)driver;
-			    js.executeScript("window.scrollBy(0, 8000)");
+				Thread.sleep(4000);
 			    CarePlan.click();
+			    Thread.sleep(4000);
+			    JavascriptExecutor js = (JavascriptExecutor)driver;
+			    js.executeScript("window.scrollBy(0, 50000)");
 			    Thread.sleep(4000);
 			}
 			
@@ -409,7 +406,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			
 			public void sign_as_a_client() throws InterruptedException {
 				
-				   WebElement canvaas2 = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div[2]/div/div/form/div[2]/div/div/div[1]/div[2]/div[2]/div[2]/div/div[11]/div[2]/canvas"));
+				   WebElement canvaas2 = driver.findElement(By.xpath("(//canvas[@aria-label='signature'])[2]"));
 				   Thread.sleep(10000);
 	                // Create an instance of the Actions class
 	                Actions builder2 = new Actions(driver);

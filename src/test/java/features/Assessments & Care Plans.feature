@@ -1,7 +1,7 @@
 Feature: Assessments & Care Plans 
 
 
-@smoke
+
 Scenario: Verify the Assessments & Care Plans
 
 When user enter Email
@@ -16,7 +16,7 @@ Then User Enter the Assessment Date
 Then User Enter the Visit Schedule
 Then User Enter the Goals of Service
 Then User Enter the Family/Social Network
-Then User Enter the Special Dietary needs 
+Then User Enter the Special Dietary needs
 Then User Enter the Precautions 
 Then User Enter the Functional Limitations/Restrictions
 Then User click on the Client Status Tab
