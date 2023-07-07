@@ -31,7 +31,6 @@ Then Save the Bathing Details
 When click on the ADLs 
 When Click on the Continence And Toileting
 Then Click on the Assistance Level
-#Then Choose the No Assistance
 Then save the Continence And Toileting Details
 When Click on the Again ADLs 
 Then Click on the dressing And Grooming 
@@ -74,13 +73,15 @@ Then Click on the Meals
 Then Select the Meals Assistance Level No Assistance
 And Save the Meals Details
 Then User Again click on the IADLS
+Then User click on the Medication
 And User select the Medication Assistance Level as Assistance
 Then Select the tasks with Check Blood Pressure
 And I Select the Visits Time
 And Enter the CareGiver Instructions
 And Update the Medication Details
 And Save the Medication Details 
-
+Then Click on the Add to Schedule
+Then Click on the Finalize Visits
  
 
 

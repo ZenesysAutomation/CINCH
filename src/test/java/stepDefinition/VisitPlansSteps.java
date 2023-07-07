@@ -50,23 +50,14 @@ public void click_on_the_user_first_name() throws InterruptedException {
 }
 
 
-
-/*@When("Create Visit Plan")
-public void create_visit_plan(String recurrence) throws InterruptedException {
-	//@When
-	visitplan.create_visit_plan("Single");
-	Thread.sleep(15000);
-	visitplan.create_visit_plan("Weekly");
-}*/
-
 /*@Then("Click on the Add Visit Configuration")
 public void click_on_the_add_visit_configuration() throws InterruptedException {
 	visitplan.click_on_the_add_visit_configuration();
 }
 
 @Then("Select the Days as Sunday")
-public void select_the_days_as_sunday() throws InterruptedException {
-	visitplan.select_the_days_as_sunday();
+public boolean select_the_days_as_sunday() throws InterruptedException {
+	return visitplan.select_the_days_as_sunday();
 }
 
 @Then("Select the Start Time")
@@ -91,15 +82,10 @@ public void select_the_start_date() throws InterruptedException {
 
 @Then("click on the Save Button")
 public void click_on_the_save_button() throws InterruptedException {
-	boolean missingAssignTask=visitplan.click_on_the_save_button();
-	if(missingAssignTask) {
-		visitplan.click_on_the_ad_ls_tab();
-	}
-//	else {
-//		
-//	}
-		
-}*/
+	visitplan.click_on_the_save_button();
+
+	}*/
+
 
 @Then("Verify that if status is Shows Missing Assigned Tasks")
 public void verify_that_if_status_is_shows_missing_assigned_tasks() {
@@ -155,13 +141,10 @@ public void click_on_the_continence_and_toileting() throws InterruptedException 
 	visitplan.click_on_the_continence_and_toileting();
 }
 @Then("Click on the Assistance Level")
-public void click_on_the_assistance_level() {
- 
+public void click_on_the_assistance_level() throws InterruptedException {
+	visitplan.click_on_the_assistance_level();
 }
-//@Then("Choose the No Assistance")
-//public void choose_the_no_assistance() {
-//   
-//}
+
 @Then("save the Continence And Toileting Details")
 public void save_the_continence_and_toileting_details() throws InterruptedException {
 	visitplan.save_the_continence_and_toileting_details();
@@ -243,7 +226,7 @@ public void click_on_the_mobility() throws InterruptedException {
 	
 }
 @Then("Select the Assistance Level as  a Limited Assistance")
-public void select_the_assistance_level_as_a_limited_assistance() {
+public void select_the_assistance_level_as_a_limited_assistance() throws InterruptedException {
 	visitplan.select_the_assistance_level_as_a_limited_assistance();
 	
 }
@@ -258,7 +241,7 @@ public void select_the_visits_time() throws InterruptedException {
 }
 
 @And("Enter Caregiver Instructions")
-public void enter_caregiver_instructions() {
+public void enter_caregiver_instructions() throws InterruptedException {
 	visitplan.enter_caregiver_instructions();
 	
 }
@@ -272,153 +255,167 @@ public void save_the_mobility_details() throws InterruptedException {
 	visitplan.save_the_mobility_details();
 }
 @When ("User Click on the IADLS Tab")
-public void user_click_on_the_ia_dls_tab() {
-	
+public void user_click_on_the_ia_dls_tab() throws InterruptedException {
+	visitplan.user_click_on_the_ia_dls_tab();
 	
 }
 
 @And ("Click on the Household Tasks")
-public void click_on_the_household_tasks() {
-	
+public void click_on_the_household_tasks() throws InterruptedException {
+	visitplan.click_on_the_household_tasks();
 	
 }
 
 @And ("Select the Assistance Level as a Assistance")
-public void select_the_assistance_level_as_a_assistance() {
-	
+public void select_the_assistance_level_as_a_assistance() throws InterruptedException {
+	visitplan.select_the_assistance_level_as_a_assistance();
 	
 }
 
 @And ("Click on the Make Bed")
-public void click_on_the_make_bed() {
-	
+public void click_on_the_make_bed() throws InterruptedException {
+	visitplan.click_on_the_make_bed();
 	
 }
 @And("Select the Make bed Visits Time")
-public void select_the_make_bed_visits_time() {
-	
+public void select_the_make_bed_visits_time() throws InterruptedException {
+	visitplan.select_the_make_bed_visits_time();
 	
 }
 @Then ("Enter the CareGIVER Instructions")
-public void enter_the_caregiver_instructions1() {
-	
+public void enter_the_caregiver_instructions1() throws InterruptedException {
+	visitplan.enter_the_caregiver_instructions1();
 }
 @Then ("Update the Make bed Details")
-public void update_the_make_bed_details() {
-	
+public void update_the_make_bed_details() throws InterruptedException {
+	visitplan.update_the_make_bed_details();
 	
 }
 
 @And ("Save the Household Tasks Details")
-public void save_the_household_tasks_details() {
-	
+public void save_the_household_tasks_details() throws InterruptedException {
+	visitplan.save_the_household_tasks_details();
 	
 }
 @Then ("User Again click on the IADLs")
-public void user_again_click_on_the_iadls() {
-	
+public void user_again_click_on_the_iadls() throws InterruptedException {
+	visitplan.user_again_click_on_the_iadls();
 	
 } 
 
 @And ("Click on the Laundry")
-public void click_on_the_laundry() {
-	
+public void click_on_the_laundry() throws InterruptedException {
+	visitplan.click_on_the_laundry();
 	
 }
 
 @Then("Select Laundry Assistance Level as a Assistance")
-public void select_laundry_assistance_level_as_a_assistance(){
-	
+public void select_laundry_assistance_level_as_a_assistance() throws InterruptedException{
+	visitplan.select_laundry_assistance_level_as_a_assistance();
 }
 
 @Then ("Then Click on the Tasks")
-public void click_on_the_tasks() {
-	
+public void click_on_the_tasks() throws InterruptedException {
+	visitplan.click_on_the_tasks();
 	
 } 
 @Then ("User Select the Visits Time")
-public void user_select_the_visits_time() {
-	
+public void user_select_the_visits_time() throws InterruptedException {
+	visitplan.user_select_the_visits_time();
 	
 }
 @And ("Enter Caregiver Instruction")
-public void enter_caregiver_instruction() {
-	
+public void enter_caregiver_instruction() throws InterruptedException {
+	visitplan.enter_caregiver_instruction();
 	
 }
 
 @And ("Update the Laundry Details")
-public void update_the_laundry_details() {
-	
+public void update_the_laundry_details() throws InterruptedException {
+	visitplan.update_the_laundry_details();
 	
 }
 
 @And ("Save the Laundry Details")
-public void save_the_laundry_details() {
-	
+public void save_the_laundry_details() throws InterruptedException {
+	visitplan.save_the_laundry_details();
 	
 }
 @Then ("Again Click on the IADLs")
-public void again_click_on_the_iadls() {
-	
+public void again_click_on_the_iadls() throws InterruptedException {
+	visitplan.again_click_on_the_iadls(); 
 }
 
 @Then ("Click on the Meals")
-public void click_on_the_meals() {
-	
+public void click_on_the_meals() throws InterruptedException {
+	visitplan.click_on_the_meals();
 }
 
 @Then ("Select the Meals Assistance Level No Assistance")
-public void select_the_meals_assistance_level_no_assistance() {
-	
+public void select_the_meals_assistance_level_no_assistance() throws InterruptedException {
+	visitplan.select_the_meals_assistance_level_no_assistance();
 	
 }
 @And ("Save the Meals Details")
-public void save_the_meals_details() {
-	
+public void save_the_meals_details() throws InterruptedException {
+	visitplan.save_the_meals_details();
 }
 
 @Then("User Again click on the IADLS")
-public void user_again_click_on_the_iadls1() {
-		
+public void user_again_click_on_the_iadls1() throws InterruptedException {
+	visitplan.user_again_click_on_the_iadls1();
 		
 }
+
+@Then ("User click on the Medication")
+public void user_click_on_the_medication() throws InterruptedException {
+	visitplan.user_click_on_the_medication();
+}
+
 @And ("User select the Medication Assistance Level as Assistance")
-public void user_select_the_medication_assistance_level_as_assistance() {
-	
+public void user_select_the_medication_assistance_level_as_assistance() throws InterruptedException {
+	visitplan.user_select_the_medication_assistance_level_as_assistance();
 	
 }
 @Then ("Select the tasks with Check Blood Pressure")
-public void select_the_tasks_with_check_blood_pressure() {
-	
+public void select_the_tasks_with_check_blood_pressure() throws InterruptedException {
+	visitplan.select_the_tasks_with_check_blood_pressure();
 	
 }
 
 @And ("I Select the Visits Time")
-public void i_select_the_visits_time() {
-	
+public void i_select_the_visits_time() throws InterruptedException {
+	visitplan.i_select_the_visits_time();
 }
 	
 	
 @And ("Enter the CareGiver Instructions")
-public void enter_the_careGiver_instructions() {
-	
+public void enter_the_careGiver_instructions() throws InterruptedException {
+	visitplan.enter_the_careGiver_instructions(); 
 	
 }
 
 @And ("Update the Medication Details")
-public void update_the_medication_details () {
-	
+public void update_the_medication_details () throws InterruptedException {
+	visitplan.update_the_medication_details ();
 }
 
 @And ("Save the Medication Details")
-public void save_the_medication_details () {
-	
+public void save_the_medication_details () throws InterruptedException {
+	visitplan.save_the_medication_details();
 	
 }
 
+@Then ("Click on the Add to Schedule")
+public void click_on_the_add_to_schedule() throws InterruptedException {
+	visitplan.click_on_the_add_to_schedule();
 	
-
+}
+@Then ("Click on the Finalize Visits")
+public void click_on_the_finalize_visits() throws InterruptedException{
+	visitplan.click_on_the_finalize_visits();
+	
+}
 
 
 
