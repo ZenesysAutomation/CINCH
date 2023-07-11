@@ -8,17 +8,73 @@ Then User select the Test Community
 Then User click on the Continue Button
 Then User click on the Visit Plans
 Then Click on the User first Name 
-#Then Click on the Add Visit Configuration
+Then Click on the Add Visit Configuration
+
+
+Scenario: Verify the Visit PlansFunctionalities
+
+Then Select the Single Day
+Then Select the Recurrence
+Then Select the Start Time
+Then Select a Duration 
+#Then Select the Recurrence 
+Then Select the Start Date 
+Then click on the Save Button
+Then Save the all Single Visit Details
+
+
+Scenario: Visit plans Functionality
+
+Given user select all Days
+Then select start time
+Then select Duration
+Then select Weekly recurrence
+Then select start Date
+Then User Click on the save Button
+
+
+Scenario: Add visits for a custom Date Range
+
+Given user select all the days
+Then User Select Start Time
+Then User select a Duration
+Then User Select the Weekly recurrence
+Then User select start date 
+Then user Click on the Use Custom End Date toggle 
+And User enter the End Date
+Then Save the visits details
+Then Save the all Visits Plan Details
 
 @smoke
-Scenario: Verify the Visit Plans (ADLs and IADLs) Functionalities
+Scenario: Change the visit duration for series and Delete a visit series
 
-#Then Select the Days as Sunday
-#Then Select the Start Time
-#Then Select a Duration 
-#Then Select the Recurrence 
-#Then Select the Start Date 
-#Then click on the Save Button
+Given Select all days
+When select Start Time
+Then select visit Duration as 30 minute visit
+Then select the Weekly recurrence
+Then select start date 
+Then Click on save button
+Then Save the all Visits plans Details
+Given User click on the Delete Icon 
+Then Delete visit Configurations Pop Up is opened  and click on the Delete button
+And Save the delete Visit Series
+
+@smoke
+Scenario: Delete a Single visit
+Given Select A Single Day
+Then select a single Recurrence
+Then choose Start Time
+Then Select Duration
+#Then select a single Recurrence
+And Enter the Start Date
+And Save the single visit details
+And Click on the delete Icon and Pop is Displayed Confirm that you want to delete this item
+Then  Click on the Delete Button
+
+
+
+Scenario: Verify The ADLs and IADLS Functionalities
+
 Then Verify that if status is Shows Missing Assigned Tasks
 When Click on the ADLs Tab
 Then Click on the Bathing
@@ -88,14 +144,6 @@ Then Click on the Finalize Visits
 
 
 
-
-Scenario: Visit plans Functionality
-Given user select all Days
-Then select start time
-Then select Duration
-Then select Weekly recurrence
-Then select start Date
-Then User Click on the save Button
 
 
 
