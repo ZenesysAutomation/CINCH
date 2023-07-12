@@ -93,9 +93,13 @@ public void click_on_the_save_button() throws InterruptedException {
 	}
 
 @Then ("Save the all Single Visit Details")
-public void save_the_all_single_visit_details() {
+public void save_the_all_single_visit_details() throws InterruptedException {
+	visitplan.save_the_all_single_visit_details();
 	
-	
+}
+@Then ("User Go to the Add Visit Configuration")
+public void user_go_to_the_add_visit_configuration() throws InterruptedException {
+	visitplan.user_go_to_the_add_visit_configuration();
 }
 
 @Given("user select all Days")
@@ -127,161 +131,6 @@ public void select_start_date() throws InterruptedException {
 public void user_click_on_the_save_button() throws InterruptedException {
     visitplan.user_click_on_the_save_button();
 }
-
-@Given ("user select all the days")
-public void user_select_all_the_days() throws InterruptedException {
-	visitplan.user_select_all_the_days();
-	
-}
-
-
-@Then("User Select Start Time")
-public void user_select_start_time() throws InterruptedException {
-	visitplan.user_select_start_time();
-}
-@Then("User select a Duration")
-public void user_select_a_duration() throws InterruptedException {
-	visitplan.user_select_a_duration();
-	
-}
-@Then("User Select the Weekly recurrence")
-	public void user_select_the_weekly_recurrence() throws InterruptedException {
-	visitplan.user_select_the_weekly_recurrence();
-}	
-@Then ("User select start date") 
-public void user_select_start_date() throws InterruptedException {
-	visitplan.user_select_start_date();
-	
-}
-
-@Then ("user Click on the Use Custom End Date toggle")
-public void user_click_on_the_use_custom_end_date_toggle() throws InterruptedException {
-	visitplan.user_click_on_the_use_custom_end_date_toggle();
-}
-
-@And ("User enter the End Date")
-public void user_enter_the_end_date() throws InterruptedException {
-	visitplan.user_enter_the_end_date();
-	
-}
-
-
-@Then ("Save the visits details")
-public void save_the_visits_details() throws InterruptedException {
-	visitplan.save_the_visits_details();
-	
-}
-
-@Then ("Save the all Visits Plan Details")
-public void save_the_all_visits_plan_details() throws InterruptedException {
-	visitplan.save_the_all_visits_plan_details();
-}
-
-@Given ("Select all days")
-public void select_all_days() throws InterruptedException {
-	visitplan.select_all_days();
-	
-}
-
-@When ("select Start Time")
-public void select_start_time1() throws InterruptedException {
-	visitplan.select_start_time1();
-			
-	
-}
-@Then ("select visit Duration as 30 minute visit")
-public void select_visit_duration_as_30_minute_visit () throws InterruptedException {
-	visitplan.select_visit_duration_as_30_minute_visit (); 
-}
-
-@Then ("select the Weekly recurrence")
-public void select_the_weekly_recurrence() throws InterruptedException {
-	visitplan.select_the_weekly_recurrence();
-}
-
-@Then ("select start date")
-public void select_start_date1() throws InterruptedException {
-	visitplan.select_start_date1();
-}
-
-@Then ("Click on save button")
-public void click_on_save_button() throws InterruptedException{
-	visitplan.click_on_save_button();
-}
-
-@Then ("Save the all Visits plans Details")
-public void save_the_all_visits_plans_details () throws InterruptedException {
-	visitplan.save_the_all_visits_plans_details();
-	
-}
-
-@Given ("User click on the Delete Icon")
-public void user_click_on_the_delete_icon() throws InterruptedException {
-	visitplan.user_click_on_the_delete_icon();
-	
-}
-@Then ("Delete visit Configurations Pop Up is opened  and click on the Delete button")
-public void delete_visit_configurations_pop_up_is_opened_and_click_on_the_delete_button() throws InterruptedException {
-	visitplan.delete_visit_configurations_pop_up_is_opened_and_click_on_the_delete_button();
-	
-}
-
-@And ("Save the delete Visit Series")
-public void save_the_delete_visit_series() {
-	try {
-		visitplan.save_the_delete_visit_series();
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	
-}
-
-@Given ("Select A Single Day")
-public void select_a_single_day() {
-	visitplan.select_a_single_day();
-	
-}
-
-@Then ("select a single Recurrence")
-public void select_a_single_recurrence() throws InterruptedException {
-	visitplan.select_a_single_recurrence();
-	
-}
-@Then ("choose Start Time")
-public void choose_start_time() throws InterruptedException {
-	visitplan.choose_start_time();
-}
-@Then ("Select Duration")
-public void select_duration1() throws InterruptedException {
-	visitplan.select_duration1();
-	
-}
-/*@Then ("select a single Recurrence")
-public void select_a_single_recurrence() {
-	
-	
-}*/
-@And ("Enter the Start Date")
-public void enter_the_start_date() throws InterruptedException {
-	visitplan.enter_the_start_date();
-}
-@And ("Save the single visit details")
-public void save_the_single_visit_details() throws InterruptedException {
-	visitplan.save_the_single_visit_details();
-	
-}
-@And ("Click on the delete Icon and Pop is Displayed Confirm that you want to delete this item")
-public void click_on_the_delete_Icon_and_Pop_is_displayed_confirm_that_you_want_to_delete_this_item() throws InterruptedException{
-	visitplan.click_on_the_delete_Icon_and_Pop_is_displayed_confirm_that_you_want_to_delete_this_item();
-}
-@Then ("Click on the Delete Button")
-public void click_on_the_delete_button() throws InterruptedException {
-	visitplan.click_on_the_delete_button();
-	
-}
-
-
 
 @Then("Verify that if status is Shows Missing Assigned Tasks")
 public void verify_that_if_status_is_shows_missing_assigned_tasks() {
@@ -602,61 +451,327 @@ public void save_the_medication_details () throws InterruptedException {
 	
 }
 
-@Then ("Click on the Add to Schedule")
-public void click_on_the_add_to_schedule() throws InterruptedException {
-	visitplan.click_on_the_add_to_schedule();
+@Then ("Click on the Add to Schedule and Finalize Visits")
+public void click_on_the_add_to_schedule_and_finalize_visits() throws InterruptedException {
+	visitplan.click_on_the_add_to_schedule_and_finalize_visits();
 	
 }
-@Then ("Click on the Finalize Visits")
+@Then ("Click on the Add to Schedule and Finalize Visits again")
+public void click_on_the_add_to_schedule_and_finalize_visits_repeat() throws InterruptedException {
+	visitplan.click_on_the_add_to_schedule_and_finalize_visits();
+	
+}
+/*@Then ("Click on the Finalize Visits")
 public void click_on_the_finalize_visits() throws InterruptedException{
 	visitplan.click_on_the_finalize_visits();
 	
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-/*@Given("user select all Days")
-public void user_select_all_days() throws InterruptedException {
-	visitplan.user_select_all_days();
-}
-
-@Then("select start time")
-public void select_start_time() throws InterruptedException {
-	visitplan.select_start_time();
-}
-
-@Then("select Duration")
-public void select_duration() throws InterruptedException {
-	visitplan.select_duration();
-}
-
-@Then("select Weekly recurrence")
-public void select_weekly_recurrence() throws InterruptedException {
-	visitplan.select_weekly_recurrence();
-}
-
-@Then("select start Date")
-public void select_start_date() throws InterruptedException {
-	visitplan.select_start_date();
-}
-
-@Then("User Click on the save Button")
-public void user_click_on_the_save_button() throws InterruptedException {
-    visitplan.user_click_on_the_save_button();
-}
-
-
-
-
 }*/
+
+@Then("Check the Add Visit Configuration Button")
+public void check_the_add_visit_configuration_button() throws InterruptedException {
+	visitplan.check_the_add_visit_configuration_button();
+}
+
+
+@Given ("user select all the days")
+public void user_select_all_the_days() throws InterruptedException {
+	visitplan.user_select_all_the_days();
+	
+}
+
+
+@Then("User Select Start Time")
+public void user_select_start_time() throws InterruptedException {
+	visitplan.user_select_start_time();
+}
+@Then("User select a Duration")
+public void user_select_a_duration() throws InterruptedException {
+	visitplan.user_select_a_duration();
+	
+}
+@Then("User Select the Weekly recurrence")
+	public void user_select_the_weekly_recurrence() throws InterruptedException {
+	visitplan.user_select_the_weekly_recurrence();
+}	
+@Then ("User select start date") 
+public void user_select_start_date() throws InterruptedException {
+	visitplan.user_select_start_date();
+	
+}
+
+@Then ("user Click on the Use Custom End Date toggle")
+public void user_click_on_the_use_custom_end_date_toggle() throws InterruptedException {
+	visitplan.user_click_on_the_use_custom_end_date_toggle();
+}
+
+@And ("User enter the End Date")
+public void user_enter_the_end_date() throws InterruptedException {
+	visitplan.user_enter_the_end_date();
+	
+}
+
+
+@Then ("Save the visits details")
+public void save_the_visits_details() throws InterruptedException {
+	visitplan.save_the_visits_details();
+	
+}
+
+@Then ("Save the all Visits Plan Details")
+public void save_the_all_visits_plan_details() throws InterruptedException {
+	visitplan.save_the_all_visits_plan_details();
+}
+
+@Then ("User click on the Add Visit Configuration")
+public void user_click_on_the_add_visit_configuration() throws InterruptedException {
+	visitplan.user_click_on_the_add_visit_configuration(); 
+	
+}
+@When ("User select the all days")
+public void user_select_the_all_days() throws InterruptedException {
+	visitplan.user_select_the_all_days();
+}
+@Then ("user select the start time")
+public void user_select_the_start_time() throws InterruptedException {
+	visitplan.user_select_the_start_time();
+}
+@Then ("user select the duration 65 Minute Visit")
+public void user_select_the_duration_65_minute_visit() throws InterruptedException {
+	visitplan.user_select_the_duration_65_minute_visit();
+}
+@And ("user select the weekly recurrence")
+public void user_select_the_weekly_recurrence1() throws InterruptedException {
+	visitplan.user_select_the_weekly_recurrence1();
+}
+@And ("user select the start date")
+public void user_select_the_start_date() throws InterruptedException {
+	visitplan.user_select_the_start_date();
+}
+@And ("save the Everday visit plans Details")
+public void save_the_everday_visit_plans_details() throws InterruptedException {
+	visitplan.save_the_everday_visit_plans_details();
+	
+}
+@And ("Save the All visit plans Details")
+public void save_the_all_visit_plans_details() throws InterruptedException {
+	visitplan.save_the_all_visit_plans_details();
+	
+}
+@Then ("Click on the Days Table")
+public void click_on_the_days_table() throws InterruptedException {
+	visitplan.click_on_the_days_table();
+}
+@And ("Change The Visit Duration as 30 Minute Visit")
+public void change_the_visit_duration_as_30_minute_visit() throws InterruptedException {
+	visitplan.change_the_visit_duration_as_30_minute_visit();
+}
+@And ("Update the Edit Visit Duration")
+public void update_the_edit_visit_duration() throws InterruptedException {
+	visitplan.update_the_edit_visit_duration();
+	
+}
+@And ("Save the Details")
+public void save_the_details() throws InterruptedException {
+	visitplan.save_the_details();
+	
+}
+
+@Given ("Check the Add visit configurtion button")
+public void check_the_add_visit_configurtion_button() throws InterruptedException {
+	
+	visitplan.check_the_add_visit_configurtion_button();
+}
+
+
+
+@Then ("select a single day")
+public void select_a_single_day1() {
+	visitplan.select_a_single_day1();
+}
+
+@And ("select a single recurrence")
+public void select_a_single_recurrence1() throws InterruptedException {
+	visitplan.select_a_single_recurrence1();
+}
+
+@And ("select a start time")
+public void select_a_start_time() throws InterruptedException {
+	visitplan.select_a_start_time();
+	
+}
+@And ("select a duration 30 minute visit")
+public void select_a_duration_30_minute_visit() throws InterruptedException {
+	visitplan.select_a_duration_30_minute_visit();
+	
+}
+/*@And ("select a single recurrence")
+public void select_a_single_recurrence1() throws InterruptedException {
+	visitplan.select_a_single_recurrence1();
+}*/
+
+@And ("select a start date")
+public void select_a_start_date() throws InterruptedException {
+	visitplan.select_a_start_date();
+	
+}
+@Then ("click on save button")
+public void click_on_save_button1() throws InterruptedException {
+	visitplan.click_on_save_button1();
+	
+}
+@Then ("save the single visits details")
+public void save_the_single_visits_details() throws InterruptedException {
+	visitplan.save_the_single_visits_details();
+	
+}
+@And ("click on the single day table")
+public void click_on_the_single_day_table() throws InterruptedException {
+	visitplan.click_on_the_single_day_table();
+	
+}
+@And ("Change the visit duration as 45 Minute Visit")
+public void change_the_visit_duration_as_45_minute_visit() throws InterruptedException {
+	visitplan.change_the_visit_duration_as_45_minute_visit();
+}
+@Then ("click on the update button")
+public void click_on_the_update_button1() throws InterruptedException {
+	visitplan.click_on_the_update_button1();
+}
+@And ("Click on the Save button")
+public void click_on_the_save_button1() throws InterruptedException {
+	visitplan.click_on_the_save_button1();
+}
+
+
+@Then("click on the add visit configuration button")
+public void click_on_the_add_visit_configuration_button() throws InterruptedException {
+	visitplan.click_on_the_add_visit_configuration_button();
+}
+
+@Given ("Select all days")
+public void select_all_days() throws InterruptedException {
+	visitplan.select_all_days();
+	
+}
+
+@When ("select Start Time")
+public void select_start_time1() throws InterruptedException {
+	visitplan.select_start_time1();
+			
+	
+}
+@Then ("select visit Duration as 30 minute visit")
+public void select_visit_duration_as_30_minute_visit () throws InterruptedException {
+	visitplan.select_visit_duration_as_30_minute_visit (); 
+}
+
+@Then ("select the Weekly recurrence")
+public void select_the_weekly_recurrence() throws InterruptedException {
+	visitplan.select_the_weekly_recurrence();
+}
+
+@Then ("select start date")
+public void select_start_date1() throws InterruptedException {
+	visitplan.select_start_date1();
+}
+
+@Then ("Click on save button")
+public void click_on_save_button() throws InterruptedException{
+	visitplan.click_on_save_button();
+}
+
+@Then ("Save the all Visits plans Details")
+public void save_the_all_visits_plans_details () throws InterruptedException {
+	visitplan.save_the_all_visits_plans_details();
+	
+}
+
+@Given ("User click on the Delete Icon")
+public void user_click_on_the_delete_icon() throws InterruptedException {
+	visitplan.user_click_on_the_delete_icon();
+	
+}
+@Then ("Delete visit Configurations Pop Up is opened  and click on the Delete button")
+public void delete_visit_configurations_pop_up_is_opened_and_click_on_the_delete_button() throws InterruptedException {
+	visitplan.delete_visit_configurations_pop_up_is_opened_and_click_on_the_delete_button();
+	
+}
+
+@And ("Save the delete Visit Series")
+public void save_the_delete_visit_series() {
+	try {
+		visitplan.save_the_delete_visit_series();
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+}
+
+@Then ("Check Add Visit Configuration")
+public void check_add_visit_configuration() throws InterruptedException {
+	visitplan.check_add_visit_configuration();
+}
+
+@Given ("Select A Single Day")
+public void select_a_single_day() {
+	visitplan.select_a_single_day();
+	
+}
+
+@Then ("select a single Recurrence")
+public void select_a_single_recurrence() throws InterruptedException {
+	visitplan.select_a_single_recurrence();
+	
+}
+@Then ("choose Start Time")
+public void choose_start_time() throws InterruptedException {
+	visitplan.choose_start_time();
+}
+@Then ("Select Duration")
+public void select_duration1() throws InterruptedException {
+	visitplan.select_duration1();
+	
+}
+/*@Then ("select a single Recurrence")
+public void select_a_single_recurrence() {
+	
+	
+}*/
+@And ("Enter the Start Date")
+public void enter_the_start_date() throws InterruptedException {
+	visitplan.enter_the_start_date();
+}
+@And ("Save the single visit details")
+public void save_the_single_visit_details() throws InterruptedException {
+	visitplan.save_the_single_visit_details();
+	
+}
+@And ("Click on the delete Icon and Pop is Displayed Confirm that you want to delete this item")
+public void click_on_the_delete_Icon_and_Pop_is_displayed_confirm_that_you_want_to_delete_this_item() throws InterruptedException{
+	visitplan.click_on_the_delete_Icon_and_Pop_is_displayed_confirm_that_you_want_to_delete_this_item();
+}
+@Then ("Click on the Delete Button")
+public void click_on_the_delete_button() throws InterruptedException {
+	visitplan.click_on_the_delete_button();
+	
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

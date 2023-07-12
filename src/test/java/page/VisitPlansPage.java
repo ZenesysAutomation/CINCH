@@ -67,7 +67,6 @@ public class VisitPlansPage extends BaseClass  {
 		FirstName.click();
 		Thread.sleep(6000);
 	}
-	
 	public void click_on_the_add_visit_configuration() throws InterruptedException {
 		WebElement AddVisitBtn=	driver.findElement(By.xpath("(//a[normalize-space()='Add Visit Configuration'])[1]"));
 		AddVisitBtn.click();
@@ -210,6 +209,13 @@ public class VisitPlansPage extends BaseClass  {
 		
 	}
 	
+	public void user_go_to_the_add_visit_configuration() throws InterruptedException {
+		WebElement AddVisitBtn=	driver.findElement(By.xpath("(//a[normalize-space()='Add Visit Configuration'])[1]"));
+		AddVisitBtn.click();
+		Thread.sleep(6000);
+	    
+	}
+	
 	public void user_select_all_days() throws InterruptedException {
 		WebElement dropdown=driver.findElement(By.id("daysofweek"));
 		dropdown.click();
@@ -290,306 +296,9 @@ public void select_duration() throws InterruptedException {
 	}
 	
 	
-	public void user_select_all_the_days() throws InterruptedException {
-		WebElement dropdown=driver.findElement(By.id("daysofweek"));
-		dropdown.click();
-		
-		WebElement dropdown2=driver.findElement(By.xpath("//*[@id=\"daysofweek_popup\"]/div[1]/span"));
-		dropdown2.click();
-		Thread.sleep(8000);
-		
-	}
-	
-	public void user_select_start_time() throws InterruptedException {
-		List<WebElement> dropdownlist=driver.findElements(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
-		for(WebElement ele2 :dropdownlist) {
-			String value =ele2.getText();
-			if(value.equals("12:00 AM")) {
-				Thread.sleep(9000);
-				ele2.click();
-				break;
-				
-			}
-			
-			
-		}
-	}
-	
-	public void user_select_a_duration() throws InterruptedException {
-		
-		WebElement Duration =driver.findElement(By.xpath("//span[contains(@aria-owns,'duration_options')]"));
-		Duration.click();
-		Duration.sendKeys("60 Minute Visit");
-		Duration.click();
-		Thread.sleep(6000);
-		
-	}
-	
-	public void user_select_the_weekly_recurrence() throws InterruptedException {
-		WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));
-		Recurrence.click();
-		Recurrence.sendKeys("Weekly");
-		Recurrence.click();
-		Thread.sleep(4000);
-		
-		
-	}	
-	
-	public void user_select_start_date() throws InterruptedException {
-		 LocalDateTime targetDate = LocalDateTime.now().minusDays(7);
-	        String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
-
-	        WebElement startDateField = driver.findElement(By.id("visit-start-date"));
-	        startDateField.click();
-
-	        for (int i = 1; i <= 10; i++) {
-	            startDateField.sendKeys(Keys.BACK_SPACE);
-	        }
-
-	        startDateField.sendKeys(targetDateString);
-	        Thread.sleep(8000);
-		
-	}
-	
-	public void user_click_on_the_use_custom_end_date_toggle() throws InterruptedException {
-		WebElement Toggleon = driver.findElement(By.xpath("(//input[@id='custom-date'])[1]"));
-		Toggleon.click();
-		Thread.sleep(6000);
-	}
-	
-	public void user_enter_the_end_date() throws InterruptedException {
-		WebElement EnterEndDate = driver.findElement(By.xpath("//input[@id='visit-end-date']"));
-		 EnterEndDate.click();
-		 EnterEndDate.sendKeys("7/15/2023");
-		 EnterEndDate.click();
-		 Thread.sleep(6000);	 
-		
-	}
-	
-	public void save_the_visits_details() throws InterruptedException {
-	
-		WebElement SaveBtn =driver.findElement(By.xpath("//button[@id='SaveNewVisit']"));
-		Thread.sleep(4000);
-		SaveBtn.click();
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0, 50000)");
-		Thread.sleep(8000);
-	}
-	
-	public void save_the_all_visits_plan_details() throws InterruptedException {
-		WebElement SaveVisitsplan=driver.findElement(By.xpath("//button[@id='SaveVisit']"));
-		SaveVisitsplan.click();
-		Thread.sleep(8000);
-	}
-	
-	public void select_all_days() throws InterruptedException {
-		WebElement dropdown=driver.findElement(By.id("daysofweek"));
-		dropdown.click();
-		
-		WebElement dropdown2=driver.findElement(By.xpath("//*[@id=\"daysofweek_popup\"]/div[1]/span"));
-		dropdown2.click();
-		Thread.sleep(8000);
-		
-	}
-	
-	public void select_start_time1() throws InterruptedException {
-		List<WebElement> dropdownlist=driver.findElements(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
-		for(WebElement ele2 :dropdownlist) {
-			String value =ele2.getText();
-			if(value.equals("12:00 AM")) {
-				Thread.sleep(9000);
-				ele2.click();
-				break;
-				
-			}
-			
-			
-		}
-		
-	}
-	
-	public void select_visit_duration_as_30_minute_visit () throws InterruptedException {
-
-		WebElement Duration =driver.findElement(By.xpath("//span[contains(@aria-owns,'duration_options')]"));
-		Duration.click();
-		Duration.sendKeys("30 Minute Visit");
-		Duration.click();
-		Thread.sleep(6000);
-	}
-	
-	public void select_the_weekly_recurrence() throws InterruptedException {
-		WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));
-		Recurrence.click();
-		Recurrence.sendKeys("Weekly");
-		Recurrence.click();
-		Thread.sleep(4000);
-	}
-	
-	public void select_start_date1() throws InterruptedException {
-		LocalDateTime targetDate = LocalDateTime.now().minusDays(4);
-        String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
-
-        WebElement startDateField = driver.findElement(By.id("visit-start-date"));
-        startDateField.click();
-
-        for (int i = 1; i <= 10; i++) {
-            startDateField.sendKeys(Keys.BACK_SPACE);
-        }
-
-        startDateField.sendKeys(targetDateString);
-        Thread.sleep(8000);
-	}
-	
-	public void click_on_save_button() throws InterruptedException{
-		WebElement SaveBtn =driver.findElement(By.xpath("//button[@id='SaveNewVisit']"));
-		Thread.sleep(4000);
-		SaveBtn.click();
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0, 50000)");
-		Thread.sleep(8000);
-	}
-	public void save_the_all_visits_plans_details () throws InterruptedException {
-		WebElement SaveBtn =driver.findElement(By.xpath("//button[@id='SaveVisit']"));
-		Thread.sleep(4000);
-		SaveBtn.click();
-		Thread.sleep(8000);
-		
-	}
-	
-	public void user_click_on_the_delete_icon() throws InterruptedException {
-		WebElement DeleteBtn=driver.findElement(By.xpath("//a[@class='btn btn-danger btn-sm e-flat dripicons-trash']"));
-		DeleteBtn.click();
-		Thread.sleep(8000);
-		
-	}
-	
-	public void delete_visit_configurations_pop_up_is_opened_and_click_on_the_delete_button() throws InterruptedException {
-		
-		WebElement DeletePopUp=	driver.findElement(By.xpath("//input[@value='Delete']"));
-		DeletePopUp.click();
-		try {
-			Thread.sleep(8000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0, 50000)");
-		Thread.sleep(6000);
-	}
-	
-	public void save_the_delete_visit_series() throws InterruptedException {
-		
-	WebElement DeleteVisitSeries=driver.findElement(By.xpath("//button[@id='SaveVisit']"));
-		DeleteVisitSeries.click();
-		Thread.sleep(8000);
-	}
-	
-	public boolean select_a_single_day() {
-		
-		try {
-
-			WebElement dropdown=driver.findElement(By.id("daysofweek"));
-				dropdown.click();
-				Thread.sleep(6000);
-				
-				WebElement dropdown2 =driver.findElement(By.xpath("//*[@id=\"daysofweek_popup\"]/div[2]/ul/li[2]"));
-				
-				dropdown2.click();
-				Thread.sleep(6000);
-		}
-		catch (Exception e) {
-			return true;
-		}
-		return false;
-	}
-	
-	public void select_a_single_recurrence() throws InterruptedException {
-	WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));
-	Recurrence.click();
-	Recurrence.sendKeys("Single");
-	Recurrence.click();
-	Thread.sleep(4000);
-	
-}
-	public void choose_start_time() throws InterruptedException {
-		List<WebElement> dropdownlist=driver.findElements(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
-		for(WebElement ele2 :dropdownlist) {
-			String value =ele2.getText();
-			if(value.equals("12:15 AM")) {
-				Thread.sleep(9000);
-				ele2.click();
-				break;
-				
-			}
-			
-			
-		}
-}
-	
-	
-	public void select_duration1() throws InterruptedException {
-		WebElement Duration =driver.findElement(By.xpath("(//span[@aria-owns='duration_options'])[1]"));
-		Duration.click();
-		Duration.sendKeys("65 Minute Visit");
-		Duration.click();
-		Thread.sleep(4000);
-		
-	}
-	
-	/*public void select_a_single_recurrence() throws InterruptedException {
-		WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));
-		Recurrence.click();
-		Recurrence.sendKeys("Single");
-		Recurrence.click();
-		Thread.sleep(4000);
-		
-	}*/
-	
-	public void enter_the_start_date() throws InterruptedException {
-		LocalDateTime targetDate = LocalDateTime.now().minusDays(6);
-        String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
-
-        WebElement startDateField = driver.findElement(By.id("visit-start-date"));
-        startDateField.click();
-
-        for (int i = 1; i <= 10; i++) {
-            startDateField.sendKeys(Keys.BACK_SPACE);
-        }
-
-        startDateField.sendKeys(targetDateString);
-        Thread.sleep(8000);
-	}
-	
-	public void save_the_single_visit_details() throws InterruptedException {
-
-WebElement SaveBtn =driver.findElement(By.xpath("//button[@id='SaveNewVisit']"));
-		Thread.sleep(4000);
-		SaveBtn.click();
-		Thread.sleep(6000);
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0, 50000)");
-		Thread.sleep(8000);
-		
-	}
-	public void click_on_the_delete_Icon_and_Pop_is_displayed_confirm_that_you_want_to_delete_this_item() throws InterruptedException{
-		
-		WebElement DeleteIcon=driver.findElement(By.xpath("//a[@class='btn btn-danger btn-sm e-flat dripicons-trash']"));
-		DeleteIcon.click();
-		Thread.sleep(8000);
-	}
-	
-	public void click_on_the_delete_button() throws InterruptedException {
-		WebElement DeleteIcon2=	driver.findElement(By.xpath("(//button[normalize-space()='Delete'])[1]"));
-		DeleteIcon2.click();
-		Thread.sleep(8000);
-		
-	}
-	
-	
 	public void verify_that_if_status_is_shows_missing_assigned_tasks() {
 
-	
+		
 		boolean getValidationText=  driver.findElement(By.xpath("//tbody/tr[@role='row']/td[contains(@aria-label,'is template cell Column Header Status')]/div/span[1]")).getText()==" Missing Assigned Tasks"?true:false;
 
 	}
@@ -1156,7 +865,7 @@ WebElement SaveBtn =driver.findElement(By.xpath("//button[@id='SaveNewVisit']"))
 	}
 	
 	
-	public void click_on_the_add_to_schedule() throws InterruptedException {
+	public void click_on_the_add_to_schedule_and_finalize_visits() throws InterruptedException {
 		
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("window.scrollBy(0, 50000)");
@@ -1166,70 +875,165 @@ WebElement SaveBtn =driver.findElement(By.xpath("//button[@id='SaveNewVisit']"))
 			WebElement AddToSchedue=driver.findElement(By.xpath("//span[normalize-space()='Add To Schedule']"));
 		
 		if(AddToSchedue.isDisplayed()){
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click()", AddToSchedue);
-		Thread.sleep(8000);		
-			}
+			JavascriptExecutor js = (JavascriptExecutor)driver;
+			js.executeScript("arguments[0].click()", AddToSchedue);
+			Thread.sleep(8000);		
+		}
+		else {
+			WebElement FinalizeVisits=driver.findElement(By.xpath("(//span[normalize-space()='Finalize Visits'])[1]"));
+			JavascriptExecutor js = (JavascriptExecutor)driver;
+			js.executeScript("arguments[0].click()", FinalizeVisits);
+			Thread.sleep(8000);
+		}
 		
 		}
 	 catch (Exception e) {
 		 
 	 }
 	}
-		
 	
-	public void click_on_the_finalize_visits() throws InterruptedException{
-		WebElement FinalizeVisits=driver.findElement(By.xpath("(//span[normalize-space()='Finalize Visits'])[1]"));
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click()", FinalizeVisits);
-		Thread.sleep(8000);
-		
-	}
-}
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-	
-	/*public void user_select_all_days() throws InterruptedException {
-		WebElement dropdown=driver.findElement(By.id("daysofweek"));
-		dropdown.click();
-		WebElement dropdown2=driver.findElement(By.xpath("//*[@id=\"daysofweek_popup\"]/div[1]/span"));
-		dropdown2.click();
-		
+	public void check_the_add_visit_configuration_button() throws InterruptedException {
+		WebElement AddVisitBtn=	driver.findElement(By.xpath("(//a[normalize-space()='Add Visit Configuration'])[1]"));
+		AddVisitBtn.click();
+		Thread.sleep(6000);
 	    
 	}
 	
-	public void select_start_time() throws InterruptedException {
-		WebElement StartTime =driver.findElement(By.xpath("//input[@id='start-time']"));
+	public void user_select_all_the_days() throws InterruptedException {
+		WebElement dropdown=driver.findElement(By.id("daysofweek"));
+		dropdown.click();
+		
+		WebElement dropdown2=driver.findElement(By.xpath("//*[@id=\"daysofweek_popup\"]/div[1]/span"));
+		dropdown2.click();
+		Thread.sleep(8000);
+		
+	}
+	
+	public void user_select_start_time() throws InterruptedException {
+		List<WebElement> dropdownlist=driver.findElements(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
+		for(WebElement ele2 :dropdownlist) {
+			String value =ele2.getText();
+			if(value.equals("12:00 AM")) {
+				Thread.sleep(9000);
+				ele2.click();
+				break;
+				
+			}
+			
+			
+		}
+	}
+	
+	public void user_select_a_duration() throws InterruptedException {
+		
+		WebElement Duration =driver.findElement(By.xpath("//span[contains(@aria-owns,'duration_options')]"));
+		Duration.click();
+		Duration.sendKeys("60 Minute Visit");
+		Duration.click();
+		Thread.sleep(6000);
+		
+	}
+	
+	public void user_select_the_weekly_recurrence() throws InterruptedException {
+		WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));
+		Recurrence.click();
+		Recurrence.sendKeys("Weekly");
+		Recurrence.click();
 		Thread.sleep(4000);
-		StartTime.clear();
-		StartTime.sendKeys("12:15 AM");
-		StartTime.click();
+		
+		
+	}	
+	
+	public void user_select_start_date() throws InterruptedException {
+		 LocalDateTime targetDate = LocalDateTime.now().minusDays(7);
+	        String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+
+	        WebElement startDateField = driver.findElement(By.id("visit-start-date"));
+	        startDateField.click();
+
+	        for (int i = 1; i <= 10; i++) {
+	            startDateField.sendKeys(Keys.BACK_SPACE);
+	        }
+
+	        startDateField.sendKeys(targetDateString);
+	        Thread.sleep(8000);
+		
+	}
+	
+	public void user_click_on_the_use_custom_end_date_toggle() throws InterruptedException {
+		WebElement Toggleon = driver.findElement(By.xpath("(//input[@id='custom-date'])[1]"));
+		Toggleon.click();
+		Thread.sleep(6000);
+	}
+	
+	public void user_enter_the_end_date() throws InterruptedException {
+		WebElement EnterEndDate = driver.findElement(By.xpath("//input[@id='visit-end-date']"));
+		 EnterEndDate.click();
+		 EnterEndDate.sendKeys("7/15/2023");
+		 EnterEndDate.click();
+		 Thread.sleep(6000);	 
+		
+	}
+	
+	public void save_the_visits_details() throws InterruptedException {
+	
+		WebElement SaveBtn =driver.findElement(By.xpath("//button[@id='SaveNewVisit']"));
+		Thread.sleep(4000);
+		SaveBtn.click();
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(8000);
 	}
 	
-	public void select_duration() throws InterruptedException {
-		WebElement Duration =driver.findElement(By.xpath("(//span[@aria-owns='duration_options'])[1]"));
-		Duration.click();
-		Duration.sendKeys("45 Minute Visit");
-		Duration.click();
-		Thread.sleep(4000);
+	public void save_the_all_visits_plan_details() throws InterruptedException {
+		WebElement SaveVisitsplan=driver.findElement(By.xpath("//button[@id='SaveVisit']"));
+		SaveVisitsplan.click();
+		Thread.sleep(8000);
 	}
-	public void select_weekly_recurrence() throws InterruptedException {
+	
+	public void user_click_on_the_add_visit_configuration() throws InterruptedException {
+		WebElement AddVisitButton=	driver.findElement(By.xpath("(//a[normalize-space()='Add Visit Configuration'])[1]"));
+		AddVisitButton.click();
+		Thread.sleep(6000);
+		
+	}
+	
+	public void user_select_the_all_days() throws InterruptedException {
+		WebElement daysDropdown=driver.findElement(By.id("daysofweek"));
+		daysDropdown.click();
+		
+		WebElement daysDropdown2=driver.findElement(By.xpath("//*[@id=\"daysofweek_popup\"]/div[1]/span"));
+		daysDropdown2.click();
+		Thread.sleep(8000);
+		
+	}
+	
+	
+	public void user_select_the_start_time() throws InterruptedException {
+		List<WebElement> dropdownlist=driver.findElements(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
+		for(WebElement ele2 :dropdownlist) {
+			String value =ele2.getText();
+			if(value.equals("12:00 AM")) {
+				Thread.sleep(9000);
+				ele2.click();
+				break;
+				
+			}
+			
+			
+		}
+	
+	}
+	
+	public void user_select_the_duration_65_minute_visit()throws InterruptedException {
+		WebElement Duration =driver.findElement(By.xpath("//span[contains(@aria-owns,'duration_options')]"));
+		Duration.click();
+		Duration.sendKeys("65 Minute Visit");
+		Duration.click();
+		Thread.sleep(6000);
+	}
+	
+	public void user_select_the_weekly_recurrence1() throws InterruptedException {
 		WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));
 		Recurrence.click();
 		Recurrence.sendKeys("Weekly");
@@ -1237,19 +1041,436 @@ WebElement SaveBtn =driver.findElement(By.xpath("//button[@id='SaveNewVisit']"))
 		Thread.sleep(4000);
 	}
 	
-	public void select_start_date() throws InterruptedException {
-		WebElement StartDate =driver.findElement(By.xpath("//input[@id='visit-start-date']"));
-		
+	public void user_select_the_start_date() throws InterruptedException {
+		 LocalDateTime targetDate = LocalDateTime.now().minusDays(4);
+	        String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+
+	        WebElement startDateField = driver.findElement(By.id("visit-start-date"));
+	        startDateField.click();
+
+	        for (int i = 1; i <= 10; i++) {
+	            startDateField.sendKeys(Keys.BACK_SPACE);
+	        }
+
+	        startDateField.sendKeys(targetDateString);
+	        Thread.sleep(8000);
+	}
+	
+	public void save_the_everday_visit_plans_details() throws InterruptedException {
+		WebElement SaveBtn= driver.findElement(By.xpath("//button[@id='SaveNewVisit']"));
+		SaveBtn.click();
+		Thread.sleep(8000);
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);
-		StartDate.clear();
-		StartDate.sendKeys("7/1/2023");
+		
+	}
+	
+	public void save_the_all_visit_plans_details() throws InterruptedException {
+		WebElement SaveBtn2 =	driver.findElement(By.xpath("//button[@id='SaveVisit']"));
+		SaveBtn2.click();
+		Thread.sleep(8000);
+		
+	}
+	public void click_on_the_days_table() throws InterruptedException {
+		WebElement tableClk= driver.findElement(By.xpath("//a[normalize-space()='Every Day']"));
+		tableClk.click();
+		Thread.sleep(8000);
+	}
+	
+	public void change_the_visit_duration_as_30_minute_visit() throws InterruptedException {
+		WebElement Duration =driver.findElement(By.xpath("//span[contains(@aria-owns,'duration_options')]"));
+		Duration.click();
+		Duration.sendKeys("30 Minute Visit");
+		Duration.click();
+		Thread.sleep(8000);
+	}
+	public void update_the_edit_visit_duration() throws InterruptedException {
+		WebElement EditBtn=driver.findElement(By.xpath("//button[@id='UpdateNewVisit']"));
+		EditBtn.click();
+		Thread.sleep(8000);
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0, 50000)");
+		Thread.sleep(4000);
+		
+	}
+	public void save_the_details() throws InterruptedException {
+		WebElement saveDetailsbtn =	driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
+		saveDetailsbtn.click();
+		Thread.sleep(8000);
+		
+	}
+	
+	public void check_the_add_visit_configurtion_button() throws InterruptedException {
+		WebElement AddVisitButton=	driver.findElement(By.xpath("(//a[normalize-space()='Add Visit Configuration'])[1]"));
+		AddVisitButton.click();
+		Thread.sleep(6000);
+		
+	}
+	
+	public boolean select_a_single_day1() {
+		try {
+
+			WebElement dropdown=driver.findElement(By.id("daysofweek"));
+				dropdown.click();
+				Thread.sleep(6000);
+				
+				WebElement dropdown2 =driver.findElement(By.xpath("//*[@id=\"daysofweek_popup\"]/div[2]/ul/li[2]"));
+				
+				dropdown2.click();
+				Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			return true;
+		}
+		return false;
+	}
+	
+	public void select_a_single_recurrence1() throws InterruptedException {
+		WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));
+		Recurrence.click();
+		Recurrence.sendKeys("single");
+		Recurrence.click();
+		Thread.sleep(4000);
+	}
+
+	
+	public void select_a_start_time() throws InterruptedException {
+
+		List<WebElement> dropdownlist=driver.findElements(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
+		for(WebElement ele2 :dropdownlist) {
+			String value =ele2.getText();
+			if(value.equals("12:15 AM")) {
+				Thread.sleep(9000);
+				ele2.click();
+				break;
+				
+			}
+			
+			
+		}
+		
+	}
+	
+	public void select_a_duration_30_minute_visit() throws InterruptedException {
+		WebElement Duration =driver.findElement(By.xpath("(//span[@aria-owns='duration_options'])[1]"));
+		Duration.click();
+		Duration.sendKeys("30 Minute Visit");
+		Duration.click();
+		Thread.sleep(4000);
+		
+	}
+	
+	/*public void select_a_single_recurrence1() throws InterruptedException {
+		WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));
+		Recurrence.click();
+		Recurrence.sendKeys("Weekly");
+		Recurrence.click();
+		Thread.sleep(4000);
+	}*/
+	
+	public void select_a_start_date() throws InterruptedException {
+		 LocalDateTime targetDate = LocalDateTime.now().minusDays(8);
+	        String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+
+	        WebElement startDateField = driver.findElement(By.id("visit-start-date"));
+	        startDateField.click();
+
+	        for (int i = 1; i <= 10; i++) {
+	            startDateField.sendKeys(Keys.BACK_SPACE);
+	        }
+
+	        startDateField.sendKeys(targetDateString);
+	        Thread.sleep(8000);
+		
+	}
+	
+	public void click_on_save_button1() throws InterruptedException {
+		WebElement SaveBtn= driver.findElement(By.xpath("//button[@id='SaveNewVisit']"));
+		SaveBtn.click();
+		Thread.sleep(8000);
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0, 50000)");
+		Thread.sleep(4000);	
+	}
+	
+	public void save_the_single_visits_details() throws InterruptedException {
+		WebElement SaveBtn2 =	driver.findElement(By.xpath("//button[@id='SaveVisit']"));
+		SaveBtn2.click();
+		Thread.sleep(8000);
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0, 50000)");
+		Thread.sleep(4000);	
+		
+	}
+	
+	public void click_on_the_single_day_table() throws InterruptedException {
+		WebElement tableclick =	driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[3]/td[2]"));
+		tableclick.click();
+		Thread.sleep(8000);
+	}
+	
+	public void change_the_visit_duration_as_45_minute_visit() throws InterruptedException {
+		WebElement Duration =driver.findElement(By.xpath("(//span[@aria-owns='duration_options'])[1]"));
+		Duration.click();
+		Duration.sendKeys("45 Minute Visit");
+		Duration.click();
+		Thread.sleep(4000);
+		
+	}
+	
+	public void click_on_the_update_button1() throws InterruptedException {
+		WebElement updateBtn=driver.findElement(By.xpath("//button[@id='UpdateNewVisit']"));
+		updateBtn.click();
+		Thread.sleep(8000);
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0, 50000)");
+		Thread.sleep(4000);
+	}
+	
+	public void click_on_the_save_button1() throws InterruptedException {
+		WebElement saveDetailsbtn =	driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
+		saveDetailsbtn.click();
+		Thread.sleep(8000);
+	}
+
+	
+	public void click_on_the_add_visit_configuration_button() throws InterruptedException {
+		WebElement AddVisitBtn=	driver.findElement(By.xpath("(//a[normalize-space()='Add Visit Configuration'])[1]"));
+		AddVisitBtn.click();
+		Thread.sleep(6000);
+	    
+	}
+	
+	public void select_all_days() throws InterruptedException {
+		WebElement dropdown=driver.findElement(By.id("daysofweek"));
+		dropdown.click();
+		
+		WebElement dropdown2=driver.findElement(By.xpath("//*[@id=\"daysofweek_popup\"]/div[1]/span"));
+		dropdown2.click();
+		Thread.sleep(8000);
+		
+	}
+	
+	public void select_start_time1() throws InterruptedException {
+		List<WebElement> dropdownlist=driver.findElements(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
+		for(WebElement ele2 :dropdownlist) {
+			String value =ele2.getText();
+			if(value.equals("12:00 AM")) {
+				Thread.sleep(9000);
+				ele2.click();
+				break;
+				
+			}
+			
+			
+		}
+		
+	}
+	
+	public void select_visit_duration_as_30_minute_visit () throws InterruptedException {
+
+		WebElement Duration =driver.findElement(By.xpath("//span[contains(@aria-owns,'duration_options')]"));
+		Duration.click();
+		Duration.sendKeys("30 Minute Visit");
+		Duration.click();
 		Thread.sleep(6000);
 	}
 	
-	public void user_click_on_the_save_button() throws InterruptedException {
+	public void select_the_weekly_recurrence() throws InterruptedException {
+		WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));
+		Recurrence.click();
+		Recurrence.sendKeys("Weekly");
+		Recurrence.click();
+		Thread.sleep(4000);
+	}
+	
+	public void select_start_date1() throws InterruptedException {
+		LocalDateTime targetDate = LocalDateTime.now().minusDays(4);
+        String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+
+        WebElement startDateField = driver.findElement(By.id("visit-start-date"));
+        startDateField.click();
+
+        for (int i = 1; i <= 10; i++) {
+            startDateField.sendKeys(Keys.BACK_SPACE);
+        }
+
+        startDateField.sendKeys(targetDateString);
+        Thread.sleep(8000);
+	}
+	
+	public void click_on_save_button() throws InterruptedException{
 		WebElement SaveBtn =driver.findElement(By.xpath("//button[@id='SaveNewVisit']"));
 		Thread.sleep(4000);
 		SaveBtn.click();
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0, 50000)");
+		Thread.sleep(8000);
+	}
+	public void save_the_all_visits_plans_details () throws InterruptedException {
+		WebElement SaveBtn =driver.findElement(By.xpath("//button[@id='SaveVisit']"));
+		Thread.sleep(4000);
+		SaveBtn.click();
+		Thread.sleep(8000);
+		
+	}
+	
+	public void user_click_on_the_delete_icon() throws InterruptedException {
+		WebElement DeleteBtn=driver.findElement(By.xpath("//a[@class='btn btn-danger btn-sm e-flat dripicons-trash']"));
+		DeleteBtn.click();
+		Thread.sleep(8000);
+		
+	}
+	
+	public void delete_visit_configurations_pop_up_is_opened_and_click_on_the_delete_button() throws InterruptedException {
+		
+		WebElement DeletePopUp=	driver.findElement(By.xpath("//input[@value='Delete']"));
+		DeletePopUp.click();
+		try {
+			Thread.sleep(8000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(6000);
 	}
-}*/
+	
+	public void save_the_delete_visit_series() throws InterruptedException {
+		
+	WebElement DeleteVisitSeries=driver.findElement(By.xpath("//button[@id='SaveVisit']"));
+		DeleteVisitSeries.click();
+		Thread.sleep(8000);
+	}
+	
+	public void check_add_visit_configuration() throws InterruptedException {
+		WebElement AddVisitBtn=	driver.findElement(By.xpath("(//a[normalize-space()='Add Visit Configuration'])[1]"));
+		AddVisitBtn.click();
+		Thread.sleep(6000);
+	    
+	}
+	
+	public boolean select_a_single_day() {
+		
+		try {
+
+			WebElement dropdown=driver.findElement(By.id("daysofweek"));
+				dropdown.click();
+				Thread.sleep(6000);
+				
+				WebElement dropdown2 =driver.findElement(By.xpath("//*[@id=\"daysofweek_popup\"]/div[2]/ul/li[2]"));
+				
+				dropdown2.click();
+				Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			return true;
+		}
+		return false;
+	}
+	
+	public void select_a_single_recurrence() throws InterruptedException {
+	WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));
+	Recurrence.click();
+	Recurrence.sendKeys("Single");
+	Recurrence.click();
+	Thread.sleep(4000);
+	
+}
+	public void choose_start_time() throws InterruptedException {
+		List<WebElement> dropdownlist=driver.findElements(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
+		for(WebElement ele2 :dropdownlist) {
+			String value =ele2.getText();
+			if(value.equals("12:15 AM")) {
+				Thread.sleep(9000);
+				ele2.click();
+				break;
+				
+			}
+			
+			
+		}
+}
+	
+	
+	public void select_duration1() throws InterruptedException {
+		WebElement Duration =driver.findElement(By.xpath("(//span[@aria-owns='duration_options'])[1]"));
+		Duration.click();
+		Duration.sendKeys("65 Minute Visit");
+		Duration.click();
+		Thread.sleep(4000);
+		
+	}
+	
+	/*public void select_a_single_recurrence() throws InterruptedException {
+		WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));
+		Recurrence.click();
+		Recurrence.sendKeys("Single");
+		Recurrence.click();
+		Thread.sleep(4000);
+		
+	}*/
+	
+	public void enter_the_start_date() throws InterruptedException {
+		LocalDateTime targetDate = LocalDateTime.now().minusDays(3);
+        String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+
+        WebElement startDateField = driver.findElement(By.id("visit-start-date"));
+        startDateField.click();
+
+        for (int i = 1; i <= 10; i++) {
+            startDateField.sendKeys(Keys.BACK_SPACE);
+        }
+
+        startDateField.sendKeys(targetDateString);
+        Thread.sleep(8000);
+	}
+	
+	public void save_the_single_visit_details() throws InterruptedException {
+
+WebElement SaveBtn =driver.findElement(By.xpath("//button[@id='SaveNewVisit']"));
+		Thread.sleep(4000);
+		SaveBtn.click();
+		Thread.sleep(6000);
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0, 50000)");
+		Thread.sleep(8000);
+		
+	}
+	public void click_on_the_delete_Icon_and_Pop_is_displayed_confirm_that_you_want_to_delete_this_item() throws InterruptedException{
+		
+		WebElement DeleteIcon=driver.findElement(By.xpath("//a[@class='btn btn-danger btn-sm e-flat dripicons-trash']"));
+		DeleteIcon.click();
+		Thread.sleep(8000);
+	}
+	
+	public void click_on_the_delete_button() throws InterruptedException {
+		WebElement DeleteIcon2=	driver.findElement(By.xpath("(//button[normalize-space()='Delete'])[1]"));
+		DeleteIcon2.click();
+		Thread.sleep(8000);
+		
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
