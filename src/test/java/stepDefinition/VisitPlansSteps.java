@@ -467,6 +467,335 @@ public void click_on_the_finalize_visits() throws InterruptedException{
 	
 }*/
 
+@Given ("User Click on the ADLs Tab")
+public void user_click_on_the_ad_ls_tab() {
+	
+	
+}
+@Then ("User Click on the Bathing")
+public void user_click_on_the_bathing() {
+	
+}
+
+@Then ("User Select the Bathing Assistance Level as a Supervision")
+public void user_select_the_bathing_assistance_level_as_a_supervision() {
+	
+	
+}
+@Then ("Verify if Assist With Shower is Already Checked then Unchecked it")
+public void verify_if_assist_with_shower_is_already_checked_then_unchecked_it() {
+	
+}
+@And ("Checked the Assist With Sponge Bath")
+public void checked_the_assist_with_sponge_bath() {
+	
+	
+}
+@And ("User Select the Visits Timing")
+public void user_select_the_visits_timing() {
+	
+	
+}
+@Then ("User Enter the Caregiver Instructions")
+public void user_enter_the_caregiver_instructions() {
+	
+	
+}
+@And("Update the Bathing Details")
+public void update_the_bathing_details() {
+	
+}
+@And ("Save the Bathing details")
+public void save_the_bathing_details1() {
+	
+	
+}
+@Then ("User Again click on the ADLs")
+public void user_again_click_on_the_ad_ls() {
+	
+	
+}
+@When ("User Click on the Continence And Toileting")
+public void user_click_on_the_continence_and_toileting() {
+	
+}
+@And ("Click on the Assistance Level No Assistance")
+public void click_on_the_assistance_level_no_assistance() {
+	
+	
+}
+@Then ("User Save the Continence And Toileting Details")
+public void user_save_the_continence_and_toileting_details() {
+	
+	
+}
+@When ("User Click on the  ADLs To Enter the Dressing And Grooming details")
+public void user_click_on_the_ad_ls_to_enter_the_dressing_and_grooming_details() {
+	
+	
+}
+@Then ("User Click on the dressing And Grooming")
+public void user_click_on_the_dressing_and_grooming() {
+	
+	
+}
+@Then ("User select the Assistance Level as a Supervision")
+public void user_select_the_assistance_level_as_a_supervision() {
+	
+}
+@Then ("Verify if Apply Lotion Tasks is Already Checked then Unchecked it")
+public void verify_if_apply_lotion_tasks_is_already_checked_then_unchecked_it() {
+	
+	
+}
+@And ("User Ticked on Assist with Oral Care")
+public void user_ticked_on_assist_with_oral_care() {
+	
+	
+}
+@Then ("Select the Visit Time")
+public void select_the_visit_time() {
+	
+	
+}
+@Then ("user Enter the caregiver Instructions")
+public void user_enter_the_caregiver_instructions1() {
+	
+}
+
+@Then ("Update the Assist with Oral Care details")
+public void update_the_assist_with_oral_care_details() {
+	
+	
+}
+@Then ("save The Dressing And Grooming Details")
+public void save_the_dressing_and_grooming_details1() {
+	
+	
+}
+@Then ("User Click on the ADLS To Enter the Eating Details")
+public void user_click_on_the_ad_ls_to_enter_the_eating_details() {
+	
+	
+}
+@Then ("User Click on the Eating")
+public void user_click_on_the_eating() {
+	
+	
+}
+@Then ("User Select the Assistance Level as a No Assistance")
+public void user_select_the_assistance_level_as_a_no_assistance() {
+	
+}
+@Then ("User Click on the save Button to save the details")
+public void user_click_on_the_save_button_to_save_the_details() {
+	
+	
+}
+@And ("User Click on the ADLS To Enter the Mobility Details")
+public void user_click_on_the_ad_ls_to_enter_the_mobility_details() {
+	
+	
+}
+@Then ("User Click on the Mobility")
+public void user_click_on_the_mobility() {
+	
+	
+}
+
+@Then ("User Select the Assistance Level As Limited Assistance")
+public void user_select_the_assistance_level_as_limited_assistance() {
+	
+	
+}
+@Then ("Verify if Walk With Client Tasks is Already Checked then Unchecked it")
+public void verify_if_walk_with_client_tasks_is_already_checked_then_unchecked_it() {
+	
+}
+
+@And ("Select the Assist With Transfers")
+public void select_the_assist_with_transfers() {
+	
+	
+}
+@And ("User Choose the Visits Time")
+public void user_choose_the_visits_time() {
+	
+	
+}
+@And ("User Enter Caregiver Instructions for Mobility")
+public void user_enter_caregiver_instructions_for_mobility() {
+	
+	
+} 
+@And ("Update the Assist With Transfers Details")
+public void update_the_assist_with_transfers_details() {
+	
+	
+}
+@And ("User Click on the Save Button to save the Mobility Details")
+public void user_click_on_the_save_button_to_save_the_mobility_details() {
+	
+	
+}
+@When ("User Click on the IADLS to Enter the Household Details")
+public void user_click_on_the_ia_dls_to_enter_the_household_details() {
+	
+	
+}
+@And("User Click on the Household Tasks")
+public void user_click_on_the_household_tasks() {
+	
+	
+}
+	
+@And ("User Select the Assistance Level as a Assistance")
+public void user_select_the_assistance_level_as_a_assistance() {
+	
+	
+}
+
+@Then ("Verify if Make Bed Tasks is Already Checked then Unchecked it")
+public void verify_if_make_bed_tasks_is_already_checked_then_unchecked_it() {
+	
+	
+}
+@And ("User Ticked the Change Lines Tasks")
+public void user_ticked_the_change_lines_tasks() {
+	
+	
+}
+@Then ("User Select the Change Lines Visits Time")
+public void user_select_the_change_lines_visits_time() {
+	
+	
+}
+@And ("User enter the caregiver instructions for Household Tasks")
+public void user_enter_the_caregiver_instructions_for_household_tasks() {
+	
+	
+}
+@And ("Update the Change Lines details")
+public void update_the_change_lines_details() {
+	
+	
+}
+@And ("User Save the Household Tasks Details")
+public void user_save_the_household_tasks_details() {
+	
+	
+}
+@Then ("User Again click on the IADLs to Enter the Laundry Details")
+public void user_again_click_on_the_ia_dls_to_enter_the_laundry_details() {
+	
+	
+}
+@And ("User Click on the Laundry")
+public void user_click_on_the_laundry() {
+	
+	
+}
+@Then ("User Select the Laundry Assistance Level As Assistance")
+public void user_select_the_laundry_assistance_level_as_assistance() {
+	
+	
+}
+@Then ("User Click on the Tasks Wash Dry Fold And Return Clothes")
+public void user_click_on_the_tasks_wash_dry_fold_and_return_clothes() {
+	
+	
+}
+@And("User Select the Visit Time")
+public void user_select_the_visit_time() {
+	
+	
+}
+@And ("User Enter Caregiver Instruction For Laundry")
+public void user_enter_caregiver_instruction_for_laundry() {
+	
+	
+}
+@And ("User Update the Laundry Details")
+public void user_update_the_laundry_details() {
+	
+	
+}
+@And ("User Save the Laundry Details")
+public void user_save_the_laundry_details() {
+	
+	
+}
+@Then ("User Click on the IADLs to Enter the Meals Details")
+public void user_click_on_the_ia_dls_to_enter_the_meals_details() {
+	
+	
+}
+@Then ("User Click on the Meals")
+public void user_click_on_the_meals() {
+	
+	
+}
+@Then ("User Select the Meals Assistance Level No Assistance")
+public void user_select_the_meals_assistance_level_no_assistance() {
+	
+	
+}
+@And ("User Save the Meals Details")
+public void user_save_the_meals_details() {
+	
+	
+}
+@Then ("User Again click on the IADLS to Enter the Medication Details")
+public void user_again_click_on_the_ia_dls_to_enter_the_medication_details() {
+	
+	
+}
+@Then ("click on the Medication")
+public void click_on_the_medication() {
+	
+	
+}
+@And ("Select the Medication Assistance Level as Assistance")
+public void select_the_medication_assistance_evel_as_assistance() {
+	
+	
+}
+@Then ("Verify if Check Blood Pressure Tasks is Already Select then Unselect it")
+public void verify_if_check_blood_pressure_tasks_is_already_select_then_unselect_it() {
+	
+	
+}
+@And ("Select the Check Temperature")
+public void select_the_check_temperature() {
+	
+	
+}
+@And  ("Users Select the Visits Time")
+public void users_select_the_visits_time() {
+	
+	
+}
+@And ("User Enter Caregiver Instructions For Medication")
+public void user_enter_caregiver_instructions_for_medication() {
+	
+	
+}
+@And ("User Update the Medication Details")
+public void user_update_the_medication_details() {
+	
+}
+@And ("User Save the Medication Details")
+public void user_save_the_medication_details() {
+	
+	
+}
+@Then ("User Click on the Add to Schedule and Finalize Visits")
+public void user_click_on_the_add_to_schedule_and_finalize_visits() {
+	
+	
+}
+
+
 @Then("Check the Add Visit Configuration Button")
 public void check_the_add_visit_configuration_button() throws InterruptedException {
 	visitplan.check_the_add_visit_configuration_button();
@@ -629,14 +958,17 @@ public void click_on_the_single_day_table() throws InterruptedException {
 	visitplan.click_on_the_single_day_table();
 	
 }
+
 @And ("Change the visit duration as 45 Minute Visit")
 public void change_the_visit_duration_as_45_minute_visit() throws InterruptedException {
 	visitplan.change_the_visit_duration_as_45_minute_visit();
 }
+
 @Then ("click on the update button")
 public void click_on_the_update_button1() throws InterruptedException {
 	visitplan.click_on_the_update_button1();
 }
+
 @And ("Click on the Save button")
 public void click_on_the_save_button1() throws InterruptedException {
 	visitplan.click_on_the_save_button1();
