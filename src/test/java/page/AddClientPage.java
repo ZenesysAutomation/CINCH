@@ -169,14 +169,17 @@ public void user_select_the_client_type() throws InterruptedException {
 }
 
 public void user_select_the_schedule_group() throws InterruptedException {
-;
+
 	
-	WebElement ScheduleGroupBtn = driver.findElement(By.id("scheduleGroup"));
-    Thread.sleep(3000);
+	//WebElement ScheduleGroupBtn = driver.findElement(By.id("scheduleGroup"));
+	WebElement ScheduleGroupBtn = driver.findElement(By.xpath("//span[contains(@aria-owns,'scheduleGroup_options')]"));
+    //Thread.sleep(3000);
+	ScheduleGroupBtn.click();
     ScheduleGroupBtn.sendKeys("East Wing");
-    WebElement ScheduleGroupBtn2 = driver.findElement(By.xpath("//*[@id=\"scheduleGroup_popup\"]/div/ul/li[1]"));
-    ScheduleGroupBtn2.click();
-    Thread.sleep(3000);		
+    ScheduleGroupBtn.click();
+   // WebElement ScheduleGroupBtn2 = driver.findElement(By.xpath("//*[@id=\"scheduleGroup_popup\"]/div/ul/li[1]"));
+    //ScheduleGroupBtn2.click();
+    Thread.sleep(5000);		
 
 }
 

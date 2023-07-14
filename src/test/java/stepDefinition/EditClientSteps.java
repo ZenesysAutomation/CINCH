@@ -16,7 +16,7 @@ public class EditClientSteps extends BaseClass {
 	}    
 
 	@When("Check the User Password")
-	public void check_the_user_password() {
+	public void check_the_user_password() throws InterruptedException {
 	    editClient.check_the_user_password();
 	}
 
@@ -26,7 +26,7 @@ public class EditClientSteps extends BaseClass {
 	}
 
 	@Then("Check the Test Community Dropdown")
-	public void check_the_test_community_dropdown() {
+	public void check_the_test_community_dropdown() throws InterruptedException {
 	  editClient.check_the_test_community_dropdown();
 	}
 

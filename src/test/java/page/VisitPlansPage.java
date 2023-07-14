@@ -920,24 +920,27 @@ public void select_duration() throws InterruptedException {
 	
 	public void verify_if_assist_with_shower_is_already_checked_then_unchecked_it() throws InterruptedException {
 		WebElement AssistwithShower = driver.findElement(By.xpath("//input[@id='1798']"));
-		AssistwithShower.click();
 		if(AssistwithShower.isSelected()) {
+			AssistwithShower.click();
+		Thread.sleep(6000);
+	}
+	}
+	
+	public void checked_the_assist_with_sponge_bath() throws InterruptedException {
+		WebElement SpongeBath = driver.findElement(By.xpath("(//input[@id='1799'])[1]"));
+		SpongeBath.click();
+		if(SpongeBath.isSelected()) {
 			System.out.println("Checkbox is toggled On");
 		}
 		else {
 			
 			System.out.println("Checkbox is toggled Off");
-			AssistwithShower.click();
-			if(!AssistwithShower.isSelected()) {
+			SpongeBath.click();
+			if(!SpongeBath.isSelected()) {
 				System.out.println("Checkbox is now toggle off");
 			}
 		}
-		Thread.sleep(4000);
-	}
-	
-	public void checked_the_assist_with_sponge_bath() {
-		
-		
+		Thread.sleep(6000);
 	}
 	
 	public void user_select_the_visits_timing() throws InterruptedException {
@@ -992,7 +995,9 @@ public void select_duration() throws InterruptedException {
 		Assistance.sendKeys("No Assistance");
 		Assistance.click();
 		Thread.sleep(6000);
-		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0, 50000)");
+		Thread.sleep(4000);
 	}
 	
 	public void user_save_the_continence_and_toileting_details() throws InterruptedException {
@@ -1031,28 +1036,29 @@ public void select_duration() throws InterruptedException {
 	}
 	
 	public void verify_if_apply_lotion_tasks_is_already_checked_then_unchecked_it() throws InterruptedException {
-WebElement LotionTasks =driver.findElement(By.xpath("//input[@id='1804']"));
-		
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click()",LotionTasks );
+		WebElement LotionTasks =driver.findElement(By.xpath("//input[@id='1804']"));
 		if(LotionTasks.isSelected()) {
+			LotionTasks.click();
+		Thread.sleep(6000);
+		
+	}
+	}
+	
+	public void user_ticked_on_assist_with_oral_care() throws InterruptedException {
+		WebElement AssistWithOralcare =	driver.findElement(By.xpath("(//input[@id='1806'])[1]"));
+		if(AssistWithOralcare.isSelected()) {
 			System.out.println("Checkbox is toggled On");
 		}
 		else {
 			
 			System.out.println("Checkbox is toggled Off");
-			LotionTasks.click();
+			AssistWithOralcare.click();
 			 
-			if(!LotionTasks.isSelected()) {
+			if(!AssistWithOralcare.isSelected()) {
 				System.out.println("Checkbox is now toggle off");
 			}
 		}
 		Thread.sleep(4000);
-		
-	}
-	
-	public void user_ticked_on_assist_with_oral_care() {
-		
 		
 	}
 	
@@ -1066,10 +1072,12 @@ WebElement LotionTasks =driver.findElement(By.xpath("//input[@id='1804']"));
 		Thread.sleep(4000);	
 	}
 	catch(Exception e) {}*/
-	
+	try {
 	WebElement VisitTime =driver.findElement(By.xpath("(//span[@class='e-frame e-icons'])[1]"));
 	VisitTime.click();
-	Thread.sleep(4000);	
+	Thread.sleep(6000);	
+		}
+		catch(Exception e) {}
 }
 		
 	
@@ -1163,26 +1171,32 @@ WebElement LotionTasks =driver.findElement(By.xpath("//input[@id='1804']"));
 	
 	public void verify_if_walk_with_client_tasks_is_already_checked_then_unchecked_it() throws InterruptedException {
 		WebElement WalkWithClient=driver.findElement(By.xpath("(//input[@id='1812'])[1]"));
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click()",WalkWithClient );
-	
 		if(WalkWithClient.isSelected()) {
+			WalkWithClient.click();
+		Thread.sleep(6000);
+		}
+		
+	}
+	
+	public void select_the_assist_with_transfers() throws InterruptedException {
+		WebElement AssistWithTransfer	=driver.findElement(By.xpath("(//input[@id='1810'])[1]"));
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click()",AssistWithTransfer );
+		Thread.sleep(4000);
+	
+		if(AssistWithTransfer.isSelected()) {
 			System.out.println("Checkbox is toggled On");
 		}
 		else {
 			
 			System.out.println("Checkbox is toggled Off");
-			WalkWithClient.click();
+			AssistWithTransfer.click();
 			 
-			if(!WalkWithClient.isSelected()) {
+			if(!AssistWithTransfer.isSelected()) {
 				System.out.println("Checkbox is now toggle off");
 			}
 		}
 		Thread.sleep(4000);	
-	}
-	
-	public void select_the_assist_with_transfers() {
-		
 		
 	}
 	
@@ -1195,11 +1209,12 @@ WebElement LotionTasks =driver.findElement(By.xpath("//input[@id='1804']"));
 		Thread.sleep(4000);
 	}
 	catch(Exception e) {}*/
-	
+	try {
 	WebElement VisitsTime=driver.findElement(By.xpath("(//span[@class='e-frame e-icons'])[1]"));
 	VisitsTime.click();
 	Thread.sleep(6000);
-		
+	}
+	catch (Exception e){}
 	}
 	
 	public void user_enter_caregiver_instructions_for_mobility() throws InterruptedException {
@@ -1250,27 +1265,31 @@ WebElement LotionTasks =driver.findElement(By.xpath("//input[@id='1804']"));
 	
 	public void verify_if_make_bed_tasks_is_already_checked_then_unchecked_it() throws InterruptedException {
 		WebElement MakeBed=driver.findElement(By.xpath("(//input[@id='1815'])[1]"));
+		if(MakeBed.isSelected()) {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()",MakeBed);
-		if(MakeBed.isSelected()) {
+		Thread.sleep(6000);
+		
+		}
+	}
+	
+	public void user_ticked_the_change_lines_tasks() throws InterruptedException {
+		WebElement ChangeLines=driver.findElement(By.xpath("(//input[@id='1813'])[1]"));
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click()",ChangeLines);
+		if(ChangeLines.isSelected()) {
 			System.out.println("Checkbox is toggled On");
 		}
 		else {
 			
 			System.out.println("Checkbox is toggled Off");
-			 MakeBed.click();
+			ChangeLines.click();
 			 
-			if(!MakeBed.isSelected()) {
+			if(!ChangeLines.isSelected()) {
 				System.out.println("Checkbox is now toggle off");
 			}
 		}
 		Thread.sleep(4000);	
-		
-	}
-	
-	public void user_ticked_the_change_lines_tasks() {
-		
-		
 	}
 	
 	public void user_select_the_change_lines_visits_time() {
@@ -1443,29 +1462,32 @@ WebElement saveMealsDetails =driver.findElement(By.xpath("//button[@id='SaveVisi
 	}
 	public void verify_if_check_blood_pressure_tasks_is_already_select_then_unselect_it() throws InterruptedException {
 		WebElement BloodPressuretasks=driver.findElement(By.xpath("(//input[@id='1852'])[1]"));
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click()",BloodPressuretasks);
 		
-		if( BloodPressuretasks.isSelected()) {
+		if(BloodPressuretasks.isSelected()) {
+			BloodPressuretasks.click();	
+		Thread.sleep(4000);	
+	}
+	}
+	
+	public void select_the_check_temperature() throws InterruptedException {
+		WebElement CheckTemp=driver.findElement(By.xpath("(//input[@id='1852'])[1]"));
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click()",CheckTemp);
+		
+		if( CheckTemp.isSelected()) {
 			System.out.println("Checkbox is toggled On");
 		}
 		else {
 			
 			System.out.println("Checkbox is toggled Off");
 			
-			BloodPressuretasks.click();
+			CheckTemp.click();
 			
-			if( !BloodPressuretasks.isSelected()) {
+			if( !CheckTemp.isSelected()) {
 				System.out.println("Checkbox is now toggle off");
 			}
 		}
 		Thread.sleep(4000);
-		
-	}
-	
-	public void select_the_check_temperature() {
-		
-		
 	}
 	public void users_select_the_visits_time() {
 		try {
@@ -1499,7 +1521,7 @@ WebElement saveMealsDetails =driver.findElement(By.xpath("//button[@id='SaveVisi
 		Thread.sleep(8000);
 		
 	}
-	public void user_click_on_the_add_to_schedule_and_finalize_visits() throws InterruptedException {
+	public boolean user_click_on_the_add_to_schedule_and_finalize_visits() throws InterruptedException {
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(6000);
@@ -1523,11 +1545,10 @@ WebElement saveMealsDetails =driver.findElement(By.xpath("//button[@id='SaveVisi
 	 catch (Exception e) {
 		 
 	 }
+		return false;
 		
 	}
-	
-	
-	
+
 	public void check_the_add_visit_configuration_button() throws InterruptedException {
 		WebElement AddVisitBtn=	driver.findElement(By.xpath("(//a[normalize-space()='Add Visit Configuration'])[1]"));
 		AddVisitBtn.click();

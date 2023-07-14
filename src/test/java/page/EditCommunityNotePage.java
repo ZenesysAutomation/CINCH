@@ -1,6 +1,7 @@
 package page;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 import base.BaseClass;
@@ -50,40 +51,46 @@ public class EditCommunityNotePage extends BaseClass {
 		manage.click();
 	}
 	
-public void click_on_the_table() {
+public void click_on_the_table() throws InterruptedException {
 	 WebElement editNotes = driver.findElement(By.xpath("//table/tbody/tr[1]/td[1]"));
      editNotes.click();
+     Thread.sleep(6000);
      
 	}
 
 public void edit_the_note() throws InterruptedException {
 	WebElement txtUpdateNote = driver.findElement(By.id("note"));
     txtUpdateNote.clear();
-    txtUpdateNote.click();
+    //txtUpdateNote.click();
     txtUpdateNote.sendKeys("Data editable");
-    Thread.sleep(3000);
+    txtUpdateNote.click();
+   // JavascriptExecutor js = (JavascriptExecutor)driver;
+	//js.executeScript("arguments[0].click()",txtUpdateNote);
+    Thread.sleep(6000);
 }
 
 public void edit_the_communities() throws InterruptedException {
 	 WebElement community=driver.findElement(By.xpath("//input[@id='community']"));
+	//WebElement community=driver.findElement(By.xpath("(//div[@class='e-multi-select-wrapper'])[1]"));
 	    community.clear();
-	    Thread.sleep(3000);
+	    Thread.sleep(4000);
 	    community.sendKeys("New England Club");
-	    Thread.sleep(3000);
+	    community.click();
+	    Thread.sleep(6000);
 }
 public void edit_the_start_date() throws InterruptedException {
 	WebElement UpdateStartdate = driver.findElement(By.id("startdate"));
 	UpdateStartdate.clear();
 	Thread.sleep(3000);
 	UpdateStartdate.sendKeys("6/25/2023");
-	Thread.sleep(3000);
+	Thread.sleep(6000);
 }
      
 public void edit_the_end_date() throws InterruptedException {
 	   WebElement EditEnddate = driver.findElement(By.id("enddate"));
        EditEnddate.clear();
        EditEnddate.sendKeys("7/28/2023");
-       Thread.sleep(2000);
+       Thread.sleep(6000);
        
     
 }

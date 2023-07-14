@@ -44,7 +44,7 @@ public class EditCommunityNotePageSteps extends BaseClass {
 
 	
 	@When("Click on the Table")
-	public void click_on_the_table() {
+	public void click_on_the_table() throws InterruptedException {
 	  edit.click_on_the_table();  
 	}
 

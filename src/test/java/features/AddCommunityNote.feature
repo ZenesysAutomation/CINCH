@@ -1,7 +1,7 @@
-Feature: Manage Functionality
+Feature: Add Community Note
 
 
-Scenario: Verify the Manage Functionality
+Scenario: Verify the Add Community Note
 Given User enters Email 
 Given User enters Password
 And Click on the login
