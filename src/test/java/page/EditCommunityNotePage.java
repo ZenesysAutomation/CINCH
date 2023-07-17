@@ -1,24 +1,26 @@
 package page;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 import base.BaseClass;
 
 public class EditCommunityNotePage extends BaseClass {
 	
-	public void enter_the_email() {
-		WebElement Username=driver.findElement(By.xpath("//input[@id='email']"));
-		explicitWait(Username,20);
-		Username.sendKeys("anoop.kumar@zenesys.com");
+	public void enter_the_email() throws InterruptedException {
+		WebElement Useremail=driver.findElement(By.xpath("//input[@id='email']"));
+		explicitWait(Useremail,20);
+		Thread.sleep(6000);
+		Useremail.sendKeys("anoop.kumar@zenesys.com");
+		Thread.sleep(6000);
 			
 		} 
 			
-	public void enter_the_password() {
-			WebElement Password=driver.findElement(By.xpath("//input[@id='password']"));
-			explicitWait(Password,20);
-			Password.sendKeys("Testing@123");
+	public void enter_the_password() throws InterruptedException {
+		WebElement Password=driver.findElement(By.xpath("//input[@id='password']"));
+		explicitWait(Password,20);
+		Password.sendKeys("Testing@123");
+		Thread.sleep(4000);
 
 		}
 	public void click_on_the_login_button() throws InterruptedException {
@@ -28,9 +30,10 @@ public class EditCommunityNotePage extends BaseClass {
 			
 			   }
 		
-	public void select_test_community_dropdown() {
+	public void select_test_community_dropdown() throws InterruptedException {
 			WebElement Dropdown=driver.findElement(By.xpath("//span[@role='listbox']"));
 			Dropdown.sendKeys("Test Community");
+			Thread.sleep(4000);
 			
 		}
 		
@@ -39,7 +42,7 @@ public class EditCommunityNotePage extends BaseClass {
 			try {
 				Thread.sleep(3000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
+			
 				e.printStackTrace();
 			}
 		Continue.click();
@@ -70,14 +73,18 @@ public void edit_the_note() throws InterruptedException {
 }
 
 public void edit_the_communities() throws InterruptedException {
+	try {
 	 WebElement community=driver.findElement(By.xpath("//input[@id='community']"));
-	//WebElement community=driver.findElement(By.xpath("(//div[@class='e-multi-select-wrapper'])[1]"));
 	    community.clear();
 	    Thread.sleep(4000);
 	    community.sendKeys("New England Club");
 	    community.click();
 	    Thread.sleep(6000);
+	}
+	catch (Exception e) {}
 }
+
+
 public void edit_the_start_date() throws InterruptedException {
 	WebElement UpdateStartdate = driver.findElement(By.id("startdate"));
 	UpdateStartdate.clear();

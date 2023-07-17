@@ -851,6 +851,26 @@ public void save_the_all_visits_plan_details() throws InterruptedException {
 	visitplan.save_the_all_visits_plan_details();
 }
 
+@Then ("Click on the Everyday Table")
+public void click_on_the_everyday_table () throws InterruptedException {
+	visitplan.click_on_the_everyday_table ();
+}
+@And ("Change The End Date")
+public void change_the_end_date() {
+	visitplan.change_the_end_date();
+	
+}
+@And ("Update the Visits")
+public void update_the_visits() throws InterruptedException {
+	visitplan.update_the_visits();
+	
+}
+@And ("Save The Visits")
+public void save_the_visits() throws InterruptedException {
+	visitplan.save_the_visits();
+	
+}
+
 @Then ("User click on the Add Visit Configuration")
 public void user_click_on_the_add_visit_configuration() throws InterruptedException {
 	visitplan.user_click_on_the_add_visit_configuration(); 

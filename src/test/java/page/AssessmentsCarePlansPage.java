@@ -18,10 +18,12 @@ public void user_enter_email() throws InterruptedException {
 	Thread.sleep(4000);
 	}
 
-public void user_enter_password() {
+public void user_enter_password() throws InterruptedException {
 	WebElement Password=driver.findElement(By.xpath("//input[@id='password']"));
 	explicitWait(Password,20);
+	Thread.sleep(4000);
 	Password.sendKeys("Testing@123");
+	Thread.sleep(4000);
 	}
 
 public void user_click_on_the_click() throws InterruptedException {
@@ -59,12 +61,21 @@ public void click_on_the_user_data_table() throws InterruptedException {
 //	Thread.sleep(10000);
 //	}
 
-	WebElement DataTable = driver.findElement(By.xpath("(//td[@aria-label='Wilson Column Header Last Name'])[1]"));
+	
+//	WebElement DataTable = driver.findElement(By.xpath("(//td[@aria-label='Wilson Column Header Last Name'])[1]"));
+//	Thread.sleep(8000);
+//	JavascriptExecutor js =(JavascriptExecutor)driver;
+//	js.executeScript("arguments[0].click()", DataTable);
+//	Thread.sleep(8000);
+//	}
+
+	WebElement DataTable = driver.findElement(By.xpath("(//td[@aria-label='Test1 Column Header First Name'])[1]"));
 	Thread.sleep(8000);
 	JavascriptExecutor js =(JavascriptExecutor)driver;
 	js.executeScript("arguments[0].click()", DataTable);
-	Thread.sleep(10000);
+	Thread.sleep(8000);
 	}
+
 
 public void click_on_the_assessment_and_care_plan() throws InterruptedException {
 	WebElement Assessment=driver.findElement(By.xpath("//button[normalize-space()='Assessment and Care Plan']"));
@@ -123,7 +134,6 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			{
 				WebElement Precautions=driver.findElement(By.xpath("//textarea[@id='precautions']"));
 				explicitWait(Precautions,15);
-				//Precautions.clear();
 				Thread.sleep(3000);
 				Precautions.sendKeys("Testing Demo");
 			}
@@ -152,8 +162,6 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			public void user_enter_the_condition_notes() throws InterruptedException 
 			{
 				WebElement ConditionNotes =	driver.findElement(By.xpath("//textarea[@id='conditionnotes']"));
-				//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
-				//manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 				Thread.sleep(6000);
 				//ConditionNotes.clear();
 				ConditionNotes.sendKeys("Testing Environment");

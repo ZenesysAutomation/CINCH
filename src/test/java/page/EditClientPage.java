@@ -50,12 +50,22 @@ public void click_on_the_clients() throws InterruptedException {
 			   
 }
 public void click_on_the_user_table() throws InterruptedException {
-	WebElement EditTable=driver.findElement(By.xpath("//tbody/tr[21]/td[1]"));
+	/*WebElement EditTable=driver.findElement(By.xpath("//tbody/tr[21]/td[1]"));
 	Thread.sleep(8000);
 	JavascriptExecutor js = (JavascriptExecutor)driver;
   js.executeScript("arguments[0].click()", EditTable);
 	Thread.sleep(10000);
+	}*/
+	
+	
+	WebElement EditTable=driver.findElement(By.xpath("(//td[@aria-label='Piyush Column Header First Name'])[1]"));
+	Thread.sleep(8000);
+	JavascriptExecutor js = (JavascriptExecutor)driver;
+	js.executeScript("arguments[0].click()", EditTable);
+	Thread.sleep(10000);
 	}
+	
+	
 
 public void click_on_the_edit_button() throws InterruptedException {
 	WebElement Editbtn=driver.findElement(By.xpath("(//button[normalize-space()='Edit'])[1]"));
@@ -72,20 +82,18 @@ public void click_on_the_edit_button() throws InterruptedException {
 
 public void change_the_status_from_active_to_discharged() throws InterruptedException {
 	WebElement Discharged=driver.findElement(By.xpath("//span[@aria-owns='client-status_options']"));
-	//WebElement Discharged=driver.findElement(By.xpath("//span[contains(@class,'modified valid')]"));
 	Discharged.click();
 	Thread.sleep(4000);
 	Discharged.sendKeys("Discharged");
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	  js.executeScript("arguments[0].click()",Discharged);
-	//Discharged.click();
 	Thread.sleep(6000);
 	
 }
 public void enter_the_discharge_reason() throws InterruptedException {
 	
 	   WebElement DischargeReason=driver.findElement(By.xpath("(//span[@aria-owns='discharge-reason_options'])[1]"));
-		//WebElement DischargeReason=driver.findElement(By.xpath("//span[contains(@class,'modified invalid')]//span[contains(@class,'e-input-group-icon e-ddl-icon e-icons e-ddl-disable-icon')]"));
+		
 	   Thread.sleep(4000);
 	   DischargeReason.click();
 	   DischargeReason.sendKeys("Moved out of area");

@@ -14,12 +14,22 @@ public class EditCommunityNotePageSteps extends BaseClass {
 
 	@Given("Enter the Email")
 	public void enter_the_email() {
-	    edit.enter_the_email();
+	    try {
+			edit.enter_the_email();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Given("Enter the Password")
 	public void enter_the_password() {
-	  edit.enter_the_password();
+	  try {
+		edit.enter_the_password();
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	}
 
 	@Given("click on the login Button")
@@ -29,7 +39,12 @@ public class EditCommunityNotePageSteps extends BaseClass {
 
 	@Given("Select TestCommunity Dropdown")
 	public void select_test_community_dropdown() {
-	    edit.select_test_community_dropdown();
+	    try {
+			edit.select_test_community_dropdown();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Given("click on the Continue")

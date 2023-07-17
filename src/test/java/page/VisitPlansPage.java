@@ -7,8 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-
 import base.BaseClass;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -1642,9 +1640,52 @@ WebElement saveMealsDetails =driver.findElement(By.xpath("//button[@id='SaveVisi
 		Thread.sleep(8000);
 	}
 	
+	
+	
 	public void save_the_all_visits_plan_details() throws InterruptedException {
 		WebElement SaveVisitsplan=driver.findElement(By.xpath("//button[@id='SaveVisit']"));
 		SaveVisitsplan.click();
+		Thread.sleep(8000);
+	}
+	
+	public void click_on_the_everyday_table () throws InterruptedException {
+		WebElement TableClick=driver.findElement(By.xpath("(//a[normalize-space()='Every Day'])[1]"));
+		TableClick.click();
+		Thread.sleep(6000);
+	}
+	
+	public void change_the_end_date() {
+		 LocalDateTime targetDate = LocalDateTime.now().minusDays(6);
+	        String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+
+	        WebElement startDateField = driver.findElement(By.xpath("(//input[@id='visit-end-date'])[1]"));
+	        startDateField.click();
+
+	        for (int i = 1; i <= 10; i++) {
+	            startDateField.sendKeys(Keys.BACK_SPACE);
+	        }
+
+	        startDateField.sendKeys(targetDateString);
+	        try {
+				Thread.sleep(8000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		
+	}
+	
+	public void update_the_visits() throws InterruptedException {
+	WebElement UpdateVisits =	driver.findElement(By.xpath("(//button[normalize-space()='Update'])[1]"));
+	UpdateVisits.click();
+	Thread.sleep(6000);
+	JavascriptExecutor js = (JavascriptExecutor)driver;
+	js.executeScript("window.scrollBy(0, 50000)");
+	Thread.sleep(8000);
+	}
+	
+	public void save_the_visits() throws InterruptedException {
+		WebElement SaveVisits =	driver.findElement(By.xpath("//button[@id='SaveVisit']"));
+		SaveVisits.click();
 		Thread.sleep(8000);
 	}
 	

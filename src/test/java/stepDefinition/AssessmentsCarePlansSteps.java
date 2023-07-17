@@ -16,7 +16,12 @@ public class AssessmentsCarePlansSteps extends BaseClass  {
 
 	@Then("user enter Password")
 	public void user_enter_password() {
-		assessment.user_enter_password();
+		try {
+			assessment.user_enter_password();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Then("user click on the click")
