@@ -11,7 +11,7 @@ public class EditCommunityNotePage extends BaseClass {
 		WebElement Useremail=driver.findElement(By.xpath("//input[@id='email']"));
 		explicitWait(Useremail,20);
 		Thread.sleep(6000);
-		Useremail.sendKeys("anoop.kumar@zenesys.com");
+		Useremail.sendKeys(prop.getProperty("username"));
 		Thread.sleep(6000);
 			
 		} 
@@ -19,7 +19,7 @@ public class EditCommunityNotePage extends BaseClass {
 	public void enter_the_password() throws InterruptedException {
 		WebElement Password=driver.findElement(By.xpath("//input[@id='password']"));
 		explicitWait(Password,20);
-		Password.sendKeys("Testing@123");
+		Password.sendKeys(prop.getProperty("password"));
 		Thread.sleep(4000);
 
 		}

@@ -14,7 +14,7 @@ public void user_enter_email() throws InterruptedException {
 	WebElement Useremail=driver.findElement(By.xpath("//input[@id='email']"));
 	explicitWait(Useremail,20);
 	Thread.sleep(4000);
-	Useremail.sendKeys("anoop.kumar@zenesys.com");
+	Useremail.sendKeys(prop.getProperty("username"));
 	Thread.sleep(4000);
 	}
 
@@ -22,7 +22,7 @@ public void user_enter_password() throws InterruptedException {
 	WebElement Password=driver.findElement(By.xpath("//input[@id='password']"));
 	explicitWait(Password,20);
 	Thread.sleep(4000);
-	Password.sendKeys("Testing@123");
+	Password.sendKeys(prop.getProperty("password"));
 	Thread.sleep(4000);
 	}
 

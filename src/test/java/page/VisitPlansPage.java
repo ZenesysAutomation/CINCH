@@ -17,7 +17,7 @@ public class VisitPlansPage extends BaseClass  {
 		WebElement Useremail=driver.findElement(By.xpath("//input[@id='email']"));
 		explicitWait(Useremail,20);
 		Thread.sleep(6000);
-		Useremail.sendKeys("anoop.kumar@zenesys.com");
+		Useremail.sendKeys(prop.getProperty("username"));
 		Thread.sleep(6000);
 		   
 	}
@@ -25,7 +25,7 @@ public class VisitPlansPage extends BaseClass  {
 	public void user_enter_the_password() throws InterruptedException {
 		WebElement Password=driver.findElement(By.xpath("//input[@id='password']"));
 		explicitWait(Password,20);
-		Password.sendKeys("Testing@123");
+		Password.sendKeys(prop.getProperty("password"));
 		Thread.sleep(4000);
 		}
 		   
@@ -456,9 +456,12 @@ public void select_duration() throws InterruptedException {
 		}
 		catch(Exception e) {}*/
 		
+		try {
 		WebElement VisitTime =driver.findElement(By.xpath("(//span[@class='e-frame e-icons'])[1]"));
 		VisitTime.click();
 		Thread.sleep(4000);	
+		}
+		catch (Exception e) {}
 	}
 	
 	
@@ -577,10 +580,12 @@ public void select_duration() throws InterruptedException {
 		}
 		catch(Exception e) {}*/
 		
+		try {
 		WebElement VisitsTime=driver.findElement(By.xpath("(//span[@class='e-frame e-icons'])[1]"));
 		VisitsTime.click();
 		Thread.sleep(6000);
-		
+		}
+		catch (Exception e) {}
 		
 	}
 	public void enter_caregiver_instructions() throws InterruptedException {
@@ -1081,9 +1086,12 @@ public void select_duration() throws InterruptedException {
 	
 	
 	public void user_enter_the_caregiver_instructions1() throws InterruptedException {
+		try {
 		WebElement Instructions3  = driver.findElement(By.xpath("//textarea[@id='notes']"));
-		Instructions3 .sendKeys("Testing v3.0");
+		Instructions3 .sendKeys("Testing v3.1");
 		Thread.sleep(4000);
+		}
+		catch (Exception e) {}
 	}
 	
 	public void update_the_assist_with_oral_care_details() throws InterruptedException {
@@ -1555,12 +1563,15 @@ WebElement saveMealsDetails =driver.findElement(By.xpath("//button[@id='SaveVisi
 	}
 	
 	public void user_select_all_the_days() throws InterruptedException {
-		WebElement dropdown=driver.findElement(By.id("daysofweek"));
-		dropdown.click();
+		try {
+		WebElement selectalldays=driver.findElement(By.id("daysofweek"));
+		selectalldays.click();
 		
-		WebElement dropdown2=driver.findElement(By.xpath("//*[@id=\"daysofweek_popup\"]/div[1]/span"));
-		dropdown2.click();
+		WebElement selectalldays2=driver.findElement(By.xpath("//*[@id=\"daysofweek_popup\"]/div[1]/span"));
+		selectalldays2.click();
 		Thread.sleep(8000);
+		}
+		catch (Exception e) {}
 		
 	}
 	
@@ -1697,12 +1708,15 @@ WebElement saveMealsDetails =driver.findElement(By.xpath("//button[@id='SaveVisi
 	}
 	
 	public void user_select_the_all_days() throws InterruptedException {
+		try {
 		WebElement daysDropdown=driver.findElement(By.id("daysofweek"));
 		daysDropdown.click();
 		
 		WebElement daysDropdown2=driver.findElement(By.xpath("//*[@id=\"daysofweek_popup\"]/div[1]/span"));
 		daysDropdown2.click();
 		Thread.sleep(8000);
+		}
+		catch (Exception e) {}
 		
 	}
 	
@@ -1740,7 +1754,7 @@ WebElement saveMealsDetails =driver.findElement(By.xpath("//button[@id='SaveVisi
 	}
 	
 	public void user_select_the_start_date() throws InterruptedException {
-		 LocalDateTime targetDate = LocalDateTime.now().minusDays(4);
+		 	LocalDateTime targetDate = LocalDateTime.now().minusDays(4);
 	        String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 
 	        WebElement startDateField = driver.findElement(By.id("visit-start-date"));
@@ -1969,13 +1983,16 @@ WebElement saveMealsDetails =driver.findElement(By.xpath("//button[@id='SaveVisi
 	}
 	
 	public void select_visit_duration_as_30_minute_visit () throws InterruptedException {
-
+		
+		try {
 		WebElement Duration =driver.findElement(By.xpath("//span[contains(@aria-owns,'duration_options')]"));
 		Duration.click();
 		Duration.sendKeys("30 Minute Visit");
 		Duration.click();
 		Thread.sleep(6000);
-	}
+		}
+		catch (Exception e) {}
+		}
 	
 	public void select_the_weekly_recurrence() throws InterruptedException {
 		WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));

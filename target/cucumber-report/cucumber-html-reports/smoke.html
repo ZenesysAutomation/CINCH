@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>COM.CINCHCCM</td>
                           <td>1</td>
-                        <td>14 Jul 2023, 16:05</td>
+                        <td>19 Jul 2023, 04:19</td>
           </tr>
         </tbody>
       </table>
@@ -126,13 +126,13 @@ $(document).ready(function() {
                     <td >0</td>
           <td  class="failed"    >1</td>
           <td class="total">1</td>
-          <td      class="passed"    >8</td>
+          <td >0</td>
           <td      class="failed"    >1</td>
           <td     class="skipped"   >2</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">11</td>
-          <td class="duration" data-value="84016889200">1m 24s 016ms</td>
+          <td class="total">3</td>
+          <td class="duration" data-value="20035162000">20s 035ms</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -152,7 +152,7 @@ $(document).ready(function() {
                   
 <div class="element">
       <div class="indention">
-      <a href="file-src-test-java-features-EditClient-feature.html">View Feature</a> <i>Edit Client</i>
+      <a href="file-src-test-java-features-CaregiverAssignments-feature.html">View Feature</a> <i>Verify the Caregiver Assignments Functionalities</i>
     </div>
   
   
@@ -165,7 +165,7 @@ $(document).ready(function() {
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify the Edit Client Functionality</span>
+  <span class="name">Verify the Change Time for a Client Visit (Move only this occurrence)</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -195,7 +195,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">base.Hooks.mysetup()</span>
                         
-  <span class="lead-duration duration">4s 435ms</span>
+  <span class="lead-duration duration">4s 424ms</span>
 
           </div>
 
@@ -226,179 +226,11 @@ $(document).ready(function() {
   <div id="steps-3" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">Check the User Email</span>
-  
-  <span class="lead-duration duration">15s 135ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Check the User Password</span>
-  
-  <span class="lead-duration duration">111ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Check the Login Button</span>
-  
-  <span class="lead-duration duration">3s 161ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Check the Test Community Dropdown</span>
-  
-  <span class="lead-duration duration">137ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Click on the Continue Button</span>
-  
-  <span class="lead-duration duration">3s 108ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Click on the Clients</span>
-  
-  <span class="lead-duration duration">9s 515ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">click on the User Table</span>
-  
-  <span class="lead-duration duration">18s 753ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Click on the Edit Button</span>
-  
-  <span class="lead-duration duration">14s 065ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
 <div class="brief failed">
   <span class="keyword indention">Then</span>
-  <span class="name">Change the Status from Active to Discharged</span>
+  <span class="name">Change the Time for visit</span>
   
-  <span class="lead-duration duration">20s 027ms</span>
+  <span class="lead-duration duration">20s 035ms</span>
 
   </div>
 
@@ -410,15 +242,15 @@ $(document).ready(function() {
           <a>Error message</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(@class,'modified valid')]"}
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".e\-timepicker"}
   (Session info: chrome=114.0.5735.199)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a0905011218a540c4d3928f7a2dbc7bd, findElement {using=xpath, value=//span[contains(@class,'modified valid')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ANOOPK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49792}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49792/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a0905011218a540c4d3928f7a2dbc7bd
+Command: [1c18562af28240f2919ed60c173a7dd1, findElement {using=class name, value=e-timepicker}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ANOOPK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54443}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54443/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c18562af28240f2919ed60c173a7dd1
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -435,9 +267,9 @@ Session ID: a0905011218a540c4d3928f7a2dbc7bd
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at page.EditClientPage.change_the_status_from_active_to_discharged(EditClientPage.java:73)
-	at stepDefinition.EditClientSteps.change_the_status_from_active_to_discharged(EditClientSteps.java:54)
-	at ✽.Change the Status from Active to Discharged(file:///C:/Users/AnoopKumar/eclipse-workspace/COM.CINCHCCM/src/test/java/features/EditClient.feature:14)
+	at page.CaregiverAssignmentsPage.change_the_time_for_visit(CaregiverAssignmentsPage.java:78)
+	at stepDefinition.CaregiverAssignmentsSteps.change_the_time_for_visit(CaregiverAssignmentsSteps.java:53)
+	at ✽.Change the Time for visit(file:///C:/Users/AnoopKumar/eclipse-workspace/COM.CINCHCCM/src/test/java/features/CaregiverAssignments.feature:15)
 </pre>
       </div>
     </div>
@@ -455,8 +287,8 @@ Session ID: a0905011218a540c4d3928f7a2dbc7bd
           <div class="step">
         
 <div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">Enter the Discharge Reason</span>
+  <span class="keyword indention">And</span>
+  <span class="name">Select option Move only this occurrence</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -477,7 +309,7 @@ Session ID: a0905011218a540c4d3928f7a2dbc7bd
         
 <div class="brief skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">save the Data</span>
+  <span class="name">Save the Visit</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -518,7 +350,7 @@ Session ID: a0905011218a540c4d3928f7a2dbc7bd
             <span class="keyword indention">After</span>
                           <span class="location name">base.Hooks.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">413ms</span>
+  <span class="lead-duration duration">393ms</span>
 
           </div>
 

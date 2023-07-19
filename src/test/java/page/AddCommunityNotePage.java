@@ -11,14 +11,14 @@ public class AddCommunityNotePage extends BaseClass {
 	public void user_enters_email() {
 	WebElement Username=driver.findElement(By.xpath("//input[@id='email']"));
 	explicitWait(Username,20);
-	Username.sendKeys("anoop.kumar@zenesys.com");
+	Username.sendKeys(prop.getProperty("username"));
 		
 	} 
 		
 	public void user_enters_password() {
 		WebElement Password=driver.findElement(By.xpath("//input[@id='password']"));
 		explicitWait(Password,20);
-		Password.sendKeys("Testing@123");
+		Password.sendKeys(prop.getProperty("password"));
 
 	}
 	public void Click_on_the_login() throws InterruptedException {
