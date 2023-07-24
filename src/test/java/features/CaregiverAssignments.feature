@@ -18,6 +18,7 @@ And Select option Move only this occurrence
 Then Save the Visit
 
 
+
 Scenario: Verify the Change Time for a Client Visit (Move day series)
 When Check if Color is Blue and Active Visit then Click on it2
 Then Change the Time 
@@ -26,12 +27,19 @@ Then save the visit
 
 
 
+Scenario: Verify the Change Time for a Client Visit (Move week series)
+When Check if Color is Blue and Active Visit then Click on it3
+Then change the time 
+And Select the Option Move week series
+Then Save The Visit
+
+
+
 Scenario: Change Client Visit to Another Track
 Given Click on the Visit
 Then Change the Track from East1 to East2
 And Select Move only this occurrence
 Then Save the Visits
-
 
 
 

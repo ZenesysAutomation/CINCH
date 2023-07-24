@@ -105,13 +105,13 @@ public class Script {
 					    }
 					    Thread.sleep(2000);*/
 				
-				WebElement ddlStartTime = driver.findElement(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
-				   ddlStartTime.click();
+				WebElement StartTime = driver.findElement(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
+				 StartTime.click();
 				    Thread.sleep(6000);
 				    
 				    Actions action = new Actions(driver);
 					action.sendKeys(Keys.chord(Keys.DOWN,Keys.DOWN)).build().perform();
-					ddlStartTime.click();
+					 StartTime.click();
 					Thread.sleep(6000);
 					    
 					    					
@@ -124,7 +124,7 @@ public class Script {
 //				js.executeScript("arguments[0].click()",SelectMoveDayseries );					
 //				Thread.sleep(6000); 
 				
-				WebElement VisitSvebtn=	driver.findElement(By.xpath("//label[normalize-space()='Move day series']"));
+				WebElement VisitSvebtn=	driver.findElement(By.xpath("//button[normalize-space()='Save']"));
 				VisitSvebtn.click();
 				Thread.sleep(6000);
 }

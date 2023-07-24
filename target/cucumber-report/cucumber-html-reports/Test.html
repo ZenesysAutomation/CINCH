@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber-JVM Reports  - Tag: @smoke</title>
+<title>Cucumber-JVM Reports  - Tag: @Test</title>
 
 </head>
 <body>
@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>COM.CINCHCCM</td>
                           <td>1</td>
-                        <td>20 Jul 2023, 08:47</td>
+                        <td>24 Jul 2023, 08:40</td>
           </tr>
         </tbody>
       </table>
@@ -122,18 +122,18 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@smoke</td>
-                    <td >0</td>
-          <td  class="failed"    >1</td>
+          <td class="tagname">@Test</td>
+                    <td  class="passed"    >1</td>
+          <td >0</td>
           <td class="total">1</td>
-          <td      class="passed"    >1</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >2</td>
+          <td      class="passed"    >4</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">4</td>
-          <td class="duration" data-value="30724577000">30s 724ms</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="54181926700">54s 181ms</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -157,13 +157,13 @@ $(document).ready(function() {
   
   
 <div class="tags indention">
-       <a href="smoke.html">@smoke</a>
+       <a href="Test.html">@Test</a>
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Verify the Change Time for a Client Visit (Move only this occurrence)</span>
   
@@ -174,7 +174,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -195,7 +195,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">base.Hooks.mysetup()</span>
                         
-  <span class="lead-duration duration">4s 630ms</span>
+  <span class="lead-duration duration">5s 364ms</span>
 
           </div>
 
@@ -211,9 +211,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -223,14 +223,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">Check if Color is Blue and Active Visit then Click on it</span>
   
-  <span class="lead-duration duration">10s 658ms</span>
+  <span class="lead-duration duration">21s 333ms</span>
 
   </div>
 
@@ -247,54 +247,15 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">Change the Time for visit</span>
   
-  <span class="lead-duration duration">20s 066ms</span>
+  <span class="lead-duration duration">12s 448ms</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Error message</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".e\-timepicker"}
-  (Session info: chrome=114.0.5735.199)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3daaa3e050bb80e5fcc0f0af23fb75f5, findElement {using=class name, value=e-timepicker}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ANOOPK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53224}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53224/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3daaa3e050bb80e5fcc0f0af23fb75f5
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at page.CaregiverAssignmentsPage.change_the_time_for_visit(CaregiverAssignmentsPage.java:85)
-	at stepDefinition.CaregiverAssignmentsSteps.change_the_time_for_visit(CaregiverAssignmentsSteps.java:56)
-	at ✽.Change the Time for visit(file:///C:/Users/AnoopKumar/eclipse-workspace/COM.CINCHCCM/src/test/java/features/CaregiverAssignments.feature:16)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -307,11 +268,11 @@ Session ID: 3daaa3e050bb80e5fcc0f0af23fb75f5
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">Select option Move only this occurrence</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">20s 061ms</span>
 
   </div>
 
@@ -328,11 +289,11 @@ Session ID: 3daaa3e050bb80e5fcc0f0af23fb75f5
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">Save the Visit</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">338ms</span>
 
   </div>
 
@@ -353,7 +314,7 @@ Session ID: 3daaa3e050bb80e5fcc0f0af23fb75f5
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -365,13 +326,13 @@ Session ID: 3daaa3e050bb80e5fcc0f0af23fb75f5
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">base.Hooks.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">396ms</span>
+  <span class="lead-duration duration">350ms</span>
 
           </div>
 

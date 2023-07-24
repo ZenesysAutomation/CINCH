@@ -92,7 +92,12 @@ public class CaregiverAssignmentsSteps extends BaseClass  {
 		cg.save_the_visit1();
 	} 
 	
-	/*@Then ("change the time")
+	@When("Check if Color is Blue and Active Visit then Click on it3")
+	public void check_if_color_is_blue_and_active_visit_then_click_on_it3() throws InterruptedException {
+		cg.check_if_color_is_blue_and_active_visit_then_click_on_it3();
+	}
+	
+	@Then ("change the time")
 	public void change_the_time1() throws InterruptedException {
 		cg.change_the_time1();
 	}
@@ -107,7 +112,7 @@ public class CaregiverAssignmentsSteps extends BaseClass  {
 	public void save_the_visit2() throws InterruptedException {
 		cg.save_the_visit2();
 		
-	}*/
+	}
 	
 	@Given ("Click on the Visit")
 	public void click_on_the_visit() throws InterruptedException {
