@@ -10,7 +10,6 @@ And User Click on the Continue Button
 Given Click on the Caregiver Assignments
 
 
-@Test
 Scenario: Verify the Change Time for a Client Visit (Move only this occurrence)
 Then Check if Color is Blue and Active Visit then Click on it
 Then Change the Time for visit 
@@ -33,13 +32,13 @@ Then change the time
 And Select the Option Move week series
 Then Save The Visit
 
-
-
+@Test
 Scenario: Change Client Visit to Another Track
 Given Click on the Visit
 Then Change the Track from East1 to East2
 And Select Move only this occurrence
 Then Save the Visits
+
 
 
 

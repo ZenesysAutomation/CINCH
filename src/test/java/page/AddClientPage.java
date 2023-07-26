@@ -1,27 +1,30 @@
 package page;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.BaseClass;
 
 public class AddClientPage extends BaseClass {
 	
 public void user_enter_the_valid_email() throws InterruptedException {
-	WebElement Useremail=driver.findElement(By.xpath("//input[@id='email']"));
-	explicitWait(Useremail,20);
-	Thread.sleep(4000);
-	Useremail.sendKeys(prop.getProperty("username"));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
+	 Useremail.sendKeys(prop.getProperty("username"));
 		    
 }
 	
 public void user_enter_the_valid_password() {
 	
-	WebElement Password=driver.findElement(By.xpath("//input[@id='password']"));
-	explicitWait(Password,20);
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebElement Password= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
 	Password.sendKeys(prop.getProperty("password"));
+	
 }
 
 public void user_click_on_the_login() throws InterruptedException {

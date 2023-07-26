@@ -1,33 +1,34 @@
-	package page;
+package page;
 
 
-	import java.util.List;
-import java.util.NoSuchElementException;
-
+import java.time.Duration;
+import java.util.List;
+import java.util.Random;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import base.BaseClass;
 
 	public class CaregiverAssignmentsPage extends BaseClass  {
 	
 	public void user_enter_the_email() throws InterruptedException {
-	WebElement Useremail=driver.findElement(By.xpath("//input[@id='email']"));
-	Thread.sleep(6000);
-	Useremail.sendKeys(prop.getProperty("username"));
-	Thread.sleep(8000);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
+		 Useremail.sendKeys(prop.getProperty("username"));
 		
 	}
 
 	public void user_enter_the_password() throws InterruptedException {
-	WebElement Password=driver.findElement(By.xpath("//input[@id='password']"));
-	explicitWait(Password,10);
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebElement Password= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
 	Password.sendKeys(prop.getProperty("password"));
-	Thread.sleep(5000);
+	
 	
 }
 
@@ -60,218 +61,244 @@ import base.BaseClass;
 		
 	
 }
-
+//	private String getColorCodeByNumber(int number) {
+//		if(number==0)
+//			return "rgba(183, 137, 103, 1)";
+//		else if(number==1)
+//			return "rgba(49, 32, 138, 1)";
+//		else if(number==2)
+//			return "rgba(46, 55, 255, 1)";
+//		else if(number==3)
+//			return "rgba(255, 121, 59, 1)";
+//		else if(number==4)
+//			return "rgba(97, 255, 239, 1)";
+//		else
+//			return "rgba(46, 55, 255, 1)";
+//		
+//	}
 	public void check_if_color_is_blue_and_active_visit_then_click_on_it() throws InterruptedException {
-	List<WebElement> blueElements=driver.findElements(By.className("text-wrap"));
-	Thread.sleep(2000);
-	try {
-		for(int i=0;i<=blueElements.size();i++)
-		{
-			WebElement p=(WebElement) blueElements.toArray()[i];
-			Thread.sleep(1000);
-			String rgbaValue = p.getCssValue("backgroundColor");
-			if(rgbaValue.equals("rgba(46, 55, 255, 1)")) {
+		List<WebElement> blueElements=driver.findElements(By.className("text-wrap"));
+		Thread.sleep(2000);
+		String elementClassName = "e-schedule-table";
+		try {
+			for(int i=0;i<=blueElements.size();i++)
+			{
+				WebElement p=(WebElement) blueElements.toArray()[i];
 				Thread.sleep(1000);
-				JavascriptExecutor js = (JavascriptExecutor)driver;
-				js.executeScript("window.scrollBy(0, 50000)");
-				Thread.sleep(3000);
-				p.click();
-				Thread.sleep(5000);
-				return;
-			}
-			
+				String rgbaValue = p.getCssValue("backgroundColor");
+				JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+			    if(rgbaValue.equals("rgba(183, 137, 103, 1)")) {
+			    	Thread.sleep(1000);
+			    	WebElement element = driver.findElement(By.className(elementClassName));
+			    	jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+			    	for(i=1;i<=100;i++) {
+			    		if (!p.isDisplayed()) {
+			    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+				            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+			            }
+			    	}
+	            	p.click();
+					Thread.sleep(5000);
+					return;
+				}
+				else if(rgbaValue.equals("rgba(49, 32, 138, 1)")) {
+					Thread.sleep(1000);
+					WebElement element = driver.findElement(By.className(elementClassName));
+					jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+			    	for(i=1;i<=100;i++) {
+			    		if (!p.isDisplayed()) {
+			    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+				            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+			            }
+			    	}
+	            	p.click();
+					Thread.sleep(5000);
+					return;
+				}
+		
+				else if(rgbaValue.equals("rgba(46, 55, 255, 1)")) {
+					Thread.sleep(1000);
+					WebElement element = driver.findElement(By.className(elementClassName));
+					jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+			    	for(i=1;i<=100;i++) {
+			    		if (!p.isDisplayed()) {
+			    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+				            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+			            }
+			    	}
+	            	p.click();
+					Thread.sleep(5000);
+					return;
+				}
+				else if(rgbaValue.equals("rgba(255, 121, 59, 1)")) {
+					Thread.sleep(1000);
+					WebElement element = driver.findElement(By.className(elementClassName));
+					jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+			    	for(i=1;i<=100;i++) {
+			    		if (!p.isDisplayed()) {
+			    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+				            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+			            }
+			    	}
+	            	p.click();
+					Thread.sleep(5000);
+					return;
+				}
+				else if(rgbaValue.equals("rgba(97, 255, 239, 1)")) {
+					Thread.sleep(1000);
+					WebElement element = driver.findElement(By.className(elementClassName));
+					jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+			    	for(i=1;i<=100;i++) {
+			    		if (!p.isDisplayed()) {
+			    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+				            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+			            }
+			    	}
+	            	p.click();
+					Thread.sleep(5000);
+					return;
+				}
+		}
+		}
+		catch(Exception e) {
+			e.printStackTrace();
 		}
 	}
-	catch(Exception e) {
-		e.printStackTrace();
-	}
-}
 
 	public void change_the_time_for_visit() throws InterruptedException {
-	/*WebElement oldTimeElement = driver.findElement(By.className("e-timepicker"));
-    String oldTime = oldTimeElement.getDomProperty("value");
-    String minute="";
-    String newTime="";
-    if(oldTime!=null && oldTime!="") {
-    	if(oldTime.contains("PM")) {
-    		 minute=oldTime.split(":")[1].replace(" PM","");
-    		 if(minute=="45") {
-    			 newTime=(oldTime.split(":")[0]+1)+":"+"00" +" PM"; 
-    		 }
-    		 else {
-    			 newTime=oldTime.split(":")[0]+":"+(Integer.parseInt(minute)+15)+" PM";
-    		 }    	}
-    	else {
-    		 minute=oldTime.split(":")[1].replace(" AM","");
-    		 if(minute=="45") {
-    			 newTime=(oldTime.split(":")[0]+1)+":"+"00" +" AM"; 
-    		 }
-    		 else {
-    			 newTime=oldTime.split(":")[0]+":"+(Integer.parseInt(minute)+15)+" AM";
-    		 }
-    	}
-    	driver.findElement(By.className("e-timepicker")).sendKeys(newTime);
-    }
-}*/
-	
-	WebElement SelectTime = driver.findElement(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
-	SelectTime.click();
-    Thread.sleep(6000);
-	Actions action = new Actions(driver);
-	action.sendKeys(Keys.chord(Keys.DOWN,Keys.DOWN)).build().perform();
-	SelectTime.click();
-	Thread.sleep(1000);
-	
-}
-	
-    
-//    Thread.sleep(6000);
-//    String desiredTimeText = "12:45 AM";
-//    WebElement desiredTimeOption = driver.findElement(By.className("e-control e-timepicker e-lib e-input and text()='" + desiredTimeText + "']"));
-//    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", desiredTimeOption);
-//    desiredTimeOption.click();
-//    Thread.sleep(6000);
-
-	
-	
-	/*WebElement ddlStartTime = driver.findElement(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
-    ddlStartTime.click();
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-    WebElement option = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@id='timepicker-f668114a-c0e3-4923-8156-4673e427eff4'])[1][@data-value='12:45 AM']")));
-    option.click();*/
-     
-
-
-    // Get the current local date and time
-   /* LocalDateTime currentTime = LocalDateTime.now();
-
-    // Round the current time to the nearest 15 minutes
-    LocalDateTime roundedTime = roundToNearest15Minutes(currentTime);
-    ddlStartTime.click();
-
-    // Format the rounded time as "h:mm a"
-    String roundedTimeFormatted = roundedTime.format(DateTimeFormatter.ofPattern("h:mm a"));
-
-    // Use the formatted time as needed
-    System.out.println("Rounded Time: " + roundedTimeFormatted);
-    Thread.sleep(3000);
-}*/
-
-	public void select_option_move_only_this_occurence() throws InterruptedException {
-		//try {
-			List<WebElement> SelectOccurences=	driver.findElements(By.xpath("(//input[@id='flexRadioDefault1'])[1]"));
-			if(SelectOccurences.size()>0) {
-				WebElement selectOccurrence = SelectOccurences.get(0);
-				selectOccurrence.click();
-			}
-			//Thread.sleep(8000);
-		//}
-		//catch(NoSuchElementException  e){
-		//    System.out.println("Element not found. Error message: " + e.getMessage());
-		//}
-	
-	
-		/*List<WebElement> SelectMoveDayseries=	driver.findElements(By.cssSelector(".form-check-label"));
+		WebElement SelectTime = driver.findElement(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
+		explicitWait(SelectTime, 5);
+		SelectTime.click();
+		Random random =new Random();
+		List<WebElement> liList=driver.findElements(By.cssSelector("div > ul > li.e-list-item"));
+		liList.get(random.nextInt(96)).click();	
 		Thread.sleep(3000);
-		List<WebElement> checkboxList=	driver.findElements(By.cssSelector(".form-check-input"));
-		 for (int i=1;i<=SelectMoveDayseries.size();i++) {
-			 WebElement element = (WebElement) SelectMoveDayseries.toArray()[i];	
-			 if(element.getText().equals("Move only this occurrence")) {
-				 WebElement radioElement = (WebElement) checkboxList.toArray()[i];
-				 Thread.sleep(6000);
-				 radioElement.click();
-				 break;
-				 
-			}
-			 
-	     }
-		Thread.sleep(6000);*/
+	}
 		
+
+		public void select_option_move_only_this_occurence() throws InterruptedException {
+		
+				List<WebElement> SelectOccurences=	driver.findElements(By.xpath("(//input[@id='flexRadioDefault1'])[1]"));
+				if(SelectOccurences.size()>0) {
+					WebElement selectOccurrence = SelectOccurences.get(0);
+					selectOccurrence.click();
+					Thread.sleep(2000);
+				}
+				
+			
 	}
 		
 	public void save_the_visit() throws InterruptedException {
-    WebElement VisitSvebtn=	driver.findElement(By.className("e-event-save"));
 
-	//WebElement VisitSvebtn=	driver.findElement(By.cssSelector("button[class='e-control e-btn e-lib e-flat e-event-save e-primary e-primary']"));
-//	JavascriptExecutor js = (JavascriptExecutor)driver;
-//	 js.executeScript("arguments[0].click()",VisitSvebtn );	
-	//VisitSvebtn.click();
+    WebElement VisitSvebtn=	driver.findElement(By.className("e-event-save"));	
 	VisitSvebtn.click();
 	Thread.sleep(20000);
 	
 }
-
-
 	public void check_if_color_is_blue_and_active_visit_then_click_on_it2() throws InterruptedException {
-	List<WebElement> blueElements=driver.findElements(By.className("text-wrap"));
-	Thread.sleep(2000);
-	try {
-		for(int i=0;i<=blueElements.size();i++)
-		{
-			WebElement p=(WebElement) blueElements.toArray()[i];
-			Thread.sleep(1000);
-			String rgbaValue = p.getCssValue("backgroundColor");
-			if(rgbaValue.equals("rgba(46, 55, 255, 1)")) {
+		List<WebElement> blueElements=driver.findElements(By.className("text-wrap"));
+		Thread.sleep(2000);
+		String elementClassName = "e-schedule-table";
+		try {
+			for(int i=0;i<=blueElements.size();i++)
+			{
+				WebElement p=(WebElement) blueElements.toArray()[i];
 				Thread.sleep(1000);
-				JavascriptExecutor js = (JavascriptExecutor)driver;
-				js.executeScript("window.scrollBy(0, 50000)");
-				Thread.sleep(3000);
-				p.click();
-				Thread.sleep(9000);
-				return;
-			}
-			
+				String rgbaValue = p.getCssValue("backgroundColor");
+				JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+			    if(rgbaValue.equals("rgba(183, 137, 103, 1)")) {
+			    	Thread.sleep(1000);
+			    	WebElement element = driver.findElement(By.className(elementClassName));
+			    	jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+			    	for(i=1;i<=100;i++) {
+			    		if (!p.isDisplayed()) {
+			    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+				            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+			            }
+			    	}
+	            	p.click();
+					Thread.sleep(5000);
+					return;
+				}
+				else if(rgbaValue.equals("rgba(49, 32, 138, 1)")) {
+					Thread.sleep(1000);
+					WebElement element = driver.findElement(By.className(elementClassName));
+					jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+			    	for(i=1;i<=100;i++) {
+			    		if (!p.isDisplayed()) {
+			    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+				            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+			            }
+			    	}
+	            	p.click();
+					Thread.sleep(5000);
+					return;
+				}
+		
+				else if(rgbaValue.equals("rgba(46, 55, 255, 1)")) {
+					Thread.sleep(1000);
+					WebElement element = driver.findElement(By.className(elementClassName));
+					jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+			    	for(i=1;i<=100;i++) {
+			    		if (!p.isDisplayed()) {
+			    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+				            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+			            }
+			    	}
+	            	p.click();
+					Thread.sleep(5000);
+					return;
+				}
+				else if(rgbaValue.equals("rgba(255, 121, 59, 1)")) {
+					Thread.sleep(1000);
+					WebElement element = driver.findElement(By.className(elementClassName));
+					jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+			    	for(i=1;i<=100;i++) {
+			    		if (!p.isDisplayed()) {
+			    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+				            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+			            }
+			    	}
+	            	p.click();
+					Thread.sleep(5000);
+					return;
+				}
+				else if(rgbaValue.equals("rgba(97, 255, 239, 1)")) {
+					Thread.sleep(1000);
+					WebElement element = driver.findElement(By.className(elementClassName));
+					jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+			    	for(i=1;i<=100;i++) {
+			    		if (!p.isDisplayed()) {
+			    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+				            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+			            }
+			    	}
+	            	p.click();
+					Thread.sleep(5000);
+					return;
+				}
+		}
+		}
+		catch(Exception e) {
+			e.printStackTrace();
 		}
 	}
-	catch(Exception e) {
-		e.printStackTrace();
-	}
-}
-		
 
 	public void change_the_time() throws InterruptedException {
 		
 		WebElement SelectTime = driver.findElement(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
+		explicitWait(SelectTime, 5);
 		SelectTime.click();
-		Thread.sleep(6000);
-		Actions action = new Actions(driver);
-		action.sendKeys(Keys.chord(Keys.DOWN,Keys.DOWN)).build().perform();
-		SelectTime.click();
-		Thread.sleep(6000);
-		}
+		Random random =new Random();
+		List<WebElement> liList=driver.findElements(By.cssSelector("div > ul > li.e-list-item"));
+		liList.get(random.nextInt(96)).click();	
+		Thread.sleep(3000);
+	}
+		
 	
 	
-	/*WebElement oldTimeElement = driver.findElement(By.className("e-timepicker"));
-    String oldTime = oldTimeElement.getDomProperty("value");
-    String minute="";
-    String newTime="";
-    if(oldTime!=null && oldTime!="") {
-    	if(oldTime.contains("PM")) {
-    		 minute=oldTime.split(":")[1].replace(" PM","");
-    		 if(minute=="45") {
-    			 newTime=(oldTime.split(":")[0]+1)+":"+"00" +" PM"; 
-    		 }
-    		 else {
-    			 newTime=oldTime.split(":")[0]+":"+(Integer.parseInt(minute)+15)+" PM";
-    		 }    	}
-    	else {
-    		 minute=oldTime.split(":")[1].replace(" AM","");
-    		 if(minute=="45") {
-    			 newTime=(oldTime.split(":")[0]+1)+":"+"00" +" AM"; 
-    		 }
-    		 else {
-    			 newTime=oldTime.split(":")[0]+":"+(Integer.parseInt(minute)+15)+" AM";
-    		 }
-    	}
-    	driver.findElement(By.className("e-timepicker")).sendKeys(newTime);
-    }
-   
-}*/
-
-
-
 	public void select_the_option_move_day_series() throws InterruptedException {
-		List<WebElement> SelectMoveDayseries=	driver.findElements(By.cssSelector(".form-check-label"));
+		List<WebElement> SelectMoveDayseries=driver.findElements(By.cssSelector(".form-check-label"));
 		Thread.sleep(3000);
 		List<WebElement> checkboxList=	driver.findElements(By.cssSelector(".form-check-input"));
 		 for (int i=1;i<=SelectMoveDayseries.size();i++) {
@@ -299,39 +326,102 @@ import base.BaseClass;
 public void check_if_color_is_blue_and_active_visit_then_click_on_it3() throws InterruptedException {
 	List<WebElement> blueElements=driver.findElements(By.className("text-wrap"));
 	Thread.sleep(2000);
+	String elementClassName = "e-schedule-table";
 	try {
 		for(int i=0;i<=blueElements.size();i++)
 		{
 			WebElement p=(WebElement) blueElements.toArray()[i];
 			Thread.sleep(1000);
 			String rgbaValue = p.getCssValue("backgroundColor");
-			if(rgbaValue.equals("rgba(46, 55, 255, 1)")) {
-				Thread.sleep(1000);
-				JavascriptExecutor js = (JavascriptExecutor)driver;
-				js.executeScript("window.scrollBy(0, 50000)");
-				Thread.sleep(3000);
-				p.click();
-				Thread.sleep(9000);
+			JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		    if(rgbaValue.equals("rgba(183, 137, 103, 1)")) {
+		    	Thread.sleep(1000);
+		    	WebElement element = driver.findElement(By.className(elementClassName));
+		    	jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+		    	for(i=1;i<=100;i++) {
+		    		if (!p.isDisplayed()) {
+		    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+			            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+		            }
+		    	}
+            	p.click();
+				Thread.sleep(5000);
 				return;
 			}
-			
-		}
+			else if(rgbaValue.equals("rgba(49, 32, 138, 1)")) {
+				Thread.sleep(1000);
+				WebElement element = driver.findElement(By.className(elementClassName));
+				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+		    	for(i=1;i<=100;i++) {
+		    		if (!p.isDisplayed()) {
+		    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+			            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+		            }
+		    	}
+            	p.click();
+				Thread.sleep(5000);
+				return;
+			}
+	
+			else if(rgbaValue.equals("rgba(46, 55, 255, 1)")) {
+				Thread.sleep(1000);
+				WebElement element = driver.findElement(By.className(elementClassName));
+				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+		    	for(i=1;i<=100;i++) {
+		    		if (!p.isDisplayed()) {
+		    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+			            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+		            }
+		    	}
+            	p.click();
+				Thread.sleep(5000);
+				return;
+			}
+			else if(rgbaValue.equals("rgba(255, 121, 59, 1)")) {
+				Thread.sleep(1000);
+				WebElement element = driver.findElement(By.className(elementClassName));
+				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+		    	for(i=1;i<=100;i++) {
+		    		if (!p.isDisplayed()) {
+		    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+			            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+		            }
+		    	}
+            	p.click();
+				Thread.sleep(5000);
+				return;
+			}
+			else if(rgbaValue.equals("rgba(97, 255, 239, 1)")) {
+				Thread.sleep(1000);
+				WebElement element = driver.findElement(By.className(elementClassName));
+				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+		    	for(i=1;i<=100;i++) {
+		    		if (!p.isDisplayed()) {
+		    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+			            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+		            }
+		    	}
+            	p.click();
+				Thread.sleep(5000);
+				return;
+			}
+	}
 	}
 	catch(Exception e) {
 		e.printStackTrace();
 	}
 }
 
-public void change_the_time1() throws InterruptedException {
 
+public void change_the_time1() throws InterruptedException {
 	WebElement SelectTime = driver.findElement(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
+	explicitWait(SelectTime, 5);
 	SelectTime.click();
-	Thread.sleep(6000);
-	Actions action = new Actions(driver);
-	action.sendKeys(Keys.chord(Keys.DOWN,Keys.DOWN)).build().perform();
-	SelectTime.click();
-	Thread.sleep(6000);
-	}
+	Random random =new Random();
+	List<WebElement> liList=driver.findElements(By.cssSelector("div > ul > li.e-list-item"));
+	liList.get(random.nextInt(96)).click();	
+	Thread.sleep(3000);
+}
 	
 public void select_the_option_move_week_series() throws InterruptedException {
 	List<WebElement> SelectMoveDayseries=	driver.findElements(By.cssSelector(".form-check-label"));
@@ -351,8 +441,6 @@ public void select_the_option_move_week_series() throws InterruptedException {
 	Thread.sleep(6000);
 	
 }
-	
-
 
 public void save_the_visit2() throws InterruptedException {
 	WebElement VisitSvebtn=	driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
@@ -366,28 +454,92 @@ public void click_on_the_visit() throws InterruptedException {
 
 	List<WebElement> blueElements=driver.findElements(By.className("text-wrap"));
 	Thread.sleep(2000);
+	String elementClassName = "e-schedule-table";
 	try {
 		for(int i=0;i<=blueElements.size();i++)
 		{
 			WebElement p=(WebElement) blueElements.toArray()[i];
 			Thread.sleep(1000);
 			String rgbaValue = p.getCssValue("backgroundColor");
-			if(rgbaValue.equals("rgba(46, 55, 255, 1)")) {
-				Thread.sleep(1000);
-				JavascriptExecutor js = (JavascriptExecutor)driver;
-				js.executeScript("window.scrollBy(0, 50000)");
-				Thread.sleep(3000);
-				p.click();
-				Thread.sleep(9000);
+			JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		    if(rgbaValue.equals("rgba(183, 137, 103, 1)")) {
+		    	Thread.sleep(1000);
+		    	WebElement element = driver.findElement(By.className(elementClassName));
+		    	jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+		    	for(i=1;i<=100;i++) {
+		    		if (!p.isDisplayed()) {
+		    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+			            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+		            }
+		    	}
+            	p.click();
+				Thread.sleep(5000);
 				return;
 			}
-			
-		}
+			else if(rgbaValue.equals("rgba(49, 32, 138, 1)")) {
+				Thread.sleep(1000);
+				WebElement element = driver.findElement(By.className(elementClassName));
+				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+		    	for(i=1;i<=100;i++) {
+		    		if (!p.isDisplayed()) {
+		    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+			            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+		            }
+		    	}
+            	p.click();
+				Thread.sleep(5000);
+				return;
+			}
+	
+			else if(rgbaValue.equals("rgba(46, 55, 255, 1)")) {
+				Thread.sleep(1000);
+				WebElement element = driver.findElement(By.className(elementClassName));
+				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+		    	for(i=1;i<=100;i++) {
+		    		if (!p.isDisplayed()) {
+		    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+			            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+		            }
+		    	}
+            	p.click();
+				Thread.sleep(5000);
+				return;
+			}
+			else if(rgbaValue.equals("rgba(255, 121, 59, 1)")) {
+				Thread.sleep(1000);
+				WebElement element = driver.findElement(By.className(elementClassName));
+				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+		    	for(i=1;i<=100;i++) {
+		    		if (!p.isDisplayed()) {
+		    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+			            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+		            }
+		    	}
+            	p.click();
+				Thread.sleep(5000);
+				return;
+			}
+			else if(rgbaValue.equals("rgba(97, 255, 239, 1)")) {
+				Thread.sleep(1000);
+				WebElement element = driver.findElement(By.className(elementClassName));
+				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+		    	for(i=1;i<=100;i++) {
+		    		if (!p.isDisplayed()) {
+		    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+			            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+		            }
+		    	}
+            	p.click();
+				Thread.sleep(5000);
+				return;
+			}
+	}
 	}
 	catch(Exception e) {
 		e.printStackTrace();
 	}
 }
+
 public void change_the_track_from_east1_to_east2() throws InterruptedException {
 	WebElement TrackChanged=driver.findElement(By.xpath("(//span[contains(@role,'listbox')])[1]"));
 	TrackChanged.click();
@@ -397,56 +549,130 @@ public void change_the_track_from_east1_to_east2() throws InterruptedException {
 }
 
 public void select_move_only_this_occurrence() throws InterruptedException {
-	
-	WebElement Occurence=driver.findElement(By.xpath("//label[normalize-space()='Move only this occurrence']"));
+	try {
+	WebElement Occurence=driver.findElement(By.xpath("(//input[@id='flexRadioDefault1'])[1]"));
 	Occurence.click();
 	Thread.sleep(4000);
+	}
+	catch (Exception e) {
+		
+	}
 }
 
 public void save_the_visits() throws InterruptedException {
-WebElement SaveVisit=	driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
+WebElement SaveVisit =	driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
 SaveVisit.click();
 Thread.sleep(5000);
 
 }
 public void user_click_on_the_visit() throws InterruptedException {
+	
 	List<WebElement> blueElements=driver.findElements(By.className("text-wrap"));
 	Thread.sleep(2000);
+	String elementClassName = "e-schedule-table";
 	try {
 		for(int i=0;i<=blueElements.size();i++)
 		{
 			WebElement p=(WebElement) blueElements.toArray()[i];
 			Thread.sleep(1000);
 			String rgbaValue = p.getCssValue("backgroundColor");
-			if(rgbaValue.equals("rgba(46, 55, 255, 1)")) {
-				Thread.sleep(1000);
-				JavascriptExecutor js = (JavascriptExecutor)driver;
-				js.executeScript("window.scrollBy(0, 50000)");
-				Thread.sleep(3000);
-				p.click();
-				Thread.sleep(9000);
+			JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		    if(rgbaValue.equals("rgba(183, 137, 103, 1)")) {
+		    	Thread.sleep(1000);
+		    	WebElement element = driver.findElement(By.className(elementClassName));
+		    	jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+		    	for(i=1;i<=100;i++) {
+		    		if (!p.isDisplayed()) {
+		    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+			            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+		            }
+		    	}
+            	p.click();
+				Thread.sleep(5000);
 				return;
 			}
-			
-		}
+			else if(rgbaValue.equals("rgba(49, 32, 138, 1)")) {
+				Thread.sleep(1000);
+				WebElement element = driver.findElement(By.className(elementClassName));
+				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+		    	for(i=1;i<=100;i++) {
+		    		if (!p.isDisplayed()) {
+		    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+			            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+		            }
+		    	}
+            	p.click();
+				Thread.sleep(5000);
+				return;
+			}
+	
+			else if(rgbaValue.equals("rgba(46, 55, 255, 1)")) {
+				Thread.sleep(1000);
+				WebElement element = driver.findElement(By.className(elementClassName));
+				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+		    	for(i=1;i<=100;i++) {
+		    		if (!p.isDisplayed()) {
+		    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+			            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+		            }
+		    	}
+            	p.click();
+				Thread.sleep(5000);
+				return;
+			}
+			else if(rgbaValue.equals("rgba(255, 121, 59, 1)")) {
+				Thread.sleep(1000);
+				WebElement element = driver.findElement(By.className(elementClassName));
+				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+		    	for(i=1;i<=100;i++) {
+		    		if (!p.isDisplayed()) {
+		    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+			            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+		            }
+		    	}
+            	p.click();
+				Thread.sleep(5000);
+				return;
+			}
+			else if(rgbaValue.equals("rgba(97, 255, 239, 1)")) {
+				Thread.sleep(1000);
+				WebElement element = driver.findElement(By.className(elementClassName));
+				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+		    	for(i=1;i<=100;i++) {
+		    		if (!p.isDisplayed()) {
+		    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", element);
+			            //jsExecutor.executeScript("arguments["+i+"].scrollIntoView(true);", element);
+		            }
+		    	}
+            	p.click();
+				Thread.sleep(5000);
+				return;
+			}
+	}
 	}
 	catch(Exception e) {
 		e.printStackTrace();
 	}
 }
 
-
 public void user_click_on_the_delete_button() throws InterruptedException {
 	WebElement DeleteVisit=	driver.findElement(By.xpath("//button[normalize-space()='Delete']"));
-	DeleteVisit.click();
-	Thread.sleep(8000);
+	if (!DeleteVisit.isDisplayed()) {
+		 Assert.assertTrue(DeleteVisit.isDisplayed(), "Not Able to Delete");
+	}
+	else {
+		DeleteVisit.click();
+	}
+	
+	Thread.sleep(4000);
 	
 }
 	
 public void pop_up_will_be_visible_are_you_sure_want_to_delete_this_Item_and_click_on_delete_button() throws InterruptedException {
 	WebElement DeletepopUp= driver.findElement(By.xpath("(//button[normalize-space()='Delete'])[1]"));
-	DeletepopUp.click();
-	Thread.sleep(8000);
+	JavascriptExecutor js = (JavascriptExecutor)driver;
+	js.executeScript("arguments[0].click()",DeletepopUp);
+	Thread.sleep(10000);
 	
 }
 }

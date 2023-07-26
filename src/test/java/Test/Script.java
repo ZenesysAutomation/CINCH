@@ -60,6 +60,8 @@ public class Script {
 					String rgbaValue = p.getCssValue("backgroundColor");
 					if(rgbaValue.equals("rgba(46, 55, 255, 1)")) {
 						Thread.sleep(1000);
+						
+						driver.switchTo().frame("frame1");
 						JavascriptExecutor js = (JavascriptExecutor)driver;
 						js.executeScript("window.scrollBy(0, 50000)");
 						Thread.sleep(3000);

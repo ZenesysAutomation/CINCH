@@ -1,7 +1,12 @@
 package page;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import base.BaseClass;
 
 
@@ -9,15 +14,15 @@ public class AddCommunityNotePage extends BaseClass {
 	
 	
 	public void user_enters_email() {
-	WebElement Username=driver.findElement(By.xpath("//input[@id='email']"));
-	explicitWait(Username,20);
-	Username.sendKeys(prop.getProperty("username"));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
+		 Useremail.sendKeys(prop.getProperty("username"));
 		
 	} 
 		
 	public void user_enters_password() {
-		WebElement Password=driver.findElement(By.xpath("//input[@id='password']"));
-		explicitWait(Password,20);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement Password= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
 		Password.sendKeys(prop.getProperty("password"));
 
 	}
