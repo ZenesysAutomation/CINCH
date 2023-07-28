@@ -23,7 +23,6 @@ Then User Click on the save Button
 And Save the For All Days Visit Details
 
 
-
 Scenario: Verify The ADLs and IADLS Functionalities
 
 When Click on the ADLs Tab
@@ -91,32 +90,14 @@ Then Click on the Add To schedule Button and Finalize Visits
 
 
 Scenario: Change A visit Duration For Everyday
-
-Then User click on the Add Visit Configuration
-When User select the all days
-Then user select the start time
-Then user select the duration 65 Minute Visit
-And user select the weekly recurrence
-And user select the start date
-And save the Everyday visit plans Details
-And Save the All visit plans Details
-Then Click on the Days Table
+Then Click on the Visit Table
 And Change The Visit Duration as 30 Minute Visit 
-And Update the Edit Visit Duration
+And Update the Visit Duration
 And Save the Details
 
 
 
-Scenario: Change the visit Duration for series and Delete the All Days visit Series
-
-Then click on the add visit configuration button
-Given Select all days
-When select Start Time
-Then select visit Duration as 30 minute visit
-Then select the Weekly recurrence
-Then select start date 
-Then Click on save button
-Then Save the all Visits plans Details
+Scenario: Delete the Everyday Series
 Given User click on the Delete Icon 
 Then Delete visit Configurations Pop Up is opened  and click on the Delete button
 And Save the delete Visit Series

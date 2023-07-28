@@ -40,8 +40,6 @@ And Select Move only this occurrence
 Then Save the Visits
 
 
-
-
 Scenario: Delete one visit in a Series
 Given User Click on the Visit
 Then User Click on the Delete Button

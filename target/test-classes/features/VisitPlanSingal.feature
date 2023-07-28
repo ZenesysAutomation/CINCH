@@ -10,7 +10,7 @@ Then User click on the Continue Button
 Then User click on the Visit Plans
 Then Click on the User first Name 
 
-@Test
+
 Scenario: Verify the Visit Plans Functionalities For Single Day
 
 Then Click on the Add Visit Configuration
@@ -24,7 +24,7 @@ Then click on the Save Button
 Then Save the all Single Visit Details
 
 
-@Test
+
 Scenario: Verify The ADLs and IADLS Functionalities
 When Click on the ADLs Tab
 Then Click on the Bathing
@@ -89,10 +89,11 @@ And Save the Medication Details
 Then Click on the Add To schedule Button and Finalize Visits
 
 
-
-
-
-
+Scenario: Change A Visit Duration For Single Day 
+And click on the single Visit table
+And Change the visit duration as 45 Minute Visit
+Then click on the update button
+And Click on the Save button
 
 
 
@@ -165,9 +166,9 @@ And User Save the Medication Details
 Then User Click on the Add to Schedule and Finalize Visits
 
 
-
+@Test
 Scenario: Add visits for a Custom Date Range
-Then  Check the Add Visit Configuration Button
+Then Check the Add Visit Configuration Button
 Given user select all the days
 Then User Select Start Time
 Then User select a Duration
@@ -179,7 +180,7 @@ Then Save the visits details
 Then Save the all Visits Plan Details
 
 
-
+@Test
 Scenario: Change the End Date on a Custom Date Range
 Then Click on the Everyday Table 
 And Change The End Date 
@@ -187,36 +188,10 @@ And Update the Visits
 And Save The Visits
  
 
-
-
-Scenario: Change A Visit Duration For Single Day 
-Given Check the Add visit configurtion button
-Then select a single day
-And select a single recurrence
-And select a start time
-And select a duration 30 minute visit
-#And select a single recurrence
-And select a start date
-Then click on save button
-Then save the single visits details
-And click on the single day table
-And Change the visit duration as 45 Minute Visit
-Then click on the update button
-And Click on the Save button
-
-
-
 Scenario: Delete a Single visit Series 
-Then Check Add Visit Configuration
-Given Select A Single Day
-Then select a single Recurrence
-Then choose Start Time
-Then Select Duration
-#Then select a single Recurrence
-And Enter the Start Date
-And Save the single visit details
 And Click on the delete Icon and Pop is Displayed Confirm that you want to delete this item
 Then Click on the Delete Button
+And Save the Single delete Visit Series
 
 
 
