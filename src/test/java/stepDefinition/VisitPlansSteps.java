@@ -97,46 +97,6 @@ public void save_the_all_single_visit_details() throws InterruptedException {
 	visitplan.save_the_all_single_visit_details();
 	
 }
-@Then ("User Go to the Add Visit Configuration")
-public void user_go_to_the_add_visit_configuration() throws InterruptedException {
-	visitplan.user_go_to_the_add_visit_configuration();
-}
-
-@Given("user select all Days")
-public void user_select_all_days() throws InterruptedException {
-	visitplan.user_select_all_days();
-}
-
-@Then("select start time")
-public void select_start_time() throws InterruptedException {
-	visitplan.select_start_time();
-}
-
-@Then("select Duration")
-public void select_duration() throws InterruptedException {
-	visitplan.select_duration();
-}
-
-@Then("select Weekly recurrence")
-public void select_weekly_recurrence() throws InterruptedException {
-	visitplan.select_weekly_recurrence();
-}
-
-@Then("select start Date")
-public void select_start_date() throws InterruptedException {
-	visitplan.select_start_date();
-}
-
-@Then("User Click on the save Button")
-public void user_click_on_the_save_button() throws InterruptedException {
-    visitplan.user_click_on_the_save_button();
-}
-
-@Then("Verify that if status is Shows Missing Assigned Tasks")
-public void verify_that_if_status_is_shows_missing_assigned_tasks() {
-	visitplan.verify_that_if_status_is_shows_missing_assigned_tasks();
-}
-
 @When("Click on the ADLs Tab")
 public void click_on_the_ad_ls_tab() throws InterruptedException {
 	visitplan.click_on_the_ad_ls_tab();
@@ -451,21 +411,59 @@ public void save_the_medication_details () throws InterruptedException {
 	
 }
 
-@Then ("Click on the Add to Schedule and Finalize Visits")
-public void click_on_the_add_to_schedule_and_finalize_visits() throws InterruptedException {
-	visitplan.click_on_the_add_to_schedule_and_finalize_visits();
+@Then ("Click on the Add To schedule Button and Finalize Visits")
+public boolean click_on_the_add_to_schedule_button_and_finalize_visits() throws InterruptedException {
+	return visitplan.click_on_the_add_to_schedule_button_and_finalize_visits();
 	
 }
-@Then ("Click on the Add to Schedule and Finalize Visits again")
-public void click_on_the_add_to_schedule_and_finalize_visits_repeat() throws InterruptedException {
-	visitplan.click_on_the_add_to_schedule_and_finalize_visits();
+
+
+
+@Then ("User Go to the Add Visit Configuration")
+public void user_go_to_the_add_visit_configuration() throws InterruptedException {
+	visitplan.user_go_to_the_add_visit_configuration();
+}
+
+@Given("user select all Days")
+public void user_select_all_days() throws InterruptedException {
+	visitplan.user_select_all_days();
+}
+
+@Then("select start time")
+public void select_start_time() throws InterruptedException {
+	visitplan.select_start_time();
+}
+
+@Then("select Duration")
+public void select_duration() throws InterruptedException {
+	visitplan.select_duration();
+}
+
+@Then("select Weekly recurrence")
+public void select_weekly_recurrence() throws InterruptedException {
+	visitplan.select_weekly_recurrence();
+}
+
+@Then("select start Date")
+public void select_start_date() throws InterruptedException {
+	visitplan.select_start_date();
+}
+
+@Then("User Click on the save Button")
+public void user_click_on_the_save_button() throws InterruptedException {
+    visitplan.user_click_on_the_save_button();
+}
+
+@And ("Save the For All Days Visit Details")
+public void save_the_for_all_days_visit_details() throws InterruptedException {
+	visitplan.save_the_for_all_days_visit_details();
 	
 }
-/*@Then ("Click on the Finalize Visits")
-public void click_on_the_finalize_visits() throws InterruptedException{
-	visitplan.click_on_the_finalize_visits();
+
+
+
 	
-}*/
+
 
 @Given ("User Click on the ADLs Tab")
 public void user_click_on_the_ad_ls_tab() throws InterruptedException {
@@ -896,9 +894,9 @@ public void user_select_the_weekly_recurrence1() throws InterruptedException {
 public void user_select_the_start_date() throws InterruptedException {
 	visitplan.user_select_the_start_date();
 }
-@And ("save the Everday visit plans Details")
-public void save_the_everday_visit_plans_details() throws InterruptedException {
-	visitplan.save_the_everday_visit_plans_details();
+@And ("save the Everyday visit plans Details")
+public void save_the_everyday_visit_plans_details() throws InterruptedException {
+	visitplan.save_the_everyday_visit_plans_details();
 	
 }
 @And ("Save the All visit plans Details")

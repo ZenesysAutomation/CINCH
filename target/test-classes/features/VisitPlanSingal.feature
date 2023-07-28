@@ -10,7 +10,7 @@ Then User click on the Continue Button
 Then User click on the Visit Plans
 Then Click on the User first Name 
 
-
+@Test
 Scenario: Verify the Visit Plans Functionalities For Single Day
 
 Then Click on the Add Visit Configuration
@@ -24,19 +24,8 @@ Then click on the Save Button
 Then Save the all Single Visit Details
 
 
-Scenario: Verify the Visit Plans Functionality For All days
-
-Then User Go to the Add Visit Configuration
-Given user select all Days
-Then select start time
-Then select Duration
-Then select Weekly recurrence
-Then select start Date
-Then User Click on the save Button
-
-
+@Test
 Scenario: Verify The ADLs and IADLS Functionalities
-Then Verify that if status is Shows Missing Assigned Tasks
 When Click on the ADLs Tab
 Then Click on the Bathing
 Then Select the Bathing Assistance Level as a Supervision
@@ -97,8 +86,14 @@ And I Select the Visits Time
 And Enter the CareGiver Instructions
 And Update the Medication Details
 And Save the Medication Details 
-Then Click on the Add to Schedule and Finalize Visits
-And Click on the Add to Schedule and Finalize Visits again
+Then Click on the Add To schedule Button and Finalize Visits
+
+
+
+
+
+
+
 
 
 Scenario: Change Task in a Client Visit (ADLS and IADLS)
@@ -118,7 +113,7 @@ Then User Save the Continence And Toileting Details
 When User Click on the  ADLs To Enter the Dressing And Grooming details
 Then User Click on the dressing And Grooming 
 Then User select the Assistance Level as a Supervision
-Then  Verify if Apply Lotion Tasks is Already Checked then Unchecked it
+Then Verify if Apply Lotion Tasks is Already Checked then Unchecked it
 And User Ticked on Assist with Oral Care
 Then Select the Visit Time
 Then user Enter the caregiver Instructions
@@ -193,20 +188,6 @@ And Save The Visits
  
 
 
-Scenario: Change A visit Duration For Everyday
-Then User click on the Add Visit Configuration
-When User select the all days
-Then user select the start time
-Then user select the duration 65 Minute Visit
-And user select the weekly recurrence
-And user select the start date
-And save the Everday visit plans Details
-And Save the All visit plans Details
-Then Click on the Days Table
-And Change The Visit Duration as 30 Minute Visit 
-And Update the Edit Visit Duration
-And Save the Details
-
 
 Scenario: Change A Visit Duration For Single Day 
 Given Check the Add visit configurtion button
@@ -223,19 +204,6 @@ And Change the visit duration as 45 Minute Visit
 Then click on the update button
 And Click on the Save button
 
-
-Scenario: Change the visit Duration for series and Delete the All Days visit Series
-Then click on the add visit configuration button
-Given Select all days
-When select Start Time
-Then select visit Duration as 30 minute visit
-Then select the Weekly recurrence
-Then select start date 
-Then Click on save button
-Then Save the all Visits plans Details
-Given User click on the Delete Icon 
-Then Delete visit Configurations Pop Up is opened  and click on the Delete button
-And Save the delete Visit Series
 
 
 Scenario: Delete a Single visit Series 
