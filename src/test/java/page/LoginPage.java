@@ -1,7 +1,7 @@
 package page;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
 
 import base.BaseClass;
 
@@ -35,7 +35,19 @@ public class LoginPage extends BaseClass {
 
 	public void Verify_the_Continue_Button() {
 		WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
-		Continue.click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	Continue.click();
+	
+	
+//		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
+//		wait.until(ExpectedConditions.visibilityOf(Continue));
+//		Continue.click();
+		//Continue.click();
 		
 	}
 	    

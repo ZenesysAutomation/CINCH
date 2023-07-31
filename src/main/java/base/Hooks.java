@@ -1,15 +1,13 @@
 package base;
 import java.time.Duration;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -26,7 +24,7 @@ public class Hooks extends BaseClass {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options= new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
-			options.addArguments("--incognito");
+			//options.addArguments("--incognito");
 			driver= new ChromeDriver(options);
 			}else if(browserName.equals("firebox")) {
 				WebDriverManager.firefoxdriver().setup();
@@ -47,41 +45,21 @@ public class Hooks extends BaseClass {
 			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		}
 	
-	
-
-
-	 @After
+	@After
 	 public void tearDown(Scenario s) {
 		 if(s.isFailed());
 		 {
 			 getScreenshot();
-			 s.attach("image/png base64", "Screenshot", null);
+			 
 		 }
-		 driver.quit();
-		 
- }
+	 driver.quit();	
+	 
+	 }
+	
 }
 	
 	
-//	@After(order = 1)
-//	public void takeScraenshotOnFailure(Scenario scenario) {
-//
-//	if (scenario.isFailed()) {
-//
-//	TakesScreenshot ts = (TakesScreenshot) driver;
-//
-//	byte[] src = ts.getScreenshotAs(OutputType.BYTES);
-//	scenario.attach(src, "Screenshot/png", "Screenshot");
-//	}
-//
-//	}
-//
-//	@After(order = 0)
-//	public void tearDown() {
-//	driver.close();
-//
-//	}
-//	}
+
 
 	
 	

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>COM.CINCHCCM</td>
+                          <td>1</td>
+                        <td>27 Jul 2023, 09:05</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">base.Hooks.mysetup()</td>
+                <td>2</td>
+                <td class="duration" data-value="12016817100">12s 016ms</td>
+                <td class="duration" data-value="6008408550">6s 008ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">base.Hooks.tearDown(io.cucumber.java.Scenario)</td>
+                <td>2</td>
+                <td class="duration" data-value="413870500">413ms</td>
+                <td class="duration" data-value="206935250">206ms</td>
+                <td class="failed">50.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.again_click_on_the_iadls()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.choose_the_visits_time()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_ad_ls()</td>
+                <td>1</td>
+                <td class="duration" data-value="14110574100">14s 110ms</td>
+                <td class="duration" data-value="14110574100">14s 110ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_ad_ls2()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_ad_ls_tab()</td>
+                <td>1</td>
+                <td class="duration" data-value="10100325600">10s 100ms</td>
+                <td class="duration" data-value="10100325600">10s 100ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_ad_ls_tab2()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_add_to_schedule_button_and_finalize_visits()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_add_visit_configuration()</td>
+                <td>1</td>
+                <td class="duration" data-value="6247743300">6s 247ms</td>
+                <td class="duration" data-value="6247743300">6s 247ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_again_ad_ls()</td>
+                <td>1</td>
+                <td class="duration" data-value="14118125500">14s 118ms</td>
+                <td class="duration" data-value="14118125500">14s 118ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_apply_lotion_tasks()</td>
+                <td>1</td>
+                <td class="duration" data-value="25970100">025ms</td>
+                <td class="duration" data-value="25970100">025ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_assistance_level()</td>
+                <td>1</td>
+                <td class="duration" data-value="6247329200">6s 247ms</td>
+                <td class="duration" data-value="6247329200">6s 247ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_bathing()</td>
+                <td>1</td>
+                <td class="duration" data-value="2065679500">2s 065ms</td>
+                <td class="duration" data-value="2065679500">2s 065ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_continence_and_toileting()</td>
+                <td>1</td>
+                <td class="duration" data-value="2077839600">2s 077ms</td>
+                <td class="duration" data-value="2077839600">2s 077ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_dressing_and_grooming()</td>
+                <td>1</td>
+                <td class="duration" data-value="6072802000">6s 072ms</td>
+                <td class="duration" data-value="6072802000">6s 072ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_eating()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_household_tasks()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_laundry()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_make_bed()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_meals()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_mobility()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_save_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="18298687000">18s 298ms</td>
+                <td class="duration" data-value="18298687000">18s 298ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_tasks()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_update_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="10199529200">10s 199ms</td>
+                <td class="duration" data-value="10199529200">10s 199ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.click_on_the_user_first_name()</td>
+                <td>2</td>
+                <td class="duration" data-value="18373239800">18s 373ms</td>
+                <td class="duration" data-value="9186619900">9s 186ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.enter_caregiver_instruction()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.enter_caregiver_instructions()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.enter_the_careGiver_instructions()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.enter_the_caregiver_instructions()</td>
+                <td>1</td>
+                <td class="duration" data-value="6190908100">6s 190ms</td>
+                <td class="duration" data-value="6190908100">6s 190ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.enter_the_caregiver_instructions1()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.enter_the_caregiver_instructions3()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.i_select_the_visits_time()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.save_the_all_single_visit_details()</td>
+                <td>1</td>
+                <td class="duration" data-value="7314956600">7s 314ms</td>
+                <td class="duration" data-value="7314956600">7s 314ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.save_the_bathing_details()</td>
+                <td>1</td>
+                <td class="duration" data-value="6286767900">6s 286ms</td>
+                <td class="duration" data-value="6286767900">6s 286ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.save_the_continence_and_toileting_details()</td>
+                <td>1</td>
+                <td class="duration" data-value="10134837400">10s 134ms</td>
+                <td class="duration" data-value="10134837400">10s 134ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.save_the_dressing_and_grooming_details()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.save_the_eating_details()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.save_the_household_tasks_details()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.save_the_laundry_details()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.save_the_meals_details()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.save_the_medication_details()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.save_the_mobility_details()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_a_duration()</td>
+                <td>1</td>
+                <td class="duration" data-value="4218415700">4s 218ms</td>
+                <td class="duration" data-value="4218415700">4s 218ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_laundry_assistance_level_as_a_assistance()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_the_assistance_as_a_supervision()</td>
+                <td>1</td>
+                <td class="duration" data-value="1474062266700">24m 34s 062ms</td>
+                <td class="duration" data-value="1474062266700">24m 34s 062ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_the_assistance_level_as_a_assistance()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_the_assistance_level_as_a_limited_assistance()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_the_assistance_level_as_a_no_assistance()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_the_bathing_assistance_level_as_a_supervision()</td>
+                <td>1</td>
+                <td class="duration" data-value="7222685200">7s 222ms</td>
+                <td class="duration" data-value="7222685200">7s 222ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_the_make_bed_visits_time()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_the_meals_assistance_level_no_assistance()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_the_recurrence()</td>
+                <td>1</td>
+                <td class="duration" data-value="4457551300">4s 457ms</td>
+                <td class="duration" data-value="4457551300">4s 457ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_the_single_day()</td>
+                <td>1</td>
+                <td class="duration" data-value="12153880400">12s 153ms</td>
+                <td class="duration" data-value="12153880400">12s 153ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_the_start_date()</td>
+                <td>1</td>
+                <td class="duration" data-value="8498078500">8s 498ms</td>
+                <td class="duration" data-value="8498078500">8s 498ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_the_start_time()</td>
+                <td>1</td>
+                <td class="duration" data-value="3343571400">3s 343ms</td>
+                <td class="duration" data-value="3343571400">3s 343ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_the_tasks_as_a_assist_with_shower()</td>
+                <td>1</td>
+                <td class="duration" data-value="4199566000">4s 199ms</td>
+                <td class="duration" data-value="4199566000">4s 199ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_the_tasks_with_check_blood_pressure()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_the_visits_time()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_the_visits_timing()</td>
+                <td>1</td>
+                <td class="duration" data-value="8194384000">8s 194ms</td>
+                <td class="duration" data-value="8194384000">8s 194ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.select_the_walk_with_client()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.update_the_apply_lotion()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.update_the_laundry_details()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.update_the_make_bed_details()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.update_the_medication_details()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.update_the_walk_with_client_details()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.user_again_click_on_the_iadls()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.user_again_click_on_the_iadls1()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.user_click_on_the_continue_button()</td>
+                <td>2</td>
+                <td class="duration" data-value="6231298500">6s 231ms</td>
+                <td class="duration" data-value="3115649250">3s 115ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.user_click_on_the_ia_dls_tab()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.user_click_on_the_login()</td>
+                <td>2</td>
+                <td class="duration" data-value="6369245800">6s 369ms</td>
+                <td class="duration" data-value="3184622900">3s 184ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.user_click_on_the_medication()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.user_click_on_the_visit_plans()</td>
+                <td>2</td>
+                <td class="duration" data-value="28946284700">28s 946ms</td>
+                <td class="duration" data-value="14473142350">14s 473ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.user_enter_the_email()</td>
+                <td>2</td>
+                <td class="duration" data-value="52511253300">52s 511ms</td>
+                <td class="duration" data-value="26255626650">26s 255ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.user_enter_the_password()</td>
+                <td>2</td>
+                <td class="duration" data-value="8273212800">8s 273ms</td>
+                <td class="duration" data-value="4136606400">4s 136ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.user_select_the_medication_assistance_level_as_assistance()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.user_select_the_test_community()</td>
+                <td>2</td>
+                <td class="duration" data-value="6350189300">6s 350ms</td>
+                <td class="duration" data-value="3175094650">3s 175ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.VisitPlansSteps.user_select_the_visits_time()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>78</td>
+              <td>87</td>
+              <td class="duration">29m 45s 327ms</td>
+              <td class="duration">20s 521ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
