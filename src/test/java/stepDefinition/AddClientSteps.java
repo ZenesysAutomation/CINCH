@@ -104,10 +104,7 @@ public class AddClientSteps extends BaseClass{
 	    steps.click_the_gender();
 	}
 
-//	@Then("User Select the Gender")
-//	public void user_select_the_gender() {
-//	    
-//	}
+
 
 	@Then("User Select the BirthDate")
 	public void user_select_the_birth_date() {

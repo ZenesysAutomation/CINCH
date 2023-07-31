@@ -22,7 +22,6 @@ Then User Enter the Primary Phone
 Then User Enter the Secondary Phone 
 Then User Enter the Email
 Then Click the Gender
-#Then User Select the Gender
 Then User Select the BirthDate 
 Then User Enter the Marital Status
 Then Then User Enter the Spouse Name

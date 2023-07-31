@@ -167,7 +167,7 @@ public void user_select_the_client_type() throws InterruptedException {
     Thread.sleep(2000);
     WebElement ddlClienttydpeBtn = driver.findElement(By.xpath("//*[@id=\"clientype_popup\"]/div/ul/li[2]"));
     ddlClienttydpeBtn.click();
-    Thread.sleep(2000);
+    Thread.sleep(3000);
 	   
 }
 
@@ -255,8 +255,6 @@ public void verify_the_primary_phone_number() throws InterruptedException {
    WebElement primaryphnumber = driver.findElement(By.xpath("//input[@id='primary-phone-contact']"));  
    Thread.sleep(3000);
    primaryphnumber.click();
-//  JavascriptExecutor jse = (JavascriptExecutor)driver;
-//  jse.executeScript("arguments[0].value= '(287)222-2202';", primaryphnumber);
    primaryphnumber.sendKeys("9086568990");
   
 }

@@ -166,7 +166,7 @@ And User Save the Medication Details
 Then User Click on the Add to Schedule and Finalize Visits
 
 
-@Test
+
 Scenario: Add visits for a Custom Date Range
 Then Check the Add Visit Configuration Button
 Given user select all the days
@@ -180,7 +180,7 @@ Then Save the visits details
 Then Save the all Visits Plan Details
 
 
-@Test
+
 Scenario: Change the End Date on a Custom Date Range
 Then Click on the Everyday Table 
 And Change The End Date 
