@@ -1,6 +1,6 @@
 Feature: Edit Client 
 
-
+@Test
 Scenario: Verify the Edit Client Functionality
 
 Given Check the User Email

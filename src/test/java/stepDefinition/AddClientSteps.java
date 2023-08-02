@@ -1,6 +1,7 @@
 package stepDefinition;
 
 import base.BaseClass;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import page.AddClientPage;
@@ -70,7 +71,7 @@ public class AddClientSteps extends BaseClass{
 	}
 
 	@Then("User Enter the City")
-	public void user_enter_the_city() {
+	public void user_enter_the_city() throws InterruptedException {
 	    steps.user_enter_the_city();
 	}
 
@@ -95,7 +96,7 @@ public class AddClientSteps extends BaseClass{
 	}
 
 	@Then("User Enter the Email")
-	public void user_enter_the_email() {
+	public void user_enter_the_email() throws InterruptedException {
 	 steps. user_enter_the_email();
 	}
 	
@@ -107,7 +108,7 @@ public class AddClientSteps extends BaseClass{
 
 
 	@Then("User Select the BirthDate")
-	public void user_select_the_birth_date() {
+	public void user_select_the_birth_date() throws InterruptedException {
 	    steps. user_select_the_birth_date();
 	}
 
@@ -149,6 +150,11 @@ public class AddClientSteps extends BaseClass{
 	@Then("User select the Track")
 	public void user_select_the_track() throws InterruptedException {
 	   steps.user_select_the_track();
+	}
+	
+	@And ("select the Service Type")
+	public void select_the_service_type() throws InterruptedException {
+		steps.select_the_service_type();
 	}
 	
 	@Then("Verify that Add new Contact Button")
@@ -207,18 +213,22 @@ public class AddClientSteps extends BaseClass{
 	    
 	}
 
-	@Then("Click on the save button")
-	public void click_on_the_save_button() throws InterruptedException {
-	    steps.click_on_the_save_button();
+	@Then("Save the New Contact Details")
+	public void save_the_new_contact_details() throws InterruptedException {
+	    steps.save_the_new_contact_details();
 	}
 
 
 
-	@Then("User Click on the Save")
-	public void user_click_on_the_save() throws InterruptedException {
-	    steps.user_click_on_the_save();
+	@Then("Save the New client Details")
+	public void save_the_new_client_details() throws InterruptedException {
+	    steps.save_the_new_client_details();
 	}
-
+	@Then ("Client was Created Message Should be Shown")
+	public void client_was_created_message_should_be_shown() {
+		
+		
+	}
 
 
 

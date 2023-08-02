@@ -1,7 +1,8 @@
 package base;
 import java.time.Duration;
 
-
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -46,7 +47,25 @@ public class Hooks extends BaseClass {
 		}
 	
 	@After
-	 public void tearDown(Scenario s) {
+	public void tearDown(Scenario s) {
+	        if (s.isFailed()) {
+	     
+	            if (driver instanceof TakesScreenshot) {
+	                byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+	                s.attach(screenshot, "image/png", "Failure Screenshot");
+	            }
+
+	            String failureMessage = "Scenario failed: " + s.getName();
+	            s.log(failureMessage);
+	        }
+	        driver.quit();	
+		
+	}
+	
+	
+}
+	
+	 /*public void tearDown(Scenario s) {
 		 if(s.isFailed());
 		 {
 			 getScreenshot();
@@ -54,9 +73,8 @@ public class Hooks extends BaseClass {
 		 }
 	 driver.quit();	
 	 
-	 }
+	 }*/
 	
-}
 	
 	
 

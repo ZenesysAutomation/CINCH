@@ -13,7 +13,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.BaseClass;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class VisitPlansPage extends BaseClass  {
@@ -101,37 +100,7 @@ public class VisitPlansPage extends BaseClass  {
 			return true;
 		}
 		return false;
-			
-	
-		
-	//	return false;*/
-	//	try {
-	////	WebElement checkboxElement = driver.findElement(By.id("daysofweek"));
-   //     checkboxElement.click();
-   //     Thread.sleep(1000);
-		
-       
-        //List<WebElement> dropdownlist=driver.findElements(By.xpath("//*[@id=\"daysofweek_popup\"]/div[2]/ul/li[2]"));
- //       WebElement dropdown=driver.findElement(By.xpath("//*[@id=\"daysofweek_popup\"]/div[2]/ul/li[2]"));
-//
-    //    dropdown.click();
-   //     Thread.sleep(8000);
-   //     return true;
-	//	}
-	//	catch (Exception e) {
-		//	return true;
-	//	}
-//		for(WebElement ele2 :dropdownlist) {
-//			String value =ele2.getText();
-//			if(value.contains("Monday")) {
-//				Thread.sleep(9000);
-//				ele2.click();
-//				//break;
-//			
-//			}
-//			
-//			
-//		}
+
 		
 	}
 	

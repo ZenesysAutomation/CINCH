@@ -59,21 +59,7 @@ import base.BaseClass;
 		
 	
 }
-//	private String getColorCodeByNumber(int number) {
-//		if(number==0)
-//			return "rgba(183, 137, 103, 1)";
-//		else if(number==1)
-//			return "rgba(49, 32, 138, 1)";
-//		else if(number==2)
-//			return "rgba(46, 55, 255, 1)";
-//		else if(number==3)
-//			return "rgba(255, 121, 59, 1)";
-//		else if(number==4)
-//			return "rgba(97, 255, 239, 1)";
-//		else
-//			return "rgba(46, 55, 255, 1)";
-//		
-//	}
+
 	public void check_if_color_is_blue_and_active_visit_then_click_on_it() throws InterruptedException {
 		List<WebElement> blueElements=driver.findElements(By.className("text-wrap"));
 		Thread.sleep(2000);

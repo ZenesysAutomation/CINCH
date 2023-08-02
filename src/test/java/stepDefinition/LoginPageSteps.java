@@ -2,6 +2,8 @@ package stepDefinition;
 
 import base.BaseClass;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 import page.LoginPage;
@@ -18,18 +20,41 @@ public class LoginPageSteps extends BaseClass{
 	
 	
 	@When("Click on the Login Button")
-	public void click_on_the_login_button() {
+	public void click_on_the_login_button() throws InterruptedException {
 	   login.click_on_the_login_button();
 	}
 
 	@And("Verify the Dropdown and select the Test Community")
-	public void Verify_the_Dropdown_and_select_the_Test_Community() {
+	public void Verify_the_Dropdown_and_select_the_Test_Community() throws InterruptedException {
 		login.Verify_the_Dropdown_and_select_the_Test_Community();
 	}
 	
 	@And("Verify the Continue Button")
-	public void Verify_the_Continue_Button() {
+	public void Verify_the_Continue_Button() throws InterruptedException {
 		login.Verify_the_Continue_Button();
+	}
+	
+	@Then ("Home page should be shown")
+	public void Home_page_should_be_shown() {
+		login.Home_page_should_be_shown();
+		
+	}
+	
+	@Given ("User Click on the Account User Name")
+	public void user_click_on_the_account_user_name() throws InterruptedException {
+		login.user_click_on_the_account_user_name();
+		
+	}
+	@And ("Click on the Logout Button")
+	public void click_on_the_logout_button() throws InterruptedException {
+		login.click_on_the_logout_button();
+		
+	}
+	
+	@Then ("Sign In Page should be shown")
+	public void Sign_In_Page_should_be_shown() {
+		login.Sign_In_Page_should_be_shown();
+		
 	}
 
 }

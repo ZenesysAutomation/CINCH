@@ -31,6 +31,7 @@ Then User Select the Client Type
 Then User Select the Schedule Group
 Then User Select the Status
 Then User select the Track
+And select the Service Type
 Then Verify that Add new Contact Button
 Then Verify the First Name
 Then Verify the Last Name
@@ -42,5 +43,6 @@ Then Verify the Zip Code
 Then Verify the Primary Phone Number 
 Then Verify the Email 
 Then select the Relationship
-Then Click on the save button
-Then User Click on the Save
+Then Save the New Contact Details
+Then Save the New client Details
+Then Client was Created Message Should be Shown

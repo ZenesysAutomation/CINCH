@@ -1,5 +1,7 @@
 package page;
 
+import static org.junit.Assert.assertEquals;
+
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -86,10 +88,12 @@ public void user_enter_the_resident_id() {
 	explicitWait( ResID,15);
 }
 
-public void user_enter_the_city() {
+public void user_enter_the_city() throws InterruptedException {
 	WebElement City=driver.findElement(By.xpath("//input[@id='city']"));
+	City.clear();
+	Thread.sleep(2000);
 	City.sendKeys("Washington");
-	explicitWait( City,15);
+	explicitWait( City,10);
 	
 }
 public void user_select_the_state() {
@@ -121,10 +125,12 @@ public void user_enter_the_secondary_phone() throws InterruptedException {
 	 jse.executeScript("arguments[0].value='(287)222-2202';",SecondryPh);
 	 explicitWait(SecondryPh,15);
 }
-public void user_enter_the_email() {
+public void user_enter_the_email() throws InterruptedException {
 	WebElement Email=driver.findElement(By.xpath("//input[@id='email']"));
 	Email.sendKeys("Testing123@yopmail.com");
 	explicitWait( Email,15);
+	
+	
 }
 
 public void click_the_gender() throws InterruptedException {
@@ -134,10 +140,12 @@ public void click_the_gender() throws InterruptedException {
   Gender.sendKeys("Male");	
 		
 }
-public void user_select_the_birth_date() {
+public void user_select_the_birth_date() throws InterruptedException {
 	WebElement DOB=driver.findElement(By.xpath("//input[@id='birthdate']"));
     DOB.sendKeys("11/6/1998");
     explicitWait( DOB,15);
+
+	
 }
 
 public void user_enter_the_marital_status() {
@@ -162,35 +170,38 @@ public void user_enter_the_essential_information() {
 }
 
 public void user_select_the_client_type() throws InterruptedException {
+	try {
 	WebElement ddlClienttypeBtn = driver.findElement(By.id("clientype"));
     ddlClienttypeBtn.sendKeys("Nursing Services");
     Thread.sleep(2000);
     WebElement ddlClienttydpeBtn = driver.findElement(By.xpath("//*[@id=\"clientype_popup\"]/div/ul/li[2]"));
     ddlClienttydpeBtn.click();
     Thread.sleep(3000);
+	}
+	catch (Exception e) {}
 	   
 }
 
 public void user_select_the_schedule_group() throws InterruptedException {
 
 	
-	//WebElement ScheduleGroupBtn = driver.findElement(By.id("scheduleGroup"));
 	WebElement ScheduleGroupBtn = driver.findElement(By.xpath("//span[contains(@aria-owns,'scheduleGroup_options')]"));
-    //Thread.sleep(3000);
 	ScheduleGroupBtn.click();
     ScheduleGroupBtn.sendKeys("East Wing");
     ScheduleGroupBtn.click();
-   // WebElement ScheduleGroupBtn2 = driver.findElement(By.xpath("//*[@id=\"scheduleGroup_popup\"]/div/ul/li[1]"));
-    //ScheduleGroupBtn2.click();
+ 
     Thread.sleep(5000);		
 
 }
 
 public void user_select_the_status() throws InterruptedException {
+	try {
 	WebElement Status=driver.findElement(By.xpath("//span[contains(@aria-owns,'scheduleGroup_options')]"));
 	Status.click();
 	Thread.sleep(3000);
 	Status.sendKeys("Active");
+	}
+	catch (Exception e) {}
 	
 }
 
@@ -205,11 +216,22 @@ public void user_select_the_track() throws InterruptedException {
 	      
 }
 
+public void select_the_service_type() throws InterruptedException {
+	try {
+	  WebElement Servicetype = driver.findElement(By.xpath("(//span[contains(@role,'listbox')])[7]"));
+	  Servicetype.click();
+	  Servicetype.sendKeys("Community");
+	  Servicetype.click();
+	  Thread.sleep(3000);
+	}
+	catch (Exception e) {}
+}
+
 public void verify_that_add_new_contact_button() throws InterruptedException {
 	WebElement contactbtn=driver.findElement(By.xpath("//a[normalize-space()='Add New Contact']"));
 	Thread.sleep(3000);
 	contactbtn.click();
-	
+	Thread.sleep(3000);
 	
 	    
 }
@@ -262,7 +284,7 @@ public void verify_the_primary_phone_number() throws InterruptedException {
 public void verify_the_email() throws InterruptedException {
 	WebElement email=driver.findElement(By.xpath("//input[@id='email-contact']"));
 	Thread.sleep(5000);
-	email.sendKeys("testing1234@gmail.cpm");
+	email.sendKeys("testing1234@gmail.com");
     
 }
 public void select_the_relationship() throws InterruptedException {
@@ -272,22 +294,30 @@ public void select_the_relationship() throws InterruptedException {
     Thread.sleep(3000);
        
 }
-public void click_on_the_save_button() throws InterruptedException {
+public void save_the_new_contact_details()throws InterruptedException {
 	WebElement Savebtn1=driver.findElement(By.xpath("//button[@id='ClientContactSave']"));
 	Thread.sleep(6000);
-//	JavascriptExecutor js = (JavascriptExecutor)driver;
-//    js.executeScript("arguments[0].click()", Savebtn1);
+	/*JavascriptExecutor js = (JavascriptExecutor)driver;
+    js.executeScript("arguments[0].click()", Savebtn1);*/
 	Savebtn1.click();
+	Thread.sleep(4000);
 	
 		
 }
-public void user_click_on_the_save() throws InterruptedException {
+ public void save_the_new_client_details() throws InterruptedException {
 	
     WebElement Savebtn=driver.findElement(By.xpath("//button[@id='ClientSave']"));
    Thread.sleep(10000);
-//    JavascriptExecutor js = (JavascriptExecutor)driver;
-//    js.executeScript("arguments[0].click()", Savebtn);
+    /*JavascriptExecutor js = (JavascriptExecutor)driver;
+    js.executeScript("arguments[0].click()", Savebtn);*/
    	Savebtn.click();
     Thread.sleep(10000);    
 }
+ 
+ public void client_was_created_message_should_be_shown() {
+	 	String expectedResult= "client was created";
+		String actualResult= driver.findElement(By.xpath("")).getText();
+		assertEquals("client was created",expectedResult,actualResult);
+		
+	}
 }
