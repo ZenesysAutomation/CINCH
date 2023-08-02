@@ -38,16 +38,10 @@ public class LoginPage extends BaseClass {
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	Continue.click();
 	
-	
-//		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
-//		wait.until(ExpectedConditions.visibilityOf(Continue));
-//		Continue.click();
-		//Continue.click();
 		
 	}
 	    

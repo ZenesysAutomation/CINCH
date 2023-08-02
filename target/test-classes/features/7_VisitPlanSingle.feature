@@ -24,7 +24,6 @@ Then click on the Save Button
 Then Save the all Single Visit Details
 
 
-
 Scenario: Verify The ADLs and IADLS Functionalities
 When Click on the ADLs Tab
 Then Click on the Bathing
@@ -98,72 +97,37 @@ And Click on the Save button
 
 
 Scenario: Change Task in a Client Visit (ADLS and IADLS)
+
 Given User Click on the ADLs Tab 
 Then User Click on the Bathing
-Then User Select the Bathing Assistance Level as a Supervision
 Then Verify if Assist With Shower is Already Checked then Unchecked it
-And Checked the Assist With Sponge Bath 
+And Checked the Assist With Sponge Bath
 And User Select the Visits Timing
-Then User Enter the Caregiver Instructions
 And Update the Bathing Details
 And Save the Bathing details
-Then User Again click on the ADLs 
-When User Click on the Continence And Toileting
-And  Click on the Assistance Level No Assistance
-Then User Save the Continence And Toileting Details
 When User Click on the  ADLs To Enter the Dressing And Grooming details
 Then User Click on the dressing And Grooming 
-Then User select the Assistance Level as a Supervision
 Then Verify if Apply Lotion Tasks is Already Checked then Unchecked it
 And User Ticked on Assist with Oral Care
 Then Select the Visit Time
-Then user Enter the caregiver Instructions
 Then Update the Assist with Oral Care details
 Then save The Dressing And Grooming Details
-Then User Click on the ADLS To Enter the Eating Details
-Then User Click on the Eating 
-Then User Select the Assistance Level as a No Assistance
-Then User Click on the save Button to save the details
 And User Click on the ADLS To Enter the Mobility Details
 Then User Click on the Mobility
-Then User Select the Assistance Level As Limited Assistance
 Then Verify if Walk With Client Tasks is Already Checked then Unchecked it
 And Select the Assist With Transfers
 And User Choose the Visits Time 
-And User Enter Caregiver Instructions for Mobility
 And Update the Assist With Transfers Details
 And User Click on the Save Button to save the Mobility Details
-When User Click on the IADLS to Enter the Household Details
-And User Click on the Household Tasks
-And User Select the Assistance Level as a Assistance
-Then Verify if Make Bed Tasks is Already Checked then Unchecked it
-And User Ticked the Change Lines Tasks
-Then User Select the Change Lines Visits Time
-And User enter the caregiver instructions for Household Tasks
-And Update the Change Lines details
-And User Save the Household Tasks Details
-Then User Again click on the IADLs to Enter the Laundry Details
-And User Click on the Laundry
-Then User Select the Laundry Assistance Level As Assistance
-Then User Click on the Tasks Wash Dry Fold And Return Clothes
-And  User Select the Visit Time
-And User Enter Caregiver Instruction For Laundry
-And User Update the Laundry Details
-And User Save the Laundry Details
-Then User Click on the IADLs to Enter the Meals Details
-Then User Click on the Meals
-Then User Select the Meals Assistance Level No Assistance
-And User Save the Meals Details
 Then User Again click on the IADLS to Enter the Medication Details
 Then click on the Medication
-And Select the Medication Assistance Level as Assistance
 Then Verify if Check Blood Pressure Tasks is Already Select then Unselect it
 And Select the Check Temperature
 And  Users Select the Visits Time
-And User Enter Caregiver Instructions For Medication
 And User Update the Medication Details
 And User Save the Medication Details 
 Then User Click on the Add to Schedule and Finalize Visits
+
 
 
 

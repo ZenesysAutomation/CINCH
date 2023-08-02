@@ -86,6 +86,7 @@ public void select_the_start_date() throws InterruptedException {
 	visitplan.select_the_start_date();
 }
 
+
 @Then("click on the Save Button")
 public void click_on_the_save_button() throws InterruptedException {
 	visitplan.click_on_the_save_button();
@@ -449,6 +450,13 @@ public void select_start_date() throws InterruptedException {
 	visitplan.select_start_date();
 }
 
+@Then("select past Date")
+public void select_past_date() throws InterruptedException {
+	visitplan.select_past_date();
+    
+}
+
+
 @Then("User Click on the save Button")
 public void user_click_on_the_save_button() throws InterruptedException {
     visitplan.user_click_on_the_save_button();
@@ -463,7 +471,7 @@ public void save_the_for_all_days_visit_details() throws InterruptedException {
 
 
 	
-
+//change task
 
 @Given ("User Click on the ADLs Tab")
 public void user_click_on_the_ad_ls_tab() throws InterruptedException {
@@ -475,11 +483,7 @@ public void user_click_on_the_bathing() throws InterruptedException {
 	visitplan.user_click_on_the_bathing();
 }
 
-@Then ("User Select the Bathing Assistance Level as a Supervision")
-public void user_select_the_bathing_assistance_level_as_a_supervision() throws InterruptedException {
-	visitplan.user_select_the_bathing_assistance_level_as_a_supervision();
 	
-}
 @Then ("Verify if Assist With Shower is Already Checked then Unchecked it")
 public void verify_if_assist_with_shower_is_already_checked_then_unchecked_it() throws InterruptedException {
 	visitplan.verify_if_assist_with_shower_is_already_checked_then_unchecked_it();
@@ -494,11 +498,8 @@ public void user_select_the_visits_timing() throws InterruptedException {
 	visitplan.user_select_the_visits_timing();
 	
 }
-@Then ("User Enter the Caregiver Instructions")
-public void user_enter_the_caregiver_instructions() throws InterruptedException {
-	visitplan.user_enter_the_caregiver_instructions();
-	
-}
+
+
 @And("Update the Bathing Details")
 public void update_the_bathing_details() throws InterruptedException {
 	visitplan.update_the_bathing_details();
@@ -508,25 +509,8 @@ public void save_the_bathing_details1() throws InterruptedException {
 	visitplan.save_the_bathing_details1();
 	
 }
-@Then ("User Again click on the ADLs")
-public void user_again_click_on_the_ad_ls() throws InterruptedException {
-	visitplan.user_again_click_on_the_ad_ls();
-	
-}
-@When ("User Click on the Continence And Toileting")
-public void user_click_on_the_continence_and_toileting() throws InterruptedException {
-	visitplan.user_click_on_the_continence_and_toileting();
-}
-@And ("Click on the Assistance Level No Assistance")
-public void click_on_the_assistance_level_no_assistance() throws InterruptedException {
-	visitplan.click_on_the_assistance_level_no_assistance();
-	
-}
-@Then ("User Save the Continence And Toileting Details")
-public void user_save_the_continence_and_toileting_details() throws InterruptedException {
-	visitplan.user_save_the_continence_and_toileting_details();
-	
-}
+
+
 @When ("User Click on the  ADLs To Enter the Dressing And Grooming details")
 public void user_click_on_the_ad_ls_to_enter_the_dressing_and_grooming_details() throws InterruptedException {
 	visitplan.user_click_on_the_ad_ls_to_enter_the_dressing_and_grooming_details();
@@ -537,10 +521,7 @@ public void user_click_on_the_dressing_and_grooming() throws InterruptedExceptio
 	visitplan.user_click_on_the_dressing_and_grooming();
 	
 }
-@Then ("User select the Assistance Level as a Supervision")
-public void user_select_the_assistance_level_as_a_supervision() throws InterruptedException {
-	visitplan.user_select_the_assistance_level_as_a_supervision();
-}
+
 @Then ("Verify if Apply Lotion Tasks is Already Checked then Unchecked it")
 public void verify_if_apply_lotion_tasks_is_already_checked_then_unchecked_it() throws InterruptedException {
 	visitplan.verify_if_apply_lotion_tasks_is_already_checked_then_unchecked_it();
@@ -556,10 +537,10 @@ public void select_the_visit_time() throws InterruptedException {
 	visitplan.select_the_visit_time();
 	
 }
-@Then ("user Enter the caregiver Instructions")
-public void user_enter_the_caregiver_instructions1() throws InterruptedException {
-	visitplan.user_enter_the_caregiver_instructions1();
-}
+//@Then ("user Enter the caregiver Instructions")
+//public void user_enter_the_caregiver_instructions1() throws InterruptedException {
+//	visitplan.user_enter_the_caregiver_instructions1();
+//}
 
 @Then ("Update the Assist with Oral Care details")
 public void update_the_assist_with_oral_care_details() throws InterruptedException {
@@ -571,25 +552,7 @@ public void save_the_dressing_and_grooming_details1() throws InterruptedExceptio
 	visitplan.save_the_dressing_and_grooming_details1();
 	
 }
-@Then ("User Click on the ADLS To Enter the Eating Details")
-public void user_click_on_the_ad_ls_to_enter_the_eating_details() throws InterruptedException {
-	visitplan.user_click_on_the_ad_ls_to_enter_the_eating_details(); 
-	
-}
-@Then ("User Click on the Eating")
-public void user_click_on_the_eating() throws InterruptedException {
-	visitplan.user_click_on_the_eating();
-	
-}
-@Then ("User Select the Assistance Level as a No Assistance")
-public void user_select_the_assistance_level_as_a_no_assistance() {
-	visitplan.user_select_the_assistance_level_as_a_no_assistance();
-}
-@Then ("User Click on the save Button to save the details")
-public void user_click_on_the_save_button_to_save_the_details() throws InterruptedException {
-	visitplan.user_click_on_the_save_button_to_save_the_details();
-	
-}
+
 @And ("User Click on the ADLS To Enter the Mobility Details")
 public void user_click_on_the_ad_ls_to_enter_the_mobility_details() throws InterruptedException {
 	visitplan.user_click_on_the_ad_ls_to_enter_the_mobility_details();
@@ -601,11 +564,6 @@ public void user_click_on_the_mobility() throws InterruptedException {
 	
 }
 
-@Then ("User Select the Assistance Level As Limited Assistance")
-public void user_select_the_assistance_level_as_limited_assistance() throws InterruptedException {
-	visitplan.user_select_the_assistance_level_as_limited_assistance();
-	
-}
 @Then ("Verify if Walk With Client Tasks is Already Checked then Unchecked it")
 public void verify_if_walk_with_client_tasks_is_already_checked_then_unchecked_it() throws InterruptedException {
 	visitplan.verify_if_walk_with_client_tasks_is_already_checked_then_unchecked_it();
@@ -621,11 +579,7 @@ public void user_choose_the_visits_time() throws InterruptedException {
 	visitplan.user_choose_the_visits_time();
 	
 }
-@And ("User Enter Caregiver Instructions for Mobility")
-public void user_enter_caregiver_instructions_for_mobility() throws InterruptedException {
-	visitplan.user_enter_caregiver_instructions_for_mobility();
-	
-} 
+
 @And ("Update the Assist With Transfers Details")
 public void update_the_assist_with_transfers_details() throws InterruptedException {
 	visitplan.update_the_assist_with_transfers_details(); 
@@ -636,113 +590,7 @@ public void user_click_on_the_save_button_to_save_the_mobility_details() throws 
 	visitplan.user_click_on_the_save_button_to_save_the_mobility_details(); 
 	
 }
-@When ("User Click on the IADLS to Enter the Household Details")
-public void user_click_on_the_ia_dls_to_enter_the_household_details() throws InterruptedException {
-	visitplan.user_click_on_the_ia_dls_to_enter_the_household_details(); 
-	
-}
-@And("User Click on the Household Tasks")
-public void user_click_on_the_household_tasks() throws InterruptedException {
-	visitplan.user_click_on_the_household_tasks();
-	
-}
-	
-@And ("User Select the Assistance Level as a Assistance")
-public void user_select_the_assistance_level_as_a_assistance() throws InterruptedException {
-	visitplan.user_select_the_assistance_level_as_a_assistance();
-	
-}
 
-@Then ("Verify if Make Bed Tasks is Already Checked then Unchecked it")
-public void verify_if_make_bed_tasks_is_already_checked_then_unchecked_it() throws InterruptedException {
-	visitplan.verify_if_make_bed_tasks_is_already_checked_then_unchecked_it();
-	
-}
-@And ("User Ticked the Change Lines Tasks")
-public void user_ticked_the_change_lines_tasks() throws InterruptedException {
-	visitplan.user_ticked_the_change_lines_tasks();
-	
-}
-@Then ("User Select the Change Lines Visits Time")
-public void user_select_the_change_lines_visits_time() {
-	visitplan.user_select_the_change_lines_visits_time();
-	
-}
-@And ("User enter the caregiver instructions for Household Tasks")
-public void user_enter_the_caregiver_instructions_for_household_tasks() throws InterruptedException {
-	visitplan.user_enter_the_caregiver_instructions_for_household_tasks();
-	
-}
-@And ("Update the Change Lines details")
-public void update_the_change_lines_details() throws InterruptedException {
-	visitplan.update_the_change_lines_details();
-	
-}
-@And ("User Save the Household Tasks Details")
-public void user_save_the_household_tasks_details() throws InterruptedException {
-	visitplan.user_save_the_household_tasks_details();
-	
-}
-@Then ("User Again click on the IADLs to Enter the Laundry Details")
-public void user_again_click_on_the_ia_dls_to_enter_the_laundry_details() throws InterruptedException {
-	visitplan.user_again_click_on_the_ia_dls_to_enter_the_laundry_details();
-	
-}
-@And ("User Click on the Laundry")
-public void user_click_on_the_laundry() throws InterruptedException {
-	visitplan.user_click_on_the_laundry();
-	
-}
-@Then ("User Select the Laundry Assistance Level As Assistance")
-public void user_select_the_laundry_assistance_level_as_assistance() throws InterruptedException {
-	visitplan.user_select_the_laundry_assistance_level_as_assistance();
-	
-}
-@Then ("User Click on the Tasks Wash Dry Fold And Return Clothes")
-public void user_click_on_the_tasks_wash_dry_fold_and_return_clothes() throws InterruptedException {
-	visitplan.user_click_on_the_tasks_wash_dry_fold_and_return_clothes();
-	
-}
-@And("User Select the Visit Time")
-public void user_select_the_visit_time() {
-	visitplan.user_select_the_visit_time();
-	
-}
-@And ("User Enter Caregiver Instruction For Laundry")
-public void user_enter_caregiver_instruction_for_laundry() throws InterruptedException {
-	visitplan.user_enter_caregiver_instruction_for_laundry();
-	
-}
-@And ("User Update the Laundry Details")
-public void user_update_the_laundry_details() throws InterruptedException {
-	visitplan.user_update_the_laundry_details();
-	
-}
-@And ("User Save the Laundry Details")
-public void user_save_the_laundry_details() throws InterruptedException {
-	visitplan.user_save_the_laundry_details();
-	
-}
-@Then ("User Click on the IADLs to Enter the Meals Details")
-public void user_click_on_the_ia_dls_to_enter_the_meals_details() throws InterruptedException {
-	visitplan.user_click_on_the_ia_dls_to_enter_the_meals_details();
-	
-}
-@Then ("User Click on the Meals")
-public void user_click_on_the_meals() throws InterruptedException {
-	visitplan.user_click_on_the_meals();
-	
-}
-@Then ("User Select the Meals Assistance Level No Assistance")
-public void user_select_the_meals_assistance_level_no_assistance() throws InterruptedException {
-	visitplan.user_select_the_meals_assistance_level_no_assistance(); 
-	
-}
-@And ("User Save the Meals Details")
-public void user_save_the_meals_details() throws InterruptedException {
-	visitplan.user_save_the_meals_details();
-	
-}
 @Then ("User Again click on the IADLS to Enter the Medication Details")
 public void user_again_click_on_the_ia_dls_to_enter_the_medication_details() throws InterruptedException {
 	visitplan.user_again_click_on_the_ia_dls_to_enter_the_medication_details();
@@ -753,11 +601,7 @@ public void click_on_the_medication() throws InterruptedException {
 	visitplan.click_on_the_medication();
 	
 }
-@And ("Select the Medication Assistance Level as Assistance")
-public void select_the_medication_assistance_evel_as_assistance() throws InterruptedException {
-	visitplan.select_the_medication_assistance_evel_as_assistance();
-	
-}
+
 @Then ("Verify if Check Blood Pressure Tasks is Already Select then Unselect it")
 public void verify_if_check_blood_pressure_tasks_is_already_select_then_unselect_it() throws InterruptedException {
 	visitplan.verify_if_check_blood_pressure_tasks_is_already_select_then_unselect_it();
@@ -774,10 +618,10 @@ public void users_select_the_visits_time() {
 	
 }
 @And ("User Enter Caregiver Instructions For Medication")
-public void user_enter_caregiver_instructions_for_medication() throws InterruptedException {
-	visitplan.user_enter_caregiver_instructions_for_medication();
+//public void user_enter_caregiver_instructions_for_medication() throws InterruptedException {
+	//visitplan.user_enter_caregiver_instructions_for_medication();
 	
-}
+//}
 @And ("User Update the Medication Details")
 public void user_update_the_medication_details() throws InterruptedException {
 	visitplan.user_update_the_medication_details();
@@ -792,7 +636,7 @@ public boolean user_click_on_the_add_to_schedule_and_finalize_visits() throws In
 	return visitplan.user_click_on_the_add_to_schedule_and_finalize_visits();
 	
 }
-
+// change tasks
 
 @Then("Check the Add Visit Configuration Button")
 public void check_the_add_visit_configuration_button() throws InterruptedException {

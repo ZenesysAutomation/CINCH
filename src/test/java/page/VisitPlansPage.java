@@ -1,4 +1,5 @@
 package page;
+import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -8,6 +9,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import base.BaseClass;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -15,11 +19,15 @@ import io.cucumber.java.en.When;
 public class VisitPlansPage extends BaseClass  {
 	
 	public void user_enter_the_email() throws InterruptedException {
-		WebElement Useremail=driver.findElement(By.xpath("//input[@id='email']"));
-		explicitWait(Useremail,20);
-		Thread.sleep(6000);
+//		WebElement Useremail=driver.findElement(By.xpath("//input[@id='email']"));
+//		explicitWait(Useremail,20);
+//		Thread.sleep(6000);
+//		Useremail.sendKeys(prop.getProperty("username"));
+//		Thread.sleep(6000);		
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 		Useremail.sendKeys(prop.getProperty("username"));
-		Thread.sleep(6000);		   
 	}
 	
 	public void user_enter_the_password() throws InterruptedException {
@@ -164,7 +172,7 @@ public class VisitPlansPage extends BaseClass  {
 	}*/
 	
 	public void select_the_start_date() throws InterruptedException {
-		LocalDateTime targetDate = LocalDateTime.now().minusDays(5);
+		LocalDateTime targetDate = LocalDateTime.now().plusDays(1);
         String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 
         WebElement startDateField = driver.findElement(By.id("visit-start-date"));
@@ -791,10 +799,21 @@ public class VisitPlansPage extends BaseClass  {
 			WebElement AddToSchedue=driver.findElement(By.xpath("//span[normalize-space()='Add To Schedule']"));
 			JavascriptExecutor js = (JavascriptExecutor)driver;
 			js.executeScript("arguments[0].click()", AddToSchedue);
-			Thread.sleep(8000);		
+			Thread.sleep(8000);	
+			
+			WebElement FinalizeVisits=driver.findElement(By.cssSelector("button[id='Finalize'] span[class='e-btn-content']"));
+			JavascriptExecutor jse2 = (JavascriptExecutor)driver;
+			jse2.executeScript("arguments[0].click()", FinalizeVisits);
+			Thread.sleep(6000);
+			
+			
+			WebElement	FinalizeVisitsFinal=driver.findElement(By.xpath("(//button[normalize-space()='Yes, Finalize'])[1]"));
+			FinalizeVisitsFinal.click();
+			Thread.sleep(5000);
+			
 		}
 		else {
-			//WebElement FinalizeVisits=driver.findElement(By.xpath("(//span[normalize-space()='Finalize Visits'])[1]"));
+			
 			WebElement FinalizeVisits=driver.findElement(By.cssSelector("button[id='Finalize'] span[class='e-btn-content']"));
 			JavascriptExecutor js = (JavascriptExecutor)driver;
 			js.executeScript("arguments[0].click()", FinalizeVisits);
@@ -861,12 +880,6 @@ public void select_duration() throws InterruptedException {
 		Thread.sleep(6000);
 		
 		
-//		WebElement ddlDuration = driver.findElement(By.id("duration"));
-//		Thread.sleep(6000);
-//        ddlDuration.sendKeys("45 Minute Visit");
-//        WebElement ddlDurations = driver.findElement(By.xpath("//*[@id='duration_popup']/div/ul/li[3]"));
-//        Thread.sleep(6000);
-//        ddlDurations.click();
 	}
 	public void select_weekly_recurrence() throws InterruptedException {
 		WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));
@@ -878,6 +891,21 @@ public void select_duration() throws InterruptedException {
 	
 	public void select_start_date() throws InterruptedException {
 		
+		 LocalDateTime targetDate = LocalDateTime.now().plusDays(1);
+	        String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+
+	        WebElement startDateField = driver.findElement(By.id("visit-start-date"));
+	        startDateField.click();
+
+	        for (int i = 1; i <= 10; i++) {
+	            startDateField.sendKeys(Keys.BACK_SPACE);
+	        }
+
+	        startDateField.sendKeys(targetDateString);
+	        Thread.sleep(8000);
+	}
+	
+	public void select_past_date() throws InterruptedException {
 		 LocalDateTime targetDate = LocalDateTime.now().minusDays(7);
 	        String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 
@@ -891,6 +919,8 @@ public void select_duration() throws InterruptedException {
 	        startDateField.sendKeys(targetDateString);
 	        Thread.sleep(8000);
 	}
+		
+	
 	
 	public void user_click_on_the_save_button() throws InterruptedException {
 		WebElement SaveBtn =driver.findElement(By.xpath("//button[@id='SaveNewVisit']"));
@@ -911,7 +941,7 @@ public void select_duration() throws InterruptedException {
 	
 	
 	
-	
+	//change task
 	
 	public void user_click_on_the_ad_ls_tab() throws InterruptedException {
 		WebElement ADLs =driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='ADLs']"));
@@ -925,6 +955,9 @@ public void select_duration() throws InterruptedException {
 		WebElement Bathing =driver.findElement(By.xpath("(//div[@role='presentation'][normalize-space()='Bathing'])[1]"));
 		Bathing.click();
 		Thread.sleep(2000);
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0, 50000)");
+		Thread.sleep(4000);
 	}
 	
 	public void user_select_the_bathing_assistance_level_as_a_supervision() throws InterruptedException {
@@ -974,13 +1007,6 @@ public void select_duration() throws InterruptedException {
 		
 	}
 	
-	public void user_enter_the_caregiver_instructions() throws InterruptedException {
-		
-		WebElement VisitTiming = driver.findElement(By.xpath("//textarea[@id='notes']"));
-		VisitTiming.sendKeys("Testing demo");
-		Thread.sleep(6000);
-	}
-	
 	public void update_the_bathing_details() throws InterruptedException {
 		WebElement UpdateBt = driver.findElement(By.xpath("//button[normalize-space()='Update']"));
 		UpdateBt.click();
@@ -992,41 +1018,6 @@ public void select_duration() throws InterruptedException {
 		Savedetail.click();
 		Thread.sleep(6000);
 		
-		
-	}
-	
-	public void user_again_click_on_the_ad_ls() throws InterruptedException {
-		WebElement Adls2 =driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='ADLs']"));
-		Thread.sleep(6000);
-		Adls2 .click();
-		Thread.sleep(8000);
-		
-	}
-	
-	public void user_click_on_the_continence_and_toileting() throws InterruptedException {
-		WebElement ContinenceToileting =driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='Continence and Toileting']"));
-		ContinenceToileting.click();
-		Thread.sleep(2000);
-	}
-	
-	
-	public void click_on_the_assistance_level_no_assistance() throws InterruptedException {
-		WebElement Assistance =driver.findElement(By.xpath("(//span[@role='listbox'])[2]"));
-		Assistance.click();
-		Assistance.sendKeys("No Assistance");
-		Assistance.click();
-		Thread.sleep(6000);
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0, 50000)");
-		Thread.sleep(4000);
-	}
-	
-	public void user_save_the_continence_and_toileting_details() throws InterruptedException {
-		WebElement SaveContinence = driver.findElement(By.id("SaveVisit"));
-		Thread.sleep(4000);
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		  js.executeScript("arguments[0].click()",SaveContinence );	
-		  Thread.sleep(6000);
 		
 	}
 	
@@ -1042,18 +1033,9 @@ public void select_duration() throws InterruptedException {
 		WebElement dressingNgrooming =driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='Dressing & Grooming']"));
 		dressingNgrooming.click();
 		Thread.sleep(6000);
-		
-	}
-	
-	public void user_select_the_assistance_level_as_a_supervision() throws InterruptedException {
-		WebElement AssistanceSup =driver.findElement(By.xpath("(//span[contains(@role,'listbox')])[2]"));
-		AssistanceSup.click();
-		AssistanceSup.sendKeys("Supervision");
-		AssistanceSup.click();
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);
-		
 	}
 	
 	public void verify_if_apply_lotion_tasks_is_already_checked_then_unchecked_it() throws InterruptedException {
@@ -1084,15 +1066,7 @@ public void select_duration() throws InterruptedException {
 	}
 	
 	public void select_the_visit_time() throws InterruptedException {
-		/*try {
-		WebElement VisitTime =driver.findElement(By.xpath("//*[@id=\"visitconfig_active\"]/div[2]/div[1]"));
-		VisitTime.click();
-		WebElement VisitTimeSelect =driver.findElement(By.xpath("//*[@id=\"visitconfig_active\"]/div[2]/div[2]/span"));
-		Thread.sleep(4000);
-		VisitTimeSelect.click();
-		Thread.sleep(4000);	
-	}
-	catch(Exception e) {}*/
+		
 	try {
 	WebElement VisitTime =driver.findElement(By.xpath("(//span[@class='e-frame e-icons'])[1]"));
 	VisitTime.click();
@@ -1101,17 +1075,6 @@ public void select_duration() throws InterruptedException {
 		catch(Exception e) {}
 }
 		
-	
-	
-	public void user_enter_the_caregiver_instructions1() throws InterruptedException {
-		try {
-		WebElement Instructions3  = driver.findElement(By.xpath("//textarea[@id='notes']"));
-		Instructions3 .sendKeys("Testing v3.1");
-		Thread.sleep(4000);
-		}
-		catch (Exception e) {}
-	}
-	
 	public void update_the_assist_with_oral_care_details() throws InterruptedException {
 		WebElement Update = driver.findElement(By.xpath("//button[normalize-space()='Update']"));
 		Update.click();
@@ -1140,31 +1103,6 @@ public void select_duration() throws InterruptedException {
 		
 	}
 	
-	public void user_click_on_the_eating() throws InterruptedException {
-		
-		WebElement Eating =driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='Eating']"));
-		Eating.click();
-		Thread.sleep(4000);
-	}
-	
-	public void user_select_the_assistance_level_as_a_no_assistance() {
-		try {
-			WebElement AssistanceLevel =driver.findElement(By.xpath("(//span[contains(@role,'listbox')])[2]"));
-			AssistanceLevel.click();
-			AssistanceLevel.sendKeys("No Assistance");
-			AssistanceLevel.click();
-			Thread.sleep(6000);
-		}
-		catch (Exception e) {}	
-	}
-	
-	public void user_click_on_the_save_button_to_save_the_details() throws InterruptedException {
-		WebElement EatingSaveBtn =driver.findElement(By.xpath("//button[@id='SaveVisit']"));
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click()",EatingSaveBtn);
-		Thread.sleep(6000);
-		
-	}
 	
 	public void user_click_on_the_ad_ls_to_enter_the_mobility_details() throws InterruptedException {
 		WebElement Adls2 =driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='ADLs']"));
@@ -1179,19 +1117,11 @@ public void select_duration() throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()",MobilityClick);
 		Thread.sleep(6000);	
-	}
-		
-	
-	public void user_select_the_assistance_level_as_limited_assistance() throws InterruptedException {
-		
-		WebElement LimitedAssistance =driver.findElement(By.xpath("(//span[@role='listbox'])[2]"));
-		LimitedAssistance.click();
-		LimitedAssistance.sendKeys("Limited Assistance");
-		LimitedAssistance.click();
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0, 50000)");
+		JavascriptExecutor js2 = (JavascriptExecutor)driver;
+		js2.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);
 	}
+		
 	
 	public void verify_if_walk_with_client_tasks_is_already_checked_then_unchecked_it() throws InterruptedException {
 		WebElement WalkWithClient=driver.findElement(By.xpath("(//input[@id='1812'])[1]"));
@@ -1225,14 +1155,6 @@ public void select_duration() throws InterruptedException {
 	}
 	
 	public void user_choose_the_visits_time() throws InterruptedException {
-		/*try {
-		WebElement VisitsTime=driver.findElement(By.xpath("//*[@id=\"visitconfig_active\"]/div[2]/div[1]"));
-		VisitsTime.click();
-		WebElement VisitsTime2=driver.findElement(By.xpath("//*[@id=\"visitconfig_active\"]/div[2]/div[2]/span"));
-		VisitsTime2.click();
-		Thread.sleep(4000);
-	}
-	catch(Exception e) {}*/
 	try {
 	WebElement VisitsTime=driver.findElement(By.xpath("(//span[@class='e-frame e-icons'])[1]"));
 	VisitsTime.click();
@@ -1240,13 +1162,7 @@ public void select_duration() throws InterruptedException {
 	}
 	catch (Exception e){}
 	}
-	
-	public void user_enter_caregiver_instructions_for_mobility() throws InterruptedException {
-		WebElement Notes=driver.findElement(By.xpath("//textarea[@id='notes']"));
-		Notes.sendKeys("Testing v3.1");
-		Thread.sleep(4000);
-		
-	} 
+	 
 	
 	public void update_the_assist_with_transfers_details() throws InterruptedException {
 		WebElement Updateassistwithtransfers=driver.findElement(By.xpath("//button[normalize-space()='Update']"));
@@ -1263,201 +1179,6 @@ public void select_duration() throws InterruptedException {
 		
 	}
 	
-	public void user_click_on_the_ia_dls_to_enter_the_household_details() throws InterruptedException {
-		WebElement IADLSBtn=driver.findElement(By.xpath("(//div[@role='presentation'][normalize-space()='iADLS'])[1]"));
-		IADLSBtn.click();
-		Thread.sleep(6000);
-		
-	}
-	
-	public void user_click_on_the_household_tasks() throws InterruptedException {
-		
-		WebElement HouseHold=driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='Household Tasks']"));
-		HouseHold.click();
-		Thread.sleep(4000);
-	}
-	public void user_select_the_assistance_level_as_a_assistance() throws InterruptedException {
-		
-		WebElement AssistanceLevel=driver.findElement(By.xpath("//span[@role='listbox']"));
-		AssistanceLevel.click();
-		AssistanceLevel.sendKeys("Assistance");
-		AssistanceLevel.click();
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0, 50000)");
-		Thread.sleep(4000);
-	}
-	
-	public void verify_if_make_bed_tasks_is_already_checked_then_unchecked_it() throws InterruptedException {
-		WebElement MakeBed=driver.findElement(By.xpath("(//input[@id='1815'])[1]"));
-		if(MakeBed.isSelected()) {
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click()",MakeBed);
-		Thread.sleep(6000);
-		
-		}
-	}
-	
-	public void user_ticked_the_change_lines_tasks() throws InterruptedException {
-		WebElement ChangeLines=driver.findElement(By.xpath("(//input[@id='1813'])[1]"));
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click()",ChangeLines);
-		if(ChangeLines.isSelected()) {
-			System.out.println("Checkbox is toggled On");
-		}
-		else {
-			
-			System.out.println("Checkbox is toggled Off");
-			ChangeLines.click();
-			 
-			if(!ChangeLines.isSelected()) {
-				System.out.println("Checkbox is now toggle off");
-			}
-		}
-		Thread.sleep(4000);	
-	}
-	
-	public void user_select_the_change_lines_visits_time() {
-		try{
-			WebElement ChangelinesTime =driver.findElement(By.xpath("(//span[@class='e-frame e-icons'])[1]"));
-			ChangelinesTime.click();
-			Thread.sleep(3000);
-		}
-		catch(Exception e){}
-		
-	}
-	
-	public void user_enter_the_caregiver_instructions_for_household_tasks() throws InterruptedException {
-		
-		WebElement CaregiverInstructions1Note= driver.findElement(By.xpath("//textarea[@id='notes']"));
-		CaregiverInstructions1Note.sendKeys("testing v4.0");
-		Thread.sleep(3000);
-	}
-	
-	public void update_the_change_lines_details() throws InterruptedException {
-		WebElement UpdateCahngeLinesDetails= driver.findElement(By.xpath("(//button[normalize-space()='Update'])[1]"));
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click()",UpdateCahngeLinesDetails);
-		 Thread.sleep(3000);
-		
-	}
-	
-	public void user_save_the_household_tasks_details() throws InterruptedException {
-		WebElement SaveHouseHold = driver.findElement(By.xpath("//button[@id='SaveVisit']"));
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click()",SaveHouseHold);
-		 Thread.sleep(6000);
-		
-	}
-	
-	public void user_again_click_on_the_ia_dls_to_enter_the_laundry_details() throws InterruptedException {
-		WebElement IADLSBtn2=driver.findElement(By.xpath("(//div[@role='presentation'][normalize-space()='iADLS'])[1]"));
-		IADLSBtn2.click();
-		Thread.sleep(6000);
-		
-	}
-	
-	public void user_click_on_the_laundry() throws InterruptedException {
-		WebElement Laundry=driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='Laundry']"));
-		Laundry.click();
-		Thread.sleep(4000);
-		
-		
-	}
-	
-	public void user_select_the_laundry_assistance_level_as_assistance() throws InterruptedException {
-		WebElement LaundryAssistance=driver.findElement(By.xpath("(//span[@role='listbox'])[2]"));
-		LaundryAssistance.click();
-		LaundryAssistance.sendKeys("Assistance");
-		LaundryAssistance.click();
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0, 50000)");
-		Thread.sleep(4000);
-		
-	}
-	public void user_click_on_the_tasks_wash_dry_fold_and_return_clothes() throws InterruptedException {
-		
-		WebElement Tasks=driver.findElement(By.xpath("(//input[@id='1823'])[1]"));
-		Tasks.click();
-		if( Tasks.isSelected()) {
-			System.out.println("Checkbox is toggled On");
-		}
-		else {
-			
-			System.out.println("Checkbox is toggled Off");
-			 Tasks.click();
-			 
-			if( !Tasks.isSelected()) {
-				System.out.println("Checkbox is now toggle off");
-			}
-		}
-		Thread.sleep(4000);
-	}
-	
-	public void user_select_the_visit_time() {
-		try {
-			WebElement VisitsTime=driver.findElement(By.xpath("//span[@class='e-frame e-icons']"));
-			VisitsTime.click();
-			Thread.sleep(4000);
-		}
-		catch (Exception e) {}
-		
-	}
-	
-	public void user_enter_caregiver_instruction_for_laundry() throws InterruptedException {
-		
-		WebElement Notes=driver.findElement(By.xpath("//textarea[@id='notes']"));
-		Notes.sendKeys("Testing v5.0");
-		Thread.sleep(4000);
-	}
-	
-	public void user_update_the_laundry_details() throws InterruptedException {
-		
-		WebElement UpdateLaundryDtls=driver.findElement(By.xpath("//button[normalize-space()='Update']"));
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click()",UpdateLaundryDtls);
-		Thread.sleep(6000);
-	}
-	
-	public void user_save_the_laundry_details() throws InterruptedException {
-		WebElement SaveLaundryDtls=driver.findElement(By.xpath("//button[@id='SaveVisit']"));
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click()",SaveLaundryDtls);
-		Thread.sleep(6000);
-		
-	}
-	
-	public void user_click_on_the_ia_dls_to_enter_the_meals_details() throws InterruptedException {
-		WebElement IADLS=driver.findElement(By.xpath("(//div[@role='presentation'][normalize-space()='iADLS'])[1]"));
-		IADLS.click();
-		Thread.sleep(6000);
-		
-	}
-	public void user_click_on_the_meals() throws InterruptedException {
-		WebElement Meals =	driver.findElement(By.xpath("//div[contains(@role,'presentation')][normalize-space()='Meals']"));
-		Meals.click();
-		Thread.sleep(3000);
-		
-	}
-	
-	public void user_select_the_meals_assistance_level_no_assistance() throws InterruptedException {
-		
-		WebElement MealsAssistance=	driver.findElement(By.xpath("(//span[contains(@role,'listbox')])[2]"));
-		 MealsAssistance.click();
-		 MealsAssistance.sendKeys("No Assistance");
-		 MealsAssistance.click();
-		 JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0, 50000)");
-		 Thread.sleep(4000);
-	}
-	
-	public void user_save_the_meals_details() throws InterruptedException {
-WebElement saveMealsDetails =driver.findElement(By.xpath("//button[@id='SaveVisit']"));
-		
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click()",saveMealsDetails);
-		Thread.sleep(6000);
-		
-	}
 	
 	public void user_again_click_on_the_ia_dls_to_enter_the_medication_details() throws InterruptedException {
 		WebElement IADLS=driver.findElement(By.xpath("(//div[@role='presentation'][normalize-space()='iADLS'])[1]"));
@@ -1471,6 +1192,9 @@ WebElement saveMealsDetails =driver.findElement(By.xpath("//button[@id='SaveVisi
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()",MedicationClk);
 		Thread.sleep(6000);
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("window.scrollBy(0, 50000)");
+		Thread.sleep(4000);
 		
 	}
 	public void select_the_medication_assistance_evel_as_assistance() throws InterruptedException {
@@ -1546,31 +1270,34 @@ WebElement saveMealsDetails =driver.findElement(By.xpath("//button[@id='SaveVisi
 		
 	}
 	public boolean user_click_on_the_add_to_schedule_and_finalize_visits() throws InterruptedException {
+		
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(6000);
 		
 		try{
-			WebElement AddToSchedue=driver.findElement(By.xpath("//span[normalize-space()='Add To Schedule']"));
+			
 		
-		if(AddToSchedue.isDisplayed()){
+		if(isAddToSchedueElementPresent2()){
+			WebElement AddToSchedue=driver.findElement(By.xpath("//span[normalize-space()='Add To Schedule']"));
 			JavascriptExecutor js = (JavascriptExecutor)driver;
 			js.executeScript("arguments[0].click()", AddToSchedue);
 			Thread.sleep(8000);		
 		}
 		else {
-			//WebElement FinalizeVisits=driver.findElement(By.xpath("(//span[normalize-space()='Finalize Visits'])[1]"));
-			WebElement FinalizeVisits=driver.findElement(By.id("Finalize"));
-			FinalizeVisits.click();
-			Thread.sleep(2000);
-			WebElement FinalizeVisits2nd=driver.findElement(By.className("mt-1 btn btn-danger"));
+			
+			WebElement FinalizeVisits=driver.findElement(By.cssSelector("button[id='Finalize'] span[class='e-btn-content']"));
+			JavascriptExecutor js = (JavascriptExecutor)driver;
+			js.executeScript("arguments[0].click()", FinalizeVisits);
+			Thread.sleep(6000);
+			
+			WebElement FinalizeVisits2nd=driver.findElement(By.cssSelector(".mt-1.btn.btn-danger"));
 			FinalizeVisits2nd.click();
-			Thread.sleep(1000);
-			WebElement FinalizeVisitsFinal=driver.findElement(By.className("e-control e-btn e-lib e-flat btn btn-primary e-primary"));
+			Thread.sleep(6000);
+			
+			WebElement FinalizeVisitsFinal=driver.findElement(By.xpath("(//button[normalize-space()='Yes, Finalize'])[1]"));
 			FinalizeVisitsFinal.click();
 			Thread.sleep(5000);
-
-			
 		}
 		
 		}
@@ -1580,6 +1307,17 @@ WebElement saveMealsDetails =driver.findElement(By.xpath("//button[@id='SaveVisi
 		return false;
 		
 	}
+	private boolean isAddToSchedueElementPresent2() {
+	    try {
+	    	driver.findElement(By.xpath("//span[normalize-space()='Add To Schedule']"));
+	        return true;
+	    } catch (org.openqa.selenium.NoSuchElementException e) {
+	        return false;
+	    }
+	}
+	
+	
+	//change task 
 
 	public void check_the_add_visit_configuration_button() throws InterruptedException {
 		WebElement AddVisitBtn=	driver.findElement(By.xpath("(//a[normalize-space()='Add Visit Configuration'])[1]"));
@@ -1708,7 +1446,7 @@ WebElement saveMealsDetails =driver.findElement(By.xpath("//button[@id='SaveVisi
 	}
 	
 	public void update_the_visits() throws InterruptedException {
-	WebElement UpdateVisits =	driver.findElement(By.xpath("(//button[normalize-space()='Update'])[1]"));
+	WebElement UpdateVisits =driver.findElement(By.xpath("(//button[normalize-space()='Update'])[1]"));
 	UpdateVisits.click();
 	Thread.sleep(6000);
 	JavascriptExecutor js = (JavascriptExecutor)driver;
@@ -1817,7 +1555,7 @@ WebElement saveMealsDetails =driver.findElement(By.xpath("//button[@id='SaveVisi
 	
 	
 	
-//delete for singal series
+//delete for single series
 	public void click_on_the_delete_Icon_and_Pop_is_displayed_confirm_that_you_want_to_delete_this_item() throws InterruptedException{
 		
 		WebElement DeleteIcon=driver.findElement(By.xpath("//a[@class='btn btn-danger btn-sm e-flat dripicons-trash']"));
