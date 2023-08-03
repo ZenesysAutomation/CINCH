@@ -2,6 +2,7 @@ package stepDefinition;
 
 import base.BaseClass;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import page.AddCommunityNotePage;
 
@@ -30,7 +31,7 @@ public class AddCommunityNotePageSteps extends BaseClass {
 
 
 	@Given("Select the TestCommunity")
-	public void select_the_test_community() {
+	public void select_the_test_community() throws InterruptedException {
 	   page.select_the_test_community();
 	}
 
@@ -50,28 +51,34 @@ public class AddCommunityNotePageSteps extends BaseClass {
 	}
 
 	@When("Enter the Note")
-	public void enter_the_note() {
+	public void enter_the_note() throws InterruptedException {
 	    page.enter_the_note();
 	}
 
 	@When("Select Communities")
-	public void select_communities() {
+	public void select_communities() throws InterruptedException {
 	    page.select_communities();
 	}
 
 	@When("Choose a Start Date")
-	public void choose_a_start_date() {
+	public void choose_a_start_date() throws InterruptedException {
 	  page.choose_a_start_date();
 	}
 
 	@When("Choose a End Date")
-	public void choose_a_end_date() {
+	public void choose_a_end_date() throws InterruptedException {
 	   page.choose_a_end_date();
 	}
 
 	@When("Click on the Save Button")
-	public void click_on_the_save_button() {
+	public void click_on_the_save_button() throws InterruptedException {
 	    page.click_on_the_save_button();
+	}
+	
+	@Then ("Community Note was Created Message Should be Shown")
+	public void community_note_was_created_message_should_be_shown() {
+		page.community_note_was_created_message_should_be_shown();
+		
 	}
 
 }

@@ -52,11 +52,8 @@ public class Hooks extends BaseClass {
 	     
 	            if (driver instanceof TakesScreenshot) {
 	                byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-	                s.attach(screenshot, "image/png", "Failure Screenshot");
+	                s.attach(screenshot, "image/png", "Failure Test Case Screenshot");
 	            }
-
-	            String failureMessage = "Scenario failed: " + s.getName();
-	            s.log(failureMessage);
 	        }
 	        driver.quit();	
 		

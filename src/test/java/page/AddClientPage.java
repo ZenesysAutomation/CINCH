@@ -317,7 +317,7 @@ public void save_the_new_contact_details()throws InterruptedException {
  public void client_was_created_message_should_be_shown() {
 	 	String expectedResult= "client was created";
 		String actualResult= driver.findElement(By.xpath("")).getText();
-		assertEquals("client was created",expectedResult,actualResult);
+		assertEquals("Successfully created",expectedResult,actualResult);
 		
 	}
 }

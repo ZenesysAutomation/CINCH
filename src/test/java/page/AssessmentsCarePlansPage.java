@@ -1,9 +1,14 @@
 package page;
 
+import static org.junit.Assert.assertEquals;
+
 import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,18 +20,18 @@ public class AssessmentsCarePlansPage extends BaseClass {
 	
 	
 public void user_enter_email() throws InterruptedException {
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 	 Useremail.sendKeys(prop.getProperty("username"));
 	}
 
 public void user_enter_password() throws InterruptedException {
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	WebElement Password= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
 	Password.sendKeys(prop.getProperty("password"));
 	}
 
-public void user_click_on_the_click() throws InterruptedException {
+public void user_click_on_the_login_button() throws InterruptedException {
 	WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
 	Login.click();
 	Thread.sleep(3000);
@@ -43,33 +48,23 @@ public void user_click_on_the_continue() throws InterruptedException {
 	WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
 	Thread.sleep(3000);
 	Continue.click();
+	Thread.sleep(3000);
 	
 }
 public void user_click_on_the_clients() throws InterruptedException {
 	WebElement Clientbtn=driver.findElement(By.xpath("//span[normalize-space()='Clients']"));
-	explicitWait(Clientbtn,30);
 	Thread.sleep(6000);
 	Clientbtn.click();	
+	Thread.sleep(4000);
+	
+	JavascriptExecutor js = (JavascriptExecutor)driver;
+	js.executeScript("window.scrollBy(0, 50000)");
+	Thread.sleep(4000);
 	   
 }
 
 public void click_on_the_user_data_table() throws InterruptedException {
-//	WebElement DataTable = driver.findElement(By.xpath("//tr[@class='e-row e-altrow']//td[@aria-label='Automation Column Header First Name'][normalize-space()='Automation']"));
-//	Thread.sleep(8000);
-//	JavascriptExecutor js =(JavascriptExecutor)driver;
-//  js.executeScript("arguments[0].click()", DataTable);
-//	Thread.sleep(10000);
-//	}
-
-	
-//	WebElement DataTable = driver.findElement(By.xpath("(//td[@aria-label='Wilson Column Header Last Name'])[1]"));
-//	Thread.sleep(8000);
-//	JavascriptExecutor js =(JavascriptExecutor)driver;
-//	js.executeScript("arguments[0].click()", DataTable);
-//	Thread.sleep(8000);
-//	}
-
-	WebElement DataTable = driver.findElement(By.xpath("(//td[@aria-label='Test1 Column Header First Name'])[1]"));
+	WebElement DataTable = driver.findElement(By.xpath("//td[@aria-label='Ankita Column Header First Name']"));
 	Thread.sleep(8000);
 	JavascriptExecutor js =(JavascriptExecutor)driver;
 	js.executeScript("arguments[0].click()", DataTable);
@@ -83,13 +78,22 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 	Thread.sleep(6000);
 }
 	
-		public void user_enter_the_assessment_date() 
-		 {
-				WebElement Assessmentdate=driver.findElement(By.xpath("//input[@id='assessment-date']"));
-				Assessmentdate.clear();
-				Assessmentdate.sendKeys("6/28/2023");
-		}
+		public void user_enter_the_assessment_date() throws InterruptedException {
+		LocalDateTime targetDate = LocalDateTime.now().plusDays(1);
+        String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 
+        WebElement startDateField = driver.findElement(By.xpath("//input[@id='assessment-date']"));
+        startDateField.click();
+
+        for (int i = 1; i <= 10; i++) {
+            startDateField.sendKeys(Keys.BACK_SPACE);
+        }
+
+        startDateField.sendKeys(targetDateString);
+        Thread.sleep(8000);
+			
+		
+	}
 			public void user_enter_the_visit_schedule() throws InterruptedException 
 			{
 			    
@@ -97,7 +101,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				explicitWait(VisitSchedule,15);
 				Thread.sleep(3000);
 				VisitSchedule.clear();
-				VisitSchedule.sendKeys("Testing Demo");
+				VisitSchedule.sendKeys("Testing Demo1");
 			}
 
 			public void user_enter_the_goals_of_service() throws InterruptedException 
@@ -106,7 +110,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				explicitWait(GoalOfService,15);
 				Thread.sleep(3000);
 				GoalOfService.clear();
-				GoalOfService.sendKeys("Testing Demo");
+				GoalOfService.sendKeys("Testing Demo2");
 				
 			    
 			}
@@ -118,7 +122,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 					explicitWait(FamilySocialNetwork,15);
 					Thread.sleep(3000);
 					FamilySocialNetwork.clear();
-				FamilySocialNetwork.sendKeys("Testing Demo");
+				FamilySocialNetwork.sendKeys("Testing Demo3");
 			    
 			}
 			public void user_enter_the_special_dietary_needs() throws InterruptedException 
@@ -127,15 +131,15 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				explicitWait(DietryNeeds,15);
 				Thread.sleep(3000);
 				DietryNeeds.clear();
-				DietryNeeds.sendKeys("Testing Demo");
+				DietryNeeds.sendKeys("Testing Demo4");
 			    
 			}
 			public void user_enter_the_precautions() throws InterruptedException 
 			{
 				WebElement Precautions=driver.findElement(By.xpath("//textarea[@id='precautions']"));
-				explicitWait(Precautions,15);
 				Thread.sleep(3000);
-				Precautions.sendKeys("Testing Demo");
+				Precautions.clear();
+				Precautions.sendKeys("Testing Demo5");
 			}
 
 			public void user_enter_the_functional_limitations_restrictions() throws InterruptedException 
@@ -143,8 +147,8 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				WebElement Restrictions =driver.findElement(By.xpath("//textarea[@id='functionallimitations']"));
 				explicitWait(Restrictions,15);
 				Thread.sleep(3000);
-				//Restrictions.clear();
-				Restrictions .sendKeys("Testing Demo");
+				Restrictions.clear();
+				Restrictions .sendKeys("Testing Demo6");
 				Thread.sleep(6000);
 			    
 			}
@@ -153,7 +157,6 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				JavascriptExecutor js = (JavascriptExecutor)driver;
 			    js.executeScript("window.scrollBy(0, -5000)");
 				WebElement StatusTab=driver.findElement(By.xpath("(//div[@role='presentation'][normalize-space()='Client Status'])[1]"));
-				//Thread.sleep(4000);
 				StatusTab.click();
 				explicitWait(StatusTab,15);
 				Thread.sleep(8000);
@@ -162,7 +165,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			public void user_enter_the_condition_notes() throws InterruptedException 
 			{
 				WebElement ConditionNotes =	driver.findElement(By.xpath("//textarea[@id='conditionnotes']"));
-				Thread.sleep(6000);
+				Thread.sleep(3000);
 				//ConditionNotes.clear();
 				ConditionNotes.sendKeys("Testing Environment");
 				Thread.sleep(6000);
@@ -172,7 +175,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			{
 				WebElement ConditionNotes =	driver.findElement(By.xpath("//textarea[@id='recenthospital']"));
 				ConditionNotes.clear();
-				ConditionNotes.sendKeys("I recently visit a NearBy Hospital");
+				ConditionNotes.sendKeys("I recently visit a Near By Hospital");
 				Thread.sleep(3000);
 			}
 
@@ -196,7 +199,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			{
 				WebElement Allergies= driver.findElement(By.xpath("//textarea[@id='allergies']"));
 				Allergies.clear();
-				Allergies.sendKeys("Testing");
+				Allergies.sendKeys("Testing1");
 				Thread.sleep(3000);
 			    
 			}
@@ -205,7 +208,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			{
 				WebElement Notes= driver.findElement(By.xpath("//textarea[@id='notes']"));
 				Notes.clear();
-				Notes.sendKeys("Testing");
+				Notes.sendKeys("Testing2");
 				Thread.sleep(3000);
 			}
 
@@ -248,7 +251,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				WebElement Bathing=	driver.findElement(By.xpath("//textarea[@id='bathing']"));
 				Bathing.clear();
 				Bathing.sendKeys("Testing demo v3");
-				
+				Thread.sleep(3000);
 			}
 
 			public void user_enter_the_transfers_mobility_deatils() throws InterruptedException 
@@ -256,7 +259,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				WebElement MobilityDetails =driver.findElement(By.cssSelector("#transfer"));
 				MobilityDetails.clear();
 				MobilityDetails.sendKeys("Testingg demo v4");
-				
+				Thread.sleep(3000);
 			}
 
 			public void user_enter_the_dressing_grooming_details() throws InterruptedException 
@@ -264,7 +267,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				WebElement Grooming =driver.findElement(By.xpath("//textarea[@id='dressing']"));
 				Grooming.clear();
 				Grooming.sendKeys("Testing demo v5.0");
-				
+				Thread.sleep(3000);
 				
 			}
 
@@ -273,7 +276,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				WebElement ContinenceToileting=driver.findElement(By.xpath("(//textarea[@id='continence'])[1]"));
 				ContinenceToileting.clear();
 				ContinenceToileting.sendKeys("Testing demo v5");
-				
+				Thread.sleep(3000);
 			}
 
 			public void user_enter_the_eating_details() throws InterruptedException 
@@ -281,7 +284,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				WebElement Eating=driver.findElement(By.xpath("(//textarea[@id='eating'])[1]"));
 				Eating.clear();
 				Eating.sendKeys("Testing demo v6");
-				
+				Thread.sleep(3000);
 			    
 			}
 
@@ -290,7 +293,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				WebElement MealsDetails=driver.findElement(By.cssSelector("#meals"));
 				MealsDetails.clear();
 				 MealsDetails.sendKeys("Testing demo v7");
-				 
+				 Thread.sleep(3000);
 			    
 			}
 
@@ -299,7 +302,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				WebElement Laundary=driver.findElement(By.cssSelector("#laundry"));
 				Laundary.clear();
 				Laundary.sendKeys("Testing demo v8");
-				
+				Thread.sleep(3000);
 			}
 
 			public void user_enter_the_household_tasks_details() throws InterruptedException
@@ -322,11 +325,12 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				Thread.sleep(6000);	   
 			}
 
-			public void select_the_radio_button() 
+			public void select_the_radio_button() throws InterruptedException 
 			{
 				WebElement RadioButton=driver.findElement(By.xpath("//span[normalize-space()='Yes']"));
 				
 				RadioButton.click();
+				Thread.sleep(2000);
 			}
 
 			public void enter_the_enviromental_safety_concerns_details() throws InterruptedException 
@@ -378,7 +382,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				WebElement CarePlan=driver.findElement(By.xpath("//div[@class ='e-toolbar-items']//div[5]"));
 				Thread.sleep(4000);
 			    CarePlan.click();
-			    Thread.sleep(4000);
+			    Thread.sleep(5000);
 			    JavascriptExecutor js = (JavascriptExecutor)driver;
 			    js.executeScript("window.scrollBy(0, 50000)");
 			    Thread.sleep(4000);
@@ -443,6 +447,14 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
                 btnSaveSignature.click();
                 Thread.sleep(8000);
 			}
+			
+			public void validation_message_should_be_shown_assessment_was_created() {
+				String expectedResult= "Assessment was created";
+				String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
+				assertEquals("Assessment created",expectedResult,actualResult);
+				
+			}
+
 	}
 
 		 

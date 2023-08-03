@@ -19,14 +19,13 @@ public class AssessmentsCarePlansSteps extends BaseClass  {
 		try {
 			assessment.user_enter_password();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
-	@Then("user click on the click")
-	public void user_click_on_the_click() throws InterruptedException {
-	    assessment.user_click_on_the_click();
+	@Then("user click on the Login Button")
+	public void user_click_on_the_login_button() throws InterruptedException {
+	    assessment.user_click_on_the_login_button();
 	}
 
 	@Then("user select the testCommunity")
@@ -57,7 +56,7 @@ public class AssessmentsCarePlansSteps extends BaseClass  {
 	}
 	
 	@Then("User Enter the Assessment Date")
-	public void user_enter_the_assessment_date() {
+	public void user_enter_the_assessment_date() throws InterruptedException {
 		assessment.user_enter_the_assessment_date();
 	}
 
@@ -193,7 +192,7 @@ public class AssessmentsCarePlansSteps extends BaseClass  {
 	}
 
 	@Then("select the Radio button")
-	public void select_the_radio_button() {
+	public void select_the_radio_button() throws InterruptedException {
 		assessment.select_the_radio_button();
 	}
 
@@ -211,12 +210,6 @@ public class AssessmentsCarePlansSteps extends BaseClass  {
 		assessment.enter_the_economics_status(); 
 	}
 
-	
-
-//	@Then("Save the Details")
-//	public void save_the_details() throws InterruptedException {
-//	    assessment.save_the_details();
-//	}
 
 	@Then("Complete the Details")
 	public void complete_the_details() throws InterruptedException {
@@ -249,7 +242,11 @@ public class AssessmentsCarePlansSteps extends BaseClass  {
 	   assessment.click_on_the_save_signature_button();
 	}
 
-
+	@Then ("Validation message should be shown Assessment was created")
+	public void validation_message_should_be_shown_assessment_was_created() {
+		assessment.validation_message_should_be_shown_assessment_was_created(); 
+		
+	}
 
 
 }

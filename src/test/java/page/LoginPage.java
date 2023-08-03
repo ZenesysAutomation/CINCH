@@ -12,19 +12,12 @@ import static org.junit.Assert.assertEquals;
 public class LoginPage extends BaseClass {
 		
 	public void Verify_that_user_enter_the_Email_and_Password(String email, String pass){
-		/*WebElement Username=driver.findElement(By.xpath("//input[@id='email']"));
 		
-		explicitWait(Username,20);
-		Username.sendKeys(email);*/
 		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 		Useremail.sendKeys(email);
 	
-	   
-	/*WebElement Password=driver.findElement(By.xpath("//input[@id='password']"));
-		explicitWait(Password,20);
-		Password.sendKeys(pass);*/
 		
 		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement Password= wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));

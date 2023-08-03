@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber-JVM Reports  - Feature: Edit Client</title>
+<title>Cucumber-JVM Reports  - Feature: Add Community Note</title>
 
 </head>
 <body>
@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>COM.CINCHCCM</td>
                           <td>1</td>
-                        <td>02 Aug 2023, 09:24</td>
+                        <td>03 Aug 2023, 06:03</td>
           </tr>
         </tbody>
       </table>
@@ -122,18 +122,18 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">Edit Client</td>
-                    <td >0</td>
-          <td  class="failed"    >1</td>
+          <td class="tagname">Add Community Note</td>
+                    <td  class="passed"    >1</td>
+          <td >0</td>
           <td class="total">1</td>
-          <td >0</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >10</td>
+          <td      class="passed"    >13</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">11</td>
-          <td class="duration" data-value="20034727600">20s 034ms</td>
-          <td class="failed">Failed</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">13</td>
+          <td class="duration" data-value="50480045600">50s 480ms</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -153,9 +153,9 @@ $(document).ready(function() {
   </div>
 
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
-  <span class="name">Edit Client</span>
+  <span class="name">Add Community Note</span>
   
 
   </div>
@@ -172,11 +172,11 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify the Edit Client Functionality</span>
+  <span class="name">Verify the Add Community Note Functionality</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -185,7 +185,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -206,7 +206,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">base.Hooks.mysetup()</span>
                         
-  <span class="lead-duration duration">13s 310ms</span>
+  <span class="lead-duration duration">5s 828ms</span>
 
           </div>
 
@@ -222,9 +222,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -234,57 +234,18 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">Check the User Email</span>
+  <span class="name">User enters Email</span>
   
-  <span class="lead-duration duration">20s 033ms</span>
+  <span class="lead-duration duration">12s 849ms</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Error message</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='email']"}
-  (Session info: chrome=115.0.5790.110)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [26fa98afbc755ec0520aff3887952004, findElement {using=xpath, value=//input[@id='email']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ANOOPK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59067}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59067/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 26fa98afbc755ec0520aff3887952004
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at page.EditClientPage.check_the_user_email(EditClientPage.java:12)
-	at stepDefinition.EditClientSteps.check_the_user_email(EditClientSteps.java:14)
-	at ✽.Check the User Email(file:///C:/Users/AnoopKumar/eclipse-workspace/COM.CINCHCCM/src/test/java/features/3_EditClient.feature:6)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -297,11 +258,116 @@ Session ID: 26fa98afbc755ec0520aff3887952004
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User enters Password</span>
+  
+  <span class="lead-duration duration">110ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on the login</span>
+  
+  <span class="lead-duration duration">3s 229ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Select the TestCommunity</span>
+  
+  <span class="lead-duration duration">3s 135ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on the Continue</span>
+  
+  <span class="lead-duration duration">3s 121ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on the Manage</span>
+  
+  <span class="lead-duration duration">4s 747ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Check the User Password</span>
+  <span class="name">Click on the Add New Community Note</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">5s 263ms</span>
 
   </div>
 
@@ -318,11 +384,11 @@ Session ID: 26fa98afbc755ec0520aff3887952004
       </div>
           <div class="step">
         
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">Check the Login Button</span>
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Enter the Note</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">3s 276ms</span>
 
   </div>
 
@@ -339,11 +405,11 @@ Session ID: 26fa98afbc755ec0520aff3887952004
       </div>
           <div class="step">
         
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">Check the Test Community Dropdown</span>
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Select Communities</span>
   
-  <span class="lead-duration duration">001ms</span>
+  <span class="lead-duration duration">180ms</span>
 
   </div>
 
@@ -360,11 +426,11 @@ Session ID: 26fa98afbc755ec0520aff3887952004
       </div>
           <div class="step">
         
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">Click on the Continue Button</span>
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Choose a Start Date</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">3s 109ms</span>
 
   </div>
 
@@ -381,11 +447,11 @@ Session ID: 26fa98afbc755ec0520aff3887952004
       </div>
           <div class="step">
         
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">Click on the Clients</span>
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Choose a End Date</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">6s 319ms</span>
 
   </div>
 
@@ -402,11 +468,11 @@ Session ID: 26fa98afbc755ec0520aff3887952004
       </div>
           <div class="step">
         
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">click on the User Table</span>
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Click on the Save Button</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">5s 104ms</span>
 
   </div>
 
@@ -423,74 +489,11 @@ Session ID: 26fa98afbc755ec0520aff3887952004
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Click on the Edit Button</span>
+  <span class="name">Community Note was Created Message Should be Shown</span>
   
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">Change the Status from Active to Discharged</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">Enter the Discharge Reason</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">save the Data</span>
-  
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">031ms</span>
 
   </div>
 
@@ -511,7 +514,7 @@ Session ID: 26fa98afbc755ec0520aff3887952004
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -523,13 +526,13 @@ Session ID: 26fa98afbc755ec0520aff3887952004
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">base.Hooks.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">280ms</span>
+  <span class="lead-duration duration">189ms</span>
 
           </div>
 
@@ -537,17 +540,6 @@ Session ID: 26fa98afbc755ec0520aff3887952004
 
           
           
-  <div class="embeddings inner-level">
-                <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding_embedding_-640488444" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-640488444.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
-    </div>
-    <div id="embedding_embedding_-640488444" class="collapse collapsable-detail">
-      <span class="embedding-content"><img src="embeddings/embedding_-640488444.png"></span>
-    </div>
-  </div>
-        </div>
 
         </div>
           </div>

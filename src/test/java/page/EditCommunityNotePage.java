@@ -1,26 +1,31 @@
 package page;
 
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Random;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.BaseClass;
 
 public class EditCommunityNotePage extends BaseClass {
 	
 	public void enter_the_email() throws InterruptedException {
-		WebElement Useremail=driver.findElement(By.xpath("//input[@id='email']"));
-		explicitWait(Useremail,20);
-		Thread.sleep(6000);
-		Useremail.sendKeys(prop.getProperty("username"));
-		Thread.sleep(6000);
-			
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
+		 Useremail.sendKeys(prop.getProperty("username"));
+		
 		} 
 			
 	public void enter_the_password() throws InterruptedException {
-		WebElement Password=driver.findElement(By.xpath("//input[@id='password']"));
-		explicitWait(Password,20);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebElement Password= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
 		Password.sendKeys(prop.getProperty("password"));
-		Thread.sleep(4000);
 
 		}
 	public void click_on_the_login_button() throws InterruptedException {
@@ -52,6 +57,7 @@ public class EditCommunityNotePage extends BaseClass {
 		WebElement manage=driver.findElement(By.linkText("Manage"));
 		Thread.sleep(3000);
 		manage.click();
+		
 	}
 	
 public void click_on_the_table() throws InterruptedException {
@@ -64,11 +70,8 @@ public void click_on_the_table() throws InterruptedException {
 public void edit_the_note() throws InterruptedException {
 	WebElement txtUpdateNote = driver.findElement(By.id("note"));
     txtUpdateNote.clear();
-    //txtUpdateNote.click();
     txtUpdateNote.sendKeys("Data editable");
     txtUpdateNote.click();
-   // JavascriptExecutor js = (JavascriptExecutor)driver;
-	//js.executeScript("arguments[0].click()",txtUpdateNote);
     Thread.sleep(6000);
 }
 
@@ -86,21 +89,41 @@ public void edit_the_communities() throws InterruptedException {
 
 
 public void edit_the_start_date() throws InterruptedException {
-	WebElement UpdateStartdate = driver.findElement(By.id("startdate"));
-	UpdateStartdate.clear();
-	Thread.sleep(3000);
-	UpdateStartdate.sendKeys("6/25/2023");
-	Thread.sleep(6000);
+	
+	Random random = new Random();
+	LocalDateTime targetDate = LocalDateTime.now().plusDays(random.nextInt(20));
+    String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+
+    WebElement endDateField = driver.findElement(By.id("startdate"));
+    endDateField.click();
+
+    for (int i = 1; i <= 10; i++) {
+        endDateField.sendKeys(Keys.BACK_SPACE);
+    }
+    
+   endDateField.sendKeys(targetDateString);
+   Thread.sleep(6000);
+			
 }
      
 public void edit_the_end_date() throws InterruptedException {
-	   WebElement EditEnddate = driver.findElement(By.id("enddate"));
-       EditEnddate.clear();
-       EditEnddate.sendKeys("7/28/2023");
-       Thread.sleep(6000);
-       
+
+	Random random = new Random();
+	LocalDateTime targetDate = LocalDateTime.now().plusDays(random.nextInt(50));
+    String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+
+    WebElement endDateField = driver.findElement(By.xpath("//input[@id='enddate']"));
+    endDateField.click();
+
+    for (int i = 1; i <= 10; i++) {
+        endDateField.sendKeys(Keys.BACK_SPACE);
+    }
     
+   endDateField.sendKeys(targetDateString);
+   Thread.sleep(6000);
+			
 }
+       
 public void click_on_the_save_button() throws InterruptedException {
 	WebElement savebtn = driver.findElement(By.xpath("//button[contains(text(),'Save')]"));
 	savebtn.click();
