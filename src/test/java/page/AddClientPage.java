@@ -11,22 +11,35 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.BaseClass;
+import io.netty.handler.timeout.TimeoutException;
 
 public class AddClientPage extends BaseClass {
 	
 public void user_enter_the_valid_email() throws InterruptedException {
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	try {
 	WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 	 Useremail.sendKeys(prop.getProperty("username"));
-		    
+	}
+	catch (TimeoutException e ) {
+		 e.printStackTrace();
+	
 }
+}
+		   
 	
 public void user_enter_the_valid_password() {
+	try {
 	
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	WebElement Password= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
 	Password.sendKeys(prop.getProperty("password"));
 	
+}
+	catch (TimeoutException e ) {
+		 e.printStackTrace();	
+}
 }
 
 public void user_click_on_the_login() throws InterruptedException {

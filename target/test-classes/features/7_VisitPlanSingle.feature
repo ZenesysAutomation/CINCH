@@ -22,6 +22,7 @@ Then Select a Duration
 Then Select the Start Date 
 Then click on the Save Button
 Then Save the all Single Visit Details
+Then Validation Message Should be Shown Visit Plan was saved
 
 
 Scenario: Verify The ADLs and IADLS Functionalities
@@ -93,6 +94,7 @@ And click on the single Visit table
 And Change the visit duration as 45 Minute Visit
 Then click on the update button
 And Click on the Save button
+Then Validation Message should be Shown Visit Plan was saved
 
 
 
@@ -142,6 +144,7 @@ Then user Click on the Use Custom End Date toggle
 And User enter the End Date
 Then Save the visits details
 Then Save the all Visits Plan Details
+Then Message should be Shown Visit Plan was saved
 
 
 
@@ -150,12 +153,15 @@ Then Click on the Everyday Table
 And Change The End Date 
 And Update the Visits
 And Save The Visits
- 
+Then Message should be Shown Visit Plan was saved
+
+
 
 Scenario: Delete a Single visit Series 
 And Click on the delete Icon and Pop is Displayed Confirm that you want to delete this item
 Then Click on the Delete Button
 And Save the Single delete Visit Series
+Then Message should be Shown Visit Plan was saved
 
 
 

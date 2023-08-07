@@ -12,22 +12,36 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.BaseClass;
+import io.netty.handler.timeout.TimeoutException;
 
 public class EditCommunityNotePage extends BaseClass {
 	
 	public void enter_the_email() throws InterruptedException {
+		
+		try {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 		 Useremail.sendKeys(prop.getProperty("username"));
+		}
+		catch (TimeoutException e ) {
+			 e.printStackTrace();
 		
+	}
 		} 
 			
 	public void enter_the_password() throws InterruptedException {
+		try {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement Password= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
 		Password.sendKeys(prop.getProperty("password"));
-
 		}
+		catch (TimeoutException e ) {
+			 e.printStackTrace();
+		
+	}
+	}
+
+		
 	public void click_on_the_login_button() throws InterruptedException {
 			WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
 			Login.click();

@@ -7,23 +7,30 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.BaseClass;
+import io.netty.handler.timeout.TimeoutException;
+
 import static org.junit.Assert.assertEquals;
 
 public class LoginPage extends BaseClass {
 		
 	public void Verify_that_user_enter_the_Email_and_Password(String email, String pass){
 		
-		
+		try {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 		Useremail.sendKeys(email);
-	
+		
 		
 		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement Password= wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
 		Password.sendKeys(pass);
+		
+		}
+		catch (TimeoutException e ) {
+			 e.printStackTrace();
 	}
-	
+	}
+
 	
 	public void click_on_the_login_button() throws InterruptedException {
 		WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));

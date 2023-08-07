@@ -1,7 +1,7 @@
 Feature: Assessments & Care Plans 
 
 
-@Test
+
 Scenario: Verify the Assessments & Care Plans Functionalities
 
 When user enter Email

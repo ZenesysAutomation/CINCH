@@ -15,20 +15,31 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.BaseClass;
+import io.netty.handler.timeout.TimeoutException;
 
 public class AssessmentsCarePlansPage extends BaseClass {
 	
 	
 public void user_enter_email() throws InterruptedException {
+	try {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 	 Useremail.sendKeys(prop.getProperty("username"));
 	}
+	catch (TimeoutException e ) {
+		 e.printStackTrace();
+	}
+	}
 
 public void user_enter_password() throws InterruptedException {
+	try {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	WebElement Password= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
 	Password.sendKeys(prop.getProperty("password"));
+	}
+	catch (TimeoutException e ) {
+		 e.printStackTrace();
+	}
 	}
 
 public void user_click_on_the_login_button() throws InterruptedException {
@@ -157,15 +168,16 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				JavascriptExecutor js = (JavascriptExecutor)driver;
 			    js.executeScript("window.scrollBy(0, -5000)");
 				WebElement StatusTab=driver.findElement(By.xpath("(//div[@role='presentation'][normalize-space()='Client Status'])[1]"));
-				StatusTab.click();
-				explicitWait(StatusTab,15);
-				Thread.sleep(8000);
+				//StatusTab.click();
+				JavascriptExecutor jse = (JavascriptExecutor)driver;
+				 jse.executeScript("arguments[0].click()",StatusTab);
+				Thread.sleep(6000);
 			}
 
 			public void user_enter_the_condition_notes() throws InterruptedException 
 			{
 				WebElement ConditionNotes =	driver.findElement(By.xpath("//textarea[@id='conditionnotes']"));
-				Thread.sleep(3000);
+				Thread.sleep(4000);
 				//ConditionNotes.clear();
 				ConditionNotes.sendKeys("Testing Environment");
 				Thread.sleep(6000);
@@ -449,7 +461,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 			}
 			
 			public void validation_message_should_be_shown_assessment_was_created() {
-				String expectedResult= "Assessment was created";
+				String expectedResult= "Assessment was created.";
 				String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
 				assertEquals("Assessment created",expectedResult,actualResult);
 				

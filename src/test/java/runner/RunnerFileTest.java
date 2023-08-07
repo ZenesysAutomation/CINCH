@@ -10,6 +10,11 @@ import io.cucumber.junit.CucumberOptions;
 plugin= {"pretty","html:target/TestReport/test.html","json:target/cucumber-report/cucumber.json"},glue= {"stepDefinition","base"})
 
 public class RunnerFileTest {
+	
+	
+	
+	
+	
 
 }
 

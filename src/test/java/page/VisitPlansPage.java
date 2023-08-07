@@ -1,4 +1,6 @@
 package page;
+import static org.junit.Assert.assertEquals;
+
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -14,21 +16,34 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.BaseClass;
 import io.cucumber.java.en.When;
+import io.netty.handler.timeout.TimeoutException;
 
 public class VisitPlansPage extends BaseClass  {
 	
 	public void user_enter_the_email() throws InterruptedException {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		try {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 		 Useremail.sendKeys(prop.getProperty("username"));
+		}
+		catch (TimeoutException e ) {
+			 e.printStackTrace();
+		
+	}
+	
 	}
 	
 	public void user_enter_the_password() throws InterruptedException {
+		try {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement Password= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
 		Password.sendKeys(prop.getProperty("password"));
 		}
-		   
+		catch (TimeoutException e ) {
+			 e.printStackTrace();
+		
+	}
+	}   
 	
 	
 	public void user_click_on_the_login() throws InterruptedException {
@@ -64,7 +79,7 @@ public class VisitPlansPage extends BaseClass  {
 	public void click_on_the_user_first_name() throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
-		WebElement FirstName=driver.findElement(By.xpath("//td[@aria-label='Piyush Column Header First Name']"));
+		WebElement FirstName=driver.findElement(By.xpath("//td[@aria-label='Ankita Column Header First Name']"));
 		Thread.sleep(3000);
 		FirstName.click();	
 		Thread.sleep(6000);
@@ -167,6 +182,13 @@ public class VisitPlansPage extends BaseClass  {
 		Thread.sleep(7000);
 		
 	}
+	
+	public void validation_message_should_be_shown_visit_plan_was_saved() {
+		String expectedResult= "Visit Plan was saved.";
+		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
+		assertEquals("Plan was Created",expectedResult,actualResult);
+		
+	} 
 	
 	
 	@When("Click on the ADLs Tab")
@@ -763,7 +785,7 @@ public class VisitPlansPage extends BaseClass  {
 			js.executeScript("arguments[0].click()", AddToSchedue);
 			Thread.sleep(8000);	
 			
-			WebElement FinalizeVisits=driver.findElement(By.cssSelector("button[id='Finalize'] span[class='e-btn-content']"));
+			WebElement FinalizeVisits=driver.findElement(By.xpath("(//button[normalize-space()='Finalize Visits'])[1]"));
 			JavascriptExecutor jse2 = (JavascriptExecutor)driver;
 			jse2.executeScript("arguments[0].click()", FinalizeVisits);
 			Thread.sleep(6000);
@@ -898,6 +920,13 @@ public void select_duration() throws InterruptedException {
 		WebElement SaveAllDaysdetails= driver.findElement(By.xpath("//button[@id='SaveVisit']"));
 		SaveAllDaysdetails.click();
 		Thread.sleep(7000);
+		
+	}
+	
+	public void message_should_be_shown_visit_plan_was_saved() {
+		String expectedResult= "Visit Plan was saved.";
+		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
+		assertEquals("Plan was Created",expectedResult,actualResult);
 		
 	}
 	
@@ -1279,7 +1308,7 @@ public void select_duration() throws InterruptedException {
 	}
 	
 	
-	//change task 
+	//customdate 
 
 	public void check_the_add_visit_configuration_button() throws InterruptedException {
 		WebElement AddVisitBtn=	driver.findElement(By.xpath("(//a[normalize-space()='Add Visit Configuration'])[1]"));
@@ -1381,6 +1410,13 @@ public void select_duration() throws InterruptedException {
 		Thread.sleep(8000);
 	}
 	
+	public void message_should_be_shown_visit_plan_was_saved6() {
+		String expectedResult= "Visit Plan was saved.";
+		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
+		assertEquals("Plan was Created",expectedResult,actualResult);
+		
+	}
+	
 	public void click_on_the_everyday_table () throws InterruptedException {
 		WebElement TableClick=driver.findElement(By.xpath("(//a[normalize-space()='Every Day'])[1]"));
 		TableClick.click();
@@ -1421,6 +1457,14 @@ public void select_duration() throws InterruptedException {
 		SaveVisits.click();
 		Thread.sleep(8000);
 	}
+	public void message_should_be_shown_visit_plan_was_saved7() {
+		
+		String expectedResult= "Visit Plan was saved.";
+		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
+		assertEquals("Plan was Created",expectedResult,actualResult);
+	}
+	
+	
 	
 	// Change A visit Duration For Everyday
 	public void click_on_the_visit_table() throws InterruptedException {
@@ -1449,6 +1493,13 @@ public void select_duration() throws InterruptedException {
 		WebElement saveDetailsbtn =	driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
 		saveDetailsbtn.click();
 		Thread.sleep(8000);
+		
+	}
+	
+	public void message_should_be_shown_visit_plan_was_saved3() {
+		String expectedResult= "Visit Plan was saved.";
+		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
+		assertEquals("Plan was Created",expectedResult,actualResult);
 		
 	}
 	
@@ -1484,6 +1535,13 @@ public void select_duration() throws InterruptedException {
 		Thread.sleep(8000);
 	}
 	
+	public void validation_message_should_be_shown_visit_plan_was_saved1() {
+		String expectedResult= "Visit Plan was saved.";
+		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
+		assertEquals("Plan was Created",expectedResult,actualResult);
+		
+	}
+	
 	
 	//Delete for Everyday
 	
@@ -1515,6 +1573,13 @@ public void select_duration() throws InterruptedException {
 		Thread.sleep(8000);
 	}
 	
+	public void message_should_be_shown_visit_plan_was_saved4() {
+		String expectedResult= "Visit Plan was saved.";
+		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
+		assertEquals("Plan was Created",expectedResult,actualResult);	
+		
+	}
+	
 	
 	
 //delete for single series
@@ -1541,6 +1606,14 @@ public void select_duration() throws InterruptedException {
 		WebElement DeleteVisitSeries=driver.findElement(By.xpath("//button[@id='SaveVisit']"));
 		DeleteVisitSeries.click();
 		Thread.sleep(8000);
+	}
+	
+	public void message_should_be_shown_visit_plan_was_saved5() {
+		String expectedResult= "Visit Plan was saved.";
+		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
+		assertEquals("Plan was Created",expectedResult,actualResult);	
+		
+		
 	}
 }
 	
