@@ -123,7 +123,7 @@ public class AddClientSteps extends BaseClass{
 	}
 
 	@Then("User Enter the Referral Source")
-	public void user_enter_the_referral_source() {
+	public void user_enter_the_referral_source() throws InterruptedException {
 	    steps.user_enter_the_referral_source();
 	}
 
@@ -173,12 +173,12 @@ public class AddClientSteps extends BaseClass{
 	}
 
 	@Then("Verify the Address line1")
-	public void verify_the_address_line1() {
+	public void verify_the_address_line1() throws InterruptedException {
 	   steps.verify_the_address_line1();
 	}
 
 	@Then("Verify the Address line2")
-	public void verify_the_address_line2() {
+	public void verify_the_address_line2() throws InterruptedException {
 	    steps.verify_the_address_line2();
 	}
 
@@ -224,9 +224,9 @@ public class AddClientSteps extends BaseClass{
 	public void save_the_new_client_details() throws InterruptedException {
 	    steps.save_the_new_client_details();
 	}
-	@Then ("Client was Created Message Should be Shown")
-	public void client_was_created_message_should_be_shown() {
-		
+	@Then ("Validation Message Should be Shown Client was Created")
+	public void validation_Message_should_be_shown_client_was_created() {
+		steps.validation_Message_should_be_shown_client_was_created();
 		
 	}
 

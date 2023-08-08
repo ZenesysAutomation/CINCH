@@ -10,7 +10,7 @@ Then User click on the Continue Button
 Then User click on the Visit Plans
 Then Click on the User first Name
 
-@Test
+
 Scenario: Verify the Visit Plans Functionality For All days
 
 Then User Go to the Add Visit Configuration
@@ -21,9 +21,9 @@ Then select Weekly recurrence
 Then select start Date
 Then User Click on the save Button
 And Save the For All Days Visit Details
-Then  Message Should be Shown Visit Plan was saved
+Then  Message Should be Shown Visit Plan was saved6
 
-@Test
+
 Scenario: Verify The ADLs and IADLS Functionalities
 
 When Click on the ADLs Tab
@@ -95,7 +95,7 @@ Then Click on the Visit Table
 And Change The Visit Duration as 30 Minute Visit 
 And Update the Visit Duration
 And Save the Details
-Then Message should be Shown Visit Plan was saved
+Then Message should be Shown Visit Plan was saved7
 
 
 
@@ -103,5 +103,5 @@ Scenario: Delete the Everyday Series
 Given User click on the Delete Icon 
 Then Delete visit Configurations Pop Up is opened  and click on the Delete button
 And Save the delete Visit Series
-Then Message should be Shown Visit Plan was saved
+Then Message should be Shown Visit Plan was saved8
 

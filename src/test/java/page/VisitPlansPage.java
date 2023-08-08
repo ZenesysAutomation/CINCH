@@ -183,7 +183,7 @@ public class VisitPlansPage extends BaseClass  {
 		
 	}
 	
-	public void validation_message_should_be_shown_visit_plan_was_saved() {
+	public void validation_message_should_be_shown_visit_plan_was_saved1() {
 		String expectedResult= "Visit Plan was saved.";
 		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
 		assertEquals("Plan was Created",expectedResult,actualResult);
@@ -923,7 +923,7 @@ public void select_duration() throws InterruptedException {
 		
 	}
 	
-	public void message_should_be_shown_visit_plan_was_saved() {
+	public void message_should_be_shown_visit_plan_was_saved6() {
 		String expectedResult= "Visit Plan was saved.";
 		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
 		assertEquals("Plan was Created",expectedResult,actualResult);
@@ -1410,7 +1410,7 @@ public void select_duration() throws InterruptedException {
 		Thread.sleep(8000);
 	}
 	
-	public void message_should_be_shown_visit_plan_was_saved6() {
+	public void message_should_be_shown_visit_plan_was_saved3() {
 		String expectedResult= "Visit Plan was saved.";
 		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
 		assertEquals("Plan was Created",expectedResult,actualResult);
@@ -1457,7 +1457,7 @@ public void select_duration() throws InterruptedException {
 		SaveVisits.click();
 		Thread.sleep(8000);
 	}
-	public void message_should_be_shown_visit_plan_was_saved7() {
+	public void message_should_be_shown_visit_plan_was_saved4() {
 		
 		String expectedResult= "Visit Plan was saved.";
 		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
@@ -1496,7 +1496,7 @@ public void select_duration() throws InterruptedException {
 		
 	}
 	
-	public void message_should_be_shown_visit_plan_was_saved3() {
+	public void message_should_be_shown_visit_plan_was_saved7() {
 		String expectedResult= "Visit Plan was saved.";
 		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
 		assertEquals("Plan was Created",expectedResult,actualResult);
@@ -1535,7 +1535,7 @@ public void select_duration() throws InterruptedException {
 		Thread.sleep(8000);
 	}
 	
-	public void validation_message_should_be_shown_visit_plan_was_saved1() {
+	public void validation_message_should_be_shown_visit_plan_was_saved2() {
 		String expectedResult= "Visit Plan was saved.";
 		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
 		assertEquals("Plan was Created",expectedResult,actualResult);
@@ -1573,7 +1573,7 @@ public void select_duration() throws InterruptedException {
 		Thread.sleep(8000);
 	}
 	
-	public void message_should_be_shown_visit_plan_was_saved4() {
+	public void message_should_be_shown_visit_plan_was_saved8() {
 		String expectedResult= "Visit Plan was saved.";
 		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
 		assertEquals("Plan was Created",expectedResult,actualResult);	

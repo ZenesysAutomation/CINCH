@@ -97,9 +97,9 @@ public void save_the_all_single_visit_details() throws InterruptedException {
 	
 }
 
-@Then("Validation Message Should be Shown Visit Plan was saved")
-public void validation_message_should_be_shown_visit_plan_was_saved() {
-	visitplan.validation_message_should_be_shown_visit_plan_was_saved();
+@Then("Validation Message Should be Shown Visit Plan was saved1")
+public void validation_message_should_be_shown_visit_plan_was_saved1() {
+	visitplan.validation_message_should_be_shown_visit_plan_was_saved1();
 }
 
 @When("Click on the ADLs Tab")
@@ -472,9 +472,9 @@ public void save_the_for_all_days_visit_details() throws InterruptedException {
 	
 }
 
-@Then ("Message Should be Shown Visit Plan was saved")
-public void message_should_be_shown_visit_plan_was_saved() {
-	visitplan.message_should_be_shown_visit_plan_was_saved();
+@Then ("Message Should be Shown Visit Plan was saved6")
+public void message_should_be_shown_visit_plan_was_saved6() {
+	visitplan.message_should_be_shown_visit_plan_was_saved6();
 	
 }
 
@@ -704,9 +704,9 @@ public void save_the_all_visits_plan_details() throws InterruptedException {
 	visitplan.save_the_all_visits_plan_details();
 }
 
-@Then ("Message should be Shown Visit Plan was saved")
-public void message_should_be_shown_visit_plan_was_saved6() {
-	visitplan.message_should_be_shown_visit_plan_was_saved();
+@Then ("Message should be Shown Visit Plan was saved3")
+public void message_should_be_shown_visit_plan_was_saved3() {
+	visitplan.message_should_be_shown_visit_plan_was_saved3();
 }
 
 @Then ("Click on the Everyday Table")
@@ -729,13 +729,11 @@ public void save_the_visits() throws InterruptedException {
 	
 }
 
-@Then ("Message should be Shown Visit Plan was saved")
-public void message_should_be_shown_visit_plan_was_saved7() {
-	visitplan.message_should_be_shown_visit_plan_was_saved();
+@Then ("Message should be Shown Visit Plan was saved4")
+public void message_should_be_shown_visit_plan_was_saved4() {
+	visitplan.message_should_be_shown_visit_plan_was_saved4();
 	
 }
-
-
 
 
 //Change A visit Duration For Everyday
@@ -757,9 +755,9 @@ public void save_the_details() throws InterruptedException {
 	visitplan.save_the_details();
 	
 }
-@Then("Message should be Shown Visit Plan was saved")
-public void message_should_be_shown_visit_plan_was_saved3() {
-	visitplan.message_should_be_shown_visit_plan_was_saved3(); 
+@Then("Message should be Shown Visit Plan was saved7")
+public void message_should_be_shown_visit_plan_was_saved7() {
+	visitplan.message_should_be_shown_visit_plan_was_saved7(); 
 }
 
 //Single Change Duration
@@ -785,9 +783,9 @@ public void click_on_the_save_button1() throws InterruptedException {
 	visitplan.click_on_the_save_button1();
 }
 
-@Then ("Validation Message should be Shown Visit Plan was saved")
-public void validation_message_should_be_shown_visit_plan_was_saved1() {
-	visitplan.validation_message_should_be_shown_visit_plan_was_saved1();
+@Then ("Validation Message should be Shown Visit Plan was saved2")
+public void validation_message_should_be_shown_visit_plan_was_saved2() {
+	visitplan.validation_message_should_be_shown_visit_plan_was_saved2();
 }
 
 //Delete for everyday
@@ -812,9 +810,9 @@ public void save_the_delete_visit_series() {
 	
 }
 
-@Then ("Message should be Shown Visit Plan was saved")
-public void message_should_be_shown_visit_plan_was_saved4() {
-	visitplan.message_should_be_shown_visit_plan_was_saved();
+@Then ("Message should be Shown Visit Plan was saved8")
+public void message_should_be_shown_visit_plan_was_saved8() {
+	visitplan.message_should_be_shown_visit_plan_was_saved8();
 	
 }
 
@@ -834,9 +832,9 @@ public void save_the_single_delete_visit_series() throws InterruptedException {
 	visitplan.save_the_single_delete_visit_series();
 }
 
-@Then ("Message should be Shown Visit Plan was saved")
+@Then ("Message should be Shown Visit Plan was saved5")
 public void message_should_be_shown_visit_plan_was_saved5() {
-	visitplan.message_should_be_shown_visit_plan_was_saved();
+	visitplan.message_should_be_shown_visit_plan_was_saved5();
 	
 }
 

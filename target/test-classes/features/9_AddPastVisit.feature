@@ -11,17 +11,17 @@ Then User click on the Visit Plans
 Then Click on the User first Name
 
 
-Scenario: Verify the Visit Plans Functionality For All days
+Scenario: Verify Add a visit to the Past
 
 Then User Go to the Add Visit Configuration
 Given user select all Days
 Then select start time
 Then select Duration
 Then select Weekly recurrence
-Then select start Date
+Then select past Date
 Then User Click on the save Button
 And Save the For All Days Visit Details
-Then  Message Should be Shown Visit Plan was saved6
+
 
 
 Scenario: Verify The ADLs and IADLS Functionalities
@@ -87,21 +87,3 @@ And Enter the CareGiver Instructions
 And Update the Medication Details
 And Save the Medication Details 
 Then Click on the Add To schedule Button and Finalize Visits
-
-
-
-Scenario: Change A visit Duration For Everyday
-Then Click on the Visit Table
-And Change The Visit Duration as 30 Minute Visit 
-And Update the Visit Duration
-And Save the Details
-Then Message should be Shown Visit Plan was saved7
-
-
-
-Scenario: Delete the Everyday Series
-Given User click on the Delete Icon 
-Then Delete visit Configurations Pop Up is opened  and click on the Delete button
-And Save the delete Visit Series
-Then Message should be Shown Visit Plan was saved8
-

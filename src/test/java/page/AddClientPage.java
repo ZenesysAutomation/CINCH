@@ -125,8 +125,6 @@ public void user_enter_the_primary_phone() throws InterruptedException {
 	  WebElement PrimaryPh= driver.findElement(By.xpath("//input[@id='client-primary-phone']"));
 	  Thread.sleep(3000);
 	  PrimaryPh.click();
-//	  JavascriptExecutor jse = (JavascriptExecutor)driver;
-//	   jse.executeScript("arguments[0].value='(222)222-2222';",PrimaryPh);
 	  PrimaryPh.sendKeys("9805465639");
 	}
 
@@ -169,11 +167,13 @@ public void user_enter_the_marital_status() {
 public void then_user_enter_the_spouse_name() {
 	WebElement SpouseName=driver.findElement(By.xpath("//input[@id='spouse']"));
 	SpouseName.sendKeys("xyz");
+	
 }
 
-public void user_enter_the_referral_source() {
+public void user_enter_the_referral_source() throws InterruptedException {
 	WebElement RefSource=driver.findElement(By.xpath("//input[@id='referral']"));
 	RefSource.sendKeys("None");
+	Thread.sleep(2000);
 }
 
 public void user_enter_the_essential_information() {
@@ -259,15 +259,18 @@ public void verify_the_last_name() {
 	   
 }
 
-public void verify_the_address_line1() {
+public void verify_the_address_line1() throws InterruptedException {
 	WebElement Addressline1=driver.findElement(By.cssSelector("#address1-contact"));
 	Addressline1.sendKeys("California");
+	Thread.sleep(2000);
 	   
 }
 
-public void verify_the_address_line2() {
+public void verify_the_address_line2() throws InterruptedException {
    WebElement Addressline2= driver.findElement(By.xpath("//input[@id='address2-contact']"));
    Addressline2.sendKeys("USA");
+   Thread.sleep(2000);
+   
 }
 
 public void verify_the_city() throws InterruptedException {
@@ -310,8 +313,6 @@ public void select_the_relationship() throws InterruptedException {
 public void save_the_new_contact_details()throws InterruptedException {
 	WebElement Savebtn1=driver.findElement(By.xpath("//button[@id='ClientContactSave']"));
 	Thread.sleep(6000);
-	/*JavascriptExecutor js = (JavascriptExecutor)driver;
-    js.executeScript("arguments[0].click()", Savebtn1);*/
 	Savebtn1.click();
 	Thread.sleep(4000);
 	
@@ -321,15 +322,13 @@ public void save_the_new_contact_details()throws InterruptedException {
 	
     WebElement Savebtn=driver.findElement(By.xpath("//button[@id='ClientSave']"));
    Thread.sleep(10000);
-    /*JavascriptExecutor js = (JavascriptExecutor)driver;
-    js.executeScript("arguments[0].click()", Savebtn);*/
    	Savebtn.click();
     Thread.sleep(10000);    
 }
  
- public void client_was_created_message_should_be_shown() {
-	 	String expectedResult= "client was created";
-		String actualResult= driver.findElement(By.xpath("")).getText();
+ public void validation_Message_should_be_shown_client_was_created() {
+	 	String expectedResult= "Client was created.";
+		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
 		assertEquals("Successfully created",expectedResult,actualResult);
 		
 	}
