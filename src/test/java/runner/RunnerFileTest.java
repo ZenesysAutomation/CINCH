@@ -11,10 +11,6 @@ plugin= {"pretty","html:target/TestReport/test.html","json:target/cucumber-repor
 
 public class RunnerFileTest {
 	
-	
-	
-	
-	
 
 }
 

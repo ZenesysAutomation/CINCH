@@ -1,6 +1,6 @@
 package base;
 import java.time.Duration;
-
+import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,13 +19,15 @@ public class Hooks extends BaseClass {
 	
 	@Before
 	 public static void mysetup() {
-		 
+		
+		log = LogManager.getLogger("Hooks");
+			
 			String browserName= prop.getProperty("browser");
 			if(browserName.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options= new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
-			//options.addArguments("--incognito");
+			options.addArguments("--incognito");
 			driver= new ChromeDriver(options);
 			}else if(browserName.equals("firebox")) {
 				WebDriverManager.firefoxdriver().setup();
@@ -44,6 +46,7 @@ public class Hooks extends BaseClass {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+			log.info("Browser Launched..");
 		}
 	
 	@After
@@ -56,23 +59,13 @@ public class Hooks extends BaseClass {
 	            }
 	        }
 	        driver.quit();	
-		
+	        log.info("Browser Closed..");
 	}
 	
 	
 }
 	
-	 /*public void tearDown(Scenario s) {
-		 if(s.isFailed());
-		 {
-			 getScreenshot();
-			 
-		 }
-	 driver.quit();	
 	 
-	 }*/
-	
-	
 	
 
 

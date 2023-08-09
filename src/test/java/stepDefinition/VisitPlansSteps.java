@@ -478,8 +478,11 @@ public void message_should_be_shown_visit_plan_was_saved6() {
 	
 }
 
-
-
+@Then ("Message should be Shown Visit Plan was saved")
+public void message_should_be_shown_visit_plan_was_saved() {
+	visitplan.message_should_be_shown_visit_plan_was_saved(); 
+	
+}
 
 	
 //change task

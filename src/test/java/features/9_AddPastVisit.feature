@@ -21,7 +21,7 @@ Then select Weekly recurrence
 Then select past Date
 Then User Click on the save Button
 And Save the For All Days Visit Details
-
+Then Message should be Shown Visit Plan was saved
 
 
 Scenario: Verify The ADLs and IADLS Functionalities

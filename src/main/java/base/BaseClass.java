@@ -18,10 +18,13 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.apache.logging.log4j.*;
+
 
 public class BaseClass {
 	public static WebDriver driver;
 	public static Properties prop;
+	public static Logger log;
 	
 	static {
 		
@@ -30,13 +33,10 @@ public class BaseClass {
 			 prop =new Properties();
 			prop.load(file);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 		
 		}
 	

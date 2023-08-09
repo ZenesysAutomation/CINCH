@@ -930,6 +930,13 @@ public void select_duration() throws InterruptedException {
 		
 	}
 	
+	public void message_should_be_shown_visit_plan_was_saved()
+	{
+		String expectedResult= "Visit Plan was saved.";
+		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
+		assertEquals("Plan was Created",expectedResult,actualResult);
+	}
+	
 	
 	
 	//change task
