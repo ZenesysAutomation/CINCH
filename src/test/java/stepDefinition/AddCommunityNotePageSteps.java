@@ -14,7 +14,7 @@ public class AddCommunityNotePageSteps extends BaseClass {
 	@Given("User enters Email")
 	public void user_enters_email() {
 	    page.user_enters_email();
-	    log.info("Entered Email Address ");
+	    log.info("entered Email Address ");
 	}
 	
 	@Given("User enters Password")

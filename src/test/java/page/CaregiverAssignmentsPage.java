@@ -18,7 +18,7 @@ import io.netty.handler.timeout.TimeoutException;
 	
 	public void user_enter_the_email() throws InterruptedException {
 		try {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 		 Useremail.sendKeys(prop.getProperty("username"));
 		}
@@ -30,7 +30,7 @@ import io.netty.handler.timeout.TimeoutException;
 
 	public void user_enter_the_password() throws InterruptedException {
 		try {
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	WebElement Password= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
 	Password.sendKeys(prop.getProperty("password"));
 		}

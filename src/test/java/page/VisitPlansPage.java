@@ -22,7 +22,7 @@ public class VisitPlansPage extends BaseClass  {
 	
 	public void user_enter_the_email() throws InterruptedException {
 		try {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 		 Useremail.sendKeys(prop.getProperty("username"));
 		}

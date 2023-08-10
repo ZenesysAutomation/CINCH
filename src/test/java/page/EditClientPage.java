@@ -14,15 +14,9 @@ import io.netty.handler.timeout.TimeoutException;
 public class EditClientPage extends BaseClass{
 
 public void check_the_user_email() throws InterruptedException {
-	/*WebElement Useremail=driver.findElement(By.xpath("//input[@id='email']"));
-	explicitWait(Useremail,20);
-	Thread.sleep(6000);
-	Useremail.sendKeys(prop.getProperty("username"));
-	Thread.sleep(6000);	    
-		
-	} */
+	
 	try {
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 	 Useremail.sendKeys(prop.getProperty("username"));
 	}
@@ -34,13 +28,9 @@ public void check_the_user_email() throws InterruptedException {
 }
 
 public void check_the_user_password() throws InterruptedException {
-	/*WebElement Password=driver.findElement(By.xpath("//input[@id='password']"));
-	explicitWait(Password,20);
-	Password.sendKeys(prop.getProperty("password"));
-	Thread.sleep(4000);*/
 	
 	try {
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	WebElement Password= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
 	Password.sendKeys(prop.getProperty("password"));
 	}

@@ -16,7 +16,7 @@ public class LoginPageSteps extends BaseClass{
 	@When("Verify that user enter the {string} and {string}")
 	public void Verify_that_user_enter_the_Email_and_Password(String email, String pass){
 		login.Verify_that_user_enter_the_Email_and_Password(email,pass);
-		log.info(" entered email address and password ");
+		log.info("entered email address and password ");
 	}
 	
 	

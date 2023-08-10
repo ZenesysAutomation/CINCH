@@ -57,6 +57,7 @@ public class Hooks extends BaseClass {
 	                byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 	                s.attach(screenshot, "image/png", "Failure Test Case Screenshot");
 	            }
+	            log.error("Test case failed: " + s.getName());
 	        }
 	        driver.quit();	
 	        log.info("Browser Closed..");

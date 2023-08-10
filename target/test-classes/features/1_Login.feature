@@ -1,6 +1,6 @@
 Feature: login Functionality
 
-@Test
+
 Scenario Outline: Verify The login & Logout Functionality
 
 When Verify that user enter the "<Email>" and "<Password>"
@@ -15,8 +15,11 @@ Then Sign In Page should be shown
 Examples:
 |Email|Password|
 |anoop.kumar@zenesys.com |Testing@123|
-#|ankita.chaudhary@zenesys.com |Testing@123|
-#|xyz@yopmail.com |xyz@12345|
+|ankita.chaudhary@zenesys.com |Testing@123|
+|xyz@yopmail.com |xyz@12345|
+
+
+
 
 
 

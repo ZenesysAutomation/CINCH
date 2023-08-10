@@ -26,7 +26,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions( features={"src/test/java/features/1_Login.feature","src/test/java/features/2_AddClient.feature",
 "src/test/java/features/3_EditClient.feature","src/test/java/features/4_AddCommunityNote.feature","src/test/java/features/5_EditCommunityNote.feature",
-"src/test/java/features/6_Assessments & Care Plans.feature","src/test/java/features/7_VisitPlanSingle.feature","src/test/java/features/8_VisitPlansEveryday.feature","src/test/java/features/9_AddPastVisit.feature","src/test/java/features/CaregiverAssignments.feature"},
+"src/test/java/features/6_Assessments & Care Plans.feature","src/test/java/features/7_VisitPlanSingle.feature","src/test/java/features/8_VisitPlansEveryday.feature","src/test/java/features/9_AddPastVisit.feature","src/test/java/features/CaregiverAssignments.feature",tags="@Test"},
 plugin= {"pretty","html:target/TestReport/test.html","json:target/cucumber-report/cucumber.json"},glue= {"stepDefinition","base"})
 
 public class RunnerFileTest {

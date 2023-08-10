@@ -14,3 +14,69 @@
 [INFO ] 2023-08-09 06:14:19.392 [main] Hooks - user clicked on logout button
 [INFO ] 2023-08-09 06:14:19.427 [main] Hooks - user can view sign in page test passed.
 [INFO ] 2023-08-09 06:14:19.613 [main] Hooks - Browser Closed...
+[INFO ] 2023-08-10 04:14:34.138 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-10 04:15:15.094 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-10 04:15:22.195 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-10 04:15:38.365 [main] Hooks - entered email address and password 
+[INFO ] 2023-08-10 04:15:41.507 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-10 04:15:45.930 [main] Hooks - Select Test Community
+[INFO ] 2023-08-10 04:15:57.053 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-10 04:15:57.069 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-08-10 04:16:02.151 [main] Hooks - Click Account User name
+[INFO ] 2023-08-10 04:16:09.783 [main] Hooks - user clicked on logout button
+[INFO ] 2023-08-10 04:16:09.814 [main] Hooks - user can view sign in page test passed.
+[INFO ] 2023-08-10 04:16:09.956 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-10 04:16:15.746 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-10 04:16:29.378 [main] Hooks - entered email address and password 
+[INFO ] 2023-08-10 04:16:32.569 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-10 04:16:53.397 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-10 07:05:49.976 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-10 07:06:04.871 [main] Hooks - entered email address and password 
+[INFO ] 2023-08-10 07:06:08.008 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-10 07:06:11.131 [main] Hooks - Select Test Community
+[INFO ] 2023-08-10 07:06:22.249 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-10 07:06:22.265 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-08-10 07:06:27.331 [main] Hooks - Click Account User name
+[INFO ] 2023-08-10 07:06:33.116 [main] Hooks - user clicked on logout button
+[ERROR] 2023-08-10 07:06:53.736 [main] Hooks - Test case failed: Verify The login & Logout Functionality
+[INFO ] 2023-08-10 07:06:53.862 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-10 07:09:46.167 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-10 07:10:05.340 [main] Hooks - entered email address and password 
+[INFO ] 2023-08-10 07:10:08.459 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-10 07:10:11.592 [main] Hooks - Select Test Community
+[INFO ] 2023-08-10 07:10:22.707 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-10 07:10:22.744 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-08-10 07:10:27.790 [main] Hooks - Click Account User name
+[INFO ] 2023-08-10 07:10:33.633 [main] Hooks - user clicked on logout button
+[INFO ] 2023-08-10 07:10:33.648 [main] Hooks - user can view sign in page test passed.
+[INFO ] 2023-08-10 07:10:33.790 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-10 07:26:55.823 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-10 07:27:16.425 [main] Hooks - entered email address
+[INFO ] 2023-08-10 07:27:16.536 [main] Hooks - entered password
+[INFO ] 2023-08-10 07:27:19.719 [main] Hooks - click on login
+[INFO ] 2023-08-10 07:27:22.895 [main] Hooks - select test community
+[INFO ] 2023-08-10 07:27:26.025 [main] Hooks - click on continue button..
+[INFO ] 2023-08-10 07:27:39.959 [main] Hooks - click on visit plans
+[INFO ] 2023-08-10 07:27:49.160 [main] Hooks - click on table user first name
+[INFO ] 2023-08-10 07:27:55.423 [main] Hooks - click on add visit configuration
+[INFO ] 2023-08-10 07:27:55.423 [main] Hooks - Selecting the single day...
+[INFO ] 2023-08-10 07:28:12.126 [main] Hooks - Select the recurrence
+[INFO ] 2023-08-10 07:28:15.555 [main] Hooks - Select the start time
+[INFO ] 2023-08-10 07:28:19.840 [main] Hooks - Select duration
+[INFO ] 2023-08-10 07:28:28.427 [main] Hooks - Select start time
+[INFO ] 2023-08-10 07:28:46.706 [main] Hooks - click on save button
+[INFO ] 2023-08-10 07:28:54.020 [main] Hooks - save all single visit details
+[INFO ] 2023-08-10 07:28:54.069 [main] Hooks - save all single visit details
+[INFO ] 2023-08-10 07:28:54.271 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-10 07:36:24.931 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-10 07:36:52.151 [main] Hooks - Entered Email Address..
+[INFO ] 2023-08-10 07:36:52.406 [main] Hooks - Entered password.
+[INFO ] 2023-08-10 07:36:55.579 [main] Hooks - click on login button..
+[INFO ] 2023-08-10 07:36:58.821 [main] Hooks - select test community
+[INFO ] 2023-08-10 07:37:01.962 [main] Hooks - click on continue button
+[INFO ] 2023-08-10 07:37:08.038 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-08-10 07:37:20.871 [main] Hooks - click on color
+[INFO ] 2023-08-10 07:37:24.296 [main] Hooks - change time for visit
+[INFO ] 2023-08-10 07:37:26.528 [main] Hooks - select move only this occurence
+[INFO ] 2023-08-10 07:37:46.802 [main] Hooks - save the visit
+[INFO ] 2023-08-10 07:37:47.008 [main] Hooks - Browser Closed..
