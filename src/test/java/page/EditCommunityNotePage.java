@@ -40,14 +40,15 @@ public class EditCommunityNotePage extends BaseClass {
 		
 	}
 	}
-
 		
 	public void click_on_the_login_button() throws InterruptedException {
-			WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
-			Login.click();
-			Thread.sleep(3000);
-			
-			   }
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
+		 wait.until(ExpectedConditions.elementToBeClickable(Login));
+		 Login.click();
+		 
+	}
 		
 	public void select_test_community_dropdown() throws InterruptedException {
 			WebElement Dropdown=driver.findElement(By.xpath("//span[@role='listbox']"));
@@ -57,15 +58,13 @@ public class EditCommunityNotePage extends BaseClass {
 		}
 		
 	public void click_on_the_continue() {
-			WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
-			try {
-				Thread.sleep(3000);
-			} catch (InterruptedException e) {
-			
-				e.printStackTrace();
-			}
-		Continue.click();
-		}
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
+		 wait.until(ExpectedConditions.elementToBeClickable(Continue));
+		 Continue.click();
+	}
+
 	
 	public void click_on_the_manage_window() throws InterruptedException {
 		WebElement manage=driver.findElement(By.linkText("Manage"));

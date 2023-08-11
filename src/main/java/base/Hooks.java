@@ -59,7 +59,7 @@ public class Hooks extends BaseClass {
 	            }
 	            log.error("Test case failed: " + s.getName());
 	        }
-	        driver.quit();	
+	        driver.quit();
 	        log.info("Browser Closed..");
 	}
 	

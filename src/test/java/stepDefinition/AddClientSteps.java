@@ -30,7 +30,7 @@ public class AddClientSteps extends BaseClass{
 	}
 
 	@Then("User Select the Test Community")
-	public void user_select_the_test_community() {
+	public void user_select_the_test_community() throws InterruptedException {
 	    steps. user_select_the_test_community();
 	    log.info("Select Test Community");
 	}

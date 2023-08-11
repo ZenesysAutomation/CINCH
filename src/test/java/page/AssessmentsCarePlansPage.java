@@ -43,9 +43,11 @@ public void user_enter_password() throws InterruptedException {
 	}
 
 public void user_click_on_the_login_button() throws InterruptedException {
-	WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
-	Login.click();
-	Thread.sleep(3000);
+	
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
+	 wait.until(ExpectedConditions.elementToBeClickable(Login));
+	 Login.click();
     
 }
 
@@ -56,12 +58,14 @@ public void user_select_the_test_community() throws InterruptedException {
     
 }
 public void user_click_on_the_continue() throws InterruptedException {
-	WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
-	Thread.sleep(3000);
-	Continue.click();
-	Thread.sleep(3000);
 	
-}
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
+	wait.until(ExpectedConditions.elementToBeClickable(Continue));
+	Continue.click();
+	}
+
+
 public void user_click_on_the_clients() throws InterruptedException {
 	WebElement Clientbtn=driver.findElement(By.xpath("//span[normalize-space()='Clients']"));
 	Thread.sleep(6000);

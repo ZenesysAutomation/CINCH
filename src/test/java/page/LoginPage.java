@@ -33,12 +33,13 @@ public class LoginPage extends BaseClass {
 
 	
 	public void click_on_the_login_button() throws InterruptedException {
-		WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
-		Login.click();
-		Thread.sleep(3000);
-		   
+		
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
+		 wait.until(ExpectedConditions.elementToBeClickable(Login));
+		 Login.click();
 	}
-	
+		
 	public void Verify_the_Dropdown_and_select_the_Test_Community() throws InterruptedException{
 		WebElement Dropdown=driver.findElement(By.xpath("//span[@role='listbox']"));
 		Dropdown.sendKeys("Test Community");
@@ -46,12 +47,12 @@ public class LoginPage extends BaseClass {
 	}
 
 	public void Verify_the_Continue_Button() throws InterruptedException {
-	WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
-	Thread.sleep(3000);
-	Continue.click();
-	Thread.sleep(8000);
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
+		 wait.until(ExpectedConditions.elementToBeClickable(Continue));
+		 Continue.click();	
 	}
-	
 	
 	public void Home_page_should_be_shown() {
 	String expectedResult= "Home";
@@ -61,18 +62,22 @@ public class LoginPage extends BaseClass {
 	}
 	
 	public void user_click_on_the_account_user_name() throws InterruptedException {
+	
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement AccountUserName=	driver.findElement(By.xpath("//span[@class='account-user-name']"));
-		AccountUserName.click();
-		Thread.sleep(5000);
-		
+		 wait.until(ExpectedConditions.elementToBeClickable(AccountUserName));
+		 AccountUserName.click();
 	}
+		
 
 	public void click_on_the_logout_button() throws InterruptedException {
-		WebElement logout=	driver.findElement(By.xpath("(//span[normalize-space()='Logout'])[1]"));
-		logout.click();
-		Thread.sleep(5000);
-	
-}
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebElement logout=driver.findElement(By.xpath("(//span[normalize-space()='Logout'])[1]"));
+		 wait.until(ExpectedConditions.elementToBeClickable(logout));
+		 logout.click();
+	}
+		
 	
 public void Sign_In_Page_should_be_shown() {
 		

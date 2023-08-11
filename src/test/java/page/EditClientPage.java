@@ -42,9 +42,11 @@ public void check_the_user_password() throws InterruptedException {
 
 
 public void check_the_login_button() throws InterruptedException {
-	WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
-	Login.click();
-	Thread.sleep(3000);
+	
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
+	 wait.until(ExpectedConditions.elementToBeClickable(Login));
+	 Login.click();
 }
 
 public void check_the_test_community_dropdown() throws InterruptedException {
@@ -54,10 +56,12 @@ public void check_the_test_community_dropdown() throws InterruptedException {
 }
 
 public void click_on_the_continue_button() throws InterruptedException {
+
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
-	Thread.sleep(3000);
+	wait.until(ExpectedConditions.elementToBeClickable(Continue));
 	Continue.click();
-}
+	}
 
 public void click_on_the_clients() throws InterruptedException {
 	WebElement Clientbtn=driver.findElement(By.xpath("//span[normalize-space()='Clients']"));

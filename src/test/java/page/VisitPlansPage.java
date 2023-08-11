@@ -47,10 +47,11 @@ public class VisitPlansPage extends BaseClass  {
 	
 	
 	public void user_click_on_the_login() throws InterruptedException {
-		WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
-		Login.click();
-		Thread.sleep(3000);
-		  
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
+		 wait.until(ExpectedConditions.elementToBeClickable(Login));
+		 Login.click();	  
 	}
 	
 	public void user_select_the_test_community() throws InterruptedException {
@@ -60,11 +61,12 @@ public class VisitPlansPage extends BaseClass  {
 		   
 	}
 	public void user_click_on_the_continue_button() throws InterruptedException {
-		WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
-		Thread.sleep(3000);
-		Continue.click();
-	    
-	}
+	
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
+	 wait.until(ExpectedConditions.elementToBeClickable(Continue));
+	 Continue.click();	
+}
 	
 	public void user_click_on_the_visit_plans() throws InterruptedException {
 		
@@ -84,6 +86,7 @@ public class VisitPlansPage extends BaseClass  {
 		FirstName.click();	
 		Thread.sleep(6000);
 	}
+	
 	public void click_on_the_add_visit_configuration() throws InterruptedException {
 		WebElement AddVisitBtn=	driver.findElement(By.xpath("(//a[normalize-space()='Add Visit Configuration'])[1]"));
 		AddVisitBtn.click();

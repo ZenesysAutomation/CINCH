@@ -32,9 +32,7 @@ public class AddCommunityNotePage extends BaseClass {
 				
 	}
 	}
-		
-	 
-		
+			
 	public void user_enters_password() {
 		try {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -48,11 +46,13 @@ public class AddCommunityNotePage extends BaseClass {
 	}
 
 	public void Click_on_the_login() throws InterruptedException {
-		WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
-		Login.click();
-		Thread.sleep(3000);
 		
-		   }
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
+		 wait.until(ExpectedConditions.elementToBeClickable(Login));
+		 Login.click();
+	}
+	
 	
 	public void select_the_test_community() throws InterruptedException {
 		WebElement Dropdown=driver.findElement(By.xpath("//span[@role='listbox']"));
@@ -62,14 +62,13 @@ public class AddCommunityNotePage extends BaseClass {
 	}
 	
 	public void click_on_the_continue() {
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+		wait.until(ExpectedConditions.elementToBeClickable(Continue));
+		Continue.click();
 		}
-	Continue.click();
-	}
+
 
 public void click_on_the_manage() throws InterruptedException {
 	WebElement manage=driver.findElement(By.linkText("Manage"));

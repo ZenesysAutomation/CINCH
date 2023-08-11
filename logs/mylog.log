@@ -79,4 +79,152 @@
 [INFO ] 2023-08-10 07:37:24.296 [main] Hooks - change time for visit
 [INFO ] 2023-08-10 07:37:26.528 [main] Hooks - select move only this occurence
 [INFO ] 2023-08-10 07:37:46.802 [main] Hooks - save the visit
-[INFO ] 2023-08-10 07:37:47.008 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-10 07:37:47.008 [main] Hooks - Browser Closed.
+[INFO ] 2023-08-11 01:23:35.580 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-11 01:23:49.754 [main] Hooks - entered email address and password 
+[INFO ] 2023-08-11 01:23:53.024 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-11 01:23:56.209 [main] Hooks - Select Test Community
+[INFO ] 2023-08-11 01:24:07.360 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-11 01:24:07.405 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-08-11 01:24:12.504 [main] Hooks - Click Account User name
+[INFO ] 2023-08-11 01:24:18.328 [main] Hooks - user clicked on logout button
+[INFO ] 2023-08-11 01:24:18.368 [main] Hooks - user can view sign in page test passed.
+[INFO ] 2023-08-11 01:24:18.563 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-11 02:07:02.830 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-11 02:07:34.796 [main] Hooks - entered email address and password 
+[INFO ] 2023-08-11 02:07:35.004 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-11 02:07:38.975 [main] Hooks - Select Test Community
+[INFO ] 2023-08-11 02:07:50.116 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-11 02:07:50.167 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-08-11 02:07:55.276 [main] Hooks - Click Account User name
+[INFO ] 2023-08-11 02:08:01.094 [main] Hooks - user clicked on logout button
+[INFO ] 2023-08-11 02:08:01.122 [main] Hooks - user can view sign in page test passed.
+[INFO ] 2023-08-11 02:08:01.310 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-11 02:23:28.825 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-11 02:23:43.435 [main] Hooks - entered email address and password 
+[INFO ] 2023-08-11 02:23:43.716 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-11 02:23:47.750 [main] Hooks - Select Test Community
+[INFO ] 2023-08-11 02:23:58.894 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-11 02:23:58.961 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-08-11 02:24:04.055 [main] Hooks - Click Account User name
+[INFO ] 2023-08-11 02:24:09.906 [main] Hooks - user clicked on logout button
+[INFO ] 2023-08-11 02:24:09.954 [main] Hooks - user can view sign in page test passed.
+[INFO ] 2023-08-11 02:24:10.143 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-11 02:30:24.069 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-11 02:30:45.815 [main] Hooks - entered email address and password 
+[INFO ] 2023-08-11 02:30:46.037 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-11 02:30:50.037 [main] Hooks - Select Test Community
+[INFO ] 2023-08-11 02:30:50.186 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-11 02:30:55.500 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-08-11 02:31:00.585 [main] Hooks - Click Account User name
+[INFO ] 2023-08-11 02:31:06.569 [main] Hooks - user clicked on logout button
+[INFO ] 2023-08-11 02:31:06.604 [main] Hooks - user can view sign in page test passed.
+[INFO ] 2023-08-11 02:31:06.806 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-11 02:47:27.207 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-11 02:47:42.280 [main] Hooks - entered email address
+[INFO ] 2023-08-11 02:47:42.408 [main] Hooks - entered password
+[INFO ] 2023-08-11 02:47:42.721 [main] Hooks - click on login
+[INFO ] 2023-08-11 02:47:47.016 [main] Hooks - select test community
+[INFO ] 2023-08-11 02:47:47.157 [main] Hooks - click on continue button..
+[INFO ] 2023-08-11 02:48:01.319 [main] Hooks - click on visit plans
+[INFO ] 2023-08-11 02:53:58.501 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-11 02:54:15.525 [main] Hooks - entered email address and password 
+[INFO ] 2023-08-11 02:54:15.824 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-11 02:54:20.096 [main] Hooks - Select Test Community
+[INFO ] 2023-08-11 02:54:20.238 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-11 02:54:24.862 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-08-11 02:54:24.967 [main] Hooks - Click Account User name
+[INFO ] 2023-08-11 02:54:25.889 [main] Hooks - user clicked on logout button
+[INFO ] 2023-08-11 02:54:28.481 [main] Hooks - user can view sign in page test passed.
+[INFO ] 2023-08-11 02:54:28.686 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-11 02:56:41.041 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-11 02:57:01.745 [main] Hooks - entered email address and password 
+[INFO ] 2023-08-11 02:57:01.992 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-11 02:57:06.113 [main] Hooks - Select Test Community
+[INFO ] 2023-08-11 02:57:06.255 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-11 02:57:10.339 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-08-11 02:57:10.475 [main] Hooks - Click Account User name
+[INFO ] 2023-08-11 02:57:11.747 [main] Hooks - user clicked on logout button
+[INFO ] 2023-08-11 02:57:13.708 [main] Hooks - user can view sign in page test passed.
+[INFO ] 2023-08-11 02:57:13.897 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-11 03:01:03.436 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-11 03:01:16.300 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-11 03:01:16.411 [main] Hooks - Password Entered
+[INFO ] 2023-08-11 03:01:16.656 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-11 03:01:19.621 [main] Hooks - Select Test Community
+[INFO ] 2023-08-11 03:01:19.724 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-11 03:01:25.398 [main] Hooks - Clicked on Client button
+[INFO ] 2023-08-11 03:01:26.485 [main] Hooks - Clicked on Add New Client button
+[INFO ] 2023-08-11 03:01:28.915 [main] Hooks - entered first name
+[INFO ] 2023-08-11 03:01:29.180 [main] Hooks - entered last name
+[INFO ] 2023-08-11 03:01:29.406 [main] Hooks - entered Address line1
+[INFO ] 2023-08-11 03:01:29.530 [main] Hooks - entered Address line2
+[INFO ] 2023-08-11 03:01:29.747 [main] Hooks - entered resident id
+[INFO ] 2023-08-11 03:01:31.994 [main] Hooks - entered city name
+[INFO ] 2023-08-11 03:01:32.295 [main] Hooks - entered state name
+[INFO ] 2023-08-11 03:01:32.429 [main] Hooks - entered ZIP Code
+[INFO ] 2023-08-11 03:01:35.708 [main] Hooks - entered primary phone no.
+[INFO ] 2023-08-11 03:01:38.782 [main] Hooks - entered secondary phone no.
+[INFO ] 2023-08-11 03:01:38.869 [main] Hooks - entered email address
+[INFO ] 2023-08-11 03:01:41.161 [main] Hooks - select gender
+[INFO ] 2023-08-11 03:01:41.266 [main] Hooks - select gender
+[INFO ] 2023-08-11 03:01:41.516 [main] Hooks - entered marital status
+[INFO ] 2023-08-11 03:01:41.627 [main] Hooks - entered spouse name
+[INFO ] 2023-08-11 03:01:43.819 [main] Hooks - entered referral source
+[INFO ] 2023-08-11 03:01:43.974 [main] Hooks - entered essential information
+[INFO ] 2023-08-11 03:01:49.363 [main] Hooks - select client type
+[INFO ] 2023-08-11 03:12:05.723 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-11 03:12:19.725 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-11 03:12:19.819 [main] Hooks - Password Entered
+[INFO ] 2023-08-11 03:12:20.028 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-11 03:12:23.071 [main] Hooks - Select Test Community
+[INFO ] 2023-08-11 03:12:23.187 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-11 03:12:27.953 [main] Hooks - Clicked on Client button
+[INFO ] 2023-08-11 03:12:29.156 [main] Hooks - Clicked on Add New Client button
+[INFO ] 2023-08-11 03:12:32.207 [main] Hooks - entered first name
+[INFO ] 2023-08-11 03:12:32.473 [main] Hooks - entered last name
+[INFO ] 2023-08-11 03:12:32.630 [main] Hooks - entered Address line1
+[INFO ] 2023-08-11 03:12:32.815 [main] Hooks - entered Address line2
+[INFO ] 2023-08-11 03:12:32.939 [main] Hooks - entered resident id
+[INFO ] 2023-08-11 03:12:35.200 [main] Hooks - entered city name
+[INFO ] 2023-08-11 03:12:35.522 [main] Hooks - entered state name
+[INFO ] 2023-08-11 03:12:35.589 [main] Hooks - entered ZIP Code
+[INFO ] 2023-08-11 03:12:38.939 [main] Hooks - entered primary phone no.
+[INFO ] 2023-08-11 03:12:42.008 [main] Hooks - entered secondary phone no.
+[INFO ] 2023-08-11 03:12:42.093 [main] Hooks - entered email address
+[INFO ] 2023-08-11 03:12:44.380 [main] Hooks - select gender
+[INFO ] 2023-08-11 03:12:44.477 [main] Hooks - select gender
+[INFO ] 2023-08-11 03:12:44.670 [main] Hooks - entered marital status
+[INFO ] 2023-08-11 03:12:44.848 [main] Hooks - entered spouse name
+[INFO ] 2023-08-11 03:12:47.033 [main] Hooks - entered referral source
+[INFO ] 2023-08-11 03:12:47.198 [main] Hooks - entered essential information
+[INFO ] 2023-08-11 03:12:52.619 [main] Hooks - select client type
+[INFO ] 2023-08-11 03:12:57.920 [main] Hooks - select schedule group
+[INFO ] 2023-08-11 03:13:01.018 [main] Hooks - select status
+[INFO ] 2023-08-11 03:13:05.505 [main] Hooks - select track
+[INFO ] 2023-08-11 03:13:08.778 [main] Hooks - select service type
+[INFO ] 2023-08-11 03:13:14.986 [main] Hooks - Click add new contact button
+[INFO ] 2023-08-11 03:13:18.038 [main] Hooks - Entered first name
+[INFO ] 2023-08-11 03:13:18.191 [main] Hooks - Entered last name
+[INFO ] 2023-08-11 03:13:20.350 [main] Hooks - Entered address line1
+[INFO ] 2023-08-11 03:13:22.500 [main] Hooks - Entered address line2
+[INFO ] 2023-08-11 03:13:25.658 [main] Hooks - Entered city name
+[INFO ] 2023-08-11 03:13:28.928 [main] Hooks - select state
+[INFO ] 2023-08-11 03:13:32.020 [main] Hooks - entered ZIP Code
+[INFO ] 2023-08-11 03:13:35.208 [main] Hooks - entered primary phone number
+[INFO ] 2023-08-11 03:13:40.425 [main] Hooks - entered email address
+[INFO ] 2023-08-11 03:13:44.147 [main] Hooks - select relationship
+[INFO ] 2023-08-11 03:13:44.318 [main] Hooks - save contact details
+[INFO ] 2023-08-11 03:13:45.034 [main] Hooks - save client details..
+[ERROR] 2023-08-11 03:13:45.766 [main] Hooks - Test case failed: Verify the Add New Client Functionality
+[INFO ] 2023-08-11 03:13:45.935 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-11 06:46:36.787 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-11 06:46:49.639 [main] Hooks - entered email address and password 
+[INFO ] 2023-08-11 06:46:49.822 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-11 06:46:53.755 [main] Hooks - Select Test Community
+[INFO ] 2023-08-11 06:46:53.838 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-11 06:46:57.530 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-08-11 06:46:57.590 [main] Hooks - Click Account User name
+[INFO ] 2023-08-11 06:46:58.431 [main] Hooks - user clicked on logout button
+[INFO ] 2023-08-11 06:46:59.953 [main] Hooks - user can view sign in page test passed.
+[INFO ] 2023-08-11 06:47:00.095 [main] Hooks - Browser Closed..

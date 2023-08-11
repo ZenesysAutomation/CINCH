@@ -41,13 +41,12 @@ import io.netty.handler.timeout.TimeoutException;
 	}
 	}
 	
-
-
 	public void user_click_on_the_login_button() throws InterruptedException {
-	WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
-	Login.click();
-	Thread.sleep(3000);
-	
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
+		 wait.until(ExpectedConditions.elementToBeClickable(Login));
+		 Login.click();	
 }
 
 	public void select_the_test_community() throws InterruptedException {
@@ -59,13 +58,14 @@ import io.netty.handler.timeout.TimeoutException;
 }
 
 	public void user_click_on_the_continue_button() throws InterruptedException {
-	WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
-	Thread.sleep(3000);
-	Continue.click();
-	
-}
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
+		wait.until(ExpectedConditions.elementToBeClickable(Continue));
+		Continue.click();
+		}
 
-	public void click_on_the_caregiver_assignments() throws InterruptedException {
+		public void click_on_the_caregiver_assignments() throws InterruptedException {
 		WebElement CgAssignment =driver.findElement(By.xpath("(//span[normalize-space()='Caregiver Assignments'])[1]"));
 		CgAssignment.click();
 		explicitWait(CgAssignment,15);

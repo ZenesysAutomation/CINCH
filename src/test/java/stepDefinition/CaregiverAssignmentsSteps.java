@@ -170,7 +170,7 @@ public class CaregiverAssignmentsSteps extends BaseClass  {
 	@Then ("Pop Up will be visible Are You Sure want to Delete this Item and click on Delete Button")
 	public void pop_up_will_be_visible_are_you_sure_want_to_delete_this_Item_and_click_on_delete_button() throws InterruptedException {
 		cg.pop_up_will_be_visible_are_you_sure_want_to_delete_this_Item_and_click_on_delete_button();
-		log.info("pop is showing and delete item..");
+		log.info("pop is showing and delete the item..");
 	}
 
 }
