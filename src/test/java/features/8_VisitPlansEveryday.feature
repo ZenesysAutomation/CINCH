@@ -1,4 +1,4 @@
-Feature: Verify the Visits Plans Functionalities
+Feature: Verify the Visits Plans Everyday Functionalities
 
 Background: Common Steps for all the Test Cases to login the Application
 
@@ -10,7 +10,7 @@ Then User click on the Continue Button
 Then User click on the Visit Plans
 Then Click on the User first Name
 
-
+@Reg7
 Scenario: Verify the Visit Plans Functionality For All days
 
 Then User Go to the Add Visit Configuration
@@ -23,7 +23,7 @@ Then User Click on the save Button
 And Save the For All Days Visit Details
 Then  Message Should be Shown Visit Plan was saved6
 
-
+@xyz
 Scenario: Verify The ADLs and IADLS Functionalities
 
 When Click on the ADLs Tab
@@ -89,7 +89,7 @@ And Save the Medication Details
 Then Click on the Add To schedule Button and Finalize Visits
 
 
-
+@xyz1
 Scenario: Change A visit Duration For Everyday
 Then Click on the Visit Table
 And Change The Visit Duration as 30 Minute Visit 
@@ -98,7 +98,7 @@ And Save the Details
 Then Message should be Shown Visit Plan was saved7
 
 
-
+@xyz2
 Scenario: Delete the Everyday Series
 Given User click on the Delete Icon 
 Then Delete visit Configurations Pop Up is opened  and click on the Delete button

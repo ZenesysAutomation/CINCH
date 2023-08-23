@@ -1,7 +1,7 @@
-Feature: Add Community Note
+Feature: Verify the Add Community Note Functionality
 
-
-Scenario: Verify the Add Community Note Functionality
+@Reg4
+Scenario: Add Community Note Functionality
 
 Given User enters Email 
 Given User enters Password

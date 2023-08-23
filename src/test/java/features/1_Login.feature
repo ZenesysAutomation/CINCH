@@ -1,4 +1,4 @@
-Feature: login Functionality
+Feature: Verify the Login Functionality
 
 @Test
 Scenario Outline: Verify The login & Logout Functionality

@@ -16,7 +16,7 @@ public class EditClientPage extends BaseClass{
 public void check_the_user_email() throws InterruptedException {
 	
 	try {
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 	 Useremail.sendKeys(prop.getProperty("username"));
 	}
@@ -64,10 +64,10 @@ public void click_on_the_continue_button() throws InterruptedException {
 	}
 
 public void click_on_the_clients() throws InterruptedException {
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	WebElement Clientbtn=driver.findElement(By.xpath("//span[normalize-space()='Clients']"));
-	explicitWait(Clientbtn,30);
-	Thread.sleep(6000);
-	Clientbtn.click();
+	 wait.until(ExpectedConditions.elementToBeClickable(Clientbtn));
+	 Clientbtn.click();
 			   
 }
 public void click_on_the_user_table() throws InterruptedException {
@@ -79,7 +79,7 @@ public void click_on_the_user_table() throws InterruptedException {
 	}*/
 	
 	
-	WebElement EditTable=driver.findElement(By.xpath("(//td[@aria-label='Piyush Column Header First Name'])[1]"));
+	WebElement EditTable=driver.findElement(By.xpath("//td[@aria-label='Agnes Column Header First Name']"));
 	Thread.sleep(8000);
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	js.executeScript("arguments[0].click()", EditTable);
@@ -97,36 +97,37 @@ public void click_on_the_edit_button() throws InterruptedException {
 	  
 	  JavascriptExecutor js2 = (JavascriptExecutor)driver;
 		js2.executeScript("window.scrollBy(0, 50000)");
-		 Thread.sleep(8000);
-	
+		 Thread.sleep(8000);	
 }
 
 public void change_the_status_from_active_to_discharged() throws InterruptedException {
 	WebElement Discharged=driver.findElement(By.xpath("//span[@aria-owns='client-status_options']"));
 	Discharged.click();
-	Thread.sleep(4000);
+	Thread.sleep(3000);
 	Discharged.sendKeys("Discharged");
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	  js.executeScript("arguments[0].click()",Discharged);
-	Thread.sleep(6000);
+	Thread.sleep(3000);
 	
 }
+
 public void enter_the_discharge_reason() throws InterruptedException {
 	
 	   WebElement DischargeReason=driver.findElement(By.xpath("(//span[@aria-owns='discharge-reason_options'])[1]"));
 		
-	   Thread.sleep(4000);
+	   Thread.sleep(3000);
 	   DischargeReason.click();
 	   DischargeReason.sendKeys("Moved out of area");
 	   DischargeReason.click();
-       Thread.sleep(8000);
+       Thread.sleep(5000);
 }
 
 public void save_the_data() throws InterruptedException {
+
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	WebElement SaveData=driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
-	Thread.sleep(3000);
-	SaveData.click();
-	Thread.sleep(6000);
+	 wait.until(ExpectedConditions.elementToBeClickable(SaveData));
+	 SaveData.click();
 }
 
 

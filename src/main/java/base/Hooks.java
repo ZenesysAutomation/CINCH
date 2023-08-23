@@ -27,9 +27,15 @@ public class Hooks extends BaseClass {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options= new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
+			options.addArguments("--disable-gpu");
+			options.addArguments("--disable-extensions");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--headless");
+			options.addArguments("--window-size=1580,1280");
 			options.addArguments("--incognito");
-			driver= new ChromeDriver(options);
-			}else if(browserName.equals("firebox")) {
+			driver = new ChromeDriver(options);
+			}else if(browserName.equals("firefox")) {
 				WebDriverManager.firefoxdriver().setup();
 				FirefoxOptions options= new FirefoxOptions();
 				options.addArguments("--remote-allow-origins=*");
@@ -40,7 +46,7 @@ public class Hooks extends BaseClass {
 				EdgeOptions options = new EdgeOptions();
 				options.addArguments("--remote-allow-origins=*");
 				options.addArguments("--incognito");
-				driver= new EdgeDriver(options);
+				driver = new EdgeDriver(options);
 			}
 			driver.get(prop.getProperty("url"));
 			driver.manage().window().maximize();

@@ -1,4 +1,4 @@
-Feature: Verify the Visits Plans Functionalities
+Feature: Verify the Add Past Visits Plans Functionalities
 
 Background: Common Steps for all the Test Cases to login the Application
 
@@ -10,7 +10,7 @@ Then User click on the Continue Button
 Then User click on the Visit Plans
 Then Click on the User first Name
 
-
+@Reg8
 Scenario: Verify Add a visit to the Past
 
 Then User Go to the Add Visit Configuration
@@ -23,7 +23,7 @@ Then User Click on the save Button
 And Save the For All Days Visit Details
 Then Message should be Shown Visit Plan was saved
 
-
+@sanity
 Scenario: Verify The ADLs and IADLS Functionalities
 
 When Click on the ADLs Tab

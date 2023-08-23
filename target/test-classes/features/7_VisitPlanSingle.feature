@@ -1,4 +1,4 @@
-Feature: Verify the Visits Plans Functionalities
+Feature: Verify the Visits Plans Single day Functionalities
 
 Background: Common Steps for all the Test Cases to login the Application
 
@@ -10,7 +10,7 @@ Then User click on the Continue Button
 Then User click on the Visit Plans
 Then Click on the User first Name 
 
-
+@Reg6
 Scenario: Verify the Visit Plans Functionalities For Single Day
 
 Then Click on the Add Visit Configuration
@@ -24,7 +24,7 @@ Then click on the Save Button
 Then Save the all Single Visit Details
 Then Validation Message Should be Shown Visit Plan was saved1
 
-
+@Abc
 Scenario: Verify The ADLs and IADLS Functionalities
 When Click on the ADLs Tab
 Then Click on the Bathing
@@ -88,7 +88,7 @@ And Update the Medication Details
 And Save the Medication Details 
 Then Click on the Add To schedule Button and Finalize Visits
 
-
+@abc2
 Scenario: Change A Visit Duration For Single Day 
 And click on the single Visit table
 And Change the visit duration as 45 Minute Visit
@@ -97,7 +97,7 @@ And Click on the Save button
 Then Validation Message should be Shown Visit Plan was saved2
 
 
-
+@abc3
 Scenario: Change Task in a Client Visit (ADLS and IADLS)
 
 Given User Click on the ADLs Tab 
@@ -132,7 +132,7 @@ Then User Click on the Add to Schedule and Finalize Visits
 
 
 
-
+@abc4
 Scenario: Add visits for a Custom Date Range
 Then Check the Add Visit Configuration Button
 Given user select all the days
@@ -147,7 +147,7 @@ Then Save the all Visits Plan Details
 Then Message should be Shown Visit Plan was saved3
 
 
-
+@abc5
 Scenario: Change the End Date on a Custom Date Range
 Then Click on the Everyday Table 
 And Change The End Date 
@@ -156,7 +156,7 @@ And Save The Visits
 Then Message should be Shown Visit Plan was saved4
 
 
-
+@abc6
 Scenario: Delete a Single visit Series 
 And Click on the delete Icon and Pop is Displayed Confirm that you want to delete this item
 Then Click on the Delete Button

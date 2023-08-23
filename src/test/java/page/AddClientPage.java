@@ -166,7 +166,7 @@ public void click_the_gender() throws InterruptedException {
 
 public void user_select_the_birth_date() throws InterruptedException {
 	WebElement DOB=driver.findElement(By.xpath("//input[@id='birthdate']"));
-    DOB.sendKeys("11/6/1998");
+    DOB.sendKeys("12/7/1997");
     explicitWait( DOB,15);
 
 	
@@ -254,21 +254,22 @@ public void select_the_service_type() throws InterruptedException {
 }
 
 public void verify_that_add_new_contact_button() throws InterruptedException {
-	WebElement contactbtn=driver.findElement(By.xpath("//a[normalize-space()='Add New Contact']"));
-	Thread.sleep(3000);
-	contactbtn.click();
-	Thread.sleep(3000);
 	
-	    
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	WebElement contactbtn=driver.findElement(By.xpath("//a[normalize-space()='Add New Contact']"));
+	wait.until(ExpectedConditions.elementToBeClickable(contactbtn));
+	contactbtn.click();
 }
+
 public void verify_the_first_name() throws InterruptedException {
 	WebElement Fname=driver.findElement(By.xpath("//input[@id='first-contact']"));
-	Fname.sendKeys("Automation ");
+	Fname.sendKeys("Automation Testing ");
 	Thread.sleep(3000);
 }
+
 public void verify_the_last_name() {
 	WebElement Lname=driver.findElement(By.xpath("//input[@id='last-contact']"));
-	Lname.sendKeys("Selenium");
+	Lname.sendKeys("Selenium framework");
 	   
 }
 
@@ -315,8 +316,9 @@ public void verify_the_primary_phone_number() throws InterruptedException {
 
 public void verify_the_email() throws InterruptedException {
 	WebElement email=driver.findElement(By.xpath("//input[@id='email-contact']"));
-	Thread.sleep(5000);
+	Thread.sleep(3000);
 	email.sendKeys("testing1234@gmail.com");
+	Thread.sleep(1000);
     
 }
 
@@ -330,20 +332,23 @@ public void select_the_relationship() throws InterruptedException {
 
 public void save_the_new_contact_details()throws InterruptedException {
 	
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	WebElement Savebtn1=driver.findElement(By.xpath("//button[@id='ClientContactSave']"));
 	 wait.until(ExpectedConditions.elementToBeClickable(Savebtn1));
 	 Savebtn1.click();
+	 Thread.sleep(30000);
 }
 	
 	
  public void save_the_new_client_details() throws InterruptedException {
 	
-	 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	 	WebElement Savebtn=driver.findElement(By.xpath("//button[@id='ClientSave']"));
 		 wait.until(ExpectedConditions.elementToBeClickable(Savebtn));
 		 Savebtn.click();
- }
+	
+	}
+ 
  
  public void validation_Message_should_be_shown_client_was_created() {
 	 	String expectedResult= "Client was created.";

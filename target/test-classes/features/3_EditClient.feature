@@ -1,7 +1,7 @@
-Feature: Edit Client 
+Feature: Verify the Edit Client Functionality
 
-
-Scenario: Verify the Edit Client Functionality
+@Reg2
+Scenario: Edit Client Functionality
 
 Given Check the User Email
 When Check the User Password

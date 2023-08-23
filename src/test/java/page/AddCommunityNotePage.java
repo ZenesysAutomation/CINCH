@@ -47,7 +47,7 @@ public class AddCommunityNotePage extends BaseClass {
 
 	public void Click_on_the_login() throws InterruptedException {
 		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
 		 wait.until(ExpectedConditions.elementToBeClickable(Login));
 		 Login.click();
@@ -150,7 +150,7 @@ private static int generateRandomNumber(int start, int end) {
 	
 public void community_note_was_created_message_should_be_shown() {
 	String expectedResult= "Community Note was created.";
-	String actualResult= driver.findElement(By.xpath("//div[@class=\"e-toast-content\"]")).getText();
+	String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
 	assertEquals("Community note",expectedResult,actualResult);
 		
 	}

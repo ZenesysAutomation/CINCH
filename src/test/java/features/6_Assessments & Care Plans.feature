@@ -1,8 +1,8 @@
-Feature: Assessments & Care Plans 
+Feature: Verify the Assessments & Care Plans Functionalities
 
 
-
-Scenario: Verify the Assessments & Care Plans Functionalities
+@smoke
+Scenario: Assessments & Care Plans Functionalities
 
 When user enter Email
 Then user enter Password

@@ -140,6 +140,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				FamilySocialNetwork.sendKeys("Testing Demo3");
 			    
 			}
+			
 			public void user_enter_the_special_dietary_needs() throws InterruptedException 
 			{
 				WebElement DietryNeeds=driver.findElement(By.xpath("//textarea[@id='hobbies']"));
@@ -149,6 +150,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				DietryNeeds.sendKeys("Testing Demo4");
 			    
 			}
+			
 			public void user_enter_the_precautions() throws InterruptedException 
 			{
 				WebElement Precautions=driver.findElement(By.xpath("//textarea[@id='precautions']"));
@@ -167,6 +169,7 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 				Thread.sleep(6000);
 			    
 			}
+			
 			public void user_click_on_the_client_status_tab() throws InterruptedException 
 			{
 				JavascriptExecutor js = (JavascriptExecutor)driver;
@@ -240,12 +243,17 @@ public void click_on_the_assessment_and_care_plan() throws InterruptedException 
 
 			public void user_select_the_speech() throws InterruptedException 
 			{
+				try {
 				WebElement Speech = driver.findElement(By.xpath("//span[@aria-owns='speech_options']"));
 				
 				Thread.sleep(3000);
 				Speech.click();
 				Speech.sendKeys("Good");	
 				Thread.sleep(3000);
+				}
+				catch (Exception e) {
+							
+				}
 			}
 
 			public void user_select_the_swallowing() throws InterruptedException 

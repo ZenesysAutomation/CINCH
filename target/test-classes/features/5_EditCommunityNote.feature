@@ -1,7 +1,7 @@
-Feature: Edit Community Note 
+Feature: Verify the Edit Community Note Functionality
 
-
-Scenario: Verify the Edit Community Note Functionality
+@Reg5
+Scenario: Edit Community Note Functionality
 
 Given Enter the Email
 Given Enter the Password
