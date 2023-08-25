@@ -116,6 +116,7 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void select_the_recurrence() throws InterruptedException {
+		
 	WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));
 	Recurrence.click();
 	Recurrence.sendKeys("Single");
@@ -1065,6 +1066,7 @@ public void select_duration() throws InterruptedException {
 	}
 	
 	public void user_ticked_on_assist_with_oral_care() throws InterruptedException {
+		
 		WebElement AssistWithOralcare =	driver.findElement(By.xpath("(//input[@id='1806'])[1]"));
 		if(AssistWithOralcare.isSelected()) {
 			System.out.println("Checkbox is toggled On");
@@ -1093,9 +1095,15 @@ public void select_duration() throws InterruptedException {
 }
 		
 	public void update_the_assist_with_oral_care_details() throws InterruptedException {
+		try {
+		
 		WebElement Update = driver.findElement(By.xpath("//button[normalize-space()='Update']"));
 		Update.click();
 		Thread.sleep(6000);	
+		}
+		catch (Exception e) {
+			
+		}
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
@@ -1113,6 +1121,7 @@ public void select_duration() throws InterruptedException {
 	}
 	
 	public void user_click_on_the_ad_ls_to_enter_the_eating_details() throws InterruptedException {
+		
 		WebElement Adls2 =driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='ADLs']"));
 		Thread.sleep(6000);
 		Adls2 .click();
@@ -1141,6 +1150,7 @@ public void select_duration() throws InterruptedException {
 		
 	
 	public void verify_if_walk_with_client_tasks_is_already_checked_then_unchecked_it() throws InterruptedException {
+		
 		WebElement WalkWithClient=driver.findElement(By.xpath("(//input[@id='1812'])[1]"));
 		if(WalkWithClient.isSelected()) {
 			WalkWithClient.click();

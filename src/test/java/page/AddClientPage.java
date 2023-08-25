@@ -351,6 +351,7 @@ public void save_the_new_contact_details()throws InterruptedException {
  
  
  public void validation_Message_should_be_shown_client_was_created() {
+	 
 	 	String expectedResult= "Client was created.";
 		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
 		assertEquals("Successfully created",expectedResult,actualResult);

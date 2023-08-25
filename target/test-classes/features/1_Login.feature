@@ -15,7 +15,7 @@ Then Sign In Page should be shown
 Examples:
 |Email|Password|
 |anoop.kumar@zenesys.com |Testing@123|
-#|ankita.chaudhary@zenesys.com |Testing@123|
+|ankita.chaudhary@zenesys.com |Testing@123|
 #|xyz@yopmail.com |xyz@12345|
 
 

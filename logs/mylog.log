@@ -2973,3 +2973,458 @@
 [INFO ] 2023-08-22 09:13:40.789 [main] Hooks - save the single delete visit series
 [INFO ] 2023-08-22 09:14:00.848 [main] Hooks - validation message should be shown - Visit Plan was saved.
 [INFO ] 2023-08-22 09:14:01.044 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 01:49:04.481 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 01:49:47.191 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 01:50:05.786 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 01:50:06.003 [main] Hooks - Entered password
+[INFO ] 2023-08-24 01:50:06.195 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 01:50:10.261 [main] Hooks - select test community 
+[INFO ] 2023-08-24 01:50:10.424 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 01:50:15.341 [main] Hooks - click on clients link..
+[INFO ] 2023-08-24 01:50:34.087 [main] Hooks - click on the user data table..
+[ERROR] 2023-08-24 01:50:54.300 [main] Hooks - Test case failed: Edit Client Functionality
+[INFO ] 2023-08-24 01:50:54.493 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 01:54:53.963 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 01:55:07.559 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 01:55:07.696 [main] Hooks - Entered password
+[INFO ] 2023-08-24 01:55:07.984 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 01:55:12.189 [main] Hooks - select test community 
+[INFO ] 2023-08-24 01:55:12.320 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 01:55:16.970 [main] Hooks - click on clients link..
+[INFO ] 2023-08-24 02:04:12.351 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:04:27.590 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:04:27.789 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:04:28.020 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:04:32.068 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:04:32.199 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:04:37.284 [main] Hooks - click on clients link..
+[ERROR] 2023-08-24 02:04:47.267 [main] Hooks - Test case failed: Edit Client Functionality
+[INFO ] 2023-08-24 02:04:47.428 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 02:06:10.400 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:06:24.496 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:06:24.639 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:06:24.906 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:06:28.975 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:06:29.142 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:06:34.708 [main] Hooks - click on clients link..
+[ERROR] 2023-08-24 02:06:46.012 [main] Hooks - Test case failed: Edit Client Functionality
+[INFO ] 2023-08-24 02:06:46.218 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 02:08:31.267 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:08:48.071 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:08:48.183 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:08:48.390 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:08:52.655 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:08:52.787 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:08:57.840 [main] Hooks - click on clients link..
+[ERROR] 2023-08-24 02:09:07.930 [main] Hooks - Test case failed: Edit Client Functionality
+[INFO ] 2023-08-24 02:09:08.119 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 02:11:04.690 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:11:19.636 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:11:19.782 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:11:20.044 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:11:24.116 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:11:24.268 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:11:29.711 [main] Hooks - click on clients link..
+[ERROR] 2023-08-24 02:11:40.063 [main] Hooks - Test case failed: Edit Client Functionality
+[INFO ] 2023-08-24 02:11:40.267 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 02:12:25.473 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:12:50.770 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:12:50.880 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:12:51.117 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:12:55.178 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:12:55.340 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:13:00.009 [main] Hooks - click on clients link..
+[INFO ] 2023-08-24 02:15:48.961 [main] Hooks - click on the user data table..
+[INFO ] 2023-08-24 02:19:16.780 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:19:32.509 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:19:32.715 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:19:32.888 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:19:36.984 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:19:37.119 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:19:42.595 [main] Hooks - click on clients link..
+[ERROR] 2023-08-24 02:19:52.670 [main] Hooks - Test case failed: Edit Client Functionality
+[INFO ] 2023-08-24 02:19:52.859 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 02:20:36.296 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:20:53.512 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:20:53.604 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:20:53.851 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:20:57.980 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:20:58.147 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:21:02.668 [main] Hooks - click on clients link..
+[INFO ] 2023-08-24 02:21:19.907 [main] Hooks - click on the user data table..
+[INFO ] 2023-08-24 02:21:42.045 [main] Hooks - click on the edit button..
+[INFO ] 2023-08-24 02:21:42.250 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 02:22:11.437 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:22:25.656 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:22:25.796 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:22:26.010 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:22:30.149 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:22:30.278 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:22:34.814 [main] Hooks - click on clients link..
+[INFO ] 2023-08-24 02:22:51.746 [main] Hooks - click on the user data table..
+[INFO ] 2023-08-24 02:23:13.886 [main] Hooks - click on the edit button..
+[INFO ] 2023-08-24 02:23:14.078 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 02:24:31.507 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:24:47.449 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:24:47.628 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:24:47.828 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:24:51.754 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:24:51.890 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:24:56.010 [main] Hooks - click on clients link..
+[INFO ] 2023-08-24 02:25:13.531 [main] Hooks - click on the user data table..
+[INFO ] 2023-08-24 02:25:35.652 [main] Hooks - click on the edit button..
+[INFO ] 2023-08-24 02:25:42.109 [main] Hooks - change the status
+[INFO ] 2023-08-24 02:25:50.874 [main] Hooks - entered the discharge reason
+[INFO ] 2023-08-24 02:25:51.247 [main] Hooks - save data..
+[INFO ] 2023-08-24 02:25:51.409 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 02:26:08.900 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:26:23.421 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:26:23.560 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:26:23.801 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:26:27.788 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:26:27.930 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:26:34.455 [main] Hooks - click on clients link..
+[INFO ] 2023-08-24 02:26:51.290 [main] Hooks - click on the user data table..
+[INFO ] 2023-08-24 02:27:13.421 [main] Hooks - click on the edit button..
+[INFO ] 2023-08-24 02:27:19.837 [main] Hooks - change the status
+[INFO ] 2023-08-24 02:27:28.453 [main] Hooks - entered the discharge reason
+[INFO ] 2023-08-24 02:27:28.628 [main] Hooks - save data..
+[INFO ] 2023-08-24 02:27:28.811 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 02:27:48.995 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:28:03.622 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:28:03.826 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:28:04.047 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:28:08.050 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:28:08.194 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:28:13.322 [main] Hooks - click on clients link..
+[ERROR] 2023-08-24 02:28:23.390 [main] Hooks - Test case failed: Edit Client Functionality
+[INFO ] 2023-08-24 02:28:23.593 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 02:29:02.809 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:30:05.050 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:30:26.634 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:30:26.771 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:30:27.064 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:30:31.048 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:30:31.192 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:30:35.737 [main] Hooks - click on clients link..
+[INFO ] 2023-08-24 02:30:52.900 [main] Hooks - click on the user data table..
+[INFO ] 2023-08-24 02:31:15.026 [main] Hooks - click on the edit button..
+[INFO ] 2023-08-24 02:31:21.515 [main] Hooks - change the status
+[INFO ] 2023-08-24 02:31:30.316 [main] Hooks - entered the discharge reason
+[INFO ] 2023-08-24 02:31:30.702 [main] Hooks - save data..
+[INFO ] 2023-08-24 02:31:30.895 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 02:31:48.074 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:32:01.578 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:32:01.679 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:32:01.948 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:32:06.062 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:32:06.195 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:32:10.609 [main] Hooks - click on clients link..
+[ERROR] 2023-08-24 02:32:20.710 [main] Hooks - Test case failed: Edit Client Functionality
+[INFO ] 2023-08-24 02:32:20.916 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 02:48:49.626 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:49:03.334 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:49:03.487 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:49:03.711 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:49:07.908 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:49:08.070 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:49:12.762 [main] Hooks - click on clients link..
+[INFO ] 2023-08-24 02:49:31.578 [main] Hooks - click on the user data table..
+[INFO ] 2023-08-24 02:49:55.453 [main] Hooks - click on the edit button..
+[INFO ] 2023-08-24 02:50:01.883 [main] Hooks - change the status
+[INFO ] 2023-08-24 02:50:10.610 [main] Hooks - entered the discharge reason
+[INFO ] 2023-08-24 02:50:10.812 [main] Hooks - save data..
+[INFO ] 2023-08-24 02:50:11.049 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 02:50:28.928 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:50:44.087 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:50:44.203 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:50:44.515 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:50:48.571 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:50:48.703 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:50:53.557 [main] Hooks - click on clients link..
+[INFO ] 2023-08-24 02:51:12.313 [main] Hooks - click on the user data table..
+[INFO ] 2023-08-24 02:51:37.848 [main] Hooks - click on the edit button..
+[INFO ] 2023-08-24 02:51:44.309 [main] Hooks - change the status
+[INFO ] 2023-08-24 02:51:53.051 [main] Hooks - entered the discharge reason
+[INFO ] 2023-08-24 02:51:53.424 [main] Hooks - save data..
+[INFO ] 2023-08-24 02:51:53.613 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 02:52:16.845 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:52:35.061 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:52:35.245 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:52:35.482 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:52:40.070 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:52:40.225 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:52:44.639 [main] Hooks - click on clients link..
+[INFO ] 2023-08-24 02:53:02.859 [main] Hooks - click on the user data table..
+[INFO ] 2023-08-24 02:53:29.049 [main] Hooks - click on the edit button..
+[INFO ] 2023-08-24 02:53:35.535 [main] Hooks - change the status
+[INFO ] 2023-08-24 02:53:44.197 [main] Hooks - entered the discharge reason
+[INFO ] 2023-08-24 02:53:44.541 [main] Hooks - save data..
+[INFO ] 2023-08-24 02:53:44.791 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 02:54:38.573 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:55:00.255 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:55:00.425 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:55:00.661 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:55:05.976 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:55:06.145 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:55:11.961 [main] Hooks - click on clients link..
+[INFO ] 2023-08-24 02:55:31.299 [main] Hooks - click on the user data table..
+[INFO ] 2023-08-24 02:55:55.288 [main] Hooks - click on the edit button..
+[INFO ] 2023-08-24 02:56:01.722 [main] Hooks - change the status
+[INFO ] 2023-08-24 02:56:10.375 [main] Hooks - entered the discharge reason
+[INFO ] 2023-08-24 02:56:10.576 [main] Hooks - save data..
+[INFO ] 2023-08-24 02:56:10.813 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 02:56:39.745 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 02:56:54.009 [main] Hooks - Entered Email Address
+[INFO ] 2023-08-24 02:56:54.214 [main] Hooks - Entered password
+[INFO ] 2023-08-24 02:56:54.426 [main] Hooks - click on the login button
+[INFO ] 2023-08-24 02:56:58.504 [main] Hooks - select test community 
+[INFO ] 2023-08-24 02:56:58.691 [main] Hooks - click on continue button
+[INFO ] 2023-08-24 02:57:03.390 [main] Hooks - click on clients link..
+[INFO ] 2023-08-24 02:57:21.889 [main] Hooks - click on the user data table..
+[INFO ] 2023-08-24 02:57:47.938 [main] Hooks - click on the edit button..
+[INFO ] 2023-08-24 02:57:54.370 [main] Hooks - change the status
+[INFO ] 2023-08-24 02:58:03.120 [main] Hooks - entered the discharge reason
+[INFO ] 2023-08-24 02:58:03.298 [main] Hooks - save data..
+[INFO ] 2023-08-24 02:58:03.497 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 05:26:25.027 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 05:26:36.693 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-24 05:26:36.794 [main] Hooks - Password Entered
+[INFO ] 2023-08-24 05:26:37.028 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-24 05:26:40.941 [main] Hooks - Select Test Community
+[INFO ] 2023-08-24 05:26:41.060 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-24 05:26:59.167 [main] Hooks - Clicked on clients button
+[ERROR] 2023-08-24 05:27:19.392 [main] Hooks - Test case failed: Assessments & Care Plans Functionalities
+[INFO ] 2023-08-24 05:27:19.533 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 05:28:30.507 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 05:28:44.983 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-24 05:28:45.076 [main] Hooks - Password Entered
+[INFO ] 2023-08-24 05:28:45.329 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-24 05:28:49.265 [main] Hooks - Select Test Community
+[INFO ] 2023-08-24 05:28:49.382 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-24 05:29:08.336 [main] Hooks - Clicked on clients button
+[ERROR] 2023-08-24 05:29:28.566 [main] Hooks - Test case failed: Assessments & Care Plans Functionalities
+[INFO ] 2023-08-24 05:29:28.692 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 05:31:22.753 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 05:31:36.041 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-24 05:31:36.133 [main] Hooks - Password Entered
+[INFO ] 2023-08-24 05:31:36.405 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-24 05:31:40.304 [main] Hooks - Select Test Community
+[INFO ] 2023-08-24 05:31:40.413 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-24 05:31:58.723 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-24 05:32:15.859 [main] Hooks - Clicked on user data table
+[INFO ] 2023-08-24 05:32:23.367 [main] Hooks - Clicked on assessment and care plan
+[INFO ] 2023-08-24 05:32:31.706 [main] Hooks - entered assessment date
+[INFO ] 2023-08-24 05:32:34.889 [main] Hooks - entered visit schedule
+[INFO ] 2023-08-24 05:32:38.009 [main] Hooks - enter goals of service
+[INFO ] 2023-08-24 05:32:41.140 [main] Hooks - enterd family social network
+[INFO ] 2023-08-24 05:32:44.279 [main] Hooks - enterd special dietary needs
+[INFO ] 2023-08-24 05:32:47.405 [main] Hooks - enterd precautions
+[INFO ] 2023-08-24 05:32:56.541 [main] Hooks - enterd functional limitations restrictions
+[INFO ] 2023-08-24 05:33:02.756 [main] Hooks - clicked client status
+[INFO ] 2023-08-24 05:33:12.852 [main] Hooks - entered condition notes
+[INFO ] 2023-08-24 05:33:16.014 [main] Hooks - entered recent hospital rehab stays
+[INFO ] 2023-08-24 05:33:19.161 [main] Hooks - entered needs medication reminders
+[INFO ] 2023-08-24 05:33:22.320 [main] Hooks - entered how many times per day
+[INFO ] 2023-08-24 05:33:25.468 [main] Hooks - entered allergies description
+[INFO ] 2023-08-24 05:33:28.607 [main] Hooks - entered notes
+[INFO ] 2023-08-24 05:33:35.851 [main] Hooks - select hearing
+[INFO ] 2023-08-24 05:33:42.073 [main] Hooks - select speech
+[INFO ] 2023-08-24 05:33:45.275 [main] Hooks - select swallowing
+[INFO ] 2023-08-24 05:33:48.441 [main] Hooks - select vision
+[INFO ] 2023-08-24 05:33:51.560 [main] Hooks - entered bathing details
+[INFO ] 2023-08-24 05:33:54.710 [main] Hooks - entered transfers mobility deatils
+[INFO ] 2023-08-24 05:33:57.861 [main] Hooks - entered dressing grooming details
+[INFO ] 2023-08-24 05:34:00.992 [main] Hooks - entered continence toileting
+[INFO ] 2023-08-24 05:34:04.123 [main] Hooks - entered continence toileting
+[INFO ] 2023-08-24 05:34:07.264 [main] Hooks - entered meals details
+[INFO ] 2023-08-24 05:34:10.406 [main] Hooks - entered laundry details
+[INFO ] 2023-08-24 05:34:24.535 [main] Hooks - entered household tasks details
+[INFO ] 2023-08-24 05:34:36.725 [main] Hooks - click environment tab
+[INFO ] 2023-08-24 05:34:38.848 [main] Hooks - select radio button
+[INFO ] 2023-08-24 05:34:44.976 [main] Hooks - entered enviromental safety concerns details
+[INFO ] 2023-08-24 05:34:53.150 [main] Hooks - entered economics status
+[INFO ] 2023-08-24 05:34:56.359 [main] Hooks - entered notes
+[INFO ] 2023-08-24 05:35:08.535 [main] Hooks - complete details
+[INFO ] 2023-08-24 05:35:17.664 [main] Hooks - pop up is showing and click on the yes complete button
+[INFO ] 2023-08-24 05:35:30.816 [main] Hooks - clicked on care plan
+[INFO ] 2023-08-24 05:35:52.354 [main] Hooks - create caregiver sign
+[INFO ] 2023-08-24 05:36:13.877 [main] Hooks - create client sign
+[INFO ] 2023-08-24 05:36:30.016 [main] Hooks - clicked on the save signature button
+[INFO ] 2023-08-24 05:36:30.055 [main] Hooks - validation message should be shown assessment was created, test cases passed..
+[INFO ] 2023-08-24 05:36:30.252 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 05:36:47.285 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 05:37:01.449 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-24 05:37:01.541 [main] Hooks - Password Entered
+[INFO ] 2023-08-24 05:37:01.740 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-24 05:37:06.307 [main] Hooks - Select Test Community
+[INFO ] 2023-08-24 05:37:06.416 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-24 05:37:26.568 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-24 05:37:43.727 [main] Hooks - Clicked on user data table
+[ERROR] 2023-08-24 05:37:46.488 [main] Hooks - Test case failed: Assessments & Care Plans Functionalities
+[INFO ] 2023-08-24 05:37:46.622 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 05:38:13.348 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 05:38:30.080 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-24 05:38:30.163 [main] Hooks - Password Entered
+[INFO ] 2023-08-24 05:38:30.347 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-24 05:38:34.431 [main] Hooks - Select Test Community
+[INFO ] 2023-08-24 05:38:34.536 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-24 05:38:53.403 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-24 05:39:10.559 [main] Hooks - Clicked on user data table
+[INFO ] 2023-08-24 05:39:19.487 [main] Hooks - Clicked on assessment and care plan
+[INFO ] 2023-08-24 05:54:16.548 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 05:54:29.375 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-24 05:54:29.453 [main] Hooks - Password Entered
+[INFO ] 2023-08-24 05:54:29.642 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-24 05:54:33.588 [main] Hooks - Select Test Community
+[INFO ] 2023-08-24 05:54:33.690 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-24 05:54:51.757 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-24 05:55:08.717 [main] Hooks - Clicked on user data table
+[ERROR] 2023-08-24 05:55:11.380 [main] Hooks - Test case failed: Assessments & Care Plans Functionalities
+[INFO ] 2023-08-24 05:55:11.507 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 06:20:16.368 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 06:20:28.997 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-24 06:20:29.071 [main] Hooks - Password Entered
+[INFO ] 2023-08-24 06:20:29.249 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-24 06:20:33.155 [main] Hooks - Select Test Community
+[INFO ] 2023-08-24 06:20:33.238 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-24 06:20:51.282 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-24 06:21:08.179 [main] Hooks - Clicked on user data table
+[ERROR] 2023-08-24 06:21:30.126 [main] Hooks - Test case failed: Assessments & Care Plans Functionalities
+[INFO ] 2023-08-24 06:21:30.268 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 06:30:00.127 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 06:30:13.571 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-24 06:30:13.644 [main] Hooks - Password Entered
+[INFO ] 2023-08-24 06:30:13.786 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-24 06:30:17.724 [main] Hooks - Select Test Community
+[INFO ] 2023-08-24 06:30:17.819 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-24 06:30:36.102 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-24 06:30:52.959 [main] Hooks - Clicked on user data table
+[INFO ] 2023-08-24 06:31:30.244 [main] Hooks - Clicked on assessment and care plan
+[ERROR] 2023-08-24 06:31:50.449 [main] Hooks - Test case failed: Assessments & Care Plans Functionalities
+[INFO ] 2023-08-24 06:31:50.575 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 06:43:50.209 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 06:44:03.787 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-24 06:44:03.894 [main] Hooks - Password Entered
+[INFO ] 2023-08-24 06:44:04.154 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-24 06:44:08.270 [main] Hooks - Select Test Community
+[INFO ] 2023-08-24 06:44:08.410 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-24 06:44:27.286 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-24 06:44:44.640 [main] Hooks - Clicked on user data table
+[ERROR] 2023-08-24 06:44:49.320 [main] Hooks - Test case failed: Assessments & Care Plans Functionalities
+[INFO ] 2023-08-24 06:44:49.525 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 07:06:16.942 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 07:06:30.598 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-24 07:06:30.705 [main] Hooks - Password Entered
+[INFO ] 2023-08-24 07:06:30.890 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-24 07:06:35.242 [main] Hooks - Select Test Community
+[INFO ] 2023-08-24 07:06:35.405 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-24 07:06:54.865 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-24 07:07:12.260 [main] Hooks - Clicked on user data table
+[INFO ] 2023-08-24 07:07:16.421 [main] Hooks - Clicked on assessment and care plan
+[ERROR] 2023-08-24 07:07:36.632 [main] Hooks - Test case failed: Assessments & Care Plans Functionalities
+[INFO ] 2023-08-24 07:07:36.834 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 07:09:26.453 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 07:09:49.278 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-24 07:09:49.378 [main] Hooks - Password Entered
+[INFO ] 2023-08-24 07:09:49.688 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-24 07:09:53.937 [main] Hooks - Select Test Community
+[INFO ] 2023-08-24 07:09:54.079 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-24 07:10:12.502 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-24 07:10:29.878 [main] Hooks - Clicked on user data table
+[INFO ] 2023-08-24 07:10:31.427 [main] Hooks - Clicked on assessment and care plan
+[ERROR] 2023-08-24 07:10:51.681 [main] Hooks - Test case failed: Assessments & Care Plans Functionalities
+[INFO ] 2023-08-24 07:10:51.864 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 07:13:57.071 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 07:14:11.199 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-24 07:14:11.312 [main] Hooks - Password Entered
+[INFO ] 2023-08-24 07:14:11.513 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-24 07:14:15.720 [main] Hooks - Select Test Community
+[INFO ] 2023-08-24 07:14:15.884 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-24 07:14:37.596 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-24 07:14:54.796 [main] Hooks - Clicked on user data table
+[INFO ] 2023-08-24 07:14:57.831 [main] Hooks - Clicked on assessment and care plan
+[ERROR] 2023-08-24 07:15:18.066 [main] Hooks - Test case failed: Assessments & Care Plans Functionalities
+[INFO ] 2023-08-24 07:15:18.250 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-24 07:22:56.404 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-24 07:23:12.473 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-24 07:23:12.606 [main] Hooks - Password Entered
+[INFO ] 2023-08-24 07:23:12.908 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-24 07:23:17.525 [main] Hooks - Select Test Community
+[INFO ] 2023-08-24 07:23:17.650 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-24 07:23:36.566 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-24 07:23:53.877 [main] Hooks - Clicked on user data table
+[INFO ] 2023-08-24 07:23:55.651 [main] Hooks - Clicked on assessment and care plan
+[ERROR] 2023-08-24 07:24:15.841 [main] Hooks - Test case failed: Assessments & Care Plans Functionalities
+[INFO ] 2023-08-24 07:24:16.035 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-25 01:09:02.984 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-25 01:09:16.343 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-25 01:09:16.413 [main] Hooks - Entered Password
+[INFO ] 2023-08-25 01:09:16.555 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-25 01:09:20.729 [main] Hooks - Select Test Community
+[INFO ] 2023-08-25 01:09:20.830 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-25 01:09:39.472 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-25 01:09:56.428 [main] Hooks - Clicked on user data table
+[INFO ] 2023-08-25 01:10:19.706 [main] Hooks - Clicked on assessment and care plan
+[ERROR] 2023-08-25 01:10:39.919 [main] Hooks - Test case failed: Assessments & Care Plans Functionalities
+[INFO ] 2023-08-25 01:10:40.045 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-25 01:18:07.585 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-25 01:18:18.886 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-25 01:18:18.956 [main] Hooks - Entered Password
+[INFO ] 2023-08-25 01:18:19.146 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-25 01:18:23.000 [main] Hooks - Select Test Community
+[INFO ] 2023-08-25 01:18:23.095 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-25 01:18:41.422 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-25 01:18:58.354 [main] Hooks - Clicked on user data table
+[INFO ] 2023-08-25 01:19:54.687 [main] Hooks - Clicked on assessment and care plan
+[INFO ] 2023-08-25 01:20:04.451 [main] Hooks - entered assessment date
+[INFO ] 2023-08-25 01:20:07.571 [main] Hooks - entered visit schedule
+[INFO ] 2023-08-25 01:20:10.681 [main] Hooks - enter goals of service
+[INFO ] 2023-08-25 01:20:13.782 [main] Hooks - enterd family social network
+[INFO ] 2023-08-25 01:20:37.158 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-25 01:20:47.611 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-25 01:20:47.682 [main] Hooks - Entered Password
+[INFO ] 2023-08-25 01:20:47.865 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-25 01:20:51.719 [main] Hooks - Select Test Community
+[INFO ] 2023-08-25 01:20:51.819 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-25 01:21:09.500 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-25 01:21:26.387 [main] Hooks - Clicked on user data table
+[INFO ] 2023-08-25 01:21:55.404 [main] Hooks - Clicked on assessment and care plan
+[INFO ] 2023-08-25 01:22:18.399 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-25 01:22:29.944 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-25 01:22:30.014 [main] Hooks - Entered Password
+[INFO ] 2023-08-25 01:22:30.200 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-25 01:22:34.090 [main] Hooks - Select Test Community
+[INFO ] 2023-08-25 01:22:34.192 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-25 01:22:52.752 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-25 01:23:09.630 [main] Hooks - Clicked on user data table
+[INFO ] 2023-08-25 01:23:10.979 [main] Hooks - Clicked on assessment and care plan
+[INFO ] 2023-08-25 01:23:55.972 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-25 01:24:06.642 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-25 01:24:06.717 [main] Hooks - Entered Password
+[INFO ] 2023-08-25 01:24:06.907 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-25 01:24:10.744 [main] Hooks - Select Test Community
+[INFO ] 2023-08-25 01:24:10.842 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-25 01:24:28.686 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-25 01:24:45.573 [main] Hooks - Clicked on user data table
+[INFO ] 2023-08-25 01:24:48.514 [main] Hooks - Clicked on assessment and care plan
+[INFO ] 2023-08-25 01:25:11.543 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-25 01:25:28.853 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-25 01:25:28.926 [main] Hooks - Entered Password
+[INFO ] 2023-08-25 01:25:29.081 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-25 01:25:33.055 [main] Hooks - Select Test Community
+[INFO ] 2023-08-25 01:25:33.159 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-25 01:25:52.108 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-25 01:26:09.028 [main] Hooks - Clicked on user data table
+[INFO ] 2023-08-25 01:29:19.120 [main] Hooks - Clicked on assessment and care plan
+[INFO ] 2023-08-25 01:29:31.433 [main] Hooks - entered assessment date
+[INFO ] 2023-08-25 01:33:11.324 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-25 01:33:28.582 [main] Hooks - Entered Email Address 
+[INFO ] 2023-08-25 01:33:28.720 [main] Hooks - Entered Password
+[INFO ] 2023-08-25 01:33:28.965 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-25 01:33:33.369 [main] Hooks - Select Test Community
+[INFO ] 2023-08-25 01:33:33.521 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-25 01:33:53.641 [main] Hooks - Clicked on clients button
+[INFO ] 2023-08-25 01:34:11.374 [main] Hooks - Clicked on user data table
+[INFO ] 2023-08-25 01:35:08.682 [main] Hooks - Clicked on assessment and care plan
+[INFO ] 2023-08-25 01:35:18.903 [main] Hooks - entered assessment date

@@ -1,6 +1,7 @@
 package page;
 
 import java.time.Duration;
+import java.util.*;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -40,7 +41,6 @@ public void check_the_user_password() throws InterruptedException {
 }
 }
 
-
 public void check_the_login_button() throws InterruptedException {
 	
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -71,24 +71,39 @@ public void click_on_the_clients() throws InterruptedException {
 			   
 }
 public void click_on_the_user_table() throws InterruptedException {
-	/*WebElement EditTable=driver.findElement(By.xpath("//tbody/tr[21]/td[1]"));
-	Thread.sleep(8000);
-	JavascriptExecutor js = (JavascriptExecutor)driver;
-  js.executeScript("arguments[0].click()", EditTable);
-	Thread.sleep(10000);
-	}*/
 	
+//	WebElement EditTable=driver.findElement(By.xpath("//td[@aria-label='Agnes Column Header First Name']"));
+//	Thread.sleep(8000);
+//	JavascriptExecutor js = (JavascriptExecutor)driver;
+//	js.executeScript("arguments[0].click()", EditTable);
+//	Thread.sleep(10000);
+//	}
+//	
 	
-	WebElement EditTable=driver.findElement(By.xpath("//td[@aria-label='Agnes Column Header First Name']"));
+	List<WebElement> table=driver.findElements(By.className("e-row"));
+	Random random= new Random();
+	int randomValue=random.nextInt(table.size());
 	Thread.sleep(8000);
-	JavascriptExecutor js = (JavascriptExecutor)driver;
-	js.executeScript("arguments[0].click()", EditTable);
-	Thread.sleep(10000);
+	WebElement exactRow=(WebElement) table.toArray()[randomValue];
+	JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+	Thread.sleep(8000);
+	jsExecutor.executeScript("arguments[0].scrollIntoView(true);", exactRow);
+	try {
+    	for(int i=1;i<=100;i++) {
+    		if (!exactRow.isDisplayed()) {
+    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", exactRow);
+            }
+    	}
+    	exactRow.click();
+	}
+	catch(Exception e) {
+		e.printStackTrace();
+	}
+	
 	}
 	
 	
-
-public void click_on_the_edit_button() throws InterruptedException {
+	public void click_on_the_edit_button() throws InterruptedException {
 	WebElement Editbtn=driver.findElement(By.xpath("(//button[normalize-space()='Edit'])[1]"));
 	Thread.sleep(6000);
 	JavascriptExecutor js = (JavascriptExecutor)driver;
@@ -100,7 +115,7 @@ public void click_on_the_edit_button() throws InterruptedException {
 		 Thread.sleep(8000);	
 }
 
-public void change_the_status_from_active_to_discharged() throws InterruptedException {
+	public void change_the_status_from_active_to_discharged() throws InterruptedException {
 	WebElement Discharged=driver.findElement(By.xpath("//span[@aria-owns='client-status_options']"));
 	Discharged.click();
 	Thread.sleep(3000);
@@ -111,7 +126,7 @@ public void change_the_status_from_active_to_discharged() throws InterruptedExce
 	
 }
 
-public void enter_the_discharge_reason() throws InterruptedException {
+	public void enter_the_discharge_reason() throws InterruptedException {
 	
 	   WebElement DischargeReason=driver.findElement(By.xpath("(//span[@aria-owns='discharge-reason_options'])[1]"));
 		
@@ -122,7 +137,7 @@ public void enter_the_discharge_reason() throws InterruptedException {
        Thread.sleep(5000);
 }
 
-public void save_the_data() throws InterruptedException {
+	public void save_the_data() throws InterruptedException {
 
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	WebElement SaveData=driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));

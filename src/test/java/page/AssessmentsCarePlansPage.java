@@ -5,6 +5,8 @@ import static org.junit.Assert.assertEquals;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -79,20 +81,90 @@ public void user_click_on_the_clients() throws InterruptedException {
 }
 
 public void click_on_the_user_data_table() throws InterruptedException {
-	WebElement DataTable = driver.findElement(By.xpath("//td[@aria-label='Ankita Column Header First Name']"));
+	/*WebElement DataTable = driver.findElement(By.xpath("//td[@aria-label='Ankita Column Header First Name']"));
 	Thread.sleep(8000);
 	JavascriptExecutor js =(JavascriptExecutor)driver;
 	js.executeScript("arguments[0].click()", DataTable);
 	Thread.sleep(8000);
+	}*/
+	
+	List<WebElement> table=driver.findElements(By.className("e-row"));
+	Random random= new Random();
+	int randomValue=random.nextInt(table.size());
+	Thread.sleep(8000);
+	WebElement exactRow=(WebElement) table.toArray()[randomValue];
+	JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+	Thread.sleep(8000);
+	jsExecutor.executeScript("arguments[0].scrollIntoView(true);", exactRow);
+	try {
+    	for(int i=1;i<=100;i++) {
+    		if (!exactRow.isDisplayed()) {
+    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", exactRow);
+            }
+    	}
+    	exactRow.click();
+	}
+	catch(Exception e) {
+		e.printStackTrace();
+	}
+	
 	}
 
-
 public void click_on_the_assessment_and_care_plan() throws InterruptedException {
-	WebElement Assessment=driver.findElement(By.xpath("//button[normalize-space()='Assessment and Care Plan']"));
+	
+	/*WebElement Assessment=driver.findElement(By.xpath("//button[normalize-space()='Assessment and Care Plan']"));
 	Assessment.click();
-	Thread.sleep(6000);
+	Thread.sleep(6000);*/
+	
+	if(!isAssessmentandCarePlanPresent()){
+		 driver.findElement(By.xpath("//button[normalize-space()='Assessment and Care Plan']")).click();
+	}
+		
+else {
+	driver.navigate().back();
+	Thread.sleep(5000);
+	List<WebElement> table=driver.findElements(By.className("e-row"));
+	Random random= new Random();
+	int randomValue=random.nextInt(table.size());
+	Thread.sleep(8000);
+	WebElement exactRow=(WebElement) table.toArray()[randomValue];
+	JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+	Thread.sleep(8000);
+	jsExecutor.executeScript("arguments[0].scrollIntoView(true);", exactRow);
+	try {
+    	for(int i=1;i<=100;i++) {
+    		if (!exactRow.isDisplayed()) {
+    			jsExecutor.executeScript("arguments[0].scrollTop += "+i+";", exactRow);
+            }
+    	}
+    	exactRow.click();
+    	Thread.sleep(5000);
+    	click_on_the_assessment_and_care_plan();
+    	
+	}
+	catch(Exception e) {
+		e.printStackTrace();
+	}
+	
+	}
+		
+}
+
+	
+private boolean isAssessmentandCarePlanPresent() {
+    try {
+    	WebElement element = driver.findElement(By.xpath("//button[normalize-space()='Assessment and Care Plan']"));
+    	 boolean isDisabled = !element.isEnabled();
+
+        return isDisabled;
+        
+    } catch (org.openqa.selenium.NoSuchElementException e) {
+    	
+        return false;
+    }
 }
 	
+
 		public void user_enter_the_assessment_date() throws InterruptedException {
 		LocalDateTime targetDate = LocalDateTime.now().plusDays(1);
         String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));

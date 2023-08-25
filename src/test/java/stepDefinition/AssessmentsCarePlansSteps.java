@@ -6,6 +6,7 @@ import io.cucumber.java.en.When;
 import page.AssessmentsCarePlansPage;
 
 public class AssessmentsCarePlansSteps extends BaseClass  {
+	
 	AssessmentsCarePlansPage assessment = new AssessmentsCarePlansPage();
 	
 	
@@ -22,7 +23,7 @@ public class AssessmentsCarePlansSteps extends BaseClass  {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		log.info("Password Entered");
+		log.info("Entered Password");
 	}
 
 	@Then("user click on the Login Button")
@@ -287,7 +288,7 @@ public class AssessmentsCarePlansSteps extends BaseClass  {
 	@Then("click on the save Signature Button")
 	public void click_on_the_save_signature_button() throws InterruptedException {
 	   assessment.click_on_the_save_signature_button();
-	   log.info("clicked on the save signature button");
+	   log.info("save the signature button");
 	}
 
 	@Then ("Validation message should be shown Assessment was created")
