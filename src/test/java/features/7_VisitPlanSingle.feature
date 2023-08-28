@@ -18,7 +18,6 @@ Then Select the Single Day
 Then Select the Recurrence
 Then Select the Start Time
 Then Select a Duration 
-#Then Select the Recurrence 
 Then Select the Start Date 
 Then click on the Save Button
 Then Save the all Single Visit Details
@@ -85,7 +84,10 @@ Then Select the tasks with Check Blood Pressure
 And I Select the Visits Time
 And Enter the CareGiver Instructions
 And Update the Medication Details
-And Save the Medication Details 
+And Save the Medication Details
+And Click on the IADL
+And Click on the Other 
+And Select No Assistance  
 Then Click on the Add To schedule Button and Finalize Visits
 
 @abc2
@@ -129,16 +131,17 @@ And  Users Select the Visits Time
 And User Update the Medication Details
 And User Save the Medication Details 
 Then User Click on the Add to Schedule and Finalize Visits
-
+Then Delete the single visit serise
+And Save the Single Visit Series
 
 
 @abc4
 Scenario: Add visits for a Custom Date Range
 Then Check the Add Visit Configuration Button
-Given user select all the days
+Given user select Single days
+Then User Select the weekly recurrence
 Then User Select Start Time
 Then User select a Duration
-Then User Select the Weekly recurrence
 Then User select start date 
 Then user Click on the Use Custom End Date toggle 
 And User enter the End Date
@@ -149,7 +152,7 @@ Then Message should be Shown Visit Plan was saved3
 
 @abc5
 Scenario: Change the End Date on a Custom Date Range
-Then Click on the Everyday Table 
+Then Click on the Single day Table 
 And Change The End Date 
 And Update the Visits
 And Save The Visits

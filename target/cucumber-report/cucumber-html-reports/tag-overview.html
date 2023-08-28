@@ -49,32 +49,32 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels: ["@Test"],
+        labels: ["@Abc","@Reg","@Reg2","@Reg4","@Reg5","@Reg6","@Reg7","@Reg8","@Regression","@Regression1","@Regression2","@Regression3","@Regression4","@Test","@abc2","@abc3","@abc4","@abc5","@abc6","@sanity","@smoke","@xyz","@xyz1","@xyz2"],
         datasets: [
             {
                 label: 'Passed',
                 backgroundColor: "#92DD96",
-                data: [0.00]
+                data: [0.00, 97.67, 100.00, 100.00, 100.00, 0.00, 0.00, 0.00, 25.00, 25.00, 25.00, 25.00, 33.33, 100.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 78.26, 0.00, 0.00, 0.00]
             },
             {
                 label: 'Failed',
                 backgroundColor: "#F2928C",
-                data: [0.00]
+                data: [0.00, 2.33, 0.00, 0.00, 0.00, 11.11, 11.11, 11.11, 25.00, 25.00, 25.00, 25.00, 33.33, 0.00, 20.00, 3.45, 9.09, 20.00, 25.00, 1.64, 2.17, 1.64, 20.00, 25.00]
             },
             {
                 label: 'Skipped',
                 backgroundColor: "#8AF",
-                data: [100.00]
+                data: [100.00, 0.00, 0.00, 0.00, 0.00, 88.89, 88.89, 88.89, 50.00, 50.00, 50.00, 50.00, 33.33, 0.00, 80.00, 96.55, 90.91, 80.00, 75.00, 98.36, 19.57, 98.36, 80.00, 75.00]
             },
             {
                 label: 'Pending',
                 backgroundColor: "#F5F28F",
-                data: [0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
             },
             {
                 label: 'Undefined',
                 backgroundColor: "#F5B975",
-                data: [0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>COM.CINCHCCM</td>
                           <td>1</td>
-                        <td>22 Aug 2023, 02:14</td>
+                        <td>25 Aug 2023, 09:07</td>
           </tr>
         </tbody>
       </table>
@@ -192,50 +192,395 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="Test.html">@Test</a></td>
+        <td class="tagname"><a href="Abc.html">@Abc</a></td>
         
         <td >0</td>
         <td  class="failed"    >1</td>
         <td class="total">1</td>
         <td >0</td>
         <td >0</td>
+        <td     class="skipped"   >61</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">61</td>
+        <td class="duration" data-value="0">000ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Reg.html">@Reg</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td      class="passed"    >42</td>
+        <td      class="failed"    >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">43</td>
+        <td class="duration" data-value="120394486500">2m 394ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Reg2.html">@Reg2</a></td>
+        
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+        <td      class="passed"    >11</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">11</td>
+        <td class="duration" data-value="79270047200">1m 19s 270ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Reg4.html">@Reg4</a></td>
+        
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+        <td      class="passed"    >13</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">13</td>
+        <td class="duration" data-value="43810387800">43s 810ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Reg5.html">@Reg5</a></td>
+        
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+        <td      class="passed"    >12</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">12</td>
+        <td class="duration" data-value="55925867900">55s 925ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Reg6.html">@Reg6</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
         <td     class="skipped"   >8</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">8</td>
-        <td class="duration" data-value="3015700">003ms</td>
+        <td class="total">9</td>
+        <td class="duration" data-value="1251737461300">20m 51s 737ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Reg7.html">@Reg7</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >8</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">9</td>
+        <td class="duration" data-value="20044807900">20s 044ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Reg8.html">@Reg8</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >8</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">9</td>
+        <td class="duration" data-value="20056373700">20s 056ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Regression.html">@Regression</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td      class="passed"    >1</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >2</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">4</td>
+        <td class="duration" data-value="42071235600">42s 071ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Regression1.html">@Regression1</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td      class="passed"    >1</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >2</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">4</td>
+        <td class="duration" data-value="42119215800">42s 119ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Regression2.html">@Regression2</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td      class="passed"    >1</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >2</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">4</td>
+        <td class="duration" data-value="42076200400">42s 076ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Regression3.html">@Regression3</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td      class="passed"    >1</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >2</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">4</td>
+        <td class="duration" data-value="42098761700">42s 098ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Regression4.html">@Regression4</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td      class="passed"    >1</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+        <td class="duration" data-value="42086746200">42s 086ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Test.html">@Test</a></td>
+        
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+        <td      class="passed"    >16</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">16</td>
+        <td class="duration" data-value="50272817600">50s 272ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="abc2.html">@abc2</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >4</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">5</td>
+        <td class="duration" data-value="20049197500">20s 049ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="abc3.html">@abc3</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >28</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">29</td>
+        <td class="duration" data-value="20070517000">20s 070ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="abc4.html">@abc4</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >10</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">11</td>
+        <td class="duration" data-value="20060859900">20s 060ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="abc5.html">@abc5</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >4</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">5</td>
+        <td class="duration" data-value="20052832300">20s 052ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="abc6.html">@abc6</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">4</td>
+        <td class="duration" data-value="20024967200">20s 024ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="sanity.html">@sanity</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >60</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">61</td>
+        <td class="duration" data-value="20004088800">20s 004ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="smoke.html">@smoke</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td      class="passed"    >36</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >9</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">46</td>
+        <td class="duration" data-value="302165197000">5m 2s 165ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="xyz.html">@xyz</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >60</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">61</td>
+        <td class="duration" data-value="20042318800">20s 042ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="xyz1.html">@xyz1</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >4</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">5</td>
+        <td class="duration" data-value="20058103500">20s 058ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="xyz2.html">@xyz2</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">4</td>
+        <td class="duration" data-value="20015703500">20s 015ms</td>
         <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>1</td>
-            <td>0</td>
-      <td>1</td>
-      <td>1</td>
+      <td>24</td>
+            <td>5</td>
+      <td>20</td>
+      <td>25</td>
+      <td>135</td>
+      <td>19</td>
+      <td>279</td>
       <td>0</td>
       <td>0</td>
-      <td>8</td>
-      <td>0</td>
-      <td>0</td>
-      <td>8</td>
-      <td class="duration">003ms</td>
+      <td>433</td>
+      <td class="duration">38m 54s 508ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>0.00%</td>
-      <td>100.00%</td>
+            <td>20.00%</td>
+      <td>80.00%</td>
       <td></td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td>100.00%</td>
+      <td>31.18%</td>
+      <td>4.39%</td>
+      <td>64.43%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>100.00%</td>
+      <td>80.00%</td>
     </tr>
   </tfoot>
 </table>

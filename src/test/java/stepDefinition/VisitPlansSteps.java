@@ -493,10 +493,41 @@ public void save_the_medication_details () throws InterruptedException {
 	log.info("save the medication Details..");
 }
 
+@And ("Click on the IADL")
+public void click_on_the_iadl() throws InterruptedException {
+	visitplan.click_on_the_iadl();
+	log.info("click on the IADLS..");
+}
+
+
+@And ("Click on the Other")
+public void click_on_the_other() throws InterruptedException {
+	visitplan.click_on_the_other();
+	log.info("click on the other button");
+}
+
+
+@And ("Select No Assistance")
+public void select_no_assistance() throws InterruptedException {
+	visitplan.select_no_assistance();
+	log.info("select No Assistance");
+}
+
 @Then ("Click on the Add To schedule Button and Finalize Visits")
 public boolean click_on_the_add_to_schedule_button_and_finalize_visits() throws InterruptedException {
 	log.info("Click on the Add To Schedule and Finalize Visits..");
 	return visitplan.click_on_the_add_to_schedule_button_and_finalize_visits();
+	
+}
+
+@Then ("Delete the Everyday visit series")
+public void delete_the_everyday_visit_series() throws InterruptedException {
+	visitplan.delete_the_everyday_visit_series();
+	
+}
+@And ("Save the Everyday Visit Series")
+public void save_the_everyday_visit_series() throws InterruptedException {
+	visitplan.save_the_everyday_visit_series();
 	
 }
 
@@ -646,10 +677,7 @@ public void select_the_visit_time() throws InterruptedException {
 	visitplan.select_the_visit_time();
 	log.info("Select the visit time..");	
 }
-//@Then ("user Enter the caregiver Instructions")
-//public void user_enter_the_caregiver_instructions1() throws InterruptedException {
-//	visitplan.user_enter_the_caregiver_instructions1();
-//}
+
 
 @Then ("Update the Assist with Oral Care details")
 public void update_the_assist_with_oral_care_details() throws InterruptedException {
@@ -734,11 +762,6 @@ public void users_select_the_visits_time() {
 	visitplan.users_select_the_visits_time();
 	log.info("select the visits time.");
 }
-//@And ("User Enter Caregiver Instructions For Medication")
-//public void user_enter_caregiver_instructions_for_medication() throws InterruptedException {
-	//visitplan.user_enter_caregiver_instructions_for_medication();
-	
-//}
 
 @And ("User Update the Medication Details")
 public void user_update_the_medication_details() throws InterruptedException {
@@ -757,7 +780,21 @@ public boolean user_click_on_the_add_to_schedule_and_finalize_visits() throws In
 	return visitplan.user_click_on_the_add_to_schedule_and_finalize_visits();
 	
 }
-// change tasks
+
+@Then ("Delete the single visit serise")
+public void delete_the_single_visit_serise() throws InterruptedException {
+	visitplan.delete_the_single_visit_serise();
+}
+
+
+@And ("Save the Single Visit Series")
+public void save_the_single_visit_series() throws InterruptedException {
+	visitplan.save_the_single_visit_series();
+	
+}
+
+
+// custom date range
 
 @Then("Check the Add Visit Configuration Button")
 public void check_the_add_visit_configuration_button() throws InterruptedException {
@@ -766,10 +803,10 @@ public void check_the_add_visit_configuration_button() throws InterruptedExcepti
 }
 
 
-@Given ("user select all the days")
-public void user_select_all_the_days() throws InterruptedException {
-	visitplan.user_select_all_the_days();
-	log.info("Select All Days..");
+@Given ("user select Single days")
+public void user_select_single_days() throws InterruptedException {
+	visitplan.user_select_single_days();
+	log.info("Select single Days..");
 }
 
 
@@ -785,7 +822,7 @@ public void user_select_a_duration() throws InterruptedException {
 	log.info("Select duration..");
 }
 
-@Then("User Select the Weekly recurrence")
+@Then("User Select the weekly recurrence")
 	public void user_select_the_weekly_recurrence() throws InterruptedException {
 	visitplan.user_select_the_weekly_recurrence();
 	log.info("Select- Weekly Recurrence..");
@@ -829,9 +866,9 @@ public void message_should_be_shown_visit_plan_was_saved3() {
 	log.info("validation msg is showing-Visit Plan was saved");
 }
 
-@Then ("Click on the Everyday Table")
-public void click_on_the_everyday_table () throws InterruptedException {
-	visitplan.click_on_the_everyday_table();
+@Then ("Click on the Single day Table")
+public void click_on_the_single_day_table () throws InterruptedException {
+	visitplan.click_on_the_single_day_table();
 	log.info("click on the table");
 }
 

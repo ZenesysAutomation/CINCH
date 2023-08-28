@@ -87,3 +87,9 @@ And Enter the CareGiver Instructions
 And Update the Medication Details
 And Save the Medication Details 
 Then Click on the Add To schedule Button and Finalize Visits
+
+
+@sanity1
+Scenario: Delete the Past Visit Series
+Then Delete the Everyday visit series
+And Save the Everyday Visit Series
