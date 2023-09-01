@@ -1,6 +1,9 @@
-Feature: Verify the Add Past Visits Plans Functionalities
+Feature: Hourly Visit
 
-Background: Common Steps for all the Test Cases to login the Application
+
+
+@HourlyVisit
+Scenario: Verify the Hourly Visit Functionality
 
 Given User enter the Email
 When User enter the Password
@@ -8,24 +11,17 @@ Then User Click on the Login
 Then User select the Test Community
 Then User click on the Continue Button
 Then User click on the Visit Plans
-Then Click on the User first Name
-
-@Reg8
-Scenario: Verify Add a visit to the Past
-
-Then User Go to the Add Visit Configuration
-Given user select all Days
-Then select start time
-Then select Duration
-Then select Weekly recurrence
-Then select past Date
-Then User Click on the save Button
-And Save the For All Days Visit Details
-Then Message should be Shown Visit Plan was saved
-
-@sanity
-Scenario: Verify The ADLs and IADLS Functionalities
-
+Then Click on the Visit Plans Table 
+Then Click on the Add Visit Configuration
+Then Select the Single Day
+Then Select the Recurrence
+Then Select the Start Time
+Then Select the Hourly Visit
+And Select the End Time
+And Select the Hourly Rate
+Then Select the Start Date
+Then click on the Save Button
+Then Save the all Single Visit Details
 When Click on the ADLs Tab
 Then Click on the Bathing
 Then Select the Bathing Assistance Level as a Supervision
@@ -85,11 +81,9 @@ Then Select the tasks with Check Blood Pressure
 And I Select the Visits Time
 And Enter the CareGiver Instructions
 And Update the Medication Details
-And Save the Medication Details 
+And Save the Medication Details
+And Click on the IADL
+And Click on the Other 
+And Select No Assistance  
 Then Click on the Add To schedule Button and Finalize Visits
 
-
-@sanity1
-Scenario: Delete the Past Visit Series
-Then Delete the Everyday visit series
-And Save the Everyday Visit Series

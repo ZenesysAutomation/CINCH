@@ -80,7 +80,7 @@
 [INFO ] 2023-08-10 07:37:26.528 [main] Hooks - select move only this occurence
 [INFO ] 2023-08-10 07:37:46.802 [main] Hooks - save the visit
 [INFO ] 2023-08-10 07:37:47.008 [main] Hooks - Browser Closed.
-[INFO ] 2023-08-11 01:23:35.580 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-11 01:23:35.580 [main] Hooks - Browser Launched..		
 [INFO ] 2023-08-11 01:23:49.754 [main] Hooks - entered email address and password 
 [INFO ] 2023-08-11 01:23:53.024 [main] Hooks - Clicked on login button
 [INFO ] 2023-08-11 01:23:56.209 [main] Hooks - Select Test Community
@@ -4099,3 +4099,722 @@
 [INFO ] 2023-08-25 03:22:17.709 [main] Hooks - click on visit.
 [ERROR] 2023-08-25 03:22:37.909 [main] Hooks - Test case failed: Delete one visit in a Series
 [INFO ] 2023-08-25 03:22:38.093 [main] Hooks - Browser Closed..
+[INFO ] 2023-08-31 03:07:08.267 [main] Hooks - Browser Launched..
+[INFO ] 2023-08-31 03:07:21.378 [main] Hooks - entered email address and password 
+[INFO ] 2023-08-31 03:07:21.635 [main] Hooks - Clicked on login button
+[INFO ] 2023-08-31 03:07:25.694 [main] Hooks - Select Test Community
+[INFO ] 2023-08-31 03:07:25.821 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-08-31 03:07:30.025 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-08-31 03:07:30.103 [main] Hooks - Click Account User name
+[INFO ] 2023-08-31 03:07:31.495 [main] Hooks - user clicked on logout button
+[INFO ] 2023-08-31 03:07:33.063 [main] Hooks - user can view sign in page test passed.
+[INFO ] 2023-08-31 03:07:33.126 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 01:09:28.463 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 01:09:43.754 [main] Hooks - entered email address
+[INFO ] 2023-09-01 01:09:43.966 [main] Hooks - entered password
+[INFO ] 2023-09-01 01:09:44.212 [main] Hooks - click on login
+[INFO ] 2023-09-01 01:09:48.329 [main] Hooks - select test community
+[INFO ] 2023-09-01 01:09:48.511 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 01:10:02.191 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 01:10:11.357 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 01:10:17.612 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 01:10:17.613 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 01:10:34.360 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 01:10:37.727 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 01:10:41.882 [main] Hooks - Select hourly visit
+[ERROR] 2023-09-01 01:11:02.212 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 01:11:02.417 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 01:20:23.077 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 01:20:40.357 [main] Hooks - entered email address
+[INFO ] 2023-09-01 01:20:40.474 [main] Hooks - entered password
+[INFO ] 2023-09-01 01:20:40.741 [main] Hooks - click on login
+[INFO ] 2023-09-01 01:20:44.840 [main] Hooks - select test community
+[INFO ] 2023-09-01 01:20:44.954 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 01:20:59.818 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 01:21:09.034 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 01:21:15.296 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 01:21:15.296 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 01:21:32.143 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 01:21:35.529 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 01:21:39.661 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 01:21:42.964 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 01:21:45.212 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 01:21:53.808 [main] Hooks - Select start time
+[INFO ] 2023-09-01 01:22:12.068 [main] Hooks - click on save button
+[ERROR] 2023-09-01 01:22:13.371 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 01:22:13.624 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 01:22:39.888 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 01:22:53.470 [main] Hooks - entered email address
+[INFO ] 2023-09-01 01:22:53.670 [main] Hooks - entered password
+[INFO ] 2023-09-01 01:22:53.902 [main] Hooks - click on login
+[INFO ] 2023-09-01 01:22:57.863 [main] Hooks - select test community
+[INFO ] 2023-09-01 01:22:58.001 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 01:23:12.853 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 01:23:22.036 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 01:23:28.270 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 01:23:28.270 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 01:23:45.076 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 01:23:48.430 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 01:23:52.604 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 01:23:55.931 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 01:23:58.213 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 01:24:06.837 [main] Hooks - Select start time
+[INFO ] 2023-09-01 01:24:25.075 [main] Hooks - click on save button
+[ERROR] 2023-09-01 01:24:26.343 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 01:24:26.533 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 01:32:18.369 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 01:32:33.024 [main] Hooks - entered email address
+[INFO ] 2023-09-01 01:32:33.223 [main] Hooks - entered password
+[INFO ] 2023-09-01 01:32:33.450 [main] Hooks - click on login
+[INFO ] 2023-09-01 01:32:37.420 [main] Hooks - select test community
+[INFO ] 2023-09-01 01:32:37.578 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 01:32:51.153 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 01:33:00.350 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 01:33:06.607 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 01:33:06.607 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 01:33:23.505 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 01:33:26.864 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 01:33:31.021 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 01:33:34.243 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 01:33:36.467 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 01:33:44.834 [main] Hooks - Select start time
+[INFO ] 2023-09-01 01:34:03.050 [main] Hooks - click on save button
+[ERROR] 2023-09-01 01:34:04.291 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 01:34:04.433 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 01:34:45.880 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 01:34:57.427 [main] Hooks - entered email address
+[INFO ] 2023-09-01 01:34:57.515 [main] Hooks - entered password
+[INFO ] 2023-09-01 01:34:57.758 [main] Hooks - click on login
+[INFO ] 2023-09-01 01:35:01.660 [main] Hooks - select test community
+[INFO ] 2023-09-01 01:35:01.754 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 01:35:14.921 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 01:35:24.108 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 01:35:30.354 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 01:35:30.354 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 01:35:47.016 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 01:35:50.307 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 01:35:54.452 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 01:35:57.721 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 01:35:59.935 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 01:36:08.319 [main] Hooks - Select start time
+[INFO ] 2023-09-01 01:36:26.584 [main] Hooks - click on save button
+[ERROR] 2023-09-01 01:36:36.889 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 01:36:37.048 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 01:45:11.139 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 01:45:21.733 [main] Hooks - entered email address
+[INFO ] 2023-09-01 01:45:21.834 [main] Hooks - entered password
+[INFO ] 2023-09-01 01:45:22.089 [main] Hooks - click on login
+[INFO ] 2023-09-01 01:45:25.924 [main] Hooks - select test community
+[INFO ] 2023-09-01 01:45:26.038 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 01:45:38.650 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 01:45:47.829 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 01:45:54.052 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 01:45:54.052 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 01:46:10.693 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 01:46:14.016 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 01:46:18.151 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 01:46:21.438 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 01:46:23.634 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 01:46:32.009 [main] Hooks - Select start time
+[INFO ] 2023-09-01 01:46:32.200 [main] Hooks - click on save button
+[ERROR] 2023-09-01 01:46:33.773 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 01:46:33.930 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 01:47:28.627 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 01:47:39.023 [main] Hooks - entered email address
+[INFO ] 2023-09-01 01:47:39.129 [main] Hooks - entered password
+[INFO ] 2023-09-01 01:47:39.386 [main] Hooks - click on login
+[INFO ] 2023-09-01 01:47:43.247 [main] Hooks - select test community
+[INFO ] 2023-09-01 01:47:43.353 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 01:47:56.008 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 01:48:05.179 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 01:48:11.391 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 01:48:11.391 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 01:48:28.053 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 01:48:31.360 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 01:48:35.487 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 01:48:38.758 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 01:48:40.962 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 01:48:49.329 [main] Hooks - Select start time
+[INFO ] 2023-09-01 01:48:49.527 [main] Hooks - click on save button
+[ERROR] 2023-09-01 01:48:51.126 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 01:48:51.284 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 01:49:42.985 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 01:49:55.704 [main] Hooks - entered email address
+[INFO ] 2023-09-01 01:49:55.801 [main] Hooks - entered password
+[INFO ] 2023-09-01 01:49:56.056 [main] Hooks - click on login
+[INFO ] 2023-09-01 01:49:59.918 [main] Hooks - select test community
+[INFO ] 2023-09-01 01:50:00.041 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 01:50:13.344 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 01:50:22.500 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 01:50:28.726 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 01:50:28.726 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 01:50:45.398 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 01:50:48.710 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 01:50:52.848 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 01:50:56.113 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 01:50:58.309 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 01:51:04.660 [main] Hooks - Select start time
+[INFO ] 2023-09-01 01:51:04.856 [main] Hooks - click on save button
+[ERROR] 2023-09-01 01:51:06.463 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 01:51:06.630 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 01:52:18.776 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 01:52:30.730 [main] Hooks - entered email address
+[INFO ] 2023-09-01 01:52:30.839 [main] Hooks - entered password
+[INFO ] 2023-09-01 01:52:31.108 [main] Hooks - click on login
+[INFO ] 2023-09-01 01:52:34.959 [main] Hooks - select test community
+[INFO ] 2023-09-01 01:52:35.083 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 01:52:48.002 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 01:52:57.174 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 01:53:03.398 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 01:53:03.398 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 01:53:20.042 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 01:53:23.352 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 01:53:25.485 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 01:53:28.777 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 01:53:30.982 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 01:53:37.324 [main] Hooks - Select start time
+[INFO ] 2023-09-01 01:53:37.581 [main] Hooks - click on save button
+[ERROR] 2023-09-01 01:53:38.806 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 01:53:38.992 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 01:56:06.571 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 01:56:18.661 [main] Hooks - entered email address
+[INFO ] 2023-09-01 01:56:18.771 [main] Hooks - entered password
+[INFO ] 2023-09-01 01:56:19.032 [main] Hooks - click on login
+[INFO ] 2023-09-01 01:56:22.928 [main] Hooks - select test community
+[INFO ] 2023-09-01 01:56:23.032 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 01:56:35.869 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 01:56:45.036 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 01:56:51.255 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 01:56:51.255 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 01:57:07.930 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 01:57:11.239 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 01:57:13.364 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 01:57:16.635 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 01:57:18.838 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 01:57:23.208 [main] Hooks - Select start time
+[INFO ] 2023-09-01 01:57:23.398 [main] Hooks - click on save button
+[INFO ] 2023-09-01 01:57:23.541 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 02:03:29.516 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 02:03:40.589 [main] Hooks - entered email address
+[INFO ] 2023-09-01 02:03:40.687 [main] Hooks - entered password
+[INFO ] 2023-09-01 02:03:40.942 [main] Hooks - click on login
+[INFO ] 2023-09-01 02:03:44.828 [main] Hooks - select test community
+[INFO ] 2023-09-01 02:03:44.939 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 02:03:57.802 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 02:04:06.975 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 02:04:13.196 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 02:04:13.196 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 02:04:28.840 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 02:04:32.128 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 02:04:34.264 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 02:04:37.509 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 02:04:39.712 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 02:04:44.059 [main] Hooks - Select start time
+[INFO ] 2023-09-01 02:04:44.255 [main] Hooks - click on save button
+[ERROR] 2023-09-01 02:04:45.845 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 02:04:46.043 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 02:05:17.664 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 02:05:30.051 [main] Hooks - entered email address
+[INFO ] 2023-09-01 02:05:30.145 [main] Hooks - entered password
+[INFO ] 2023-09-01 02:05:30.413 [main] Hooks - click on login
+[INFO ] 2023-09-01 02:05:34.265 [main] Hooks - select test community
+[INFO ] 2023-09-01 02:05:34.363 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 02:05:47.262 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 02:05:56.442 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 02:06:02.659 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 02:06:02.659 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 02:06:18.249 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 02:06:21.543 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 02:06:23.672 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 02:06:26.934 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 02:06:29.123 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 02:06:33.457 [main] Hooks - Select start time
+[INFO ] 2023-09-01 02:06:33.656 [main] Hooks - click on save button
+[ERROR] 2023-09-01 02:06:35.201 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 02:06:35.342 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 02:08:25.333 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 02:08:36.195 [main] Hooks - entered email address
+[INFO ] 2023-09-01 02:08:36.281 [main] Hooks - entered password
+[INFO ] 2023-09-01 02:08:36.538 [main] Hooks - click on login
+[INFO ] 2023-09-01 02:08:40.442 [main] Hooks - select test community
+[INFO ] 2023-09-01 02:08:40.529 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 02:08:53.403 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 02:09:02.569 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 02:09:08.799 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 02:09:08.799 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 02:09:24.390 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 02:09:27.678 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 02:09:29.810 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 02:09:33.047 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 02:09:35.246 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 02:09:39.579 [main] Hooks - Select start time
+[INFO ] 2023-09-01 02:09:39.764 [main] Hooks - click on save button
+[ERROR] 2023-09-01 02:09:41.322 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 02:09:41.464 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 02:18:08.651 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 02:18:22.097 [main] Hooks - entered email address
+[INFO ] 2023-09-01 02:18:22.212 [main] Hooks - entered password
+[INFO ] 2023-09-01 02:18:22.528 [main] Hooks - click on login
+[INFO ] 2023-09-01 02:18:26.430 [main] Hooks - select test community
+[INFO ] 2023-09-01 02:18:26.548 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 02:18:39.251 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 02:18:48.407 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 02:18:54.631 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 02:18:54.631 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 02:19:10.285 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 02:19:13.577 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 02:19:15.713 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 02:19:18.971 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 02:19:21.174 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 02:19:25.548 [main] Hooks - Select start time
+[INFO ] 2023-09-01 02:19:25.729 [main] Hooks - click on save button
+[ERROR] 2023-09-01 02:19:27.307 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 02:19:27.511 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 02:23:27.248 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 02:23:37.968 [main] Hooks - entered email address
+[INFO ] 2023-09-01 02:23:38.068 [main] Hooks - entered password
+[INFO ] 2023-09-01 02:23:38.330 [main] Hooks - click on login
+[INFO ] 2023-09-01 02:23:42.208 [main] Hooks - select test community
+[INFO ] 2023-09-01 02:23:42.324 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 02:23:56.109 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 02:24:05.305 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 02:24:11.531 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 02:24:11.531 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 02:24:27.188 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 02:24:30.479 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 02:24:32.613 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 02:24:35.877 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 02:24:38.077 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 02:24:42.421 [main] Hooks - Select start time
+[INFO ] 2023-09-01 02:24:42.696 [main] Hooks - click on save button
+[ERROR] 2023-09-01 02:24:43.899 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 02:24:44.081 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 02:28:36.458 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 02:28:48.370 [main] Hooks - entered email address
+[INFO ] 2023-09-01 02:28:48.470 [main] Hooks - entered password
+[INFO ] 2023-09-01 02:28:48.725 [main] Hooks - click on login
+[INFO ] 2023-09-01 02:28:52.642 [main] Hooks - select test community
+[INFO ] 2023-09-01 02:28:52.754 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 02:29:07.061 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 02:29:16.228 [main] Hooks - click on the table..
+[ERROR] 2023-09-01 02:29:36.417 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 02:29:36.568 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 02:31:28.836 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 02:31:41.324 [main] Hooks - entered email address
+[INFO ] 2023-09-01 02:31:41.402 [main] Hooks - entered password
+[INFO ] 2023-09-01 02:31:41.568 [main] Hooks - click on login
+[INFO ] 2023-09-01 02:31:45.730 [main] Hooks - select test community
+[INFO ] 2023-09-01 02:31:45.831 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 02:31:58.683 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 02:32:07.853 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 02:32:14.076 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 02:32:14.076 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 02:32:29.739 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 02:32:33.055 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 02:32:35.195 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 02:32:38.431 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 02:32:40.624 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 02:32:44.978 [main] Hooks - Select start time
+[INFO ] 2023-09-01 02:32:49.186 [main] Hooks - click on save button
+[ERROR] 2023-09-01 02:32:50.484 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 02:32:50.672 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 02:35:01.285 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 02:35:14.535 [main] Hooks - entered email address
+[INFO ] 2023-09-01 02:35:14.639 [main] Hooks - entered password
+[INFO ] 2023-09-01 02:35:14.893 [main] Hooks - click on login
+[INFO ] 2023-09-01 02:35:18.769 [main] Hooks - select test community
+[INFO ] 2023-09-01 02:35:18.873 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 02:35:31.819 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 02:35:40.998 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 02:35:47.225 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 02:35:47.225 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 02:36:02.843 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 02:36:06.121 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 02:36:08.249 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 02:36:11.499 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 02:36:13.701 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 02:36:18.054 [main] Hooks - Select start time
+[INFO ] 2023-09-01 02:36:22.319 [main] Hooks - click on save button
+[INFO ] 2023-09-01 02:36:28.588 [main] Hooks - save all single visit details
+[INFO ] 2023-09-01 02:36:38.730 [main] Hooks - click on adls.
+[INFO ] 2023-09-01 02:36:40.804 [main] Hooks - click on bathing..
+[INFO ] 2023-09-01 02:36:48.141 [main] Hooks - select supervision bathing assistance
+[INFO ] 2023-09-01 02:36:52.412 [main] Hooks - select assist with shower tasks
+[INFO ] 2023-09-01 02:37:00.603 [main] Hooks - select visits timing
+[INFO ] 2023-09-01 02:37:06.776 [main] Hooks - entered caregiver instructions notes.
+[INFO ] 2023-09-01 02:37:16.943 [main] Hooks - click on update button
+[INFO ] 2023-09-01 02:37:23.052 [main] Hooks - save bathing details..
+[INFO ] 2023-09-01 02:37:37.184 [main] Hooks - click on adls..
+[INFO ] 2023-09-01 02:37:39.281 [main] Hooks - click on the continence and toileting..
+[INFO ] 2023-09-01 02:37:45.538 [main] Hooks - click on the assistance level
+[INFO ] 2023-09-01 02:37:55.665 [main] Hooks - save continence and toileting deatils
+[INFO ] 2023-09-01 02:38:09.770 [main] Hooks - click on adls..
+[INFO ] 2023-09-01 02:38:15.869 [main] Hooks - click on dressing and grooming..
+[INFO ] 2023-09-01 02:38:20.162 [main] Hooks - select supervision assistance
+[INFO ] 2023-09-01 02:38:24.365 [main] Hooks - click on apply lotion tasks
+[INFO ] 2023-09-01 02:38:28.438 [main] Hooks - select the visit time
+[INFO ] 2023-09-01 02:38:32.592 [main] Hooks - enter the caregiver instructions
+[INFO ] 2023-09-01 02:38:42.748 [main] Hooks - update apply lotion details..
+[INFO ] 2023-09-01 02:38:54.872 [main] Hooks - save the dressing and grooming details
+[INFO ] 2023-09-01 02:39:08.968 [main] Hooks - click on the adls
+[INFO ] 2023-09-01 02:39:13.032 [main] Hooks - click on the eating
+[INFO ] 2023-09-01 02:39:19.304 [main] Hooks - select the assistance level-no assistance
+[INFO ] 2023-09-01 02:39:25.429 [main] Hooks - save the eating details
+[INFO ] 2023-09-01 02:39:37.524 [main] Hooks - click on adls
+[INFO ] 2023-09-01 02:39:43.585 [main] Hooks - click on the mobility
+[INFO ] 2023-09-01 02:39:47.933 [main] Hooks - select assistance level - limited assistance
+[INFO ] 2023-09-01 02:39:52.143 [main] Hooks - select-walk with client
+[INFO ] 2023-09-01 02:39:58.216 [main] Hooks - select the visit time
+[INFO ] 2023-09-01 02:40:02.376 [main] Hooks - enter caregiver instructions notes..
+[INFO ] 2023-09-01 02:40:09.520 [main] Hooks - update- walk with clients details
+[INFO ] 2023-09-01 02:40:17.627 [main] Hooks - save-mobility details
+[INFO ] 2023-09-01 02:40:23.727 [main] Hooks - click on the IADLS
+[INFO ] 2023-09-01 02:40:27.796 [main] Hooks - click on the household tasks
+[INFO ] 2023-09-01 02:40:32.046 [main] Hooks - select assistance level -assistance
+[INFO ] 2023-09-01 02:40:36.216 [main] Hooks - click on the make bed..
+[INFO ] 2023-09-01 02:40:39.270 [main] Hooks - select make bed-visits time
+[INFO ] 2023-09-01 02:40:42.412 [main] Hooks - entered caregiver instructions..
+[INFO ] 2023-09-01 02:40:45.510 [main] Hooks - update-make bed details
+[INFO ] 2023-09-01 02:40:51.608 [main] Hooks - save the household details..
+[INFO ] 2023-09-01 02:40:57.699 [main] Hooks - click on the IADLS..
+[INFO ] 2023-09-01 02:41:01.768 [main] Hooks - click on the laundry..
+[INFO ] 2023-09-01 02:41:06.048 [main] Hooks - select laundry assistance level- Assistance
+[INFO ] 2023-09-01 02:41:10.278 [main] Hooks - click on the tasks..
+[INFO ] 2023-09-01 02:41:14.348 [main] Hooks - select the visits time..
+[INFO ] 2023-09-01 02:41:18.521 [main] Hooks - entered caregiver instruction..
+[INFO ] 2023-09-01 02:41:24.615 [main] Hooks - update the laundry details..
+[INFO ] 2023-09-01 02:41:30.722 [main] Hooks - save the laundry details..
+[INFO ] 2023-09-01 02:41:36.797 [main] Hooks - click on the IADLs..
+[INFO ] 2023-09-01 02:41:39.879 [main] Hooks - click on the Meals..
+[INFO ] 2023-09-01 02:41:44.039 [main] Hooks - select the meals Assistance level- No Assistance.
+[INFO ] 2023-09-01 02:41:50.144 [main] Hooks - save the meals details..
+[INFO ] 2023-09-01 02:41:56.239 [main] Hooks - click on the IADLs..
+[INFO ] 2023-09-01 02:42:02.299 [main] Hooks - click on the Medication..
+[INFO ] 2023-09-01 02:42:10.578 [main] Hooks - select the medication assistance level-Assistance..
+[INFO ] 2023-09-01 02:42:14.771 [main] Hooks - select the tasks-Check Blood Pressure..
+[INFO ] 2023-09-01 02:42:20.851 [main] Hooks - select the visits time..
+[INFO ] 2023-09-01 02:42:24.997 [main] Hooks - entered caregiver instructions..
+[INFO ] 2023-09-01 02:42:32.120 [main] Hooks - update the medication Details..
+[INFO ] 2023-09-01 02:42:38.237 [main] Hooks - save the medication Details..
+[INFO ] 2023-09-01 02:42:44.316 [main] Hooks - click on the IADLS..
+[INFO ] 2023-09-01 02:42:50.379 [main] Hooks - click on the other button
+[INFO ] 2023-09-01 02:42:54.532 [main] Hooks - select No Assistance
+[INFO ] 2023-09-01 02:42:54.532 [main] Hooks - Click on the Add To Schedule and Finalize Visits..
+[INFO ] 2023-09-01 02:43:20.264 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 02:47:28.762 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 02:47:41.989 [main] Hooks - entered email address
+[INFO ] 2023-09-01 02:47:42.070 [main] Hooks - entered password
+[INFO ] 2023-09-01 02:47:42.287 [main] Hooks - click on login
+[INFO ] 2023-09-01 02:47:46.150 [main] Hooks - select test community
+[INFO ] 2023-09-01 02:47:46.242 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 02:47:59.661 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 02:48:08.828 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 02:48:15.033 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 02:48:15.033 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 02:48:30.605 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 02:48:33.905 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 02:48:36.035 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 02:48:39.267 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 02:48:41.452 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 02:48:45.784 [main] Hooks - Select start time
+[INFO ] 2023-09-01 02:48:49.966 [main] Hooks - click on save button
+[ERROR] 2023-09-01 02:48:51.194 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 02:48:51.320 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 03:28:56.643 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 03:29:08.770 [main] Hooks - entered email address
+[INFO ] 2023-09-01 03:29:08.832 [main] Hooks - entered password
+[INFO ] 2023-09-01 03:29:09.032 [main] Hooks - click on login
+[INFO ] 2023-09-01 03:29:12.953 [main] Hooks - select test community
+[INFO ] 2023-09-01 03:29:13.039 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 03:29:25.974 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 03:29:35.138 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 03:29:41.355 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 03:29:41.355 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 03:29:56.925 [main] Hooks - Select the recurrence
+[ERROR] 2023-09-01 03:29:57.228 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 03:29:57.370 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 03:33:18.066 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 03:33:30.890 [main] Hooks - entered email address
+[INFO ] 2023-09-01 03:33:30.968 [main] Hooks - entered password
+[INFO ] 2023-09-01 03:33:31.139 [main] Hooks - click on login
+[INFO ] 2023-09-01 03:33:35.637 [main] Hooks - select test community
+[INFO ] 2023-09-01 03:33:35.720 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 03:33:48.714 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 03:33:57.878 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 03:34:04.476 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 03:34:04.476 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 03:34:20.052 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 03:34:23.317 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 03:34:25.423 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 03:34:28.640 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 03:34:30.812 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 03:34:35.091 [main] Hooks - Select start time
+[INFO ] 2023-09-01 03:34:39.361 [main] Hooks - click on save button
+[INFO ] 2023-09-01 03:34:45.598 [main] Hooks - save all single visit details
+[INFO ] 2023-09-01 03:34:55.703 [main] Hooks - click on adls.
+[INFO ] 2023-09-01 03:34:57.759 [main] Hooks - click on bathing..
+[INFO ] 2023-09-01 03:35:04.929 [main] Hooks - select supervision bathing assistance
+[INFO ] 2023-09-01 03:35:09.097 [main] Hooks - select assist with shower tasks
+[INFO ] 2023-09-01 03:35:17.278 [main] Hooks - select visits timing
+[INFO ] 2023-09-01 03:35:23.432 [main] Hooks - entered caregiver instructions notes.
+[INFO ] 2023-09-01 03:35:33.609 [main] Hooks - click on update button
+[INFO ] 2023-09-01 03:35:39.699 [main] Hooks - save bathing details..
+[INFO ] 2023-09-01 03:35:53.801 [main] Hooks - click on adls..
+[INFO ] 2023-09-01 03:35:55.871 [main] Hooks - click on the continence and toileting..
+[INFO ] 2023-09-01 03:36:02.007 [main] Hooks - click on the assistance level
+[INFO ] 2023-09-01 03:36:12.120 [main] Hooks - save continence and toileting deatils
+[INFO ] 2023-09-01 03:36:26.216 [main] Hooks - click on adls..
+[INFO ] 2023-09-01 03:36:32.306 [main] Hooks - click on dressing and grooming..
+[INFO ] 2023-09-01 03:36:36.450 [main] Hooks - select supervision assistance
+[INFO ] 2023-09-01 03:36:40.551 [main] Hooks - click on apply lotion tasks
+[INFO ] 2023-09-01 03:36:44.620 [main] Hooks - select the visit time
+[INFO ] 2023-09-01 03:36:48.760 [main] Hooks - enter the caregiver instructions
+[INFO ] 2023-09-01 03:36:58.875 [main] Hooks - update apply lotion details..
+[INFO ] 2023-09-01 03:37:10.991 [main] Hooks - save the dressing and grooming details
+[INFO ] 2023-09-01 03:37:25.106 [main] Hooks - click on the adls
+[INFO ] 2023-09-01 03:37:29.171 [main] Hooks - click on the eating
+[INFO ] 2023-09-01 03:37:35.307 [main] Hooks - select the assistance level-no assistance
+[INFO ] 2023-09-01 03:37:41.411 [main] Hooks - save the eating details
+[INFO ] 2023-09-01 03:37:53.482 [main] Hooks - click on adls
+[INFO ] 2023-09-01 03:37:59.547 [main] Hooks - click on the mobility
+[INFO ] 2023-09-01 03:38:03.702 [main] Hooks - select assistance level - limited assistance
+[INFO ] 2023-09-01 03:38:07.822 [main] Hooks - select-walk with client
+[INFO ] 2023-09-01 03:38:13.883 [main] Hooks - select the visit time
+[INFO ] 2023-09-01 03:38:18.015 [main] Hooks - enter caregiver instructions notes..
+[INFO ] 2023-09-01 03:38:25.139 [main] Hooks - update- walk with clients details
+[INFO ] 2023-09-01 03:38:33.238 [main] Hooks - save-mobility details
+[INFO ] 2023-09-01 03:38:39.302 [main] Hooks - click on the IADLS
+[INFO ] 2023-09-01 03:38:43.365 [main] Hooks - click on the household tasks
+[INFO ] 2023-09-01 03:38:47.483 [main] Hooks - select assistance level -assistance
+[INFO ] 2023-09-01 03:38:51.573 [main] Hooks - click on the make bed..
+[INFO ] 2023-09-01 03:38:54.628 [main] Hooks - select make bed-visits time
+[INFO ] 2023-09-01 03:38:57.758 [main] Hooks - entered caregiver instructions..
+[INFO ] 2023-09-01 03:39:00.843 [main] Hooks - update-make bed details
+[INFO ] 2023-09-01 03:39:06.938 [main] Hooks - save the household details..
+[INFO ] 2023-09-01 03:39:13.001 [main] Hooks - click on the IADLS..
+[INFO ] 2023-09-01 03:39:17.058 [main] Hooks - click on the laundry..
+[INFO ] 2023-09-01 03:39:21.187 [main] Hooks - select laundry assistance level- Assistance
+[INFO ] 2023-09-01 03:39:25.312 [main] Hooks - click on the tasks..
+[INFO ] 2023-09-01 03:39:29.368 [main] Hooks - select the visits time..
+[INFO ] 2023-09-01 03:39:33.488 [main] Hooks - entered caregiver instruction..
+[INFO ] 2023-09-01 03:39:39.575 [main] Hooks - update the laundry details..
+[INFO ] 2023-09-01 03:39:45.679 [main] Hooks - save the laundry details..
+[INFO ] 2023-09-01 03:39:51.754 [main] Hooks - click on the IADLs..
+[INFO ] 2023-09-01 03:39:54.829 [main] Hooks - click on the Meals..
+[INFO ] 2023-09-01 03:39:58.966 [main] Hooks - select the meals Assistance level- No Assistance.
+[INFO ] 2023-09-01 03:40:05.080 [main] Hooks - save the meals details..
+[INFO ] 2023-09-01 03:40:11.147 [main] Hooks - click on the IADLs..
+[INFO ] 2023-09-01 03:40:17.217 [main] Hooks - click on the Medication..
+[INFO ] 2023-09-01 03:40:25.341 [main] Hooks - select the medication assistance level-Assistance..
+[INFO ] 2023-09-01 03:40:29.452 [main] Hooks - select the tasks-Check Blood Pressure..
+[INFO ] 2023-09-01 03:40:35.516 [main] Hooks - select the visits time..
+[INFO ] 2023-09-01 03:40:39.647 [main] Hooks - entered caregiver instructions..
+[INFO ] 2023-09-01 03:40:46.769 [main] Hooks - update the medication Details..
+[INFO ] 2023-09-01 03:40:52.867 [main] Hooks - save the medication Details..
+[INFO ] 2023-09-01 03:40:58.949 [main] Hooks - click on the IADLS..
+[INFO ] 2023-09-01 03:41:04.993 [main] Hooks - click on the other button
+[INFO ] 2023-09-01 03:41:09.130 [main] Hooks - select No Assistance
+[INFO ] 2023-09-01 03:41:09.130 [main] Hooks - Click on the Add To Schedule and Finalize Visits..
+[INFO ] 2023-09-01 03:41:34.836 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 05:26:24.107 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 05:26:36.254 [main] Hooks - entered email address
+[INFO ] 2023-09-01 05:26:36.326 [main] Hooks - entered password
+[INFO ] 2023-09-01 05:26:36.521 [main] Hooks - click on login
+[INFO ] 2023-09-01 05:26:40.378 [main] Hooks - select test community
+[INFO ] 2023-09-01 05:26:40.464 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 05:26:53.830 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 05:27:02.998 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 05:27:09.201 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 05:27:09.201 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 05:27:24.782 [main] Hooks - Select the recurrence
+[ERROR] 2023-09-01 05:27:25.090 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 05:27:25.216 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 05:36:35.354 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 05:36:46.900 [main] Hooks - entered email address
+[INFO ] 2023-09-01 05:36:46.977 [main] Hooks - entered password
+[INFO ] 2023-09-01 05:36:47.164 [main] Hooks - click on login
+[INFO ] 2023-09-01 05:36:51.005 [main] Hooks - select test community
+[INFO ] 2023-09-01 05:36:51.080 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 05:37:03.875 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 05:37:13.035 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 05:37:19.244 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 05:37:19.244 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 05:37:34.771 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 05:37:36.225 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 05:37:38.348 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 05:37:41.568 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 05:37:43.747 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 05:37:48.034 [main] Hooks - Select start time
+[INFO ] 2023-09-01 05:37:52.212 [main] Hooks - click on save button
+[ERROR] 2023-09-01 05:37:53.411 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 05:37:53.552 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 05:41:08.503 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 05:41:19.884 [main] Hooks - entered email address
+[INFO ] 2023-09-01 05:41:19.951 [main] Hooks - entered password
+[INFO ] 2023-09-01 05:41:20.146 [main] Hooks - click on login
+[INFO ] 2023-09-01 05:41:23.994 [main] Hooks - select test community
+[INFO ] 2023-09-01 05:41:24.087 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 05:41:36.999 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 05:41:46.157 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 05:41:52.365 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 05:41:52.365 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 05:42:07.919 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 05:42:09.244 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 05:42:11.347 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 05:42:12.568 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 05:42:14.741 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 05:42:19.010 [main] Hooks - Select start time
+[INFO ] 2023-09-01 05:42:23.186 [main] Hooks - click on save button
+[ERROR] 2023-09-01 05:42:24.453 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 05:42:24.580 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 05:43:45.779 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 05:43:59.387 [main] Hooks - entered email address
+[INFO ] 2023-09-01 05:43:59.458 [main] Hooks - entered password
+[INFO ] 2023-09-01 05:43:59.663 [main] Hooks - click on login
+[INFO ] 2023-09-01 05:44:03.543 [main] Hooks - select test community
+[INFO ] 2023-09-01 05:44:03.623 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 05:44:17.607 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 05:44:26.770 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 05:44:32.976 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 05:44:32.976 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 05:44:48.528 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 05:44:49.927 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 05:44:52.041 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 05:44:53.362 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 05:44:55.529 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 05:44:59.807 [main] Hooks - Select start time
+[INFO ] 2023-09-01 05:45:04.034 [main] Hooks - click on save button
+[INFO ] 2023-09-01 05:45:10.297 [main] Hooks - save all single visit details
+[INFO ] 2023-09-01 05:45:20.399 [main] Hooks - click on adls.
+[INFO ] 2023-09-01 05:45:22.450 [main] Hooks - click on bathing..
+[INFO ] 2023-09-01 05:46:05.764 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 05:46:16.806 [main] Hooks - entered email address
+[INFO ] 2023-09-01 05:46:16.865 [main] Hooks - entered password
+[INFO ] 2023-09-01 05:46:17.062 [main] Hooks - click on login
+[INFO ] 2023-09-01 05:46:21.469 [main] Hooks - select test community
+[INFO ] 2023-09-01 05:46:21.558 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 05:46:34.504 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 05:46:43.659 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 05:46:49.874 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 05:46:49.874 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 05:47:05.474 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 05:47:06.912 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 05:47:09.019 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 05:47:10.335 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 05:47:12.501 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 05:47:16.779 [main] Hooks - Select start time
+[INFO ] 2023-09-01 05:47:20.979 [main] Hooks - click on save button
+[ERROR] 2023-09-01 05:47:22.235 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 05:47:22.360 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 05:51:09.761 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 05:51:20.761 [main] Hooks - entered email address
+[INFO ] 2023-09-01 05:51:20.834 [main] Hooks - entered password
+[INFO ] 2023-09-01 05:51:20.968 [main] Hooks - click on login
+[INFO ] 2023-09-01 05:51:24.925 [main] Hooks - select test community
+[INFO ] 2023-09-01 05:51:25.002 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 05:51:38.113 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 05:51:47.283 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 05:51:53.496 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 05:51:53.496 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 05:52:09.113 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 05:52:10.474 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 05:52:12.587 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 05:52:13.876 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 05:52:16.037 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 05:52:20.324 [main] Hooks - Select start time
+[INFO ] 2023-09-01 05:52:24.543 [main] Hooks - click on save button
+[ERROR] 2023-09-01 05:52:25.783 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 05:52:25.941 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 05:52:41.952 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 05:52:52.991 [main] Hooks - entered email address
+[INFO ] 2023-09-01 05:52:53.062 [main] Hooks - entered password
+[INFO ] 2023-09-01 05:52:53.245 [main] Hooks - click on login
+[INFO ] 2023-09-01 05:52:57.128 [main] Hooks - select test community
+[INFO ] 2023-09-01 05:52:57.205 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 05:53:10.060 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 05:53:19.209 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 05:53:25.412 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 05:53:25.412 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 05:53:40.988 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 05:53:42.377 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 05:53:44.486 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 05:53:45.799 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 05:53:47.976 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 05:53:52.242 [main] Hooks - Select start time
+[INFO ] 2023-09-01 05:53:56.428 [main] Hooks - click on save button
+[ERROR] 2023-09-01 05:53:57.618 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 05:53:57.777 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 05:55:29.781 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 05:55:42.882 [main] Hooks - entered email address
+[INFO ] 2023-09-01 05:55:42.958 [main] Hooks - entered password
+[INFO ] 2023-09-01 05:55:43.138 [main] Hooks - click on login
+[INFO ] 2023-09-01 05:55:47.870 [main] Hooks - select test community
+[INFO ] 2023-09-01 05:55:47.964 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 05:56:00.806 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 05:56:09.962 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 05:56:16.174 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 05:56:16.174 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 05:56:31.735 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 05:56:33.086 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 05:56:35.180 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 05:56:36.420 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 05:56:38.588 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 05:56:42.868 [main] Hooks - Select start time
+[INFO ] 2023-09-01 05:56:47.068 [main] Hooks - click on save button
+[ERROR] 2023-09-01 05:56:48.263 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 05:56:48.405 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 05:57:24.491 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 05:57:35.948 [main] Hooks - entered email address
+[INFO ] 2023-09-01 05:57:36.022 [main] Hooks - entered password
+[INFO ] 2023-09-01 05:57:36.259 [main] Hooks - click on login
+[INFO ] 2023-09-01 05:57:40.298 [main] Hooks - select test community
+[INFO ] 2023-09-01 05:57:40.382 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 05:57:53.674 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 05:58:02.856 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 05:58:09.056 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 05:58:09.056 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 05:58:24.648 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 05:58:26.114 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 05:58:28.220 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 05:58:29.646 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 05:58:31.829 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 05:58:36.111 [main] Hooks - Select start time
+[INFO ] 2023-09-01 05:58:40.310 [main] Hooks - click on save button
+[ERROR] 2023-09-01 05:58:41.525 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-01 05:58:41.667 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-01 06:00:55.157 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 06:01:07.752 [main] Hooks - entered email address
+[INFO ] 2023-09-01 06:01:07.818 [main] Hooks - entered password
+[INFO ] 2023-09-01 06:01:08.006 [main] Hooks - click on login
+[INFO ] 2023-09-01 06:01:11.888 [main] Hooks - select test community
+[INFO ] 2023-09-01 06:01:11.969 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 06:01:25.934 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 06:01:35.086 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 06:01:41.294 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 06:01:41.294 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 06:01:56.878 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 06:02:00.125 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 06:02:02.245 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 06:02:03.559 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 06:02:05.712 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 06:02:09.989 [main] Hooks - Select start time
+[INFO ] 2023-09-01 06:02:14.195 [main] Hooks - click on save button
+[INFO ] 2023-09-01 06:02:20.442 [main] Hooks - save all single visit details
+[INFO ] 2023-09-01 06:02:34.929 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-01 06:02:49.341 [main] Hooks - entered email address
+[INFO ] 2023-09-01 06:02:49.413 [main] Hooks - entered password
+[INFO ] 2023-09-01 06:02:49.592 [main] Hooks - click on login
+[INFO ] 2023-09-01 06:02:53.491 [main] Hooks - select test community
+[INFO ] 2023-09-01 06:02:53.590 [main] Hooks - click on continue button..
+[INFO ] 2023-09-01 06:03:06.452 [main] Hooks - click on visit plans
+[INFO ] 2023-09-01 06:03:15.609 [main] Hooks - click on the table..
+[INFO ] 2023-09-01 06:03:21.825 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-01 06:03:21.825 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-01 06:03:37.431 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-01 06:03:40.690 [main] Hooks - Select the start time
+[INFO ] 2023-09-01 06:03:42.813 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-01 06:03:44.144 [main] Hooks - Select end time..
+[INFO ] 2023-09-01 06:03:46.318 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-01 06:03:50.606 [main] Hooks - Select start time
+[INFO ] 2023-09-01 06:03:54.828 [main] Hooks - click on save button
+[INFO ] 2023-09-01 06:04:01.065 [main] Hooks - save all single visit details

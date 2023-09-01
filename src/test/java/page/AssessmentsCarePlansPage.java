@@ -146,12 +146,11 @@ else {
 		e.printStackTrace();
 	}
 	
-	}
-		
+	}		
 }
 
-	
 private boolean isAssessmentandCarePlanPresent() {
+	
     try {
     	WebElement element = driver.findElement(By.xpath("//button[normalize-space()='Assessment and Care Plan']"));
     	 boolean isDisabled = !element.isEnabled();

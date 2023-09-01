@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: runner.RunnerFileTest
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3,040.446 s - in runner.RunnerFileTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 455.712 s - in runner.RunnerFileTest

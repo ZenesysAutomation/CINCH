@@ -48,7 +48,7 @@ public class LoginPageSteps extends BaseClass{
 	@Given ("User Click on the Account User Name")
 	public void user_click_on_the_account_user_name() throws InterruptedException {
 		login.user_click_on_the_account_user_name();
-		log.info("Click Account User name");
+		log.info("Click on the Account User name");
 		
 	}
 	@And ("Click on the Logout Button")
@@ -61,7 +61,7 @@ public class LoginPageSteps extends BaseClass{
 	@Then ("Sign In Page should be shown")
 	public void Sign_In_Page_should_be_shown() {
 		login.Sign_In_Page_should_be_shown();
-		log.info("user can view sign in page test passed.");
+		log.info("user can view sign in page -test passed.");
 		
 	}
 

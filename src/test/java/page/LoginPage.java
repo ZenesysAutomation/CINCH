@@ -82,7 +82,7 @@ public class LoginPage extends BaseClass {
 public void Sign_In_Page_should_be_shown() {
 		
 	String expectedResult= "Sign In";
-	String actualResult= driver.findElement(By.xpath("(//h4[normalize-space()='Sign In'])[1]")).getText();
+	String actualResult= driver.findElement(By.xpath("//h4[normalize-space()='Sign In']")).getText();
 	assertEquals("Sign In Page Should be Shown",expectedResult,actualResult);
 		
 	}

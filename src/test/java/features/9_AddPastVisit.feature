@@ -91,5 +91,7 @@ Then Click on the Add To schedule Button and Finalize Visits
 
 @sanity1
 Scenario: Delete the Past Visit Series
+When Click on the Visit Plans 
+Then Click on the User Table 
 Then Delete the Everyday visit series
 And Save the Everyday Visit Series

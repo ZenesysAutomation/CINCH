@@ -102,7 +102,6 @@ public void click_on_the_user_table() throws InterruptedException {
 	
 	}
 	
-	
 	public void click_on_the_edit_button() throws InterruptedException {
 	WebElement Editbtn=driver.findElement(By.xpath("(//button[normalize-space()='Edit'])[1]"));
 	Thread.sleep(6000);

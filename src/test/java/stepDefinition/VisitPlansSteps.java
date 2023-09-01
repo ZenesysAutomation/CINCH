@@ -56,6 +56,13 @@ public void click_on_the_user_first_name() throws InterruptedException {
 	log.info("click on table user first name");
 }
 
+//hourly visit
+@Then ("Click on the Visit Plans Table")
+public void click_on_the_visit_plans_table() throws InterruptedException {
+	visitplan.click_on_the_visit_plans_table();
+	log.info("click on the table..");
+}
+
 
 @Then("Click on the Add Visit Configuration")
 public void click_on_the_add_visit_configuration() throws InterruptedException {
@@ -82,6 +89,27 @@ public void select_the_start_time() throws InterruptedException {
 	visitplan.select_the_start_time();
 	log.info("Select the start time");
 }
+
+// Hourly Visit----
+
+@Then ("Select the Hourly Visit")
+public void select_the_hourly_visit() throws InterruptedException {
+	visitplan.select_the_hourly_visit();
+	log.info("Select hourly visit");
+}
+
+@And ("Select the End Time")
+public void select_the_end_time() throws InterruptedException {
+	visitplan.select_the_end_time();
+	log.info("Select end time..");
+}
+
+@And ("Select the Hourly Rate")
+public void select_the_hourly_rate() throws InterruptedException {
+	visitplan.select_the_hourly_rate();	
+	log.info("Select hourly rate..");
+}
+//Hourly visit end--
 
 @Then("Select a Duration")
 public void select_a_duration() throws InterruptedException {
@@ -520,6 +548,20 @@ public boolean click_on_the_add_to_schedule_button_and_finalize_visits() throws 
 	
 }
 
+
+@When ("Click on the Visit Plans")
+public void click_on_the_visit_plans() throws InterruptedException {
+	visitplan.click_on_the_visit_plans();
+	log.info("click on visit plans..");
+}
+
+
+@Then ("Click on the User Table")
+public void click_on_the_user_table() throws InterruptedException {
+	visitplan.click_on_the_user_table();
+	log.info("click on the user table..");
+}
+
 @Then ("Delete the Everyday visit series")
 public void delete_the_everyday_visit_series() throws InterruptedException {
 	visitplan.delete_the_everyday_visit_series();
@@ -777,8 +819,9 @@ public void user_save_the_medication_details() throws InterruptedException {
 
 @Then ("User Click on the Add to Schedule and Finalize Visits")
 public boolean user_click_on_the_add_to_schedule_and_finalize_visits() throws InterruptedException {
+	log.info("click on add to schedule and finalize visits");
 	return visitplan.user_click_on_the_add_to_schedule_and_finalize_visits();
-	
+
 }
 
 @Then ("Delete the single visit serise")
