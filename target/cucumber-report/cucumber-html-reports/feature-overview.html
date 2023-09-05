@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                72,
-                1,
                 8,
+                0,
+                0,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 81) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 8) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                0,
-                1
+                1,
+                0
             ],
             backgroundColor: [
                 "#00B000",
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   0,
-                   1
+                   1,
+                   0
                ],
                backgroundColor: [
                 "#00B000",
@@ -233,7 +233,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>COM.CINCHCCM</td>
                           <td>1</td>
-                        <td>01 Sept 2023, 06:15</td>
+                        <td>05 Sept 2023, 03:16</td>
           </tr>
         </tbody>
       </table>
@@ -323,50 +323,50 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="file-src-test-java-features-HourlyVisit-feature.html">Hourly Visit</a></td>
+        <td class="tagname"><a href="file-src-test-java-features-1_Login-feature.html">Login Functionality</a></td>
         
+        <td  class="passed"    >1</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
         <td class="total">1</td>
-        <td      class="passed"    >72</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >8</td>
+        <td      class="passed"    >8</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">81</td>
-        <td class="duration" data-value="444206218600">7m 24s 206ms</td>
-        <td class="failed">Failed</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">8</td>
+        <td class="duration" data-value="24899735500">24s 899ms</td>
+        <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
       <td>1</td>
-            <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>72</td>
+            <td>1</td>
+      <td>0</td>
       <td>1</td>
       <td>8</td>
       <td>0</td>
       <td>0</td>
-      <td>81</td>
-      <td class="duration">7m 24s 206ms</td>
+      <td>0</td>
+      <td>0</td>
+      <td>8</td>
+      <td class="duration">24s 899ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>0.00%</td>
-      <td>100.00%</td>
+            <td>100.00%</td>
+      <td>0.00%</td>
       <td></td>
-      <td>88.89%</td>
-      <td>1.23%</td>
-      <td>9.88%</td>
+      <td>100.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>100.00%</td>
+      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>

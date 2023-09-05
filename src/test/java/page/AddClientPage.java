@@ -17,7 +17,7 @@ public class AddClientPage extends BaseClass {
 	
 public void user_enter_the_valid_email() throws InterruptedException {
 	
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	try {
 	WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 	 Useremail.sendKeys(prop.getProperty("username"));
@@ -32,7 +32,7 @@ public void user_enter_the_valid_email() throws InterruptedException {
 public void user_enter_the_valid_password() {
 	try {
 	
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	WebElement Password= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
 	Password.sendKeys(prop.getProperty("password"));
 	

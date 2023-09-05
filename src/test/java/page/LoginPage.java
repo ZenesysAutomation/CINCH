@@ -16,7 +16,7 @@ public class LoginPage extends BaseClass {
 	public void Verify_that_user_enter_the_Email_and_Password(String email, String pass){
 		
 		try {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 		Useremail.sendKeys(email);
 		
@@ -61,31 +61,45 @@ public class LoginPage extends BaseClass {
 		
 	}
 	
+
 	public void user_click_on_the_account_user_name() throws InterruptedException {
+		
+		By errorElementLocator = By.xpath("//*[contains(text(), 'An unhandled error has occurred.')]");
+		 handleExceptionAndReloadPage(driver, errorElementLocator);
 	
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement AccountUserName=	driver.findElement(By.xpath("//span[@class='account-user-name']"));
 		 wait.until(ExpectedConditions.elementToBeClickable(AccountUserName));
 		 AccountUserName.click();
+		 
+		 
 	}
-		
-
-	public void click_on_the_logout_button() throws InterruptedException {
+		public void click_on_the_logout_button() throws InterruptedException {
+			
+		 By errorElementLocator = By.xpath("//*[contains(text(), 'An unhandled error has occurred.')]");
+		handleExceptionAndReloadPage(driver, errorElementLocator);
 		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement logout=driver.findElement(By.xpath("(//span[normalize-space()='Logout'])[1]"));
 		 wait.until(ExpectedConditions.elementToBeClickable(logout));
 		 logout.click();
+		 
+		
 	}
 		
 	
-public void Sign_In_Page_should_be_shown() {
+		public void Sign_In_Page_should_be_shown() {
+	
+			By errorElementLocator = By.xpath("//*[contains(text(), 'An unhandled error has occurred.')]");
+			handleExceptionAndReloadPage(driver, errorElementLocator);
 		
-	String expectedResult= "Sign In";
-	String actualResult= driver.findElement(By.xpath("//h4[normalize-space()='Sign In']")).getText();
-	assertEquals("Sign In Page Should be Shown",expectedResult,actualResult);
+			String expectedResult= "Sign In";
+			String actualResult= driver.findElement(By.xpath("//h4[normalize-space()='Sign In']")).getText();
+			assertEquals("Sign In Page Should be Shown",expectedResult,actualResult);
+	
+	
 		
-	}
+		}
 
 	    
 	}

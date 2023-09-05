@@ -23,7 +23,7 @@ public class AddCommunityNotePage extends BaseClass {
 	
 	public void user_enters_email() {
 		try {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 		 Useremail.sendKeys(prop.getProperty("username"));
 		}

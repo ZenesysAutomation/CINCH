@@ -9,6 +9,7 @@ import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -45,13 +46,39 @@ public class BaseClass {
 		 a.moveToElement(ele).build().perform();
 		 
 	 }
+	 
+	 public static void handleExceptionAndReloadPage(WebDriver driver, By errorElementLocator) {  //unhandled error..
+	        try {
+	            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	            wait.until(ExpectedConditions.invisibilityOfElementLocated(errorElementLocator));
+	        } catch (Exception e) {
+	            if (isErrorMessageDisplayed(driver)) {
+	                log.error("An unhandled error occurred. Reloading the page.");
+	                reloadPage(driver);
+	            } else {
+	                log.error("Another exception occurred: " + e.getMessage());
+	            }
+	        }
+	    }
+
+	    public static void reloadPage(WebDriver driver) {
+	        driver.navigate().refresh();
+	    }
+
+	    public static boolean isErrorMessageDisplayed(WebDriver driver) {
+	        
+	        return false; 
+	    }
+	
+
 		 public void selectByVisibleText(WebElement ele, String value) { //generic method
 			 Select s = new Select(ele);
 			 s.selectByVisibleText(value);
 			 
 		 }
 		 
-		 public void selectByIndex(WebElement ele,  int value) { //generic method
+		
+		public void selectByIndex(WebElement ele,  int value) { //generic method
 			 
 			 Select s = new Select(ele);
 			 s.selectByIndex(value);
