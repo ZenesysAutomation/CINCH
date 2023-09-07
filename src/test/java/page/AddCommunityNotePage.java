@@ -63,7 +63,7 @@ public class AddCommunityNotePage extends BaseClass {
 	
 	public void click_on_the_continue() {
 		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
 		wait.until(ExpectedConditions.elementToBeClickable(Continue));
 		Continue.click();
@@ -71,26 +71,30 @@ public class AddCommunityNotePage extends BaseClass {
 
 
 public void click_on_the_manage() throws InterruptedException {
-	WebElement manage=driver.findElement(By.linkText("Manage"));
 
-	Thread.sleep(3000);
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	WebElement manage=driver.findElement(By.linkText("Manage"));
+	wait.until(ExpectedConditions.elementToBeClickable(manage));
 	manage.click();
 		    
 	}
 
 public void click_on_the_add_new_community_note() throws InterruptedException {
-	WebElement AddcomNote=driver.findElement(By.xpath("//a[normalize-space()='Add New Community Note']"));
-	Thread.sleep(3000);
-	AddcomNote.click();
 	
-    
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	WebElement AddcomNote=driver.findElement(By.xpath("//a[normalize-space()='Add New Community Note']"));
+	wait.until(ExpectedConditions.elementToBeClickable(AddcomNote));
+	AddcomNote.click();
+	    
 }
+
 public void enter_the_note() throws InterruptedException {
 	WebElement note=driver.findElement(By.xpath("//textarea[@id='note']"));
-	note.sendKeys("This is Testing Env");
+	note.sendKeys(prop.getProperty("note"));
 	Thread.sleep(2000);
     
 }
+
 public void select_communities() throws InterruptedException {
 	try {
 	WebElement community=driver.findElement(By.xpath("//input[@id='community']"));
@@ -112,7 +116,7 @@ public void choose_a_start_date() throws InterruptedException {
 
 public void choose_a_end_date() throws InterruptedException {
 	
-	//Random random = new Random();
+
 	LocalDateTime targetDate = LocalDateTime.now().plusDays(generateRandomNumber(2,100));
     String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 

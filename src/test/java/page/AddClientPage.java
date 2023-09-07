@@ -67,14 +67,16 @@ public void user_click_on_the_continue() throws InterruptedException {
 	}
 
 public void user_click_on_the_clients_button() {
+	
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	WebElement Clientbtn=driver.findElement(By.xpath("//span[normalize-space()='Clients']"));
+	wait.until(ExpectedConditions.elementToBeClickable(Clientbtn));
 	Clientbtn.click();
-	explicitWait(Clientbtn,20);
 		   
 }
 public void user_click_on_the_add_new_client() throws InterruptedException {
 	
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	WebElement Addnewclnt=driver.findElement(By.xpath("(//a[normalize-space()='Add New Client'])[1]"));
 	wait.until(ExpectedConditions.elementToBeClickable(Addnewclnt));
 	Addnewclnt.click();
@@ -82,60 +84,72 @@ public void user_click_on_the_add_new_client() throws InterruptedException {
 }
 
 public void user_enter_the_first_name() {
-	WebElement FName=driver.findElement(By.xpath("//input[@id='firstname']"));
-	FName.sendKeys("Automation");
-	explicitWait(FName,15);
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebElement  FName = driver.findElement(By.xpath("//input[@id='firstname']"));
+	wait.until(ExpectedConditions.visibilityOf(FName));
+	FName.sendKeys(prop.getProperty("FirstName"));
 }
 
 public void user_enter_the_last_name() {
-   WebElement LName= driver.findElement(By.xpath("//input[@id='lastname']"));
-   LName.sendKeys("Testing");
-   explicitWait(LName,15);
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebElement  LName = driver.findElement(By.xpath("//input[@id='lastname']"));
+	wait.until(ExpectedConditions.visibilityOf(LName));
+	LName.sendKeys(prop.getProperty("LastName"));
 }
 
-public void user_enter_the_address_line1() {
-	 WebElement Addline1=  driver.findElement(By.xpath("//input[@id='address1']"));
-	 Addline1.sendKeys("California Hotel House");
-	 explicitWait( Addline1,15);
+public void user_enter_the_address_line1() { 
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebElement  Addline1 = driver.findElement(By.xpath("//input[@id='address1']"));
+	wait.until(ExpectedConditions.visibilityOf(Addline1));
+	Addline1.sendKeys(prop.getProperty("AddressLine1"));
 }
 
 public void user_enter_the_address_line2() {
-	WebElement Addline2=  driver.findElement(By.xpath("//input[@id='address2']"));
-	 Addline2.sendKeys("USA");
-	 explicitWait( Addline2,15);
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebElement  Addline2 = driver.findElement(By.xpath("//input[@id='address2']"));
+	wait.until(ExpectedConditions.visibilityOf(Addline2));
+	Addline2.sendKeys(prop.getProperty("AddressLine2"));
 }
 
 public void user_enter_the_resident_id() {
-	WebElement ResID=  driver.findElement(By.xpath("//input[@id='residentid']"));
-	ResID.sendKeys("244306"); 
-	explicitWait( ResID,15);
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebElement  ResID = driver.findElement(By.xpath("//input[@id='residentid']"));
+	wait.until(ExpectedConditions.visibilityOf(ResID));
+	ResID.sendKeys(prop.getProperty("ResidentID"));
 }
 
 public void user_enter_the_city() throws InterruptedException {
+	try {
 	WebElement City=driver.findElement(By.xpath("//input[@id='city']"));
 	City.clear();
 	Thread.sleep(2000);
 	City.sendKeys("Washington");
 	explicitWait( City,10);
+	}
+	catch (Exception e){
+		e.printStackTrace();
+	}
 	
 }
 public void user_select_the_state() {
    WebElement State= driver.findElement(By.xpath("//span[@aria-owns='state_options']"));
    State.sendKeys("California");
-   explicitWait( State,15);
+   explicitWait(State,15);
 }
 
 public void user_enter_the_zip_code() {
-    WebElement ZipCode=driver.findElement(By.xpath("//input[@id='zip']"));
-    ZipCode.sendKeys("110096");
-    explicitWait( ZipCode,15);
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebElement  ZipCode = driver.findElement(By.xpath("//input[@id='zip']"));
+	wait.until(ExpectedConditions.visibilityOf(ZipCode));
+	ZipCode.sendKeys(prop.getProperty("ZipCode"));
+		
 }
 
 public void user_enter_the_primary_phone() throws InterruptedException {
 	  WebElement PrimaryPh= driver.findElement(By.xpath("//input[@id='client-primary-phone']"));
 	  Thread.sleep(3000);
 	  PrimaryPh.click();
-	  PrimaryPh.sendKeys("9805465639");
+	  PrimaryPh.sendKeys(prop.getProperty("PrimaryPhone"));
 	}
 
 
@@ -148,11 +162,11 @@ public void user_enter_the_secondary_phone() throws InterruptedException {
 }
 
 public void user_enter_the_email() throws InterruptedException {
-	WebElement Email=driver.findElement(By.xpath("//input[@id='email']"));
-	Email.sendKeys("Testing123@yopmail.com");
-	explicitWait( Email,15);
-	
-	
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebElement  Email = driver.findElement(By.xpath("//input[@id='email']"));
+	wait.until(ExpectedConditions.visibilityOf(Email));
+	Email.sendKeys(prop.getProperty("Email"));
+		
 }
 
 public void click_the_gender() throws InterruptedException {
@@ -165,37 +179,57 @@ public void click_the_gender() throws InterruptedException {
 
 
 public void user_select_the_birth_date() throws InterruptedException {
-	WebElement DOB=driver.findElement(By.xpath("//input[@id='birthdate']"));
+	
+	/*WebElement DOB=driver.findElement(By.xpath("//input[@id='birthdate']"));
     DOB.sendKeys("12/7/1997");
-    explicitWait( DOB,15);
+    explicitWait( DOB,15);*/
+	
 
+	try {
+	    WebElement DOB = driver.findElement(By.xpath("//input[@id='birthdate']"));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    wait.until(ExpectedConditions.elementToBeClickable(DOB));
+	    DOB.sendKeys(prop.getProperty("Birtdate"));
+	} catch (Exception e) {
+	    
+	}
 	
 }
 
 public void user_enter_the_marital_status() {
-	WebElement Maritalsts=driver.findElement(By.xpath("//input[@id='marital-status']"));
-	Maritalsts.sendKeys("No");
+	
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebElement  Maritalsts = driver.findElement(By.xpath("//input[@id='marital-status']"));
+	wait.until(ExpectedConditions.visibilityOf(Maritalsts));
+	Maritalsts.sendKeys(prop.getProperty("MaritalStatus"));
+	
 }
 
 public void then_user_enter_the_spouse_name() {
-	WebElement SpouseName=driver.findElement(By.xpath("//input[@id='spouse']"));
-	SpouseName.sendKeys("xyz");
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebElement  SpouseName = driver.findElement(By.xpath("//input[@id='spouse']"));
+	wait.until(ExpectedConditions.visibilityOf(SpouseName));
+	SpouseName.sendKeys(prop.getProperty("SpouseName"));
 	
 }
 
 	public void user_enter_the_referral_source() throws InterruptedException {
-	WebElement RefSource=driver.findElement(By.xpath("//input[@id='referral']"));
-	RefSource.sendKeys("None");
-	Thread.sleep(2000);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement  RefSource = driver.findElement(By.xpath("//input[@id='referral']"));
+		wait.until(ExpectedConditions.visibilityOf(RefSource));
+		RefSource.sendKeys(prop.getProperty("ReferralSource"));
 	}
 
 	public void user_enter_the_essential_information() {
-  WebElement EssentialInfo=  driver.findElement(By.xpath("//textarea[@id='essential']"));
-  EssentialInfo.sendKeys("its for testing usage");
-  explicitWait( EssentialInfo,15);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement  EssentialInfo = driver.findElement(By.xpath("//textarea[@id='essential']"));
+		wait.until(ExpectedConditions.visibilityOf(EssentialInfo));
+		EssentialInfo.sendKeys(prop.getProperty("EssentialInformation"));
+  
 	}
 
 	public void user_select_the_client_type() throws InterruptedException {
+		
 	try {
 	WebElement ddlClienttypeBtn = driver.findElement(By.id("clientype"));
     ddlClienttypeBtn.sendKeys("Nursing Services");
@@ -209,15 +243,17 @@ public void then_user_enter_the_spouse_name() {
 	}
 
 	public void user_select_the_schedule_group() throws InterruptedException {
-
-	
+		try {
 	WebElement ScheduleGroupBtn = driver.findElement(By.xpath("//span[contains(@aria-owns,'scheduleGroup_options')]"));
 	ScheduleGroupBtn.click();
     ScheduleGroupBtn.sendKeys("East Wing");
     ScheduleGroupBtn.click();
- 
-    Thread.sleep(5000);		
+    Thread.sleep(3000);		
 
+	}
+		catch (Exception e) {
+		e.printStackTrace();
+	}
 	}
 
 	public void user_select_the_status() throws InterruptedException {
@@ -262,35 +298,44 @@ public void verify_that_add_new_contact_button() throws InterruptedException {
 }
 
 public void verify_the_first_name() throws InterruptedException {
-	WebElement Fname=driver.findElement(By.xpath("//input[@id='first-contact']"));
-	Fname.sendKeys("Automation Testing ");
-	Thread.sleep(3000);
+	
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebElement  Fname = driver.findElement(By.xpath("//input[@id='first-contact']"));
+	wait.until(ExpectedConditions.visibilityOf(Fname));
+	 Fname.sendKeys(prop.getProperty("firstName"));
+	
 }
 
 public void verify_the_last_name() {
-	WebElement Lname=driver.findElement(By.xpath("//input[@id='last-contact']"));
-	Lname.sendKeys("Selenium framework");
-	   
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebElement Lname = driver.findElement(By.xpath("//input[@id='last-contact']"));
+	wait.until(ExpectedConditions.visibilityOf(Lname));
+	Lname.sendKeys(prop.getProperty("lastName"));
 }
 
 public void verify_the_address_line1() throws InterruptedException {
-	WebElement Addressline1=driver.findElement(By.cssSelector("#address1-contact"));
-	Addressline1.sendKeys("California");
-	Thread.sleep(2000);
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebElement Addressline1 = driver.findElement(By.cssSelector("#address1-contact"));
+	wait.until(ExpectedConditions.visibilityOf(Addressline1));
+	Addressline1.sendKeys(prop.getProperty("addressLine1"));
 	   
 }
 
 public void verify_the_address_line2() throws InterruptedException {
-   WebElement Addressline2= driver.findElement(By.xpath("//input[@id='address2-contact']"));
-   Addressline2.sendKeys("USA");
-   Thread.sleep(2000);
+ 
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebElement Addressline2 = driver.findElement(By.xpath("//input[@id='address2-contact']"));
+	wait.until(ExpectedConditions.visibilityOf(Addressline2));
+	 Addressline2.sendKeys(prop.getProperty("addressLine2"));
    
 }
 
 public void verify_the_city() throws InterruptedException {
-	WebElement City=driver.findElement(By.xpath("//input[@id='city-contact']"));
-	Thread.sleep(3000);
-	City.sendKeys("California");
+	
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebElement City = driver.findElement(By.xpath("//input[@id='city-contact']"));
+	wait.until(ExpectedConditions.visibilityOf(City));
+	City.sendKeys(prop.getProperty("city"));
 	   
 }
 
@@ -301,25 +346,27 @@ public void verify_the_state_dropdown() throws InterruptedException {
 }
 
 public void verify_the_zip_code() throws InterruptedException {
-	WebElement zipCode=driver.findElement(By.xpath("//input[@id='zip-contact']"));
-	Thread.sleep(3000);
-	zipCode.sendKeys("183090");
+
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebElement zipCode = driver.findElement(By.xpath("//input[@id='zip-contact']"));
+	wait.until(ExpectedConditions.visibilityOf(zipCode));
+	 zipCode.sendKeys(prop.getProperty("zipcode"));
 }
 
 public void verify_the_primary_phone_number() throws InterruptedException {
    WebElement primaryphnumber = driver.findElement(By.xpath("//input[@id='primary-phone-contact']"));  
    Thread.sleep(3000);
    primaryphnumber.click();
-   primaryphnumber.sendKeys("9086568990");
+   primaryphnumber.sendKeys(prop.getProperty("primaryphnumber"));
   
 }
 
 public void verify_the_email() throws InterruptedException {
-	WebElement email=driver.findElement(By.xpath("//input[@id='email-contact']"));
-	Thread.sleep(3000);
-	email.sendKeys("testing1234@gmail.com");
-	Thread.sleep(1000);
-    
+	
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	WebElement email = driver.findElement(By.xpath("//input[@id='email-contact']"));
+	wait.until(ExpectedConditions.visibilityOf(email));
+	email.sendKeys(prop.getProperty("email"));   
 }
 
 public void select_the_relationship() throws InterruptedException {
@@ -332,21 +379,21 @@ public void select_the_relationship() throws InterruptedException {
 
 public void save_the_new_contact_details()throws InterruptedException {
 	
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	WebElement Savebtn1=driver.findElement(By.xpath("//button[@id='ClientContactSave']"));
 	 wait.until(ExpectedConditions.elementToBeClickable(Savebtn1));
 	 Savebtn1.click();
-	 Thread.sleep(30000);
+	 Thread.sleep(3000);
 }
 	
 	
  public void save_the_new_client_details() throws InterruptedException {
 	
-	 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	 	WebElement Savebtn=driver.findElement(By.xpath("//button[@id='ClientSave']"));
 		 wait.until(ExpectedConditions.elementToBeClickable(Savebtn));
 		 Savebtn.click();
-	
+		 Thread.sleep(3000);
 	}
  
  

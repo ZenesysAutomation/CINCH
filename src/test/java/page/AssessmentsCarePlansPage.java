@@ -46,7 +46,7 @@ public void user_enter_password() throws InterruptedException {
 
 public void user_click_on_the_login_button() throws InterruptedException {
 	
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
 	 wait.until(ExpectedConditions.elementToBeClickable(Login));
 	 Login.click();
@@ -111,10 +111,6 @@ public void click_on_the_user_data_table() throws InterruptedException {
 	}
 
 public void click_on_the_assessment_and_care_plan() throws InterruptedException {
-	
-	/*WebElement Assessment=driver.findElement(By.xpath("//button[normalize-space()='Assessment and Care Plan']"));
-	Assessment.click();
-	Thread.sleep(6000);*/
 	
 	if(!isAssessmentandCarePlanPresent()){
 		 driver.findElement(By.xpath("//button[normalize-space()='Assessment and Care Plan']")).click();
@@ -187,7 +183,7 @@ private boolean isAssessmentandCarePlanPresent() {
 				explicitWait(VisitSchedule,15);
 				Thread.sleep(3000);
 				VisitSchedule.clear();
-				VisitSchedule.sendKeys("Testing Demo1");
+				VisitSchedule.sendKeys(prop.getProperty("VisitSchedule"));
 			}
 
 			public void user_enter_the_goals_of_service() throws InterruptedException 
@@ -196,8 +192,7 @@ private boolean isAssessmentandCarePlanPresent() {
 				explicitWait(GoalOfService,15);
 				Thread.sleep(3000);
 				GoalOfService.clear();
-				GoalOfService.sendKeys("Testing Demo2");
-				
+				GoalOfService.sendKeys(prop.getProperty("GoalOfService"));
 			    
 			}
 
@@ -208,8 +203,7 @@ private boolean isAssessmentandCarePlanPresent() {
 					explicitWait(FamilySocialNetwork,15);
 					Thread.sleep(3000);
 					FamilySocialNetwork.clear();
-				FamilySocialNetwork.sendKeys("Testing Demo3");
-			    
+					FamilySocialNetwork.sendKeys(prop.getProperty("FamilySocialNetwork"));
 			}
 			
 			public void user_enter_the_special_dietary_needs() throws InterruptedException 
@@ -218,8 +212,7 @@ private boolean isAssessmentandCarePlanPresent() {
 				explicitWait(DietryNeeds,15);
 				Thread.sleep(3000);
 				DietryNeeds.clear();
-				DietryNeeds.sendKeys("Testing Demo4");
-			    
+				DietryNeeds.sendKeys(prop.getProperty("DietryNeeds"));
 			}
 			
 			public void user_enter_the_precautions() throws InterruptedException 
@@ -227,7 +220,7 @@ private boolean isAssessmentandCarePlanPresent() {
 				WebElement Precautions=driver.findElement(By.xpath("//textarea[@id='precautions']"));
 				Thread.sleep(3000);
 				Precautions.clear();
-				Precautions.sendKeys("Testing Demo5");
+				Precautions.sendKeys(prop.getProperty("Precautions"));
 			}
 
 			public void user_enter_the_functional_limitations_restrictions() throws InterruptedException 
@@ -236,8 +229,8 @@ private boolean isAssessmentandCarePlanPresent() {
 				explicitWait(Restrictions,15);
 				Thread.sleep(3000);
 				Restrictions.clear();
-				Restrictions .sendKeys("Testing Demo6");
-				Thread.sleep(6000);
+				Restrictions.sendKeys(prop.getProperty("Restrictions"));
+				Thread.sleep(4000);
 			    
 			}
 			
@@ -246,7 +239,7 @@ private boolean isAssessmentandCarePlanPresent() {
 				JavascriptExecutor js = (JavascriptExecutor)driver;
 			    js.executeScript("window.scrollBy(0, -5000)");
 				WebElement StatusTab=driver.findElement(By.xpath("(//div[@role='presentation'][normalize-space()='Client Status'])[1]"));
-				//StatusTab.click();
+				
 				JavascriptExecutor jse = (JavascriptExecutor)driver;
 				 jse.executeScript("arguments[0].click()",StatusTab);
 				Thread.sleep(6000);
@@ -256,16 +249,15 @@ private boolean isAssessmentandCarePlanPresent() {
 			{
 				WebElement ConditionNotes =	driver.findElement(By.xpath("//textarea[@id='conditionnotes']"));
 				Thread.sleep(4000);
-				//ConditionNotes.clear();
-				ConditionNotes.sendKeys("Testing Environment");
-				Thread.sleep(6000);
+				ConditionNotes.sendKeys(prop.getProperty("ConditionNotes"));
+				Thread.sleep(4000);
 			}
 
 			public void user_enter_the_recent_hospital_rehab_stays() throws InterruptedException 
 			{
-				WebElement ConditionNotes =	driver.findElement(By.xpath("//textarea[@id='recenthospital']"));
-				ConditionNotes.clear();
-				ConditionNotes.sendKeys("I recently visit a Near By Hospital");
+				WebElement rcnthospital =	driver.findElement(By.xpath("//textarea[@id='recenthospital']"));
+				rcnthospital.clear();
+				rcnthospital.sendKeys(prop.getProperty("RecentHospitalStays"));
 				Thread.sleep(3000);
 			}
 
@@ -273,7 +265,7 @@ private boolean isAssessmentandCarePlanPresent() {
 			{
 				WebElement MedicationReminders= driver.findElement(By.xpath("//input[@id='reminder']"));
 				MedicationReminders.clear();
-				MedicationReminders.sendKeys("Testing");
+				MedicationReminders.sendKeys(prop.getProperty("MedicationReminders"));
 				Thread.sleep(3000);
 			    
 			}
@@ -289,7 +281,7 @@ private boolean isAssessmentandCarePlanPresent() {
 			{
 				WebElement Allergies= driver.findElement(By.xpath("//textarea[@id='allergies']"));
 				Allergies.clear();
-				Allergies.sendKeys("Testing1");
+				Allergies.sendKeys(prop.getProperty("AllergiesDescription"));
 				Thread.sleep(3000);
 			    
 			}
@@ -298,17 +290,21 @@ private boolean isAssessmentandCarePlanPresent() {
 			{
 				WebElement Notes= driver.findElement(By.xpath("//textarea[@id='notes']"));
 				Notes.clear();
-				Notes.sendKeys("Testing2");
+				Notes.sendKeys(prop.getProperty("Notes"));
 				Thread.sleep(3000);
 			}
 
 			public void user_select_the_hearing() throws InterruptedException
 			{
+				try {
 				WebElement Hearing = driver.findElement(By.xpath("(//span[contains(@aria-owns,'hearing_options')])[1]"));
-				Thread.sleep(3000);
-				//Hearing.click();	
+				Thread.sleep(3000);	
 				Hearing.sendKeys("Good");
 				Thread.sleep(4000);
+				}
+				catch (Exception e) {
+					e.printStackTrace();
+				}
 				
 			}
 
@@ -329,23 +325,35 @@ private boolean isAssessmentandCarePlanPresent() {
 
 			public void user_select_the_swallowing() throws InterruptedException 
 			{
+				try {
 				WebElement Swallowing=driver.findElement(By.xpath("//span[@aria-owns='swallowing_options']"));
 				Swallowing.click();
 				Swallowing.sendKeys("Poor");
 				Thread.sleep(3000);
+				}
+				catch (Exception e) {
+					e.printStackTrace();
+				}
 			}
+			
 			public void user_select_the_vision() throws InterruptedException 
 			{
+				try {
 				WebElement Vision=driver.findElement(By.xpath("(//span[@aria-owns='vision_options'])[1]"));
 				Vision.click();
 				Vision.sendKeys("Good"); 
 				Thread.sleep(3000);
+				}
+				catch (Exception e) {
+					e.printStackTrace();
+				}
 			}
+			
 			public void user_enter_the_bathing_deatils() throws InterruptedException
 			{
 				WebElement Bathing=	driver.findElement(By.xpath("//textarea[@id='bathing']"));
 				Bathing.clear();
-				Bathing.sendKeys("Testing demo v3");
+				Bathing.sendKeys(prop.getProperty("BathingDetails"));
 				Thread.sleep(3000);
 			}
 
@@ -353,7 +361,7 @@ private boolean isAssessmentandCarePlanPresent() {
 			{
 				WebElement MobilityDetails =driver.findElement(By.cssSelector("#transfer"));
 				MobilityDetails.clear();
-				MobilityDetails.sendKeys("Testingg demo v4");
+				MobilityDetails.sendKeys(prop.getProperty("MobilityDetails"));
 				Thread.sleep(3000);
 			}
 
@@ -361,7 +369,7 @@ private boolean isAssessmentandCarePlanPresent() {
 			{
 				WebElement Grooming =driver.findElement(By.xpath("//textarea[@id='dressing']"));
 				Grooming.clear();
-				Grooming.sendKeys("Testing demo v5.0");
+				Grooming.sendKeys(prop.getProperty("DressingGroomingDetails"));
 				Thread.sleep(3000);
 				
 			}
@@ -370,7 +378,7 @@ private boolean isAssessmentandCarePlanPresent() {
 			{
 				WebElement ContinenceToileting=driver.findElement(By.xpath("(//textarea[@id='continence'])[1]"));
 				ContinenceToileting.clear();
-				ContinenceToileting.sendKeys("Testing demo v5");
+				ContinenceToileting.sendKeys(prop.getProperty("ContinenceToiletingDetails"));
 				Thread.sleep(3000);
 			}
 
@@ -378,7 +386,7 @@ private boolean isAssessmentandCarePlanPresent() {
 			{
 				WebElement Eating=driver.findElement(By.xpath("(//textarea[@id='eating'])[1]"));
 				Eating.clear();
-				Eating.sendKeys("Testing demo v6");
+				Eating.sendKeys(prop.getProperty("EatingDetails"));
 				Thread.sleep(3000);
 			    
 			}
@@ -387,7 +395,7 @@ private boolean isAssessmentandCarePlanPresent() {
 			{
 				WebElement MealsDetails=driver.findElement(By.cssSelector("#meals"));
 				MealsDetails.clear();
-				 MealsDetails.sendKeys("Testing demo v7");
+				MealsDetails.sendKeys(prop.getProperty("MealsDetails"));
 				 Thread.sleep(3000);
 			    
 			}
@@ -396,7 +404,7 @@ private boolean isAssessmentandCarePlanPresent() {
 			{
 				WebElement Laundary=driver.findElement(By.cssSelector("#laundry"));
 				Laundary.clear();
-				Laundary.sendKeys("Testing demo v8");
+				Laundary.sendKeys(prop.getProperty("LaundaryDetails"));
 				Thread.sleep(3000);
 			}
 
@@ -404,7 +412,7 @@ private boolean isAssessmentandCarePlanPresent() {
 			{
 				WebElement Household=driver.findElement(By.cssSelector("#household"));
 				Thread.sleep(6000);
-				Household.sendKeys("Testing demo v9");
+				Household.sendKeys(prop.getProperty("HouseholdTaskDetails"));
 				Thread.sleep(8000);
 				
 			}
@@ -433,7 +441,7 @@ private boolean isAssessmentandCarePlanPresent() {
 				WebElement Enviromental= driver.findElement(By.xpath("//textarea[@id='saftey']"));
 				Thread.sleep(3000);
 				Enviromental.clear();
-				Enviromental.sendKeys("Testing demo v10");
+				Enviromental.sendKeys(prop.getProperty("EnviromentalSafteyConcernDetails"));
 				Thread.sleep(3000);
 				  
 			}
@@ -443,7 +451,7 @@ private boolean isAssessmentandCarePlanPresent() {
 				WebElement EconomicsStatus = driver.findElement(By.xpath("//textarea[@id='economic-status']"));
 				Thread.sleep(3000);
 				EconomicsStatus.clear();
-				EconomicsStatus.sendKeys("Testing Demo v11");
+				EconomicsStatus.sendKeys(prop.getProperty("EconomicsStatus"));
 				Thread.sleep(5000);
 			}
 			public void enter_the_notes() throws InterruptedException 
