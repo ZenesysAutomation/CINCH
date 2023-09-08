@@ -255,7 +255,7 @@ private boolean isAssessmentandCarePlanPresent() {
 
 			public void user_enter_the_recent_hospital_rehab_stays() throws InterruptedException 
 			{
-				WebElement rcnthospital =	driver.findElement(By.xpath("//textarea[@id='recenthospital']"));
+				WebElement rcnthospital =driver.findElement(By.xpath("//textarea[@id='recenthospital']"));
 				rcnthospital.clear();
 				rcnthospital.sendKeys(prop.getProperty("RecentHospitalStays"));
 				Thread.sleep(3000);

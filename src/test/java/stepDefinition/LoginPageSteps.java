@@ -13,7 +13,7 @@ public class LoginPageSteps extends BaseClass{
 	LoginPage login = new LoginPage();
 
 
-	@When("Verify that user enter the {string} and {string}")
+	@Given("Verify that user enter the {string} and {string}")
 	public void Verify_that_user_enter_the_Email_and_Password(String email, String pass){
 		login.Verify_that_user_enter_the_Email_and_Password(email,pass);
 		log.info("entered email address and password ");
@@ -32,7 +32,7 @@ public class LoginPageSteps extends BaseClass{
 		log.info("Select Test Community");
 	}
 	
-	@And("Verify the Continue Button")
+	@When("Verify the Continue Button")
 	public void Verify_the_Continue_Button() throws InterruptedException {
 		login.Verify_the_Continue_Button();
 		log.info("Clicked on Continue button");
@@ -45,7 +45,7 @@ public class LoginPageSteps extends BaseClass{
 		
 	}
 	
-	@Given ("User Click on the Account User Name")
+	@Given("User Click on the Account User Name")
 	public void user_click_on_the_account_user_name() throws InterruptedException {
 		login.user_click_on_the_account_user_name();
 		log.info("Click on the Account User name");
@@ -65,4 +65,24 @@ public class LoginPageSteps extends BaseClass{
 		
 	}
 
+	//invalid 
+	
+	@Given ("User Enter the {string} and {string}")
+	public void User_Enter_the_Email_and_Password(String email, String pass) {
+		login.User_Enter_the_Email_and_Password(email, pass);
+		log.info("user enter the invalid email & password -test failed.");
+	}
+	
+	
+	@When ("Click on the login button")
+	public void Click_on_the_login_button() throws InterruptedException {
+		login.click_on_the_login_button();
+		log.info("user click on the login button..");
+	}
+	
+	@Then ("Error message is Displayed {string}")
+	public void Error_message_is_Displayed(String err) {
+		login.Error_message_is_Displayed(err);
+		log.info("error message is displayed-invalid Username and Password");
+	}
 }

@@ -151,7 +151,7 @@ public class VisitPlansPage extends BaseClass  {
 	public void select_the_start_time() throws InterruptedException {
 	
 		WebElement SelectTime = driver.findElement(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
-		explicitWait(SelectTime, 5);
+		explicitWait(SelectTime,5);
 		SelectTime.click();
 		Random random =new Random();
 		List<WebElement> liList=driver.findElements(By.cssSelector("div > ul > li.e-list-item"));
@@ -293,9 +293,7 @@ public class VisitPlansPage extends BaseClass  {
 		    ADLs.click();
 		} catch (Exception e) {
 		    e.printStackTrace(); 
-		}
-
-		
+		}	
 	}
 	
 	
@@ -504,7 +502,7 @@ public class VisitPlansPage extends BaseClass  {
 	
 	public void enter_the_caregiver_instructions3() throws InterruptedException {
 		WebElement Instructions3  = driver.findElement(By.xpath("//textarea[@id='notes']"));
-		Instructions3 .sendKeys("Testing v3.0");
+		Instructions3.sendKeys(prop.getProperty("CaregiverInstruction"));
 		Thread.sleep(4000);	
 	}
 	
@@ -516,7 +514,6 @@ public class VisitPlansPage extends BaseClass  {
 	    WebElement Update = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Update']")));
 	    Update.click();
 		 
-		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);	
@@ -556,7 +553,6 @@ public class VisitPlansPage extends BaseClass  {
 		Thread.sleep(4000);
 				
 	}
-	
 	
 	public void select_the_assistance_level_as_a_no_assistance() throws InterruptedException {
 		try {
@@ -603,6 +599,7 @@ public class VisitPlansPage extends BaseClass  {
 		LimitedAssistance.click();
 		LimitedAssistance.sendKeys("Limited Assistance");
 		LimitedAssistance.click();
+		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);	
@@ -650,7 +647,7 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	public void enter_caregiver_instructions() throws InterruptedException {
 		WebElement Notes=driver.findElement(By.xpath("//textarea[@id='notes']"));
-		Notes.sendKeys("Testing v4.1");
+		Notes.sendKeys(prop.getProperty("CaregiverNotes"));
 		Thread.sleep(4000);	
 	}
 	
@@ -732,7 +729,7 @@ public class VisitPlansPage extends BaseClass  {
 	
 	public void enter_the_caregiver_instructions1() throws InterruptedException {
 		WebElement CaregiverInstructions1Note= driver.findElement(By.xpath("//textarea[@id='notes']"));
-		CaregiverInstructions1Note.sendKeys("testing v4.0");
+		CaregiverInstructions1Note.sendKeys(prop.getProperty("Notes"));
 		Thread.sleep(3000);
 	}
 	
@@ -770,9 +767,7 @@ public class VisitPlansPage extends BaseClass  {
 	public void click_on_the_laundry() throws InterruptedException {
 		WebElement Laundry=driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='Laundry']"));
 		Laundry.click();
-		Thread.sleep(4000);
-		
-		
+		Thread.sleep(4000);	
 	}
 	
 	public void select_laundry_assistance_level_as_a_assistance() throws InterruptedException{
@@ -780,10 +775,10 @@ public class VisitPlansPage extends BaseClass  {
 			LaundryAssistance.click();
 			LaundryAssistance.sendKeys("Assistance");
 			LaundryAssistance.click();
+			
 			JavascriptExecutor js = (JavascriptExecutor)driver;
 			js.executeScript("window.scrollBy(0, 50000)");
 			Thread.sleep(4000);
-	
 	}
 	
 	public void click_on_the_tasks() throws InterruptedException {
@@ -813,12 +808,14 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {}
 	}
+	
 	public void enter_caregiver_instruction() throws InterruptedException {
 		WebElement Notes=driver.findElement(By.xpath("//textarea[@id='notes']"));
-		Notes.sendKeys("Testing v5.0");
+		Notes.sendKeys(prop.getProperty("CaregiverNotes"));
 		Thread.sleep(3000);
 		
 	}
+	
 	public void update_the_laundry_details() throws InterruptedException {
 		WebElement UpdateLaundryDtls=driver.findElement(By.xpath("//button[normalize-space()='Update']"));
 		JavascriptExecutor js = (JavascriptExecutor)driver;
@@ -851,7 +848,7 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void click_on_the_meals() throws InterruptedException {
-	WebElement Meals =	driver.findElement(By.xpath("//div[contains(@role,'presentation')][normalize-space()='Meals']"));
+	WebElement Meals =driver.findElement(By.xpath("//div[contains(@role,'presentation')][normalize-space()='Meals']"));
 	Meals.click();
 	Thread.sleep(3000);
 	}
@@ -904,6 +901,7 @@ public class VisitPlansPage extends BaseClass  {
 		AssistanceLevel.sendKeys("Assistance");
 		AssistanceLevel.click();
 		Thread.sleep(4000);
+		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);
@@ -944,7 +942,7 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	public void enter_the_careGiver_instructions() throws InterruptedException {
 		WebElement CareGiverNotes=driver.findElement(By.xpath("//textarea[@id='notes']"));
-		CareGiverNotes.sendKeys("testing v7.0");
+		CareGiverNotes.sendKeys(prop.getProperty("Caregiverinstruction"));
 		Thread.sleep(2000);
 		
 	}
@@ -1087,7 +1085,6 @@ public class VisitPlansPage extends BaseClass  {
 		DeleteBtn.click();
 		Thread.sleep(7000);
 		
-
 		WebElement DeletePopUp=	driver.findElement(By.xpath("//input[@value='Delete']"));
 		DeletePopUp.click();
 		try {
@@ -1100,8 +1097,6 @@ public class VisitPlansPage extends BaseClass  {
 		Thread.sleep(6000);
 	}
 		
-	
-	
 	public void save_the_everyday_visit_series() throws InterruptedException {
 		WebElement DeleteVisitSeries=driver.findElement(By.xpath("//button[@id='SaveVisit']"));
 		DeleteVisitSeries.click();
@@ -1147,9 +1142,9 @@ public class VisitPlansPage extends BaseClass  {
 		Duration.sendKeys("45 Minute Visit");
 		Duration.click();
 		Thread.sleep(6000);
-		
-		
+			
 	}
+	
 	public void select_weekly_recurrence() throws InterruptedException {
 		WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));
 		Recurrence.click();
@@ -1196,6 +1191,7 @@ public class VisitPlansPage extends BaseClass  {
 		Thread.sleep(4000);
 		SaveBtn.click();
 		Thread.sleep(6000);
+		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(3000);
@@ -1310,9 +1306,7 @@ public class VisitPlansPage extends BaseClass  {
 	public void save_the_bathing_details1() throws InterruptedException {
 		WebElement Savedetail = driver.findElement(By.xpath("//button[@id='SaveVisit']"));  
 		Savedetail.click();
-		Thread.sleep(6000);
-		
-		
+		Thread.sleep(6000);	
 	}
 	
 	public void user_click_on_the_ad_ls_to_enter_the_dressing_and_grooming_details() throws InterruptedException {
@@ -1423,6 +1417,7 @@ public class VisitPlansPage extends BaseClass  {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()",MobilityClick);
 		Thread.sleep(6000);	
+		
 		JavascriptExecutor js2 = (JavascriptExecutor)driver;
 		js2.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);
@@ -1485,7 +1480,6 @@ public class VisitPlansPage extends BaseClass  {
 		Thread.sleep(8000);
 		
 	}
-	
 	
 	public void user_again_click_on_the_ia_dls_to_enter_the_medication_details() throws InterruptedException {
 		WebElement IADLS=driver.findElement(By.xpath("(//div[@role='presentation'][normalize-space()='iADLS'])[1]"));
@@ -1873,12 +1867,13 @@ public class VisitPlansPage extends BaseClass  {
 		Duration.click();
 		Duration.sendKeys("30 Minute Visit");
 		Duration.click();
-		Thread.sleep(8000);
+		Thread.sleep(4000);
 	}
 	public void update_the_visit_duration() throws InterruptedException {
 		WebElement EditBtn=driver.findElement(By.xpath("//button[@id='UpdateNewVisit']"));
 		EditBtn.click();
-		Thread.sleep(8000);
+		Thread.sleep(4000);
+		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);
@@ -2042,8 +2037,7 @@ public class VisitPlansPage extends BaseClass  {
 		} catch (Exception e) {
 		    e.printStackTrace(); 
 		}
-
-		
+	
 	}
 	
 	

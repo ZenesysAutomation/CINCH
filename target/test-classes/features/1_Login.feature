@@ -1,12 +1,12 @@
-Feature:  Login Functionality
+Feature:  Login Functionality 
 
 @Test
-Scenario Outline: Verify The login & Logout Functionality
+Scenario Outline: Verify The Valid Login Functionality
 
-When Verify that user enter the "<Email>" and "<Password>"
-And Click on the Login Button
+Given Verify that user enter the "<Email>" and "<Password>"
+When Click on the Login Button
 And Verify the Dropdown and select the Test Community
-And Verify the Continue Button
+When Verify the Continue Button
 Then Home page should be shown
 Given User Click on the Account User Name
 And Click on the Logout Button
@@ -16,7 +16,20 @@ Examples:
 |Email|Password|
 |anoop.kumar@zenesys.com |Testing@123|
 #|ankita.chaudhary@zenesys.com |Testing@123|
-#|xyz@yopmail.com |xyz@12345|
+
+
+
+@TestInvalid
+Scenario Outline: Verify the Invalid Login Functionality
+Given User Enter the "<Email>" and "<Password>"
+When Click on the login button
+Then Error message is Displayed "<Message>"
+
+
+Examples:
+|Email|Password|Message|
+|xyz@yopmail.com |xyz@12345|Invalid Login - Invalid username and or password.|
+|abc@yopmail.com |12345|Invalid Login - Invalid username and or password.|
 
 
 

@@ -20,7 +20,6 @@ public class LoginPage extends BaseClass {
 		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 		Useremail.sendKeys(email);
 		
-		
 		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement Password= wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
 		Password.sendKeys(pass);
@@ -34,7 +33,7 @@ public class LoginPage extends BaseClass {
 	
 	public void click_on_the_login_button() throws InterruptedException {
 		
-		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
 		 wait.until(ExpectedConditions.elementToBeClickable(Login));
 		 Login.click();
@@ -83,11 +82,8 @@ public class LoginPage extends BaseClass {
 		WebElement logout=driver.findElement(By.xpath("(//span[normalize-space()='Logout'])[1]"));
 		 wait.until(ExpectedConditions.elementToBeClickable(logout));
 		 logout.click();
-		 
-		
 	}
 		
-	
 		public void Sign_In_Page_should_be_shown() {
 	
 			By errorElementLocator = By.xpath("//*[contains(text(), 'An unhandled error has occurred.')]");
@@ -97,10 +93,39 @@ public class LoginPage extends BaseClass {
 			String actualResult= driver.findElement(By.xpath("//h4[normalize-space()='Sign In']")).getText();
 			assertEquals("Sign In Page Should be Shown",expectedResult,actualResult);
 	
-	
-		
 		}
-
-	    
+		
+		public void User_Enter_the_Email_and_Password(String email, String pass) {
+			try {
+				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+				WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
+				Useremail.sendKeys(email);
+				
+				WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+				WebElement Password= wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
+				Password.sendKeys(pass);
+				
+				}
+				catch (TimeoutException e ) {
+					 e.printStackTrace();
+			}
+			
+		}
+		
+		public void Click_on_the_login_button() {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
+			 wait.until(ExpectedConditions.elementToBeClickable(Login));
+			 Login.click();
+			
+		}
+		
+		public void Error_message_is_Displayed(String err) {
+			String Expectedresult = "Invalid Login - Invalid username and or password.";
+			String Actualresult=driver.findElement(By.xpath("(//div[@role='alert'])[1]")).getText();
+			assertEquals("error message showing",Expectedresult,Actualresult);
+			
+		}
+    
 	}
 

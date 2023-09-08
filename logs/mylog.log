@@ -5703,3 +5703,52 @@
 [INFO ] 2023-09-07 06:39:09.398 [main] Hooks - save the signature button
 [INFO ] 2023-09-07 06:39:09.434 [main] Hooks - validation message should be shown assessment was created, test cases passed..
 [INFO ] 2023-09-07 06:39:09.624 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-08 06:45:26.573 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-08 06:45:50.039 [main] Hooks - user enter the invalid email & password -test failed.
+[INFO ] 2023-09-08 06:45:50.278 [main] Hooks - user click on the login button..
+[INFO ] 2023-09-08 06:45:50.447 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-08 06:54:07.653 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-08 06:54:20.244 [main] Hooks - user enter the invalid email & password -test failed.
+[INFO ] 2023-09-08 06:54:20.491 [main] Hooks - user click on the login button..
+[INFO ] 2023-09-08 06:54:20.779 [main] Hooks - error message is displayed-invalid Username and Password
+[INFO ] 2023-09-08 06:54:20.969 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-08 06:55:31.462 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-08 06:55:48.131 [main] Hooks - user enter the invalid email & password -test failed.
+[INFO ] 2023-09-08 06:55:48.353 [main] Hooks - user click on the login button..
+[INFO ] 2023-09-08 06:55:48.671 [main] Hooks - error message is displayed-invalid Username and Password
+[INFO ] 2023-09-08 06:55:48.846 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-08 06:56:25.198 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-08 06:56:38.957 [main] Hooks - user enter the invalid email & password -test failed.
+[INFO ] 2023-09-08 06:56:39.262 [main] Hooks - user click on the login button..
+[ERROR] 2023-09-08 06:56:59.937 [main] Hooks - Test case failed: Verify the Invalid Username and Password
+[INFO ] 2023-09-08 06:57:00.131 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-08 07:03:21.250 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-08 07:03:35.926 [main] Hooks - entered email address and password 
+[INFO ] 2023-09-08 07:03:36.162 [main] Hooks - Clicked on login button
+[INFO ] 2023-09-08 07:03:40.102 [main] Hooks - Select Test Community
+[INFO ] 2023-09-08 07:03:40.256 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-09-08 07:03:45.219 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-09-08 07:03:45.367 [main] Hooks - Click on the Account User name
+[INFO ] 2023-09-08 07:03:46.341 [main] Hooks - user clicked on logout button
+[INFO ] 2023-09-08 07:03:47.956 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-09-08 07:03:48.162 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-08 07:03:52.985 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-08 07:04:08.314 [main] Hooks - user enter the invalid email & password -test failed.
+[INFO ] 2023-09-08 07:04:08.573 [main] Hooks - user click on the login button..
+[INFO ] 2023-09-08 07:04:08.986 [main] Hooks - error message is displayed-invalid Username and Password
+[INFO ] 2023-09-08 07:04:09.163 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-08 07:04:14.472 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-08 07:04:28.313 [main] Hooks - user enter the invalid email & password -test failed.
+[INFO ] 2023-09-08 07:04:28.564 [main] Hooks - user click on the login button..
+[INFO ] 2023-09-08 07:04:28.935 [main] Hooks - error message is displayed-invalid Username and Password
+[INFO ] 2023-09-08 07:04:29.104 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-08 07:21:02.928 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-08 07:21:17.674 [main] Hooks - user enter the invalid email & password -test failed.
+[INFO ] 2023-09-08 07:21:17.964 [main] Hooks - user click on the login button..
+[INFO ] 2023-09-08 07:21:18.366 [main] Hooks - error message is displayed-invalid Username and Password
+[INFO ] 2023-09-08 07:21:18.505 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-08 07:21:23.206 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-08 07:21:37.199 [main] Hooks - user enter the invalid email & password -test failed.
+[INFO ] 2023-09-08 07:21:37.472 [main] Hooks - user click on the login button..
+[INFO ] 2023-09-08 07:21:38.220 [main] Hooks - error message is displayed-invalid Username and Password
+[INFO ] 2023-09-08 07:21:38.405 [main] Hooks - Browser Closed..

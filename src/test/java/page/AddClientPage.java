@@ -44,7 +44,7 @@ public void user_enter_the_valid_password() {
 
 public void user_click_on_the_login() throws InterruptedException {
 	
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
 	 wait.until(ExpectedConditions.elementToBeClickable(Login));
 	 Login.click();
@@ -151,7 +151,6 @@ public void user_enter_the_primary_phone() throws InterruptedException {
 	  PrimaryPh.click();
 	  PrimaryPh.sendKeys(prop.getProperty("PrimaryPhone"));
 	}
-
 
 public void user_enter_the_secondary_phone() throws InterruptedException {
 	WebElement SecondryPh= driver.findElement(By.xpath("//input[@id='client-secondary-phone']"));
@@ -267,7 +266,7 @@ public void then_user_enter_the_spouse_name() {
 	
 	}
 
-public void user_select_the_track() throws InterruptedException {
+	public void user_select_the_track() throws InterruptedException {
 
 	  WebElement TrackBtn = driver.findElement(By.xpath("//input[@placeholder=\"Select a Track\"]"));
       Thread.sleep(2000);
@@ -278,7 +277,7 @@ public void user_select_the_track() throws InterruptedException {
 	      
 }
 
-public void select_the_service_type() throws InterruptedException {
+	public void select_the_service_type() throws InterruptedException {
 	try {
 	  WebElement Servicetype = driver.findElement(By.xpath("(//span[contains(@role,'listbox')])[7]"));
 	  Servicetype.click();
@@ -289,7 +288,7 @@ public void select_the_service_type() throws InterruptedException {
 	catch (Exception e) {}
 }
 
-public void verify_that_add_new_contact_button() throws InterruptedException {
+	public void verify_that_add_new_contact_button() throws InterruptedException {
 	
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	WebElement contactbtn=driver.findElement(By.xpath("//a[normalize-space()='Add New Contact']"));
@@ -297,7 +296,7 @@ public void verify_that_add_new_contact_button() throws InterruptedException {
 	contactbtn.click();
 }
 
-public void verify_the_first_name() throws InterruptedException {
+	public void verify_the_first_name() throws InterruptedException {
 	
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	WebElement  Fname = driver.findElement(By.xpath("//input[@id='first-contact']"));
@@ -306,14 +305,14 @@ public void verify_the_first_name() throws InterruptedException {
 	
 }
 
-public void verify_the_last_name() {
+	public void verify_the_last_name() {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	WebElement Lname = driver.findElement(By.xpath("//input[@id='last-contact']"));
 	wait.until(ExpectedConditions.visibilityOf(Lname));
 	Lname.sendKeys(prop.getProperty("lastName"));
 }
 
-public void verify_the_address_line1() throws InterruptedException {
+	public void verify_the_address_line1() throws InterruptedException {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	WebElement Addressline1 = driver.findElement(By.cssSelector("#address1-contact"));
 	wait.until(ExpectedConditions.visibilityOf(Addressline1));
@@ -321,7 +320,7 @@ public void verify_the_address_line1() throws InterruptedException {
 	   
 }
 
-public void verify_the_address_line2() throws InterruptedException {
+	public void verify_the_address_line2() throws InterruptedException {
  
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	WebElement Addressline2 = driver.findElement(By.xpath("//input[@id='address2-contact']"));
@@ -330,7 +329,7 @@ public void verify_the_address_line2() throws InterruptedException {
    
 }
 
-public void verify_the_city() throws InterruptedException {
+	public void verify_the_city() throws InterruptedException {
 	
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	WebElement City = driver.findElement(By.xpath("//input[@id='city-contact']"));
@@ -398,7 +397,6 @@ public void save_the_new_contact_details()throws InterruptedException {
  
  
  public void validation_Message_should_be_shown_client_was_created() {
-	 
 	 	String expectedResult= "Client was created.";
 		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
 		assertEquals("Successfully created",expectedResult,actualResult);

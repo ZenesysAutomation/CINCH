@@ -17,6 +17,7 @@ public class EditClientPage extends BaseClass{
 public void check_the_user_email() throws InterruptedException {
 	
 	try {
+		
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 	 Useremail.sendKeys(prop.getProperty("username"));
@@ -31,6 +32,7 @@ public void check_the_user_email() throws InterruptedException {
 public void check_the_user_password() throws InterruptedException {
 	
 	try {
+		
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	WebElement Password= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
 	Password.sendKeys(prop.getProperty("password"));
