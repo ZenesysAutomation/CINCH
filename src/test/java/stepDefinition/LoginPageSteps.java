@@ -70,7 +70,7 @@ public class LoginPageSteps extends BaseClass{
 	@Given ("User Enter the {string} and {string}")
 	public void User_Enter_the_Email_and_Password(String email, String pass) {
 		login.User_Enter_the_Email_and_Password(email, pass);
-		log.info("user enter the invalid email & password -test failed.");
+		log.info("user enter the invalid email & password -test passed.");
 	}
 	
 	
@@ -85,4 +85,27 @@ public class LoginPageSteps extends BaseClass{
 		login.Error_message_is_Displayed(err);
 		log.info("error message is displayed-invalid Username and Password");
 	}
+	
+	//blank credentials
+	
+	@Given ("The User submits blank {string} and {string}")
+	public void the_user_submits_blank_email_and_password(String email,String pass) {
+		login.the_user_submits_blank_email_and_password(email,pass);
+		log.info("user enter the blank email address and entered password..");
+	}
+	
+	@When ("The user click on the Login button")
+	public void the_user_click_on_the_login_button() {
+		login.the_user_click_on_the_login_button();
+		log.info("user click on the login button..");
+	}
+	
+	
+	@Then ("The User should see an Error Message {string}")
+	public void the_user_should_see_an_error_message(String err) {
+		login.the_user_should_see_an_error_message(err);
+		log.info("error message is showing");
+		
+	}
+
 }

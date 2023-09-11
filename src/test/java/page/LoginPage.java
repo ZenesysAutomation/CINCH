@@ -126,6 +126,40 @@ public class LoginPage extends BaseClass {
 			assertEquals("error message showing",Expectedresult,Actualresult);
 			
 		}
-    
+		
+		public void the_user_submits_blank_email_and_password(String email,String pass) {
+			
+			try {
+				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+				WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
+				Useremail.clear();
+				Useremail.sendKeys(email);
+				
+				WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+				WebElement Password= wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
+				Password.sendKeys(pass);
+				
+				}
+				catch (TimeoutException e ) {
+					 e.printStackTrace();
+			}
+			
+		}
+		
+		public void the_user_click_on_the_login_button() {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
+			 wait.until(ExpectedConditions.elementToBeClickable(Login));
+			 Login.click();
+			
+		}
+		
+		public void the_user_should_see_an_error_message(String err) {
+			String Expectedresult = "The Logon field is required.";
+			String Actualresult=driver.findElement(By.xpath("(//li[normalize-space()='The Logon field is required.'])[1]")).getText();
+			assertEquals("error message is showing",Expectedresult,Actualresult);
+				
+		}
+		
 	}
 

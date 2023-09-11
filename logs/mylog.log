@@ -5752,3 +5752,26 @@
 [INFO ] 2023-09-08 07:21:37.472 [main] Hooks - user click on the login button..
 [INFO ] 2023-09-08 07:21:38.220 [main] Hooks - error message is displayed-invalid Username and Password
 [INFO ] 2023-09-08 07:21:38.405 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-11 01:15:12.747 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-11 01:15:25.910 [main] Hooks - user enter the invalid email & password -test failed.
+[INFO ] 2023-09-11 01:15:26.189 [main] Hooks - user click on the login button..
+[INFO ] 2023-09-11 01:15:26.513 [main] Hooks - error message is displayed-invalid Username and Password
+[INFO ] 2023-09-11 01:15:26.670 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-11 01:15:30.915 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-11 01:15:42.852 [main] Hooks - user enter the invalid email & password -test failed.
+[INFO ] 2023-09-11 01:15:43.026 [main] Hooks - user click on the login button..
+[INFO ] 2023-09-11 01:15:45.203 [main] Hooks - error message is displayed-invalid Username and Password
+[INFO ] 2023-09-11 01:15:45.329 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-11 08:50:13.139 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-11 08:50:24.758 [main] Hooks - user enter the blank email address and entered password..
+[INFO ] 2023-09-11 08:50:25.035 [main] Hooks - user click on the login button..
+[ERROR] 2023-09-11 08:50:45.676 [main] Hooks - Test case failed: User tries to login with blank Credentials
+[INFO ] 2023-09-11 08:50:45.818 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-11 08:57:00.510 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-11 08:57:11.803 [main] Hooks - user enter the blank email address and entered password..
+[INFO ] 2023-09-11 08:57:12.090 [main] Hooks - user click on the login button..
+[ERROR] 2023-09-11 08:57:32.765 [main] Hooks - Test case failed: User tries to login with blank Credentials
+[INFO ] 2023-09-11 08:57:32.903 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-11 08:57:44.929 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-11 08:57:57.205 [main] Hooks - user enter the blank email address and entered password..
+[INFO ] 2023-09-11 08:57:57.377 [main] Hooks - user click on the login button..
