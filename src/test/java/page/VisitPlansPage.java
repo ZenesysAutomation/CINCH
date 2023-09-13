@@ -811,7 +811,7 @@ public class VisitPlansPage extends BaseClass  {
 	
 	public void enter_caregiver_instruction() throws InterruptedException {
 		WebElement Notes=driver.findElement(By.xpath("//textarea[@id='notes']"));
-		Notes.sendKeys(prop.getProperty("CaregiverNotes"));
+		Notes.sendKeys(prop.getProperty("CaregiverNote"));
 		Thread.sleep(3000);
 		
 	}

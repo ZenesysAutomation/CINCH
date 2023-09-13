@@ -290,7 +290,7 @@ private boolean isAssessmentandCarePlanPresent() {
 			{
 				WebElement Notes= driver.findElement(By.xpath("//textarea[@id='notes']"));
 				Notes.clear();
-				Notes.sendKeys(prop.getProperty("Notes"));
+				Notes.sendKeys(prop.getProperty("Note"));
 				Thread.sleep(3000);
 			}
 
