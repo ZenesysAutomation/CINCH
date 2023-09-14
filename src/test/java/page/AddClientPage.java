@@ -141,6 +141,7 @@ public void user_enter_the_zip_code() {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	WebElement  ZipCode = driver.findElement(By.xpath("//input[@id='zip']"));
 	wait.until(ExpectedConditions.visibilityOf(ZipCode));
+	ZipCode.clear();
 	ZipCode.sendKeys(prop.getProperty("ZipCode"));
 		
 }
@@ -179,11 +180,6 @@ public void click_the_gender() throws InterruptedException {
 
 public void user_select_the_birth_date() throws InterruptedException {
 	
-	/*WebElement DOB=driver.findElement(By.xpath("//input[@id='birthdate']"));
-    DOB.sendKeys("12/7/1997");
-    explicitWait( DOB,15);*/
-	
-
 	try {
 	    WebElement DOB = driver.findElement(By.xpath("//input[@id='birthdate']"));
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));

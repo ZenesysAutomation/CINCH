@@ -1,5 +1,4 @@
 package base;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -31,8 +30,12 @@ public class BaseClass {
 		
 		try {
 			FileInputStream file= new FileInputStream("TestData/TestData.properties");
+			FileInputStream file2= new FileInputStream("TestData/Config.properties");
+			//FileInputStream file3= new FileInputStream("TestData/TestDataRandom.properties");
 			 prop =new Properties();
 			prop.load(file);
+			prop.load(file2);
+			//prop.load(file3);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

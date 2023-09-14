@@ -3,31 +3,27 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Properties;
 import java.util.Random;
 
-
-	public class UpdateTestDataProperties {
-	public static Properties prop;
+public class UpdateTestDataProperties {
+    public static Properties prop;
 
     public static void main(String[] args) {
-    	
         try {
             // Load existing properties
             Properties prop = new Properties();
-            FileInputStream file= new FileInputStream("TestData/TestData.properties");
+            FileInputStream file = new FileInputStream("TestData/TestDataRandom.properties");
             prop.load(file);
-          
+
             // Generate new test data
-            String newFirstName=generateRandomString(8);
-            String newLastName=generateRandomString(8);
+            String newFirstName = generateRandomString(8);
+            String newLastName = generateRandomString(8);
             String newAddressLine1=generateRandomString(8);
             String newAddressLine2=generateRandomString(8);
             String newResidentID=generateRandomString(8);
-            String newZipCode=generateRandomString(5);
-            String newPrimaryPhone=generateRandomString(10);
-            String newEmail=generateRandomString(20);
-            String newBirtdate=generateRandomString(20);
             String newMaritalStatus=generateRandomString(10);
             String newSpouseName=generateRandomString(10);
             String newReferralSource=generateRandomString(10);
@@ -37,9 +33,6 @@ import java.util.Random;
             String newaddressLine1=generateRandomString(5);
             String newaddressLine2=generateRandomString(6);
             String newcity=generateRandomString(6);
-            String newzipcode=generateRandomString(6);
-            String newprimaryphnumber=generateRandomString(10);
-            String newemail=generateRandomString(10);
             String newnote=generateRandomString(8);
             String newEditNote=generateRandomString(8);
             String newVisitSchedule=generateRandomString(8);
@@ -68,9 +61,22 @@ import java.util.Random;
             String newNotes=generateRandomString(10);
             String newCaregiverNote=generateRandomString(10);
             String newCaregiverinstruction=generateRandomString(10);
+            
 
-            // Update the properties
-           
+            //Generate a random phone number
+            String newPrimaryPhone = generateRandomPhoneNumber();
+            String newprimaryphnumber=generateRandomPhoneNumber();
+            // Generate a random email
+            String newEmail1 = generateRandomEmail();
+            String newemail2 = generateRandomEmail();
+            
+            //generate BirthDate
+            String newBirthdate = generateRandomBirthdate();
+            
+            String newZipCode = generateRandomZipCode();
+            String newzipcode=generateRandomZipCode();
+          
+            //Update the properties
             prop.setProperty("FirstName", newFirstName);
             prop.setProperty("LastName", newLastName);
             prop.setProperty("AddressLine1", newAddressLine1);
@@ -78,8 +84,8 @@ import java.util.Random;
             prop.setProperty("ResidentID", newResidentID);
             prop.setProperty("ZipCode", newZipCode);
             prop.setProperty("PrimaryPhone", newPrimaryPhone);
-            prop.setProperty("Email", newEmail);
-            prop.setProperty("Birtdate", newBirtdate);
+            prop.setProperty("Email", newEmail1);
+            prop.setProperty("Birtdate", newBirthdate);
             prop.setProperty("MaritalStatus", newMaritalStatus);
             prop.setProperty("SpouseName", newSpouseName);
             prop.setProperty("ReferralSource", newReferralSource);
@@ -91,7 +97,7 @@ import java.util.Random;
             prop.setProperty("city", newcity);
             prop.setProperty("zipcode", newzipcode);
             prop.setProperty("primaryphnumber", newprimaryphnumber);
-            prop.setProperty("email", newemail);
+            prop.setProperty("email", newemail2);
             prop.setProperty("note", newnote);
             prop.setProperty("EditNote",newEditNote);
             prop.setProperty("VisitSchedule",newVisitSchedule);
@@ -120,12 +126,13 @@ import java.util.Random;
             prop.setProperty("Notes",newNotes);
             prop.setProperty("CaregiverNote",newCaregiverNote);
             prop.setProperty("Caregiverinstruction",newCaregiverinstruction);
-            
+
             // Save the updated properties to the file
-            try (OutputStream output = new FileOutputStream("TestData/TestData.properties")) {
+            try (OutputStream output = new FileOutputStream("TestData/TestDataRandom.properties")) {
                 prop.store(output, "Updated test data for today");
             }
-            
+
+            // Print the updated values
             System.out.println("Updated test data for today:");
             System.out.println("FirstName= " + newFirstName);
             System.out.println("LastName= " + newLastName);
@@ -134,8 +141,8 @@ import java.util.Random;
             System.out.println("ResidentID= " + newResidentID);
             System.out.println("ZipCode= " + newZipCode);
             System.out.println("PrimaryPhone= " + newPrimaryPhone);
-            System.out.println("Email= " + newEmail);
-            System.out.println("Birtdate:= " + newBirtdate);
+            System.out.println("Email= " + newEmail1);
+            System.out.println("Birtdate:= " + newBirthdate);
             System.out.println("MaritalStatus= " + newMaritalStatus);
             System.out.println("SpouseName= " + newSpouseName);
             System.out.println("ReferralSource= " + newReferralSource);
@@ -147,7 +154,7 @@ import java.util.Random;
             System.out.println("city= " + newcity);
             System.out.println("zipcode= " + newzipcode);
             System.out.println("primaryphnumber= " + newprimaryphnumber);
-            System.out.println("email= " + newemail);
+            System.out.println("email= " + newemail2);
             System.out.println("note= " + newnote);
             System.out.println("EditNote= " + newEditNote);
             System.out.println("VisitSchedule= " + newVisitSchedule);
@@ -175,8 +182,7 @@ import java.util.Random;
             System.out.println("CaregiverNotes= " + newCaregiverNotes);
             System.out.println("Notes= " + newNotes);
             System.out.println("CaregiverNote= " + newCaregiverNote);
-            System.out.println("Caregiverinstruction= " + newCaregiverinstruction);
-            
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -185,17 +191,74 @@ import java.util.Random;
     private static String generateRandomString(int length) {
         String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         StringBuilder randomString = new StringBuilder();
-
         Random random = new Random();
         for (int i = 0; i < length; i++) {
             int index = random.nextInt(characters.length());
             randomString.append(characters.charAt(index));
         }
+
         return randomString.toString();
     }
+
+    private static String generateRandomPhoneNumber() {
+        StringBuilder randomPhoneNumber = new StringBuilder();
+        Random random = new Random();
+        for (int i = 0; i < 10; i++) { 
+            int digit = random.nextInt(10); 
+            randomPhoneNumber.append(digit);
+        }
+
+        return randomPhoneNumber.toString();
+    }
+    
+
+    private static String generateRandomEmail() {
+        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        StringBuilder randomLocalPart = new StringBuilder();
+
+        Random random = new Random();
+
+        int localPartLength = random.nextInt(6) + 5; 
+
+        for (int i = 0; i < localPartLength; i++) {
+            int index = random.nextInt(characters.length());
+            randomLocalPart.append(characters.charAt(index));
+        }
+
+        String domain = "gmail.com"; 
+
+        // Combine the local and domain parts to create the email address
+        return randomLocalPart.toString() + "@" + domain;
+    }
+    
+    private static String generateRandomBirthdate() {
+        Random random = new Random();
+        int year = 1900 + random.nextInt(100); // Random year between 1900 and 1999
+        int month = 1 + random.nextInt(12); // Random month between 1 and 12
+        int day = 1 + random.nextInt(28); // Random day between 1 and 28 (ignoring leap years for simplicity)
+        LocalDate date = LocalDate.of(year, month, day);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        return date.format(formatter);
+        
+    }
+    
+    private static String generateRandomZipCode() {
+        Random random = new Random();
+        StringBuilder zipCode = new StringBuilder();
+
+        for (int i = 0; i < 6; i++) { // ZIP codes in the United States are typically 5 digits
+            int digit = random.nextInt(10); // Random digit between 0 and 9
+            zipCode.append(digit);
+        }
+
+        return zipCode.toString();
+    }
+    
+    
 }
 
 
+   
 
 	
 	
