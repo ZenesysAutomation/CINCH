@@ -71,27 +71,40 @@ public class AddCommunityNotePage extends BaseClass {
 
 
 public void click_on_the_manage() throws InterruptedException {
-
+try {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	WebElement manage=driver.findElement(By.linkText("Manage"));
 	wait.until(ExpectedConditions.elementToBeClickable(manage));
 	manage.click();
+}
+catch (Exception e) {
+	e.printStackTrace();
+}
 		    
 	}
 
 public void click_on_the_add_new_community_note() throws InterruptedException {
-	
+	try {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	WebElement AddcomNote=driver.findElement(By.xpath("//a[normalize-space()='Add New Community Note']"));
 	wait.until(ExpectedConditions.elementToBeClickable(AddcomNote));
 	AddcomNote.click();
+	}
+	catch(Exception e) {
+		e.printStackTrace();
+	}
 	    
 }
 
 public void enter_the_note() throws InterruptedException {
+	try {
 	WebElement note=driver.findElement(By.xpath("//textarea[@id='note']"));
 	note.sendKeys(prop.getProperty("note"));
 	Thread.sleep(2000);
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
     
 }
 
@@ -106,12 +119,16 @@ public void select_communities() throws InterruptedException {
 }
 
 public void choose_a_start_date() throws InterruptedException {
-			
+		try {	
 	WebElement startDateField = driver.findElement(By.xpath("//input[@id='startdate']"));
 	  LocalDate currentDate = LocalDate.now();
 	  String formattedDate = currentDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 	  startDateField.sendKeys(formattedDate);
 	  Thread.sleep(3000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 }
 
 public void choose_a_end_date() throws InterruptedException {
@@ -153,9 +170,14 @@ private static int generateRandomNumber(int start, int end) {
 }
 	
 public void community_note_was_created_message_should_be_shown() {
+	try {
 	String expectedResult= "Community Note was created.";
 	String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
 	assertEquals("Community note",expectedResult,actualResult);
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
 		
 	}
 

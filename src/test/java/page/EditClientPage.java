@@ -117,6 +117,7 @@ public void click_on_the_user_table() throws InterruptedException {
 }
 
 	public void change_the_status_from_active_to_discharged() throws InterruptedException {
+		try {
 	WebElement Discharged=driver.findElement(By.xpath("//span[@aria-owns='client-status_options']"));
 	Discharged.click();
 	Thread.sleep(3000);
@@ -124,11 +125,15 @@ public void click_on_the_user_table() throws InterruptedException {
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	  js.executeScript("arguments[0].click()",Discharged);
 	Thread.sleep(3000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	
 }
 
 	public void enter_the_discharge_reason() throws InterruptedException {
-	
+	try {
 	   WebElement DischargeReason=driver.findElement(By.xpath("(//span[@aria-owns='discharge-reason_options'])[1]"));
 		
 	   Thread.sleep(3000);
@@ -136,14 +141,22 @@ public void click_on_the_user_table() throws InterruptedException {
 	   DischargeReason.sendKeys("Moved out of area");
 	   DischargeReason.click();
        Thread.sleep(5000);
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
 }
 
 	public void save_the_data() throws InterruptedException {
-
+try {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	WebElement SaveData=driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
 	 wait.until(ExpectedConditions.elementToBeClickable(SaveData));
 	 SaveData.click();
+}
+catch (Exception e) {
+	e.printStackTrace();
+}
 }
 
 

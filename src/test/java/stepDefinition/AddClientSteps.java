@@ -274,7 +274,10 @@ public class AddClientSteps extends BaseClass{
 		log.info("validation Message should be shown client was created test passed..");
 		
 	}
-
-
-
+	
+	@When ("i Delete records from the Database")
+	public void i_delete_records_from_the_database() {
+		steps.i_delete_records_from_the_database();
+		
+	}
 }

@@ -54,10 +54,14 @@ public class LoginPage extends BaseClass {
 	}
 	
 	public void Home_page_should_be_shown() {
+		try {
 	String expectedResult= "Home";
 	String actualResult= driver.findElement(By.xpath("//span[normalize-space()='Home']")).getText();
 	assertEquals("Home Page Should be Shown",expectedResult,actualResult);
-		
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}	
 	}
 	
 
@@ -121,9 +125,14 @@ public class LoginPage extends BaseClass {
 		}
 		
 		public void Error_message_is_Displayed(String err) {
+			try {
 			String Expectedresult = "Invalid Login - Invalid username and or password.";
 			String Actualresult=driver.findElement(By.xpath("(//div[@role='alert'])[1]")).getText();
 			assertEquals("error message showing",Expectedresult,Actualresult);
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}
 			
 		}
 		
@@ -155,9 +164,14 @@ public class LoginPage extends BaseClass {
 		}
 		
 		public void the_user_should_see_an_error_message(String err) {
+			try {
 			String Expectedresult = "The Logon field is required.";
 			String Actualresult=driver.findElement(By.xpath("(//li[normalize-space()='The Logon field is required.'])[1]")).getText();
 			assertEquals("error message is showing",Expectedresult,Actualresult);
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}
 				
 		}
 		

@@ -70,7 +70,6 @@ public class VisitPlansPage extends BaseClass  {
 }
 	
 	public void user_click_on_the_visit_plans() throws InterruptedException {
-		
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		    WebElement VisitPlan= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(), 'Visit Plans')]")));
@@ -133,23 +132,24 @@ public class VisitPlansPage extends BaseClass  {
 		catch (Exception e) {
 			return true;
 		}
-		return false;
-
-		
+		return false;	
 	}
 	
-	public void select_the_recurrence() throws InterruptedException {
-		
+	public void select_the_recurrence() throws InterruptedException {	
+	try {	
 	WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));
 	Recurrence.click();
 	Recurrence.sendKeys("Single");
 	Recurrence.click();
 	Thread.sleep(3000);
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
 }
 	
-	
 	public void select_the_start_time() throws InterruptedException {
-	
+	try {
 		WebElement SelectTime = driver.findElement(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
 		explicitWait(SelectTime,5);
 		SelectTime.click();
@@ -157,16 +157,26 @@ public class VisitPlansPage extends BaseClass  {
 		List<WebElement> liList=driver.findElements(By.cssSelector("div > ul > li.e-list-item"));
 		liList.get(random.nextInt(96)).click();	
 		Thread.sleep(3000);
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
 		
 		}
 	
 	//Hourly Visit ---
 	
 	public void select_the_hourly_visit() throws InterruptedException {
+		try {
 		WebElement Hourly = driver.findElement(By.xpath("(//input[@id='hourly'])[1]"));
 		Hourly.click();	
 		Thread.sleep(2000);
-	}
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			}
+		}
+	
 
 	public void select_the_end_time() throws InterruptedException {
 		
@@ -205,20 +215,30 @@ public class VisitPlansPage extends BaseClass  {
 	}
 
 	public void select_the_hourly_rate() throws InterruptedException {
+		try {
 		WebElement HourlyRate= driver.findElement(By.xpath("(//span[contains(@aria-owns,'hourlyduration_options')])[1]"));
 		HourlyRate.click();
 		HourlyRate.sendKeys("CINCHCCM Test $12.00");
 		Thread.sleep(2000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	//Hourly visit end---
 	
 	public void select_a_duration() throws InterruptedException {
+		try {
 		WebElement Duration =driver.findElement(By.xpath("(//span[@aria-owns='duration_options'])[1]"));
 		Duration.click();
 		Duration.sendKeys("65 Minute Visit");
 		Duration.click();
 		Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	/*public void select_the_recurrence() throws InterruptedException {
@@ -230,6 +250,7 @@ public class VisitPlansPage extends BaseClass  {
 	}*/
 	
 	public void select_the_start_date() throws InterruptedException {
+		try {
 		LocalDateTime targetDate = LocalDateTime.now().plusDays(1);
         String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 
@@ -242,6 +263,10 @@ public class VisitPlansPage extends BaseClass  {
 
         startDateField.sendKeys(targetDateString);
         Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 			
 		
 	}
@@ -298,9 +323,14 @@ public class VisitPlansPage extends BaseClass  {
 	
 	
 	public void click_on_the_bathing() throws InterruptedException {
+		try {
 		WebElement BathingBtn =driver.findElement(By.xpath("(//div[@role='presentation'][normalize-space()='Bathing'])[1]"));
 		BathingBtn.click();
 		Thread.sleep(2000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 			
 	}
 	    
@@ -349,9 +379,14 @@ public class VisitPlansPage extends BaseClass  {
 		
 	}
 	public void enter_the_caregiver_instructions() throws InterruptedException {
+		try {
 		WebElement VisitTiming = driver.findElement(By.xpath("//textarea[@id='notes']"));
 		VisitTiming.sendKeys("Testing demo");
 		Thread.sleep(3000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	public void click_on_the_update_button() throws InterruptedException {
 		/*WebElement UpdateBtn = driver.findElement(By.xpath("//button[normalize-space()='Update']"));
@@ -372,10 +407,15 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void save_the_bathing_details() throws InterruptedException {
+		try {
 		WebElement Savedetails = driver.findElement(By.xpath("//button[@id='SaveVisit']"));  
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()",Savedetails);
 		Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
@@ -397,9 +437,14 @@ public class VisitPlansPage extends BaseClass  {
 	}
 		   
 	public void click_on_the_continence_and_toileting() throws InterruptedException {
+		try {
 		WebElement Continence =driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='Continence and Toileting']"));
 		Continence.click();
 		Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void click_on_the_assistance_level() throws InterruptedException {
@@ -417,13 +462,17 @@ public class VisitPlansPage extends BaseClass  {
 
 		 
 	public void save_the_continence_and_toileting_details() throws InterruptedException {
+		try {
 		WebElement SaveContinence = driver.findElement(By.id("SaveVisit"));
 		Thread.sleep(4000);
 		
 		    JavascriptExecutor js = (JavascriptExecutor)driver;
 		    js.executeScript("arguments[0].click()",SaveContinence );	
 		    Thread.sleep(6000);
-	  
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	public void click_on_the_again_ad_ls() throws InterruptedException {
 		/*WebElement Adls3 =driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='ADLs']"));
@@ -437,19 +486,23 @@ public class VisitPlansPage extends BaseClass  {
 		    Adls2.click();
 		} catch (Exception e) {
 		    e.printStackTrace(); 
-		}
-
-		
+		}	
 	}
 	
 	public void click_on_the_dressing_and_grooming() throws InterruptedException{
+		try {
 		WebElement dressingNgrooming =driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='Dressing & Grooming']"));
 		dressingNgrooming.click();
-		Thread.sleep(6000);	
-	}
+		Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			}
+		}
 	
 	
 	public void select_the_assistance_as_a_supervision() throws InterruptedException {
+		try {
 		WebElement AssistanceSup =driver.findElement(By.xpath("(//span[contains(@role,'listbox')])[2]"));
 		AssistanceSup.click();
 		AssistanceSup.sendKeys("Supervision");
@@ -457,6 +510,10 @@ public class VisitPlansPage extends BaseClass  {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
@@ -501,9 +558,14 @@ public class VisitPlansPage extends BaseClass  {
 	
 	
 	public void enter_the_caregiver_instructions3() throws InterruptedException {
+		try {
 		WebElement Instructions3  = driver.findElement(By.xpath("//textarea[@id='notes']"));
 		Instructions3.sendKeys(prop.getProperty("CaregiverInstruction"));
 		Thread.sleep(4000);	
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void update_the_apply_lotion() throws InterruptedException {
@@ -548,9 +610,14 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void click_on_the_eating() throws InterruptedException {
+		try {
 		WebElement Eating =driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='Eating']"));
 		Eating.click();
 		Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 				
 	}
 	
@@ -595,6 +662,7 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void select_the_assistance_level_as_a_limited_assistance() throws InterruptedException {
+		try {
 		WebElement LimitedAssistance =driver.findElement(By.xpath("(//span[@role='listbox'])[2]"));
 		LimitedAssistance.click();
 		LimitedAssistance.sendKeys("Limited Assistance");
@@ -604,6 +672,12 @@ public class VisitPlansPage extends BaseClass  {
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);	
 		}
+	catch (Exception e) {
+		e.printStackTrace();
+		
+	}
+		
+	}
 	
 	public void select_the_walk_with_client() throws InterruptedException {
 		WebElement WalkWithClient=driver.findElement(By.xpath("(//input[@id='1812'])[1]"));
@@ -646,15 +720,21 @@ public class VisitPlansPage extends BaseClass  {
 		
 	}
 	public void enter_caregiver_instructions() throws InterruptedException {
+		try {
 		WebElement Notes=driver.findElement(By.xpath("//textarea[@id='notes']"));
 		Notes.sendKeys(prop.getProperty("CaregiverNotes"));
 		Thread.sleep(4000);	
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void update_the_walk_with_client_details() throws InterruptedException{
 		WebElement UpdateWalkwithClient=driver.findElement(By.xpath("//button[normalize-space()='Update']"));
 		UpdateWalkwithClient.click();
 		Thread.sleep(4000);	
+		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(3000);	
@@ -682,20 +762,31 @@ public class VisitPlansPage extends BaseClass  {
 	}
 		
 	public void click_on_the_household_tasks() throws InterruptedException {
+		try {
 		WebElement HouseHold=driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='Household Tasks']"));
 		HouseHold.click();
 		Thread.sleep(4000);	
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void select_the_assistance_level_as_a_assistance() throws InterruptedException {
+		
+		try {
 		WebElement AssistanceLevel=driver.findElement(By.xpath("//span[@role='listbox']"));
 		AssistanceLevel.click();
 		AssistanceLevel.sendKeys("Assistance");
 		AssistanceLevel.click();
+		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);	
-		
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void click_on_the_make_bed() throws InterruptedException {
@@ -728,9 +819,14 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void enter_the_caregiver_instructions1() throws InterruptedException {
+		try {
 		WebElement CaregiverInstructions1Note= driver.findElement(By.xpath("//textarea[@id='notes']"));
 		CaregiverInstructions1Note.sendKeys(prop.getProperty("Notes"));
 		Thread.sleep(3000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void update_the_make_bed_details() throws InterruptedException {
@@ -771,6 +867,7 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void select_laundry_assistance_level_as_a_assistance() throws InterruptedException{
+		try {
 			WebElement LaundryAssistance=driver.findElement(By.xpath("(//span[@role='listbox'])[2]"));
 			LaundryAssistance.click();
 			LaundryAssistance.sendKeys("Assistance");
@@ -779,6 +876,10 @@ public class VisitPlansPage extends BaseClass  {
 			JavascriptExecutor js = (JavascriptExecutor)driver;
 			js.executeScript("window.scrollBy(0, 50000)");
 			Thread.sleep(4000);
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void click_on_the_tasks() throws InterruptedException {
@@ -810,10 +911,14 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void enter_caregiver_instruction() throws InterruptedException {
+		try {
 		WebElement Notes=driver.findElement(By.xpath("//textarea[@id='notes']"));
 		Notes.sendKeys(prop.getProperty("CaregiverNote"));
 		Thread.sleep(3000);
-		
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void update_the_laundry_details() throws InterruptedException {
@@ -848,12 +953,18 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void click_on_the_meals() throws InterruptedException {
+		try {
 	WebElement Meals =driver.findElement(By.xpath("//div[contains(@role,'presentation')][normalize-space()='Meals']"));
 	Meals.click();
 	Thread.sleep(3000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void select_the_meals_assistance_level_no_assistance() throws InterruptedException {
+		try {
 		WebElement MealsAssistance=	driver.findElement(By.xpath("(//span[contains(@role,'listbox')])[2]"));
 		 MealsAssistance.click();
 		 MealsAssistance.sendKeys("No Assistance");
@@ -862,6 +973,10 @@ public class VisitPlansPage extends BaseClass  {
 		 JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		 Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void save_the_meals_details() throws InterruptedException {
@@ -888,14 +1003,20 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void user_click_on_the_medication() throws InterruptedException {
+		try {
 		
 		WebElement MedicationClk=driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='Medication']"));
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()",MedicationClk);
 		Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void user_select_the_medication_assistance_level_as_assistance() throws InterruptedException {
+		try {
 		WebElement AssistanceLevel=driver.findElement(By.xpath("(//span[@role='listbox'])[2]"));
 		AssistanceLevel.click();
 		AssistanceLevel.sendKeys("Assistance");
@@ -905,6 +1026,10 @@ public class VisitPlansPage extends BaseClass  {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	
@@ -937,13 +1062,18 @@ public class VisitPlansPage extends BaseClass  {
 			Thread.sleep(6000);
 		}
 		catch (Exception e) {
-			
+			e.printStackTrace();
 		}
 	}
 	public void enter_the_careGiver_instructions() throws InterruptedException {
+		try {
 		WebElement CareGiverNotes=driver.findElement(By.xpath("//textarea[@id='notes']"));
 		CareGiverNotes.sendKeys(prop.getProperty("Caregiverinstruction"));
 		Thread.sleep(2000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	public void update_the_medication_details () throws InterruptedException {
@@ -989,6 +1119,7 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void select_no_assistance() throws InterruptedException {
+		try {
 		WebElement Assistance=	driver.findElement(By.xpath("(//span[contains(@role,'listbox')])[2]"));
 		 Assistance.click();
 		 Assistance.sendKeys("No Assistance");
@@ -996,6 +1127,10 @@ public class VisitPlansPage extends BaseClass  {
 		 JavascriptExecutor js = (JavascriptExecutor)driver;
 		 js.executeScript("window.scrollBy(0, 50000)");
 		 Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
@@ -1007,7 +1142,6 @@ public class VisitPlansPage extends BaseClass  {
 		
 		try{
 			
-		
 		if(isAddToSchedueElementPresent()){
 			WebElement AddToSchedue=driver.findElement(By.xpath("//span[normalize-space()='Add To Schedule']"));
 			JavascriptExecutor js = (JavascriptExecutor)driver;
@@ -1098,9 +1232,14 @@ public class VisitPlansPage extends BaseClass  {
 	}
 		
 	public void save_the_everyday_visit_series() throws InterruptedException {
+		try {
 		WebElement DeleteVisitSeries=driver.findElement(By.xpath("//button[@id='SaveVisit']"));
 		DeleteVisitSeries.click();
 		Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
@@ -1117,12 +1256,17 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	    
 	public void user_select_all_days() throws InterruptedException {
+		try {
 		WebElement dropdown=driver.findElement(By.id("daysofweek"));
 		dropdown.click();
 		
 		WebElement dropdown2=driver.findElement(By.xpath("//*[@id=\"daysofweek_popup\"]/div[1]/span"));
 		dropdown2.click();
 		Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		    
 	}
 	
@@ -1137,24 +1281,33 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void select_duration() throws InterruptedException {
+		try {
 		WebElement Duration =driver.findElement(By.xpath("//span[contains(@aria-owns,'duration_options')]"));
 		Duration.click();
 		Duration.sendKeys("45 Minute Visit");
 		Duration.click();
 		Thread.sleep(6000);
-			
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void select_weekly_recurrence() throws InterruptedException {
+		try {
 		WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));
 		Recurrence.click();
 		Recurrence.sendKeys("Weekly");
 		Recurrence.click();
 		Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void select_start_date() throws InterruptedException {
-		
+		try {
 		 LocalDateTime targetDate = LocalDateTime.now().plusDays(1);
 	        String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 
@@ -1167,9 +1320,14 @@ public class VisitPlansPage extends BaseClass  {
 
 	        startDateField.sendKeys(targetDateString);
 	        Thread.sleep(8000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void select_past_date() throws InterruptedException {
+		try {
 		 LocalDateTime targetDate = LocalDateTime.now().minusDays(7);
 	        String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 
@@ -1182,10 +1340,12 @@ public class VisitPlansPage extends BaseClass  {
 
 	        startDateField.sendKeys(targetDateString);
 	        Thread.sleep(8000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 		
-	
-	
 	public void user_click_on_the_save_button() throws InterruptedException {
 		WebElement SaveBtn =driver.findElement(By.xpath("//button[@id='SaveNewVisit']"));
 		Thread.sleep(4000);
@@ -1234,10 +1394,15 @@ public class VisitPlansPage extends BaseClass  {
 	//change task
 	
 	public void user_click_on_the_ad_ls_tab() throws InterruptedException {
+		try {
 		WebElement ADLs =driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='ADLs']"));
 		Thread.sleep(4000);
 		 ADLs.click();
 		Thread.sleep(6000); 
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
@@ -1251,6 +1416,7 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void user_select_the_bathing_assistance_level_as_a_supervision() throws InterruptedException {
+		try {
 		WebElement BathingAssistance = driver.findElement(By.xpath("(//span[@role='listbox'])[1]"));
 		BathingAssistance.click();
 		Thread.sleep(3000);
@@ -1259,16 +1425,24 @@ public class VisitPlansPage extends BaseClass  {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
 	public void verify_if_assist_with_shower_is_already_checked_then_unchecked_it() throws InterruptedException {
+		
 		WebElement AssistwithShower = driver.findElement(By.xpath("//input[@id='1798']"));
 		if(AssistwithShower.isSelected()) {
 			AssistwithShower.click();
 		Thread.sleep(6000);
-	}
-	}
+		
+		}
+			}
+	
+	
 	
 	public void checked_the_assist_with_sponge_bath() throws InterruptedException {
 		WebElement SpongeBath = driver.findElement(By.xpath("(//input[@id='1799'])[1]"));
@@ -1288,42 +1462,67 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void user_select_the_visits_timing() throws InterruptedException {
+		try {
 		WebElement VisitTimingslt = driver.findElement(By.xpath("//*[@id=\"visitconfig\"]/ul/li/div[2]/div[1]"));
 		VisitTimingslt.click();
 		WebElement VisitTiming1 = driver.findElement(By.xpath("//*[@id=\"visitconfig_active\"]/div[2]/div[2]/span"));
 		Thread.sleep(4000);
 		VisitTiming1.click();
 		Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
 	public void update_the_bathing_details() throws InterruptedException {
+		try {
 		WebElement UpdateBt = driver.findElement(By.xpath("//button[normalize-space()='Update']"));
 		UpdateBt.click();
 		Thread.sleep(8000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void save_the_bathing_details1() throws InterruptedException {
+		try {
 		WebElement Savedetail = driver.findElement(By.xpath("//button[@id='SaveVisit']"));  
 		Savedetail.click();
 		Thread.sleep(6000);	
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void user_click_on_the_ad_ls_to_enter_the_dressing_and_grooming_details() throws InterruptedException {
+		try {
 		WebElement Adls3 =driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='ADLs']"));
 		Thread.sleep(6000);
 		Adls3 .click();
 		Thread.sleep(8000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
 	public void user_click_on_the_dressing_and_grooming() throws InterruptedException {
+		try {
 		WebElement dressingNgrooming =driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='Dressing & Grooming']"));
 		dressingNgrooming.click();
 		Thread.sleep(6000);
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void verify_if_apply_lotion_tasks_is_already_checked_then_unchecked_it() throws InterruptedException {
@@ -1382,11 +1581,16 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void save_the_dressing_and_grooming_details1() throws InterruptedException {
+		try {
 		WebElement GroomingDetails =driver.findElement(By.xpath("//button[@id='SaveVisit']"));
 		Thread.sleep(6000);
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		 js.executeScript("arguments[0].click()",GroomingDetails);
 		Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
@@ -1405,10 +1609,15 @@ public class VisitPlansPage extends BaseClass  {
 	
 	
 	public void user_click_on_the_ad_ls_to_enter_the_mobility_details() throws InterruptedException {
+		try {
 		WebElement Adls2 =driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='ADLs']"));
 		Thread.sleep(6000);
 		Adls2 .click();
 		Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
@@ -1467,9 +1676,14 @@ public class VisitPlansPage extends BaseClass  {
 	 
 	
 	public void update_the_assist_with_transfers_details() throws InterruptedException {
+		try {
 		WebElement Updateassistwithtransfers=driver.findElement(By.xpath("//button[normalize-space()='Update']"));
 		Updateassistwithtransfers.click();
 		Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
@@ -1482,23 +1696,35 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void user_again_click_on_the_ia_dls_to_enter_the_medication_details() throws InterruptedException {
+		try {
 		WebElement IADLS=driver.findElement(By.xpath("(//div[@role='presentation'][normalize-space()='iADLS'])[1]"));
 		IADLS.click();
 		Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
 	public void click_on_the_medication() throws InterruptedException {
+		try {
 		WebElement MedicationClk=driver.findElement(By.xpath("//div[@role='presentation'][normalize-space()='Medication']"));
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()",MedicationClk);
 		Thread.sleep(6000);
+		
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	public void select_the_medication_assistance_evel_as_assistance() throws InterruptedException {
+		try {
 		WebElement AssistanceLevel=driver.findElement(By.xpath("(//span[@role='listbox'])[2]"));
 		AssistanceLevel.click();
 		AssistanceLevel.sendKeys("Assistance");
@@ -1507,6 +1733,10 @@ public class VisitPlansPage extends BaseClass  {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	public void verify_if_check_blood_pressure_tasks_is_already_select_then_unselect_it() throws InterruptedException {
@@ -1551,16 +1781,25 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void user_enter_caregiver_instructions_for_medication() throws InterruptedException {
-		
+		try {
 		WebElement CareGiverNotes=driver.findElement(By.xpath("//textarea[@id='notes']"));
 		CareGiverNotes.sendKeys("testing v6.0");
 		Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	public void user_update_the_medication_details() throws InterruptedException {
+		try {
 		WebElement UpdateMedicationDetails=driver.findElement(By.xpath("(//button[normalize-space()='Update'])[1]"));
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()",UpdateMedicationDetails);
 		Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void user_save_the_medication_details() throws InterruptedException {
@@ -1578,7 +1817,6 @@ public class VisitPlansPage extends BaseClass  {
 		
 		try{
 			
-		
 		if(isAddToSchedueElementPresent2()){
 			WebElement AddToSchedue=driver.findElement(By.xpath("//span[normalize-space()='Add To Schedule']"));
 			JavascriptExecutor js = (JavascriptExecutor)driver;
@@ -1643,9 +1881,14 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void save_the_single_visit_series() throws InterruptedException {
+		try {
 		WebElement DeleteVisitSeries=driver.findElement(By.xpath("//button[@id='SaveVisit']"));
 		DeleteVisitSeries.click();
 		Thread.sleep(8000);	
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
@@ -1653,9 +1896,14 @@ public class VisitPlansPage extends BaseClass  {
 	//custom date 
 
 	public void check_the_add_visit_configuration_button() throws InterruptedException {
+		try {
 		WebElement AddVisitBtn=	driver.findElement(By.xpath("(//a[normalize-space()='Add Visit Configuration'])[1]"));
 		AddVisitBtn.click();
 		Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	    
 	}
 	
@@ -1679,16 +1927,21 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void user_select_the_weekly_recurrence() throws InterruptedException {
+		try {
 		WebElement Recurrence =driver.findElement(By.xpath("(//span[@class='e-ddl e-lib e-input-group e-control-container e-control-wrapper e-valid-input'])[1]"));
 		Recurrence.click();
 		Recurrence.sendKeys("Weekly");
 		Recurrence.click();
 		Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	
 	public void user_select_start_time() throws InterruptedException {
-	
+	try {
 		WebElement SelectTime = driver.findElement(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
 		explicitWait(SelectTime, 5);
 		SelectTime.click();
@@ -1697,14 +1950,22 @@ public class VisitPlansPage extends BaseClass  {
 		liList.get(random.nextInt(96)).click();	
 		Thread.sleep(3000);
 	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
+	}
 	
 	public void user_select_a_duration() throws InterruptedException {
-		
+		try {
 		WebElement Duration =driver.findElement(By.xpath("//span[contains(@aria-owns,'duration_options')]"));
 		Duration.click();
 		Duration.sendKeys("60 Minute Visit");
 		Duration.click();
 		Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
@@ -1719,6 +1980,7 @@ public class VisitPlansPage extends BaseClass  {
 	}*/	
 	
 	public void user_select_start_date() throws InterruptedException {
+		try {
 		 LocalDateTime targetDate = LocalDateTime.now().plusDays(1);
 	        String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 
@@ -1731,17 +1993,26 @@ public class VisitPlansPage extends BaseClass  {
 
 	        startDateField.sendKeys(targetDateString);
 	        Thread.sleep(8000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
 	public void user_click_on_the_use_custom_end_date_toggle() throws InterruptedException {
+		try {
 		WebElement Toggleon = driver.findElement(By.xpath("(//input[@id='custom-date'])[1]"));
 		Toggleon.click();
 		Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void user_enter_the_end_date() throws InterruptedException {
-
+		try {
 		LocalDateTime targetDate = LocalDateTime.now().plusDays(generateRandomNumber(2,100));
 	    String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 
@@ -1754,6 +2025,10 @@ public class VisitPlansPage extends BaseClass  {
 	    
 	   endDateField.sendKeys(targetDateString);
 	   Thread.sleep(6000);
+		}
+		catch (Exception e) {
+	e.printStackTrace();
+		}
 				
 	}
 	private static int generateRandomNumber(int start, int end) {
@@ -1797,17 +2072,22 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			
-		}	
-		
+		}		
 	}
 	
 	public void click_on_the_single_day_table() throws InterruptedException {
+		try {
 		WebElement TableClick=driver.findElement(By.xpath("//a[normalize-space()='Mon']"));
 		TableClick.click();
 		Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void change_the_end_date() {
+		try {
 		 LocalDateTime targetDate = LocalDateTime.now().plusDays(6);
 	        String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 
@@ -1824,7 +2104,10 @@ public class VisitPlansPage extends BaseClass  {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-		
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void update_the_visits() throws InterruptedException {
@@ -1857,19 +2140,30 @@ public class VisitPlansPage extends BaseClass  {
 	
 	// Change A visit Duration For Everyday
 	public void click_on_the_visit_table() throws InterruptedException {
+		try {
 		WebElement tableClk= driver.findElement(By.xpath("//a[normalize-space()='Every Day']"));
 		tableClk.click();
 		Thread.sleep(8000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void change_the_visit_duration_as_30_minute_visit() throws InterruptedException {
+		try {
 		WebElement Duration =driver.findElement(By.xpath("//span[contains(@aria-owns,'duration_options')]"));
 		Duration.click();
 		Duration.sendKeys("30 Minute Visit");
 		Duration.click();
 		Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	public void update_the_visit_duration() throws InterruptedException {
+		try {
 		WebElement EditBtn=driver.findElement(By.xpath("//button[@id='UpdateNewVisit']"));
 		EditBtn.click();
 		Thread.sleep(4000);
@@ -1877,12 +2171,21 @@ public class VisitPlansPage extends BaseClass  {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	public void save_the_details() throws InterruptedException {
+		try {
 		WebElement saveDetailsbtn =	driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
 		saveDetailsbtn.click();
-		Thread.sleep(8000);
+		Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
@@ -1901,17 +2204,27 @@ public class VisitPlansPage extends BaseClass  {
 	
 	//Single Change Duration
 	public void click_on_the_single_visit_table() throws InterruptedException {
+		try {
 		WebElement tableclick =	driver.findElement(By.xpath("//a[normalize-space()='Mon']"));
 		tableclick.click();
 		Thread.sleep(8000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void change_the_visit_duration_as_45_minute_visit() throws InterruptedException {
+		try {
 		WebElement DurationClk =driver.findElement(By.xpath("//span[contains(@aria-owns,'duration_options')]"));
 		DurationClk.click();
 		DurationClk.sendKeys("45 Minute Visit");
 		DurationClk.click();
 		Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	

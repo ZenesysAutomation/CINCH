@@ -20,28 +20,33 @@ public class Hooks extends BaseClass {
 	@Before
 	 public static void mysetup() {
 		
-		log = LogManager.getLogger("Hooks");
+		 log = LogManager.getLogger("Hooks");
 			
 			String browserName= prop.getProperty("browser");
-			if(browserName.equals("chrome")) {
+			if(browserName.equals("chrome")) 
+			{
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options= new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
-			/*options.addArguments("--disable-gpu");
+			options.addArguments("--disable-gpu");
 			options.addArguments("--disable-extensions");
 			options.addArguments("--no-sandbox");
 			options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--headless");
-			options.addArguments("--window-size=1580,1280");*/
+			options.addArguments("--window-size=1580,1280");
 			options.addArguments("--incognito");
 			driver = new ChromeDriver(options);
-			}else if(browserName.equals("firefox")) {
+			}
+			else if(browserName.equals("firefox")) 
+			{
 				WebDriverManager.firefoxdriver().setup();
 				FirefoxOptions options= new FirefoxOptions();
 				options.addArguments("--remote-allow-origins=*");
 				options.addArguments("--incognito");
 				driver = new FirefoxDriver(options);
-			}else if (browserName.equals("edge")) {
+			}
+			else if (browserName.equals("edge")) 
+			{
 				WebDriverManager.edgedriver().setup();
 				EdgeOptions options = new EdgeOptions();
 				options.addArguments("--remote-allow-origins=*");
@@ -55,6 +60,7 @@ public class Hooks extends BaseClass {
 			log.info("Browser Launched..");
 		}
 	
+	
 	@After
 	public void tearDown(Scenario s) {
 	        if (s.isFailed()) {
@@ -66,6 +72,7 @@ public class Hooks extends BaseClass {
 	            log.error("Test case failed: " + s.getName());
 	        }
 	        driver.quit();
+	        
 	        log.info("Browser Closed..");
 	}
 	

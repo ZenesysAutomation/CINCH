@@ -46,3 +46,10 @@ Then select the Relationship
 Then Save the New Contact Details
 Then Save the New client Details
 Then Validation Message Should be Shown Client was Created
+ 
+
+@DbDelete
+Scenario: Delete Records from the Database(Database Cleanup)
+When i Delete records from the Database
+
+

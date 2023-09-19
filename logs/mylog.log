@@ -6349,3 +6349,305 @@
 [INFO ] 2023-09-14 07:06:45.052 [main] Hooks - entered the discharge reason
 [INFO ] 2023-09-14 07:06:45.208 [main] Hooks - save data..
 [INFO ] 2023-09-14 07:06:45.331 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-15 03:46:29.897 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-15 03:46:43.959 [main] Hooks - Entered Email Address
+[INFO ] 2023-09-15 03:46:44.155 [main] Hooks - Password Entered
+[INFO ] 2023-09-15 03:46:44.566 [main] Hooks - Clicked on login button
+[INFO ] 2023-09-15 03:46:47.667 [main] Hooks - Select Test Community
+[INFO ] 2023-09-15 03:46:47.823 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-09-15 03:46:51.832 [main] Hooks - Clicked on Client button
+[INFO ] 2023-09-15 03:46:52.624 [main] Hooks - Clicked on Add New Client button
+[INFO ] 2023-09-15 03:46:54.928 [main] Hooks - entered first name
+[INFO ] 2023-09-15 03:46:55.127 [main] Hooks - entered last name
+[INFO ] 2023-09-15 03:46:55.298 [main] Hooks - entered Address line1
+[INFO ] 2023-09-15 03:46:55.448 [main] Hooks - entered Address line2
+[INFO ] 2023-09-15 03:46:55.828 [main] Hooks - entered resident id
+[INFO ] 2023-09-15 03:46:58.195 [main] Hooks - entered city name
+[INFO ] 2023-09-15 03:46:58.464 [main] Hooks - entered state name
+[INFO ] 2023-09-15 03:46:58.772 [main] Hooks - entered ZIP Code
+[INFO ] 2023-09-15 03:47:02.098 [main] Hooks - entered primary phone no.
+[INFO ] 2023-09-15 03:47:05.184 [main] Hooks - entered secondary phone no.
+[INFO ] 2023-09-15 03:47:05.321 [main] Hooks - entered email address
+[INFO ] 2023-09-15 03:47:07.639 [main] Hooks - select gender
+[INFO ] 2023-09-15 03:47:07.840 [main] Hooks - select gender
+[INFO ] 2023-09-15 03:47:08.063 [main] Hooks - entered marital status
+[INFO ] 2023-09-15 03:47:08.250 [main] Hooks - entered spouse name
+[INFO ] 2023-09-15 03:47:08.464 [main] Hooks - entered referral source
+[INFO ] 2023-09-15 03:47:08.816 [main] Hooks - entered essential information
+[INFO ] 2023-09-15 03:47:14.252 [main] Hooks - select client type
+[INFO ] 2023-09-15 03:47:34.263 [main] Hooks - select schedule group
+[INFO ] 2023-09-15 03:47:54.335 [main] Hooks - select status
+[ERROR] 2023-09-15 03:48:16.732 [main] Hooks - Test case failed: Verify the Add New Client Functionality
+[INFO ] 2023-09-15 03:48:17.001 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-15 03:49:13.403 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-15 03:49:27.113 [main] Hooks - Entered Email Address
+[INFO ] 2023-09-15 03:49:27.339 [main] Hooks - Password Entered
+[INFO ] 2023-09-15 03:49:27.557 [main] Hooks - Clicked on login button
+[INFO ] 2023-09-15 03:49:30.918 [main] Hooks - Select Test Community
+[INFO ] 2023-09-15 03:49:31.044 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-09-15 03:49:36.125 [main] Hooks - Clicked on Client button
+[INFO ] 2023-09-15 03:49:37.434 [main] Hooks - Clicked on Add New Client button
+[INFO ] 2023-09-15 03:49:40.180 [main] Hooks - entered first name
+[INFO ] 2023-09-15 03:49:40.381 [main] Hooks - entered last name
+[INFO ] 2023-09-15 03:49:40.578 [main] Hooks - entered Address line1
+[INFO ] 2023-09-15 03:49:40.770 [main] Hooks - entered Address line2
+[INFO ] 2023-09-15 03:49:40.989 [main] Hooks - entered resident id
+[INFO ] 2023-09-15 03:49:43.314 [main] Hooks - entered city name
+[INFO ] 2023-09-15 03:49:43.563 [main] Hooks - entered state name
+[INFO ] 2023-09-15 03:49:43.872 [main] Hooks - entered ZIP Code
+[INFO ] 2023-09-15 03:49:47.097 [main] Hooks - entered primary phone no.
+[INFO ] 2023-09-15 03:49:50.264 [main] Hooks - entered secondary phone no.
+[INFO ] 2023-09-15 03:49:50.413 [main] Hooks - entered email address
+[INFO ] 2023-09-15 03:49:52.748 [main] Hooks - select gender
+[INFO ] 2023-09-15 03:49:52.956 [main] Hooks - select gender
+[INFO ] 2023-09-15 03:49:53.195 [main] Hooks - entered marital status
+[INFO ] 2023-09-15 03:49:53.385 [main] Hooks - entered spouse name
+[INFO ] 2023-09-15 03:49:53.706 [main] Hooks - entered referral source
+[INFO ] 2023-09-15 03:49:53.886 [main] Hooks - entered essential information
+[INFO ] 2023-09-15 03:49:59.327 [main] Hooks - select client type
+[INFO ] 2023-09-15 03:50:19.392 [main] Hooks - select schedule group
+[INFO ] 2023-09-15 03:50:39.454 [main] Hooks - select status
+[ERROR] 2023-09-15 03:50:41.853 [main] Hooks - Test case failed: Verify the Add New Client Functionality
+[INFO ] 2023-09-15 03:50:42.043 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-15 03:59:06.500 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-15 03:59:18.023 [main] Hooks - Entered Email Address
+[INFO ] 2023-09-15 03:59:18.176 [main] Hooks - Password Entered
+[INFO ] 2023-09-15 03:59:18.409 [main] Hooks - Clicked on login button
+[INFO ] 2023-09-15 03:59:21.340 [main] Hooks - Select Test Community
+[INFO ] 2023-09-15 03:59:21.475 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-09-15 03:59:25.586 [main] Hooks - Clicked on Client button
+[INFO ] 2023-09-15 03:59:26.395 [main] Hooks - Clicked on Add New Client button
+[INFO ] 2023-09-15 03:59:28.581 [main] Hooks - entered first name
+[INFO ] 2023-09-15 03:59:28.816 [main] Hooks - entered last name
+[INFO ] 2023-09-15 03:59:28.963 [main] Hooks - entered Address line1
+[INFO ] 2023-09-15 03:59:29.180 [main] Hooks - entered Address line2
+[INFO ] 2023-09-15 03:59:29.462 [main] Hooks - entered resident id
+[INFO ] 2023-09-15 03:59:31.757 [main] Hooks - entered city name
+[INFO ] 2023-09-15 03:59:32.020 [main] Hooks - entered state name
+[INFO ] 2023-09-15 03:59:32.332 [main] Hooks - entered ZIP Code
+[INFO ] 2023-09-15 03:59:35.658 [main] Hooks - entered primary phone no.
+[INFO ] 2023-09-15 03:59:38.733 [main] Hooks - entered secondary phone no.
+[INFO ] 2023-09-15 03:59:38.880 [main] Hooks - entered email address
+[INFO ] 2023-09-15 03:59:41.213 [main] Hooks - select gender
+[INFO ] 2023-09-15 03:59:41.450 [main] Hooks - select gender
+[INFO ] 2023-09-15 03:59:41.714 [main] Hooks - entered marital status
+[INFO ] 2023-09-15 03:59:41.898 [main] Hooks - entered spouse name
+[INFO ] 2023-09-15 03:59:42.178 [main] Hooks - entered referral source
+[INFO ] 2023-09-15 03:59:42.493 [main] Hooks - entered essential information
+[INFO ] 2023-09-15 03:59:47.984 [main] Hooks - select client type
+[INFO ] 2023-09-15 04:00:08.020 [main] Hooks - select schedule group
+[INFO ] 2023-09-15 04:00:28.096 [main] Hooks - select status
+[INFO ] 2023-09-15 04:00:30.325 [main] Hooks - select track
+[INFO ] 2023-09-15 04:00:50.369 [main] Hooks - select service type
+[INFO ] 2023-09-15 04:00:50.605 [main] Hooks - Click add new contact button
+[INFO ] 2023-09-15 04:00:51.264 [main] Hooks - Entered first name
+[INFO ] 2023-09-15 04:00:51.446 [main] Hooks - Entered last name
+[INFO ] 2023-09-15 04:00:51.615 [main] Hooks - Entered address line1
+[INFO ] 2023-09-15 04:00:51.848 [main] Hooks - Entered address line2
+[INFO ] 2023-09-15 04:00:52.209 [main] Hooks - Entered city name
+[INFO ] 2023-09-15 04:00:55.509 [main] Hooks - select state
+[INFO ] 2023-09-15 04:00:55.610 [main] Hooks - entered ZIP Code
+[INFO ] 2023-09-15 04:00:58.906 [main] Hooks - entered primary phone number
+[INFO ] 2023-09-15 04:00:59.248 [main] Hooks - entered email address
+[INFO ] 2023-09-15 04:01:03.179 [main] Hooks - select relationship
+[INFO ] 2023-09-15 04:01:06.380 [main] Hooks - save contact details
+[INFO ] 2023-09-15 04:01:09.567 [main] Hooks - save client details
+[ERROR] 2023-09-15 04:01:29.780 [main] Hooks - Test case failed: Verify the Add New Client Functionality
+[INFO ] 2023-09-15 04:01:30.033 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-15 04:06:07.286 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-15 04:06:18.524 [main] Hooks - Entered Email Address
+[INFO ] 2023-09-15 04:06:18.631 [main] Hooks - Password Entered
+[INFO ] 2023-09-15 04:06:18.887 [main] Hooks - Clicked on login button
+[INFO ] 2023-09-15 04:06:21.914 [main] Hooks - Select Test Community
+[INFO ] 2023-09-15 04:06:22.062 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-09-15 04:06:26.221 [main] Hooks - Clicked on Client button
+[INFO ] 2023-09-15 04:06:27.552 [main] Hooks - Clicked on Add New Client button
+[INFO ] 2023-09-15 04:06:29.812 [main] Hooks - entered first name
+[INFO ] 2023-09-15 04:06:30.058 [main] Hooks - entered last name
+[INFO ] 2023-09-15 04:06:30.236 [main] Hooks - entered Address line1
+[INFO ] 2023-09-15 04:06:30.531 [main] Hooks - entered Address line2
+[INFO ] 2023-09-15 04:06:30.810 [main] Hooks - entered resident id
+[INFO ] 2023-09-15 04:06:33.157 [main] Hooks - entered city name
+[INFO ] 2023-09-15 04:06:33.482 [main] Hooks - entered state name
+[INFO ] 2023-09-15 04:06:33.886 [main] Hooks - entered ZIP Code
+[INFO ] 2023-09-15 04:06:37.296 [main] Hooks - entered primary phone no.
+[INFO ] 2023-09-15 04:06:40.414 [main] Hooks - entered secondary phone no.
+[INFO ] 2023-09-15 04:06:40.591 [main] Hooks - entered email address
+[INFO ] 2023-09-15 04:06:42.917 [main] Hooks - select gender
+[INFO ] 2023-09-15 04:06:43.093 [main] Hooks - select gender
+[INFO ] 2023-09-15 04:06:43.353 [main] Hooks - entered marital status
+[INFO ] 2023-09-15 04:06:43.521 [main] Hooks - entered spouse name
+[INFO ] 2023-09-15 04:06:43.711 [main] Hooks - entered referral source
+[INFO ] 2023-09-15 04:06:43.919 [main] Hooks - entered essential information
+[INFO ] 2023-09-15 04:06:49.528 [main] Hooks - select client type
+[INFO ] 2023-09-15 04:06:52.905 [main] Hooks - select schedule group
+[INFO ] 2023-09-15 04:06:56.036 [main] Hooks - select status
+[INFO ] 2023-09-15 04:07:00.742 [main] Hooks - select track
+[INFO ] 2023-09-15 04:07:04.122 [main] Hooks - select service type
+[INFO ] 2023-09-15 04:07:04.346 [main] Hooks - Click add new contact button
+[INFO ] 2023-09-15 04:07:05.001 [main] Hooks - Entered first name
+[INFO ] 2023-09-15 04:07:05.170 [main] Hooks - Entered last name
+[INFO ] 2023-09-15 04:07:05.336 [main] Hooks - Entered address line1
+[INFO ] 2023-09-15 04:07:05.653 [main] Hooks - Entered address line2
+[INFO ] 2023-09-15 04:07:05.942 [main] Hooks - Entered city name
+[INFO ] 2023-09-15 04:07:09.276 [main] Hooks - select state
+[INFO ] 2023-09-15 04:07:09.522 [main] Hooks - entered ZIP Code
+[INFO ] 2023-09-15 04:07:12.850 [main] Hooks - entered primary phone number
+[INFO ] 2023-09-15 04:07:13.212 [main] Hooks - entered email address
+[INFO ] 2023-09-15 04:07:17.205 [main] Hooks - select relationship
+[INFO ] 2023-09-15 04:07:20.428 [main] Hooks - save contact details
+[INFO ] 2023-09-15 04:07:23.736 [main] Hooks - save client details
+[INFO ] 2023-09-15 04:07:23.768 [main] Hooks - validation Message should be shown client was created test passed..
+[INFO ] 2023-09-15 04:07:23.974 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-18 06:43:13.304 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-18 06:43:25.685 [main] Hooks - entered email address and password 
+[INFO ] 2023-09-18 06:43:25.924 [main] Hooks - Clicked on login button
+[INFO ] 2023-09-18 06:43:29.777 [main] Hooks - Select Test Community
+[INFO ] 2023-09-18 06:43:29.859 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-09-18 06:43:34.226 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-09-18 06:43:34.300 [main] Hooks - Click on the Account User name
+[INFO ] 2023-09-18 06:43:35.067 [main] Hooks - user clicked on logout button
+[INFO ] 2023-09-18 06:43:36.493 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-09-18 06:43:36.635 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-18 07:06:57.744 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-18 07:07:09.826 [main] Hooks - Entered Email Address..
+[INFO ] 2023-09-18 07:07:09.888 [main] Hooks - Entered password.
+[INFO ] 2023-09-18 07:07:10.081 [main] Hooks - click on login button..
+[INFO ] 2023-09-18 07:07:14.620 [main] Hooks - select test community
+[INFO ] 2023-09-18 07:07:14.728 [main] Hooks - click on continue button
+[INFO ] 2023-09-18 07:07:19.535 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-09-18 07:07:31.177 [main] Hooks - click on color
+[INFO ] 2023-09-18 07:07:34.465 [main] Hooks - change the time
+[INFO ] 2023-09-18 07:07:49.667 [main] Hooks - select move day series..
+[INFO ] 2023-09-18 07:07:55.868 [main] Hooks - save visit..
+[INFO ] 2023-09-18 07:07:56.009 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-18 07:08:42.473 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-18 07:08:56.337 [main] Hooks - Entered Email Address..
+[INFO ] 2023-09-18 07:08:56.408 [main] Hooks - Entered password.
+[INFO ] 2023-09-18 07:08:56.600 [main] Hooks - click on login button..
+[INFO ] 2023-09-18 07:09:00.495 [main] Hooks - select test community
+[INFO ] 2023-09-18 07:09:00.604 [main] Hooks - click on continue button
+[INFO ] 2023-09-18 07:09:06.421 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-09-18 07:09:19.960 [main] Hooks - click on color
+[INFO ] 2023-09-18 07:09:23.242 [main] Hooks - change time for visit
+[INFO ] 2023-09-18 07:09:25.384 [main] Hooks - select move only this occurence
+[INFO ] 2023-09-18 07:09:45.572 [main] Hooks - save the visit
+[INFO ] 2023-09-18 07:09:45.697 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-18 07:10:01.711 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-18 07:10:14.087 [main] Hooks - Entered Email Address..
+[INFO ] 2023-09-18 07:10:14.161 [main] Hooks - Entered password.
+[INFO ] 2023-09-18 07:10:14.409 [main] Hooks - click on login button..
+[INFO ] 2023-09-18 07:10:19.031 [main] Hooks - select test community
+[INFO ] 2023-09-18 07:10:19.140 [main] Hooks - click on continue button
+[INFO ] 2023-09-18 07:10:23.522 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-09-18 07:10:37.137 [main] Hooks - click on visit..
+[INFO ] 2023-09-18 07:10:43.363 [main] Hooks - change track
+[INFO ] 2023-09-18 07:10:47.500 [main] Hooks - select move only this occurrence
+[INFO ] 2023-09-18 07:10:52.700 [main] Hooks - save visits..
+[INFO ] 2023-09-18 07:10:52.843 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-18 07:14:56.869 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-18 07:15:11.742 [main] Hooks - Entered Email Address..
+[INFO ] 2023-09-18 07:15:11.829 [main] Hooks - Entered password.
+[INFO ] 2023-09-18 07:15:12.072 [main] Hooks - click on login button..
+[INFO ] 2023-09-18 07:15:16.080 [main] Hooks - select test community
+[INFO ] 2023-09-18 07:15:16.173 [main] Hooks - click on continue button
+[INFO ] 2023-09-18 07:15:20.356 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-09-18 07:15:43.515 [main] Hooks - click on visit..
+[INFO ] 2023-09-18 07:15:50.192 [main] Hooks - change track
+[INFO ] 2023-09-18 07:15:54.361 [main] Hooks - select move only this occurrence
+[INFO ] 2023-09-18 07:15:59.602 [main] Hooks - save visits..
+[INFO ] 2023-09-18 07:15:59.797 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-19 06:35:12.937 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-19 06:35:24.317 [main] Hooks - Entered Email Address
+[INFO ] 2023-09-19 06:35:24.382 [main] Hooks - Password Entered
+[INFO ] 2023-09-19 06:35:24.517 [main] Hooks - Clicked on login button
+[INFO ] 2023-09-19 06:35:28.089 [main] Hooks - Select Test Community
+[INFO ] 2023-09-19 06:35:28.166 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-09-19 06:35:33.905 [main] Hooks - Clicked on Client button
+[INFO ] 2023-09-19 06:35:34.901 [main] Hooks - Clicked on Add New Client button
+[INFO ] 2023-09-19 06:35:37.277 [main] Hooks - entered first name
+[INFO ] 2023-09-19 06:35:37.517 [main] Hooks - entered last name
+[INFO ] 2023-09-19 06:35:37.639 [main] Hooks - entered Address line1
+[INFO ] 2023-09-19 06:35:37.800 [main] Hooks - entered Address line2
+[INFO ] 2023-09-19 06:35:37.907 [main] Hooks - entered resident id
+[INFO ] 2023-09-19 06:35:40.107 [main] Hooks - entered city name
+[INFO ] 2023-09-19 06:35:40.349 [main] Hooks - entered state name
+[INFO ] 2023-09-19 06:35:40.582 [main] Hooks - entered ZIP Code
+[INFO ] 2023-09-19 06:35:43.728 [main] Hooks - entered primary phone no.
+[INFO ] 2023-09-19 06:35:46.877 [main] Hooks - entered secondary phone no.
+[INFO ] 2023-09-19 06:35:46.934 [main] Hooks - entered email address
+[INFO ] 2023-09-19 06:35:49.189 [main] Hooks - select gender
+[INFO ] 2023-09-19 06:35:49.260 [main] Hooks - select gender
+[INFO ] 2023-09-19 06:35:49.389 [main] Hooks - entered marital status
+[INFO ] 2023-09-19 06:35:49.555 [main] Hooks - entered spouse name
+[INFO ] 2023-09-19 06:35:49.662 [main] Hooks - entered referral source
+[INFO ] 2023-09-19 06:35:49.824 [main] Hooks - entered essential information
+[INFO ] 2023-09-19 06:35:55.222 [main] Hooks - select client type
+[INFO ] 2023-09-19 06:35:58.467 [main] Hooks - select schedule group
+[INFO ] 2023-09-19 06:36:01.545 [main] Hooks - select status
+[INFO ] 2023-09-19 06:36:05.957 [main] Hooks - select track
+[INFO ] 2023-09-19 06:36:09.164 [main] Hooks - select service type
+[INFO ] 2023-09-19 06:36:09.337 [main] Hooks - Click add new contact button
+[INFO ] 2023-09-19 06:36:09.925 [main] Hooks - Entered first name
+[INFO ] 2023-09-19 06:36:10.048 [main] Hooks - Entered last name
+[INFO ] 2023-09-19 06:36:10.171 [main] Hooks - Entered address line1
+[INFO ] 2023-09-19 06:36:10.360 [main] Hooks - Entered address line2
+[INFO ] 2023-09-19 06:36:10.617 [main] Hooks - Entered city name
+[INFO ] 2023-09-19 06:36:13.849 [main] Hooks - select state
+[INFO ] 2023-09-19 06:36:13.900 [main] Hooks - entered ZIP Code
+[INFO ] 2023-09-19 06:36:17.056 [main] Hooks - entered primary phone number
+[INFO ] 2023-09-19 06:36:17.247 [main] Hooks - entered email address
+[INFO ] 2023-09-19 06:36:21.080 [main] Hooks - select relationship
+[INFO ] 2023-09-19 06:36:24.221 [main] Hooks - save contact details
+[INFO ] 2023-09-19 06:36:27.361 [main] Hooks - save client details
+[ERROR] 2023-09-19 06:36:47.531 [main] Hooks - Test case failed: Verify the Add New Client Functionality
+[INFO ] 2023-09-19 06:36:47.599 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-19 06:36:51.409 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-19 06:36:51.496 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-19 06:45:32.047 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-19 06:45:42.907 [main] Hooks - Entered Email Address
+[INFO ] 2023-09-19 06:45:42.970 [main] Hooks - Password Entered
+[INFO ] 2023-09-19 06:45:43.146 [main] Hooks - Clicked on login button
+[INFO ] 2023-09-19 06:45:45.962 [main] Hooks - Select Test Community
+[INFO ] 2023-09-19 06:45:46.034 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-09-19 06:45:49.909 [main] Hooks - Clicked on Client button
+[INFO ] 2023-09-19 06:45:51.033 [main] Hooks - Clicked on Add New Client button
+[INFO ] 2023-09-19 06:45:53.289 [main] Hooks - entered first name
+[INFO ] 2023-09-19 06:45:53.519 [main] Hooks - entered last name
+[INFO ] 2023-09-19 06:45:53.700 [main] Hooks - entered Address line1
+[INFO ] 2023-09-19 06:45:53.807 [main] Hooks - entered Address line2
+[INFO ] 2023-09-19 06:45:53.970 [main] Hooks - entered resident id
+[INFO ] 2023-09-19 06:45:56.185 [main] Hooks - entered city name
+[INFO ] 2023-09-19 06:45:56.427 [main] Hooks - entered state name
+[INFO ] 2023-09-19 06:45:56.657 [main] Hooks - entered ZIP Code
+[INFO ] 2023-09-19 06:45:59.896 [main] Hooks - entered primary phone no.
+[INFO ] 2023-09-19 06:46:02.965 [main] Hooks - entered secondary phone no.
+[INFO ] 2023-09-19 06:46:03.023 [main] Hooks - entered email address
+[INFO ] 2023-09-19 06:46:05.275 [main] Hooks - select gender
+[INFO ] 2023-09-19 06:46:05.352 [main] Hooks - select gender
+[INFO ] 2023-09-19 06:46:05.586 [main] Hooks - entered marital status
+[INFO ] 2023-09-19 06:46:05.696 [main] Hooks - entered spouse name
+[INFO ] 2023-09-19 06:46:05.860 [main] Hooks - entered referral source
+[INFO ] 2023-09-19 06:46:06.023 [main] Hooks - entered essential information
+[INFO ] 2023-09-19 06:46:11.428 [main] Hooks - select client type
+[INFO ] 2023-09-19 06:46:14.680 [main] Hooks - select schedule group
+[INFO ] 2023-09-19 06:46:17.758 [main] Hooks - select status
+[INFO ] 2023-09-19 06:46:22.172 [main] Hooks - select track
+[INFO ] 2023-09-19 06:46:25.393 [main] Hooks - select service type
+[INFO ] 2023-09-19 06:46:25.566 [main] Hooks - Click add new contact button
+[INFO ] 2023-09-19 06:46:27.215 [main] Hooks - Entered first name
+[INFO ] 2023-09-19 06:46:27.333 [main] Hooks - Entered last name
+[INFO ] 2023-09-19 06:46:27.453 [main] Hooks - Entered address line1
+[INFO ] 2023-09-19 06:46:27.642 [main] Hooks - Entered address line2
+[INFO ] 2023-09-19 06:46:27.898 [main] Hooks - Entered city name
+[INFO ] 2023-09-19 06:46:31.138 [main] Hooks - select state
+[INFO ] 2023-09-19 06:46:31.193 [main] Hooks - entered ZIP Code
+[INFO ] 2023-09-19 06:46:34.371 [main] Hooks - entered primary phone number
+[INFO ] 2023-09-19 06:46:34.634 [main] Hooks - entered email address
+[INFO ] 2023-09-19 06:46:38.480 [main] Hooks - select relationship
+[INFO ] 2023-09-19 06:46:41.636 [main] Hooks - save contact details
+[INFO ] 2023-09-19 06:46:44.871 [main] Hooks - save client details
+[INFO ] 2023-09-19 06:46:44.905 [main] Hooks - validation Message should be shown client was created test passed..
+[INFO ] 2023-09-19 06:46:44.967 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-19 06:46:49.497 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-19 06:46:49.552 [main] Hooks - Browser Closed..

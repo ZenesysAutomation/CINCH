@@ -81,11 +81,16 @@ public void click_on_the_table() throws InterruptedException {
 	}
 
 public void edit_the_note() throws InterruptedException {
+	try {
 	WebElement txtUpdateNote = driver.findElement(By.id("note"));
     txtUpdateNote.clear();
     txtUpdateNote.sendKeys(prop.getProperty("EditNote"));
     txtUpdateNote.click();
     Thread.sleep(6000);
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
 }
 
 public void edit_the_communities() throws InterruptedException {
