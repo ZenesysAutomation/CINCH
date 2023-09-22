@@ -280,8 +280,8 @@ public class VisitPlansPage extends BaseClass  {
 		 SaveData.click();
 		 
 		 JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0, 50000)");
-		Thread.sleep(4000);
+		 js.executeScript("window.scrollBy(0, 50000)");
+		 Thread.sleep(4000);
 	}
 	
 	public void save_the_all_single_visit_details() throws InterruptedException {
@@ -629,7 +629,9 @@ public class VisitPlansPage extends BaseClass  {
 			AssistanceLevel.click();
 			Thread.sleep(4000);
 		}
-		catch (Exception e) {}	
+		catch (Exception e) {
+			e.printStackTrace();
+		}	
 		
 	}
 
@@ -1190,6 +1192,7 @@ public class VisitPlansPage extends BaseClass  {
 	        return false;
 	    }
 	}
+	//past visit
 	
 	public void click_on_the_visit_plans() throws InterruptedException {
 	
@@ -1204,10 +1207,11 @@ public class VisitPlansPage extends BaseClass  {
 	
 	
 	public void click_on_the_user_table() throws InterruptedException {
+
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		
-		WebElement FirstName=driver.findElement(By.xpath("(//td[@aria-label='Agnes Column Header First Name'])[1]"));
+		WebElement FirstName=driver.findElement(By.xpath("(//td[@aria-label='Ankita Column Header First Name'])[1]"));
 		Thread.sleep(3000);
 		FirstName.click();	
 		Thread.sleep(6000);
@@ -1410,6 +1414,7 @@ public class VisitPlansPage extends BaseClass  {
 		WebElement Bathing =driver.findElement(By.xpath("(//div[@role='presentation'][normalize-space()='Bathing'])[1]"));
 		Bathing.click();
 		Thread.sleep(2000);
+		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);
@@ -1422,6 +1427,7 @@ public class VisitPlansPage extends BaseClass  {
 		Thread.sleep(3000);
 		BathingAssistance.sendKeys("Supervision");
 		BathingAssistance.click();
+		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);
@@ -1441,7 +1447,6 @@ public class VisitPlansPage extends BaseClass  {
 		
 		}
 			}
-	
 	
 	
 	public void checked_the_assist_with_sponge_bath() throws InterruptedException {
@@ -1560,7 +1565,9 @@ public class VisitPlansPage extends BaseClass  {
 	VisitTime.click();
 	Thread.sleep(6000);	
 		}
-		catch(Exception e) {}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
 }
 		
 	public void update_the_assist_with_oral_care_details() throws InterruptedException {
@@ -1571,7 +1578,7 @@ public class VisitPlansPage extends BaseClass  {
 		Thread.sleep(6000);	
 		}
 		catch (Exception e) {
-			
+			e.printStackTrace();
 		}
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
@@ -1606,7 +1613,6 @@ public class VisitPlansPage extends BaseClass  {
 
 		
 	}
-	
 	
 	public void user_click_on_the_ad_ls_to_enter_the_mobility_details() throws InterruptedException {
 		try {
@@ -1671,7 +1677,9 @@ public class VisitPlansPage extends BaseClass  {
 	VisitsTime.click();
 	Thread.sleep(6000);
 	}
-	catch (Exception e){}
+	catch (Exception e){
+		e.printStackTrace();
+	}
 	}
 	 
 	
@@ -2114,6 +2122,7 @@ public class VisitPlansPage extends BaseClass  {
 	WebElement UpdateVisits =driver.findElement(By.xpath("(//button[normalize-space()='Update'])[1]"));
 	UpdateVisits.click();
 	Thread.sleep(6000);
+	
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	js.executeScript("window.scrollBy(0, 50000)");
 	Thread.sleep(8000);
@@ -2296,8 +2305,7 @@ public class VisitPlansPage extends BaseClass  {
 		} catch (Exception e) {
 		    e.printStackTrace(); 
 		}
-
-		
+	
 	}
 	
 	public void message_should_be_shown_visit_plan_was_saved8() {
@@ -2317,7 +2325,6 @@ public class VisitPlansPage extends BaseClass  {
 	
 //delete for single series
 	public void click_on_the_delete_Icon_and_Pop_is_displayed_confirm_that_you_want_to_delete_this_item() throws InterruptedException{
-		
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		    WebElement DeleteIcon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='btn btn-danger btn-sm e-flat dripicons-trash']")));
@@ -2327,7 +2334,6 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		
 	}
-	
 	
 	public void click_on_the_delete_button() throws InterruptedException {
 		
@@ -2352,7 +2358,6 @@ public class VisitPlansPage extends BaseClass  {
 		}
 	
 	}
-	
 	
 	public void message_should_be_shown_visit_plan_was_saved5() {
 		try {

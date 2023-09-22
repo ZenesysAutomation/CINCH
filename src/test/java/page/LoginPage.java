@@ -136,7 +136,7 @@ public class LoginPage extends BaseClass {
 			
 		}
 		
-		public void the_user_submits_blank_email_and_password(String email,String pass) {
+		public void the_user_submits_blank_email_and_invalid_password(String email,String pass) {
 			
 			try {
 				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));

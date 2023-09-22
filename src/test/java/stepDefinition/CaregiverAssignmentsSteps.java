@@ -41,7 +41,7 @@ public class CaregiverAssignmentsSteps extends BaseClass  {
 		log.info("click on continue button");
 	}
 	
-	@Given ("Click on the Caregiver Assignments")
+	@Then ("Click on the Caregiver Assignments")
 	public void click_on_the_caregiver_assignments() throws InterruptedException {
 		cg.click_on_the_caregiver_assignments();
 		log.info("click on caregiver assignments");

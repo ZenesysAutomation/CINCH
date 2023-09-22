@@ -3,7 +3,7 @@ stepDefinition\AddCommunityNotePageSteps.class
 stepDefinition\CaregiverAssignmentsSteps.class
 page\AddCommunityNotePage.class
 stepDefinition\LoginPageSteps.class
-Test\Script.class
+DB\Utility.class
 page\VisitPlansPage.class
 page\AddClientPage.class
 page\CaregiverAssignmentsPage.class
@@ -15,4 +15,5 @@ stepDefinition\AssessmentsCarePlansSteps.class
 page\EditCommunityNotePage.class
 stepDefinition\VisitPlansSteps.class
 stepDefinition\AddClientSteps.class
+TestData\UpdateTestDataProperties.class
 stepDefinition\EditClientSteps.class

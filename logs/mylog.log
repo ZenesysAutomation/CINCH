@@ -6651,3 +6651,972 @@
 [INFO ] 2023-09-19 06:46:44.967 [main] Hooks - Browser Closed..
 [INFO ] 2023-09-19 06:46:49.497 [main] Hooks - Browser Launched..
 [INFO ] 2023-09-19 06:46:49.552 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-21 01:26:49.481 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-21 01:27:01.753 [main] Hooks - entered email address
+[INFO ] 2023-09-21 01:27:01.993 [main] Hooks - entered password
+[INFO ] 2023-09-21 01:27:02.334 [main] Hooks - click on login
+[INFO ] 2023-09-21 01:27:06.306 [main] Hooks - select test community
+[INFO ] 2023-09-21 01:27:06.476 [main] Hooks - click on continue button..
+[INFO ] 2023-09-21 01:27:11.175 [main] Hooks - click on visit plans
+[INFO ] 2023-09-21 01:27:21.672 [main] Hooks - click on table user first name
+[INFO ] 2023-09-21 01:28:02.323 [main] Hooks - click on adls.
+[INFO ] 2023-09-21 01:28:22.344 [main] Hooks - click on bathing..
+[INFO ] 2023-09-21 01:28:42.398 [main] Hooks - select supervision bathing assistance
+[ERROR] 2023-09-21 01:29:02.656 [main] Hooks - Test case failed: Verify The ADLs and IADLS Functionalities
+[INFO ] 2023-09-21 01:29:02.893 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-21 01:29:07.348 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-21 01:31:22.638 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-21 01:31:34.601 [main] Hooks - entered email address
+[INFO ] 2023-09-21 01:31:34.800 [main] Hooks - entered password
+[INFO ] 2023-09-21 01:31:35.045 [main] Hooks - click on login
+[INFO ] 2023-09-21 01:31:39.007 [main] Hooks - select test community
+[INFO ] 2023-09-21 01:31:39.168 [main] Hooks - click on continue button..
+[INFO ] 2023-09-21 01:31:43.351 [main] Hooks - click on visit plans
+[INFO ] 2023-09-21 01:31:53.852 [main] Hooks - click on table user first name
+[INFO ] 2023-09-21 01:31:54.162 [main] Hooks - Click on the Add Visit Configuration..
+[INFO ] 2023-09-21 01:32:00.713 [main] Hooks - select All Days..
+[INFO ] 2023-09-21 01:32:04.043 [main] Hooks - select Start Time..
+[INFO ] 2023-09-21 01:32:10.383 [main] Hooks - select duration..
+[INFO ] 2023-09-21 01:32:14.830 [main] Hooks - select weekly recurrence..
+[INFO ] 2023-09-21 01:32:23.459 [main] Hooks - select past date..
+[INFO ] 2023-09-21 01:32:36.769 [main] Hooks - click on save button.
+[INFO ] 2023-09-21 01:32:44.102 [main] Hooks - save- All Days Visit Details..
+[INFO ] 2023-09-21 01:32:44.150 [main] Hooks - Validation msg is showing- Visit plan was saved..
+[INFO ] 2023-09-21 01:32:44.353 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-21 01:32:48.554 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-21 01:33:04.663 [main] Hooks - entered email address
+[INFO ] 2023-09-21 01:33:04.806 [main] Hooks - entered password
+[INFO ] 2023-09-21 01:33:05.053 [main] Hooks - click on login
+[INFO ] 2023-09-21 01:33:09.009 [main] Hooks - select test community
+[INFO ] 2023-09-21 01:33:09.133 [main] Hooks - click on continue button..
+[INFO ] 2023-09-21 01:33:13.082 [main] Hooks - click on visit plans
+[INFO ] 2023-09-21 01:33:23.612 [main] Hooks - click on table user first name
+[INFO ] 2023-09-21 01:33:23.756 [main] Hooks - click on adls.
+[INFO ] 2023-09-21 01:33:25.929 [main] Hooks - click on bathing..
+[INFO ] 2023-09-21 01:33:33.195 [main] Hooks - select supervision bathing assistance
+[INFO ] 2023-09-21 01:33:37.444 [main] Hooks - select assist with shower tasks
+[INFO ] 2023-09-21 01:33:45.671 [main] Hooks - select visits timing
+[INFO ] 2023-09-21 01:33:48.923 [main] Hooks - entered caregiver instructions notes.
+[INFO ] 2023-09-21 01:33:51.164 [main] Hooks - click on update button
+[INFO ] 2023-09-21 01:33:57.510 [main] Hooks - save bathing details..
+[INFO ] 2023-09-21 01:33:57.636 [main] Hooks - click on adls..
+[INFO ] 2023-09-21 01:34:01.790 [main] Hooks - click on the continence and toileting..
+[INFO ] 2023-09-21 01:34:06.014 [main] Hooks - click on the assistance level
+[INFO ] 2023-09-21 01:34:16.171 [main] Hooks - save continence and toileting deatils
+[INFO ] 2023-09-21 01:34:16.286 [main] Hooks - click on adls..
+[INFO ] 2023-09-21 01:34:22.434 [main] Hooks - click on dressing and grooming..
+[INFO ] 2023-09-21 01:34:26.685 [main] Hooks - select supervision assistance
+[INFO ] 2023-09-21 01:34:30.822 [main] Hooks - click on apply lotion tasks
+[INFO ] 2023-09-21 01:34:34.920 [main] Hooks - select the visit time
+[INFO ] 2023-09-21 01:34:39.351 [main] Hooks - enter the caregiver instructions
+[INFO ] 2023-09-21 01:34:43.510 [main] Hooks - update apply lotion details..
+[INFO ] 2023-09-21 01:34:55.676 [main] Hooks - save the dressing and grooming details
+[INFO ] 2023-09-21 01:34:55.800 [main] Hooks - click on the adls
+[INFO ] 2023-09-21 01:34:59.915 [main] Hooks - click on the eating
+[INFO ] 2023-09-21 01:35:04.191 [main] Hooks - select the assistance level-no assistance
+[INFO ] 2023-09-21 01:35:10.329 [main] Hooks - save the eating details
+[INFO ] 2023-09-21 01:35:10.440 [main] Hooks - click on adls
+[INFO ] 2023-09-21 01:35:16.530 [main] Hooks - click on the mobility
+[INFO ] 2023-09-21 01:35:20.782 [main] Hooks - select assistance level - limited assistance
+[INFO ] 2023-09-21 01:35:24.905 [main] Hooks - select-walk with client
+[INFO ] 2023-09-21 01:35:30.977 [main] Hooks - select the visit time
+[INFO ] 2023-09-21 01:35:35.339 [main] Hooks - enter caregiver instructions notes..
+[INFO ] 2023-09-21 01:35:42.513 [main] Hooks - update- walk with clients details
+[INFO ] 2023-09-21 01:35:50.652 [main] Hooks - save-mobility details
+[INFO ] 2023-09-21 01:35:50.775 [main] Hooks - click on the IADLS
+[INFO ] 2023-09-21 01:35:54.923 [main] Hooks - click on the household tasks
+[INFO ] 2023-09-21 01:35:59.148 [main] Hooks - select assistance level -assistance
+[INFO ] 2023-09-21 01:36:03.264 [main] Hooks - click on the make bed..
+[INFO ] 2023-09-21 01:36:06.353 [main] Hooks - select make bed-visits time
+[INFO ] 2023-09-21 01:36:09.773 [main] Hooks - entered caregiver instructions..
+[INFO ] 2023-09-21 01:36:12.883 [main] Hooks - update-make bed details
+[INFO ] 2023-09-21 01:36:19.018 [main] Hooks - save the household details..
+[INFO ] 2023-09-21 01:36:19.139 [main] Hooks - click on the IADLS..
+[INFO ] 2023-09-21 01:36:23.272 [main] Hooks - click on the laundry..
+[INFO ] 2023-09-21 01:36:27.497 [main] Hooks - select laundry assistance level- Assistance
+[INFO ] 2023-09-21 01:36:31.666 [main] Hooks - click on the tasks..
+[INFO ] 2023-09-21 01:36:35.747 [main] Hooks - select the visits time..
+[INFO ] 2023-09-21 01:36:39.020 [main] Hooks - entered caregiver instruction..
+[INFO ] 2023-09-21 01:36:45.135 [main] Hooks - update the laundry details..
+[INFO ] 2023-09-21 01:36:51.273 [main] Hooks - save the laundry details..
+[INFO ] 2023-09-21 01:36:51.377 [main] Hooks - click on the IADLs..
+[INFO ] 2023-09-21 01:36:54.494 [main] Hooks - click on the Meals..
+[INFO ] 2023-09-21 01:36:58.734 [main] Hooks - select the meals Assistance level- No Assistance.
+[INFO ] 2023-09-21 01:37:04.885 [main] Hooks - save the meals details..
+[INFO ] 2023-09-21 01:37:04.985 [main] Hooks - click on the IADLs..
+[INFO ] 2023-09-21 01:37:11.073 [main] Hooks - click on the Medication..
+[INFO ] 2023-09-21 01:37:19.319 [main] Hooks - select the medication assistance level-Assistance..
+[INFO ] 2023-09-21 01:37:23.438 [main] Hooks - select the tasks-Check Blood Pressure..
+[INFO ] 2023-09-21 01:37:29.521 [main] Hooks - select the visits time..
+[INFO ] 2023-09-21 01:37:31.902 [main] Hooks - entered caregiver instructions..
+[INFO ] 2023-09-21 01:37:39.027 [main] Hooks - update the medication Details..
+[INFO ] 2023-09-21 01:37:45.149 [main] Hooks - save the medication Details..
+[INFO ] 2023-09-21 01:37:45.149 [main] Hooks - Click on the Add To Schedule and Finalize Visits..
+[INFO ] 2023-09-21 01:38:10.949 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-21 01:38:15.177 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-21 01:38:26.162 [main] Hooks - entered email address
+[INFO ] 2023-09-21 01:38:26.269 [main] Hooks - entered password
+[INFO ] 2023-09-21 01:38:26.483 [main] Hooks - click on login
+[INFO ] 2023-09-21 01:38:30.497 [main] Hooks - select test community
+[INFO ] 2023-09-21 01:38:30.631 [main] Hooks - click on continue button..
+[INFO ] 2023-09-21 01:38:34.622 [main] Hooks - click on visit plans
+[INFO ] 2023-09-21 01:38:45.282 [main] Hooks - click on table user first name
+[INFO ] 2023-09-21 01:38:45.368 [main] Hooks - click on visit plans..
+[INFO ] 2023-09-21 01:38:55.091 [main] Hooks - click on the user table..
+[ERROR] 2023-09-21 01:39:15.284 [main] Hooks - Test case failed: Delete the Past Visit Series
+[INFO ] 2023-09-21 01:39:15.487 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-21 02:10:16.215 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-21 02:10:28.816 [main] Hooks - entered email address
+[INFO ] 2023-09-21 02:10:28.928 [main] Hooks - entered password
+[INFO ] 2023-09-21 02:10:29.203 [main] Hooks - click on login
+[INFO ] 2023-09-21 02:10:33.165 [main] Hooks - select test community
+[INFO ] 2023-09-21 02:10:33.294 [main] Hooks - click on continue button..
+[INFO ] 2023-09-21 02:10:38.666 [main] Hooks - click on visit plans
+[INFO ] 2023-09-21 02:10:50.037 [main] Hooks - click on table user first name
+[INFO ] 2023-09-21 02:10:50.141 [main] Hooks - click on visit plans..
+[INFO ] 2023-09-21 02:10:59.959 [main] Hooks - click on the user table..
+[INFO ] 2023-09-21 02:11:27.834 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-21 02:15:17.553 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-21 02:15:28.937 [main] Hooks - entered email address
+[INFO ] 2023-09-21 02:15:29.057 [main] Hooks - entered password
+[INFO ] 2023-09-21 02:15:29.339 [main] Hooks - click on login
+[INFO ] 2023-09-21 02:15:33.854 [main] Hooks - select test community
+[INFO ] 2023-09-21 02:15:33.992 [main] Hooks - click on continue button..
+[INFO ] 2023-09-21 02:15:38.726 [main] Hooks - click on visit plans
+[INFO ] 2023-09-21 02:15:49.176 [main] Hooks - click on the table..
+[INFO ] 2023-09-21 02:15:49.419 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-21 02:15:49.421 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-21 02:16:05.746 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-21 02:16:09.054 [main] Hooks - Select the start time
+[INFO ] 2023-09-21 02:16:11.210 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-21 02:16:13.593 [main] Hooks - Select end time..
+[INFO ] 2023-09-21 02:16:15.743 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-21 02:16:20.347 [main] Hooks - Select start time
+[INFO ] 2023-09-21 02:16:24.524 [main] Hooks - click on save button
+[ERROR] 2023-09-21 02:16:25.763 [main] Hooks - Test case failed: Verify the Hourly Visit Functionality
+[INFO ] 2023-09-21 02:16:25.957 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-21 02:20:22.587 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-21 02:20:34.989 [main] Hooks - entered email address
+[INFO ] 2023-09-21 02:20:35.191 [main] Hooks - entered password
+[INFO ] 2023-09-21 02:20:35.496 [main] Hooks - click on login
+[INFO ] 2023-09-21 02:20:39.481 [main] Hooks - select test community
+[INFO ] 2023-09-21 02:20:39.624 [main] Hooks - click on continue button..
+[INFO ] 2023-09-21 02:20:44.469 [main] Hooks - click on visit plans
+[INFO ] 2023-09-21 02:20:54.968 [main] Hooks - click on the table..
+[INFO ] 2023-09-21 02:20:55.237 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-21 02:20:55.239 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-21 02:21:12.414 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-21 02:21:15.713 [main] Hooks - Select the start time
+[INFO ] 2023-09-21 02:21:17.880 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-21 02:21:20.022 [main] Hooks - Select end time..
+[INFO ] 2023-09-21 02:21:22.237 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-21 02:21:26.749 [main] Hooks - Select start time
+[INFO ] 2023-09-21 02:21:31.060 [main] Hooks - click on save button
+[INFO ] 2023-09-21 02:21:37.379 [main] Hooks - save all single visit details
+[INFO ] 2023-09-21 02:21:37.504 [main] Hooks - click on adls.
+[INFO ] 2023-09-21 02:21:39.649 [main] Hooks - click on bathing..
+[INFO ] 2023-09-21 02:21:46.980 [main] Hooks - select supervision bathing assistance
+[INFO ] 2023-09-21 02:21:51.281 [main] Hooks - select assist with shower tasks
+[INFO ] 2023-09-21 02:21:59.483 [main] Hooks - select visits timing
+[INFO ] 2023-09-21 02:22:02.702 [main] Hooks - entered caregiver instructions notes.
+[INFO ] 2023-09-21 02:22:04.913 [main] Hooks - click on update button
+[INFO ] 2023-09-21 02:22:11.022 [main] Hooks - save bathing details..
+[INFO ] 2023-09-21 02:22:11.137 [main] Hooks - click on adls..
+[INFO ] 2023-09-21 02:22:15.241 [main] Hooks - click on the continence and toileting..
+[INFO ] 2023-09-21 02:22:19.424 [main] Hooks - click on the assistance level
+[INFO ] 2023-09-21 02:22:29.572 [main] Hooks - save continence and toileting deatils
+[INFO ] 2023-09-21 02:22:29.680 [main] Hooks - click on adls..
+[INFO ] 2023-09-21 02:22:35.808 [main] Hooks - click on dressing and grooming..
+[INFO ] 2023-09-21 02:22:40.145 [main] Hooks - select supervision assistance
+[INFO ] 2023-09-21 02:22:44.375 [main] Hooks - click on apply lotion tasks
+[INFO ] 2023-09-21 02:22:48.469 [main] Hooks - select the visit time
+[INFO ] 2023-09-21 02:22:52.830 [main] Hooks - enter the caregiver instructions
+[INFO ] 2023-09-21 02:22:57.005 [main] Hooks - update apply lotion details..
+[INFO ] 2023-09-21 02:23:09.145 [main] Hooks - save the dressing and grooming details
+[INFO ] 2023-09-21 02:23:09.263 [main] Hooks - click on the adls
+[INFO ] 2023-09-21 02:23:13.388 [main] Hooks - click on the eating
+[INFO ] 2023-09-21 02:23:17.619 [main] Hooks - select the assistance level-no assistance
+[INFO ] 2023-09-21 02:23:23.759 [main] Hooks - save the eating details
+[INFO ] 2023-09-21 02:23:23.869 [main] Hooks - click on adls
+[INFO ] 2023-09-21 02:23:29.954 [main] Hooks - click on the mobility
+[INFO ] 2023-09-21 02:23:34.258 [main] Hooks - select assistance level - limited assistance
+[INFO ] 2023-09-21 02:23:38.461 [main] Hooks - select-walk with client
+[INFO ] 2023-09-21 02:23:44.552 [main] Hooks - select the visit time
+[INFO ] 2023-09-21 02:23:48.875 [main] Hooks - enter caregiver instructions notes..
+[INFO ] 2023-09-21 02:23:56.052 [main] Hooks - update- walk with clients details
+[INFO ] 2023-09-21 02:24:04.179 [main] Hooks - save-mobility details
+[INFO ] 2023-09-21 02:24:04.302 [main] Hooks - click on the IADLS
+[INFO ] 2023-09-21 02:24:08.413 [main] Hooks - click on the household tasks
+[INFO ] 2023-09-21 02:24:12.649 [main] Hooks - select assistance level -assistance
+[INFO ] 2023-09-21 02:24:16.768 [main] Hooks - click on the make bed..
+[INFO ] 2023-09-21 02:24:19.847 [main] Hooks - select make bed-visits time
+[INFO ] 2023-09-21 02:24:23.178 [main] Hooks - entered caregiver instructions..
+[INFO ] 2023-09-21 02:24:26.289 [main] Hooks - update-make bed details
+[INFO ] 2023-09-21 02:24:32.400 [main] Hooks - save the household details..
+[INFO ] 2023-09-21 02:24:32.511 [main] Hooks - click on the IADLS..
+[INFO ] 2023-09-21 02:24:36.633 [main] Hooks - click on the laundry..
+[INFO ] 2023-09-21 02:24:40.945 [main] Hooks - select laundry assistance level- Assistance
+[INFO ] 2023-09-21 02:24:45.193 [main] Hooks - click on the tasks..
+[INFO ] 2023-09-21 02:24:49.291 [main] Hooks - select the visits time..
+[INFO ] 2023-09-21 02:24:52.494 [main] Hooks - entered caregiver instruction..
+[INFO ] 2023-09-21 02:24:58.606 [main] Hooks - update the laundry details..
+[INFO ] 2023-09-21 02:25:04.715 [main] Hooks - save the laundry details..
+[INFO ] 2023-09-21 02:25:04.820 [main] Hooks - click on the IADLs..
+[INFO ] 2023-09-21 02:25:07.947 [main] Hooks - click on the Meals..
+[INFO ] 2023-09-21 02:25:12.227 [main] Hooks - select the meals Assistance level- No Assistance.
+[INFO ] 2023-09-21 02:25:18.358 [main] Hooks - save the meals details..
+[INFO ] 2023-09-21 02:25:18.445 [main] Hooks - click on the IADLs..
+[INFO ] 2023-09-21 02:25:24.546 [main] Hooks - click on the Medication..
+[INFO ] 2023-09-21 02:25:32.769 [main] Hooks - select the medication assistance level-Assistance..
+[INFO ] 2023-09-21 02:25:36.886 [main] Hooks - select the tasks-Check Blood Pressure..
+[INFO ] 2023-09-21 02:25:42.989 [main] Hooks - select the visits time..
+[INFO ] 2023-09-21 02:25:45.306 [main] Hooks - entered caregiver instructions..
+[INFO ] 2023-09-21 02:25:52.425 [main] Hooks - update the medication Details..
+[INFO ] 2023-09-21 02:25:58.568 [main] Hooks - save the medication Details..
+[INFO ] 2023-09-21 02:25:58.673 [main] Hooks - click on the IADLS..
+[INFO ] 2023-09-21 02:26:02.764 [main] Hooks - click on the other button
+[INFO ] 2023-09-21 02:26:07.050 [main] Hooks - select No Assistance
+[INFO ] 2023-09-21 02:26:07.050 [main] Hooks - Click on the Add To Schedule and Finalize Visits..
+[INFO ] 2023-09-21 02:26:32.889 [main] Hooks - Browser Closed..
+
+
+
+
+[INFO ] 2023-09-22 01:27:38.564 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 01:27:51.261 [main] Hooks - user enter the invalid email & password -test passed.
+[INFO ] 2023-09-22 01:27:51.517 [main] Hooks - user click on the login button..
+[ERROR] 2023-09-22 01:27:52.603 [main] Hooks - Test case failed: Verify the Invalid Login Functionality
+[INFO ] 2023-09-22 01:27:52.784 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 01:27:57.547 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 01:28:10.035 [main] Hooks - user enter the invalid email & password -test passed.
+[INFO ] 2023-09-22 01:28:10.313 [main] Hooks - user click on the login button..
+[ERROR] 2023-09-22 01:28:11.387 [main] Hooks - Test case failed: Verify the Invalid Login Functionality
+[INFO ] 2023-09-22 01:28:11.540 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 01:32:30.505 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 01:32:42.975 [main] Hooks - user enter the invalid email & password -test passed.
+[INFO ] 2023-09-22 01:32:43.300 [main] Hooks - user click on the login button..
+[ERROR] 2023-09-22 01:32:44.375 [main] Hooks - Test case failed: Verify the Invalid Login Functionality
+[INFO ] 2023-09-22 01:32:44.504 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 01:32:48.916 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 01:33:06.216 [main] Hooks - user enter the invalid email & password -test passed.
+[INFO ] 2023-09-22 01:33:06.447 [main] Hooks - user click on the login button..
+[ERROR] 2023-09-22 01:33:07.529 [main] Hooks - Test case failed: Verify the Invalid Login Functionality
+[INFO ] 2023-09-22 01:33:07.652 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 01:35:53.880 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 01:36:08.190 [main] Hooks - user enter the blank email address and entered password..
+[INFO ] 2023-09-22 01:36:08.464 [main] Hooks - user click on the login button..
+[INFO ] 2023-09-22 01:36:28.503 [main] Hooks - error message is showing
+[INFO ] 2023-09-22 01:36:28.704 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 01:40:58.837 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 01:41:12.628 [main] Hooks - user enter the blank email address and invalid password..
+[INFO ] 2023-09-22 01:41:12.902 [main] Hooks - user click on the login button..
+[INFO ] 2023-09-22 01:41:32.947 [main] Hooks - error message is showing
+[INFO ] 2023-09-22 01:41:33.135 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:15:41.424 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:15:54.654 [main] Hooks - entered email address and password 
+[INFO ] 2023-09-22 02:15:54.947 [main] Hooks - Clicked on login button
+[INFO ] 2023-09-22 02:15:59.092 [main] Hooks - Select Test Community
+[INFO ] 2023-09-22 02:15:59.244 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-09-22 02:16:03.345 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-09-22 02:16:03.439 [main] Hooks - Click on the Account User name
+[INFO ] 2023-09-22 02:16:04.313 [main] Hooks - user clicked on logout button
+[INFO ] 2023-09-22 02:16:05.826 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-09-22 02:16:05.962 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:16:10.671 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:16:22.007 [main] Hooks - user enter the invalid email & password -test passed.
+[INFO ] 2023-09-22 02:16:22.210 [main] Hooks - user click on the login button..
+[ERROR] 2023-09-22 02:16:24.643 [main] Hooks - Test case failed: Verify the Invalid Login Functionality
+[INFO ] 2023-09-22 02:16:24.769 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:16:28.948 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:16:42.062 [main] Hooks - user enter the invalid email & password -test passed.
+[INFO ] 2023-09-22 02:16:42.270 [main] Hooks - user click on the login button..
+[ERROR] 2023-09-22 02:16:43.342 [main] Hooks - Test case failed: Verify the Invalid Login Functionality
+[INFO ] 2023-09-22 02:16:43.522 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:16:47.712 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:17:01.398 [main] Hooks - user enter the blank email address and invalid password..
+[INFO ] 2023-09-22 02:17:01.611 [main] Hooks - user click on the login button..
+[INFO ] 2023-09-22 02:17:21.701 [main] Hooks - error message is showing
+[INFO ] 2023-09-22 02:17:21.822 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:17:26.096 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:17:36.764 [main] Hooks - Entered Email Address
+[INFO ] 2023-09-22 02:17:36.841 [main] Hooks - Password Entered
+[INFO ] 2023-09-22 02:17:37.037 [main] Hooks - Clicked on login button
+[INFO ] 2023-09-22 02:17:39.960 [main] Hooks - Select Test Community
+[INFO ] 2023-09-22 02:17:40.055 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-09-22 02:17:44.075 [main] Hooks - Clicked on Client button
+[INFO ] 2023-09-22 02:17:45.193 [main] Hooks - Clicked on Add New Client button
+[INFO ] 2023-09-22 02:17:47.382 [main] Hooks - entered first name
+[INFO ] 2023-09-22 02:17:47.635 [main] Hooks - entered last name
+[INFO ] 2023-09-22 02:17:47.770 [main] Hooks - entered Address line1
+[INFO ] 2023-09-22 02:17:47.908 [main] Hooks - entered Address line2
+[INFO ] 2023-09-22 02:17:48.025 [main] Hooks - entered resident id
+[INFO ] 2023-09-22 02:17:50.261 [main] Hooks - entered city name
+[INFO ] 2023-09-22 02:17:50.532 [main] Hooks - entered state name
+[INFO ] 2023-09-22 02:17:50.793 [main] Hooks - entered ZIP Code
+[INFO ] 2023-09-22 02:17:53.959 [main] Hooks - entered primary phone no.
+[INFO ] 2023-09-22 02:17:57.117 [main] Hooks - entered secondary phone no.
+[INFO ] 2023-09-22 02:17:57.190 [main] Hooks - entered email address
+[INFO ] 2023-09-22 02:17:59.476 [main] Hooks - select gender
+[INFO ] 2023-09-22 02:17:59.567 [main] Hooks - select gender
+[INFO ] 2023-09-22 02:17:59.817 [main] Hooks - entered marital status
+[INFO ] 2023-09-22 02:17:59.932 [main] Hooks - entered spouse name
+[INFO ] 2023-09-22 02:18:00.118 [main] Hooks - entered referral source
+[INFO ] 2023-09-22 02:18:00.307 [main] Hooks - entered essential information
+[INFO ] 2023-09-22 02:18:05.726 [main] Hooks - select client type
+[INFO ] 2023-09-22 02:18:09.034 [main] Hooks - select schedule group
+[INFO ] 2023-09-22 02:18:12.117 [main] Hooks - select status
+[INFO ] 2023-09-22 02:18:16.580 [main] Hooks - select track
+[INFO ] 2023-09-22 02:18:19.809 [main] Hooks - select service type
+[INFO ] 2023-09-22 02:18:19.994 [main] Hooks - Click add new contact button
+[INFO ] 2023-09-22 02:18:20.626 [main] Hooks - Entered first name
+[INFO ] 2023-09-22 02:18:20.759 [main] Hooks - Entered last name
+[INFO ] 2023-09-22 02:18:20.895 [main] Hooks - Entered address line1
+[INFO ] 2023-09-22 02:18:21.097 [main] Hooks - Entered address line2
+[INFO ] 2023-09-22 02:18:21.384 [main] Hooks - Entered city name
+[INFO ] 2023-09-22 02:18:24.627 [main] Hooks - select state
+[INFO ] 2023-09-22 02:18:24.694 [main] Hooks - entered ZIP Code
+[INFO ] 2023-09-22 02:18:27.875 [main] Hooks - entered primary phone number
+[INFO ] 2023-09-22 02:18:28.085 [main] Hooks - entered email address
+[INFO ] 2023-09-22 02:18:31.986 [main] Hooks - select relationship
+[INFO ] 2023-09-22 02:18:35.150 [main] Hooks - save contact details
+[INFO ] 2023-09-22 02:18:38.401 [main] Hooks - save client details
+[INFO ] 2023-09-22 02:18:38.417 [main] Hooks - validation Message should be shown client was created test passed..
+[INFO ] 2023-09-22 02:18:38.559 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:18:42.920 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:18:44.138 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:18:48.358 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:18:59.402 [main] Hooks - Entered Email Address
+[INFO ] 2023-09-22 02:18:59.479 [main] Hooks - Entered password
+[INFO ] 2023-09-22 02:18:59.682 [main] Hooks - click on the login button
+[INFO ] 2023-09-22 02:19:03.787 [main] Hooks - select test community 
+[INFO ] 2023-09-22 02:19:03.876 [main] Hooks - click on continue button
+[INFO ] 2023-09-22 02:19:08.602 [main] Hooks - click on clients link..
+[INFO ] 2023-09-22 02:19:26.691 [main] Hooks - click on the user data table..
+[INFO ] 2023-09-22 02:19:51.356 [main] Hooks - click on the edit button..
+[INFO ] 2023-09-22 02:19:57.695 [main] Hooks - change the status
+[INFO ] 2023-09-22 02:20:06.332 [main] Hooks - entered the discharge reason
+[INFO ] 2023-09-22 02:20:06.458 [main] Hooks - save data..
+[INFO ] 2023-09-22 02:20:06.598 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:20:10.890 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:20:22.816 [main] Hooks - entered Email Address 
+[INFO ] 2023-09-22 02:20:22.891 [main] Hooks - Password Entered
+[INFO ] 2023-09-22 02:20:23.068 [main] Hooks - Clicked on login button
+[INFO ] 2023-09-22 02:20:26.967 [main] Hooks - Select Test Community
+[INFO ] 2023-09-22 02:20:27.055 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-09-22 02:20:28.778 [main] Hooks - Clicked on mange link
+[INFO ] 2023-09-22 02:20:30.026 [main] Hooks - Clicked on add new community note
+[INFO ] 2023-09-22 02:20:34.725 [main] Hooks - entered note
+[INFO ] 2023-09-22 02:20:34.913 [main] Hooks - select communities
+[INFO ] 2023-09-22 02:20:38.000 [main] Hooks - select communities
+[INFO ] 2023-09-22 02:20:44.301 [main] Hooks - select end date
+[INFO ] 2023-09-22 02:20:49.397 [main] Hooks - saved data
+[INFO ] 2023-09-22 02:20:49.429 [main] Hooks - validation msg showing - note was created
+[INFO ] 2023-09-22 02:20:49.555 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:20:53.728 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:21:05.774 [main] Hooks - Entered Email Address
+[INFO ] 2023-09-22 02:21:05.836 [main] Hooks - Entered Password
+[INFO ] 2023-09-22 02:21:06.024 [main] Hooks - click on the login button..
+[INFO ] 2023-09-22 02:21:10.882 [main] Hooks - Select Test Community
+[INFO ] 2023-09-22 02:21:10.986 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-09-22 02:21:15.556 [main] Hooks - Clicked on manage link
+[INFO ] 2023-09-22 02:21:22.174 [main] Hooks - Clicked on user data table
+[INFO ] 2023-09-22 02:21:28.303 [main] Hooks - edit the notes..
+[INFO ] 2023-09-22 02:21:28.334 [main] Hooks - edit the communities..
+[INFO ] 2023-09-22 02:21:34.652 [main] Hooks - edit the start date..
+[INFO ] 2023-09-22 02:21:40.949 [main] Hooks - edit the start date..
+[INFO ] 2023-09-22 02:21:47.041 [main] Hooks - save the details..
+[INFO ] 2023-09-22 02:21:47.169 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:21:51.173 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:22:04.375 [main] Hooks - Entered Email Address 
+[INFO ] 2023-09-22 02:22:04.436 [main] Hooks - Entered Password
+[INFO ] 2023-09-22 02:22:04.653 [main] Hooks - Clicked on login button
+[INFO ] 2023-09-22 02:22:08.453 [main] Hooks - Select Test Community
+[INFO ] 2023-09-22 02:22:08.531 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-09-22 02:22:26.362 [main] Hooks - Clicked on clients button
+[INFO ] 2023-09-22 02:22:43.366 [main] Hooks - Clicked on user data table
+[INFO ] 2023-09-22 02:22:46.115 [main] Hooks - Clicked on assessment and care plan
+[INFO ] 2023-09-22 02:22:56.565 [main] Hooks - entered assessment date
+[INFO ] 2023-09-22 02:22:59.719 [main] Hooks - entered visit schedule
+[INFO ] 2023-09-22 02:23:02.837 [main] Hooks - enter goals of service
+[INFO ] 2023-09-22 02:23:05.937 [main] Hooks - enterd family social network
+[INFO ] 2023-09-22 02:23:09.054 [main] Hooks - enterd special dietary needs
+[INFO ] 2023-09-22 02:23:12.143 [main] Hooks - enterd precautions
+[INFO ] 2023-09-22 02:23:19.293 [main] Hooks - enterd functional limitations restrictions
+[INFO ] 2023-09-22 02:23:25.508 [main] Hooks - clicked client status
+[INFO ] 2023-09-22 02:23:33.605 [main] Hooks - entered condition notes
+[INFO ] 2023-09-22 02:23:36.733 [main] Hooks - entered recent hospital rehab stays
+[INFO ] 2023-09-22 02:23:39.865 [main] Hooks - entered needs medication reminders
+[INFO ] 2023-09-22 02:23:42.982 [main] Hooks - entered how many times per day
+[INFO ] 2023-09-22 02:23:46.097 [main] Hooks - entered allergies description
+[INFO ] 2023-09-22 02:23:49.227 [main] Hooks - entered notes
+[INFO ] 2023-09-22 02:23:56.450 [main] Hooks - select hearing
+[INFO ] 2023-09-22 02:24:02.661 [main] Hooks - select speech
+[INFO ] 2023-09-22 02:24:05.823 [main] Hooks - select swallowing
+[INFO ] 2023-09-22 02:24:08.971 [main] Hooks - select vision
+[INFO ] 2023-09-22 02:24:12.071 [main] Hooks - entered bathing details
+[INFO ] 2023-09-22 02:24:15.219 [main] Hooks - entered transfers mobility deatils
+[INFO ] 2023-09-22 02:24:18.368 [main] Hooks - entered dressing grooming details
+[INFO ] 2023-09-22 02:24:21.501 [main] Hooks - entered continence toileting
+[INFO ] 2023-09-22 02:24:24.633 [main] Hooks - entered continence toileting
+[INFO ] 2023-09-22 02:24:27.765 [main] Hooks - entered meals details
+[INFO ] 2023-09-22 02:24:30.914 [main] Hooks - entered laundry details
+[INFO ] 2023-09-22 02:24:43.055 [main] Hooks - entered household tasks details
+[INFO ] 2023-09-22 02:24:55.227 [main] Hooks - click environment tab
+[INFO ] 2023-09-22 02:24:57.335 [main] Hooks - select radio button
+[INFO ] 2023-09-22 02:25:03.454 [main] Hooks - entered enviromental safety concerns details
+[INFO ] 2023-09-22 02:25:11.630 [main] Hooks - entered economics status
+[INFO ] 2023-09-22 02:25:14.817 [main] Hooks - entered notes
+[INFO ] 2023-09-22 02:25:26.984 [main] Hooks - complete details
+[INFO ] 2023-09-22 02:25:36.095 [main] Hooks - pop up is showing and click on the yes complete button
+[INFO ] 2023-09-22 02:25:49.231 [main] Hooks - clicked on care plan
+[INFO ] 2023-09-22 02:26:10.774 [main] Hooks - create caregiver sign
+[INFO ] 2023-09-22 02:26:32.298 [main] Hooks - create client sign
+[INFO ] 2023-09-22 02:26:48.456 [main] Hooks - save the signature button
+[INFO ] 2023-09-22 02:26:48.471 [main] Hooks - validation message should be shown assessment was created, test cases passed..
+[INFO ] 2023-09-22 02:26:48.661 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:26:53.120 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:27:03.405 [main] Hooks - entered email address
+[INFO ] 2023-09-22 02:27:03.499 [main] Hooks - entered password
+[INFO ] 2023-09-22 02:27:03.750 [main] Hooks - click on login
+[INFO ] 2023-09-22 02:27:07.591 [main] Hooks - select test community
+[INFO ] 2023-09-22 02:27:07.673 [main] Hooks - click on continue button..
+[INFO ] 2023-09-22 02:27:11.632 [main] Hooks - click on visit plans
+[INFO ] 2023-09-22 02:27:22.011 [main] Hooks - click on table user first name
+[INFO ] 2023-09-22 02:27:22.213 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-22 02:27:22.213 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-22 02:27:38.225 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-22 02:27:41.473 [main] Hooks - Select the start time
+[INFO ] 2023-09-22 02:27:45.656 [main] Hooks - Select duration
+[INFO ] 2023-09-22 02:27:49.952 [main] Hooks - Select start time
+[INFO ] 2023-09-22 02:27:54.186 [main] Hooks - click on save button
+[INFO ] 2023-09-22 02:28:00.434 [main] Hooks - save all single visit details
+[INFO ] 2023-09-22 02:28:00.465 [main] Hooks - Validation message should be shown-Visit Plan was saved
+[INFO ] 2023-09-22 02:28:00.591 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:28:04.891 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:28:16.071 [main] Hooks - entered email address
+[INFO ] 2023-09-22 02:28:16.171 [main] Hooks - entered password
+[INFO ] 2023-09-22 02:28:16.404 [main] Hooks - click on login
+[INFO ] 2023-09-22 02:28:20.373 [main] Hooks - select test community
+[INFO ] 2023-09-22 02:28:20.480 [main] Hooks - click on continue button..
+[INFO ] 2023-09-22 02:28:24.945 [main] Hooks - click on visit plans
+[INFO ] 2023-09-22 02:28:35.395 [main] Hooks - click on table user first name
+[INFO ] 2023-09-22 02:28:35.495 [main] Hooks - click on adls.
+[INFO ] 2023-09-22 02:28:37.619 [main] Hooks - click on bathing..
+[INFO ] 2023-09-22 02:28:44.796 [main] Hooks - select supervision bathing assistance
+[INFO ] 2023-09-22 02:28:49.003 [main] Hooks - select assist with shower tasks
+[INFO ] 2023-09-22 02:28:57.183 [main] Hooks - select visits timing
+[INFO ] 2023-09-22 02:29:00.340 [main] Hooks - entered caregiver instructions notes.
+[INFO ] 2023-09-22 02:29:02.546 [main] Hooks - click on update button
+[INFO ] 2023-09-22 02:29:08.828 [main] Hooks - save bathing details..
+[INFO ] 2023-09-22 02:29:08.908 [main] Hooks - click on adls..
+[INFO ] 2023-09-22 02:29:13.021 [main] Hooks - click on the continence and toileting..
+[INFO ] 2023-09-22 02:29:17.162 [main] Hooks - click on the assistance level
+[INFO ] 2023-09-22 02:29:27.322 [main] Hooks - save continence and toileting deatils
+[INFO ] 2023-09-22 02:29:27.390 [main] Hooks - click on adls..
+[INFO ] 2023-09-22 02:29:33.498 [main] Hooks - click on dressing and grooming..
+[INFO ] 2023-09-22 02:29:37.635 [main] Hooks - select supervision assistance
+[INFO ] 2023-09-22 02:29:41.739 [main] Hooks - click on apply lotion tasks
+[INFO ] 2023-09-22 02:29:45.809 [main] Hooks - select the visit time
+[INFO ] 2023-09-22 02:29:50.143 [main] Hooks - enter the caregiver instructions
+[INFO ] 2023-09-22 02:29:54.299 [main] Hooks - update apply lotion details..
+[INFO ] 2023-09-22 02:30:06.418 [main] Hooks - save the dressing and grooming details
+[INFO ] 2023-09-22 02:30:06.503 [main] Hooks - click on the adls
+[INFO ] 2023-09-22 02:30:10.587 [main] Hooks - click on the eating
+[INFO ] 2023-09-22 02:30:14.728 [main] Hooks - select the assistance level-no assistance
+[INFO ] 2023-09-22 02:30:20.833 [main] Hooks - save the eating details
+[INFO ] 2023-09-22 02:30:20.903 [main] Hooks - click on adls
+[INFO ] 2023-09-22 02:30:26.978 [main] Hooks - click on the mobility
+[INFO ] 2023-09-22 02:30:31.137 [main] Hooks - select assistance level - limited assistance
+[INFO ] 2023-09-22 02:30:35.247 [main] Hooks - select-walk with client
+[INFO ] 2023-09-22 02:30:41.312 [main] Hooks - select the visit time
+[INFO ] 2023-09-22 02:30:45.541 [main] Hooks - enter caregiver instructions notes..
+[INFO ] 2023-09-22 02:30:52.682 [main] Hooks - update- walk with clients details
+[INFO ] 2023-09-22 02:31:00.789 [main] Hooks - save-mobility details
+[INFO ] 2023-09-22 02:31:00.877 [main] Hooks - click on the IADLS
+[INFO ] 2023-09-22 02:31:04.958 [main] Hooks - click on the household tasks
+[INFO ] 2023-09-22 02:31:09.102 [main] Hooks - select assistance level -assistance
+[INFO ] 2023-09-22 02:31:13.203 [main] Hooks - click on the make bed..
+[INFO ] 2023-09-22 02:31:16.274 [main] Hooks - select make bed-visits time
+[INFO ] 2023-09-22 02:31:19.560 [main] Hooks - entered caregiver instructions..
+[INFO ] 2023-09-22 02:31:22.655 [main] Hooks - update-make bed details
+[INFO ] 2023-09-22 02:31:28.777 [main] Hooks - save the household details..
+[INFO ] 2023-09-22 02:31:28.863 [main] Hooks - click on the IADLS..
+[INFO ] 2023-09-22 02:31:32.974 [main] Hooks - click on the laundry..
+[INFO ] 2023-09-22 02:31:37.112 [main] Hooks - select laundry assistance level- Assistance
+[INFO ] 2023-09-22 02:31:41.236 [main] Hooks - click on the tasks..
+[INFO ] 2023-09-22 02:31:45.303 [main] Hooks - select the visits time..
+[INFO ] 2023-09-22 02:31:48.484 [main] Hooks - entered caregiver instruction..
+[INFO ] 2023-09-22 02:31:54.573 [main] Hooks - update the laundry details..
+[INFO ] 2023-09-22 02:32:00.671 [main] Hooks - save the laundry details..
+[INFO ] 2023-09-22 02:32:00.750 [main] Hooks - click on the IADLs..
+[INFO ] 2023-09-22 02:32:03.844 [main] Hooks - click on the Meals..
+[INFO ] 2023-09-22 02:32:08.031 [main] Hooks - select the meals Assistance level- No Assistance.
+[INFO ] 2023-09-22 02:32:14.134 [main] Hooks - save the meals details..
+[INFO ] 2023-09-22 02:32:14.218 [main] Hooks - click on the IADLs..
+[INFO ] 2023-09-22 02:32:20.299 [main] Hooks - click on the Medication..
+[INFO ] 2023-09-22 02:32:28.436 [main] Hooks - select the medication assistance level-Assistance..
+[INFO ] 2023-09-22 02:32:32.556 [main] Hooks - select the tasks-Check Blood Pressure..
+[INFO ] 2023-09-22 02:32:38.621 [main] Hooks - select the visits time..
+[INFO ] 2023-09-22 02:32:40.878 [main] Hooks - entered caregiver instructions..
+[INFO ] 2023-09-22 02:32:47.996 [main] Hooks - update the medication Details..
+[INFO ] 2023-09-22 02:32:54.113 [main] Hooks - save the medication Details..
+[INFO ] 2023-09-22 02:32:54.187 [main] Hooks - click on the IADLS..
+[INFO ] 2023-09-22 02:32:58.268 [main] Hooks - click on the other button
+[INFO ] 2023-09-22 02:33:02.396 [main] Hooks - select No Assistance
+[INFO ] 2023-09-22 02:33:02.396 [main] Hooks - Click on the Add To Schedule and Finalize Visits..
+[INFO ] 2023-09-22 02:33:28.069 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:33:32.418 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:33:43.845 [main] Hooks - entered email address
+[INFO ] 2023-09-22 02:33:43.941 [main] Hooks - entered password
+[INFO ] 2023-09-22 02:33:44.190 [main] Hooks - click on login
+[INFO ] 2023-09-22 02:33:48.128 [main] Hooks - select test community
+[INFO ] 2023-09-22 02:33:48.212 [main] Hooks - click on continue button..
+[INFO ] 2023-09-22 02:33:52.317 [main] Hooks - click on visit plans
+[INFO ] 2023-09-22 02:34:02.924 [main] Hooks - click on table user first name
+[INFO ] 2023-09-22 02:34:11.199 [main] Hooks - click on the single visit table
+[INFO ] 2023-09-22 02:34:17.457 [main] Hooks - change the visit duration
+[INFO ] 2023-09-22 02:34:32.632 [main] Hooks - click on the update button
+[INFO ] 2023-09-22 02:34:40.933 [main] Hooks - click on the save button
+[INFO ] 2023-09-22 02:35:00.971 [main] Hooks - Validation message should be shown-Visit Plan was Saved
+[INFO ] 2023-09-22 02:35:01.111 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:35:05.760 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:35:18.029 [main] Hooks - entered email address
+[INFO ] 2023-09-22 02:35:18.128 [main] Hooks - entered password
+[INFO ] 2023-09-22 02:35:18.377 [main] Hooks - click on login
+[INFO ] 2023-09-22 02:35:22.391 [main] Hooks - select test community
+[INFO ] 2023-09-22 02:35:22.485 [main] Hooks - click on continue button..
+[INFO ] 2023-09-22 02:35:26.339 [main] Hooks - click on visit plans
+[INFO ] 2023-09-22 02:35:36.519 [main] Hooks - click on table user first name
+[INFO ] 2023-09-22 02:35:46.664 [main] Hooks - click on the ADLS..
+[INFO ] 2023-09-22 02:35:52.738 [main] Hooks - click on the Bathing..
+[INFO ] 2023-09-22 02:35:58.902 [main] Hooks - unchecked assist with shower.
+[INFO ] 2023-09-22 02:36:05.197 [main] Hooks - click on Assist with Sponge Bath.
+[INFO ] 2023-09-22 02:36:13.385 [main] Hooks - select the visits timing.
+[INFO ] 2023-09-22 02:36:21.517 [main] Hooks - update the Bathing Details.
+[INFO ] 2023-09-22 02:36:27.817 [main] Hooks - Save the Bathing Details.
+[INFO ] 2023-09-22 02:36:41.928 [main] Hooks - click on ADLS and entered the Dressing and Grooming Details.
+[INFO ] 2023-09-22 02:36:52.039 [main] Hooks - click on the Dressing and Grooming.
+[INFO ] 2023-09-22 02:36:58.234 [main] Hooks - unchecked Apply Lotion Tasks..
+[INFO ] 2023-09-22 02:37:02.444 [main] Hooks - Select Assist with Oral Care..
+[INFO ] 2023-09-22 02:37:08.492 [main] Hooks - Select the visit time..
+[INFO ] 2023-09-22 02:37:18.636 [main] Hooks - Update Assist With Oral Care Details..
+[INFO ] 2023-09-22 02:37:30.781 [main] Hooks - save the Dressing and Grooming Details..
+[INFO ] 2023-09-22 02:37:42.866 [main] Hooks - Click on the ADLS and entered the mobility Details..
+[INFO ] 2023-09-22 02:37:52.946 [main] Hooks - Click on the mobility..
+[INFO ] 2023-09-22 02:37:59.123 [main] Hooks - unchecked the walk with clients tasks..
+[INFO ] 2023-09-22 02:38:07.339 [main] Hooks - select the assist with transfers..
+[INFO ] 2023-09-22 02:38:13.393 [main] Hooks - select the visits time..
+[INFO ] 2023-09-22 02:38:17.499 [main] Hooks - update the assist with transfers details..
+[INFO ] 2023-09-22 02:38:25.618 [main] Hooks - save the mobility details..
+[INFO ] 2023-09-22 02:38:31.697 [main] Hooks - click on the IADLs and entered the medication details..
+[INFO ] 2023-09-22 02:38:41.760 [main] Hooks - click on the medication..
+[INFO ] 2023-09-22 02:38:45.927 [main] Hooks - unchecked the check blood pressure tasks..
+[INFO ] 2023-09-22 02:38:50.157 [main] Hooks - select the check temperature.
+[INFO ] 2023-09-22 02:38:56.224 [main] Hooks - select the visits time.
+[INFO ] 2023-09-22 02:39:00.337 [main] Hooks - update medication details..
+[INFO ] 2023-09-22 02:39:08.472 [main] Hooks - save medication details..
+[INFO ] 2023-09-22 02:39:08.473 [main] Hooks - click on add to schedule and finalize visits
+[INFO ] 2023-09-22 02:40:25.167 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:40:29.350 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:40:41.537 [main] Hooks - entered email address
+[INFO ] 2023-09-22 02:40:41.623 [main] Hooks - entered password
+[INFO ] 2023-09-22 02:40:41.877 [main] Hooks - click on login
+[INFO ] 2023-09-22 02:40:45.823 [main] Hooks - select test community
+[INFO ] 2023-09-22 02:40:45.912 [main] Hooks - click on continue button..
+[INFO ] 2023-09-22 02:40:51.257 [main] Hooks - click on visit plans
+[INFO ] 2023-09-22 02:41:01.616 [main] Hooks - click on table user first name
+[INFO ] 2023-09-22 02:41:07.883 [main] Hooks - click on add visit configuration button..
+[INFO ] 2023-09-22 02:41:20.042 [main] Hooks - Select single Days..
+[INFO ] 2023-09-22 02:41:24.512 [main] Hooks - Select- Weekly Recurrence..
+[INFO ] 2023-09-22 02:41:27.788 [main] Hooks - Select start time..
+[INFO ] 2023-09-22 02:41:34.021 [main] Hooks - Select duration..
+[INFO ] 2023-09-22 02:41:42.351 [main] Hooks - Select-start date
+[INFO ] 2023-09-22 02:41:48.535 [main] Hooks - entered the custom end date
+[INFO ] 2023-09-22 02:41:54.823 [main] Hooks - entered end date
+[INFO ] 2023-09-22 02:42:07.098 [main] Hooks - save the visits details
+[INFO ] 2023-09-22 02:42:15.389 [main] Hooks - save the All visits details
+[INFO ] 2023-09-22 02:42:35.409 [main] Hooks - validation msg is showing-Visit Plan was saved
+[INFO ] 2023-09-22 02:42:35.536 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:42:39.701 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:42:51.826 [main] Hooks - entered email address
+[INFO ] 2023-09-22 02:42:51.927 [main] Hooks - entered password
+[INFO ] 2023-09-22 02:42:52.105 [main] Hooks - click on login
+[INFO ] 2023-09-22 02:42:57.032 [main] Hooks - select test community
+[INFO ] 2023-09-22 02:42:57.129 [main] Hooks - click on continue button..
+[INFO ] 2023-09-22 02:43:01.650 [main] Hooks - click on visit plans
+[INFO ] 2023-09-22 02:43:12.647 [main] Hooks - click on table user first name
+[INFO ] 2023-09-22 02:43:18.903 [main] Hooks - click on the table
+[INFO ] 2023-09-22 02:43:27.249 [main] Hooks - change the end date
+[INFO ] 2023-09-22 02:43:41.482 [main] Hooks - update the visits
+[INFO ] 2023-09-22 02:43:49.751 [main] Hooks - save the visits
+[INFO ] 2023-09-22 02:44:09.773 [main] Hooks - validation message is showing- Visit plan was saved
+[INFO ] 2023-09-22 02:44:09.931 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:44:14.521 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:44:25.580 [main] Hooks - entered email address
+[INFO ] 2023-09-22 02:44:25.688 [main] Hooks - entered password
+[INFO ] 2023-09-22 02:44:25.955 [main] Hooks - click on login
+[INFO ] 2023-09-22 02:44:29.884 [main] Hooks - select test community
+[INFO ] 2023-09-22 02:44:29.990 [main] Hooks - click on continue button..
+[INFO ] 2023-09-22 02:44:34.046 [main] Hooks - click on visit plans
+[INFO ] 2023-09-22 02:44:44.373 [main] Hooks - click on table user first name
+[INFO ] 2023-09-22 02:44:44.526 [main] Hooks - delete the single details.
+[INFO ] 2023-09-22 02:44:51.195 [main] Hooks - click on delete button
+[INFO ] 2023-09-22 02:44:51.521 [main] Hooks - save the single delete visit series
+[INFO ] 2023-09-22 02:44:52.000 [main] Hooks - validation message should be shown - Visit Plan was saved.
+[INFO ] 2023-09-22 02:44:52.128 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:44:56.554 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:45:08.202 [main] Hooks - entered email address
+[INFO ] 2023-09-22 02:45:08.269 [main] Hooks - entered password
+[INFO ] 2023-09-22 02:45:08.464 [main] Hooks - click on login
+[INFO ] 2023-09-22 02:45:12.478 [main] Hooks - select test community
+[INFO ] 2023-09-22 02:45:12.562 [main] Hooks - click on continue button..
+[INFO ] 2023-09-22 02:45:17.052 [main] Hooks - click on visit plans
+[INFO ] 2023-09-22 02:45:27.563 [main] Hooks - click on table user first name
+[INFO ] 2023-09-22 02:45:27.796 [main] Hooks - Click on the Add Visit Configuration..
+[INFO ] 2023-09-22 02:45:34.327 [main] Hooks - select All Days..
+[INFO ] 2023-09-22 02:45:37.609 [main] Hooks - select Start Time..
+[INFO ] 2023-09-22 02:45:43.850 [main] Hooks - select duration..
+[INFO ] 2023-09-22 02:45:48.218 [main] Hooks - select weekly recurrence..
+[INFO ] 2023-09-22 02:45:56.582 [main] Hooks - select start date..
+[INFO ] 2023-09-22 02:46:09.856 [main] Hooks - click on save button.
+[INFO ] 2023-09-22 02:46:17.176 [main] Hooks - save- All Days Visit Details..
+[INFO ] 2023-09-22 02:46:17.197 [main] Hooks - Validation msg is showing- Visit plan was saved..
+[INFO ] 2023-09-22 02:46:17.335 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:46:21.675 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:46:34.035 [main] Hooks - entered email address
+[INFO ] 2023-09-22 02:46:34.167 [main] Hooks - entered password
+[INFO ] 2023-09-22 02:46:34.418 [main] Hooks - click on login
+[INFO ] 2023-09-22 02:46:38.420 [main] Hooks - select test community
+[INFO ] 2023-09-22 02:46:38.514 [main] Hooks - click on continue button..
+[INFO ] 2023-09-22 02:46:43.003 [main] Hooks - click on visit plans
+[INFO ] 2023-09-22 02:46:53.771 [main] Hooks - click on table user first name
+[INFO ] 2023-09-22 02:46:53.887 [main] Hooks - click on adls.
+[INFO ] 2023-09-22 02:46:56.013 [main] Hooks - click on bathing..
+[INFO ] 2023-09-22 02:47:03.210 [main] Hooks - select supervision bathing assistance
+[INFO ] 2023-09-22 02:47:07.434 [main] Hooks - select assist with shower tasks
+[INFO ] 2023-09-22 02:47:15.655 [main] Hooks - select visits timing
+[INFO ] 2023-09-22 02:47:18.900 [main] Hooks - entered caregiver instructions notes.
+[INFO ] 2023-09-22 02:47:21.123 [main] Hooks - click on update button
+[INFO ] 2023-09-22 02:47:27.483 [main] Hooks - save bathing details..
+[INFO ] 2023-09-22 02:47:27.586 [main] Hooks - click on adls..
+[INFO ] 2023-09-22 02:47:31.709 [main] Hooks - click on the continence and toileting..
+[INFO ] 2023-09-22 02:47:35.867 [main] Hooks - click on the assistance level
+[INFO ] 2023-09-22 02:47:45.990 [main] Hooks - save continence and toileting deatils
+[INFO ] 2023-09-22 02:47:46.078 [main] Hooks - click on adls..
+[INFO ] 2023-09-22 02:47:52.174 [main] Hooks - click on dressing and grooming..
+[INFO ] 2023-09-22 02:47:56.335 [main] Hooks - select supervision assistance
+[INFO ] 2023-09-22 02:48:00.473 [main] Hooks - click on apply lotion tasks
+[INFO ] 2023-09-22 02:48:04.558 [main] Hooks - select the visit time
+[INFO ] 2023-09-22 02:48:08.987 [main] Hooks - enter the caregiver instructions
+[INFO ] 2023-09-22 02:48:13.135 [main] Hooks - update apply lotion details..
+[INFO ] 2023-09-22 02:48:25.291 [main] Hooks - save the dressing and grooming details
+[INFO ] 2023-09-22 02:48:25.368 [main] Hooks - click on the adls
+[INFO ] 2023-09-22 02:48:29.489 [main] Hooks - click on the eating
+[INFO ] 2023-09-22 02:48:33.637 [main] Hooks - select the assistance level-no assistance
+[INFO ] 2023-09-22 02:48:39.757 [main] Hooks - save the eating details
+[INFO ] 2023-09-22 02:48:39.844 [main] Hooks - click on adls
+[INFO ] 2023-09-22 02:48:45.945 [main] Hooks - click on the mobility
+[INFO ] 2023-09-22 02:48:50.118 [main] Hooks - select assistance level - limited assistance
+[INFO ] 2023-09-22 02:48:54.226 [main] Hooks - select-walk with client
+[INFO ] 2023-09-22 02:49:00.293 [main] Hooks - select the visit time
+[INFO ] 2023-09-22 02:49:04.603 [main] Hooks - enter caregiver instructions notes..
+[INFO ] 2023-09-22 02:49:11.749 [main] Hooks - update- walk with clients details
+[INFO ] 2023-09-22 02:49:19.869 [main] Hooks - save-mobility details
+[INFO ] 2023-09-22 02:49:19.952 [main] Hooks - click on the IADLS
+[INFO ] 2023-09-22 02:49:24.052 [main] Hooks - click on the household tasks
+[INFO ] 2023-09-22 02:49:28.215 [main] Hooks - select assistance level -assistance
+[INFO ] 2023-09-22 02:49:32.331 [main] Hooks - click on the make bed..
+[INFO ] 2023-09-22 02:49:35.404 [main] Hooks - select make bed-visits time
+[INFO ] 2023-09-22 02:49:38.770 [main] Hooks - entered caregiver instructions..
+[INFO ] 2023-09-22 02:49:41.896 [main] Hooks - update-make bed details
+[INFO ] 2023-09-22 02:49:48.013 [main] Hooks - save the household details..
+[INFO ] 2023-09-22 02:49:48.116 [main] Hooks - click on the IADLS..
+[INFO ] 2023-09-22 02:49:52.207 [main] Hooks - click on the laundry..
+[INFO ] 2023-09-22 02:49:56.364 [main] Hooks - select laundry assistance level- Assistance
+[INFO ] 2023-09-22 02:50:00.511 [main] Hooks - click on the tasks..
+[INFO ] 2023-09-22 02:50:04.577 [main] Hooks - select the visits time..
+[INFO ] 2023-09-22 02:50:07.795 [main] Hooks - entered caregiver instruction..
+[INFO ] 2023-09-22 02:50:13.908 [main] Hooks - update the laundry details..
+[INFO ] 2023-09-22 02:50:20.033 [main] Hooks - save the laundry details..
+[INFO ] 2023-09-22 02:50:20.121 [main] Hooks - click on the IADLs..
+[INFO ] 2023-09-22 02:50:23.260 [main] Hooks - click on the Meals..
+[INFO ] 2023-09-22 02:50:27.449 [main] Hooks - select the meals Assistance level- No Assistance.
+[INFO ] 2023-09-22 02:50:33.604 [main] Hooks - save the meals details..
+[INFO ] 2023-09-22 02:50:33.696 [main] Hooks - click on the IADLs..
+[INFO ] 2023-09-22 02:50:39.771 [main] Hooks - click on the Medication..
+[INFO ] 2023-09-22 02:50:47.973 [main] Hooks - select the medication assistance level-Assistance..
+[INFO ] 2023-09-22 02:50:52.112 [main] Hooks - select the tasks-Check Blood Pressure..
+[INFO ] 2023-09-22 02:50:58.184 [main] Hooks - select the visits time..
+[INFO ] 2023-09-22 02:51:00.672 [main] Hooks - entered caregiver instructions..
+[INFO ] 2023-09-22 02:51:07.823 [main] Hooks - update the medication Details..
+[INFO ] 2023-09-22 02:51:14.009 [main] Hooks - save the medication Details..
+[INFO ] 2023-09-22 02:51:14.009 [main] Hooks - Click on the Add To Schedule and Finalize Visits..
+[INFO ] 2023-09-22 02:51:39.752 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:51:44.518 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:51:57.793 [main] Hooks - entered email address
+[INFO ] 2023-09-22 02:51:57.912 [main] Hooks - entered password
+[INFO ] 2023-09-22 02:51:58.170 [main] Hooks - click on login
+[INFO ] 2023-09-22 02:52:02.132 [main] Hooks - select test community
+[INFO ] 2023-09-22 02:52:02.242 [main] Hooks - click on continue button..
+[INFO ] 2023-09-22 02:52:07.234 [main] Hooks - click on visit plans
+[INFO ] 2023-09-22 02:52:18.490 [main] Hooks - click on table user first name
+[INFO ] 2023-09-22 02:52:26.746 [main] Hooks - click on visit table
+[INFO ] 2023-09-22 02:52:31.000 [main] Hooks - change the visit duration
+[INFO ] 2023-09-22 02:52:39.182 [main] Hooks - update the visit duration
+[INFO ] 2023-09-22 02:52:45.506 [main] Hooks - save the details
+[INFO ] 2023-09-22 02:52:45.537 [main] Hooks - Validation message should be shown-Visit Plan was Saved
+[INFO ] 2023-09-22 02:52:45.663 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:52:50.227 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:53:03.920 [main] Hooks - entered email address
+[INFO ] 2023-09-22 02:53:04.025 [main] Hooks - entered password
+[INFO ] 2023-09-22 02:53:04.312 [main] Hooks - click on login
+[INFO ] 2023-09-22 02:53:08.385 [main] Hooks - select test community
+[INFO ] 2023-09-22 02:53:08.485 [main] Hooks - click on continue button..
+[INFO ] 2023-09-22 02:53:12.972 [main] Hooks - click on visit plans
+[INFO ] 2023-09-22 02:53:23.577 [main] Hooks - click on table user first name
+[INFO ] 2023-09-22 02:53:23.734 [main] Hooks - click on the delete icon..
+[INFO ] 2023-09-22 02:53:38.218 [main] Hooks - pop up is showing and click on the delete icon..
+[INFO ] 2023-09-22 02:53:38.536 [main] Hooks - save delete visit series..
+[INFO ] 2023-09-22 02:53:40.275 [main] Hooks - validation message should be shown - Visit Plan was saved.
+[INFO ] 2023-09-22 02:53:40.399 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:53:49.774 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:54:01.718 [main] Hooks - entered email address
+[INFO ] 2023-09-22 02:54:01.803 [main] Hooks - entered password
+[INFO ] 2023-09-22 02:54:02.061 [main] Hooks - click on login
+[INFO ] 2023-09-22 02:54:06.259 [main] Hooks - select test community
+[INFO ] 2023-09-22 02:54:06.368 [main] Hooks - click on continue button..
+[INFO ] 2023-09-22 02:54:11.158 [main] Hooks - click on visit plans
+[INFO ] 2023-09-22 02:54:21.850 [main] Hooks - click on table user first name
+[INFO ] 2023-09-22 02:54:22.119 [main] Hooks - Click on the Add Visit Configuration..
+[INFO ] 2023-09-22 02:54:28.696 [main] Hooks - select All Days..
+[INFO ] 2023-09-22 02:54:31.958 [main] Hooks - select Start Time..
+[INFO ] 2023-09-22 02:54:38.253 [main] Hooks - select duration..
+[INFO ] 2023-09-22 02:54:42.616 [main] Hooks - select weekly recurrence..
+[INFO ] 2023-09-22 02:54:50.985 [main] Hooks - select past date..
+[INFO ] 2023-09-22 02:55:04.244 [main] Hooks - click on save button.
+[INFO ] 2023-09-22 02:55:11.557 [main] Hooks - save- All Days Visit Details..
+[INFO ] 2023-09-22 02:55:11.595 [main] Hooks - Validation msg is showing- Visit plan was saved..
+[INFO ] 2023-09-22 02:55:11.714 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 02:55:15.648 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 02:55:27.790 [main] Hooks - entered email address
+[INFO ] 2023-09-22 02:55:27.895 [main] Hooks - entered password
+[INFO ] 2023-09-22 02:55:28.052 [main] Hooks - click on login
+[INFO ] 2023-09-22 02:55:33.614 [main] Hooks - select test community
+[INFO ] 2023-09-22 02:55:33.708 [main] Hooks - click on continue button..
+[INFO ] 2023-09-22 02:55:37.967 [main] Hooks - click on visit plans
+[INFO ] 2023-09-22 02:55:48.488 [main] Hooks - click on table user first name
+[INFO ] 2023-09-22 02:55:48.598 [main] Hooks - click on adls.
+[INFO ] 2023-09-22 02:55:50.726 [main] Hooks - click on bathing..
+[INFO ] 2023-09-22 02:55:57.909 [main] Hooks - select supervision bathing assistance
+[INFO ] 2023-09-22 02:56:02.157 [main] Hooks - select assist with shower tasks
+[INFO ] 2023-09-22 02:56:10.342 [main] Hooks - select visits timing
+[INFO ] 2023-09-22 02:56:13.589 [main] Hooks - entered caregiver instructions notes.
+[INFO ] 2023-09-22 02:56:15.804 [main] Hooks - click on update button
+[INFO ] 2023-09-22 02:56:22.093 [main] Hooks - save bathing details..
+[INFO ] 2023-09-22 02:56:22.204 [main] Hooks - click on adls..
+[INFO ] 2023-09-22 02:56:26.330 [main] Hooks - click on the continence and toileting..
+[INFO ] 2023-09-22 02:56:30.510 [main] Hooks - click on the assistance level
+[INFO ] 2023-09-22 02:56:40.668 [main] Hooks - save continence and toileting deatils
+[INFO ] 2023-09-22 02:56:40.765 [main] Hooks - click on adls..
+[INFO ] 2023-09-22 02:56:46.878 [main] Hooks - click on dressing and grooming..
+[INFO ] 2023-09-22 02:56:51.077 [main] Hooks - select supervision assistance
+[INFO ] 2023-09-22 02:56:55.219 [main] Hooks - click on apply lotion tasks
+[INFO ] 2023-09-22 02:56:59.293 [main] Hooks - select the visit time
+[INFO ] 2023-09-22 02:57:03.708 [main] Hooks - enter the caregiver instructions
+[INFO ] 2023-09-22 02:57:07.886 [main] Hooks - update apply lotion details..
+[INFO ] 2023-09-22 02:57:20.038 [main] Hooks - save the dressing and grooming details
+[INFO ] 2023-09-22 02:57:20.140 [main] Hooks - click on the adls
+[INFO ] 2023-09-22 02:57:24.249 [main] Hooks - click on the eating
+[INFO ] 2023-09-22 02:57:28.417 [main] Hooks - select the assistance level-no assistance
+[INFO ] 2023-09-22 02:57:34.567 [main] Hooks - save the eating details
+[INFO ] 2023-09-22 02:57:34.658 [main] Hooks - click on adls
+[INFO ] 2023-09-22 02:57:40.741 [main] Hooks - click on the mobility
+[INFO ] 2023-09-22 02:57:44.921 [main] Hooks - select assistance level - limited assistance
+[INFO ] 2023-09-22 02:57:49.034 [main] Hooks - select-walk with client
+[INFO ] 2023-09-22 02:57:55.101 [main] Hooks - select the visit time
+[INFO ] 2023-09-22 02:57:59.422 [main] Hooks - enter caregiver instructions notes..
+[INFO ] 2023-09-22 02:58:06.577 [main] Hooks - update- walk with clients details
+[INFO ] 2023-09-22 02:58:14.699 [main] Hooks - save-mobility details
+[INFO ] 2023-09-22 02:58:14.789 [main] Hooks - click on the IADLS
+[INFO ] 2023-09-22 02:58:18.874 [main] Hooks - click on the household tasks
+[INFO ] 2023-09-22 02:58:23.034 [main] Hooks - select assistance level -assistance
+[INFO ] 2023-09-22 02:58:27.155 [main] Hooks - click on the make bed..
+[INFO ] 2023-09-22 02:58:30.231 [main] Hooks - select make bed-visits time
+[INFO ] 2023-09-22 02:58:33.590 [main] Hooks - entered caregiver instructions..
+[INFO ] 2023-09-22 02:58:36.686 [main] Hooks - update-make bed details
+[INFO ] 2023-09-22 02:58:42.812 [main] Hooks - save the household details..
+[INFO ] 2023-09-22 02:58:42.901 [main] Hooks - click on the IADLS..
+[INFO ] 2023-09-22 02:58:47.007 [main] Hooks - click on the laundry..
+[INFO ] 2023-09-22 02:58:51.148 [main] Hooks - select laundry assistance level- Assistance
+[INFO ] 2023-09-22 02:58:55.305 [main] Hooks - click on the tasks..
+[INFO ] 2023-09-22 02:58:59.372 [main] Hooks - select the visits time..
+[INFO ] 2023-09-22 02:59:02.597 [main] Hooks - entered caregiver instruction..
+[INFO ] 2023-09-22 02:59:08.696 [main] Hooks - update the laundry details..
+[INFO ] 2023-09-22 02:59:14.824 [main] Hooks - save the laundry details..
+[INFO ] 2023-09-22 02:59:14.920 [main] Hooks - click on the IADLs..
+[INFO ] 2023-09-22 02:59:18.016 [main] Hooks - click on the Meals..
+[INFO ] 2023-09-22 02:59:22.191 [main] Hooks - select the meals Assistance level- No Assistance.
+[INFO ] 2023-09-22 02:59:28.346 [main] Hooks - save the meals details..
+[INFO ] 2023-09-22 02:59:28.425 [main] Hooks - click on the IADLs..
+[INFO ] 2023-09-22 02:59:34.519 [main] Hooks - click on the Medication..
+[INFO ] 2023-09-22 02:59:42.673 [main] Hooks - select the medication assistance level-Assistance..
+[INFO ] 2023-09-22 02:59:46.792 [main] Hooks - select the tasks-Check Blood Pressure..
+[INFO ] 2023-09-22 02:59:52.859 [main] Hooks - select the visits time..
+[INFO ] 2023-09-22 02:59:55.193 [main] Hooks - entered caregiver instructions..
+[INFO ] 2023-09-22 03:00:02.312 [main] Hooks - update the medication Details..
+[INFO ] 2023-09-22 03:00:08.442 [main] Hooks - save the medication Details..
+[INFO ] 2023-09-22 03:00:08.442 [main] Hooks - Click on the Add To Schedule and Finalize Visits..
+[INFO ] 2023-09-22 03:00:34.216 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 03:00:38.521 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 03:00:49.879 [main] Hooks - entered email address
+[INFO ] 2023-09-22 03:00:50.063 [main] Hooks - entered password
+[INFO ] 2023-09-22 03:00:50.329 [main] Hooks - click on login
+[INFO ] 2023-09-22 03:00:54.379 [main] Hooks - select test community
+[INFO ] 2023-09-22 03:00:54.490 [main] Hooks - click on continue button..
+[INFO ] 2023-09-22 03:00:59.588 [main] Hooks - click on visit plans
+[INFO ] 2023-09-22 03:01:10.209 [main] Hooks - click on table user first name
+[INFO ] 2023-09-22 03:01:10.285 [main] Hooks - click on visit plans..
+[INFO ] 2023-09-22 03:01:20.070 [main] Hooks - click on the user table..
+[INFO ] 2023-09-22 03:01:47.777 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 03:01:51.731 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 03:02:03.771 [main] Hooks - Entered Email Address..
+[INFO ] 2023-09-22 03:02:03.855 [main] Hooks - Entered password.
+[INFO ] 2023-09-22 03:02:04.101 [main] Hooks - click on login button..
+[INFO ] 2023-09-22 03:02:07.991 [main] Hooks - select test community
+[INFO ] 2023-09-22 03:02:08.097 [main] Hooks - click on continue button
+[INFO ] 2023-09-22 03:02:12.271 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-09-22 03:02:24.435 [main] Hooks - click on color
+[INFO ] 2023-09-22 03:02:27.813 [main] Hooks - change time for visit
+[INFO ] 2023-09-22 03:02:30.025 [main] Hooks - select move only this occurence
+[INFO ] 2023-09-22 03:02:50.270 [main] Hooks - save the visit
+[INFO ] 2023-09-22 03:02:50.397 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 03:02:54.674 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 03:03:05.689 [main] Hooks - Entered Email Address..
+[INFO ] 2023-09-22 03:03:05.789 [main] Hooks - Entered password.
+[INFO ] 2023-09-22 03:03:06.098 [main] Hooks - click on login button..
+[INFO ] 2023-09-22 03:03:10.154 [main] Hooks - select test community
+[INFO ] 2023-09-22 03:03:10.255 [main] Hooks - click on continue button
+[INFO ] 2023-09-22 03:03:14.800 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-09-22 03:03:26.878 [main] Hooks - click on color
+[INFO ] 2023-09-22 03:03:30.240 [main] Hooks - change the time
+[INFO ] 2023-09-22 03:03:45.499 [main] Hooks - select move day series..
+[INFO ] 2023-09-22 03:03:51.777 [main] Hooks - save visit..
+[INFO ] 2023-09-22 03:03:51.903 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 03:03:55.807 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 03:04:07.164 [main] Hooks - Entered Email Address..
+[INFO ] 2023-09-22 03:04:07.271 [main] Hooks - Entered password.
+[INFO ] 2023-09-22 03:04:07.527 [main] Hooks - click on login button..
+[INFO ] 2023-09-22 03:04:11.474 [main] Hooks - select test community
+[INFO ] 2023-09-22 03:04:11.582 [main] Hooks - click on continue button
+[INFO ] 2023-09-22 03:04:16.760 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-09-22 03:04:28.861 [main] Hooks - click on color
+[INFO ] 2023-09-22 03:04:32.234 [main] Hooks - change the time
+[INFO ] 2023-09-22 03:04:47.485 [main] Hooks - select move week series
+[INFO ] 2023-09-22 03:04:53.739 [main] Hooks - save visit..
+[INFO ] 2023-09-22 03:04:53.864 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 03:04:58.304 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 03:05:10.438 [main] Hooks - Entered Email Address..
+[INFO ] 2023-09-22 03:05:10.608 [main] Hooks - Entered password.
+[INFO ] 2023-09-22 03:05:10.818 [main] Hooks - click on login button..
+[INFO ] 2023-09-22 03:05:14.791 [main] Hooks - select test community
+[INFO ] 2023-09-22 03:05:14.907 [main] Hooks - click on continue button
+[INFO ] 2023-09-22 03:05:20.457 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-09-22 03:05:32.555 [main] Hooks - click on visit..
+[INFO ] 2023-09-22 03:05:39.332 [main] Hooks - change track
+[INFO ] 2023-09-22 03:05:43.530 [main] Hooks - select move only this occurrence
+[INFO ] 2023-09-22 03:05:48.832 [main] Hooks - save visits..
+[INFO ] 2023-09-22 03:05:48.958 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 03:05:52.769 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 03:06:03.634 [main] Hooks - Entered Email Address..
+[INFO ] 2023-09-22 03:06:03.735 [main] Hooks - Entered password.
+[INFO ] 2023-09-22 03:06:03.974 [main] Hooks - click on login button..
+[INFO ] 2023-09-22 03:06:07.961 [main] Hooks - select test community
+[INFO ] 2023-09-22 03:06:08.064 [main] Hooks - click on continue button
+[INFO ] 2023-09-22 03:06:12.257 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-09-22 03:06:24.538 [main] Hooks - click on visit.
+[INFO ] 2023-09-22 03:06:28.803 [main] Hooks - click on delete button.
+[INFO ] 2023-09-22 03:06:39.094 [main] Hooks - pop is showing and delete the item..
+[INFO ] 2023-09-22 03:06:39.219 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-22 03:06:44.352 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-22 03:06:56.323 [main] Hooks - entered email address
+[INFO ] 2023-09-22 03:06:56.422 [main] Hooks - entered password
+[INFO ] 2023-09-22 03:06:56.642 [main] Hooks - click on login
+[INFO ] 2023-09-22 03:07:00.614 [main] Hooks - select test community
+[INFO ] 2023-09-22 03:07:00.711 [main] Hooks - click on continue button..
+[INFO ] 2023-09-22 03:07:04.662 [main] Hooks - click on visit plans
+[INFO ] 2023-09-22 03:07:15.176 [main] Hooks - click on the table..
+[INFO ] 2023-09-22 03:07:15.405 [main] Hooks - click on add visit configuration
+[INFO ] 2023-09-22 03:07:15.405 [main] Hooks - Selecting the single day...
+[INFO ] 2023-09-22 03:07:31.346 [main] Hooks - Select the recurrence
+[INFO ] 2023-09-22 03:07:34.608 [main] Hooks - Select the start time
+[INFO ] 2023-09-22 03:07:36.724 [main] Hooks - Select hourly visit
+[INFO ] 2023-09-22 03:07:38.143 [main] Hooks - Select end time..
+[INFO ] 2023-09-22 03:07:40.337 [main] Hooks - Select hourly rate..
+[INFO ] 2023-09-22 03:07:44.676 [main] Hooks - Select start time
+[INFO ] 2023-09-22 03:07:48.954 [main] Hooks - click on save button
+[INFO ] 2023-09-22 03:07:55.234 [main] Hooks - save all single visit details
+[INFO ] 2023-09-22 03:07:55.320 [main] Hooks - click on adls.
+[INFO ] 2023-09-22 03:07:57.450 [main] Hooks - click on bathing..
+[INFO ] 2023-09-22 03:08:04.636 [main] Hooks - select supervision bathing assistance
+[INFO ] 2023-09-22 03:08:08.825 [main] Hooks - select assist with shower tasks
+[INFO ] 2023-09-22 03:08:17.020 [main] Hooks - select visits timing
+[INFO ] 2023-09-22 03:08:20.176 [main] Hooks - entered caregiver instructions notes.
+[INFO ] 2023-09-22 03:08:22.361 [main] Hooks - click on update button
+[INFO ] 2023-09-22 03:08:28.474 [main] Hooks - save bathing details..
+[INFO ] 2023-09-22 03:08:28.542 [main] Hooks - click on adls..
+[INFO ] 2023-09-22 03:08:32.647 [main] Hooks - click on the continence and toileting..
+[INFO ] 2023-09-22 03:08:36.805 [main] Hooks - click on the assistance level
+[INFO ] 2023-09-22 03:08:46.924 [main] Hooks - save continence and toileting deatils
+[INFO ] 2023-09-22 03:08:47.007 [main] Hooks - click on adls..
+[INFO ] 2023-09-22 03:08:53.101 [main] Hooks - click on dressing and grooming..
+[INFO ] 2023-09-22 03:08:57.245 [main] Hooks - select supervision assistance
+[INFO ] 2023-09-22 03:09:01.351 [main] Hooks - click on apply lotion tasks
+[INFO ] 2023-09-22 03:09:05.411 [main] Hooks - select the visit time
+[INFO ] 2023-09-22 03:09:09.714 [main] Hooks - enter the caregiver instructions
+[INFO ] 2023-09-22 03:09:13.845 [main] Hooks - update apply lotion details..
+[INFO ] 2023-09-22 03:09:25.976 [main] Hooks - save the dressing and grooming details
+[INFO ] 2023-09-22 03:09:26.055 [main] Hooks - click on the adls
+[INFO ] 2023-09-22 03:09:30.161 [main] Hooks - click on the eating
+[INFO ] 2023-09-22 03:09:34.303 [main] Hooks - select the assistance level-no assistance
+[INFO ] 2023-09-22 03:09:40.407 [main] Hooks - save the eating details
+[INFO ] 2023-09-22 03:09:40.493 [main] Hooks - click on adls
+[INFO ] 2023-09-22 03:09:46.573 [main] Hooks - click on the mobility
+[INFO ] 2023-09-22 03:09:50.724 [main] Hooks - select assistance level - limited assistance
+[INFO ] 2023-09-22 03:09:54.834 [main] Hooks - select-walk with client
+[INFO ] 2023-09-22 03:10:00.896 [main] Hooks - select the visit time
+[INFO ] 2023-09-22 03:10:05.143 [main] Hooks - enter caregiver instructions notes..
+[INFO ] 2023-09-22 03:10:12.269 [main] Hooks - update- walk with clients details
+[INFO ] 2023-09-22 03:10:20.385 [main] Hooks - save-mobility details
+[INFO ] 2023-09-22 03:10:20.481 [main] Hooks - click on the IADLS
+[INFO ] 2023-09-22 03:10:24.567 [main] Hooks - click on the household tasks
+[INFO ] 2023-09-22 03:10:28.721 [main] Hooks - select assistance level -assistance
+[INFO ] 2023-09-22 03:10:32.823 [main] Hooks - click on the make bed..
+[INFO ] 2023-09-22 03:10:35.892 [main] Hooks - select make bed-visits time
+[INFO ] 2023-09-22 03:10:39.180 [main] Hooks - entered caregiver instructions..
+[INFO ] 2023-09-22 03:10:42.278 [main] Hooks - update-make bed details
+[INFO ] 2023-09-22 03:10:48.379 [main] Hooks - save the household details..
+[INFO ] 2023-09-22 03:10:48.447 [main] Hooks - click on the IADLS..
+[INFO ] 2023-09-22 03:10:52.542 [main] Hooks - click on the laundry..
+[INFO ] 2023-09-22 03:10:56.679 [main] Hooks - select laundry assistance level- Assistance
+[INFO ] 2023-09-22 03:11:00.809 [main] Hooks - click on the tasks..
+[INFO ] 2023-09-22 03:11:04.877 [main] Hooks - select the visits time..
+[INFO ] 2023-09-22 03:11:08.060 [main] Hooks - entered caregiver instruction..
+[INFO ] 2023-09-22 03:11:14.154 [main] Hooks - update the laundry details..
+[INFO ] 2023-09-22 03:11:20.276 [main] Hooks - save the laundry details..
+[INFO ] 2023-09-22 03:11:20.359 [main] Hooks - click on the IADLs..
+[INFO ] 2023-09-22 03:11:23.456 [main] Hooks - click on the Meals..
+[INFO ] 2023-09-22 03:11:27.599 [main] Hooks - select the meals Assistance level- No Assistance.
+[INFO ] 2023-09-22 03:11:33.712 [main] Hooks - save the meals details..
+[INFO ] 2023-09-22 03:11:33.795 [main] Hooks - click on the IADLs..
+[INFO ] 2023-09-22 03:11:39.879 [main] Hooks - click on the Medication..
+[INFO ] 2023-09-22 03:11:48.049 [main] Hooks - select the medication assistance level-Assistance..
+[INFO ] 2023-09-22 03:11:52.164 [main] Hooks - select the tasks-Check Blood Pressure..
+[INFO ] 2023-09-22 03:11:58.219 [main] Hooks - select the visits time..
+[INFO ] 2023-09-22 03:12:00.496 [main] Hooks - entered caregiver instructions..
+[INFO ] 2023-09-22 03:12:07.646 [main] Hooks - update the medication Details..
+[INFO ] 2023-09-22 03:12:13.789 [main] Hooks - save the medication Details..
+[INFO ] 2023-09-22 03:12:13.875 [main] Hooks - click on the IADLS..
+[INFO ] 2023-09-22 03:12:17.938 [main] Hooks - click on the other button
+[INFO ] 2023-09-22 03:12:22.077 [main] Hooks - select No Assistance
+[INFO ] 2023-09-22 03:12:22.077 [main] Hooks - Click on the Add To Schedule and Finalize Visits..
+[INFO ] 2023-09-22 03:12:47.792 [main] Hooks - Browser Closed..

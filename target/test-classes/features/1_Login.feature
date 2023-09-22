@@ -18,7 +18,7 @@ Examples:
 
 
 
-@TestInvalid
+
 Scenario Outline: Verify the Invalid Login Functionality
 Given User Enter the "<Email>" and "<Password>"
 When Click on the login button
@@ -26,13 +26,13 @@ Then Error message is Displayed "<Message>"
 
 Examples:
 |Email|Password|Message|
-|xyz@yopmail.com |xyz@12345|Invalid Login - Invalid username and or password.|
-|abc@yopmail.com |12345|Invalid Login - Invalid username and or password.|
+|xyz@yopmail.com |xyz@12345|Invalid Login - Invalid username and password.|
+|abc@yopmail.com |12345|Invalid Login - Invalid username and password.|
 
 
-@TestBlank
+
 Scenario Outline: User tries to login with blank Credentials
-Given The User submits blank "<Email>" and "<Password>"
+Given The User submits blank "<Email>" and Invalid "<Password>"
 When The user click on the Login button
 Then The User should see an Error Message "<Message>"
 

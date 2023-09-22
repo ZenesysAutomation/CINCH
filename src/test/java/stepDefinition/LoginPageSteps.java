@@ -88,10 +88,10 @@ public class LoginPageSteps extends BaseClass{
 	
 	//blank credentials
 	
-	@Given ("The User submits blank {string} and {string}")
-	public void the_user_submits_blank_email_and_password(String email,String pass) {
-		login.the_user_submits_blank_email_and_password(email,pass);
-		log.info("user enter the blank email address and entered password..");
+	@Given ("The User submits blank {string} and Invalid {string}")
+	public void the_user_submits_blank_email_and_invalid_password(String email,String pass) {
+		login.the_user_submits_blank_email_and_invalid_password(email,pass);
+		log.info("user enter the blank email address and invalid password..");
 	}
 	
 	@When ("The user click on the Login button")

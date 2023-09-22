@@ -28,12 +28,12 @@ public class Hooks extends BaseClass {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options= new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
-			options.addArguments("--disable-gpu");
+			/*options.addArguments("--disable-gpu");
 			options.addArguments("--disable-extensions");
 			options.addArguments("--no-sandbox");
 			options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--headless");
-			options.addArguments("--window-size=1580,1280");
+			options.addArguments("--window-size=1580,1280");*/
 			options.addArguments("--incognito");
 			driver = new ChromeDriver(options);
 			}

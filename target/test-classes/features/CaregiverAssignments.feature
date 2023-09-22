@@ -7,7 +7,7 @@ When User Enter The Password
 Then User Click on the Login Button
 Then Select the Test Community
 And User Click on the Continue Button
-Given Click on the Caregiver Assignments
+Then Click on the Caregiver Assignments
 
 @Regression
 Scenario: Verify the Change Time for a Client Visit (Move only this occurrence)
