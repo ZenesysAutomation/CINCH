@@ -43,7 +43,7 @@ import io.netty.handler.timeout.TimeoutException;
 	
 	public void user_click_on_the_login_button() throws InterruptedException {
 		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
 		 wait.until(ExpectedConditions.elementToBeClickable(Login));
 		 Login.click();	
@@ -409,7 +409,6 @@ public void check_if_color_is_blue_and_active_visit_then_click_on_it3() throws I
 	}
 }
 
-
 public void change_the_time1() throws InterruptedException {
 	WebElement SelectTime = driver.findElement(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
 	explicitWait(SelectTime, 5);
@@ -672,6 +671,7 @@ public void pop_up_will_be_visible_are_you_sure_want_to_delete_this_Item_and_cli
 	Thread.sleep(10000);
 	
 }
+
 }
 	
     

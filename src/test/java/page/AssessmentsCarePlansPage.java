@@ -387,7 +387,7 @@ private boolean isAssessmentandCarePlanPresent() {
 				try {
 				WebElement Swallowing=driver.findElement(By.xpath("//span[@aria-owns='swallowing_options']"));
 				Swallowing.click();
-				Swallowing.sendKeys("Poor");
+				Swallowing.sendKeys("Good");
 				Thread.sleep(3000);
 				}
 				catch (Exception e) {

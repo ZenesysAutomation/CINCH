@@ -1,4 +1,4 @@
-/*package runner;
+package runner;
 
 import org.junit.runner.RunWith;
 
@@ -6,16 +6,16 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/java/features",tags="@TestBlank", publish = true, monochrome = true, dryRun = false,
+@CucumberOptions(features="src/test/java/features",tags="@Regression1", publish = true, monochrome = true, dryRun = false,
 plugin= {"pretty","html:target/TestReport/test.html","json:target/cucumber-report/cucumber.json"},glue= {"stepDefinition","base"})
 
 public class RunnerFileTest {
 	
 
-}*/
+}
 
 
-
+/*Run the all Features file through Tags*/
 
 /*package runner;
 
@@ -37,9 +37,9 @@ public class RunnerFileTest {
 }*/
 
 
+/*Run the All features File*/
 
-
-package runner;
+/*package runner;
 
 import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
@@ -53,8 +53,9 @@ import io.cucumber.junit.CucumberOptions;
 plugin= {"pretty","html:target/TestReport/test.html","json:target/cucumber-report/cucumber.json"},glue= {"stepDefinition","base"})
 
 public class RunnerFileTest {
+	
 
-}
+}*/
 
 
 

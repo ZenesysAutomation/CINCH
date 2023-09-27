@@ -18,7 +18,7 @@ Examples:
 
 
 
-
+@TestBlank
 Scenario Outline: Verify the Invalid Login Functionality
 Given User Enter the "<Email>" and "<Password>"
 When Click on the login button

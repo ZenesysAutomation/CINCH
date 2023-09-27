@@ -232,7 +232,7 @@ public class VisitPlansPage extends BaseClass  {
 		try {
 		WebElement Duration =driver.findElement(By.xpath("(//span[@aria-owns='duration_options'])[1]"));
 		Duration.click();
-		Duration.sendKeys("65 Minute Visit");
+		Duration.sendKeys("15 Minute Visit");
 		Duration.click();
 		Thread.sleep(4000);
 		}
@@ -1219,10 +1219,18 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void delete_the_everyday_visit_series() throws InterruptedException {
-		WebElement DeleteBtn=driver.findElement(By.xpath("//a[@class='btn btn-danger btn-sm e-flat dripicons-trash']"));
+		/*WebElement DeleteBtn=driver.findElement(By.xpath("//a[@class='btn btn-danger btn-sm e-flat dripicons-trash']"));
 		DeleteBtn.click();
-		Thread.sleep(7000);
+		Thread.sleep(7000);*/
 		
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		    WebElement DeleteBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='btn btn-danger btn-sm e-flat dripicons-trash']")));
+		    DeleteBtn.click();
+		} catch (Exception e) {
+		    e.printStackTrace(); 
+		}
+
 		WebElement DeletePopUp=	driver.findElement(By.xpath("//input[@value='Delete']"));
 		DeletePopUp.click();
 		try {
@@ -1230,6 +1238,7 @@ public class VisitPlansPage extends BaseClass  {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(6000);
@@ -1738,6 +1747,7 @@ public class VisitPlansPage extends BaseClass  {
 		AssistanceLevel.sendKeys("Assistance");
 		AssistanceLevel.click();
 		Thread.sleep(4000);
+		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		Thread.sleep(4000);
@@ -1783,7 +1793,7 @@ public class VisitPlansPage extends BaseClass  {
 			Thread.sleep(6000);
 		}
 		catch (Exception e) {
-			
+			e.printStackTrace();
 		}
 		
 	}
@@ -1967,7 +1977,7 @@ public class VisitPlansPage extends BaseClass  {
 		try {
 		WebElement Duration =driver.findElement(By.xpath("//span[contains(@aria-owns,'duration_options')]"));
 		Duration.click();
-		Duration.sendKeys("60 Minute Visit");
+		Duration.sendKeys("15 Minute Visit");
 		Duration.click();
 		Thread.sleep(6000);
 		}
@@ -2035,7 +2045,7 @@ public class VisitPlansPage extends BaseClass  {
 	   Thread.sleep(6000);
 		}
 		catch (Exception e) {
-	e.printStackTrace();
+			e.printStackTrace();
 		}
 				
 	}
@@ -2079,7 +2089,7 @@ public class VisitPlansPage extends BaseClass  {
 		assertEquals("Plan was Created",expectedResult,actualResult);
 		}
 		catch (Exception e) {
-			
+		e.printStackTrace();
 		}		
 	}
 	
@@ -2142,8 +2152,9 @@ public class VisitPlansPage extends BaseClass  {
 		assertEquals("Plan was Created",expectedResult,actualResult);
 		}
 		catch(Exception e) {
-			
+			e.printStackTrace();
 		}
+		
 		}
 	
 	
@@ -2281,7 +2292,6 @@ public class VisitPlansPage extends BaseClass  {
 		
 	}
 		
-	
 	public void delete_visit_configurations_pop_up_is_opened_and_click_on_the_delete_button() throws InterruptedException {
 		
 		WebElement DeletePopUp=	driver.findElement(By.xpath("//input[@value='Delete']"));

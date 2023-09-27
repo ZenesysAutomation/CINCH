@@ -7620,3 +7620,15 @@
 [INFO ] 2023-09-22 03:12:22.077 [main] Hooks - select No Assistance
 [INFO ] 2023-09-22 03:12:22.077 [main] Hooks - Click on the Add To Schedule and Finalize Visits..
 [INFO ] 2023-09-22 03:12:47.792 [main] Hooks - Browser Closed..
+[INFO ] 2023-09-26 01:10:14.310 [main] Hooks - Browser Launched..
+[INFO ] 2023-09-26 01:10:27.661 [main] Hooks - Entered Email Address..
+[INFO ] 2023-09-26 01:10:27.884 [main] Hooks - Entered password.
+[INFO ] 2023-09-26 01:10:28.238 [main] Hooks - click on login button..
+[INFO ] 2023-09-26 01:10:32.789 [main] Hooks - select test community
+[INFO ] 2023-09-26 01:10:32.949 [main] Hooks - click on continue button
+[INFO ] 2023-09-26 01:10:38.298 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-09-26 01:10:51.363 [main] Hooks - click on color
+[INFO ] 2023-09-26 01:10:54.778 [main] Hooks - change the time
+[INFO ] 2023-09-26 01:11:10.086 [main] Hooks - select move day series..
+[INFO ] 2023-09-26 01:11:16.347 [main] Hooks - save visit..
+[INFO ] 2023-09-26 01:11:16.552 [main] Hooks - Browser Closed..
