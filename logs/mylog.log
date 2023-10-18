@@ -8112,3 +8112,75 @@
 [INFO ] 2023-10-17 05:35:59.749 [main] Hooks - edit the start date..
 [INFO ] 2023-10-17 05:35:59.873 [main] Hooks - save the details..
 [INFO ] 2023-10-17 05:36:00.000 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-17 07:06:48.959 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-17 07:06:59.237 [main] Hooks - Entered Email Address
+[INFO ] 2023-10-17 07:06:59.302 [main] Hooks - Entered password
+[INFO ] 2023-10-17 07:06:59.480 [main] Hooks - click on the login button
+[INFO ] 2023-10-17 07:07:03.619 [main] Hooks - select test community 
+[INFO ] 2023-10-17 07:07:03.692 [main] Hooks - click on continue button
+[INFO ] 2023-10-17 07:07:07.454 [main] Hooks - click on clients link..
+[INFO ] 2023-10-17 07:07:25.100 [main] Hooks - click on the user data table..
+[INFO ] 2023-10-17 07:07:48.889 [main] Hooks - click on the edit button..
+[INFO ] 2023-10-17 07:07:55.243 [main] Hooks - change the status
+[INFO ] 2023-10-17 07:08:03.840 [main] Hooks - entered the discharge reason
+[INFO ] 2023-10-17 07:08:04.103 [main] Hooks - save data..
+[INFO ] 2023-10-17 07:08:04.172 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-17 07:58:10.288 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-17 07:58:20.655 [main] Hooks - Entered Email Address..
+[INFO ] 2023-10-17 07:58:20.721 [main] Hooks - Entered password.
+[INFO ] 2023-10-17 07:58:20.894 [main] Hooks - click on the login button..
+[INFO ] 2023-10-17 07:58:24.763 [main] Hooks - select test community
+[INFO ] 2023-10-17 07:58:24.852 [main] Hooks - click on the continue button
+[INFO ] 2023-10-17 07:58:31.449 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-10-17 07:58:41.287 [main] Hooks - click on the color
+[INFO ] 2023-10-17 07:59:01.357 [main] Hooks - change time for visit
+[INFO ] 2023-10-17 07:59:21.365 [main] Hooks - select move only this occurence
+[INFO ] 2023-10-17 07:59:41.403 [main] Hooks - save the visit
+[INFO ] 2023-10-17 07:59:41.472 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-17 07:59:45.125 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-17 07:59:55.392 [main] Hooks - Entered Email Address..
+[INFO ] 2023-10-17 07:59:55.456 [main] Hooks - Entered password.
+[INFO ] 2023-10-17 07:59:55.622 [main] Hooks - click on the login button..
+[INFO ] 2023-10-17 07:59:59.449 [main] Hooks - select test community
+[INFO ] 2023-10-17 07:59:59.530 [main] Hooks - click on the continue button
+[INFO ] 2023-10-17 08:00:03.374 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-10-17 08:00:13.238 [main] Hooks - click on the color
+[INFO ] 2023-10-17 08:00:33.261 [main] Hooks - change the time
+[INFO ] 2023-10-17 08:01:22.332 [main] Hooks - select move day series..
+[INFO ] 2023-10-17 08:01:42.375 [main] Hooks - save visit..
+[INFO ] 2023-10-17 08:01:42.430 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-17 08:01:47.718 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-17 08:01:58.586 [main] Hooks - Entered Email Address..
+[INFO ] 2023-10-17 08:01:58.651 [main] Hooks - Entered password.
+[INFO ] 2023-10-17 08:01:58.817 [main] Hooks - click on the login button..
+[INFO ] 2023-10-17 08:02:02.699 [main] Hooks - select test community
+[INFO ] 2023-10-17 08:02:02.779 [main] Hooks - click on the continue button
+[INFO ] 2023-10-17 08:02:06.867 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-10-17 08:02:16.861 [main] Hooks - click on the color
+[INFO ] 2023-10-17 08:02:36.897 [main] Hooks - change the time
+[INFO ] 2023-10-17 08:03:25.986 [main] Hooks - select move week series
+[INFO ] 2023-10-17 08:03:46.033 [main] Hooks - save visit..
+[INFO ] 2023-10-17 08:03:46.095 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-17 08:03:52.150 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-17 08:04:04.680 [main] Hooks - Entered Email Address..
+[INFO ] 2023-10-17 08:04:04.744 [main] Hooks - Entered password.
+[INFO ] 2023-10-17 08:04:04.915 [main] Hooks - click on the login button..
+[INFO ] 2023-10-17 08:04:09.206 [main] Hooks - select test community
+[INFO ] 2023-10-17 08:04:09.284 [main] Hooks - click on the continue button
+[INFO ] 2023-10-17 08:04:14.434 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-10-17 08:04:25.168 [main] Hooks - click on visit..
+[INFO ] 2023-10-17 08:04:45.189 [main] Hooks - change a track
+[INFO ] 2023-10-17 08:05:05.253 [main] Hooks - select move only this occurrence
+[INFO ] 2023-10-17 08:05:25.305 [main] Hooks - save visits..
+[INFO ] 2023-10-17 08:05:25.356 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-17 08:05:30.252 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-17 08:05:42.297 [main] Hooks - Entered Email Address..
+[INFO ] 2023-10-17 08:05:42.359 [main] Hooks - Entered password.
+[INFO ] 2023-10-17 08:05:42.525 [main] Hooks - click on the login button..
+[INFO ] 2023-10-17 08:05:46.358 [main] Hooks - select test community
+[INFO ] 2023-10-17 08:05:46.432 [main] Hooks - click on the continue button
+[INFO ] 2023-10-17 08:05:50.843 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-10-17 08:06:00.727 [main] Hooks - click on visit.
+[INFO ] 2023-10-17 08:06:20.740 [main] Hooks - click on delete button.
+[INFO ] 2023-10-17 08:06:40.800 [main] Hooks - pop up is showing and delete the item..
+[INFO ] 2023-10-17 08:06:40.853 [main] Hooks - Browser Closed..

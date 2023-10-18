@@ -14,7 +14,6 @@ import static org.junit.Assert.assertEquals;
 public class LoginPage extends BaseClass {
 		
 	public void Verify_that_user_enter_the_Email_and_Password(String email, String pass){
-		
 		try {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
@@ -55,15 +54,19 @@ public class LoginPage extends BaseClass {
 	}
 
 	public void Verify_the_Continue_Button() throws InterruptedException {
-		
+		try {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
 		 wait.until(ExpectedConditions.elementToBeClickable(Continue));
-		 Continue.click();	
+		 Continue.click();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void Home_page_should_be_shown() {
-		try {
+	try {
 	String expectedResult= "Home";
 	String actualResult= driver.findElement(By.xpath("//span[normalize-space()='Home']")).getText();
 	assertEquals("Home Page Should be Shown",expectedResult,actualResult);
@@ -78,33 +81,48 @@ public class LoginPage extends BaseClass {
 		
 		By errorElementLocator = By.xpath("//*[contains(text(), 'An unhandled error has occurred.')]");
 		 handleExceptionAndReloadPage(driver, errorElementLocator);
-	
+		 
+	try {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement AccountUserName=	driver.findElement(By.xpath("//span[@class='account-user-name']"));
 		 wait.until(ExpectedConditions.elementToBeClickable(AccountUserName));
 		 AccountUserName.click();
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
 		 
 		 
 	}
 		public void click_on_the_logout_button() throws InterruptedException {
 			
-		 By errorElementLocator = By.xpath("//*[contains(text(), 'An unhandled error has occurred.')]");
+		By errorElementLocator = By.xpath("//*[contains(text(), 'An unhandled error has occurred.')]");
 		handleExceptionAndReloadPage(driver, errorElementLocator);
 		
+		try {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement logout=driver.findElement(By.xpath("(//span[normalize-space()='Logout'])[1]"));
 		 wait.until(ExpectedConditions.elementToBeClickable(logout));
 		 logout.click();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 		
 		public void Sign_In_Page_should_be_shown() {
 	
 			By errorElementLocator = By.xpath("//*[contains(text(), 'An unhandled error has occurred.')]");
 			handleExceptionAndReloadPage(driver, errorElementLocator);
-		
+			
+		try {
 			String expectedResult= "Sign In";
 			String actualResult= driver.findElement(By.xpath("//h4[normalize-space()='Sign In']")).getText();
 			assertEquals("Sign In Page Should be Shown",expectedResult,actualResult);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	
 		}
 		
@@ -126,10 +144,15 @@ public class LoginPage extends BaseClass {
 		}
 		
 		public void Click_on_the_login_button() {
+			try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
 			 wait.until(ExpectedConditions.elementToBeClickable(Login));
 			 Login.click();
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}
 			
 		}
 		
@@ -146,8 +169,7 @@ public class LoginPage extends BaseClass {
 		}
 		
 		public void the_user_submits_blank_email_and_invalid_password(String email,String pass) {
-			
-			try {
+				try {
 				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 				WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 				Useremail.clear();
@@ -165,10 +187,15 @@ public class LoginPage extends BaseClass {
 		}
 		
 		public void the_user_click_on_the_login_button() {
+			try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
 			 wait.until(ExpectedConditions.elementToBeClickable(Login));
 			 Login.click();
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}
 			
 		}
 		

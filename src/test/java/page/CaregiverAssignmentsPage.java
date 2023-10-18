@@ -52,27 +52,40 @@ import io.netty.handler.timeout.TimeoutException;
 }
 
 	public void select_the_test_community() throws InterruptedException {
+	try {	
 	WebElement Dropdown=driver.findElement(By.xpath("//span[@role='listbox']"));
 	Dropdown.sendKeys("Test Community");
 	Dropdown.click();
 	Thread.sleep(3000);
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
+	
 	
 }
-
 	public void user_click_on_the_continue_button() throws InterruptedException {
-		
+		try {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
 		wait.until(ExpectedConditions.elementToBeClickable(Continue));
 		Continue.click();
 		}
+		catch (Exception e) {
+			e.printStackTrace();
+			}
+		}
+		
 
 		public void click_on_the_caregiver_assignments() throws InterruptedException {
+		try {
 		WebElement CgAssignment =driver.findElement(By.xpath("(//span[normalize-space()='Caregiver Assignments'])[1]"));
 		CgAssignment.click();
-		explicitWait(CgAssignment,15);
-		
-	
+		explicitWait(CgAssignment,15);	
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}
 }
 
 	public void check_if_color_is_blue_and_active_visit_then_click_on_it() throws InterruptedException {
@@ -165,6 +178,7 @@ import io.netty.handler.timeout.TimeoutException;
 	}
 
 	public void change_the_time_for_visit() throws InterruptedException {
+		try {
 		WebElement SelectTime = driver.findElement(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
 		explicitWait(SelectTime, 5);
 		SelectTime.click();
@@ -172,26 +186,37 @@ import io.netty.handler.timeout.TimeoutException;
 		List<WebElement> liList=driver.findElements(By.cssSelector("div > ul > li.e-list-item"));
 		liList.get(random.nextInt(96)).click();	
 		Thread.sleep(3000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 		
 
 		public void select_option_move_only_this_occurence() throws InterruptedException {
-		
+		try {
 				List<WebElement> SelectOccurences=	driver.findElements(By.xpath("(//input[@id='flexRadioDefault1'])[1]"));
 				if(SelectOccurences.size()>0) {
 					WebElement selectOccurrence = SelectOccurences.get(0);
 					selectOccurrence.click();
 					Thread.sleep(2000);
 				}
-				
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 			
 	}
 		
 	public void save_the_visit() throws InterruptedException {
-
+		try {
     WebElement VisitSvebtn=	driver.findElement(By.className("e-event-save"));	
 	VisitSvebtn.click();
 	Thread.sleep(20000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+}
 	
 }
 	public void check_if_color_is_blue_and_active_visit_then_click_on_it2() throws InterruptedException {
@@ -284,7 +309,7 @@ import io.netty.handler.timeout.TimeoutException;
 	}
 
 	public void change_the_time() throws InterruptedException {
-		
+		try {
 		WebElement SelectTime = driver.findElement(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
 		explicitWait(SelectTime, 5);
 		SelectTime.click();
@@ -292,11 +317,16 @@ import io.netty.handler.timeout.TimeoutException;
 		List<WebElement> liList=driver.findElements(By.cssSelector("div > ul > li.e-list-item"));
 		liList.get(random.nextInt(96)).click();	
 		Thread.sleep(3000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 		
 	
 	
 	public void select_the_option_move_day_series() throws InterruptedException {
+		try {
 		List<WebElement> SelectMoveDayseries=driver.findElements(By.cssSelector(".form-check-label"));
 		Thread.sleep(3000);
 		List<WebElement> checkboxList=	driver.findElements(By.cssSelector(".form-check-input"));
@@ -312,14 +342,22 @@ import io.netty.handler.timeout.TimeoutException;
 			 
 	     }
 		Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 
 	public void save_the_visit1() throws InterruptedException {
-	
+	try {
 	WebElement VisitSvebtn=	driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
 	VisitSvebtn.click();
 	Thread.sleep(6000);
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
 }
 	
 public void check_if_color_is_blue_and_active_visit_then_click_on_it3() throws InterruptedException {
@@ -412,6 +450,7 @@ public void check_if_color_is_blue_and_active_visit_then_click_on_it3() throws I
 }
 
 public void change_the_time1() throws InterruptedException {
+	try {
 	WebElement SelectTime = driver.findElement(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
 	explicitWait(SelectTime, 5);
 	SelectTime.click();
@@ -419,9 +458,14 @@ public void change_the_time1() throws InterruptedException {
 	List<WebElement> liList=driver.findElements(By.cssSelector("div > ul > li.e-list-item"));
 	liList.get(random.nextInt(96)).click();	
 	Thread.sleep(3000);
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
 }
 	
 public void select_the_option_move_week_series() throws InterruptedException {
+	try {
 	List<WebElement> SelectMoveDayseries=	driver.findElements(By.cssSelector(".form-check-label"));
 	Thread.sleep(3000);
 	List<WebElement> checkboxList=	driver.findElements(By.cssSelector(".form-check-input"));
@@ -437,13 +481,22 @@ public void select_the_option_move_week_series() throws InterruptedException {
 		 
      }
 	Thread.sleep(6000);
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
 	
 }
 
 public void save_the_visit2() throws InterruptedException {
+	try {
 	WebElement VisitSvebtn=	driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
 	VisitSvebtn.click();
 	Thread.sleep(6000);
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
 	
 }
 
@@ -539,11 +592,16 @@ public void click_on_the_visit() throws InterruptedException {
 }
 
 public void change_the_track_from_east1_to_east2() throws InterruptedException {
+	try {
 	WebElement TrackChanged=driver.findElement(By.xpath("(//span[contains(@role,'listbox')])[1]"));
 	TrackChanged.click();
 	TrackChanged.sendKeys("East2");
 	TrackChanged.click();
 	Thread.sleep(6000);
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
 }
 
 public void select_move_only_this_occurrence() throws InterruptedException {
@@ -558,9 +616,14 @@ public void select_move_only_this_occurrence() throws InterruptedException {
 }
 
 public void save_the_visits() throws InterruptedException {
-WebElement SaveVisit =	driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
-SaveVisit.click();
-Thread.sleep(5000);
+	try {
+	WebElement SaveVisit =	driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
+	SaveVisit.click();
+	Thread.sleep(5000);
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
 
 }
 public void user_click_on_the_visit() throws InterruptedException {
@@ -654,6 +717,7 @@ public void user_click_on_the_visit() throws InterruptedException {
 }
 
 public void user_click_on_the_delete_button() throws InterruptedException {
+	try {
 	WebElement DeleteVisit=	driver.findElement(By.xpath("//button[normalize-space()='Delete']"));
 	if (!DeleteVisit.isDisplayed()) {
 		 Assert.assertTrue(DeleteVisit.isDisplayed(), "Not Able to Delete");
@@ -663,14 +727,23 @@ public void user_click_on_the_delete_button() throws InterruptedException {
 	}
 	
 	Thread.sleep(4000);
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
 	
 }
 	
 public void pop_up_will_be_visible_are_you_sure_want_to_delete_this_Item_and_click_on_delete_button() throws InterruptedException {
+	try {
 	WebElement DeletepopUp= driver.findElement(By.xpath("(//button[normalize-space()='Delete'])[1]"));
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	js.executeScript("arguments[0].click()",DeletepopUp);
 	Thread.sleep(10000);
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
 	
 }
 

@@ -191,7 +191,6 @@ public class AddCommunityNotePage extends BaseClass {
 }
 	
 	public void community_note_was_created_message_should_be_shown() {
-	
 	try {
 	String expectedResult= "Community Note was created.";
 	String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();

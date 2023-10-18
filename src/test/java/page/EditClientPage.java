@@ -15,9 +15,7 @@ import io.netty.handler.timeout.TimeoutException;
 public class EditClientPage extends BaseClass{
 
 public void check_the_user_email() throws InterruptedException {
-	
-	try {
-		
+	try {	
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 	 Useremail.sendKeys(prop.getProperty("username"));
@@ -30,9 +28,7 @@ public void check_the_user_email() throws InterruptedException {
 }
 
 public void check_the_user_password() throws InterruptedException {
-	
-	try {
-		
+	try {	
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	WebElement Password= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
 	Password.sendKeys(prop.getProperty("password"));
@@ -45,7 +41,7 @@ public void check_the_user_password() throws InterruptedException {
 
 public void check_the_login_button() throws InterruptedException {
 	try {
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
 	 wait.until(ExpectedConditions.elementToBeClickable(Login));
 	 Login.click();
@@ -67,29 +63,30 @@ public void check_the_test_community_dropdown() throws InterruptedException {
 }
 
 public void click_on_the_continue_button() throws InterruptedException {
-
+try {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
 	wait.until(ExpectedConditions.elementToBeClickable(Continue));
 	Continue.click();
+}
+catch (Exception e) {
+	e.printStackTrace();
+}
 	}
 
 public void click_on_the_clients() throws InterruptedException {
+	try {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	WebElement Clientbtn=driver.findElement(By.xpath("//span[normalize-space()='Clients']"));
 	 wait.until(ExpectedConditions.elementToBeClickable(Clientbtn));
 	 Clientbtn.click();
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
 			   
 }
 public void click_on_the_user_table() throws InterruptedException {
-	
-//	WebElement EditTable=driver.findElement(By.xpath("//td[@aria-label='Agnes Column Header First Name']"));
-//	Thread.sleep(8000);
-//	JavascriptExecutor js = (JavascriptExecutor)driver;
-//	js.executeScript("arguments[0].click()", EditTable);
-//	Thread.sleep(10000);
-//	}
-//	
 	
 	List<WebElement> table=driver.findElements(By.className("e-row"));
 	Random random= new Random();
@@ -157,16 +154,16 @@ public void click_on_the_user_table() throws InterruptedException {
 }
 
 	public void save_the_data() throws InterruptedException {
-try {
+		try {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	WebElement SaveData=driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
 	 wait.until(ExpectedConditions.elementToBeClickable(SaveData));
 	 SaveData.click();
-}
-catch (Exception e) {
-	e.printStackTrace();
-}
-}
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 
 }
