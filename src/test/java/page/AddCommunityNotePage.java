@@ -1,13 +1,11 @@
 package page;
 
 import static org.junit.Assert.assertEquals;
-
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -149,7 +147,6 @@ public class AddCommunityNotePage extends BaseClass {
 
 	public void choose_a_end_date() throws InterruptedException {
 	
-
 	LocalDateTime targetDate = LocalDateTime.now().plusDays(generateRandomNumber(2,100));
     String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 

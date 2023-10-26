@@ -4,7 +4,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/java/features",tags="@Regression or @Regression1 or @Regression2 or @Regression3 or @Regression4", publish = true, monochrome = true, dryRun = false,
+@CucumberOptions(features="src/test/java/features",tags="@Test", publish = true, monochrome = true, dryRun = false,
 plugin= {"pretty","html:target/TestReport/test.html","json:target/cucumber-report/cucumber.json"},glue= {"stepDefinition","base"})
 
 public class RunnerFileTest {

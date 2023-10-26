@@ -177,7 +177,7 @@ import io.netty.handler.timeout.TimeoutException;
 		}
 	}
 
-	public void change_the_time_for_visit() throws InterruptedException {
+		public void change_the_time_for_visit() throws InterruptedException {
 		try {
 		WebElement SelectTime = driver.findElement(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
 		explicitWait(SelectTime, 5);
@@ -209,7 +209,7 @@ import io.netty.handler.timeout.TimeoutException;
 	}
 		
 	public void save_the_visit() throws InterruptedException {
-		try {
+	try {
     WebElement VisitSvebtn=	driver.findElement(By.className("e-event-save"));	
 	VisitSvebtn.click();
 	Thread.sleep(20000);
@@ -219,7 +219,7 @@ import io.netty.handler.timeout.TimeoutException;
 }
 	
 }
-	public void check_if_color_is_blue_and_active_visit_then_click_on_it2() throws InterruptedException {
+		public void check_if_color_is_blue_and_active_visit_then_click_on_it2() throws InterruptedException {
 		List<WebElement> blueElements=driver.findElements(By.className("text-wrap"));
 		Thread.sleep(2000);
 		String elementClassName = "e-schedule-table";
@@ -308,7 +308,7 @@ import io.netty.handler.timeout.TimeoutException;
 		}
 	}
 
-	public void change_the_time() throws InterruptedException {
+		public void change_the_time() throws InterruptedException {
 		try {
 		WebElement SelectTime = driver.findElement(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
 		explicitWait(SelectTime, 5);
@@ -325,7 +325,7 @@ import io.netty.handler.timeout.TimeoutException;
 		
 	
 	
-	public void select_the_option_move_day_series() throws InterruptedException {
+		public void select_the_option_move_day_series() throws InterruptedException {
 		try {
 		List<WebElement> SelectMoveDayseries=driver.findElements(By.cssSelector(".form-check-label"));
 		Thread.sleep(3000);
@@ -360,7 +360,7 @@ import io.netty.handler.timeout.TimeoutException;
 	}
 }
 	
-public void check_if_color_is_blue_and_active_visit_then_click_on_it3() throws InterruptedException {
+	public void check_if_color_is_blue_and_active_visit_then_click_on_it3() throws InterruptedException {
 	List<WebElement> blueElements=driver.findElements(By.className("text-wrap"));
 	Thread.sleep(2000);
 	String elementClassName = "e-schedule-table";
@@ -449,7 +449,7 @@ public void check_if_color_is_blue_and_active_visit_then_click_on_it3() throws I
 	}
 }
 
-public void change_the_time1() throws InterruptedException {
+	public void change_the_time1() throws InterruptedException {
 	try {
 	WebElement SelectTime = driver.findElement(By.xpath("(//span[@class='e-input-group-icon e-time-icon e-icons'])[1]"));
 	explicitWait(SelectTime, 5);
@@ -464,7 +464,7 @@ public void change_the_time1() throws InterruptedException {
 	}
 }
 	
-public void select_the_option_move_week_series() throws InterruptedException {
+	public void select_the_option_move_week_series() throws InterruptedException {
 	try {
 	List<WebElement> SelectMoveDayseries=	driver.findElements(By.cssSelector(".form-check-label"));
 	Thread.sleep(3000);
@@ -488,7 +488,7 @@ public void select_the_option_move_week_series() throws InterruptedException {
 	
 }
 
-public void save_the_visit2() throws InterruptedException {
+	public void save_the_visit2() throws InterruptedException {
 	try {
 	WebElement VisitSvebtn=	driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
 	VisitSvebtn.click();
@@ -501,7 +501,7 @@ public void save_the_visit2() throws InterruptedException {
 }
 
 
-public void click_on_the_visit() throws InterruptedException {
+	public void click_on_the_visit() throws InterruptedException {
 
 	List<WebElement> blueElements=driver.findElements(By.className("text-wrap"));
 	Thread.sleep(2000);
@@ -591,7 +591,7 @@ public void click_on_the_visit() throws InterruptedException {
 	}
 }
 
-public void change_the_track_from_east1_to_east2() throws InterruptedException {
+	public void change_the_track_from_east1_to_east2() throws InterruptedException {
 	try {
 	WebElement TrackChanged=driver.findElement(By.xpath("(//span[contains(@role,'listbox')])[1]"));
 	TrackChanged.click();
@@ -604,7 +604,7 @@ public void change_the_track_from_east1_to_east2() throws InterruptedException {
 	}
 }
 
-public void select_move_only_this_occurrence() throws InterruptedException {
+	public void select_move_only_this_occurrence() throws InterruptedException {
 	try {
 	WebElement Occurence=driver.findElement(By.xpath("(//input[@id='flexRadioDefault1'])[1]"));
 	Occurence.click();
@@ -615,7 +615,7 @@ public void select_move_only_this_occurrence() throws InterruptedException {
 	}
 }
 
-public void save_the_visits() throws InterruptedException {
+	public void save_the_visits() throws InterruptedException {
 	try {
 	WebElement SaveVisit =	driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
 	SaveVisit.click();
@@ -626,7 +626,7 @@ public void save_the_visits() throws InterruptedException {
 	}
 
 }
-public void user_click_on_the_visit() throws InterruptedException {
+	public void user_click_on_the_visit() throws InterruptedException {
 	
 	List<WebElement> blueElements=driver.findElements(By.className("text-wrap"));
 	Thread.sleep(2000);
@@ -716,7 +716,7 @@ public void user_click_on_the_visit() throws InterruptedException {
 	}
 }
 
-public void user_click_on_the_delete_button() throws InterruptedException {
+	public void user_click_on_the_delete_button() throws InterruptedException {
 	try {
 	WebElement DeleteVisit=	driver.findElement(By.xpath("//button[normalize-space()='Delete']"));
 	if (!DeleteVisit.isDisplayed()) {
@@ -734,7 +734,7 @@ public void user_click_on_the_delete_button() throws InterruptedException {
 	
 }
 	
-public void pop_up_will_be_visible_are_you_sure_want_to_delete_this_Item_and_click_on_delete_button() throws InterruptedException {
+	public void pop_up_will_be_visible_are_you_sure_want_to_delete_this_Item_and_click_on_delete_button() throws InterruptedException {
 	try {
 	WebElement DeletepopUp= driver.findElement(By.xpath("(//button[normalize-space()='Delete'])[1]"));
 	JavascriptExecutor js = (JavascriptExecutor)driver;

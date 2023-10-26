@@ -21,7 +21,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.apache.logging.log4j.*;
 
 
-public class BaseClass {
+	public class BaseClass {
+		
 	public static WebDriver driver;
 	public static Properties prop;
 	public static Logger log;

@@ -14,7 +14,7 @@ public class LoginPageSteps extends BaseClass{
 
 
 	@Given("Verify that user enter the {string} and {string}")
-	public void Verify_that_user_enter_the_Email_and_Password(String email, String pass){
+	public void Verify_that_user_enter_the_Email_and_Password(String email, String pass) throws Exception{
 		login.Verify_that_user_enter_the_Email_and_Password(email,pass);
 		log.info("entered email address and password ");
 	}
@@ -59,7 +59,7 @@ public class LoginPageSteps extends BaseClass{
 	}
 	
 	@Then ("Sign In Page should be shown")
-	public void Sign_In_Page_should_be_shown() {
+	public void Sign_In_Page_should_be_shown() throws Exception {
 		login.Sign_In_Page_should_be_shown();
 		log.info("user can view sign in page -test passed.");
 		

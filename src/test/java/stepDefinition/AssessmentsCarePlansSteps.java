@@ -11,7 +11,7 @@ public class AssessmentsCarePlansSteps extends BaseClass  {
 	
 	
 	@When("user enter Email")
-	public void user_enter_email() throws InterruptedException {
+	public void user_enter_email() throws Exception {
 		assessment.user_enter_email();
 		log.info("Entered Email Address ");
 	}
@@ -292,7 +292,7 @@ public class AssessmentsCarePlansSteps extends BaseClass  {
 	}
 
 	@Then ("Validation message should be shown Assessment was created")
-	public void validation_message_should_be_shown_assessment_was_created() {
+	public void validation_message_should_be_shown_assessment_was_created() throws Exception {
 		assessment.validation_message_should_be_shown_assessment_was_created(); 
 		log.info("validation message should be shown assessment was created, test cases passed..");
 		

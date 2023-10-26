@@ -1,13 +1,11 @@
 package page;
 import static org.junit.Assert.assertEquals;
-
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -105,7 +103,7 @@ public class VisitPlansPage extends BaseClass  {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		
-		WebElement FirstName=driver.findElement(By.xpath("(//td[@aria-label='Peter Column Header First Name'])[1]"));
+		WebElement FirstName=driver.findElement(By.xpath("(//td[@aria-label='Sarah Column Header First Name'])[1]"));
 		Thread.sleep(3000);
 		FirstName.click();	
 		Thread.sleep(6000);
@@ -562,7 +560,9 @@ public class VisitPlansPage extends BaseClass  {
 		VisitTime.click();
 		Thread.sleep(4000);	
 		}
-		catch (Exception e) {}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	
@@ -727,7 +727,9 @@ public class VisitPlansPage extends BaseClass  {
 		VisitsTime.click();
 		Thread.sleep(6000);
 		}
-		catch (Exception e) {}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	public void enter_caregiver_instructions() throws InterruptedException {
@@ -825,7 +827,9 @@ public class VisitPlansPage extends BaseClass  {
 			MakeBedVisitsTime.click();
 			Thread.sleep(3000);
 		}
-		catch(Exception e){}
+		catch(Exception e){
+			e.printStackTrace();
+		}
 		
 	}
 	
@@ -1188,6 +1192,7 @@ public class VisitPlansPage extends BaseClass  {
 		
 		}
 	 catch (Exception e) {
+		 e.printStackTrace();
 		 
 	 }
 		return false;
@@ -1201,6 +1206,7 @@ public class VisitPlansPage extends BaseClass  {
 	        return false;
 	    }
 	}
+	
 	//past visit
 	
 	public void click_on_the_visit_plans() throws InterruptedException {
@@ -1878,7 +1884,7 @@ public class VisitPlansPage extends BaseClass  {
 		
 		}
 	 catch (Exception e) {
-		 
+		 e.printStackTrace();
 	 }
 		return false;
 		

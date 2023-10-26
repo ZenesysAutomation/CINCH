@@ -1,11 +1,10 @@
 package page;
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import ScreenRecorder.MyScreenRecording;
 import base.BaseClass;
 import io.netty.handler.timeout.TimeoutException;
 
@@ -13,7 +12,7 @@ import static org.junit.Assert.assertEquals;
 
 public class LoginPage extends BaseClass {
 		
-	public void Verify_that_user_enter_the_Email_and_Password(String email, String pass){
+	public void Verify_that_user_enter_the_Email_and_Password(String email, String pass) throws Exception{
 		try {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
@@ -27,6 +26,8 @@ public class LoginPage extends BaseClass {
 		catch (TimeoutException e ) {
 			 e.printStackTrace();
 	}
+		
+		MyScreenRecording.startRecording("Login Test");
 	}
 
 	
@@ -110,7 +111,7 @@ public class LoginPage extends BaseClass {
 		}
 	}
 		
-		public void Sign_In_Page_should_be_shown() {
+		public void Sign_In_Page_should_be_shown() throws Exception {
 	
 			By errorElementLocator = By.xpath("//*[contains(text(), 'An unhandled error has occurred.')]");
 			handleExceptionAndReloadPage(driver, errorElementLocator);
@@ -123,6 +124,8 @@ public class LoginPage extends BaseClass {
 		catch (Exception e) {
 			e.printStackTrace();
 		}
+		
+		MyScreenRecording.stopRecording();
 	
 		}
 		
@@ -158,7 +161,7 @@ public class LoginPage extends BaseClass {
 		
 		public void Error_message_is_Displayed(String err) {
 			try {
-			String Expectedresult = "Invalid Login - Invalid username and or password.";
+			String Expectedresult = "Invalid Login - Invalid username and password.";
 			String Actualresult=driver.findElement(By.xpath("(//div[@role='alert'])[1]")).getText();
 			assertEquals("error message showing",Expectedresult,Actualresult);
 			}

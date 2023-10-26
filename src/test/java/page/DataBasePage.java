@@ -1,8 +1,6 @@
 package page;
 
 import static org.junit.Assert.assertEquals;
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import org.openqa.selenium.By;
@@ -11,44 +9,27 @@ import base.BaseClass;
 
 public class DataBasePage extends BaseClass {
 	
+	private static final int SELECT = 0;
+	private static final int FROM = 0;
+
 
 	public void connectTODatabase() throws SQLException {
 		
-		 	String url = "jdbc:mysql://localhost:3306/your_database";
-		    String username = "your_username";
-		    String password = "your_password";
-		    
-		    Connection connection = null;
-		    Statement statement = null;
+		openConnection();
+		
+	}
 
-		    try {
-		        connection = DriverManager.getConnection(url, username, password);
-		        statement = connection.createStatement();
-		     // Use 'connection' and 'statement' for database operations here
-		        
-		    } catch (SQLException e) {
-		        e.printStackTrace();
-		    } finally {
-		        try {
-		           
-		            if (statement != null) {
-		                statement.close();
-		            }
-		            
-		            if (connection != null) {
-		                connection.close();
-		            }
-		        } catch (SQLException e) {
-		            e.printStackTrace();
-		        }
-		    }
-		}
+	private void openConnection() {
+		
+	}
 
-	/*public void specifyTableName() {
+	public void specifyTableName1() {
 		String tableName="your_table_name";
+		@SuppressWarnings("unused")
 		String sqlQuery = SELECT * FROM + tableName;
 		
-	}*/
+	}
+	
 	
 	public String buildSelectQuery(String tableName) {
 	    String sqlQuery = "SELECT * FROM " + tableName;

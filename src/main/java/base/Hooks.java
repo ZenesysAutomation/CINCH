@@ -1,4 +1,5 @@
 package base;
+
 import java.time.Duration;
 import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.OutputType;
@@ -9,14 +10,15 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Hooks extends BaseClass {
-	
-	
+	 
+
 	@Before
 	 public static void mysetup() {
 		
@@ -28,12 +30,12 @@ public class Hooks extends BaseClass {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options= new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
-			options.addArguments("--disable-gpu");
+			/*options.addArguments("--disable-gpu");
 			options.addArguments("--disable-extensions");
 			options.addArguments("--no-sandbox");
 			options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--headless");
-			options.addArguments("--window-size=1580,1280");
+			options.addArguments("--window-size=1580,1280");*/
 			options.addArguments("--incognito");
 			driver = new ChromeDriver(options);
 			}
@@ -57,10 +59,10 @@ public class Hooks extends BaseClass {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
-			log.info("Browser Launched..");
+			log.info("Browser Launched..");	
 				
 		}
-	
+
 	
 	@After
 	public void tearDown(Scenario s) {

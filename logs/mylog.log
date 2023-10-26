@@ -8184,3 +8184,444 @@
 [INFO ] 2023-10-17 08:06:20.740 [main] Hooks - click on delete button.
 [INFO ] 2023-10-17 08:06:40.800 [main] Hooks - pop up is showing and delete the item..
 [INFO ] 2023-10-17 08:06:40.853 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-18 01:30:26.391 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-18 01:30:38.514 [main] Hooks - entered email address and password 
+[INFO ] 2023-10-18 01:30:38.729 [main] Hooks - Clicked on the login button
+[INFO ] 2023-10-18 01:30:42.567 [main] Hooks - Select Test Community
+[INFO ] 2023-10-18 01:30:42.646 [main] Hooks - Clicked on the Continue button
+[INFO ] 2023-10-18 01:30:45.967 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-10-18 01:30:46.039 [main] Hooks - Click on the Account User name
+[INFO ] 2023-10-18 01:30:46.839 [main] Hooks - user clicked on the logout button
+[INFO ] 2023-10-18 01:30:48.126 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-10-18 01:30:48.186 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-18 01:30:52.237 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-18 01:31:02.473 [main] Hooks - user enter the invalid email & password -test passed.
+[INFO ] 2023-10-18 01:31:02.644 [main] Hooks - user click on the login button..
+[ERROR] 2023-10-18 01:31:04.102 [main] Hooks - Test case failed: Verify the Invalid Login Functionality
+[INFO ] 2023-10-18 01:31:04.178 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-18 01:31:07.829 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-18 01:31:20.901 [main] Hooks - user enter the invalid email & password -test passed.
+[INFO ] 2023-10-18 01:31:21.078 [main] Hooks - user click on the login button..
+[ERROR] 2023-10-18 01:31:23.256 [main] Hooks - Test case failed: Verify the Invalid Login Functionality
+[INFO ] 2023-10-18 01:31:23.321 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-18 01:31:27.346 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-18 01:31:39.736 [main] Hooks - user enter the blank email address and invalid password..
+[INFO ] 2023-10-18 01:31:39.961 [main] Hooks - user click on the login button..
+[INFO ] 2023-10-18 01:32:00.015 [main] Hooks - error message is showing
+[INFO ] 2023-10-18 01:32:00.076 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-18 01:39:31.276 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-18 01:39:44.394 [main] Hooks - entered email address and password 
+[INFO ] 2023-10-18 01:39:44.575 [main] Hooks - Clicked on the login button
+[INFO ] 2023-10-18 01:39:48.723 [main] Hooks - Select Test Community
+[INFO ] 2023-10-18 01:39:48.803 [main] Hooks - Clicked on the Continue button
+[INFO ] 2023-10-18 01:39:52.455 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-10-18 01:39:52.534 [main] Hooks - Click on the Account User name
+[INFO ] 2023-10-18 01:39:53.316 [main] Hooks - user clicked on the logout button
+[INFO ] 2023-10-18 01:39:54.625 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-10-18 01:39:54.691 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-18 01:39:59.052 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-18 01:40:11.860 [main] Hooks - user enter the invalid email & password -test passed.
+[INFO ] 2023-10-18 01:40:12.026 [main] Hooks - user click on the login button..
+[INFO ] 2023-10-18 01:40:13.367 [main] Hooks - error message is displayed-invalid Username and Password
+[INFO ] 2023-10-18 01:40:13.429 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-18 01:40:24.911 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-18 01:40:38.102 [main] Hooks - user enter the invalid email & password -test passed.
+[INFO ] 2023-10-18 01:40:38.273 [main] Hooks - user click on the login button..
+[INFO ] 2023-10-18 01:40:38.571 [main] Hooks - error message is displayed-invalid Username and Password
+[INFO ] 2023-10-18 01:40:38.638 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-18 01:40:42.378 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-18 01:40:57.765 [main] Hooks - user enter the blank email address and invalid password..
+[INFO ] 2023-10-18 01:40:57.983 [main] Hooks - user click on the login button..
+[INFO ] 2023-10-18 01:41:18.030 [main] Hooks - error message is showing
+[INFO ] 2023-10-18 01:41:18.093 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-20 07:05:12.597 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-20 07:05:24.405 [main] Hooks - Entered Email Address..
+[INFO ] 2023-10-20 07:05:24.497 [main] Hooks - Entered password.
+[INFO ] 2023-10-20 07:05:24.733 [main] Hooks - click on the login button..
+[INFO ] 2023-10-20 07:05:28.771 [main] Hooks - select test community
+[INFO ] 2023-10-20 07:05:28.867 [main] Hooks - click on the continue button
+[INFO ] 2023-10-20 07:05:34.500 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-10-20 07:05:47.872 [main] Hooks - click on the color
+[INFO ] 2023-10-20 07:05:51.171 [main] Hooks - change time for visit
+[INFO ] 2023-10-20 07:06:11.232 [main] Hooks - select move only this occurence
+[INFO ] 2023-10-20 07:06:31.435 [main] Hooks - save the visit
+[INFO ] 2023-10-20 07:06:31.499 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-20 07:18:08.763 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-20 07:18:20.535 [main] Hooks - Entered Email Address..
+[INFO ] 2023-10-20 07:18:20.601 [main] Hooks - Entered password.
+[INFO ] 2023-10-20 07:18:20.781 [main] Hooks - click on the login button..
+[INFO ] 2023-10-20 07:18:24.743 [main] Hooks - select test community
+[INFO ] 2023-10-20 07:18:24.825 [main] Hooks - click on the continue button
+[INFO ] 2023-10-20 07:18:28.791 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-10-20 07:18:41.838 [main] Hooks - click on the color
+[INFO ] 2023-10-20 07:18:45.108 [main] Hooks - change time for visit
+[INFO ] 2023-10-20 07:19:05.170 [main] Hooks - select move only this occurence
+[INFO ] 2023-10-20 07:19:25.363 [main] Hooks - save the visit
+[INFO ] 2023-10-20 07:19:25.441 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-23 01:41:50.439 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-23 01:42:01.624 [main] Hooks - Entered Email Address..
+[INFO ] 2023-10-23 01:42:01.690 [main] Hooks - Entered password.
+[INFO ] 2023-10-23 01:42:01.876 [main] Hooks - click on the login button..
+[INFO ] 2023-10-23 01:42:05.698 [main] Hooks - select test community
+[INFO ] 2023-10-23 01:42:05.781 [main] Hooks - click on the continue button
+[INFO ] 2023-10-23 01:42:11.457 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-10-23 01:42:23.308 [main] Hooks - click on the color
+[INFO ] 2023-10-23 01:42:26.565 [main] Hooks - change time for visit
+[INFO ] 2023-10-23 01:42:28.711 [main] Hooks - select move only this occurence
+[INFO ] 2023-10-23 01:42:48.903 [main] Hooks - save the visit
+[INFO ] 2023-10-23 01:42:48.965 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-23 03:44:20.206 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-23 03:44:31.235 [main] Hooks - Entered Email Address..
+[INFO ] 2023-10-23 03:44:31.300 [main] Hooks - Entered password.
+[INFO ] 2023-10-23 03:44:31.494 [main] Hooks - click on the login button..
+[INFO ] 2023-10-23 03:44:35.384 [main] Hooks - select test community
+[INFO ] 2023-10-23 03:44:35.461 [main] Hooks - click on the continue button
+[INFO ] 2023-10-23 03:44:39.269 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-10-23 03:44:51.180 [main] Hooks - click on the color
+[INFO ] 2023-10-23 03:44:54.440 [main] Hooks - change time for visit
+[INFO ] 2023-10-23 03:45:14.453 [main] Hooks - select move only this occurence
+[INFO ] 2023-10-23 03:45:34.638 [main] Hooks - save the visit
+[INFO ] 2023-10-23 03:45:34.703 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-25 01:50:55.075 [main] Hooks - Browser Launched..
+[ERROR] 2023-10-25 01:50:55.304 [main] Hooks - Test case failed: Verify The Valid Login Functionality
+[INFO ] 2023-10-25 01:50:55.374 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-25 01:55:17.211 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-25 01:55:30.592 [main] Hooks - Entered Email Address 
+[INFO ] 2023-10-25 01:55:30.657 [main] Hooks - Entered Password
+[INFO ] 2023-10-25 01:55:30.836 [main] Hooks - Clicked on login button
+[INFO ] 2023-10-25 01:55:34.628 [main] Hooks - Select Test Community
+[INFO ] 2023-10-25 01:55:34.698 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-10-25 01:55:52.249 [main] Hooks - Clicked on clients button
+[INFO ] 2023-10-25 01:56:09.114 [main] Hooks - Clicked on user data table
+[INFO ] 2023-10-25 01:56:37.421 [main] Hooks - Clicked on assessment and care plan
+[INFO ] 2023-10-25 01:56:47.635 [main] Hooks - entered assessment date
+[INFO ] 2023-10-25 01:56:50.799 [main] Hooks - entered visit schedule
+[INFO ] 2023-10-25 01:56:53.923 [main] Hooks - enter goals of service
+[INFO ] 2023-10-25 01:56:57.047 [main] Hooks - entered family social network
+[INFO ] 2023-10-25 01:57:00.152 [main] Hooks - entered special dietary needs
+[INFO ] 2023-10-25 01:57:03.264 [main] Hooks - entered precautions
+[INFO ] 2023-10-25 01:57:10.413 [main] Hooks - entered the functional limitations restrictions
+[INFO ] 2023-10-25 01:57:16.602 [main] Hooks - clicked on the client status
+[INFO ] 2023-10-25 01:57:24.660 [main] Hooks - entered condition notes
+[INFO ] 2023-10-25 01:57:27.822 [main] Hooks - entered recent hospital rehab stays
+[INFO ] 2023-10-25 01:57:30.969 [main] Hooks - entered needs medication reminders
+[INFO ] 2023-10-25 01:57:34.123 [main] Hooks - entered how many times per day
+[INFO ] 2023-10-25 01:57:37.276 [main] Hooks - entered allergies description
+[INFO ] 2023-10-25 01:57:40.479 [main] Hooks - entered notes
+[INFO ] 2023-10-25 01:57:47.590 [main] Hooks - select hearing
+[INFO ] 2023-10-25 01:57:53.708 [main] Hooks - select speech
+[INFO ] 2023-10-25 01:57:56.794 [main] Hooks - select swallowing
+[INFO ] 2023-10-25 01:57:59.886 [main] Hooks - select vision
+[INFO ] 2023-10-25 01:58:03.015 [main] Hooks - entered bathing details
+[INFO ] 2023-10-25 01:58:06.165 [main] Hooks - entered transfers mobility deatils
+[INFO ] 2023-10-25 01:58:09.317 [main] Hooks - entered dressing & grooming details
+[INFO ] 2023-10-25 01:58:12.458 [main] Hooks - entered continence toileting details
+[INFO ] 2023-10-25 01:58:15.613 [main] Hooks - entered eating details
+[INFO ] 2023-10-25 01:58:18.757 [main] Hooks - entered meals details
+[INFO ] 2023-10-25 01:58:21.902 [main] Hooks - entered laundry details
+[INFO ] 2023-10-25 01:58:34.008 [main] Hooks - entered household tasks details
+[INFO ] 2023-10-25 01:58:46.162 [main] Hooks - click on the environment tab
+[INFO ] 2023-10-25 01:58:48.202 [main] Hooks - select a radio button
+[INFO ] 2023-10-25 01:58:54.324 [main] Hooks - entered enviromental safety concerns details
+[INFO ] 2023-10-25 01:59:02.483 [main] Hooks - entered economics status
+[INFO ] 2023-10-25 01:59:05.661 [main] Hooks - entered notes
+[INFO ] 2023-10-25 01:59:17.751 [main] Hooks - complete details
+[INFO ] 2023-10-25 01:59:37.814 [main] Hooks - pop up is showing and click on the yes complete button
+[ERROR] 2023-10-25 01:59:58.025 [main] Hooks - Test case failed: Verify the Assessments & Care Plans Functionalities
+[INFO ] 2023-10-25 01:59:58.105 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-25 02:04:41.745 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-25 02:04:52.800 [main] Hooks - Entered Email Address 
+[INFO ] 2023-10-25 02:04:52.863 [main] Hooks - Entered Password
+[INFO ] 2023-10-25 02:04:53.095 [main] Hooks - Clicked on login button
+[INFO ] 2023-10-25 02:04:56.950 [main] Hooks - Select Test Community
+[INFO ] 2023-10-25 02:04:57.029 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-10-25 02:05:15.532 [main] Hooks - Clicked on clients button
+[INFO ] 2023-10-25 02:05:32.420 [main] Hooks - Clicked on user data table
+[INFO ] 2023-10-25 02:05:36.582 [main] Hooks - Clicked on assessment and care plan
+[INFO ] 2023-10-25 02:05:46.626 [main] Hooks - entered assessment date
+[INFO ] 2023-10-25 02:05:49.746 [main] Hooks - entered visit schedule
+[INFO ] 2023-10-25 02:05:52.852 [main] Hooks - enter goals of service
+[INFO ] 2023-10-25 02:05:55.979 [main] Hooks - entered family social network
+[INFO ] 2023-10-25 02:05:59.097 [main] Hooks - entered special dietary needs
+[INFO ] 2023-10-25 02:06:02.197 [main] Hooks - entered precautions
+[INFO ] 2023-10-25 02:06:09.322 [main] Hooks - entered the functional limitations restrictions
+[INFO ] 2023-10-25 02:06:15.541 [main] Hooks - clicked on the client status
+[INFO ] 2023-10-25 02:06:23.616 [main] Hooks - entered condition notes
+[INFO ] 2023-10-25 02:06:26.744 [main] Hooks - entered recent hospital rehab stays
+[INFO ] 2023-10-25 02:06:29.861 [main] Hooks - entered needs medication reminders
+[INFO ] 2023-10-25 02:06:32.977 [main] Hooks - entered how many times per day
+[INFO ] 2023-10-25 02:06:36.093 [main] Hooks - entered allergies description
+[INFO ] 2023-10-25 02:06:39.224 [main] Hooks - entered notes
+[INFO ] 2023-10-25 02:06:46.421 [main] Hooks - select hearing
+[INFO ] 2023-10-25 02:06:52.622 [main] Hooks - select speech
+[INFO ] 2023-10-25 02:06:55.772 [main] Hooks - select swallowing
+[INFO ] 2023-10-25 02:06:58.932 [main] Hooks - select vision
+[INFO ] 2023-10-25 02:07:02.017 [main] Hooks - entered bathing details
+[INFO ] 2023-10-25 02:07:05.150 [main] Hooks - entered transfers mobility deatils
+[INFO ] 2023-10-25 02:07:08.281 [main] Hooks - entered dressing & grooming details
+[INFO ] 2023-10-25 02:07:11.396 [main] Hooks - entered continence toileting details
+[INFO ] 2023-10-25 02:07:14.514 [main] Hooks - entered eating details
+[INFO ] 2023-10-25 02:07:17.628 [main] Hooks - entered meals details
+[INFO ] 2023-10-25 02:07:20.745 [main] Hooks - entered laundry details
+[INFO ] 2023-10-25 02:07:32.867 [main] Hooks - entered household tasks details
+[INFO ] 2023-10-25 02:07:45.052 [main] Hooks - click on the environment tab
+[INFO ] 2023-10-25 02:07:47.151 [main] Hooks - select a radio button
+[INFO ] 2023-10-25 02:07:53.250 [main] Hooks - entered enviromental safety concerns details
+[INFO ] 2023-10-25 02:08:01.405 [main] Hooks - entered economics status
+[INFO ] 2023-10-25 02:08:04.604 [main] Hooks - entered notes
+[INFO ] 2023-10-25 02:08:16.777 [main] Hooks - complete details
+[INFO ] 2023-10-25 02:08:25.905 [main] Hooks - pop up is showing and click on the yes complete button
+[INFO ] 2023-10-25 02:08:39.067 [main] Hooks - clicked on the care plan
+[INFO ] 2023-10-25 02:09:00.592 [main] Hooks - create a caregiver sign
+[INFO ] 2023-10-25 02:09:22.104 [main] Hooks - create a client sign
+[INFO ] 2023-10-25 02:09:38.232 [main] Hooks - save the signature button
+[INFO ] 2023-10-25 02:09:38.248 [main] Hooks - validation message should be shown assessment was created, test cases passed..
+[INFO ] 2023-10-25 02:09:38.453 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-25 09:25:16.508 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-25 09:25:30.721 [main] Hooks - entered email address and password 
+[INFO ] 2023-10-25 09:25:30.910 [main] Hooks - Clicked on the login button
+[INFO ] 2023-10-25 09:25:35.246 [main] Hooks - Select Test Community
+[INFO ] 2023-10-25 09:25:35.320 [main] Hooks - Clicked on the Continue button
+[INFO ] 2023-10-25 09:25:39.266 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-10-25 09:25:39.338 [main] Hooks - Click on the Account User name
+[INFO ] 2023-10-25 09:25:40.082 [main] Hooks - user clicked on the logout button
+[INFO ] 2023-10-25 09:25:41.357 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-10-25 09:25:41.426 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-26 01:04:25.735 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-26 01:04:37.019 [main] Hooks - entered email address and password 
+[INFO ] 2023-10-26 01:04:37.270 [main] Hooks - Clicked on the login button
+[INFO ] 2023-10-26 01:04:41.307 [main] Hooks - Select Test Community
+[INFO ] 2023-10-26 01:04:41.386 [main] Hooks - Clicked on the Continue button
+[INFO ] 2023-10-26 01:04:45.578 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-10-26 01:04:45.652 [main] Hooks - Click on the Account User name
+[INFO ] 2023-10-26 01:04:46.734 [main] Hooks - user clicked on the logout button
+[INFO ] 2023-10-26 01:04:48.174 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-10-26 01:04:48.230 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-26 01:43:33.793 [main] Hooks - Browser Launched..
+[ERROR] 2023-10-26 01:43:33.943 [main] Hooks - Test case failed: Verify The Valid Login Functionality
+[INFO ] 2023-10-26 01:43:34.013 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-26 02:01:26.714 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-26 02:01:40.080 [main] Hooks - entered email address and password 
+[INFO ] 2023-10-26 02:01:40.248 [main] Hooks - Clicked on the login button
+[INFO ] 2023-10-26 02:01:44.323 [main] Hooks - Select Test Community
+[INFO ] 2023-10-26 02:01:44.403 [main] Hooks - Clicked on the Continue button
+[INFO ] 2023-10-26 02:01:50.290 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-10-26 02:01:50.366 [main] Hooks - Click on the Account User name
+[INFO ] 2023-10-26 02:01:51.190 [main] Hooks - user clicked on the logout button
+[INFO ] 2023-10-26 02:01:52.546 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-10-26 02:01:52.602 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-26 02:06:27.832 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-26 02:06:38.211 [main] Hooks - entered email address and password 
+[INFO ] 2023-10-26 02:06:38.441 [main] Hooks - Clicked on the login button
+[INFO ] 2023-10-26 02:06:42.287 [main] Hooks - Select Test Community
+[INFO ] 2023-10-26 02:06:42.376 [main] Hooks - Clicked on the Continue button
+[INFO ] 2023-10-26 02:06:46.894 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-10-26 02:06:46.984 [main] Hooks - Click on the Account User name
+[INFO ] 2023-10-26 02:06:47.695 [main] Hooks - user clicked on the logout button
+[INFO ] 2023-10-26 02:06:49.171 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-10-26 02:06:49.312 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-26 02:11:09.655 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-26 02:11:19.956 [main] Hooks - entered email address and password 
+[INFO ] 2023-10-26 02:11:20.204 [main] Hooks - Clicked on the login button
+[INFO ] 2023-10-26 02:11:24.089 [main] Hooks - Select Test Community
+[INFO ] 2023-10-26 02:11:24.173 [main] Hooks - Clicked on the Continue button
+[INFO ] 2023-10-26 02:11:27.548 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-10-26 02:11:27.641 [main] Hooks - Click on the Account User name
+[INFO ] 2023-10-26 02:11:28.432 [main] Hooks - user clicked on the logout button
+[INFO ] 2023-10-26 02:11:29.992 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-10-26 02:11:30.119 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-26 02:20:16.221 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-26 02:20:30.268 [main] Hooks - Entered Email Address 
+[INFO ] 2023-10-26 02:20:30.401 [main] Hooks - Entered Password
+[INFO ] 2023-10-26 02:20:30.636 [main] Hooks - Clicked on login button
+[INFO ] 2023-10-26 02:20:34.465 [main] Hooks - Select Test Community
+[INFO ] 2023-10-26 02:20:34.560 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-10-26 02:20:52.272 [main] Hooks - Clicked on clients button
+[INFO ] 2023-10-26 02:21:09.350 [main] Hooks - Clicked on user data table
+[INFO ] 2023-10-26 02:21:12.373 [main] Hooks - Clicked on assessment and care plan
+[INFO ] 2023-10-26 02:21:23.141 [main] Hooks - entered assessment date
+[INFO ] 2023-10-26 02:21:26.299 [main] Hooks - entered visit schedule
+[INFO ] 2023-10-26 02:21:29.445 [main] Hooks - enter goals of service
+[INFO ] 2023-10-26 02:21:32.581 [main] Hooks - entered family social network
+[INFO ] 2023-10-26 02:21:35.714 [main] Hooks - entered special dietary needs
+[INFO ] 2023-10-26 02:21:38.859 [main] Hooks - entered precautions
+[INFO ] 2023-10-26 02:21:46.003 [main] Hooks - entered the functional limitations restrictions
+[INFO ] 2023-10-26 02:21:52.239 [main] Hooks - clicked on the client status
+[INFO ] 2023-10-26 02:22:00.318 [main] Hooks - entered condition notes
+[INFO ] 2023-10-26 02:22:03.488 [main] Hooks - entered recent hospital rehab stays
+[INFO ] 2023-10-26 02:22:06.683 [main] Hooks - entered needs medication reminders
+[INFO ] 2023-10-26 02:22:09.875 [main] Hooks - entered how many times per day
+[INFO ] 2023-10-26 02:22:13.063 [main] Hooks - entered allergies description
+[INFO ] 2023-10-26 02:22:16.264 [main] Hooks - entered notes
+[INFO ] 2023-10-26 02:22:23.421 [main] Hooks - select hearing
+[INFO ] 2023-10-26 02:22:29.568 [main] Hooks - select speech
+[INFO ] 2023-10-26 02:22:32.680 [main] Hooks - select swallowing
+[INFO ] 2023-10-26 02:22:35.779 [main] Hooks - select vision
+[INFO ] 2023-10-26 02:22:38.938 [main] Hooks - entered bathing details
+[INFO ] 2023-10-26 02:22:42.115 [main] Hooks - entered transfers mobility deatils
+[INFO ] 2023-10-26 02:22:45.297 [main] Hooks - entered dressing & grooming details
+[INFO ] 2023-10-26 02:22:48.476 [main] Hooks - entered continence toileting details
+[INFO ] 2023-10-26 02:22:51.654 [main] Hooks - entered eating details
+[INFO ] 2023-10-26 02:22:54.835 [main] Hooks - entered meals details
+[INFO ] 2023-10-26 02:22:58.034 [main] Hooks - entered laundry details
+[INFO ] 2023-10-26 02:23:10.154 [main] Hooks - entered household tasks details
+[INFO ] 2023-10-26 02:23:22.317 [main] Hooks - click on the environment tab
+[INFO ] 2023-10-26 02:23:24.374 [main] Hooks - select a radio button
+[INFO ] 2023-10-26 02:23:30.533 [main] Hooks - entered enviromental safety concerns details
+[INFO ] 2023-10-26 02:23:38.738 [main] Hooks - entered economics status
+[INFO ] 2023-10-26 02:23:41.956 [main] Hooks - entered notes
+[INFO ] 2023-10-26 02:23:54.135 [main] Hooks - complete details
+[INFO ] 2023-10-26 02:24:03.255 [main] Hooks - pop up is showing and click on the yes complete button
+[INFO ] 2023-10-26 02:24:16.387 [main] Hooks - clicked on the care plan
+[INFO ] 2023-10-26 02:24:37.944 [main] Hooks - create a caregiver sign
+[INFO ] 2023-10-26 02:24:59.487 [main] Hooks - create a client sign
+[INFO ] 2023-10-26 02:25:15.637 [main] Hooks - save the signature button
+[INFO ] 2023-10-26 02:25:15.841 [main] Hooks - validation message should be shown assessment was created, test cases passed..
+[INFO ] 2023-10-26 02:25:15.964 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-26 02:27:37.678 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-26 02:27:49.805 [main] Hooks - Entered Email Address 
+[INFO ] 2023-10-26 02:27:49.968 [main] Hooks - Entered Password
+[INFO ] 2023-10-26 02:27:50.195 [main] Hooks - Clicked on login button
+[INFO ] 2023-10-26 02:27:54.031 [main] Hooks - Select Test Community
+[INFO ] 2023-10-26 02:27:54.121 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-10-26 02:28:12.860 [main] Hooks - Clicked on clients button
+[INFO ] 2023-10-26 02:28:29.924 [main] Hooks - Clicked on user data table
+[INFO ] 2023-10-26 02:29:27.207 [main] Hooks - Clicked on assessment and care plan
+[INFO ] 2023-10-26 02:29:37.165 [main] Hooks - entered assessment date
+[INFO ] 2023-10-26 02:29:40.333 [main] Hooks - entered visit schedule
+[INFO ] 2023-10-26 02:29:43.465 [main] Hooks - enter goals of service
+[INFO ] 2023-10-26 02:29:46.617 [main] Hooks - entered family social network
+[INFO ] 2023-10-26 02:29:49.752 [main] Hooks - entered special dietary needs
+[INFO ] 2023-10-26 02:29:52.884 [main] Hooks - entered precautions
+[INFO ] 2023-10-26 02:30:00.014 [main] Hooks - entered the functional limitations restrictions
+[INFO ] 2023-10-26 02:30:06.232 [main] Hooks - clicked on the client status
+[INFO ] 2023-10-26 02:30:14.307 [main] Hooks - entered condition notes
+[INFO ] 2023-10-26 02:30:17.505 [main] Hooks - entered recent hospital rehab stays
+[INFO ] 2023-10-26 02:30:20.646 [main] Hooks - entered needs medication reminders
+[INFO ] 2023-10-26 02:30:23.843 [main] Hooks - entered how many times per day
+[INFO ] 2023-10-26 02:30:27.029 [main] Hooks - entered allergies description
+[INFO ] 2023-10-26 02:30:27.039 [main] Hooks - entered notes
+[INFO ] 2023-10-26 02:30:27.044 [main] Hooks - select hearing
+[INFO ] 2023-10-26 02:30:27.048 [main] Hooks - select speech
+[INFO ] 2023-10-26 02:30:27.053 [main] Hooks - select swallowing
+[INFO ] 2023-10-26 02:30:27.056 [main] Hooks - select vision
+[INFO ] 2023-10-26 02:30:27.060 [main] Hooks - entered bathing details
+[INFO ] 2023-10-26 02:30:27.065 [main] Hooks - entered transfers mobility deatils
+[INFO ] 2023-10-26 02:30:27.069 [main] Hooks - entered dressing & grooming details
+[INFO ] 2023-10-26 02:30:27.072 [main] Hooks - entered continence toileting details
+[INFO ] 2023-10-26 02:30:27.076 [main] Hooks - entered eating details
+[INFO ] 2023-10-26 02:30:27.078 [main] Hooks - entered meals details
+[INFO ] 2023-10-26 02:30:27.081 [main] Hooks - entered laundry details
+[INFO ] 2023-10-26 02:30:27.085 [main] Hooks - entered household tasks details
+[INFO ] 2023-10-26 02:30:27.088 [main] Hooks - click on the environment tab
+[INFO ] 2023-10-26 02:30:27.091 [main] Hooks - select a radio button
+[INFO ] 2023-10-26 02:30:27.098 [main] Hooks - entered enviromental safety concerns details
+[INFO ] 2023-10-26 02:30:27.102 [main] Hooks - entered economics status
+[INFO ] 2023-10-26 02:30:27.106 [main] Hooks - entered notes
+[INFO ] 2023-10-26 02:36:03.938 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-26 02:36:09.636 [main] Hooks - Entered Email Address 
+[INFO ] 2023-10-26 02:36:09.775 [main] Hooks - Entered Password
+[INFO ] 2023-10-26 02:36:09.998 [main] Hooks - Clicked on login button
+[INFO ] 2023-10-26 02:36:13.900 [main] Hooks - Select Test Community
+[INFO ] 2023-10-26 02:36:13.992 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-10-26 02:36:32.790 [main] Hooks - Clicked on clients button
+[INFO ] 2023-10-26 02:36:49.860 [main] Hooks - Clicked on user data table
+[INFO ] 2023-10-26 02:36:52.712 [main] Hooks - Clicked on assessment and care plan
+[INFO ] 2023-10-26 02:37:02.715 [main] Hooks - entered assessment date
+[INFO ] 2023-10-26 02:37:05.864 [main] Hooks - entered visit schedule
+[INFO ] 2023-10-26 02:37:08.972 [main] Hooks - enter goals of service
+[INFO ] 2023-10-26 02:37:12.096 [main] Hooks - entered family social network
+[INFO ] 2023-10-26 02:37:15.200 [main] Hooks - entered special dietary needs
+[INFO ] 2023-10-26 02:37:18.294 [main] Hooks - entered precautions
+[INFO ] 2023-10-26 02:37:25.427 [main] Hooks - entered the functional limitations restrictions
+[INFO ] 2023-10-26 02:37:31.634 [main] Hooks - clicked on the client status
+[INFO ] 2023-10-26 02:37:39.721 [main] Hooks - entered condition notes
+[INFO ] 2023-10-26 02:37:42.851 [main] Hooks - entered recent hospital rehab stays
+[INFO ] 2023-10-26 02:37:46.000 [main] Hooks - entered needs medication reminders
+[INFO ] 2023-10-26 02:37:49.131 [main] Hooks - entered how many times per day
+[INFO ] 2023-10-26 02:37:52.262 [main] Hooks - entered allergies description
+[INFO ] 2023-10-26 02:37:55.396 [main] Hooks - entered notes
+[INFO ] 2023-10-26 02:38:02.630 [main] Hooks - select hearing
+[INFO ] 2023-10-26 02:38:08.831 [main] Hooks - select speech
+[INFO ] 2023-10-26 02:38:12.009 [main] Hooks - select swallowing
+[INFO ] 2023-10-26 02:38:15.170 [main] Hooks - select vision
+[INFO ] 2023-10-26 02:38:18.254 [main] Hooks - entered bathing details
+[INFO ] 2023-10-26 02:38:21.373 [main] Hooks - entered transfers mobility deatils
+[INFO ] 2023-10-26 02:38:24.503 [main] Hooks - entered dressing & grooming details
+[INFO ] 2023-10-26 02:38:27.620 [main] Hooks - entered continence toileting details
+[INFO ] 2023-10-26 02:38:30.736 [main] Hooks - entered eating details
+[INFO ] 2023-10-26 02:38:33.866 [main] Hooks - entered meals details
+[INFO ] 2023-10-26 02:38:36.982 [main] Hooks - entered laundry details
+[INFO ] 2023-10-26 02:38:49.110 [main] Hooks - entered household tasks details
+[INFO ] 2023-10-26 02:39:01.267 [main] Hooks - click on the environment tab
+[INFO ] 2023-10-26 02:39:03.375 [main] Hooks - select a radio button
+[INFO ] 2023-10-26 02:39:09.471 [main] Hooks - entered enviromental safety concerns details
+[INFO ] 2023-10-26 02:39:17.609 [main] Hooks - entered economics status
+[INFO ] 2023-10-26 02:39:20.844 [main] Hooks - entered notes
+[INFO ] 2023-10-26 02:39:33.010 [main] Hooks - complete details
+[INFO ] 2023-10-26 02:39:42.131 [main] Hooks - pop up is showing and click on the yes complete button
+[INFO ] 2023-10-26 02:39:55.257 [main] Hooks - clicked on the care plan
+[INFO ] 2023-10-26 02:40:16.797 [main] Hooks - create a caregiver sign
+[INFO ] 2023-10-26 02:40:38.311 [main] Hooks - create a client sign
+[INFO ] 2023-10-26 02:40:54.432 [main] Hooks - save the signature button
+[INFO ] 2023-10-26 02:40:54.621 [main] Hooks - validation message should be shown assessment was created, test cases passed..
+[INFO ] 2023-10-26 02:40:54.764 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-26 03:15:14.240 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-26 03:15:25.120 [main] Hooks - entered email address and password 
+[INFO ] 2023-10-26 03:15:25.413 [main] Hooks - Clicked on the login button
+[INFO ] 2023-10-26 03:15:29.312 [main] Hooks - Select Test Community
+[INFO ] 2023-10-26 03:15:29.399 [main] Hooks - Clicked on the Continue button
+[INFO ] 2023-10-26 03:15:32.969 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-10-26 03:15:33.055 [main] Hooks - Click on the Account User name
+[INFO ] 2023-10-26 03:15:33.735 [main] Hooks - user clicked on the logout button
+[INFO ] 2023-10-26 03:15:35.303 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-10-26 03:15:35.429 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-26 05:27:05.938 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-26 05:27:16.661 [main] Hooks - entered email address and password 
+[INFO ] 2023-10-26 05:27:16.854 [main] Hooks - Clicked on the login button
+[INFO ] 2023-10-26 05:27:20.857 [main] Hooks - Select Test Community
+[INFO ] 2023-10-26 05:27:20.958 [main] Hooks - Clicked on the Continue button
+[INFO ] 2023-10-26 05:27:24.443 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-10-26 05:27:24.523 [main] Hooks - Click on the Account User name
+[INFO ] 2023-10-26 05:27:25.192 [main] Hooks - user clicked on the logout button
+[INFO ] 2023-10-26 05:27:26.755 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-10-26 05:27:26.880 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-26 05:30:00.769 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-26 05:30:14.523 [main] Hooks - entered email address and password 
+[INFO ] 2023-10-26 05:30:14.796 [main] Hooks - Clicked on the login button
+[INFO ] 2023-10-26 05:30:18.673 [main] Hooks - Select Test Community
+[INFO ] 2023-10-26 05:30:18.765 [main] Hooks - Clicked on the Continue button
+[INFO ] 2023-10-26 05:30:22.942 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-10-26 05:30:23.041 [main] Hooks - Click on the Account User name
+[INFO ] 2023-10-26 05:30:23.738 [main] Hooks - user clicked on the logout button
+[INFO ] 2023-10-26 05:30:25.362 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-10-26 05:30:25.488 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-26 06:19:24.836 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-26 06:19:37.026 [main] Hooks - entered email address and password 
+[INFO ] 2023-10-26 06:19:37.253 [main] Hooks - Clicked on the login button
+[INFO ] 2023-10-26 06:19:41.158 [main] Hooks - Select Test Community
+[INFO ] 2023-10-26 06:19:41.239 [main] Hooks - Clicked on the Continue button
+[INFO ] 2023-10-26 06:19:46.320 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-10-26 06:19:46.406 [main] Hooks - Click on the Account User name
+[INFO ] 2023-10-26 06:19:47.889 [main] Hooks - user clicked on the logout button
+[INFO ] 2023-10-26 06:19:49.504 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-10-26 06:19:49.630 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-26 06:42:02.198 [main] Hooks - Browser Launched..
+[ERROR] 2023-10-26 06:42:18.050 [main] Hooks - Test case failed: Verify The Valid Login Functionality
+[INFO ] 2023-10-26 06:42:18.176 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-26 06:43:18.315 [main] Hooks - Browser Launched..
+[ERROR] 2023-10-26 06:43:35.008 [main] Hooks - Test case failed: Verify The Valid Login Functionality
+[INFO ] 2023-10-26 06:43:35.133 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-26 06:47:15.649 [main] Hooks - Browser Launched..
+[ERROR] 2023-10-26 06:47:27.134 [main] Hooks - Test case failed: Verify The Valid Login Functionality
+[INFO ] 2023-10-26 06:47:27.292 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-26 06:50:18.108 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-26 06:50:29.578 [main] Hooks - entered email address and password 
+[INFO ] 2023-10-26 06:50:29.758 [main] Hooks - Clicked on the login button
+[INFO ] 2023-10-26 06:50:34.204 [main] Hooks - Select Test Community
+[INFO ] 2023-10-26 06:50:34.284 [main] Hooks - Clicked on the Continue button
+[INFO ] 2023-10-26 06:50:37.893 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-10-26 06:50:37.977 [main] Hooks - Click on the Account User name
+[INFO ] 2023-10-26 06:50:39.225 [main] Hooks - user clicked on the logout button
+[INFO ] 2023-10-26 06:50:40.806 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-10-26 06:50:40.947 [main] Hooks - Browser Closed..

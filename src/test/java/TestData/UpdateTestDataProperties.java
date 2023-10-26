@@ -133,7 +133,8 @@ public class UpdateTestDataProperties {
             }
 
             // Print the updated values
-            System.out.println("Updated test data for today:");
+            System.out.println("**Updated Test Data for Today**");
+            System.out.println("--------------------------------");
             System.out.println("FirstName= " + newFirstName);
             System.out.println("LastName= " + newLastName);
             System.out.println("AddressLine1= " + newAddressLine1);

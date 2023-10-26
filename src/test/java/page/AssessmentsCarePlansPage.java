@@ -1,13 +1,11 @@
 package page;
 
 import static org.junit.Assert.assertEquals;
-
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Random;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -15,14 +13,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import ScreenRecorder.MyScreenRecording;
 import base.BaseClass;
 import io.netty.handler.timeout.TimeoutException;
 
 public class AssessmentsCarePlansPage extends BaseClass {
 	
 	
-public void user_enter_email() throws InterruptedException {
+public void user_enter_email() throws Exception {
 	try {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
@@ -31,6 +29,9 @@ public void user_enter_email() throws InterruptedException {
 	catch (TimeoutException e ) {
 		 e.printStackTrace();
 	}
+	
+	MyScreenRecording.startRecording("Assessment & Care Plan");
+	
 	}
 
 public void user_enter_password() throws InterruptedException {
@@ -90,13 +91,6 @@ public void user_click_on_the_clients() throws InterruptedException {
 }
 
 public void click_on_the_user_data_table() throws InterruptedException {
-	/*WebElement DataTable = driver.findElement(By.xpath("//td[@aria-label='Ankita Column Header First Name']"));
-	Thread.sleep(8000);
-	JavascriptExecutor js =(JavascriptExecutor)driver;
-	js.executeScript("arguments[0].click()", DataTable);
-	Thread.sleep(8000);
-	}*/
-	
 	List<WebElement> table=driver.findElements(By.className("e-row"));
 	Random random= new Random();
 	int randomValue=random.nextInt(table.size());
@@ -168,7 +162,6 @@ private boolean isAssessmentandCarePlanPresent() {
     }
 }
 	
-
 		public void user_enter_the_assessment_date() throws InterruptedException {
 		LocalDateTime targetDate = LocalDateTime.now().plusDays(1);
         String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
@@ -695,7 +688,7 @@ private boolean isAssessmentandCarePlanPresent() {
 				}
 			}
 			
-			public void validation_message_should_be_shown_assessment_was_created() {
+			public void validation_message_should_be_shown_assessment_was_created() throws Exception {
 				try {
 				String expectedResult= "Assessment was created.";
 				String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
@@ -705,8 +698,8 @@ private boolean isAssessmentandCarePlanPresent() {
 					e.printStackTrace();
 				}
 				
+				MyScreenRecording.stopRecording();	
 			}
-
 	}
 
 		 

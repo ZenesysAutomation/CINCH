@@ -14,7 +14,7 @@ import io.netty.handler.timeout.TimeoutException;
 
 public class EditClientPage extends BaseClass{
 
-public void check_the_user_email() throws InterruptedException {
+	public void check_the_user_email() throws InterruptedException {
 	try {	
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
@@ -27,7 +27,7 @@ public void check_the_user_email() throws InterruptedException {
 
 }
 
-public void check_the_user_password() throws InterruptedException {
+	public void check_the_user_password() throws InterruptedException {
 	try {	
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	WebElement Password= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
@@ -39,7 +39,7 @@ public void check_the_user_password() throws InterruptedException {
 }
 }
 
-public void check_the_login_button() throws InterruptedException {
+	public void check_the_login_button() throws InterruptedException {
 	try {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
@@ -51,7 +51,7 @@ public void check_the_login_button() throws InterruptedException {
 	}
 }
 
-public void check_the_test_community_dropdown() throws InterruptedException {
+	public void check_the_test_community_dropdown() throws InterruptedException {
 	try {
 	WebElement Dropdown=driver.findElement(By.xpath("//span[@role='listbox']"));
 	Dropdown.sendKeys("Test Community");
@@ -123,7 +123,7 @@ public void click_on_the_user_table() throws InterruptedException {
 }
 
 	public void change_the_status_from_active_to_discharged() throws InterruptedException {
-		try {
+	try {
 	WebElement Discharged=driver.findElement(By.xpath("//span[@aria-owns='client-status_options']"));
 	Discharged.click();
 	Thread.sleep(3000);
@@ -154,7 +154,7 @@ public void click_on_the_user_table() throws InterruptedException {
 }
 
 	public void save_the_data() throws InterruptedException {
-		try {
+	try {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	WebElement SaveData=driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
 	 wait.until(ExpectedConditions.elementToBeClickable(SaveData));
@@ -167,3 +167,4 @@ public void click_on_the_user_table() throws InterruptedException {
 
 
 }
+
