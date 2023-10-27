@@ -13,7 +13,7 @@ public class VisitPlansSteps extends BaseClass  {
 	
 
 @Given("User enter the Email")
-public void user_enter_the_email() throws InterruptedException {
+public void user_enter_the_email() throws Exception {
 	 visitplan.user_enter_the_email();
 	 log.info("entered email address");
 	}
@@ -1055,7 +1055,7 @@ public void save_the_single_delete_visit_series() throws InterruptedException {
 }
 
 @Then ("Message should be Shown Visit Plan was saved5")
-public void message_should_be_shown_visit_plan_was_saved5() {
+public void message_should_be_shown_visit_plan_was_saved5() throws Exception {
 	visitplan.message_should_be_shown_visit_plan_was_saved5();
 	log.info("validation message should be shown - Visit Plan was saved.");
 }

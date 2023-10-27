@@ -9,22 +9,22 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import ScreenRecorder.MyScreenRecording;
 import base.BaseClass;
 import io.netty.handler.timeout.TimeoutException;
 
 public class EditClientPage extends BaseClass{
 
-	public void check_the_user_email() throws InterruptedException {
+	public void check_the_user_email() throws Exception {
 	try {	
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 	 Useremail.sendKeys(prop.getProperty("username"));
 	}
 	catch (TimeoutException e ) {
-		 e.printStackTrace();
-	
+		 e.printStackTrace();	
 }
-
+	MyScreenRecording.startRecording("Edit Client");
 }
 
 	public void check_the_user_password() throws InterruptedException {
@@ -153,7 +153,7 @@ public void click_on_the_user_table() throws InterruptedException {
 	}
 }
 
-	public void save_the_data() throws InterruptedException {
+	public void save_the_data() throws Exception {
 	try {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	WebElement SaveData=driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
@@ -163,6 +163,7 @@ public void click_on_the_user_table() throws InterruptedException {
 		catch (Exception e) {
 			e.printStackTrace();
 		}
+			MyScreenRecording.stopRecording();
 	}
 
 

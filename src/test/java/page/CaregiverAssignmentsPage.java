@@ -9,12 +9,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import ScreenRecorder.MyScreenRecording;
 import base.BaseClass;
 import io.netty.handler.timeout.TimeoutException;
 
 	public class CaregiverAssignmentsPage extends BaseClass  {
 	
-	public void user_enter_the_email() throws InterruptedException {
+	public void user_enter_the_email() throws Exception {
 		try {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
@@ -24,6 +25,7 @@ import io.netty.handler.timeout.TimeoutException;
 			 e.printStackTrace();
 		
 	}
+		MyScreenRecording.startRecording("Caregiver Assignments");
 	}
 
 	public void user_enter_the_password() throws InterruptedException {
@@ -208,7 +210,7 @@ import io.netty.handler.timeout.TimeoutException;
 			
 	}
 		
-	public void save_the_visit() throws InterruptedException {
+	public void save_the_visit() throws Exception {
 	try {
     WebElement VisitSvebtn=	driver.findElement(By.className("e-event-save"));	
 	VisitSvebtn.click();
@@ -217,7 +219,7 @@ import io.netty.handler.timeout.TimeoutException;
 		catch (Exception e) {
 			e.printStackTrace();
 }
-	
+	MyScreenRecording.stopRecording();	
 }
 		public void check_if_color_is_blue_and_active_visit_then_click_on_it2() throws InterruptedException {
 		List<WebElement> blueElements=driver.findElements(By.className("text-wrap"));
@@ -349,7 +351,7 @@ import io.netty.handler.timeout.TimeoutException;
 		
 	}
 
-	public void save_the_visit1() throws InterruptedException {
+	public void save_the_visit1() throws Exception {
 	try {
 	WebElement VisitSvebtn=	driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
 	VisitSvebtn.click();
@@ -358,6 +360,7 @@ import io.netty.handler.timeout.TimeoutException;
 	catch (Exception e) {
 		e.printStackTrace();
 	}
+	MyScreenRecording.stopRecording();	
 }
 	
 	public void check_if_color_is_blue_and_active_visit_then_click_on_it3() throws InterruptedException {
@@ -488,7 +491,7 @@ import io.netty.handler.timeout.TimeoutException;
 	
 }
 
-	public void save_the_visit2() throws InterruptedException {
+	public void save_the_visit2() throws Exception {
 	try {
 	WebElement VisitSvebtn=	driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
 	VisitSvebtn.click();
@@ -497,11 +500,11 @@ import io.netty.handler.timeout.TimeoutException;
 	catch (Exception e) {
 		e.printStackTrace();
 	}
-	
+	MyScreenRecording.stopRecording();	
 }
 
 
-	public void click_on_the_visit() throws InterruptedException {
+	public void click_on_the_visit() throws Exception {
 
 	List<WebElement> blueElements=driver.findElements(By.className("text-wrap"));
 	Thread.sleep(2000);
@@ -589,6 +592,7 @@ import io.netty.handler.timeout.TimeoutException;
 	catch(Exception e) {
 		e.printStackTrace();
 	}
+		
 }
 
 	public void change_the_track_from_east1_to_east2() throws InterruptedException {
@@ -615,7 +619,7 @@ import io.netty.handler.timeout.TimeoutException;
 	}
 }
 
-	public void save_the_visits() throws InterruptedException {
+	public void save_the_visits() throws Exception {
 	try {
 	WebElement SaveVisit =	driver.findElement(By.xpath("(//button[normalize-space()='Save'])[1]"));
 	SaveVisit.click();
@@ -624,7 +628,7 @@ import io.netty.handler.timeout.TimeoutException;
 	catch (Exception e) {
 		e.printStackTrace();
 	}
-
+	MyScreenRecording.stopRecording();
 }
 	public void user_click_on_the_visit() throws InterruptedException {
 	
@@ -734,7 +738,7 @@ import io.netty.handler.timeout.TimeoutException;
 	
 }
 	
-	public void pop_up_will_be_visible_are_you_sure_want_to_delete_this_Item_and_click_on_delete_button() throws InterruptedException {
+	public void pop_up_will_be_visible_are_you_sure_want_to_delete_this_Item_and_click_on_delete_button() throws Exception {
 	try {
 	WebElement DeletepopUp= driver.findElement(By.xpath("(//button[normalize-space()='Delete'])[1]"));
 	JavascriptExecutor js = (JavascriptExecutor)driver;
@@ -745,6 +749,7 @@ import io.netty.handler.timeout.TimeoutException;
 		e.printStackTrace();
 	}
 	
+	MyScreenRecording.stopRecording();
 }
 
 }

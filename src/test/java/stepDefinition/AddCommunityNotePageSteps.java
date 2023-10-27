@@ -12,7 +12,7 @@ public class AddCommunityNotePageSteps extends BaseClass {
 	
 	
 	@Given("User enters Email")
-	public void user_enters_email() {
+	public void user_enters_email() throws Exception {
 	    page.user_enters_email();
 	    log.info("entered Email Address ");
 	}
@@ -85,7 +85,7 @@ public class AddCommunityNotePageSteps extends BaseClass {
 	}
 	
 	@Then ("Community Note was Created Message Should be Shown")
-	public void community_note_was_created_message_should_be_shown() {
+	public void community_note_was_created_message_should_be_shown() throws Exception {
 		page.community_note_was_created_message_should_be_shown();
 		log.info("validation msg showing - note was created");
 		

@@ -13,7 +13,7 @@ public class EditCommunityNotePageSteps extends BaseClass {
 	
 
 	@Given("Enter the Email")
-	public void enter_the_email() {
+	public void enter_the_email() throws Exception {
 	    try {
 			edit.enter_the_email();
 		} catch (InterruptedException e) {
@@ -94,7 +94,7 @@ public class EditCommunityNotePageSteps extends BaseClass {
 	}
 
 	@Then("Click on the save Button")
-	public void click_on_the_save_button() throws InterruptedException {
+	public void click_on_the_save_button() throws Exception {
 	    edit.click_on_the_save_button();
 	    log.info("save the details..");
 	}

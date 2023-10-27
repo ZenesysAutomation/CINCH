@@ -129,7 +129,7 @@ public class LoginPage extends BaseClass {
 	
 		}
 		
-		public void User_Enter_the_Email_and_Password(String email, String pass) {
+		public void User_Enter_the_Email_and_Password(String email, String pass) throws Exception {
 			try {
 				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 				WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
@@ -144,6 +144,7 @@ public class LoginPage extends BaseClass {
 					 e.printStackTrace();
 			}
 			
+			MyScreenRecording.startRecording("Invalid-Login Test");
 		}
 		
 		public void Click_on_the_login_button() {
@@ -159,7 +160,7 @@ public class LoginPage extends BaseClass {
 			
 		}
 		
-		public void Error_message_is_Displayed(String err) {
+		public void Error_message_is_Displayed(String err) throws Exception {
 			try {
 			String Expectedresult = "Invalid Login - Invalid username and password.";
 			String Actualresult=driver.findElement(By.xpath("(//div[@role='alert'])[1]")).getText();
@@ -169,9 +170,10 @@ public class LoginPage extends BaseClass {
 				e.printStackTrace();
 			}
 			
+			MyScreenRecording.stopRecording();
 		}
 		
-		public void the_user_submits_blank_email_and_invalid_password(String email,String pass) {
+		public void the_user_submits_blank_email_and_invalid_password(String email,String pass) throws Exception {
 				try {
 				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 				WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
@@ -187,6 +189,7 @@ public class LoginPage extends BaseClass {
 					 e.printStackTrace();
 			}
 			
+				MyScreenRecording.startRecording("Blank Credentials-Login Test");
 		}
 		
 		public void the_user_click_on_the_login_button() {
@@ -202,7 +205,7 @@ public class LoginPage extends BaseClass {
 			
 		}
 		
-		public void the_user_should_see_an_error_message(String err) {
+		public void the_user_should_see_an_error_message(String err) throws Exception {
 			try {
 			String Expectedresult = "The Logon field is required.";
 			String Actualresult=driver.findElement(By.xpath("(//li[normalize-space()='The Logon field is required.'])[1]")).getText();
@@ -211,7 +214,8 @@ public class LoginPage extends BaseClass {
 			catch (Exception e) {
 				e.printStackTrace();
 			}
-				
+			
+			MyScreenRecording.stopRecording();
 		}
 		
 	}

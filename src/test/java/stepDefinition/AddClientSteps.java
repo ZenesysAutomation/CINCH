@@ -11,7 +11,7 @@ public class AddClientSteps extends BaseClass{
 	AddClientPage steps = new AddClientPage();
 	
 	@When("User Enter the Valid Email")
-	public void user_enter_the_valid_email() throws InterruptedException {
+	public void user_enter_the_valid_email() throws Exception {
 	    steps.user_enter_the_valid_email();
 	    log.info("Entered Email Address");
 		
@@ -269,7 +269,7 @@ public class AddClientSteps extends BaseClass{
 	
 	
 	@Then ("Validation Message Should be Shown Client was Created")
-	public void validation_Message_should_be_shown_client_was_created() {
+	public void validation_Message_should_be_shown_client_was_created() throws Exception {
 		steps.validation_Message_should_be_shown_client_was_created();
 		log.info("validation Message should be shown client was created test passed..");
 		

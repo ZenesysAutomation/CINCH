@@ -13,23 +13,23 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import ScreenRecorder.MyScreenRecording;
 import base.BaseClass;
 import io.cucumber.java.en.When;
 import io.netty.handler.timeout.TimeoutException;
 
 public class VisitPlansPage extends BaseClass  {
 	
-	public void user_enter_the_email() throws InterruptedException {
+	public void user_enter_the_email() throws Exception {
 		try {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 		 Useremail.sendKeys(prop.getProperty("username"));
 		}
 		catch (TimeoutException e ) {
-			 e.printStackTrace();
-		
+			 e.printStackTrace();	
 	}
-	
+		MyScreenRecording.startRecording("Visit Plans");
 	}
 	
 	public void user_enter_the_password() throws InterruptedException {
@@ -2384,18 +2384,17 @@ public class VisitPlansPage extends BaseClass  {
 	
 	}
 	
-	public void message_should_be_shown_visit_plan_was_saved5() {
+	public void message_should_be_shown_visit_plan_was_saved5() throws Exception {
 		try {
 		String expectedResult= "Visit Plan was saved.";
 		String actualResult= driver.findElement(By.className("e-toast-content")).getText();
 		assertEquals("Visit Plan was Created",expectedResult,actualResult);	
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			
+			e.printStackTrace();	
 		}
 		
-		
+		MyScreenRecording.stopRecording();	
 	}
 }
 	

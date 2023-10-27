@@ -12,7 +12,7 @@ public class CaregiverAssignmentsSteps extends BaseClass  {
 	CaregiverAssignmentsPage cg = new CaregiverAssignmentsPage();
 	 
 	@Given ("User Enter The Email")
-	public void user_enter_the_email() throws InterruptedException {
+	public void user_enter_the_email() throws Exception {
 		cg.user_enter_the_email();
 		 log.info("Entered Email Address..");
 	}
@@ -70,7 +70,7 @@ public class CaregiverAssignmentsSteps extends BaseClass  {
 	}
 	
 	@Then ("Save the Visit")
-	public void save_the_visit() throws InterruptedException {
+	public void save_the_visit() throws Exception {
 		cg.save_the_visit();
 		log.info("save the visit");
 		
@@ -97,7 +97,7 @@ public class CaregiverAssignmentsSteps extends BaseClass  {
 	}
 	
 	@Then ("save the visit")
-	public void save_the_visit1() throws InterruptedException {
+	public void save_the_visit1() throws Exception {
 		cg.save_the_visit1();
 		log.info("save visit..");
 	} 
@@ -122,13 +122,13 @@ public class CaregiverAssignmentsSteps extends BaseClass  {
 	}
 	
 	@Then ("Save The Visit")
-	public void save_the_visit2() throws InterruptedException {
+	public void save_the_visit2() throws Exception {
 		cg.save_the_visit2();
 		log.info("save visit..");
 	}
 	
 	@Given ("Click on the Visit")
-	public void click_on_the_visit() throws InterruptedException {
+	public void click_on_the_visit() throws Exception {
 		cg.click_on_the_visit();
 		log.info("click on visit..");
 	}
@@ -148,7 +148,7 @@ public class CaregiverAssignmentsSteps extends BaseClass  {
 	
 	
 	@Then ("Save the Visits")
-	public void save_the_visits() throws InterruptedException {
+	public void save_the_visits() throws Exception {
 		cg.save_the_visits();
 		log.info("save visits..");
 	}
@@ -167,7 +167,7 @@ public class CaregiverAssignmentsSteps extends BaseClass  {
 	} 
 	
 	@Then ("Pop Up will be visible Are You Sure want to Delete this Item and click on Delete Button")
-	public void pop_up_will_be_visible_are_you_sure_want_to_delete_this_Item_and_click_on_delete_button() throws InterruptedException {
+	public void pop_up_will_be_visible_are_you_sure_want_to_delete_this_Item_and_click_on_delete_button() throws Exception {
 		cg.pop_up_will_be_visible_are_you_sure_want_to_delete_this_Item_and_click_on_delete_button();
 		log.info("pop up is showing and delete the item..");
 	}

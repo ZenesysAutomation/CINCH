@@ -11,7 +11,7 @@ public class EditClientSteps extends BaseClass {
 	EditClientPage editClient = new EditClientPage ();
 	
 	@Given("Check the User Email")
-	public void check_the_user_email() throws InterruptedException {
+	public void check_the_user_email() throws Exception {
 		editClient.check_the_user_email();
 		log.info("Entered Email Address");
 	}    
@@ -71,7 +71,7 @@ public class EditClientSteps extends BaseClass {
 	}
 
 	@Then("save the Data")
-	public void save_the_data() throws InterruptedException {
+	public void save_the_data() throws Exception {
 	    editClient.save_the_data();
 	    log.info("save data..");
 	}

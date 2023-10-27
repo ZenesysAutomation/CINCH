@@ -6,6 +6,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import ScreenRecorder.MyScreenRecording;
 import base.BaseClass;
 import io.netty.handler.timeout.TimeoutException;
 
@@ -13,7 +15,7 @@ import io.netty.handler.timeout.TimeoutException;
 
 public class AddClientPage extends BaseClass {
 	
-public void user_enter_the_valid_email() throws InterruptedException {
+public void user_enter_the_valid_email() throws Exception {
 	
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	try {
@@ -22,9 +24,10 @@ public void user_enter_the_valid_email() throws InterruptedException {
 	}
 	catch (TimeoutException e ) {
 		 e.printStackTrace();
-	
 
 	}
+	
+	MyScreenRecording.startRecording("Add Client");
 }
 		   
 	
@@ -539,7 +542,7 @@ public void save_the_new_contact_details()throws InterruptedException {
 	}
  
  
- public void validation_Message_should_be_shown_client_was_created() {
+ public void validation_Message_should_be_shown_client_was_created() throws Exception {
 	 try {
 	 	String expectedResult= "Client was created.";
 		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
@@ -548,7 +551,10 @@ public void save_the_new_contact_details()throws InterruptedException {
 	 catch (Exception e) {
 		 e.printStackTrace();
 	 }
+		MyScreenRecording.stopRecording();
 	}
+ 
+ 
 
  }
 

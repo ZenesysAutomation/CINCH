@@ -12,6 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import ScreenRecorder.MyScreenRecording;
 import base.BaseClass;
 import io.netty.handler.timeout.TimeoutException;
 
@@ -19,7 +20,7 @@ import io.netty.handler.timeout.TimeoutException;
 public class AddCommunityNotePage extends BaseClass {
 	
 	
-	public void user_enters_email() {
+	public void user_enters_email() throws Exception {
 		try {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 		WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
@@ -29,6 +30,7 @@ public class AddCommunityNotePage extends BaseClass {
 			 e.printStackTrace();
 				
 	}
+		MyScreenRecording.startRecording("Add Community Note");
 	}
 			
 	public void user_enters_password() {
@@ -187,7 +189,7 @@ public class AddCommunityNotePage extends BaseClass {
 		}
 }
 	
-	public void community_note_was_created_message_should_be_shown() {
+	public void community_note_was_created_message_should_be_shown() throws Exception {
 	try {
 	String expectedResult= "Community Note was created.";
 	String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
@@ -196,6 +198,8 @@ public class AddCommunityNotePage extends BaseClass {
 	catch (Exception e) {
 		e.printStackTrace();
 	}
+	
+	MyScreenRecording.stopRecording();
 		
 	}
 
