@@ -8787,3 +8787,23 @@
 [INFO ] 2023-10-27 05:13:19.427 [main] Hooks - select status
 [INFO ] 2023-10-27 05:13:39.471 [main] Hooks - select track
 [INFO ] 2023-10-27 05:13:59.501 [main] Hooks - select service type
+[INFO ] 2023-10-30 01:40:41.945 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-30 01:40:54.427 [main] Hooks - user enter the invalid email & password -test passed.
+[INFO ] 2023-10-30 01:40:54.620 [main] Hooks - user click on the login button..
+[INFO ] 2023-10-30 01:40:55.054 [main] Hooks - error message is displayed-invalid Username and Password
+[INFO ] 2023-10-30 01:40:55.183 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-30 01:40:59.199 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-30 01:41:11.418 [main] Hooks - user enter the invalid email & password -test passed.
+[INFO ] 2023-10-30 01:41:11.638 [main] Hooks - user click on the login button..
+[INFO ] 2023-10-30 01:41:11.998 [main] Hooks - error message is displayed-invalid Username and Password
+[INFO ] 2023-10-30 01:41:12.114 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-30 01:43:27.481 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-30 01:43:38.330 [main] Hooks - user enter the invalid email & password -test passed.
+[INFO ] 2023-10-30 01:43:38.505 [main] Hooks - user click on the login button..
+[INFO ] 2023-10-30 01:43:38.767 [main] Hooks - error message is displayed-invalid Username and Password
+[INFO ] 2023-10-30 01:43:38.892 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-30 01:43:42.989 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-30 01:43:53.353 [main] Hooks - user enter the invalid email & password -test passed.
+[INFO ] 2023-10-30 01:43:53.517 [main] Hooks - user click on the login button..
+[INFO ] 2023-10-30 01:43:53.834 [main] Hooks - error message is displayed-invalid Username and Password
+[INFO ] 2023-10-30 01:43:53.946 [main] Hooks - Browser Closed..

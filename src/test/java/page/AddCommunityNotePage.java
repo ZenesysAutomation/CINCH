@@ -164,17 +164,12 @@ public class AddCommunityNotePage extends BaseClass {
 			
 }
 	private static int generateRandomNumber(int start, int end) {
-
-    Random random = new Random();
-    
+    Random random = new Random(); 
     if (start > end) {
         throw new IllegalArgumentException("Start value must be less than or equal to the end value.");
     }
-
     int range = end - start + 1;
-
     int randomNumber = random.nextInt(range) + start;
-
     return randomNumber;
 }
 	

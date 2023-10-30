@@ -48,7 +48,7 @@ public class LoginPageSteps extends BaseClass{
 	@Given("User Click on the Account User Name")
 	public void user_click_on_the_account_user_name() throws InterruptedException {
 		login.user_click_on_the_account_user_name();
-		log.info("Click on the Account User name");
+		log.info("Click on the Account User Name");
 		
 	}
 	@And ("Click on the Logout Button")
@@ -83,7 +83,7 @@ public class LoginPageSteps extends BaseClass{
 	@Then ("Error message is Displayed {string}")
 	public void Error_message_is_Displayed(String err) throws Exception {
 		login.Error_message_is_Displayed(err);
-		log.info("error message is displayed-invalid Username and Password");
+		log.info("error message is displayed-invalid UserName and Password");
 	}
 	
 	//blank credentials
