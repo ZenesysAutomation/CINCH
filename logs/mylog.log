@@ -8807,3 +8807,343 @@
 [INFO ] 2023-10-30 01:43:53.517 [main] Hooks - user click on the login button..
 [INFO ] 2023-10-30 01:43:53.834 [main] Hooks - error message is displayed-invalid Username and Password
 [INFO ] 2023-10-30 01:43:53.946 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-31 02:29:57.974 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-31 02:30:10.067 [main] Hooks - entered Email Address 
+[INFO ] 2023-10-31 02:30:10.244 [main] Hooks - Password Entered
+[INFO ] 2023-10-31 02:30:10.522 [main] Hooks - Clicked on login button
+[INFO ] 2023-10-31 02:30:30.572 [main] Hooks - Select Test Community
+[INFO ] 2023-10-31 02:30:37.770 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-10-31 02:30:37.770 [main] Hooks - Clicked on mange link
+[INFO ] 2023-10-31 02:30:37.784 [main] Hooks - Clicked on add new community note
+[INFO ] 2023-10-31 02:30:37.796 [main] Hooks - entered note
+[INFO ] 2023-10-31 02:30:37.802 [main] Hooks - select communities
+[INFO ] 2023-10-31 02:30:37.809 [main] Hooks - select communities
+[INFO ] 2023-10-31 02:31:55.810 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-31 02:32:09.053 [main] Hooks - entered Email Address 
+[INFO ] 2023-10-31 02:32:09.303 [main] Hooks - Password Entered
+[INFO ] 2023-10-31 02:32:09.570 [main] Hooks - Clicked on login button
+[INFO ] 2023-10-31 02:32:29.625 [main] Hooks - Select Test Community
+[INFO ] 2023-10-31 02:32:49.697 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-10-31 02:33:09.717 [main] Hooks - Clicked on mange link
+[INFO ] 2023-10-31 02:33:22.020 [main] Hooks - Clicked on add new community note
+[INFO ] 2023-10-31 02:33:22.039 [main] Hooks - entered note
+[INFO ] 2023-10-31 02:33:22.049 [main] Hooks - select communities
+[INFO ] 2023-10-31 02:33:22.058 [main] Hooks - select communities
+[INFO ] 2023-10-31 02:34:13.915 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-31 02:34:28.395 [main] Hooks - entered Email Address 
+[INFO ] 2023-10-31 02:34:28.555 [main] Hooks - Password Entered
+[INFO ] 2023-10-31 02:34:28.770 [main] Hooks - Clicked on login button
+[INFO ] 2023-10-31 02:34:32.628 [main] Hooks - Select Test Community
+[INFO ] 2023-10-31 02:34:32.716 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-10-31 02:34:34.390 [main] Hooks - Clicked on mange link
+[INFO ] 2023-10-31 02:34:35.524 [main] Hooks - Clicked on add new community note
+[INFO ] 2023-10-31 02:34:40.066 [main] Hooks - entered note
+[INFO ] 2023-10-31 02:34:40.254 [main] Hooks - select communities
+[INFO ] 2023-10-31 02:34:43.349 [main] Hooks - select communities
+[INFO ] 2023-10-31 02:34:49.640 [main] Hooks - select end date
+[INFO ] 2023-10-31 02:34:54.732 [main] Hooks - saved data
+[INFO ] 2023-10-31 02:34:54.849 [main] Hooks - validation msg showing - note was created
+[INFO ] 2023-10-31 02:34:54.984 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-31 07:58:57.104 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-31 07:58:57.187 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-31 08:57:17.332 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-31 08:57:42.497 [main] Hooks - Browser Closed..
+[INFO ] 2023-10-31 08:59:04.535 [main] Hooks - Browser Launched..
+[INFO ] 2023-10-31 08:59:52.458 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-01 01:45:46.302 [main] Hooks - Browser Launched..
+[ERROR] 2023-11-01 01:46:27.066 [main] Hooks - Test case failed: Verify Error Message when creating a Community Note with Missing information
+[INFO ] 2023-11-01 01:46:27.194 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-02 01:23:52.389 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-02 01:24:03.356 [main] Hooks - User Enter Email and Password
+[INFO ] 2023-11-02 01:24:03.593 [main] Hooks - Click to login Button
+[INFO ] 2023-11-02 01:24:07.384 [main] Hooks - Select Test Community
+[INFO ] 2023-11-02 01:24:07.470 [main] Hooks - Click on the continue button
+[INFO ] 2023-11-02 01:24:08.965 [main] Hooks - Click on the Manage Button
+[INFO ] 2023-11-02 01:24:09.988 [main] Hooks - Click on the Add New Community Note
+[INFO ] 2023-11-02 01:24:12.718 [main] Hooks - click on the notes field
+[INFO ] 2023-11-02 01:24:18.050 [main] Hooks - Click on the Save button
+[INFO ] 2023-11-02 01:24:18.081 [main] Hooks - Validation message is displayed-The Note field is required
+[INFO ] 2023-11-02 01:24:18.208 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-02 01:26:02.414 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-02 01:26:12.814 [main] Hooks - User Enter Email and Password
+[INFO ] 2023-11-02 01:26:13.003 [main] Hooks - Click to login Button
+[INFO ] 2023-11-02 01:26:16.860 [main] Hooks - Select Test Community
+[INFO ] 2023-11-02 01:26:16.950 [main] Hooks - Click on the continue button
+[INFO ] 2023-11-02 01:26:18.942 [main] Hooks - Click on the Manage Button
+[INFO ] 2023-11-02 01:26:19.939 [main] Hooks - Click on the Add New Community Note
+[INFO ] 2023-11-02 01:26:21.742 [main] Hooks - click on the notes field
+[INFO ] 2023-11-02 01:26:27.107 [main] Hooks - Click on the Save button
+[INFO ] 2023-11-02 01:26:27.186 [main] Hooks - Validation message is displayed-The Note field is required
+[INFO ] 2023-11-02 01:26:27.313 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-02 01:36:38.304 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-02 01:36:48.370 [main] Hooks - User Enter Email and Password
+[INFO ] 2023-11-02 01:36:48.554 [main] Hooks - Click to login Button
+[INFO ] 2023-11-02 01:36:52.656 [main] Hooks - Select Test Community
+[INFO ] 2023-11-02 01:36:52.739 [main] Hooks - Click on the continue button
+[INFO ] 2023-11-02 01:36:54.454 [main] Hooks - Click on the Manage Button
+[INFO ] 2023-11-02 01:36:55.514 [main] Hooks - Click on the Add New Community Note
+[INFO ] 2023-11-02 01:36:59.007 [main] Hooks - click on the notes field
+[INFO ] 2023-11-02 01:37:04.329 [main] Hooks - Click on the Save button
+[INFO ] 2023-11-02 01:37:04.454 [main] Hooks - Validation message is displayed-The Note field is required
+[INFO ] 2023-11-02 01:37:04.580 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-02 01:37:56.512 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-02 01:38:07.937 [main] Hooks - User Enter Email and Password
+[INFO ] 2023-11-02 01:38:08.126 [main] Hooks - Click to login Button
+[INFO ] 2023-11-02 01:38:12.900 [main] Hooks - Select Test Community
+[INFO ] 2023-11-02 01:38:12.991 [main] Hooks - Click on the continue button
+[INFO ] 2023-11-02 01:38:15.490 [main] Hooks - Click on the Manage Button
+[INFO ] 2023-11-02 01:38:16.597 [main] Hooks - Click on the Add New Community Note
+[INFO ] 2023-11-02 01:38:21.088 [main] Hooks - click on the notes field
+[INFO ] 2023-11-02 01:38:26.446 [main] Hooks - Click on the Save button
+[INFO ] 2023-11-02 01:38:26.573 [main] Hooks - Validation message is displayed-The Note field is required
+[INFO ] 2023-11-02 01:38:26.699 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-02 01:39:58.955 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-02 01:40:09.730 [main] Hooks - User Enter Email and Password
+[INFO ] 2023-11-02 01:40:09.944 [main] Hooks - Click to login Button
+[INFO ] 2023-11-02 01:40:13.811 [main] Hooks - Select Test Community
+[INFO ] 2023-11-02 01:40:13.896 [main] Hooks - Click on the continue button
+[INFO ] 2023-11-02 01:40:15.474 [main] Hooks - Click on the Manage Button
+[INFO ] 2023-11-02 01:40:16.504 [main] Hooks - Click on the Add New Community Note
+[INFO ] 2023-11-02 01:40:20.578 [main] Hooks - click on the notes field
+[INFO ] 2023-11-02 01:40:25.659 [main] Hooks - Click on the Save button
+[INFO ] 2023-11-02 01:40:25.753 [main] Hooks - Validation message is displayed-The Note field is required
+[INFO ] 2023-11-02 01:40:25.880 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-02 01:50:57.879 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-02 01:51:09.097 [main] Hooks - User Enter Email and Password
+[INFO ] 2023-11-02 01:51:09.317 [main] Hooks - Click to login Button
+[INFO ] 2023-11-02 01:51:13.179 [main] Hooks - Select Test Community
+[INFO ] 2023-11-02 01:51:13.262 [main] Hooks - Click on the continue button
+[INFO ] 2023-11-02 01:51:14.851 [main] Hooks - Click on the Manage Button
+[INFO ] 2023-11-02 01:51:15.863 [main] Hooks - Click on the Add New Community Note
+[INFO ] 2023-11-02 01:51:17.806 [main] Hooks - click on the notes field
+[INFO ] 2023-11-02 01:51:24.893 [main] Hooks - Click on the Save button
+[INFO ] 2023-11-02 01:51:25.003 [main] Hooks - Validation message is displayed-The Note field is required
+[INFO ] 2023-11-02 01:51:25.129 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-02 03:58:05.049 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-02 03:58:17.175 [main] Hooks - User Enter Email and Password
+[INFO ] 2023-11-02 03:58:17.389 [main] Hooks - Click to login Button
+[INFO ] 2023-11-02 03:58:21.243 [main] Hooks - Select Test Community
+[INFO ] 2023-11-02 03:58:21.338 [main] Hooks - Click on the continue button
+[INFO ] 2023-11-02 03:58:22.790 [main] Hooks - Click on the Manage Button
+[INFO ] 2023-11-02 03:58:24.439 [main] Hooks - Click on the Add New Community Note
+[INFO ] 2023-11-02 03:58:27.039 [main] Hooks - click on the notes field
+[INFO ] 2023-11-02 03:58:34.143 [main] Hooks - Click on the Save button
+[INFO ] 2023-11-02 03:58:34.268 [main] Hooks - Validation message is displayed-The Note field is required
+[INFO ] 2023-11-02 03:58:34.395 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-02 05:27:48.900 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-02 05:28:02.744 [main] Hooks - User Enter Email and Password
+[INFO ] 2023-11-02 05:28:02.971 [main] Hooks - Click to login Button
+[INFO ] 2023-11-02 05:28:06.944 [main] Hooks - Select Test Community
+[INFO ] 2023-11-02 05:28:07.041 [main] Hooks - Click on the continue button
+[INFO ] 2023-11-02 05:28:08.660 [main] Hooks - Click on the Manage Button
+[INFO ] 2023-11-02 05:28:10.529 [main] Hooks - Click on the Add New Community Note
+[INFO ] 2023-11-02 05:28:12.915 [main] Hooks - click on the notes field
+[INFO ] 2023-11-02 05:28:20.050 [main] Hooks - Click on the Save button
+[INFO ] 2023-11-02 05:28:20.208 [main] Hooks - Validation message is displayed-The Note field is required
+[INFO ] 2023-11-02 05:28:20.317 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-03 03:45:07.808 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-03 03:45:46.976 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-03 05:01:54.691 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-03 05:02:39.343 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-03 05:03:36.657 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-03 05:04:39.094 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-03 06:01:57.762 [main] Hooks - Browser Launched..
+[ERROR] 2023-11-03 06:02:38.078 [main] Hooks - Test case failed: Verify Error Message When Creating Add Client with Missing information(Negative Testing)
+[INFO ] 2023-11-03 06:02:38.219 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-03 06:03:36.803 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-03 06:04:18.848 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-03 08:04:42.344 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-03 08:04:52.185 [main] Hooks - entered email and password
+[INFO ] 2023-11-03 08:04:52.383 [main] Hooks - click on the login
+[INFO ] 2023-11-03 08:04:55.374 [main] Hooks - Select Test Community
+[INFO ] 2023-11-03 08:04:55.471 [main] Hooks - click on the continue button
+[INFO ] 2023-11-03 08:04:59.094 [main] Hooks - click on the clients button
+[INFO ] 2023-11-03 08:05:00.222 [main] Hooks - click on the add new client
+[INFO ] 2023-11-03 08:05:02.068 [main] Hooks - leave the first name fields Empty
+[INFO ] 2023-11-03 08:05:02.259 [main] Hooks - Entered Last Name
+[INFO ] 2023-11-03 08:05:02.282 [main] Hooks - leave line2 address fields empty
+[INFO ] 2023-11-03 08:05:04.585 [main] Hooks - Select the Gender
+[INFO ] 2023-11-03 08:05:04.743 [main] Hooks - select the BirtDate
+[INFO ] 2023-11-03 08:05:10.209 [main] Hooks - select client type
+[INFO ] 2023-11-03 08:05:13.509 [main] Hooks - select the Schedule Group
+[INFO ] 2023-11-03 08:05:16.758 [main] Hooks - select service type
+[INFO ] 2023-11-03 08:05:22.923 [main] Hooks - Clicked on the save data
+[INFO ] 2023-11-03 08:05:22.938 [main] Hooks - Error Message Displayed First Name is required
+[INFO ] 2023-11-03 08:05:23.064 [main] Hooks - Error Message Displayed Address 2 is Required
+[INFO ] 2023-11-03 08:05:23.191 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-06 01:30:48.326 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-06 01:30:59.429 [main] Hooks - Entered Email Address..
+[INFO ] 2023-11-06 01:30:59.585 [main] Hooks - Entered password.
+[INFO ] 2023-11-06 01:30:59.819 [main] Hooks - click on the login button..
+[INFO ] 2023-11-06 01:31:03.908 [main] Hooks - select test community
+[INFO ] 2023-11-06 01:31:04.002 [main] Hooks - click on the continue button
+[INFO ] 2023-11-06 01:31:08.165 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-11-06 01:31:20.887 [main] Hooks - click on the color
+[INFO ] 2023-11-06 01:31:24.222 [main] Hooks - change time for visit
+[INFO ] 2023-11-06 01:31:26.396 [main] Hooks - select move only this occurence
+[INFO ] 2023-11-06 01:31:46.684 [main] Hooks - save the visit
+[INFO ] 2023-11-06 01:31:46.825 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-06 01:31:51.149 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-06 01:32:01.945 [main] Hooks - Entered Email Address..
+[INFO ] 2023-11-06 01:32:02.043 [main] Hooks - Entered password.
+[INFO ] 2023-11-06 01:32:02.293 [main] Hooks - click on the login button..
+[INFO ] 2023-11-06 01:32:06.242 [main] Hooks - select test community
+[INFO ] 2023-11-06 01:32:06.334 [main] Hooks - click on the continue button
+[INFO ] 2023-11-06 01:32:11.784 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-11-06 01:32:23.897 [main] Hooks - click on the color
+[INFO ] 2023-11-06 01:32:27.236 [main] Hooks - change the time
+[INFO ] 2023-11-06 01:33:16.315 [main] Hooks - select move day series..
+[INFO ] 2023-11-06 01:33:22.658 [main] Hooks - save visit..
+[INFO ] 2023-11-06 01:33:22.841 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-06 01:33:26.797 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-06 01:33:37.274 [main] Hooks - Entered Email Address..
+[INFO ] 2023-11-06 01:33:37.383 [main] Hooks - Entered password.
+[INFO ] 2023-11-06 01:33:37.680 [main] Hooks - click on the login button..
+[INFO ] 2023-11-06 01:33:41.601 [main] Hooks - select test community
+[INFO ] 2023-11-06 01:33:41.687 [main] Hooks - click on the continue button
+[INFO ] 2023-11-06 01:33:46.073 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-11-06 01:33:58.665 [main] Hooks - click on the color
+[INFO ] 2023-11-06 01:34:02.032 [main] Hooks - change the time
+[INFO ] 2023-11-06 01:34:51.084 [main] Hooks - select move week series
+[INFO ] 2023-11-06 01:34:57.426 [main] Hooks - save visit..
+[INFO ] 2023-11-06 01:34:57.561 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-06 01:35:02.181 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-06 01:35:19.905 [main] Hooks - Entered Email Address..
+[INFO ] 2023-11-06 01:35:20.023 [main] Hooks - Entered password.
+[INFO ] 2023-11-06 01:35:20.319 [main] Hooks - click on the login button..
+[INFO ] 2023-11-06 01:35:24.335 [main] Hooks - select test community
+[INFO ] 2023-11-06 01:35:24.421 [main] Hooks - click on the continue button
+[INFO ] 2023-11-06 01:35:28.854 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-11-06 01:35:41.414 [main] Hooks - click on visit..
+[INFO ] 2023-11-06 01:35:48.168 [main] Hooks - change a track
+[INFO ] 2023-11-06 01:36:08.182 [main] Hooks - select move only this occurrence
+[INFO ] 2023-11-06 01:36:13.569 [main] Hooks - save visits..
+[INFO ] 2023-11-06 01:36:13.703 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-06 01:36:17.858 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-06 01:36:28.566 [main] Hooks - Entered Email Address..
+[INFO ] 2023-11-06 01:36:28.665 [main] Hooks - Entered password.
+[INFO ] 2023-11-06 01:36:28.960 [main] Hooks - click on the login button..
+[INFO ] 2023-11-06 01:36:33.002 [main] Hooks - select test community
+[INFO ] 2023-11-06 01:36:33.087 [main] Hooks - click on the continue button
+[INFO ] 2023-11-06 01:36:37.382 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-11-06 01:36:50.075 [main] Hooks - click on visit.
+[INFO ] 2023-11-06 01:36:54.322 [main] Hooks - click on delete button.
+[INFO ] 2023-11-06 01:37:04.700 [main] Hooks - pop up is showing and delete the item..
+[INFO ] 2023-11-06 01:37:04.836 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-06 05:32:38.651 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-06 05:32:50.034 [main] Hooks - Entered Email Address..
+[INFO ] 2023-11-06 05:32:50.150 [main] Hooks - Entered password.
+[INFO ] 2023-11-06 05:32:50.322 [main] Hooks - click on the login button..
+[INFO ] 2023-11-06 05:32:54.402 [main] Hooks - select test community
+[INFO ] 2023-11-06 05:32:54.491 [main] Hooks - click on the continue button
+[INFO ] 2023-11-06 05:32:58.539 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-11-06 05:33:06.561 [main] Hooks - click on the color
+[INFO ] 2023-11-06 05:33:26.609 [main] Hooks - change time for visit
+[INFO ] 2023-11-06 05:33:46.624 [main] Hooks - select move only this occurence
+[INFO ] 2023-11-06 05:34:06.798 [main] Hooks - save the visit
+[INFO ] 2023-11-06 05:34:06.927 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-06 05:51:01.914 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-06 05:51:13.230 [main] Hooks - Entered Email Address..
+[INFO ] 2023-11-06 05:51:13.301 [main] Hooks - Entered password.
+[INFO ] 2023-11-06 05:51:13.439 [main] Hooks - click on the login button..
+[INFO ] 2023-11-06 05:51:17.623 [main] Hooks - select test community
+[INFO ] 2023-11-06 05:51:17.713 [main] Hooks - click on the continue button
+[INFO ] 2023-11-06 05:51:21.598 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-11-06 05:51:29.707 [main] Hooks - click on the color
+[INFO ] 2023-11-06 05:51:49.730 [main] Hooks - change time for visit
+[INFO ] 2023-11-06 05:52:09.756 [main] Hooks - select move only this occurence
+[INFO ] 2023-11-06 05:52:29.861 [main] Hooks - save the visit
+[INFO ] 2023-11-06 05:52:29.978 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-06 05:53:55.024 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-06 05:54:05.209 [main] Hooks - Entered Email Address..
+[INFO ] 2023-11-06 05:54:05.358 [main] Hooks - Entered password.
+[INFO ] 2023-11-06 05:54:05.656 [main] Hooks - click on the login button..
+[INFO ] 2023-11-06 05:54:09.643 [main] Hooks - select test community
+[INFO ] 2023-11-06 05:54:09.740 [main] Hooks - click on the continue button
+[INFO ] 2023-11-06 05:54:14.576 [main] Hooks - click on caregiver assignments
+[INFO ] 2023-11-06 05:54:27.148 [main] Hooks - click on the color
+[INFO ] 2023-11-06 05:54:30.475 [main] Hooks - change time for visit
+[INFO ] 2023-11-06 05:54:32.663 [main] Hooks - select move only this occurence
+[INFO ] 2023-11-06 05:54:52.987 [main] Hooks - save the visit
+[INFO ] 2023-11-06 05:54:53.108 [main] Hooks - Browser Closed..
+[ERROR] 2023-11-06 06:24:27.619 [main] Hooks - Test case failed: Verify the Change Time for a Client Visit (Move only this occurrence)
+[INFO ] 2023-11-06 06:24:27.730 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-08 04:48:53.535 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-08 04:49:04.619 [main] Hooks - Entered Email Address
+[INFO ] 2023-11-08 04:49:04.748 [main] Hooks - Entered Password
+[INFO ] 2023-11-08 04:49:05.056 [main] Hooks - click on the login button..
+[INFO ] 2023-11-08 04:49:09.924 [main] Hooks - Select Test Community
+[INFO ] 2023-11-08 04:49:10.028 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-11-08 04:49:11.578 [main] Hooks - Clicked on the manage link
+[INFO ] 2023-11-08 04:49:18.630 [main] Hooks - Clicked on user data table
+[INFO ] 2023-11-08 04:49:24.804 [main] Hooks - edit the notes..
+[INFO ] 2023-11-08 04:49:24.851 [main] Hooks - edit the communities..
+[INFO ] 2023-11-08 04:49:31.254 [main] Hooks - edit the start date..
+[INFO ] 2023-11-08 04:49:37.620 [main] Hooks - edit the start date..
+[INFO ] 2023-11-08 04:49:37.827 [main] Hooks - save the details..
+[INFO ] 2023-11-08 04:49:37.969 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-08 05:17:07.365 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-08 05:17:18.283 [main] Hooks - Entered Email Address
+[INFO ] 2023-11-08 05:17:18.455 [main] Hooks - Entered Password
+[INFO ] 2023-11-08 05:17:18.675 [main] Hooks - click on the login button..
+[INFO ] 2023-11-08 05:17:23.483 [main] Hooks - Select Test Community
+[INFO ] 2023-11-08 05:17:23.581 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-11-08 05:17:25.072 [main] Hooks - Clicked on the manage link
+[INFO ] 2023-11-08 05:17:32.082 [main] Hooks - Clicked on user data table
+[INFO ] 2023-11-08 05:17:38.233 [main] Hooks - edit the notes..
+[INFO ] 2023-11-08 05:17:38.264 [main] Hooks - edit the communities..
+[INFO ] 2023-11-08 05:17:44.616 [main] Hooks - edit the start date..
+[INFO ] 2023-11-08 05:17:50.945 [main] Hooks - edit the start date..
+[INFO ] 2023-11-08 05:17:51.155 [main] Hooks - save the details..
+[INFO ] 2023-11-08 05:17:51.345 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-08 05:17:55.371 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-08 05:18:06.248 [main] Hooks - Entered Email Address
+[INFO ] 2023-11-08 05:18:06.331 [main] Hooks - Entered Password
+[INFO ] 2023-11-08 05:18:06.579 [main] Hooks - click on the login button..
+[INFO ] 2023-11-08 05:18:11.453 [main] Hooks - Select Test Community
+[INFO ] 2023-11-08 05:18:11.547 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-11-08 05:18:13.122 [main] Hooks - Clicked on the manage link
+[INFO ] 2023-11-08 05:18:20.106 [main] Hooks - Clicked on user data table
+[INFO ] 2023-11-08 05:18:20.406 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-08 05:20:28.967 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-08 05:20:41.710 [main] Hooks - Entered Email Address
+[INFO ] 2023-11-08 05:20:41.842 [main] Hooks - Entered Password
+[INFO ] 2023-11-08 05:20:42.063 [main] Hooks - click on the login button..
+[INFO ] 2023-11-08 05:20:46.922 [main] Hooks - Select Test Community
+[INFO ] 2023-11-08 05:20:47.012 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-11-08 05:20:48.762 [main] Hooks - Clicked on the manage link
+[INFO ] 2023-11-08 05:20:56.597 [main] Hooks - Clicked on user data table
+[INFO ] 2023-11-08 05:21:00.979 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-16 02:18:37.998 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-16 02:18:49.083 [main] Hooks - Entered Email Address
+[INFO ] 2023-11-16 02:18:49.165 [main] Hooks - Entered Password
+[INFO ] 2023-11-16 02:18:49.394 [main] Hooks - click on the login button..
+[INFO ] 2023-11-16 02:19:09.461 [main] Hooks - Select Test Community
+[INFO ] 2023-11-16 02:19:29.490 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-11-16 02:19:59.510 [main] Hooks - Clicked on the manage link
+[INFO ] 2023-11-16 02:20:29.547 [main] Hooks - Clicked on user data table
+[INFO ] 2023-11-16 02:21:39.542 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-20 02:55:42.391 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-20 02:55:55.751 [main] Hooks - Entered Email Address
+[INFO ] 2023-11-20 02:55:55.953 [main] Hooks - Entered Password
+[INFO ] 2023-11-20 02:55:56.173 [main] Hooks - click on the login button..
+[INFO ] 2023-11-20 02:56:16.241 [main] Hooks - Select Test Community
+[INFO ] 2023-11-20 02:56:36.299 [main] Hooks - Clicked on Continue button
+[INFO ] 2023-11-20 02:57:06.308 [main] Hooks - Clicked on the manage link
+[INFO ] 2023-11-20 02:57:36.342 [main] Hooks - Clicked on user data table
+[INFO ] 2023-11-20 02:59:06.598 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-24 00:32:02.804 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-24 00:32:24.034 [main] Hooks - user enter the blank email address and invalid password..
+[INFO ] 2023-11-24 00:32:24.185 [main] Hooks - user click on the login button..
+[INFO ] 2023-11-24 00:32:44.254 [main] Hooks - error message is showing
+[INFO ] 2023-11-24 00:32:44.442 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-27 00:27:40.052 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-27 00:27:52.464 [main] Hooks - user enter the blank email address and invalid password..
+[INFO ] 2023-11-27 00:27:52.625 [main] Hooks - user click on the login button..
+[INFO ] 2023-11-27 00:28:12.663 [main] Hooks - error message is showing
+[INFO ] 2023-11-27 00:28:12.791 [main] Hooks - Browser Closed..
+[INFO ] 2023-11-27 00:31:24.526 [main] Hooks - Browser Launched..
+[INFO ] 2023-11-27 00:31:37.702 [main] Hooks - user enter the blank email address and invalid password..
+[INFO ] 2023-11-27 00:31:37.976 [main] Hooks - user click on the login button..
+[INFO ] 2023-11-27 00:31:58.124 [main] Hooks - error message is showing
+[INFO ] 2023-11-27 00:31:58.256 [main] Hooks - Browser Closed..

@@ -137,6 +137,7 @@ public class VisitPlansPage extends BaseClass  {
 				Thread.sleep(6000);
 		}
 		catch (Exception e) {
+			e.printStackTrace();
 			return true;
 		}
 		return false;	
@@ -260,26 +261,21 @@ public class VisitPlansPage extends BaseClass  {
 		try {
 		LocalDateTime targetDate = LocalDateTime.now().plusDays(1);
         String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
-
         WebElement startDateField = driver.findElement(By.id("visit-start-date"));
         startDateField.click();
 
         for (int i = 1; i <= 10; i++) {
             startDateField.sendKeys(Keys.BACK_SPACE);
         }
-
         startDateField.sendKeys(targetDateString);
         Thread.sleep(4000);
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-			
-		
+		}		
 	}
 	
 	public void click_on_the_save_button() throws InterruptedException {
-		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement SaveData=driver.findElement(By.xpath("//button[@id='SaveNewVisit']"));
 		
@@ -298,7 +294,7 @@ public class VisitPlansPage extends BaseClass  {
 		
 	}
 	
-	public void validation_message_should_be_shown_visit_plan_was_saved1() {
+	public void validation_message_should_be_shown_visit_plan_was_saved1() throws Exception {
 		try {
 		String expectedResult= "Visit Plan was saved.";
 		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
@@ -307,8 +303,7 @@ public class VisitPlansPage extends BaseClass  {
 		catch (Exception e) {
 			e.printStackTrace();
 			
-		}
-		
+		}			
 	} 
 	
 	
@@ -1149,7 +1144,7 @@ public class VisitPlansPage extends BaseClass  {
 		
 	}
 	
-	public boolean click_on_the_add_to_schedule_button_and_finalize_visits() throws InterruptedException {
+	public boolean click_on_the_add_to_schedule_button_and_finalize_visits() throws Exception {
 		
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("window.scrollBy(0, 50000)");
@@ -1195,6 +1190,7 @@ public class VisitPlansPage extends BaseClass  {
 		 e.printStackTrace();
 		 
 	 }
+		MyScreenRecording.stopRecording();
 		return false;
 		
 	}
@@ -1218,11 +1214,11 @@ public class VisitPlansPage extends BaseClass  {
 		} catch (Exception e) {
 		    e.printStackTrace(); 
 		}
+		
 	}
 	
 	
 	public void click_on_the_user_table() throws InterruptedException {
-
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
 		
@@ -1234,10 +1230,6 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void delete_the_everyday_visit_series() throws InterruptedException {
-		/*WebElement DeleteBtn=driver.findElement(By.xpath("//a[@class='btn btn-danger btn-sm e-flat dripicons-trash']"));
-		DeleteBtn.click();
-		Thread.sleep(7000);*/
-		
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		    WebElement DeleteBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='btn btn-danger btn-sm e-flat dripicons-trash']")));
@@ -1928,7 +1920,7 @@ public class VisitPlansPage extends BaseClass  {
 	
 	//custom date 
 
-	public void check_the_add_visit_configuration_button() throws InterruptedException {
+	public void check_the_add_visit_configuration_button() throws Exception {
 		try {
 		WebElement AddVisitBtn=	driver.findElement(By.xpath("(//a[normalize-space()='Add Visit Configuration'])[1]"));
 		AddVisitBtn.click();
@@ -1937,7 +1929,8 @@ public class VisitPlansPage extends BaseClass  {
 		catch (Exception e) {
 			e.printStackTrace();
 		}
-	    
+		
+		MyScreenRecording.startRecording("Add Custom Date");
 	}
 	
 	public boolean user_select_single_days() throws InterruptedException {
@@ -1946,13 +1939,12 @@ public class VisitPlansPage extends BaseClass  {
 			WebElement dropdown=driver.findElement(By.id("daysofweek"));
 				dropdown.click();
 				Thread.sleep(6000);
-				
 				WebElement dropdown2 =driver.findElement(By.xpath("//*[@id=\"daysofweek_popup\"]/div[2]/ul/li[2]"));
-				
 				dropdown2.click();
 				Thread.sleep(6000);
 		}
 		catch (Exception e) {
+			e.printStackTrace();
 			return true;
 		}
 		return false;
@@ -2048,14 +2040,11 @@ public class VisitPlansPage extends BaseClass  {
 		try {
 		LocalDateTime targetDate = LocalDateTime.now().plusDays(generateRandomNumber(2,100));
 	    String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
-
 	    WebElement endDateField = driver.findElement(By.xpath("//input[@id='visit-end-date']"));
 	    endDateField.click();
-
 	    for (int i = 1; i <= 10; i++) {
 	        endDateField.sendKeys(Keys.BACK_SPACE);
-	    }
-	    
+	    }  
 	   endDateField.sendKeys(targetDateString);
 	   Thread.sleep(6000);
 		}
@@ -2065,23 +2054,17 @@ public class VisitPlansPage extends BaseClass  {
 				
 	}
 	private static int generateRandomNumber(int start, int end) {
-
-	    Random random = new Random();
-	    
+	    Random random = new Random(); 
 	    if (start > end) {
 	        throw new IllegalArgumentException("Start value must be less than or equal to the end value.");
 	    }
-
 	    int range = end - start + 1;
-
 	    int randomNumber = random.nextInt(range) + start;
-
 	    return randomNumber;
 	}
 		
 	
 	public void save_the_visits_details() throws InterruptedException {
-	
 		WebElement SaveBtn =driver.findElement(By.xpath("//button[@id='SaveNewVisit']"));
 		Thread.sleep(4000);
 		SaveBtn.click();
@@ -2097,7 +2080,7 @@ public class VisitPlansPage extends BaseClass  {
 		Thread.sleep(8000);
 	}
 	
-	public void message_should_be_shown_visit_plan_was_saved3() {
+	public void message_should_be_shown_visit_plan_was_saved3() throws Exception {
 		try {
 		String expectedResult= "Visit Plan was saved.";
 		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
@@ -2105,7 +2088,9 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 		e.printStackTrace();
-		}		
+		}	
+		
+		MyScreenRecording.stopRecording();
 	}
 	
 	public void click_on_the_single_day_table() throws InterruptedException {
@@ -2174,7 +2159,7 @@ public class VisitPlansPage extends BaseClass  {
 	
 	
 	// Change A visit Duration For Everyday
-	public void click_on_the_visit_table() throws InterruptedException {
+	public void click_on_the_visit_table() throws Exception {
 		try {
 		WebElement tableClk= driver.findElement(By.xpath("//a[normalize-space()='Every Day']"));
 		tableClk.click();
@@ -2183,6 +2168,8 @@ public class VisitPlansPage extends BaseClass  {
 		catch (Exception e) {
 			e.printStackTrace();
 		}
+		
+		MyScreenRecording.startRecording("Change Duration -Everyday visit");
 	}
 	
 	public void change_the_visit_duration_as_30_minute_visit() throws InterruptedException {
@@ -2224,7 +2211,7 @@ public class VisitPlansPage extends BaseClass  {
 		
 	}
 	
-	public void message_should_be_shown_visit_plan_was_saved7() {
+	public void message_should_be_shown_visit_plan_was_saved7() throws Exception {
 		try {
 		String expectedResult= "Visit Plan was saved.";
 		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
@@ -2234,11 +2221,12 @@ public class VisitPlansPage extends BaseClass  {
 			e.printStackTrace();
 		}
 		
+		MyScreenRecording.stopRecording();
 	}
 	
 	
 	//Single Change Duration
-	public void click_on_the_single_visit_table() throws InterruptedException {
+	public void click_on_the_single_visit_table() throws Exception {
 		try {
 		WebElement tableclick =	driver.findElement(By.xpath("//a[normalize-space()='Mon']"));
 		tableclick.click();
@@ -2247,6 +2235,8 @@ public class VisitPlansPage extends BaseClass  {
 		catch (Exception e) {
 			e.printStackTrace();
 		}
+		
+		MyScreenRecording.startRecording("Change Duration -Single visit");
 	}
 	
 	public void change_the_visit_duration_as_45_minute_visit() throws InterruptedException {
@@ -2278,7 +2268,7 @@ public class VisitPlansPage extends BaseClass  {
 		Thread.sleep(8000);
 	}
 	
-	public void validation_message_should_be_shown_visit_plan_was_saved2() {
+	public void validation_message_should_be_shown_visit_plan_was_saved2() throws Exception {
 		try {
 		String expectedResult= "Visit Plan was saved.";
 		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
@@ -2289,12 +2279,13 @@ public class VisitPlansPage extends BaseClass  {
 			
 		}
 		
+		MyScreenRecording.stopRecording();
 	}
 	
 	
-	//Delete for Everyday
+	//Delete for Everyday visit Series
 	
-	public void user_click_on_the_delete_icon() throws InterruptedException {
+	public void user_click_on_the_delete_icon() throws Exception {
 		
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
@@ -2302,13 +2293,12 @@ public class VisitPlansPage extends BaseClass  {
 		    DeleteBtn.click();
 		} catch (Exception e) {
 		    e.printStackTrace(); 
-		}
-
+		}	
 		
+		MyScreenRecording.startRecording("Delete EveryDay Visit Series");	
 	}
 		
 	public void delete_visit_configurations_pop_up_is_opened_and_click_on_the_delete_button() throws InterruptedException {
-		
 		WebElement DeletePopUp=	driver.findElement(By.xpath("//input[@value='Delete']"));
 		DeletePopUp.click();
 		try {
@@ -2322,7 +2312,6 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void save_the_delete_visit_series() throws InterruptedException {
-		
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		    WebElement DeleteVisitSeries = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='SaveVisit']")));
@@ -2333,7 +2322,7 @@ public class VisitPlansPage extends BaseClass  {
 	
 	}
 	
-	public void message_should_be_shown_visit_plan_was_saved8() {
+	public void message_should_be_shown_visit_plan_was_saved8() throws Exception {
 		try {
 		String expectedResult= "Visit Plan was saved.";
 		String actualResult= driver.findElement(By.xpath("//div[@class='e-toast-content']")).getText();
@@ -2344,12 +2333,12 @@ public class VisitPlansPage extends BaseClass  {
 			
 		}
 		
+		MyScreenRecording.stopRecording();
 	}
 	
-	
-	
+		
 //delete for single series
-	public void click_on_the_delete_Icon_and_Pop_is_displayed_confirm_that_you_want_to_delete_this_item() throws InterruptedException{
+	public void click_on_the_delete_Icon_and_Pop_is_displayed_confirm_that_you_want_to_delete_this_item() throws Exception{
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		    WebElement DeleteIcon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='btn btn-danger btn-sm e-flat dripicons-trash']")));
@@ -2358,10 +2347,11 @@ public class VisitPlansPage extends BaseClass  {
 		    e.printStackTrace(); 
 		}
 		
+		MyScreenRecording.startRecording("Delete Single Visit Series");
+		
 	}
 	
 	public void click_on_the_delete_button() throws InterruptedException {
-		
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		    WebElement DeleteIcon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//button[normalize-space()='Delete'])[1]")));
 		    DeleteIcon.click();
@@ -2373,7 +2363,6 @@ public class VisitPlansPage extends BaseClass  {
 	}
 	
 	public void save_the_single_delete_visit_series() throws InterruptedException  {
-		
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		    WebElement DeleteVisitSeries = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='SaveVisit']")));

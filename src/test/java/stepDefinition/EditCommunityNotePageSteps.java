@@ -1,6 +1,7 @@
 package stepDefinition;
 
 import base.BaseClass;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,8 +11,6 @@ public class EditCommunityNotePageSteps extends BaseClass {
 	
 	EditCommunityNotePage edit = new EditCommunityNotePage();
 	
-	
-
 	@Given("Enter the Email")
 	public void enter_the_email() throws Exception {
 	    try {
@@ -99,5 +98,22 @@ public class EditCommunityNotePageSteps extends BaseClass {
 	    log.info("save the details..");
 	}
 
+	@Given ("When attempting to edit a community note with an empty note field")
+	public void when_attempting_to_edit_a_community_note_with_an_empty_note_field() {
+		edit.when_attempting_to_edit_a_community_note_with_an_empty_note_field();
+		
+	}
+	
+	@And ("Save the Community Note")
+	public void save_the_community_note() {
+		edit.save_the_community_note();
+		
+	}
+	
+	@Then ("Error Message Is displyed The Note field is required")
+	public void error_message_is_displyed_the_note_field_is_required() {
+		edit.error_message_is_displyed_the_note_field_is_required();
+		
+	}
 }
 

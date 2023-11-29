@@ -92,9 +92,9 @@ public class LoginPage extends BaseClass {
 	catch (Exception e) {
 		e.printStackTrace();
 	}
-		 
-		 
+		 	 
 	}
+	
 		public void click_on_the_logout_button() throws InterruptedException {
 			
 		By errorElementLocator = By.xpath("//*[contains(text(), 'An unhandled error has occurred.')]");
@@ -126,7 +126,6 @@ public class LoginPage extends BaseClass {
 		}
 		
 		MyScreenRecording.stopRecording();
-	
 		}
 		
 		public void User_Enter_the_Email_and_Password(String email, String pass) throws Exception {

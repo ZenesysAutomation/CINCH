@@ -2,6 +2,7 @@ package stepDefinition;
 
 import base.BaseClass;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import page.AddClientPage;
@@ -275,5 +276,109 @@ public class AddClientSteps extends BaseClass{
 		
 	}
 	
+	@Given ("User Enter the Email and Password")
+	public void user_enter_the_email_and_password() throws Exception {
+		steps.user_enter_the_email_and_password();
+		log.info("entered email and password");
+	}
+	
+	@When ("User Login the Application")
+	public void user_login_the_application() {
+		steps.user_login_the_application();
+		log.info("click on the login");
+	}
+	
+	@Then ("Choose the Test Community")
+	public void choose_the_test_community() throws InterruptedException {
+		steps.choose_the_test_community();
+		log.info("Select Test Community");
+	}
+	
+	
+	@And ("User click on Continue Button")
+	public void user_click_on_continue_button () {
+		steps.user_click_on_continue_button ();
+		log.info("click on the continue button");
+	}
+	
+	
+	@And ("Click on the Client Button")
+	public void click_on_the_client_button() {
+		steps.click_on_the_client_button();
+		log.info("click on the clients button");
+	}
+	
+	
+	@And ("Click on the Add New Client")
+	public void click_on_the_add_new_client() {
+		steps.click_on_the_add_new_client();
+		log.info("click on the add new client");
+	}
+	
+	@And ("Leave the First Name Fields Empty")
+	public void leave_the_first_name_fields_empty() {
+		steps.leave_the_first_name_fields_empty();
+		log.info("leave the first name fields Empty");
+	}
+	
+	@And ("Enter the Last Name")
+	public void enter_the_last_name() {
+		steps.enter_the_last_name();
+		log.info("Entered Last Name");
+	}
+	
+	@And ("Leave the Address Line2 Fields Empty")
+	public void leave_the_address_line2_fields_empty() {
+		steps.leave_the_address_line2_fields_empty();
+		log.info("leave line2 address fields empty");
+	}
+	
+	@And ("Select the Gender")
+	public void select_the_gender() {
+		steps.select_the_gender();
+		log.info("Select the Gender");
+	}
+	
+	@And ("Select the BirthDate")
+	public void select_the_birthDate() {
+		steps.select_the_birthDate();
+		log.info("select the BirtDate");
+	}
+	
+	@And ("Select the Client Type")
+	public void select_the_client_type() {
+		steps.select_the_client_type();
+		log.info("select client type");
+	}
+	
+	@And ("Select the Schedule Group")
+	public void select_the_schedule_group() {
+		steps.select_the_schedule_group();
+		log.info("select the Schedule Group");
+	}
+	
+	@And ("Select Service Type")
+	public void select_service_type() {
+		steps.select_service_type();
+		log.info("select service type");
+	}
+	
+	@And ("Save the data")
+	public void save_the_data() throws InterruptedException {
+		steps.save_the_data();
+		log.info("Clicked on the save data");
+	}
+	
+	@Then ("Error Message Displayed First Name is required")
+	public void error_message_displayed_first_name_is_required() {
+		steps.error_message_displayed_first_name_is_required();
+		log.info("Error Message Displayed First Name is required");
+	}
+	
+	@Then ("Error Message Displayed Address2 is required")
+	public void error_message_displayed_address2_is_required() throws Exception {
+		steps.error_message_displayed_address2_is_required();
+		log.info("Error Message Displayed Address 2 is Required");
+	}
 	
 }

@@ -1,5 +1,7 @@
 package page;
 
+import static org.junit.Assert.assertEquals;
+
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -188,7 +190,48 @@ public void click_on_the_save_button() throws Exception {
 	MyScreenRecording.stopRecording();
 	    
 	}
-	   
+	  
+
+public void when_attempting_to_edit_a_community_note_with_an_empty_note_field() {
+	try {
+		WebElement txtUpdateNote = driver.findElement(By.id("note"));
+	    txtUpdateNote.clear();
+	    txtUpdateNote.sendKeys(prop.getProperty(""));
+	    txtUpdateNote.click();
+	    Thread.sleep(6000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+
+public void save_the_community_note() {
+	try {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebElement savebtn=driver.findElement(By.xpath("//button[contains(text(),'Save')]"));
+		wait.until(ExpectedConditions.elementToBeClickable(savebtn));
+		Thread.sleep(4000);
+		savebtn.click();
+		
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
+	
+}
+
+public void error_message_is_displyed_the_note_field_is_required() {
+	try {
+		String Expectedresult = "The Note field is required.";
+		String Actualresult=driver.findElement(By.xpath("//div[@class='validation-message']")).getText();
+		assertEquals("error message is showing",Expectedresult,Actualresult);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+	}
+}
+
 }
 
 

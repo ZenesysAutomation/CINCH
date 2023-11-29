@@ -1,14 +1,18 @@
 package runner;
 import org.junit.runner.RunWith;
+import TestData.UpdateTestDataProperties;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/java/features",tags="@TestInvalid", publish = true, monochrome = true, dryRun = false,
+@CucumberOptions(features="src/test/java/features",tags="@TestBlank", publish = true, monochrome = true, dryRun = false,
 plugin= {"pretty","html:target/TestReport/test.html","json:target/cucumber-report/cucumber.json"},glue= {"stepDefinition","base"})
 
 public class RunnerFileTest {
-		 
+	
+	public static void main(String[] args) {
+        UpdateTestDataProperties.updateTestDataProperties();
+    }
 }
 
 

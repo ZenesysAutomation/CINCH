@@ -70,7 +70,6 @@ public void user_select_the_test_community() throws InterruptedException {
     
 }
 public void user_click_on_the_continue() throws InterruptedException {
-	
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
 	wait.until(ExpectedConditions.elementToBeClickable(Continue));
@@ -114,12 +113,10 @@ public void click_on_the_user_data_table() throws InterruptedException {
 	}
 
 public void click_on_the_assessment_and_care_plan() throws InterruptedException {
-	
 	if(!isAssessmentandCarePlanPresent()){
 		 driver.findElement(By.xpath("//button[normalize-space()='Assessment and Care Plan']")).click();
-	}
-		
-else {
+	}	
+	else {
 	driver.navigate().back();
 	Thread.sleep(5000);
 	List<WebElement> table=driver.findElements(By.className("e-row"));
@@ -149,15 +146,11 @@ else {
 }
 
 private boolean isAssessmentandCarePlanPresent() {
-	
     try {
     	WebElement element = driver.findElement(By.xpath("//button[normalize-space()='Assessment and Care Plan']"));
     	 boolean isDisabled = !element.isEnabled();
-
         return isDisabled;
-        
     } catch (org.openqa.selenium.NoSuchElementException e) {
-    	
         return false;
     }
 }
@@ -165,19 +158,16 @@ private boolean isAssessmentandCarePlanPresent() {
 		public void user_enter_the_assessment_date() throws InterruptedException {
 		LocalDateTime targetDate = LocalDateTime.now().plusDays(1);
         String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
-
         WebElement startDateField = driver.findElement(By.xpath("//input[@id='assessment-date']"));
         startDateField.click();
-
         for (int i = 1; i <= 10; i++) {
             startDateField.sendKeys(Keys.BACK_SPACE);
         }
-
         startDateField.sendKeys(targetDateString);
         Thread.sleep(8000);
-			
-		
+			     
 	}
+		
 			public void user_enter_the_visit_schedule() throws InterruptedException 
 			{
 			    try {
@@ -261,8 +251,7 @@ private boolean isAssessmentandCarePlanPresent() {
 				}
 				catch (Exception e) {
 					e.printStackTrace();
-				}
-			    
+				}	    
 			}
 			
 			public void user_click_on_the_client_status_tab() throws InterruptedException 
@@ -277,7 +266,7 @@ private boolean isAssessmentandCarePlanPresent() {
 			}
 
 			public void user_enter_the_condition_notes() throws InterruptedException 
-			{
+				{
 				try {
 				WebElement ConditionNotes =	driver.findElement(By.xpath("//textarea[@id='conditionnotes']"));
 				Thread.sleep(4000);
@@ -290,7 +279,7 @@ private boolean isAssessmentandCarePlanPresent() {
 			}
 
 			public void user_enter_the_recent_hospital_rehab_stays() throws InterruptedException 
-			{
+				{
 				try {
 				WebElement rcnthospital =driver.findElement(By.xpath("//textarea[@id='recenthospital']"));
 				rcnthospital.clear();
@@ -412,7 +401,6 @@ private boolean isAssessmentandCarePlanPresent() {
 			
 			public void user_enter_the_bathing_deatils() throws InterruptedException
 			{
-				
 				try {
 				WebElement Bathing=	driver.findElement(By.xpath("//textarea[@id='bathing']"));
 				Bathing.clear();
@@ -447,8 +435,7 @@ private boolean isAssessmentandCarePlanPresent() {
 				}
 				catch (Exception e) {
 					e.printStackTrace();
-				}
-				
+				}		
 			}
 
 			public void user_enter_the_continence_toileting() throws InterruptedException
@@ -488,8 +475,7 @@ private boolean isAssessmentandCarePlanPresent() {
 				}
 				catch (Exception e) {
 					e.printStackTrace();
-				}
-			    
+				}	    
 			}
 
 			public void user_enter_the_laundry_details() throws InterruptedException
@@ -558,8 +544,7 @@ private boolean isAssessmentandCarePlanPresent() {
 				}
 				catch (Exception e) {
 					e.printStackTrace();
-				}
-				  
+				}			  
 			}
 
 			public void enter_the_economics_status() throws InterruptedException
@@ -644,13 +629,10 @@ private boolean isAssessmentandCarePlanPresent() {
                 builder.release();
                 // Perform the actions
                 builder.build().perform();
-                Thread.sleep(10000);
-				
-				
+                Thread.sleep(10000);		
 			}
 			
 			public void sign_as_a_client() throws InterruptedException {
-				
 				   WebElement canvaas2 = driver.findElement(By.xpath("(//canvas[@aria-label='signature'])[2]"));
 				   Thread.sleep(10000);
 	                // Create an instance of the Actions class
@@ -669,11 +651,9 @@ private boolean isAssessmentandCarePlanPresent() {
 	                builder2.moveByOffset(20, 0);
 	                // Release the left mouse button
 	                builder2.release();
-	                // Perform the actions
-	                
+	                // Perform the actions 
 	                builder2.build().perform();
-	                Thread.sleep(10000);
-				
+	                Thread.sleep(10000);		
 			}
 
 			public void click_on_the_save_signature_button() throws InterruptedException {

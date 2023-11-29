@@ -36,8 +36,7 @@ import io.netty.handler.timeout.TimeoutException;
 		}
 		
 		catch (TimeoutException e ) {
-			 e.printStackTrace();
-		
+			 e.printStackTrace();	
 	}
 	}
 	
@@ -63,8 +62,7 @@ import io.netty.handler.timeout.TimeoutException;
 	catch (Exception e) {
 		e.printStackTrace();
 	}
-	
-	
+		
 }
 	public void user_click_on_the_continue_button() throws InterruptedException {
 		try {
@@ -171,7 +169,7 @@ import io.netty.handler.timeout.TimeoutException;
 	            	p.click();
 					Thread.sleep(5000);
 					return;
-				}
+			}
 		}
 		}
 		catch(Exception e) {
@@ -220,7 +218,9 @@ import io.netty.handler.timeout.TimeoutException;
 			e.printStackTrace();
 }
 	MyScreenRecording.stopRecording();	
+	
 }
+	
 		public void check_if_color_is_blue_and_active_visit_then_click_on_it2() throws InterruptedException {
 		List<WebElement> blueElements=driver.findElements(By.className("text-wrap"));
 		Thread.sleep(2000);
@@ -469,7 +469,7 @@ import io.netty.handler.timeout.TimeoutException;
 	
 	public void select_the_option_move_week_series() throws InterruptedException {
 	try {
-	List<WebElement> SelectMoveDayseries=	driver.findElements(By.cssSelector(".form-check-label"));
+	List<WebElement> SelectMoveDayseries=driver.findElements(By.cssSelector(".form-check-label"));
 	Thread.sleep(3000);
 	List<WebElement> checkboxList=	driver.findElements(By.cssSelector(".form-check-input"));
 	 for (int i=1;i<=SelectMoveDayseries.size();i++) {

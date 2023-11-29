@@ -2,8 +2,7 @@ C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\ScreenRecorder\
 C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\stepDefinition\DataBaseSteps.java
 C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\TestData\UpdateTestDataProperties.java
 C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\page\LoginPage.java
-C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\DB\DataFetcher.java
-C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\DB\Utility.java
+C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\dataBase\Utility.java
 C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\page\AssessmentsCarePlansPage.java
 C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\runner\RunnerFileTest.java
 C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\stepDefinition\AddCommunityNotePageSteps.java
@@ -11,6 +10,7 @@ C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\page\AddClientP
 C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\page\CaregiverAssignmentsPage.java
 C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\stepDefinition\EditClientSteps.java
 C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\stepDefinition\EditCommunityNotePageSteps.java
+C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\dataBase\DataFetcher.java
 C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\page\AddCommunityNotePage.java
 C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\stepDefinition\AssessmentsCarePlansSteps.java
 C:\Users\AnoopKumar\eclipse-workspace\COM.CINCHCCM\src\test\java\page\EditCommunityNotePage.java

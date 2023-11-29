@@ -554,7 +554,232 @@ public void save_the_new_contact_details()throws InterruptedException {
 		MyScreenRecording.stopRecording();
 	}
  
- 
-
+ public void user_enter_the_email_and_password() throws Exception {
+	 try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+			WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
+			 Useremail.sendKeys(prop.getProperty("username"));
+			}
+			 catch (TimeoutException e ) {
+				 e.printStackTrace();			 
+		}
+			
+	 try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			WebElement Password= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
+			Password.sendKeys(prop.getProperty("password"));
+			}
+			catch (TimeoutException e ) {
+				 e.printStackTrace();		
+		}   
+	 MyScreenRecording.startRecording("Add Client-Negative Test");
  }
+		
+	
+ 
+ public void user_login_the_application() {
+	 try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
+			 wait.until(ExpectedConditions.elementToBeClickable(Login));
+			 Login.click();
+			}
+			catch (TimeoutException e) {
+				 System.out.println("Login button was not clickable within 20 seconds.");
+			}
+				   
+	}
+ 
+ public void choose_the_test_community() throws InterruptedException {
+	 try {
+			WebElement Dropdown=driver.findElement(By.xpath("//span[@role='listbox']"));
+			Dropdown.sendKeys("Test Community");
+			Thread.sleep(2000);
+			}
+			catch (TimeoutException e) {
+				e.printStackTrace();
+			}
+			   
+	}
+ 
+ public void user_click_on_continue_button () {
+	 try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
+			wait.until(ExpectedConditions.elementToBeClickable(Continue));
+			Continue.click();
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}
+	}
+ 
+ public void click_on_the_client_button() {
+	 try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			WebElement Clientbtn=driver.findElement(By.xpath("//span[normalize-space()='Clients']"));
+			wait.until(ExpectedConditions.elementToBeClickable(Clientbtn));
+			Clientbtn.click();
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}
+	}
+ 
+ public void click_on_the_add_new_client() {
+	 try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			WebElement Addnewclnt=driver.findElement(By.xpath("(//a[normalize-space()='Add New Client'])[1]"));
+			wait.until(ExpectedConditions.elementToBeClickable(Addnewclnt));
+			Addnewclnt.click();
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}
+	}
+ 
+ public void leave_the_first_name_fields_empty() {
+	 try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			WebElement  FName = driver.findElement(By.xpath("//input[@id='firstname']"));
+			wait.until(ExpectedConditions.visibilityOf(FName));
+			FName.sendKeys(prop.getProperty(""));
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}
+	}
+ 
+ public void enter_the_last_name() {
+	 try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			WebElement  LName = driver.findElement(By.xpath("//input[@id='lastname']"));
+			wait.until(ExpectedConditions.visibilityOf(LName));
+			LName.sendKeys(prop.getProperty("LastName"));
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}
+	}
+ 
+ public void leave_the_address_line2_fields_empty() {
+	 try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			WebElement  Addline2 = driver.findElement(By.xpath("//input[@id='address2']"));
+			wait.until(ExpectedConditions.visibilityOf(Addline2));
+			Addline2.sendKeys(prop.getProperty(""));
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+		}	
+	}
+ 
+ public void select_the_gender() {
+	 try {
+		  WebElement Gender=  driver.findElement(By.xpath("//span[@aria-owns='gender_options']"));
+		  Thread.sleep(2000);
+		  Gender.click();
+		  Gender.sendKeys("Male");	
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}	
+	}
+ 
+ public void select_the_birthDate() {
+	 try {
+		    WebElement DOB = driver.findElement(By.xpath("//input[@id='birthdate']"));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		    wait.until(ExpectedConditions.elementToBeClickable(DOB));
+		    DOB.sendKeys(prop.getProperty("Birthdate"));
+		} catch (Exception e) {
+		    e.printStackTrace();
+		}
+		
+	}
+ 
+ public void select_the_client_type() {
+	 try {
+			WebElement ddlClienttypeBtn = driver.findElement(By.id("clientype"));
+		    ddlClienttypeBtn.sendKeys("Nursing Services");
+		    Thread.sleep(2000);
+		    WebElement ddlClienttydpeBtn = driver.findElement(By.xpath("//*[@id=\"clientype_popup\"]/div/ul/li[2]"));
+		    ddlClienttydpeBtn.click();
+		    Thread.sleep(3000);
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}
+	}
+ 
+ public void select_the_schedule_group() {
+	 try {
+			WebElement ScheduleGroupBtn = driver.findElement(By.xpath("//span[contains(@aria-owns,'scheduleGroup_options')]"));
+			ScheduleGroupBtn.click();
+		    ScheduleGroupBtn.sendKeys("East Wing");
+		    ScheduleGroupBtn.click();
+		    Thread.sleep(3000);		
+
+			}
+				catch (Exception e) {
+				e.printStackTrace();
+			}
+	 								
+	}
+ 
+ public void select_service_type() {
+	 try {
+		  WebElement Servicetype = driver.findElement(By.xpath("(//span[contains(@role,'listbox')])[7]"));
+		  Servicetype.click();
+		  Servicetype.sendKeys("Community");
+		  Servicetype.click();
+		  Thread.sleep(3000);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+ 
+ public void save_the_data() throws InterruptedException {
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	 	WebElement Savebtn=driver.findElement(By.xpath("//button[@id='ClientSave']"));
+		 wait.until(ExpectedConditions.elementToBeClickable(Savebtn));
+		 Savebtn.click();
+		 Thread.sleep(3000);
+		 
+		 JavascriptExecutor js = (JavascriptExecutor) driver;
+	        js.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
+			Thread.sleep(3000);
+ 	}
+ 
+ public void error_message_displayed_first_name_is_required() {
+	 try {
+			String Expectedresult = "First Name is required";
+			String Actualresult=driver.findElement(By.xpath("(//div[normalize-space()='First Name is required'])[1]")).getText();
+			assertEquals("error message showing",Expectedresult,Actualresult);
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}	
+	}
+ 
+ public void error_message_displayed_address2_is_required() throws Exception {
+		
+	 try {
+			String Expectedresult = "Address2 is required";
+			String Actualresult=driver.findElement(By.xpath("(//div[normalize-space()='Address2 is required'])[1]")).getText();
+			assertEquals("error message showing",Expectedresult,Actualresult);
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}	
+	 MyScreenRecording.stopRecording();
+	 
+		}
+ }
+
+
+
+
 

@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -120,7 +121,7 @@ public class AddCommunityNotePage extends BaseClass {
 		e.printStackTrace();
 	}
     
-}
+		}
 
 	public void select_communities() throws InterruptedException {
 	try {
@@ -132,7 +133,7 @@ public class AddCommunityNotePage extends BaseClass {
 	catch (Exception e) {
 		e.printStackTrace();
 	}	   
-}
+		}
 
 	public void choose_a_start_date() throws InterruptedException {
 		try {	
@@ -145,9 +146,9 @@ public class AddCommunityNotePage extends BaseClass {
 		catch (Exception e) {
 			e.printStackTrace();
 		}
-}
+	}
 
-	public void choose_a_end_date() throws InterruptedException {
+	public void choose_an_end_date() throws InterruptedException {
 	
 	LocalDateTime targetDate = LocalDateTime.now().plusDays(generateRandomNumber(2,100));
     String targetDateString = targetDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
@@ -162,7 +163,7 @@ public class AddCommunityNotePage extends BaseClass {
    endDateField.sendKeys(targetDateString);
    Thread.sleep(6000);
 			
-}
+	}
 	private static int generateRandomNumber(int start, int end) {
     Random random = new Random(); 
     if (start > end) {
@@ -171,7 +172,7 @@ public class AddCommunityNotePage extends BaseClass {
     int range = end - start + 1;
     int randomNumber = random.nextInt(range) + start;
     return randomNumber;
-}
+	}
 	
 	public void click_on_the_save_button() throws InterruptedException {
 		try {
@@ -182,7 +183,7 @@ public class AddCommunityNotePage extends BaseClass {
 		catch (Exception e) {
 			e.printStackTrace();
 		}
-}
+	}
 	
 	public void community_note_was_created_message_should_be_shown() throws Exception {
 	try {
@@ -195,7 +196,128 @@ public class AddCommunityNotePage extends BaseClass {
 	}
 	
 	MyScreenRecording.stopRecording();
-		
-	}
-
-}
+	
+		}
+	
+	   public void UserEntertheirEmailandPassword() throws Exception {  
+		 try {
+				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+				WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
+				 Useremail.sendKeys(prop.getProperty("username"));
+				}
+				 catch (TimeoutException e ) {
+					 e.printStackTrace();			 
+			}
+				
+		 try {
+				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+				WebElement Password= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='password']")));
+				Password.sendKeys(prop.getProperty("password"));
+				}
+				catch (TimeoutException e ) {
+					 e.printStackTrace();		
+			}   
+		 MyScreenRecording.startRecording("Add Community Note-Negative Test");
+	    }
+			
+	 public void clickLoginButton() {
+		 try {
+				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+				 WebElement Login=driver.findElement(By.xpath("(//span[@class='e-btn-content'])[1]"));
+				 wait.until(ExpectedConditions.elementToBeClickable(Login));
+				 Login.click();
+				}
+				catch (TimeoutException e) {
+					 System.out.println("Login button was not clickable within 20 seconds.");
+				}   
+	    }
+	 
+	 public void selectTestCommunity() {
+		 try {
+				WebElement Dropdown=driver.findElement(By.xpath("//span[@role='listbox']"));
+				Dropdown.sendKeys("Test Community");
+				Thread.sleep(3000);
+				}
+				catch (Exception e) {
+					e.printStackTrace();
+				}
+	    }
+	 
+	 public void clickContinueButton() {
+		 try {
+				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+				WebElement Continue=driver.findElement(By.xpath("//input[@value='Continue']"));
+				wait.until(ExpectedConditions.elementToBeClickable(Continue));
+				Continue.click();
+				}
+				catch (Exception e) {
+					e.printStackTrace();
+					
+				}
+	    }
+	 
+	 public void clickManageButton() {
+		 try {
+				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+				WebElement manage=driver.findElement(By.linkText("Manage"));
+				wait.until(ExpectedConditions.elementToBeClickable(manage));
+				manage.click();
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}
+	    }
+	 
+	 public void clickAddNewCommunityNote() {
+		 try {
+				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+				WebElement AddcomNote=driver.findElement(By.xpath("//a[normalize-space()='Add New Community Note']"));
+				wait.until(ExpectedConditions.elementToBeClickable(AddcomNote));
+				AddcomNote.click();
+				}
+				catch(Exception e) {
+					e.printStackTrace();
+				}
+	    }
+	 
+	 public void attemptToCreateCommunityNoteWithoutInformation() throws InterruptedException {
+		 try {
+				WebElement note=driver.findElement(By.xpath("//textarea[@id='note']"));
+				note.sendKeys(prop.getProperty(""));
+				Thread.sleep(2000);
+				}
+				catch (Exception e) {
+					e.printStackTrace();
+			
+			}
+		 	
+	    }
+	 
+	 public void clickSaveButton() throws InterruptedException {
+		 
+		 JavascriptExecutor js = (JavascriptExecutor)driver;
+		    js.executeScript("window.scrollBy(0, 50000)");
+		    Thread.sleep(2000);
+		 try {
+				WebElement savebtn=driver.findElement(By.cssSelector("button[type='submit']"));
+				savebtn.click();
+			    Thread.sleep(5000);
+					}
+					catch (Exception e) {
+						e.printStackTrace();
+				}        
+	    }
+	 
+	 public void ValidationMessageTheNotefieldisrequiredisDisplayed() throws Exception {
+		 try {
+				String Expectedresult = "The Note field is required.";
+				String Actualresult=driver.findElement(By.xpath("(//div[normalize-space()='The Note field is required.'])[1]")).getText();
+				assertEquals("error message showing",Expectedresult,Actualresult);
+				}
+				catch (Exception e) {
+					e.printStackTrace();
+				}	
+		 
+		 MyScreenRecording.stopRecording();
+		 	    }
+			}

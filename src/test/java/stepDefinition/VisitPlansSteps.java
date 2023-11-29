@@ -144,7 +144,7 @@ public void save_the_all_single_visit_details() throws InterruptedException {
 }
 
 @Then("Validation Message Should be Shown Visit Plan was saved1")
-public void validation_message_should_be_shown_visit_plan_was_saved1() {
+public void validation_message_should_be_shown_visit_plan_was_saved1() throws Exception {
 	visitplan.validation_message_should_be_shown_visit_plan_was_saved1();
 	log.info("Validation message should be shown-Visit Plan was saved");
 }
@@ -542,7 +542,7 @@ public void select_no_assistance() throws InterruptedException {
 }
 
 @Then ("Click on the Add To schedule Button and Finalize Visits")
-public boolean click_on_the_add_to_schedule_button_and_finalize_visits() throws InterruptedException {
+public boolean click_on_the_add_to_schedule_button_and_finalize_visits() throws Exception {
 	log.info("Click on the Add To Schedule and Finalize Visits..");
 	return visitplan.click_on_the_add_to_schedule_button_and_finalize_visits();
 	
@@ -843,7 +843,7 @@ public void save_the_single_visit_series() throws InterruptedException {
 // custom date range
 
 @Then("Check the Add Visit Configuration Button")
-public void check_the_add_visit_configuration_button() throws InterruptedException {
+public void check_the_add_visit_configuration_button() throws Exception {
 	visitplan.check_the_add_visit_configuration_button();
 	log.info("click on add visit configuration button..");
 }
@@ -907,7 +907,7 @@ public void save_the_all_visits_plan_details() throws InterruptedException {
 }
 
 @Then ("Message should be Shown Visit Plan was saved3")
-public void message_should_be_shown_visit_plan_was_saved3() {
+public void message_should_be_shown_visit_plan_was_saved3() throws Exception {
 	visitplan.message_should_be_shown_visit_plan_was_saved3();
 	log.info("validation msg is showing-Visit Plan was saved");
 }
@@ -945,7 +945,7 @@ public void message_should_be_shown_visit_plan_was_saved4() {
 
 //Change A visit Duration For Everyday
 @Then ("Click on the Visit Table")
-public void click_on_the_visit_table() throws InterruptedException {
+public void click_on_the_visit_table() throws Exception {
 	visitplan.click_on_the_visit_table();
 	log.info("click on the visit table");
 }
@@ -969,15 +969,15 @@ public void save_the_details() throws InterruptedException {
 }
 
 @Then("Message should be Shown Visit Plan was saved7")
-public void message_should_be_shown_visit_plan_was_saved7() {
+public void message_should_be_shown_visit_plan_was_saved7() throws Exception {
 	visitplan.message_should_be_shown_visit_plan_was_saved7(); 
 	log.info("Validation message should be shown-Visit Plan was Saved");
 }
 
-//Single Change Duration
+//Change Duration-Single visit series
 
 @And ("click on the single Visit table")
-public void click_on_the_single_visit_table() throws InterruptedException {
+public void click_on_the_single_visit_table() throws Exception {
 	visitplan.click_on_the_single_visit_table();
 	log.info("click on the single visit table");
 }
@@ -1001,14 +1001,14 @@ public void click_on_the_save_button1() throws InterruptedException {
 }
 
 @Then ("Validation Message should be Shown Visit Plan was saved2")
-public void validation_message_should_be_shown_visit_plan_was_saved2() {
+public void validation_message_should_be_shown_visit_plan_was_saved2() throws Exception {
 	visitplan.validation_message_should_be_shown_visit_plan_was_saved2();
 	log.info("Validation message should be shown-Visit Plan was Saved");
 }
 
-//Delete for everyday
+//Delete for everyday visit
 @Given ("User click on the Delete Icon")
-public void user_click_on_the_delete_icon() throws InterruptedException {
+public void user_click_on_the_delete_icon() throws Exception {
 	visitplan.user_click_on_the_delete_icon();
 	log.info("click on the delete icon..");	
 }
@@ -1030,14 +1030,14 @@ public void save_the_delete_visit_series() {
 }
 
 @Then ("Message should be Shown Visit Plan was saved8")
-public void message_should_be_shown_visit_plan_was_saved8() {
+public void message_should_be_shown_visit_plan_was_saved8() throws Exception {
 	visitplan.message_should_be_shown_visit_plan_was_saved8();
 	log.info("validation message should be shown - Visit Plan was saved.");
 }
 
-//single delete
+//single visit delete
 @And ("Click on the delete Icon and Pop is Displayed Confirm that you want to delete this item")
-public void click_on_the_delete_Icon_and_Pop_is_displayed_confirm_that_you_want_to_delete_this_item() throws InterruptedException{
+public void click_on_the_delete_Icon_and_Pop_is_displayed_confirm_that_you_want_to_delete_this_item() throws Exception{
 	visitplan.click_on_the_delete_Icon_and_Pop_is_displayed_confirm_that_you_want_to_delete_this_item();
 	log.info("delete the single visit details.");
 }

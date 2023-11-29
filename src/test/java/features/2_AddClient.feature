@@ -2,7 +2,6 @@ Feature: Add New Client Functionality
 
 @Reg
 Scenario: Verify the Add New Client Functionality
-
 When User Enter the Valid Email
 When User Enter the Valid Password
 Then User click on the Login
@@ -46,7 +45,28 @@ Then select the Relationship
 Then Save the New Contact Details
 Then Save the New client Details
 Then Validation Message Should be Shown Client was Created
+
  
+@Negative
+Scenario: Verify Error Message When Creating Add Client with Missing information(Negative Testing)
+Given User Enter the Email and Password 
+When User Login the Application
+Then Choose the Test Community
+And User click on Continue Button
+And Click on the Client Button
+And Click on the Add New Client
+And Leave the First Name Fields Empty
+And Enter the Last Name
+And Leave the Address Line2 Fields Empty
+And Select the Gender
+And Select the BirthDate
+And Select the Client Type
+And Select the Schedule Group 
+And Select Service Type
+And Save the data
+Then Error Message Displayed First Name is required
+Then Error Message Displayed Address2 is required
+
 
 
 

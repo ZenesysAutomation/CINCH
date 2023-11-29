@@ -11,7 +11,7 @@ import java.util.Random;
 public class UpdateTestDataProperties {
     public static Properties prop;
 
-    public static void main(String[] args) {
+    public static void updateTestDataProperties () {
         try {
             // Load existing properties
             Properties prop = new Properties();
@@ -32,7 +32,7 @@ public class UpdateTestDataProperties {
             String newlastName = generateRandomSentence4();
             String newaddressLine1=generateRandomString(5);
             String newaddressLine2=generateRandomString(6);
-            String newcity=generateRandomString(6);
+            String newcity = generateRandomCity();
             String newnote=generateRandomString(8);
             String newEditNote=generateRandomString(8);
             String newVisitSchedule=generateRandomString(8);
@@ -62,11 +62,10 @@ public class UpdateTestDataProperties {
             String newCaregiverNote=generateRandomString(10);
             String newCaregiverinstruction=generateRandomString(10);
             
-
             //Generate a random phone number
             String newPrimaryPhone = generateRandomPhoneNumber();
             String newprimaryphnumber=generateRandomPhoneNumber();
-            // Generate a random email
+            //Generate a random email
             String newEmail1 = generateRandomEmail();
             String newemail2 = generateRandomEmail();
             
@@ -75,7 +74,7 @@ public class UpdateTestDataProperties {
             
             String newZipCode = generateRandomZipCode();
             String newzipcode=generateRandomZipCode();
-          
+              
             //Update the properties
             prop.setProperty("FirstName", newFirstName);
             prop.setProperty("LastName", newLastName);
@@ -222,7 +221,7 @@ public class UpdateTestDataProperties {
         return subject + " ";
     }
     private static String generateRandomSentence4() {
-        String[] subjects = {"Mac", "Brown", "Miller", "Davis", "Richard","John","bobby","Mary","Jerri","Michael","Alana"};
+        String[] subjects = {"Murray", "Miley", "Ritchie", "Devil", "Robert","Nobita","bobby","Mary","Jerri","Michael","Alana"};
         Random random = new Random();
         String subject = subjects[random.nextInt(subjects.length)];
         return subject + " ";
@@ -241,11 +240,8 @@ public class UpdateTestDataProperties {
     private static String generateRandomEmail() {
         String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         StringBuilder randomLocalPart = new StringBuilder();
-
         Random random = new Random();
-
         int localPartLength = random.nextInt(6) + 5; 
-
         for (int i = 0; i < localPartLength; i++) {
             int index = random.nextInt(characters.length());
             randomLocalPart.append(characters.charAt(index));
@@ -275,9 +271,21 @@ public class UpdateTestDataProperties {
         
         return zipCode.toString();
     }
-    
-    
+     
+    private static String generateRandomCity() {
+        String[] cities = {
+            "New York", "Los Angeles", "Chicago", "Houston", "Phoenix",
+            "Philadelphia", "San Antonio", "San Diego", "Dallas", "San Jose","California","Georgia","Virginia","Florida","Ohio","New Jersey"};
+            
+        Random random = new Random();
+        return cities[random.nextInt(cities.length)];
+    }
+    public static void main(String[] args) {
+        updateTestDataProperties();
+    }
 }
+
+
 
 
 
