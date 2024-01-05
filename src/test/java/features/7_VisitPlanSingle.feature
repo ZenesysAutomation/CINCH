@@ -12,7 +12,6 @@ Then Click on the User first Name
 
 @Reg6
 Scenario: Verify the Visit Plans Functionalities For Single Day
-
 Then Click on the Add Visit Configuration
 Then Select the Single Day
 Then Select the Recurrence

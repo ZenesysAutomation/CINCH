@@ -59,8 +59,7 @@ public class Hooks extends BaseClass {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
-			log.info("Browser Launched..");	
-				
+			log.info("Browser Launched..");			
 		}
 
 	
@@ -75,10 +74,8 @@ public class Hooks extends BaseClass {
 	            log.error("Test case failed: " + s.getName());
 	        }
 	        driver.quit();
-	        
 	        log.info("Browser Closed..");
-	}
-		
+	}		
 }
 
 

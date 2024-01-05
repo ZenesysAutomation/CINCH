@@ -73,7 +73,6 @@ public class MyScreenRecording extends ScreenRecorder {
     }
 
     public static void stopRecording() throws Exception {
-    	
     	 if (screenRecorder != null) {
     	        screenRecorder.stop();
     	    } else {
@@ -81,6 +80,9 @@ public class MyScreenRecording extends ScreenRecorder {
     	    }
     	}
 }
+
+
+
 
 
 

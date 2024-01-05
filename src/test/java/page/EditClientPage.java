@@ -166,6 +166,9 @@ public void click_on_the_user_table() throws InterruptedException {
 			MyScreenRecording.stopRecording();
 	}
 
-
 }
+
+
+
+
 

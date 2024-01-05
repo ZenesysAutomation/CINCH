@@ -111,28 +111,21 @@ public class VisitPlansPage extends BaseClass  {
 		
 		
 	public void click_on_the_add_visit_configuration() throws InterruptedException {
-		
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		    WebElement AddVisitBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//a[normalize-space()='Add Visit Configuration'])[1]")));
 		    AddVisitBtn.click();
 		} catch (Exception e) {
 		    e.printStackTrace(); 
-		}
-		
+		}		
 	}
-	    
-			
+	    		
 	public boolean  select_the_single_day() throws InterruptedException {
-		
 		try {
-
 			WebElement dropdown=driver.findElement(By.id("daysofweek"));
 				dropdown.click();
-				Thread.sleep(6000);
-				
-				WebElement dropdown2 =driver.findElement(By.xpath("//*[@id=\"daysofweek_popup\"]/div[2]/ul/li[2]"));
-				
+				Thread.sleep(6000);	
+				WebElement dropdown2 =driver.findElement(By.xpath("//*[@id=\"daysofweek_popup\"]/div[2]/ul/li[2]"));	
 				dropdown2.click();
 				Thread.sleep(6000);
 		}
@@ -187,15 +180,6 @@ public class VisitPlansPage extends BaseClass  {
 	
 
 	public void select_the_end_time() throws InterruptedException {
-		
-		/*WebElement SelectTime = driver.findElement(By.xpath("(//span[contains(@class,'e-input-group-icon e-time-icon e-icons')])[2]"));
-		explicitWait(SelectTime, 5);
-		SelectTime.click();
-		Random random =new Random();
-		List<WebElement> liList=driver.findElements(By.cssSelector("div > ul > li.e-list-item"));
-		liList.get(random.nextInt(46)).click();	
-		Thread.sleep(3000);*/
-		
 		WebElement SelectTime = driver.findElement(By.xpath("(//span[contains(@class,'e-input-group-icon e-time-icon e-icons')])[2]"));
 		explicitWait(SelectTime, 5);
 		SelectTime.click();
@@ -433,9 +417,7 @@ public class VisitPlansPage extends BaseClass  {
 		    Adls2.click();
 		} catch (Exception e) {
 		    e.printStackTrace(); 
-		}
-
-		
+		}	
 	}
 		   
 	public void click_on_the_continence_and_toileting() throws InterruptedException {
@@ -560,7 +542,6 @@ public class VisitPlansPage extends BaseClass  {
 		}
 	}
 	
-	
 	public void enter_the_caregiver_instructions3() throws InterruptedException {
 		try {
 		WebElement Instructions3  = driver.findElement(By.xpath("//textarea[@id='notes']"));
@@ -608,9 +589,7 @@ public class VisitPlansPage extends BaseClass  {
 		    Adls2.click();
 		} catch (Exception e) {
 		    e.printStackTrace(); 
-		}
-
-		
+		}	
 	}
 	
 	public void click_on_the_eating() throws InterruptedException {
@@ -621,8 +600,7 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-				
+		}				
 	}
 	
 	public void select_the_assistance_level_as_a_no_assistance() throws InterruptedException {
@@ -635,8 +613,7 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}	
-		
+		}		
 	}
 
 	public void save_the_eating_details() throws InterruptedException {
@@ -724,8 +701,7 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}		
 	}
 	public void enter_caregiver_instructions() throws InterruptedException {
 		try {
@@ -866,8 +842,7 @@ public class VisitPlansPage extends BaseClass  {
 		    IADLSBtn2.click();
 		} catch (Exception e) {
 		    e.printStackTrace(); 
-		}
-		
+		}	
 	}
 	
 	public void click_on_the_laundry() throws InterruptedException {
@@ -1213,8 +1188,7 @@ public class VisitPlansPage extends BaseClass  {
 		    VisitPlan.click();
 		} catch (Exception e) {
 		    e.printStackTrace(); 
-		}
-		
+		}		
 	}
 	
 	
@@ -1391,10 +1365,8 @@ public class VisitPlansPage extends BaseClass  {
 		assertEquals("Plan was Created",expectedResult,actualResult);
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			
-		}
-		
+			e.printStackTrace();		
+		}	
 	}
 	
 	public void message_should_be_shown_visit_plan_was_saved()
@@ -1450,8 +1422,7 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}		
 	}
 	
 	public void verify_if_assist_with_shower_is_already_checked_then_unchecked_it() throws InterruptedException {
@@ -1493,8 +1464,7 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}		
 	}
 	
 	public void update_the_bathing_details() throws InterruptedException {
@@ -1625,9 +1595,7 @@ public class VisitPlansPage extends BaseClass  {
 		    Adls2.click();
 		} catch (Exception e) {
 		    e.printStackTrace(); 
-		}
-
-		
+		}		
 	}
 	
 	public void user_click_on_the_ad_ls_to_enter_the_mobility_details() throws InterruptedException {
@@ -1639,8 +1607,7 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}	
 	}
 	
 	public void user_click_on_the_mobility() throws InterruptedException {
@@ -1661,8 +1628,7 @@ public class VisitPlansPage extends BaseClass  {
 		if(WalkWithClient.isSelected()) {
 			WalkWithClient.click();
 		Thread.sleep(6000);
-		}
-		
+		}	
 	}
 	
 	public void select_the_assist_with_transfers() throws InterruptedException {
@@ -1683,8 +1649,7 @@ public class VisitPlansPage extends BaseClass  {
 				System.out.println("Checkbox is now toggle off");
 			}
 		}
-		Thread.sleep(4000);	
-		
+		Thread.sleep(4000);		
 	}
 	
 	public void user_choose_the_visits_time() throws InterruptedException {
@@ -1707,16 +1672,14 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}		
 	}
 	
 	public void user_click_on_the_save_button_to_save_the_mobility_details() throws InterruptedException {
 		WebElement MobilityDetails=driver.findElement(By.xpath("//button[@id='SaveVisit']"));
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()",MobilityDetails);
-		Thread.sleep(8000);
-		
+		Thread.sleep(8000);	
 	}
 	
 	public void user_again_click_on_the_ia_dls_to_enter_the_medication_details() throws InterruptedException {
@@ -1727,8 +1690,7 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}		
 	}
 	
 	public void click_on_the_medication() throws InterruptedException {
@@ -1744,8 +1706,7 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}	
 	}
 	public void select_the_medication_assistance_evel_as_assistance() throws InterruptedException {
 		try {
@@ -1761,8 +1722,7 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}	
 	}
 	public void verify_if_check_blood_pressure_tasks_is_already_select_then_unselect_it() throws InterruptedException {
 		WebElement BloodPressuretasks=driver.findElement(By.xpath("(//input[@id='1852'])[1]"));
@@ -1801,8 +1761,7 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}	
 	}
 	
 	public void user_enter_caregiver_instructions_for_medication() throws InterruptedException {
@@ -1901,8 +1860,7 @@ public class VisitPlansPage extends BaseClass  {
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 50000)");
-		Thread.sleep(6000);
-		
+		Thread.sleep(6000);		
 	}
 	
 	public void save_the_single_visit_series() throws InterruptedException {
@@ -1913,8 +1871,7 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}		
 	}
 	
 	
@@ -1947,8 +1904,7 @@ public class VisitPlansPage extends BaseClass  {
 			e.printStackTrace();
 			return true;
 		}
-		return false;
-		
+		return false;		
 	}
 	
 	public void user_select_the_weekly_recurrence() throws InterruptedException {
@@ -1990,8 +1946,7 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}		
 	}
 	
 	/*public void user_select_the_single_recurrence() throws InterruptedException {
@@ -2021,8 +1976,7 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}		
 	}
 	
 	public void user_click_on_the_use_custom_end_date_toggle() throws InterruptedException {
@@ -2050,8 +2004,7 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-				
+		}			
 	}
 	private static int generateRandomNumber(int start, int end) {
 	    Random random = new Random(); 
@@ -2196,8 +2149,7 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}	
 	}
 	public void save_the_details() throws InterruptedException {
 		try {
@@ -2207,7 +2159,7 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
+	}
 		
 	}
 	
@@ -2249,8 +2201,7 @@ public class VisitPlansPage extends BaseClass  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}	
 	}
 	
 	public void click_on_the_update_button1() throws InterruptedException {
@@ -2275,10 +2226,8 @@ public class VisitPlansPage extends BaseClass  {
 		assertEquals("Plan was Created",expectedResult,actualResult);
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			
+			e.printStackTrace();	
 		}
-		
 		MyScreenRecording.stopRecording();
 	}
 	
@@ -2319,7 +2268,6 @@ public class VisitPlansPage extends BaseClass  {
 		} catch (Exception e) {
 		    e.printStackTrace(); 
 		}
-	
 	}
 	
 	public void message_should_be_shown_visit_plan_was_saved8() throws Exception {
@@ -2329,8 +2277,7 @@ public class VisitPlansPage extends BaseClass  {
 		assertEquals("Plan was Created",expectedResult,actualResult);	
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			
+			e.printStackTrace();	
 		}
 		
 		MyScreenRecording.stopRecording();
@@ -2347,8 +2294,7 @@ public class VisitPlansPage extends BaseClass  {
 		    e.printStackTrace(); 
 		}
 		
-		MyScreenRecording.startRecording("Delete Single Visit Series");
-		
+		MyScreenRecording.startRecording("Delete Single Visit Series");		
 	}
 	
 	public void click_on_the_delete_button() throws InterruptedException {
@@ -2358,8 +2304,7 @@ public class VisitPlansPage extends BaseClass  {
 	 
 		    JavascriptExecutor js = (JavascriptExecutor)driver;
 		    js.executeScript("window.scrollBy(0, 50000)");
-		    Thread.sleep(6000);
-		
+		    Thread.sleep(6000);	
 	}
 	
 	public void save_the_single_delete_visit_series() throws InterruptedException  {
@@ -2369,8 +2314,7 @@ public class VisitPlansPage extends BaseClass  {
 		    DeleteVisitSeries.click();
 		} catch (Exception e) {
 		    e.printStackTrace(); 
-		}
-	
+		}	
 	}
 	
 	public void message_should_be_shown_visit_plan_was_saved5() throws Exception {

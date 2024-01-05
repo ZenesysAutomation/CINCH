@@ -6,7 +6,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import ScreenRecorder.MyScreenRecording;
 import base.BaseClass;
 import io.netty.handler.timeout.TimeoutException;
@@ -16,9 +15,8 @@ import io.netty.handler.timeout.TimeoutException;
 public class AddClientPage extends BaseClass {
 	
 public void user_enter_the_valid_email() throws Exception {
-	
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	try {
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 	WebElement Useremail= wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
 	 Useremail.sendKeys(prop.getProperty("username"));
 	}
@@ -26,7 +24,6 @@ public void user_enter_the_valid_email() throws Exception {
 		 e.printStackTrace();
 
 	}
-	
 	MyScreenRecording.startRecording("Add Client");
 }
 		   
@@ -54,8 +51,7 @@ public void user_click_on_the_login() throws InterruptedException {
 	}
 	catch (TimeoutException e) {
 		 System.out.println("Login button was not clickable within 20 seconds.");
-	}
-		   
+	}		   
 }
 
 public void user_select_the_test_community() throws InterruptedException {
@@ -66,8 +62,7 @@ public void user_select_the_test_community() throws InterruptedException {
 	}
 	catch (TimeoutException e) {
 		e.printStackTrace();
-	}
-	   
+	}	   
 }
 
 public void user_click_on_the_continue() throws InterruptedException {
@@ -91,8 +86,7 @@ public void user_click_on_the_clients_button() {
 	}
 	catch (Exception e) {
 		e.printStackTrace();
-	}
-		   
+	}		   
 }
 public void user_click_on_the_add_new_client() throws InterruptedException {
 	try {
@@ -103,8 +97,7 @@ public void user_click_on_the_add_new_client() throws InterruptedException {
 	}
 	catch (Exception e) {
 		e.printStackTrace();
-	}
-	
+	}	
 }
 
 public void user_enter_the_first_name() {
@@ -177,8 +170,7 @@ public void user_enter_the_city() throws InterruptedException {
 	}
 	catch (Exception e){
 		e.printStackTrace();
-	}
-	
+	}	
 }
 public void user_select_the_state() {
 	try {
@@ -201,8 +193,7 @@ public void user_enter_the_zip_code() {
 	}
 	catch (Exception e) {
 		e.printStackTrace();
-	}
-		
+	}		
 }
 
 public void user_enter_the_primary_phone() throws InterruptedException {
@@ -239,8 +230,7 @@ public void user_enter_the_email() throws InterruptedException {
 	}
 	catch (Exception e) {
 		e.printStackTrace();
-	}
-		
+	}		
 }
 
 public void click_the_gender() throws InterruptedException {
@@ -257,7 +247,6 @@ public void click_the_gender() throws InterruptedException {
 }
 
 public void user_select_the_birth_date() throws InterruptedException {
-	
 	try {
 	    WebElement DOB = driver.findElement(By.xpath("//input[@id='birthdate']"));
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -265,8 +254,7 @@ public void user_select_the_birth_date() throws InterruptedException {
 	    DOB.sendKeys(prop.getProperty("Birthdate"));
 	} catch (Exception e) {
 	    e.printStackTrace();
-	}
-	
+	}	
 }
 
 public void user_enter_the_marital_status() {
@@ -278,8 +266,7 @@ public void user_enter_the_marital_status() {
 	}
 	catch (Exception e) {
 		e.printStackTrace();
-	}
-	
+	}	
 }
 
 public void then_user_enter_the_spouse_name() {
@@ -291,8 +278,7 @@ public void then_user_enter_the_spouse_name() {
 	}
 	catch (Exception e) {
 		e.printStackTrace();
-	}
-	
+		}
 }
 
 	public void user_enter_the_referral_source() throws InterruptedException {
@@ -317,7 +303,6 @@ public void then_user_enter_the_spouse_name() {
 		catch (Exception e) {
 			e.printStackTrace();
 		}
-  
 	}
 
 	public void user_select_the_client_type() throws InterruptedException {	
@@ -373,9 +358,7 @@ public void then_user_enter_the_spouse_name() {
 		}
 		catch(Exception e) {
 			e.printStackTrace();
-	
-		}
-	      
+		}      
 	}
 
 	public void select_the_service_type() throws InterruptedException {
@@ -458,8 +441,7 @@ public void then_user_enter_the_spouse_name() {
 	}
 	catch (Exception e) {
 		e.printStackTrace();
-	}
-	   
+	}	   
 }
 
 public void verify_the_state_dropdown() throws InterruptedException {
@@ -470,8 +452,7 @@ public void verify_the_state_dropdown() throws InterruptedException {
 	}
 	catch(Exception e) {
 		e.printStackTrace();
-	}
-	
+	}	
 }
 
 public void verify_the_zip_code() throws InterruptedException {
@@ -523,7 +504,6 @@ public void select_the_relationship() throws InterruptedException {
 	}
 
 public void save_the_new_contact_details()throws InterruptedException {
-	
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	WebElement Savebtn1=driver.findElement(By.xpath("//button[@id='ClientContactSave']"));
 	 wait.until(ExpectedConditions.elementToBeClickable(Savebtn1));
@@ -533,7 +513,6 @@ public void save_the_new_contact_details()throws InterruptedException {
 	
 	
  public void save_the_new_client_details() throws InterruptedException {
-	
 	 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	 	WebElement Savebtn=driver.findElement(By.xpath("//button[@id='ClientSave']"));
 		 wait.until(ExpectedConditions.elementToBeClickable(Savebtn));
@@ -576,7 +555,6 @@ public void save_the_new_contact_details()throws InterruptedException {
  }
 		
 	
- 
  public void user_login_the_application() {
 	 try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -586,8 +564,7 @@ public void save_the_new_contact_details()throws InterruptedException {
 			}
 			catch (TimeoutException e) {
 				 System.out.println("Login button was not clickable within 20 seconds.");
-			}
-				   
+			}			   
 	}
  
  public void choose_the_test_community() throws InterruptedException {
@@ -598,8 +575,7 @@ public void save_the_new_contact_details()throws InterruptedException {
 			}
 			catch (TimeoutException e) {
 				e.printStackTrace();
-			}
-			   
+			}		   
 	}
  
  public void user_click_on_continue_button () {
@@ -723,8 +699,7 @@ public void save_the_new_contact_details()throws InterruptedException {
 			}
 				catch (Exception e) {
 				e.printStackTrace();
-			}
-	 								
+			} 								
 	}
  
  public void select_service_type() {
@@ -764,8 +739,7 @@ public void save_the_new_contact_details()throws InterruptedException {
 			}	
 	}
  
- public void error_message_displayed_address2_is_required() throws Exception {
-		
+ public void error_message_displayed_address2_is_required() throws Exception {	
 	 try {
 			String Expectedresult = "Address2 is required";
 			String Actualresult=driver.findElement(By.xpath("(//div[normalize-space()='Address2 is required'])[1]")).getText();
@@ -774,8 +748,7 @@ public void save_the_new_contact_details()throws InterruptedException {
 			catch (Exception e) {
 				e.printStackTrace();
 			}	
-	 MyScreenRecording.stopRecording();
-	 
+	 MyScreenRecording.stopRecording(); 
 		}
  }
 

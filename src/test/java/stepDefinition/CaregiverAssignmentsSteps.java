@@ -99,7 +99,7 @@ public class CaregiverAssignmentsSteps extends BaseClass  {
 	@Then ("save the visit")
 	public void save_the_visit1() throws Exception {
 		cg.save_the_visit1();
-		log.info("save visit..");
+		log.info("save the  visit..");
 	} 
 	
 	@When("Check if Color is Blue and Active Visit then Click on it3")
@@ -124,13 +124,13 @@ public class CaregiverAssignmentsSteps extends BaseClass  {
 	@Then ("Save The Visit")
 	public void save_the_visit2() throws Exception {
 		cg.save_the_visit2();
-		log.info("save visit..");
+		log.info("save the  visit..");
 	}
 	
 	@Given ("Click on the Visit")
 	public void click_on_the_visit() throws Exception {
 		cg.click_on_the_visit();
-		log.info("click on visit..");
+		log.info("click on the visit..");
 	}
 	
 	@Then ("Change the Track from East1 to East2")
@@ -156,7 +156,7 @@ public class CaregiverAssignmentsSteps extends BaseClass  {
 	@Given ("User Click on the Visit")
 	public void user_click_on_the_visit() throws InterruptedException {
 		cg.user_click_on_the_visit();
-		log.info("click on visit.");
+		log.info("click on the visit.");
 		
 	}
 	@Then ("User Click on the Delete Button")

@@ -9147,3 +9147,155 @@
 [INFO ] 2023-11-27 00:31:37.976 [main] Hooks - user click on the login button..
 [INFO ] 2023-11-27 00:31:58.124 [main] Hooks - error message is showing
 [INFO ] 2023-11-27 00:31:58.256 [main] Hooks - Browser Closed..
+[INFO ] 2023-12-08 05:18:28.396 [main] Hooks - Browser Launched..
+[INFO ] 2023-12-08 05:18:44.424 [main] Hooks - user enter the blank email address and invalid password..
+[INFO ] 2023-12-08 05:18:44.607 [main] Hooks - user click on the login button..
+[INFO ] 2023-12-08 05:19:04.755 [main] Hooks - error message is showing
+[INFO ] 2023-12-08 05:19:04.964 [main] Hooks - Browser Closed..
+[INFO ] 2023-12-13 08:31:00.212 [main] Hooks - Browser Launched..
+[INFO ] 2023-12-13 08:31:12.220 [main] Hooks - entered email address and password 
+[INFO ] 2023-12-13 08:31:12.380 [main] Hooks - Clicked on the login button
+[INFO ] 2023-12-13 08:31:32.443 [main] Hooks - Select Test Community
+[INFO ] 2023-12-13 08:31:52.466 [main] Hooks - Clicked on the Continue button
+[INFO ] 2023-12-13 08:32:12.498 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-12-13 08:32:32.567 [main] Hooks - Click on the Account User Name
+[INFO ] 2023-12-13 08:32:52.686 [main] Hooks - user clicked on the logout button
+[INFO ] 2023-12-13 08:32:52.758 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-12-13 08:32:52.890 [main] Hooks - Browser Closed..
+[INFO ] 2023-12-13 08:32:58.083 [main] Hooks - Browser Launched..
+[INFO ] 2023-12-13 08:33:10.328 [main] Hooks - entered email address and password 
+[INFO ] 2023-12-13 08:33:10.508 [main] Hooks - Clicked on the login button
+[INFO ] 2023-12-13 08:33:14.526 [main] Hooks - Select Test Community
+[INFO ] 2023-12-13 08:33:14.627 [main] Hooks - Clicked on the Continue button
+[INFO ] 2023-12-13 08:33:18.056 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-12-13 08:33:18.140 [main] Hooks - Click on the Account User Name
+[INFO ] 2023-12-13 08:33:18.986 [main] Hooks - user clicked on the logout button
+[ERROR] 2023-12-13 08:33:21.096 [main] Hooks - Test case failed: Verify The Valid Login Functionality
+[INFO ] 2023-12-13 08:33:21.208 [main] Hooks - Browser Closed..
+[INFO ] 2023-12-18 00:50:38.643 [main] Hooks - Browser Launched..
+[INFO ] 2023-12-18 00:50:52.388 [main] Hooks - entered email address and password 
+[INFO ] 2023-12-18 00:50:52.536 [main] Hooks - Clicked on the login button
+[INFO ] 2023-12-18 00:51:12.606 [main] Hooks - Select Test Community
+[INFO ] 2023-12-18 00:51:32.629 [main] Hooks - Clicked on the Continue button
+[INFO ] 2023-12-18 00:51:52.666 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-12-18 00:52:12.711 [main] Hooks - Click on the Account User Name
+[INFO ] 2023-12-18 00:52:32.781 [main] Hooks - user clicked on the logout button
+[INFO ] 2023-12-18 00:52:32.826 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-12-18 00:52:32.959 [main] Hooks - Browser Closed..
+[INFO ] 2023-12-18 00:52:37.515 [main] Hooks - Browser Launched..
+[INFO ] 2023-12-18 00:52:54.386 [main] Hooks - entered email address and password 
+[INFO ] 2023-12-18 00:52:54.601 [main] Hooks - Clicked on the login button
+[INFO ] 2023-12-18 00:52:58.513 [main] Hooks - Select Test Community
+[INFO ] 2023-12-18 00:52:58.612 [main] Hooks - Clicked on the Continue button
+[INFO ] 2023-12-18 00:53:01.487 [main] Hooks - Home Page Is Showing
+[INFO ] 2023-12-18 00:53:01.565 [main] Hooks - Click on the Account User Name
+[INFO ] 2023-12-18 00:53:03.094 [main] Hooks - user clicked on the logout button
+[INFO ] 2023-12-18 00:53:04.503 [main] Hooks - user can view sign in page -test passed.
+[INFO ] 2023-12-18 00:53:04.645 [main] Hooks - Browser Closed..
+[INFO ] 2024-01-02 04:35:15.865 [main] Hooks - Browser Launched..
+[INFO ] 2024-01-02 04:35:33.288 [main] Hooks - Entered Email Address
+[INFO ] 2024-01-02 04:35:33.413 [main] Hooks - Password Entered
+[INFO ] 2024-01-02 04:35:33.703 [main] Hooks - Clicked on login button
+[INFO ] 2024-01-02 04:35:37.058 [main] Hooks - Select Test Community
+[INFO ] 2024-01-02 04:35:37.176 [main] Hooks - Clicked on Continue button
+[INFO ] 2024-01-02 04:35:41.020 [main] Hooks - Clicked on Client button
+[INFO ] 2024-01-02 04:35:41.856 [main] Hooks - Clicked on Add New Client button
+[INFO ] 2024-01-02 04:35:44.954 [main] Hooks - entered first name
+[INFO ] 2024-01-02 04:35:45.161 [main] Hooks - entered last name
+[INFO ] 2024-01-02 04:35:45.317 [main] Hooks - entered Address line1
+[INFO ] 2024-01-02 04:35:45.618 [main] Hooks - entered Address line2
+[INFO ] 2024-01-02 04:35:45.840 [main] Hooks - entered resident id
+[INFO ] 2024-01-02 04:35:48.119 [main] Hooks - entered city name
+[INFO ] 2024-01-02 04:35:48.443 [main] Hooks - entered state name
+[INFO ] 2024-01-02 04:35:48.814 [main] Hooks - entered ZIP Code
+[INFO ] 2024-01-02 04:35:52.137 [main] Hooks - entered primary phone no.
+[INFO ] 2024-01-02 04:35:55.286 [main] Hooks - entered secondary phone no.
+[INFO ] 2024-01-02 04:35:55.369 [main] Hooks - entered email address
+[INFO ] 2024-01-02 04:35:57.699 [main] Hooks - select gender
+[INFO ] 2024-01-02 04:35:57.891 [main] Hooks - select gender
+[INFO ] 2024-01-02 04:35:58.145 [main] Hooks - entered marital status
+[INFO ] 2024-01-02 04:35:58.311 [main] Hooks - entered spouse name
+[INFO ] 2024-01-02 04:35:58.567 [main] Hooks - entered referral source
+[INFO ] 2024-01-02 04:35:58.854 [main] Hooks - entered essential information
+[INFO ] 2024-01-02 04:36:04.290 [main] Hooks - select client type
+[INFO ] 2024-01-02 04:36:07.618 [main] Hooks - select schedule group
+[INFO ] 2024-01-02 04:36:10.718 [main] Hooks - select status
+[INFO ] 2024-01-02 04:36:15.414 [main] Hooks - select track
+[INFO ] 2024-01-02 04:36:18.560 [main] Hooks - select service type
+[INFO ] 2024-01-02 04:36:18.789 [main] Hooks - Click add new contact button
+[INFO ] 2024-01-02 04:36:19.430 [main] Hooks - Entered first name
+[INFO ] 2024-01-02 04:36:19.614 [main] Hooks - Entered last name
+[INFO ] 2024-01-02 04:36:19.774 [main] Hooks - Entered address line1
+[INFO ] 2024-01-02 04:36:20.129 [main] Hooks - Entered address line2
+[INFO ] 2024-01-02 04:36:20.424 [main] Hooks - Entered city name
+[INFO ] 2024-01-02 04:36:23.628 [main] Hooks - select state
+[INFO ] 2024-01-02 04:36:23.713 [main] Hooks - entered ZIP Code
+[INFO ] 2024-01-02 04:36:27.079 [main] Hooks - entered primary phone number
+[INFO ] 2024-01-02 04:36:27.307 [main] Hooks - entered email address
+[INFO ] 2024-01-02 04:36:31.418 [main] Hooks - select relationship
+[INFO ] 2024-01-02 04:36:34.668 [main] Hooks - save contact details
+[INFO ] 2024-01-02 04:36:37.954 [main] Hooks - save client details
+[INFO ] 2024-01-02 04:36:38.128 [main] Hooks - validation Message should be shown client was created test passed..
+[INFO ] 2024-01-02 04:36:38.254 [main] Hooks - Browser Closed..
+[INFO ] 2024-01-02 05:19:27.058 [main] Hooks - Browser Launched..
+[INFO ] 2024-01-02 05:19:37.818 [main] Hooks - entered Email Address 
+[INFO ] 2024-01-02 05:19:37.995 [main] Hooks - Password Entered
+[INFO ] 2024-01-02 05:19:38.296 [main] Hooks - Clicked on login button
+[INFO ] 2024-01-02 05:19:42.141 [main] Hooks - Select Test Community
+[INFO ] 2024-01-02 05:19:42.249 [main] Hooks - Clicked on Continue button
+[INFO ] 2024-01-02 05:19:43.920 [main] Hooks - Clicked on the Manage link
+[INFO ] 2024-01-02 05:19:45.045 [main] Hooks - Clicked on add new community note
+[INFO ] 2024-01-02 05:19:49.551 [main] Hooks - entered note
+[INFO ] 2024-01-02 05:19:49.760 [main] Hooks - select communities
+[INFO ] 2024-01-02 05:19:52.886 [main] Hooks - select communities
+[INFO ] 2024-01-02 05:19:59.261 [main] Hooks - select an end date
+[INFO ] 2024-01-02 05:20:04.368 [main] Hooks - saved the data
+[INFO ] 2024-01-02 05:20:04.478 [main] Hooks - validation msg showing - note was created
+[INFO ] 2024-01-02 05:20:04.619 [main] Hooks - Browser Closed..
+[INFO ] 2024-01-02 06:57:52.889 [main] Hooks - Browser Launched..
+[INFO ] 2024-01-02 06:58:06.622 [main] Hooks - entered email address
+[INFO ] 2024-01-02 06:58:06.777 [main] Hooks - entered password
+[INFO ] 2024-01-02 06:58:06.984 [main] Hooks - click on the login
+[INFO ] 2024-01-02 06:58:11.508 [main] Hooks - select test community
+[INFO ] 2024-01-02 06:58:11.613 [main] Hooks - click on the continue button..
+[INFO ] 2024-01-02 06:58:14.955 [main] Hooks - click on the visit plans
+[INFO ] 2024-01-02 06:58:25.144 [main] Hooks - click on the table user first name
+[INFO ] 2024-01-02 06:58:31.387 [main] Hooks - click on add visit configuration button..
+[INFO ] 2024-01-02 06:58:43.620 [main] Hooks - Select single Days..
+[INFO ] 2024-01-02 06:58:48.274 [main] Hooks - Select- Weekly Recurrence..
+[INFO ] 2024-01-02 06:58:51.584 [main] Hooks - Select start time..
+[INFO ] 2024-01-02 06:58:57.881 [main] Hooks - Select duration..
+[INFO ] 2024-01-02 06:59:06.356 [main] Hooks - Select-start date
+[INFO ] 2024-01-02 06:59:12.537 [main] Hooks - entered the custom end date
+[INFO ] 2024-01-02 06:59:18.978 [main] Hooks - entered end date
+[INFO ] 2024-01-02 06:59:31.272 [main] Hooks - save the visits details
+[INFO ] 2024-01-02 06:59:39.572 [main] Hooks - save the All visits details
+[INFO ] 2024-01-02 06:59:59.775 [main] Hooks - validation msg is showing-Visit Plan was saved
+[INFO ] 2024-01-02 06:59:59.981 [main] Hooks - Browser Closed..
+[INFO ] 2024-01-02 07:00:04.869 [main] Hooks - Browser Launched..
+[INFO ] 2024-01-02 07:00:17.250 [main] Hooks - entered email address
+[INFO ] 2024-01-02 07:00:17.433 [main] Hooks - entered password
+[INFO ] 2024-01-02 07:00:17.711 [main] Hooks - click on the login
+[INFO ] 2024-01-02 07:00:21.575 [main] Hooks - select test community
+[INFO ] 2024-01-02 07:00:21.706 [main] Hooks - click on the continue button..
+[INFO ] 2024-01-02 07:00:25.006 [main] Hooks - click on the visit plans
+[INFO ] 2024-01-02 07:00:35.237 [main] Hooks - click on the table user first name
+[INFO ] 2024-01-02 07:00:41.519 [main] Hooks - click on the table
+[INFO ] 2024-01-02 07:00:49.954 [main] Hooks - change the end date
+[INFO ] 2024-01-02 07:01:04.205 [main] Hooks - update the visits
+[INFO ] 2024-01-02 07:01:12.527 [main] Hooks - save the visits
+[INFO ] 2024-01-02 07:01:12.558 [main] Hooks - validation message is showing- Visit plan was saved
+[INFO ] 2024-01-02 07:01:12.747 [main] Hooks - Browser Closed..
+[INFO ] 2024-01-02 07:01:22.270 [main] Hooks - Browser Launched..
+[INFO ] 2024-01-02 07:01:36.006 [main] Hooks - entered email address
+[INFO ] 2024-01-02 07:01:36.273 [main] Hooks - entered password
+[INFO ] 2024-01-02 07:01:36.549 [main] Hooks - click on the login
+[INFO ] 2024-01-02 07:01:41.517 [main] Hooks - select test community
+[INFO ] 2024-01-02 07:01:41.662 [main] Hooks - click on the continue button..
+[INFO ] 2024-01-02 07:01:45.196 [main] Hooks - click on the visit plans
+[INFO ] 2024-01-02 07:01:55.458 [main] Hooks - click on the table user first name
+[INFO ] 2024-01-02 07:01:55.668 [main] Hooks - delete the single visit details.
+[INFO ] 2024-01-02 07:02:02.572 [main] Hooks - click on the delete button
+[INFO ] 2024-01-02 07:02:03.025 [main] Hooks - save the single delete visit series
+[INFO ] 2024-01-02 07:02:04.335 [main] Hooks - validation message should be shown - Visit Plan was saved.
+[INFO ] 2024-01-02 07:02:04.587 [main] Hooks - Browser Closed..
